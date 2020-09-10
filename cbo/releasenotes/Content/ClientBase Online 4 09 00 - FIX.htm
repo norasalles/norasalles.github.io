@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>ClientBase Online 4.09.00 Fixes</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/Stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1><a name="ClientBase_Online_4.09.00_Fixes" data-mc-generated-bookmark="TOC"></a><span class="Strong_1">ClientBase Online 4.09.00 Fixes</span>
+            </h1>
+            <h2><a name="Changes_made_between_ClientBase_Online_4.08.00.121_and_4.09.00.107" data-mc-generated-bookmark="TOC"></a>Changes made between ClientBase Online 4.08.00.121 and 4.09.00.107</h2>
+            <h3><a name="Invoice_Related_(Canadian_Version)" data-mc-generated-bookmark="TOC"></a>Invoice Related (Canadian Version)</h3>
+            <ul>
+                <li value="1">Fixed an issue where Refund Invoice showed the Balance as negative and This Refund Invoice Totals = "0.00" instead of correct values.</li>
+            </ul>
+            <p>&#160;</p>
+            <h3><a name="Synchronization_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Synchronization Related</span>
+            </h3>
+            <ul>
+                <li style="text-decoration: none;" value="1"><span class="span_2">Fixed an issue where a Reservation imported via Live Connect&#160;and invoiced in CBO presented the </span><span class="span_3" style="font-style: italic;">Depart date</span> and <span class="span_3" style="font-style: italic;">Arrive date</span><span class="span_2"> in TBO as 1/1/1970.</span></li>
+            </ul>
+            <p class="ListParagraph_1_1">&#160;</p>
+            <h3><a name="Documents_Template_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Documents Template Related</span>
+            </h3>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue where when Merging to Doc or Email, </span><span class="span_3" style="font-style: italic;">Document Templates</span><span class="span_2"> merge with incorrect formatting including missing line breaks and replacing apostrophes with "&amp;#39;" .</span>
+                </li>
+            </ul>
+            <blockquote>
+                <p><span class="Strong_2" style="font-weight: bold;">NOTE:</span> Document templates (plain text and HTML) saved in CBO 4.09 version are working correctly (newly created or modified). Templates saved in previous CBO versions are not compatible with the new character coding.&#160; To ensure existing templates continue to work, simply edit and resave each one.</p>
+            </blockquote>
+            <p class="ListParagraph_1_1">&#160;</p>
+            <h3><a name="Commission_GST_HST_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Commission/GST/HST Related</span>
+            </h3>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an&#160;issue when creating a new Reservation where the commission rate did not recalculate properly when a multicurrency option is selected and the Vendor is changed.</span><span class="span_4"><br /></span>
+                </li>
+                <li value="2"><span class="span_2">To standardize and increase the transparency of the rules for including and editing </span><span class="span_3" style="font-style: italic;">Comm GST/HST</span><span class="span_2">, we have introduced several changes: </span>
+                </li>
+            </ul>
+            <blockquote>
+                <ul class="ul_2">
+                    <li class="ListParagraph_1" value="1"><span class="span_2">For all travel types, if the Reservation is set to </span><span class="span_3" style="font-style: italic;">Internationa</span><span class="span_2">l travel regardless to whether Total, Traveler, or Itemized pricing is used, </span><span class="span_3" style="font-style: italic;">Comm GST/HST</span><span class="span_2"> is set to zero (0) and not editable and the </span><span class="span_3" style="font-style: italic;">GST/HST</span><span class="span_2"> status on the Reservation level is defaulted to </span><span class="span_3">Do Not Include GST/HST</span><span class="span_2">.</span>
+                    </li>
+                    <li class="ListParagraph_1" value="2">When Reservation status is changed from <span class="span_3">International</span><span class="span_2"> to </span><span class="span_3">Domestic</span><span class="span_2"> or </span><span class="span_3">Transborder</span><span class="span_2"> or &lt;</span><span class="span_3">blank</span><span class="span_2">&gt; the </span><span class="span_3">GST/HST</span> <span class="span_2">setting is defaulted to what is set under Agency Settings. (i.e: checkbox </span><span class="span_3">Include GST/HST</span><span class="span_2">)</span></li>
+                    <li class="ListParagraph_1" value="3">If Traveler pricing is defined for the Reservation, regardless of what the <span class="span_3">Domestic/International</span><span class="span_2"> status and </span><span class="span_3">Include GST/HST</span><span class="span_2"> status is set to, the </span><span class="span_3">EDIT</span><span class="span_2"> button in the </span><span class="span_3">Tax</span><span class="span_2"> section is not presented.&#160; </span><span class="span_3">More Taxes </span><span class="span_2">and</span> <span class="span_3">Comm GST/HST</span><span class="span_2"> fields must be edited under Traveler pricing.</span></li>
+                    <li class="ListParagraph_1" value="4">When adding Traveler pricing the default value for the <span class="span_3">GST/HST</span><span class="span_2"> status is what is set under Reservation for this field. </span><p class="ListParagraph_1" style="font-weight: bold;">NOTES: </p></li>
+                    <li class="ListParagraph_1" value="5"><span class="span_2">After change and saving the </span><span class="span_3">GST/HST</span> <span class="span_2">status under the Reservation, the changed value will not be populated to the existing Traveler pricings.</span></li>
+                    <li class="ListParagraph_1" value="6">When at least one Traveler pricing is set to <span class="span_3">Include GST/HST,</span> <span class="span_2">the pricing at the Reservation level is updated to </span><span class="span_3">Include GST/HST</span><span class="span_2"> even if the default was previously set to </span><span class="span_3">Do Not Include GST/HST</span><span class="span_2">. In this case, to change the </span><span class="span_3">Include GST/HST</span><span class="span_2"> status at the Reservation level, the user must first change the</span><span class="span_3"> Include GST/HST</span><span class="span_2"> at the Traveler pricing level.</span></li>
+                </ul>
+            </blockquote>
+            <p>&#160;</p>
+            <h3><a name="Pricing_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Pricing Related</span>
+            </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an&#160;issue where after clearing itemization details the </span><span class="span_3">Cost</span><span class="span_2"> section does not present the total of the previously itemized amounts.</span>
+                </li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="Invoice_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Invoice Related</span> </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue&#160;where </span><span class="span_3">Payment due date</span><span class="span_2"> is not displayed on the Invoice when the reservation has any </span><span class="span_3">Itin/Invoice Remarks</span><span class="span_2">.</span>
+                </li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue where the generated Invoice with an empty date </span><span class="span_3">Invoice Payment Due On</span><span class="span_2"> defaults to Invoice in Currently Invoice Totals section in the </span><span class="span_3">Payment Due by</span><span class="span_2"> date as "December 31, 1979".</span>
+                </li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue&#160;where&#160;Negative Agent Commission value on the invoice generate page is causing that </span><span class="span_3">Generate Invoice</span><span class="span_2">, </span><span class="span_3">Preview</span><span class="span_2"> and </span><span class="span_3">Customize Format</span><span class="span_2"> buttons are disabled and grayed out (on the top of the page).</span>
+                </li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue&#160;where </span><span class="span_3">This Invoice Totals</span><span class="span_2">: </span><span class="span_3">Base</span><span class="span_2"> amount and </span><span class="span_3">GST/HST</span><span class="span_2"> amount are incorrect on the invoice. They are correct on invoice preview.</span>
+                </li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">We have addressed a problem related to issuing a refund invoice&#160;for a Reservation where the user&#160;added Traveler pricing to the same&#160;Traveler again by&#160;presenting a message&#160;about possible irregularities in the invoicing process&#160;when trying to save. </span>
+                </li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1">Additionally, to prevent inaccuracies during the invoicing process, we disabled editing Traveler pricing once it has been invoiced.&#160; If a user attempts to edit Traveler pricing, we present an appropriate message that the Traveler pricing edit is disabled until all invoices for this Traveler are voided.</li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="Chrome_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Chrome Related</span>
+            </h3>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue that </span><span class="span_3">Add Traveler</span><span class="span_2"> button under Res Card&#160;does not work when letters (label) is clicked.</span>
+                </li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue where the </span><span class="span_3">Invoice Payment Date</span> window does not appear when generating invoices with <span class="span_3">FOP</span><span class="span_2"> = &lt;blank&gt;.</span></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue where the Travelers tab header is too short on the </span><span class="span_3">Reservation edit</span><span class="span_2"> page.<br /></span>
+                </li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an issue consisting of not presenting&#160;prompts/confirmation messages on pages: <span class="span_3">Invoice, Itinerary, and Merge to email</span><span class="span_2">.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue where on </span><span class="span_3">Profile Quick Entry</span> page there is no indication that marketing code fields are required or optional (no colored frame for checkboxes).<br /></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue where&#160;on </span><span class="span_3">Profile Quick Entry</span> page the <span class="span_3">Membership ID</span><span class="span_2">&#160;field&#160;name is presented under the </span><span class="span_3">Salutation</span><span class="span_2"> field name.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue where on </span><span class="span_3">Profile Quick Entry</span> page the <span class="span_3">Associate ID</span><span class="span_2"> field name is presented under </span><span class="span_3">Salutation/Nickname</span><span class="span_2"> field name.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an&#160;issue where the </span><span class="span_3">Change</span> button appears incorrectly when setting a new password on the <span class="span_3">Temporary password</span><span class="span_2"> page.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an&#160;issue where when Traveler pricing exists then when editing the Reservation, its <span class="span_3">Base</span><span class="span_2"> amounts are not disabled.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an&#160;issue where </span><span class="span_3">Merge To PNR</span><span class="span_2"> is not working for the clipboard option.<br /></span>
+                </li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an&#160;issue&#160;where when adding travelers to the Res Card only and clicking <span class="span_3">Add traveler</span><span class="span_2"> button (Travelers section) the button was only clickable in a specific location.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an&#160;issue&#160;where adding a new Traveler with a <span class="span_3">Middle Name</span><span class="span_2"> to the Res Card only caused the Traveler Middle Name to be displayed twice once another Reservation was added to the ResCard.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an&#160;issue&#160;where the Reports feature was not working, causing no reports to be generated.<br /></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an&#160;issue&#160;where&#160;</span>Base, Tax, and Commission<span class="span_2"> fields were not disabled when Traveler pricing exists.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an&#160;issue where the </span>Track Res Card Balances<span class="span_2"> drop-down for currency options was not disabled and grayed out after Traveler pricing was added to the reservation.</span><span class="span_4"><br /></span></li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an issue when trying to generate Invoice where the <span class="span_3">Not- invoiced</span><span class="span_2"> field amount was sometimes incorrectly showing equal to “0.00”&#160;and after entering the correct amount to be invoiced in the </span><span class="span_3">This invoice</span><span class="span_2"> field there is a window&#160;with a prompt that could not be closed.</span></li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="Query_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Query Related</span>
+            </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue where Profile Manager Query, Res Card Manager Query, Activity Manager Query displayed the correct result count but did not display the very top 1st record of the 2nd page in the query result.</span>
+                </li>
+            </ul>
+            <p class="ListParagraph_1_1">&#160;</p>
+            <h3><a name="Navigation_User_Experience_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Navigation/User Experience Related</span> </h3>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue&#160;when searching in a query manager where the autocomplete list would close upon the user scrolling through the results.&#160; <br /></span>
+                </li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an&#160;issue where the Travel History in <span class="span_3">Detail View</span><span class="span_2">&#160;mode was running off the viewable screen.</span></li>
+            </ul>
+            <p class="ListParagraph_1_1">&#160;</p>
+            <h3><a name="Login_page_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Login page Related</span> </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue with prompting an incorrect error message when there was an expired license access code for ClientBase Online.</span>
+                </li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="Settings_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Settings Related</span>
+            </h3>
+            <ul>
+                <li value="1"><span class="span_2">Fixed an issue where changing the </span><span class="span_3">Trip Proposal</span><span class="span_2"> setting </span><span class="span_3">Include Itin/Inv Remark</span><span class="span_2">&#160;was not saving under Branch settings.<br /></span>
+                </li>
+            </ul>
+            <ul>
+                <li value="1">Fixed an issue where ClientBase Online would freeze when removing an Agent in <span class="span_3">User settings</span> <span class="span_2">under the </span><span class="span_3">Agent Rights</span><span class="span_2"> tab.<br /></span></li>
+            </ul>
+            <p>&#160;</p>
+            <h3><a name="Forget_Password_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Forget Password Related</span>
+            </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue where clicking on the </span><span class="span_3">Cancel</span><span class="span_2"> button on the </span><span class="span_3">Forget Password</span><span class="span_2">&#160;page resulted in "Error 404" being returned.</span>
+                </li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="Credit_Card_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Credit Card Related</span>
+            </h3>
+            <ul class="ul_1">
+                <li value="1"><span>Fixed an issue where&#160;have a Credit Card with an invalid Expiration Date prevented CBPSync SyncOut.</span>
+                </li>
+            </ul>
+            <p class="ListParagraph_1_1">&#160;</p>
+            <h3><a name="PNR_import" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">PNR import</span>
+            </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue with PNR import where a GST/HST amount exists in the imported file but </span><span class="span_3">Include GST/HST</span><span class="span_2"> setting under Reservation was always defaulting to </span><span class="span_3">Do Not Include</span> <span class="span_2">and the imported GST/HST value was not presented.</span></li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1">[Travelport-Worldspan] Fixed an issue where the base price was not importing for Hotel reservations.</li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1">[Travelport-Worldspan] Fixed an issue where importing the same Record Locator into the same Res Card created a new Car reservation instead of updating the existing record.</li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="Merge_to_PNR_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Merge to PNR Related</span> </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">[Sabre] Fixed an issue where when merging to PNR, after clicking the Additional Entries button on the PNR Builder page, the Traveler sorting resets causing the wrong traveler information to be selected for merge.&#160; </span>
+                </li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="Live_Connect_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Live Connect Related</span>
+            </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue with Live Connect import where travelers were duplicated upon importing an update for an existing Reservation.</span>
+                </li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue with Live Connect where the vendor code was not be recognized upon import causing a prompt to the user that the vendor was not found and to select a vendor.</span>
+                </li>
+            </ul>
+            <p class="p_4">&#160;</p>
+            <h3><a name="ResCard_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">ResCard Related</span> </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue where the order of travelers displayed under created reservation (regardless of the type of reservation) was different than the order of travelers presented at the Res Card level.</span>
+                </li>
+            </ul>
+            <ul>
+                <li value="1">Removed the not yet available travel categories <span class="span_3">Excursions</span><span class="span_2"> and </span><span class="span_3">River Cruise</span><span class="span_2"> from the </span><span class="span_3">Travel Category</span><span class="span_2"> drop-down list when adding an Itemized cost under Reservation.<br /></span></li>
+            </ul>
+            <ul>
+                <li value="1">Removed the not yet available travel categories <span class="span_3">Excursions</span><span class="span_2"> and </span><span class="span_3">River Cruise</span><span class="span_2"> from </span><span class="span_3">Agency Settings</span><span class="span_2"> in the </span><span class="span_3">Default Field Values for New Invoices</span><span class="span_2"> tab.</span></li>
+            </ul>
+            <p>&#160;</p>
+            <h3><a name="Profile_Related" data-mc-generated-bookmark="TOC"></a><span class="Strong_2">Profile Related</span> </h3>
+            <ul class="ul_1">
+                <li value="1"><span class="span_2">Fixed an issue where when adding </span><span class="span_3">Special Date</span><span class="span_2">&#160;on </span><span class="span_3">Create Profile</span><span class="span_2"> screen with only the </span><span class="span_3">Type</span><span class="span_2"> selected, the date was not saved and the incorrect&#160;prompt&#160;was presented.</span>
+                </li>
+            </ul>
+            <ul class="ul_1">
+                <li value="1">We added the option to save Vendor Commission rate = 0.00 in the Vendor profile and the setting is honored when creating a new reservation or during PNR import.</li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;310 - 641 - 8726 — Option 2</p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.CBSupport@sabre.com">Trams.CBSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © 2020 - <span class="VariablesCompanyName">Trams Inc.</span> </p>
+        </MadCap:pageFooter>
+    </body>
+</html>
