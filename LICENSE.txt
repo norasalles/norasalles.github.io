@@ -1,0 +1,5 @@
+Copyright © 2020, Trams & ClientBase Products and Services - a Sabre Company.-
+All rights reserved.
+
+1. No redistribution is allowed.
+2. Do not create derivate works from this repository content.
