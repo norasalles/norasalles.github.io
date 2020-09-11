@@ -214,7 +214,7 @@ $.noConflict(true);
 
 })();
 
-var helpSystemName = "index.htm";
+var helpSystemName = "index.html";
 
 //    Syntax:
 //    function MadCap.OpenHelp(id, skinName, searchQuery, firstPick)
@@ -265,7 +265,7 @@ var helpSystemName = "index.htm";
 
 (function ()
 {
-var helpSystemName = "index.htm";
+var helpSystemName = "index.html";
 
     MadCap.OpenHelp = function (id, skinName, searchQuery, firstPick, pathToHelpSystem)
     {
