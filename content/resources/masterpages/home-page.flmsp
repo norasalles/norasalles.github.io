@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <MadCap:bodyProxy />
+        <div class="home-footer">
+            <table style="width: 100%;">
+                <col />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>
+                            <p style="color: #ffffff;">
+                                <img src="../Images/norasalleswhite.png" style="height: auto;width: 174px;" />
+                                <br /><MadCap:variable name="General.Email" />
+                            </p>
+                        </td>
+                        <td style="text-align: right;">
+                            <img src="../Images/Sabre-white.png" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
