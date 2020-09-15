@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../content/clientbase windows 4 09 - nfet.htm'],s:['0'],p:[['0',1],['some',0]]});
