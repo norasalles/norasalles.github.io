@@ -1,0 +1,25 @@
+/*<meta />*/
+
+@media only screen and (max-width: 767px)
+{
+	.search-bar
+	{
+		width: 100%;
+	}
+
+	.central-dropdown:after
+	{
+		margin-left: 11px;
+	}
+
+	.central-account-text
+	{
+		display: none;
+	}
+
+	.central-dropdown-proxy:after
+	{
+		margin-left: 5px;
+	}
+}
+
