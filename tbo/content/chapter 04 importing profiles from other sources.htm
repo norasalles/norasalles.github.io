@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>Importing Customer Profiles via ASCII (.txt) Files</title>&#160;<link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="resources/stylesheets/stylesheet.css" rel="stylesheet" /><script src="../Resources/Scripts/custom.modernizr.js"></script><script src="../Resources/Scripts/jquery.min.js"></script><script src="../Resources/Scripts/require.min.js"></script><script src="../Resources/Scripts/require.config.js"></script><script src="../Resources/Scripts/foundation.min.js"></script><script src="../Resources/Scripts/plugins.min.js"></script><script src="../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <p style="text-align: right;">
+            <img src="resources/images/tramsbackoffice.png" class="img_header" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="VariablesProduct">Trams Back Office</span> <span class="VariablesVersion no">4.09.00</span> - <span class="VariablesType">New Features and Enhancements</span></p>
+        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="VariablesNewDateTimeVariable">Sep, 2020</span> </p>
+        <p>&#160;</p>
+        <div role="main" id="mc-main-content">
+            <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_4_Importing_Profiles_from_Other_Sources"></a>Chapter 4: Importing Profiles from Other Sources</span>
+            </p>
+            <h1><a name="Importing_Profiles_from_Other_Sources" data-mc-generated-bookmark="TOC"></a><a name="kanchor20"></a>Importing Profiles from Other Sources</h1>
+            <p class="p_36">This section details the importing of Client, Vendor, Agent and Other profiles from other software programs using ASCII (.txt) files. The routine of importing either appends one database of profile information to an existing database (or an empty one) without checking for duplicates, or updates existing profiles if certain parameters are setup.</p>
+            <h2><a name="Importing_Customer_Profiles_via_ASCII_(.txt)_Files" data-mc-generated-bookmark="TOC"></a><a name="Importing_Customer_Profiles_via_ASCII_(.txt)_Files" data-mc-generated-bookmark="TOC"></a>Importing Customer Profiles via ASCII (.txt) Files</h2>
+            <p class="p_2">Agencies may use many different software programs to maintain customer data such as names, addresses, phone numbers and marketing information. Ideally, most agencies implementing <span class="span_1">Trams Back Office </span>build their database using the interface process, but they may prefer to electronically "import" customer information to the <span class="span_1">Trams Back Office</span>/<span class="span_1">ClientBase </span>profiles rather than manually entering it. Later, when the <span class="span_1">Trams </span>database is up and running, agencies may want to import other miscellaneous electronic files as well, such as a purchased mailing list. Although <span class="span_1">Trams </span>can’t anticipate every possible program used, if your agency has a database of customer information in a program that can put that information into an ASCII (American Standard Code for Information Interchange) file (.txt), chances are an electronic “import” is possible…and easy!</p>
+            <h3><a name="ASCII_Delimited_Text_Files" data-mc-generated-bookmark="TOC"></a><a name="ASCII_Delimited_Text_Files" data-mc-generated-bookmark="TOC"></a><a name="ASCII_Delimited_Text_Files"></a>ASCII Delimited Text Files</h3>
+            <p>Regardless of the specific program used to maintain your database, if the program can create an ASCII-comma or tab delimited file (and most programs currently can using <span>File|Save As</span> or <span>File|Export</span>), that file can be imported using the <span class="span_1">Trams</span> Import/Update Utility. An ASCII format uses a standardized coding scheme enabling different computer programs to exchange information. </p>
+            <p>Each record in the file includes information such as Name, Address 1, Address 2, City, etc. To recognize when one field ends and another field begins, a <span class="span_1">delimiter</span> is used, separating each field. This delimiter is a character and the most commonly used are a <span>tab</span> or a <span>comma</span>.</p>
+            <p>If your existing database program can create an ASCII file, create your file and save it to a floppy disk or to a drive accessible to a workstation that can run <span class="span_1">Trams Back Office/ClientBase</span>. (The file must be created <span>prior</span> to running the Trams Import program.) Find instructions on creating the file from the vendor supporting that software program.</p>
+            <h3><a name="Using_the_Trams_Import_Update_Utility" data-mc-generated-bookmark="TOC"></a><a name="UsingImportUpdUtil"></a>Using the Trams Import/Update Utility</h3>
+            <p>The Trams Import/Update Utility is a separate program that is run from outside of <span class="span_1">Trams Back Office</span> or <span class="span_1">ClientBase</span>. To access this utility, go to <span>Start|Programs|</span><span class="span_1">Trams Back Office (or Trams)</span><span>|</span><span class="span_1">Trams</span><span> Profile Import</span> and make sure you have a current backup of the database before starting the import. Access the program from your <span class="span_1">Trams</span> program group or by going to <span>Start|Run</span> and browsing \<span class="span_1">Trams</span>\common files\profimp.exe file. Upon running, an import wizard appears. </p>
+            <p>The wizard guides you though importing different classifications of profile data: address, communication, marketing and traveler. The basic steps to running the import are:</p>
+            <p class="p_17">Step 1: Preparing your Database</p>
+            <p class="p_17">Step 2: Connect to your Database</p>
+            <p class="p_17">Step 3: Select Import File</p>
+            <p class="p_13"><span>Step 4: Import Data to Miscellaneous Profile Fields (in TBO </span><span class="span_1">Notes </span><span>or </span><span class="span_1">Additional Notes)</span>
+            </p>
+            <p class="p_17">Step 5: Import Data to Communications Fields</p>
+            <p class="p_17">Step 6: Import Data to Address Fields</p>
+            <p class="p_17">Step 7: Import Data to Marketing Fields (for ClientBase)</p>
+            <p class="p_17">Step 8: Import Data to Travelers (formerly Passenger) Fields</p>
+            <p class="p_17">Step 9: Import Data to Profile Groups</p>
+            <p class="p_17">Step 10: Import Data to Special Dates (for ClientBase)</p>
+            <p class="p_17">Step 11: Import Data to Profile Remarks (for ClientBase)</p>
+            <p class="p_17">Step 12: View Profile Import/Update Summary Screen</p>
+            <p>Before giving details on each step, let’s review some basic concepts used through the Import Utility screens.</p>
+            <h3><a name="Updating_Existing_Profiles_vs._Appending_to_Database" data-mc-generated-bookmark="TOC"></a><a name="Updating_Existing_Profiles_vs._Appending_to_Database" data-mc-generated-bookmark="TOC"></a>Updating Existing Profiles vs. Appending to Database</h3>
+            <p>There are two methods of importing data - update or append. Update means you want to replace data that is currently in your database with new data. An example is John Jones is currently in the <span class="span_1">Trams </span>database. He visits your website and updates his address, letting you know he moved. You import profiles from your website every week into <span class="span_1">Trams</span>. Since the profile already exists in the<span class="span_1"> Trams </span>database, you want the import routine to find this profile and change the address instead of creating a new profile which would be a duplicate. If the entire import was updates, then the number of profiles would not increase.</p>
+            <p><span>Important Note: </span><span class="span_1">As you map the fields from the import file to the fields in Trams Back Office/ClientBase, it is important to remember that any fields that are being mapped to in the database will be replaced by the value of the field in the import file, even if it is empty.</span>
+            </p>
+            <p>Using the append method means you are adding profiles to the database and the number of profiles in the system increase after the import is complete. An example of this is if you purchase a mailing list and want to load all the profiles into <span class="span_1">ClientBase</span> so you can monitor responses and follow up on these profiles.</p>
+            <h3><a name="Three_Ways_to_Import_Data" data-mc-generated-bookmark="TOC"></a><a name="Three_Ways_to_Import_Data" data-mc-generated-bookmark="TOC"></a><a name="Three_Ways_to_Import_Data"></a>Three Ways to Import Data</h3>
+            <p>Notice three buttons listed on many of the screens in the Import Utility that are used to describe how that data should be imported.</p>
+            <table class="table_1">
+                <col style="width: 66pt;" />
+                <col style="width: 313pt;" />
+                <tr>
+                    <td class="td_5">
+                        <p class="p_5">Map</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Mapping is used when a data field exists and is populated in the file while importing. You want to bring the data in “as is” to a field in the database. Select the name of the field that exists in the source file, and indicate in the import wizard into which field you want the data to show in <span class="span_1">ClientBase/Trams Back Office</span>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_5">Constant</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Use this feature when using same value for every profile being imported. Going back to the mail list example, you are importing data exclusively for Leisure profiles. Set the Profile Type field as a constant with a value of Leisure. Now all the profiles imported from the mail list show as Leisure profiles In <span class="span_1">ClientBase/Trams Back Office</span>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_5">Rule</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Creating a rule to import fields allows you to apply some logic to the field being imported. Create rules that if the data meets certain criteria, then map to a certain field in the database, or set a constant for the field. Let’s say the mail list you have purchased has a field name type and the value in the data source is either Home or Business. You want to make the profiles that are marked "business" as <span class="span_1">Corporate</span> profiles in your database. You create a rule that says if type is equal to “business” then set the Profile type field to <span class="span_1">Corporate</span> when importing the profile into the database. Another rule would be set where if the type is equal to “home” then the set the profile type to Leisure when importing.</p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Saving_and_Loading_Mappings" data-mc-generated-bookmark="TOC"></a><a name="Saving_and_Loading_Mappings" data-mc-generated-bookmark="TOC"></a><a name="Saving_and_Loading_Mappings"></a>Saving and Loading Mappings</h3>
+            <p>If you plan to import profiles on a continual basis using a consistent source file structure, map settings at the end of the import wizard. Also, if you start the mappings, but don’t have time to finish, use <span class="span_1">Save Mappings</span> to save what you’ve done so far. The next time you import a file, load the map which uses the same settings from the saved import. Now you do not have to go through the wizard field by field. Only use this feature when the files you are importing use the same files structure and fields in the same order.</p>
+            <h3><a name="Viewing_the_Data_File" data-mc-generated-bookmark="TOC"></a><a name="Viewing_the_Data_File" data-mc-generated-bookmark="TOC"></a><a name="Viewing_the_Data_File"></a>Viewing the Data File</h3>
+            <p>Once you have connected the import wizard with the source file to be imported, the wizard allows you to view the data. Click <span class="span_1">View</span> any time to refresh your memory about the fields or data listed in the source file. </p>
+            <h3><a name="ClientBase_and_Trams_Back_Office_Field_Legends" data-mc-generated-bookmark="TOC"></a><a name="ClientBase_and_Trams_Back_Office_Field_Legends" data-mc-generated-bookmark="TOC"></a><a name="ClientBase_and_Trams_Back_Office_Field_Legends"></a>ClientBase and Trams Back Office Field Legends</h3>
+            <p>A legend is included on the screens of the import wizard to help you figure out where the data you map is used. Each <span class="span_1">ClientBase</span> field is color-coded so that you know which fields are <span class="span_1">T</span><span class="span_1">rams Back Office</span> Only fields (lavender); <span class="span_1">ClientBase</span> only fields (royal blue); or shared <span class="span_1">T</span><span class="span_1">rams Back Office/</span><span class="span_1">ClientBase</span> fields (black). </p>
+            <h2><a name="Step-by-Step_Instructions_to_Importing" data-mc-generated-bookmark="TOC"></a><a name="Step-by-Step_Instructions_to_Importing" data-mc-generated-bookmark="TOC"></a><a name="Step-by-Step_Instructions_to_Importing"></a>Step-by-Step Instructions to Importing</h2>
+            <h3><a name="Step_1__Preparing_Your_Database" data-mc-generated-bookmark="TOC"></a><a name="Step1"></a>Step 1: Preparing Your Database </h3>
+            <p>When you use the import utility, you make permanent and automatic changes and therefore, we suggest you make a good backup of the database before using this feature. In doing so, you are covered in case something is changed unintentionally. By backing up, you have the option to restore back your original database. </p>
+            <p>Or, you may decide to setup a "test" Alias to test the import on a copy of your database before you import it live. (This procedure serves another purpose as well as it checks the integrity of the latest backup.) Here are steps to accomplish this:</p>
+            <p>1. Go to <span>Start|Programs|</span><span class="span_1">Trams Back Office</span><span>|Alias Utility</span>.</p>
+            <p>2 Create an alias named <span class="span_1">Test</span> and type: C:\Program Files\<span class="span_1">Trams</span>\Database\test.ib (or use the same path as your current <span class="span_1">Trams</span> database). Do not click <span class="span_1">Test</span> as this database does not exist until you restore your backup to it.</p>
+            <p>3. Restore the last backup to the <span class="span_1">Test</span> Alias (it creates the new test.ib when it does this). <span>IMPORTANT:</span> If you get any error message and cannot complete restore, call or e-mail support for help.</p>
+            <p>4. Log into <span class="span_1">Trams</span> Back Office or <span class="span_1">ClientBase</span> as this Alias, <span class="span_1">Test</span>, and make sure all was restored correctly.</p>
+            <p>5. If you can look at the details of one profile, the copy of your database is viable and you are ready to do a test import into this database copy.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_2__Connect_to_Your_Database" data-mc-generated-bookmark="TOC"></a><a name="Step2"></a>Step 2: Connect to Your Database</h3>
+            <p>The first screen in the <span class="span_1">Trams</span> Profile import wizard requires the following information:</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other.jpg" style="height: 263px;width: 512px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.1.jpg" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p><span class="span_1">Alias: </span>From the drop-down menu, choose the Alias used when logging into <span class="span_1">Trams Back Office or ClientBase</span>. </p>
+            <p><span class="span_1">Path:</span> The Alias selected above sets the path to the Trams database.</p>
+            <p><span class="span_1">Login Name/Password:</span> Indicate the <span class="span_1">Login In Name</span> and <span class="span_1">Password</span>.</p>
+            <p>Click <span class="span_1">Next</span> to continue.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_3__Select_Import_File" data-mc-generated-bookmark="TOC"></a><a name="Step3"></a>Step 3: Select Import File</h3>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_1.jpg" style="height: 385px;width: 580px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.2.jpg" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>From this screen, select the file that has the profile information to import.</p>
+            <p><span class="span_1">Profile:</span> Click the three dots to select the location on your computer or network of the .txt file to import.</p>
+            <p><span class="span_1">Delimiter</span><span>:</span> The default is set to <span class="span_1">Tab. </span>From the drop-down menu, indicate whether the file to import is comma delimited.</p>
+            <p><span class="span_1">First Line is Header</span><span>:</span> If the first line is a table header, check in this box to read the headers for the file. </p>
+            <p><span class="span_1">One File for All Tables</span><span>:</span> If this box is checked, all of the data you are importing is in one file. The file updates not only the profile table, but also the communication, address, marketing and traveler tables as well. If this box is not checked, it opens up the ability to import multiple files, each a unique .txt file for each table - profile, communication, address, marketing, and traveler. This setup would be used when the source files are generated from a relational database which has separate tables in a program such as <span class="span_1">Access, dBase, or Paradox.</span> Notice that as the checkmark is removed, the communication, address, marketing and traveler areas become active. For each selected .txt file for any table, specify a <span class="span_1">Delimiter</span> from the drop-down menu (either tab or comma); check the box <span class="span_1">First Line is Header</span> to create a header for the file; and select a File Structure.</p>
+            <p><span>File Structure: </span>From the drop-down menu, designate if the .txt file that is being imported contains:</p>
+            <p>Multiple lines per Profile - This would be when the profile is listed in several rows with different information attached on each row. For example:</p>
+            <p>1030 John</p>
+            <p>1030 Smith</p>
+            <p>1030 123 Main St.</p>
+            <p>1030 Los Angeles</p>
+            <p>1030 CA</p>
+            <p>1030 90045</p>
+            <p>Where 1030 is the profile number or identifier.</p>
+            <p>All records in one line - This would be a file where for each profile, the specifics are in columns, or separated by comma which span a single line. For example: 1030,John,Smith,123 Main St.,Los Angeles,CA,90045.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_4__Importing_Data_for_Miscellaneous_Profile_Fields" data-mc-generated-bookmark="TOC"></a><a name="Step4"></a>Step 4: Importing Data for Miscellaneous Profile Fields</h3>
+            <p>Once the file(s) you want to import is selected, click <span class="span_1">Next</span> to get to the third screen in the import wizard, Profile Fields. By clicking <span class="span_1">View,</span> preview the file to import. Review the profile data to import for accuracy.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_2.jpg" style="height: 431px;width: 549px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.3.jpg" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>This is a very powerful part of the file import wizard. This area has the capability of stamping all records in the file with an indicated value so that they all appear with that value in <span class="span_1">Trams </span>Back Office/<span class="span_1">ClientBase</span>. Map a desired value using fields from the imported text file, assign a constant, or create rules to assign the desired value. The only <span>required field</span> in this area, is the Profile Type. </p>
+            <p><span>Load Map: </span>Click <span class="span_1">Load Map</span> to retrieve a previously saved mapping session so as not to setup everything all over again. What a time saver!</p>
+            <p><span>Primary Key Field:</span> For those users who are bringing in multi-data import files, indicate the primary key field. This is the field that is common to both files that creates a link and tells our utility how to match the data for one profile.</p>
+            <p><span>Update Rules:</span> This determines whether the information you are importing is appended to the database or updating existing data. Select <span class="span_1">Insert All Profiles </span>to bring new profiles. Select <span class="span_1">Update If InterfaceID Matches </span>to update existing profiles in <span class="span_1">Trams</span> Back Office/<span class="span_1">ClientBase</span> when data being imported has an Interface ID that matches an existing profile in <span class="span_1">Trams</span> database. Be sure to map all fields that you want updated and a field must be mapped to the Interface ID. </p>
+            <p>Select <span class="span_1">Update If ProfileNO Matches</span> to update existing profiles when data being imported has an Profile Number that matches an existing Profile Number in <span class="span_1">Trams </span>database. The <span>only time</span> to select the <span class="span_1">Update if ProfileNO Matches</span> option is if you are importing back into <span class="span_1">Trams </span>database a .txt file that previously had been exported from <span class="span_1">Trams </span>database. </p>
+            <p><span>Interface ID Filter:</span> From the drop-down menu, select <span class="span_1">Import as is (DO NOT FILTER) </span>which brings over all special characters such as dashes, parentheses, etc.<span class="span_1">; </span>or <span class="span_1">Only Grab Alpha-Numeric Characters</span> which strips all special characters from Interface ID. by dropping dashes, brackets, etc.</p>
+            <p><span>Important Note:</span><span class="span_1">As you are mapping the fields from the import file to the fields, it is important to remember that any fields that are being mapped to in Trams Back Office/ClientBase will be replaced by the value of the field in the import file, even if it is empty.</span>
+            </p>
+            <p><span>Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">Trams Back Office/ClientBase</span> field with a Source Column from the text file you are importing.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_3.jpg" style="height: 269px;width: 356px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.4.jpg" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>Field name represents the name of the field in <span class="span_1">Trams database</span>. Source Column is the name of the data (or header) of the data being imported.&#160; </p>
+            <p>(<span>Please note:</span> Bolded field names are available only in <span class="span_1">Trams Back Office</span>, not <span class="span_1">ClientBase</span> and the maroon fields are in Trams Back Office only.) Fields which can be mapped include:</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_4.jpg" style="height: 600px;width: 156px;" alt="http://static.trams.com/CBW38/images/Importing%20Profiles%20from%20Other%20Sources.07.1.5.jpg" class="img_1" />
+            </p>
+            <p><span>Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">Trams Back Office/ClientBase</span>, pick a value from a drop-down menu (if available); or type in a value to use for the selected field. For Profile Type below, the default <span class="span_1">Trams Back Office/ClientBase</span> values are shown.</p>
+            <p><span class="span_12">Reminder:</span> If you have selected the <span class="span_1">Update If InterfaceID Matches</span> above, be sure to map all fields that you want updated. If using a phone number as the profile Interface ID, map it at this time.</p>
+            <p><span>Rule:</span> By clicking <span class="span_1">Rule</span>, setup a conditional “if...then” statement/s for the file being imported. </p>
+            <p><span class="span_12">Example:</span> You have included in your import file a header called, <span class="span_1">Profile Type</span>. For each profile type marked with an “A” in your import file, you want it to come into <span class="span_1">Trams database</span> as an Agent profile. For each profile type marked with a “C”, you want it to come into <span class="span_1">Trams database</span> as a Corporate profile, and so on. By setting up a <span class="span_1">Rule </span>for each of these conditions, each record in the import file comes in correctly as the appropriate Profile Type.</p>
+            <p><span class="span_1">Field Name</span>: This field is hard-coded and is displaying the selected <span class="span_1">Trams Back Office/ClientBase</span> field on which the rule is being written.</p>
+            <p><span class="span_1">Default Value</span>: Choose a value from a drop-down menu if this option is available. Otherwise, type in a value to use by choosing <span class="span_1">Constant,</span> or <span class="span_1">Map</span> a value from the import file for the selected field. This value is used if the data does not meet the condition you set up in the rule.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_5.jpg" style="height: 251px;width: 357px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.5.jpg" class="img_1" />
+            </p>
+            <p><span class="span_1">Add/Modify/Delete:</span> To add a rule, click <span class="span_1">Add</span>; to modify a rule, click <span class="span_1">Modify</span>; to delete a rule, click <span class="span_1">Delete</span>.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_6.jpg" style="height: 288px;width: 402px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.6.jpg" class="img_1" />
+            </p>
+            <p>To add a rule:</p>
+            <p><span class="span_1">If Source Field:</span> The drop-down menu lists each column in the import file for selection. Choose the Source Field. Using our example, select Profile Type.</p>
+            <p><span class="span_1">Source Operation:</span> Choose the Source Operation, =, “equals,” or &lt;&gt;, “not equal” from the drop-down menu. Using our example, use =.</p>
+            <p><span class="span_1">Source Test Value:</span> Type a value from the file you are importing. In our example, we would insert an “A” (for Agent) and add a new rule for “C” (for Corporate), etc.</p>
+            <p><span class="span_1">Then set Database Field to:</span> From the drop-down menu, choose what value to use in this field if the source test value is met. If no drop-down menu is available, type out the value precisely as you want it in <span class="span_1">ClientBase</span>.</p>
+            <p><span>Reset:</span> To clear all settings, click <span class="span_1">Reset</span>.</p>
+            <p><span>Automap: </span>If the column header labels are exactly the same as the fields in <span class="span_1">Trams Back Office/ClientBase</span> (this would happen if you previously exported out of <span class="span_1">Trams</span> and now are importing), click <span class="span_1">Automap</span> to have the import utility map all the fields for you. </p>
+            <p>&#160;</p>
+            <h3><a name="Step_5__Importing_Data_to_Communication_Fields" data-mc-generated-bookmark="TOC"></a><a name="Step5"></a>Step 5: Importing Data to Communication Fields</h3>
+            <p>Click <span class="span_1">Next</span> to get to the next screen in the import wizard, Communication Fields. Like the previous screen, this area has the capability of stamping all records in the file with an indicated value so that they all appear with that value in <span class="span_1">Trams </span><span class="span_1">Back Office/ClientBase</span>. By clicking <span class="span_1">View</span>, preview the file to import. Review the communication data to import for accuracy.</p>
+            <p>The only <span>required fields</span> in this area, are the <span class="span_1">Default Country Code </span>and <span class="span_1">Default Area Code</span>. For the United States and Canada, the country code is 1.</p>
+            <p><span>Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">Trams Back Office/ClientBase</span> field with a Source Column from the text file being imported. (Black fields apply to both Trams Back Office/ClientBase.&#160; Blue fields are for ClientBase use ONLY.)</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_7.jpg" style="height: 543px;width: 180px;" alt="http://static.trams.com/CBW38/images/Importing%20Profiles%20from%20Other%20Sources.07.1.8.jpg" class="img_1" />
+            </p>
+            <p><span>Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">Trams Back Office/ClientBase</span>, pick a value from a drop-down menu (if available); or type in a value to use for the selected field.</p>
+            <p><span>Rule:</span> By clicking <span class="span_1">Rule</span>, setup a conditional “if...then” statement/s for the file being imported. </p>
+            <p><span class="span_1">Field Name: </span>This field is hard-coded and is displaying the selected <span class="span_1">Trams Back Office/ClientBase</span> field on which the rule is being written.</p>
+            <p><span class="span_1">Default Value:</span> Choose a value from a drop-down menu if this option is available. Otherwise, type in a value to use by choosing <span class="span_1">Constant,</span> or <span class="span_1">Map</span> a value from the import file for the selected field. This value is used if the data does not meet the condition set up in the rule.</p>
+            <p><span class="span_1">Add/Modify/Delete: </span>To add a rule, click <span class="span_1">Add</span>; to modify a rule, click <span class="span_1">Modify</span>; to delete a rule, click <span class="span_1">Delete</span>.</p>
+            <p><span class="span_1">If Source Field:</span> The drop-down menu lists each column in the import file for selection. Choose the Source Field. </p>
+            <p><span class="span_1">Source Operation:</span> Choose the Source Operation, = (equals), &lt;&gt;, (not equal), LEN= (Length equals), LEN&lt; (Length is less than), LEN&gt; (Length is greater than), LEN&lt;&gt; (Length does not equal) from the drop-down menu. </p>
+            <p><span class="span_1">Source Test Value: </span>Type a value from the file you are importing. </p>
+            <p><span class="span_1">Then Set Database Field to: </span>Type value you want to use if the source test value is met. If no drop-down menu is available, type out the value precisely as you want it in <span class="span_1">Trams Back Office/ClientBase</span>.</p>
+            <p><span class="span_1">Reset: </span>To clear all settings, click <span class="span_1">Reset</span>.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_6__Importing_Data_to_Address_Fields" data-mc-generated-bookmark="TOC"></a><a name="Step6"></a>Step 6: Importing Data to Address Fields</h3>
+            <p>Click <span class="span_1">Next</span> to get to the next screen in the import wizard, address fields. Like the previous screens, this area has the capability of stamping all records in the file with an indicated value so that they all appear with that value in <span class="span_1">Trams Back Office/ClientBase</span>. By clicking <span class="span_1">View</span> preview the file to import. Review the address data for accuracy.</p>
+            <p><span>Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">Trams Back Office/ClientBase</span> field with a Source Column from the text file being imported. Field name represents the name of the field in <span class="span_1">Trams Back Office/ClientBase</span>. Source Column is the name of the data (or header) of the data being imported. </p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other.png" style="height: 428px;width: 544px;" class="img_1" />
+            </p>
+            <p class="NormalWeb_1"><span class="span_16">M</span><span class="span_16">ap an address to Primary, Bill To, and Ship To addresses all at once. </span><span class="span_16">When an address mapped to these fields is imported, one address record with the Primary, Bill To, and Ship To boxes checked is created. </span>
+            </p>
+            <p class="NormalWeb_1">&#160;</p>
+            <p class="NormalWeb_2">Fields that can be mapped are:</p>
+            <p class="NormalWeb_1">&#160;</p>
+            <p class="NormalWeb_1">
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_1.png" style="height: 494px;width: 427px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p><span>Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">Trams Back Office/ClientBase</span>, pick a value from a drop-down menu (if available); or type in a value to use for the selected field.</p>
+            <p><span>Rule:</span> By clicking <span class="span_1">Rule</span>, setup a conditional “if...then” statement/s for the file being imported. </p>
+            <p><span class="span_1">Field Name: </span>This field is hard-coded and is displaying the selected <span class="span_1">Trams Back Office or ClientBase</span> field on which the rule is being written.</p>
+            <p><span class="span_1">Default Value: </span>Choose a value from a drop-down menu if this option is available. Otherwise, type in a value you want to use by choosing <span class="span_1">Constant,</span> or <span class="span_1">Map</span> a value from your import file for the selected field. This value is used if the data does not meet the condition set up in the rule.</p>
+            <p><span class="span_1">Add/Modify/Delete:</span> To add a rule, click <span class="span_1">Add</span>; to modify a rule, click <span class="span_1">Modify</span>; to delete a rule, click <span class="span_1">Delete</span>. To add a rule:</p>
+            <p><span class="span_1">If Source Field: </span>The drop-down menu lists each column in the import file for selection. Choose the Source Field. </p>
+            <p><span class="span_1">Source Operation: </span>Choose the Source Operation, = (equals), &lt;&gt;, (not equal), LEN= (Length equals), LEN&lt; (Length is less than), LEN&gt; (Length is greater than), LEN&lt;&gt; (Length does not equal) from the drop-down menu. </p>
+            <p><span class="span_1">Source Test Value:</span> Type a value from the file you are importing. </p>
+            <p><span class="span_1">Then set Database Field to: </span>Type value you want this field to be if the source test value is met. If no drop-down menu is available, type out the value precisely as you want it in <span class="span_1">Trams Back Office or ClientBase</span>.</p>
+            <p><span class="span_1">Reset: </span>To clear all settings, click <span class="span_1">Reset</span>.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_7__Importing_Data_to_Marketing_Fields" data-mc-generated-bookmark="TOC"></a><a name="Step7"></a>Step 7: Importing Data to Marketing Fields</h3>
+            <p>Click <span class="span_1">Next</span> to get to the next screen in the import wizard, Marketing Fields. Like the previous screens, this area has the capability of stamping all records in the file with an indicated value so that they all appear with that value in <span class="span_1">Trams database</span>. By clicking <span class="span_1">View</span>, preview the file to import. Review the marketing data for accuracy.</p>
+            <p><span>Sub-delimiter:</span> Insert a sub-delimiter separating the marketing codes. If no sub-delimiter has been used, leave empty.</p>
+            <p><span>Add Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">ClientBase</span> field with a Source Column from the text file you are importing. Field name represents the name of the field in <span class="span_1">ClientBase</span>. Source Column is the name of the data (or header) of the data being imported.</p>
+            <p><span>Add Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">ClientBase</span>, pick a value from a drop-down menu (if available); or type in a value to use for the selected field.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_8.jpg" style="height: 265px;width: 372px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.7.jpg" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p><span>Rule:</span> By clicking <span class="span_1">Rule</span>, setup a conditional “if...then” statement/s for the file being imported. </p>
+            <p><span class="span_1">Field Name:</span> This field is hard-coded and is displaying the selected <span class="span_1">ClientBase</span> field on which the rule is being written.</p>
+            <p><span class="span_1">Default Value: </span>Choose a value from a drop-down menu if this option is available. Otherwise, type in a value to use by choosing <span class="span_1">Constant,</span> or <span class="span_1">Map</span> a value from the import file for the selected field. This value is used if the data does not meet the condition you are set up in the rule.</p>
+            <p><span class="span_1">Add/Modify/Delete:</span> To add a rule, click <span class="span_1">Add</span>; to modify a rule, click <span class="span_1">Modify</span>; to delete a rule, click <span class="span_1">Delete</span>. To add a rule:</p>
+            <p><span class="span_1">If Source Field: </span>The drop-down menu lists each column in the import file for selection. Choose the Source Field. </p>
+            <p><span class="span_1">Source Operation:</span> Choose the Source Operation, = (equals), &lt;&gt;, (not equal), LEN= (Length equals), LEN&lt; (Length is less than), LEN&gt; (Length is greater than), LEN&lt;&gt; (Length does not equal) from the drop-down menu. </p>
+            <p><span class="span_1">Source Test Value:</span> Type a value from the file you are importing. </p>
+            <p><span class="span_1">Then set Database Field to:</span> Type value you want this field to be if the source test value is met. If no drop-down menu is available, type out the value precisely as you want it in <span class="span_1">ClientBase</span>.</p>
+            <p><span class="span_1">Reset:</span> To clear all settings, click <span class="span_1">Reset</span>.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_8__Importing_Data_to_Traveler_Fields" data-mc-generated-bookmark="TOC"></a><a name="Step8"></a>Step 8: Importing Data to Traveler Fields</h3>
+            <p class="p_34">NOTE: The Profile Import now works with the new Traveler/Contact records. It does not yet designate a Primary Traveler or Primary Communication entries, but it will do so in future release. </p>
+            <p>Click <span class="span_1">Next</span> to get to the next screen in the import wizard, Traveler Fields. Like the previous screens, this area has the capability of stamping all records in the file with an indicated value so that they all appear with that value in <span class="span_1">Trams Back Office/ClientBase</span>. By clicking <span class="span_1">View</span>, preview the file to import and review the traveler data.</p>
+            <p><span>Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">Trams Back Office/ClientBase</span> field with a Source Column from the text file you are importing. </p>
+            <p>Field name represents the name of the field in <span class="span_1">Trams Back Office/ClientBase</span>. Source Column is the name of the data (or header) of the data being imported. Fields to map include: <span class="span_1">Primary Traveler/Contact Name, and Second Traveler/Contact Name</span><span class="span_1">.</span></p>
+            <p><span>Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">Trams Back Office/ClientBase</span>, choose a value from a drop-down menu (if available); or type in a value to use for the selected field.</p>
+            <p><span>Rule:</span> By clicking <span class="span_1">Rule</span>, setup a conditional "if...then" statement/s for the file being imported. </p>
+            <p><span class="span_1">Field Name: </span>This field is hard-coded and is displaying the selected <span class="span_1">Trams Back Office/ClientBase</span> field on which the rule is being written.</p>
+            <p><span class="span_1">Default Value: </span>Choose a value from a drop-down menu if this option is available. Otherwise, type in a value to use by choosing <span class="span_1">Constant,</span> or <span class="span_1">Map</span> a value from your import file for the selected field. This value is used if the data does not meet the condition you set up in the rule.</p>
+            <p><span class="span_1">Add/Modify/Delete:</span> To add a rule, click <span class="span_1">Add</span>; to modify a rule, click <span class="span_1">Modify</span>; to delete a rule, click <span class="span_1">Delete</span>. To add a rule:</p>
+            <p><span class="span_1">If Source Field: </span>The drop-down menu lists each column in the import file for selection. Choose the Source Field. </p>
+            <p><span class="span_1">Source Operation:</span> Choose the Source Operation, = (equals), &lt;&gt;, (not equal), LEN= (Length equals), LEN&lt; (Length is less than), LEN&gt; (Length is greater than), LEN&lt;&gt; (Length does not equal) from the drop-down menu. </p>
+            <p><span class="span_1">Source Test Value: </span>Type a value from the file you are importing. </p>
+            <p><span class="span_1">Then set Database Field to:</span> Type value to fill this field to be if the source test value is met. If no drop-down menu is available, type out the value precisely as you want it in <span class="span_1">Trams Back Office/ClientBase</span>.</p>
+            <p><span class="span_1">Reset: </span>To clear all settings, click <span class="span_1">Reset</span>.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_9__Importing_Data_to_Trams_Back_Office_ClientBase_Program_Group_Fields" data-mc-generated-bookmark="TOC"></a><a name="Step9"></a>Step 9: Importing Data to Trams Back Office/ClientBase Program Group Fields</h3>
+            <p>Click <span class="span_1">Next</span> to get to the next screen in the Import Wizard, TFW/CB Program Group Fields. Like the previous screens, this area has the capability of stamping all records in the file with an indicated value so that they all appear with that value in <span class="span_1">Trams Back Office/ClientBase</span>. By clicking <span class="span_1">View</span>, preview the file being imported. Review the group data for accuracy.</p>
+            <p><span>Group delimiter:</span> Insert a delimiter separating the groups. If delimiter has not been used, leave empty.</p>
+            <p><span>On Updates, Appends to Existing Groups:</span> Check here to append to existing groups if you are updating.</p>
+            <p><span>Add Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">Trams Back Office/ClientBase</span> field with a Source Column from the text file being imported. </p>
+            <p>Field name represents the name of the field in <span class="span_1">Trams Back Office/ClientBase</span>. Source Column is the name of the data (or header) of the data being imported.</p>
+            <p><span>Add Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">Trams Back Office/ClientBase</span>, pick a value from a drop-down menu (if available); or type in a value to use for the selected field.</p>
+            <p><span>Rule:</span> By clicking <span class="span_1">Rule</span>, setup a conditional “if...then” statement/s for the file being imported. </p>
+            <p><span class="span_1">Field Name:</span> This field is hard-coded and is displaying the selected <span class="span_1">Trams Back Office/ClientBase</span> field on which the rule is being written.</p>
+            <p><span class="span_1">Default Value:</span> Choose a value from a drop-down menu if this option is available. Otherwise, type in a value you want to use by choosing <span class="span_1">Constant,</span> or <span class="span_1">Map</span> a value from your import file for the selected field. This value is used if the data does not meet the condition you are setting in your rule.</p>
+            <p><span class="span_1">Add/Modify/Delete:</span> To add a rule, click <span class="span_1">Add</span>; to modify a rule, click <span class="span_1">Modify</span>; to delete a rule, click <span class="span_1">Delete</span>. To add a rule:</p>
+            <p><span class="span_1">If Source Field:</span> The drop-down menu lists each column in the import file for selection. Choose the Source Field. </p>
+            <p><span class="span_1">Source Operation:</span> Choose the Source Operation, = (equals), &lt;&gt;, (not equal), LEN= (Length equals), LEN&lt; (Length is less than), LEN&gt; (Length is greater than), LEN&lt;&gt; (Length does not equal) from the drop-down menu. </p>
+            <p><span class="span_1">Source Test Value: </span>Type a value from the file you are importing. </p>
+            <p><span class="span_1">Then set Database Field to:</span> Type value to land in this field if the source test value is met. If no drop-down menu is available, type out the value precisely as you want it in <span class="span_1">Trams Back Office/ClientBase</span>.</p>
+            <p><span class="span_1">Reset: </span>To clear all settings, click <span class="span_1">Reset</span>.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_10__Importing_Data_to_Special_Dates_Fields" data-mc-generated-bookmark="TOC"></a><a name="Step10"></a>Step 10: Importing Data to Special Dates Fields</h3>
+            <p>Click <span class="span_1">Next</span> to get to the next screen in the Import Wizard, Special Dates Fields. Like the previous screens, this area has the capability of stamping all records in the file with an indicated value so that they all appear with that value in <span class="span_1">ClientBase</span>. By clicking <span class="span_1">View</span>, preview the file being imported. Review the data for accuracy.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_9.jpg" style="height: 416px;width: 524px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.8.jpg" class="img_1" />
+            </p>
+            <p><span>Add Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">ClientBase</span> field:</p>
+            <p><span class="span_1">Special Date Type:</span> Select from the drop down list of Special Date Types created in your <span class="span_1">ClientBase</span> database (e.g. Wedding Anniversary). Please note if the desired Special Date Type is not included within the drop down, you must first go to <span class="span_1">ClientBase</span>, and from <span>Global Defaults|General Setup|User Defined Fields</span>, select Special Date Types and add to the default drop-down list.</p>
+            <p><span class="span_1">Source Column:</span> Select the column within the file you are importing that represents the special date entries.</p>
+            <p><span class="span_1">Source Date Separator:</span> Select between /, -, or . to identify the format used within the date fields in your source file.</p>
+            <p><span class="span_1">Source Date Format:</span> Select from the following to identify the format used within the date fields in your source file.</p>
+            <p>mm/dd/yy</p>
+            <p>mm/dd/yyyy</p>
+            <p>dd/mm/yy</p>
+            <p>dd/mm/yyyy</p>
+            <p>yyyy/mm/dd</p>
+            <p>yy/mm/dd</p>
+            <p>yyyy/mm/dd</p>
+            <p>dd/mmm/yy</p>
+            <p>dd/mmm/yyyy</p>
+            <p>Based on these date settings the special date in your file is mapped to a separate Month, Day and Year field within the <span class="span_1">ClientBase</span> Special Dates record.</p>
+            <p><span>Add Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">ClientBase</span>, pick a value from a drop-down menu (if available); or type in a value to use for the selected field.</p>
+            <p><span class="span_1">Special Date Type:</span> Select from the drop down list of Special Date Types created in your <span class="span_1">ClientBase</span> database (e.g. Wedding Anniversary). Please note if the desired Special Date Type is not included within the drop down, you must first go to <span class="span_1">ClientBase</span>, and from <span>Global Defaults|General Setup|User Defined Fields</span>, select Special Date Types and add to the default drop-down list.</p>
+            <p><span class="span_1">Field Value: </span>Type the value you want used for this type.</p>
+            <p><span class="span_1">Source Date Separator:</span> Select between /, -, or . to identify the format used within the date fields in your source file.</p>
+            <p><span class="span_1">Source Date Format:</span> Select from the following to identify the format used within the date fields in your source file.</p>
+            <p>mm/dd/yy</p>
+            <p>mm/dd/yyyy</p>
+            <p>dd/mm/yy</p>
+            <p>dd/mm/yyyy</p>
+            <p>yyyy/mm/dd</p>
+            <p>yy/mm/dd</p>
+            <p>yyyy/mm/dd</p>
+            <p>dd/mmm/yy</p>
+            <p>dd/mmm/yyyy</p>
+            <p>Based on these date settings the special date in your file is mapped to a separate Month, Day and Year field within the <span class="span_1">ClientBase</span> Special Dates record.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_11__Importing_Data_to_Profile_Remarks" data-mc-generated-bookmark="TOC"></a><a name="Step11"></a>Step 11: Importing Data to Profile Remarks</h3>
+            <p>Click <span class="span_1">Next</span> to get to the next screen in the import wizard, <span class="span_1">ClientBase</span> Profile Remarks. Miscellaneous fields in your text file can be stored in the remarks folder in <span class="span_1">ClientBase</span>. By clicking <span class="span_1">View</span>, preview the file to import and review.</p>
+            <p><span>Add Map:</span> By clicking <span class="span_1">Map</span>, link a selected <span class="span_1">ClientBase</span> field with a Source Column from the text file you are importing. Field name represents the name of the field in <span class="span_1">ClientBase</span>. Source Column is the name of the data (or header) of the data being imported.</p>
+            <p><span>Add Constant:</span> By clicking <span class="span_1">Constant</span> after choosing a field from <span class="span_1">ClientBase</span>, choose a value from a drop-down menu (if available); or type in a value to use for the selected field.</p>
+            <p><span>Add Rule: </span>By clicking <span class="span_1">Rule</span>, setup a conditional "if...then" statement/s for the file being imported. </p>
+            <p><span class="span_1">Field Name:</span> This field is hard-coded and is displaying the selected <span class="span_1">ClientBase</span> field on which the rule is being written.</p>
+            <p><span class="span_1">Default Value: </span>Choose a value from a drop-down menu if this option is available. Otherwise, type in a value to use by choosing <span class="span_1">Constant,</span> or <span class="span_1">Map</span> a value from the import file for the selected field. This value is used if the data does not meet the condition you set up in the rule.</p>
+            <p><span class="span_1">Add/Modify/Delete: </span>To add a rule, click <span class="span_1">Add</span>; to modify a rule, click <span class="span_1">Modify</span>; to delete a rule, click <span class="span_1">Delete</span>. To add a rule:</p>
+            <p><span class="span_1">If Source Field:</span> The drop-down menu lists each column in the import file for selection. Choose the Source Field. </p>
+            <p><span class="span_1">Source Operation:</span> Choose the Source Operation, = (equals), &lt;&gt;, (not equal), LEN= (Length equals), LEN&lt; (Length is less than), LEN&gt; (Length is greater than), LEN&lt;&gt; (Length does not equal) from the drop-down menu. </p>
+            <p><span class="span_1">Source Test Value: </span>Type a value from the file you are importing. </p>
+            <p><span class="span_1">Then set Database Field to:</span> Type value to fill this field if the source test value is met. If no drop-down menu is available, type out the value precisely as you want it in <span class="span_1">ClientBase</span>.</p>
+            <p><span class="span_1">Reset: </span>To clear all settings, click <span class="span_1">Reset</span>.</p>
+            <p>&#160;</p>
+            <h3><a name="Step_12__View_Profile_Import_Update_Summary_Screen" data-mc-generated-bookmark="TOC"></a><a name="Step12"></a>Step 12: View Profile Import/Update Summary Screen</h3>
+            <p>Once the remarks table value(s) have been selected, click<span class="span_1"> Next</span> to get to the last screen in the import wizard. This screen provides a complete summary of all your import wizard selections.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/importing profiles from other_10.jpg" style="height: 370px;width: 495px;" alt="http://static.trams.com/tbo36/images/Importing.05.1.9.jpg" class="img_1" />
+            </p>
+            <p><span>Printer Setup: </span>Click <span class="span_1">Printer Setup</span> to select printer options for printing out the summary sheet. </p>
+            <p><span>Print:</span> Click <span class="span_1">Print</span> to print out the summary sheet.</p>
+            <p><span>Copy:</span> Click here to copy the summary sheet to the Windows clipboard. Go to any other program to paste.</p>
+            <p><span>Save Map: </span>Click <span class="span_1">Save Map</span> to save the mappings. Browse to location to save the mapping. That way the next time you import a similar file, load the saved map and save lots of time.</p>
+            <p><span>Cancel:</span> Click <span class="span_1">Cancel</span> to abort the import process.</p>
+            <p><span>Previous:</span> Click <span class="span_1">Previous</span> to go back one screen.</p>
+            <p><span>Finish</span>: Click <span class="span_1">Finish</span> to complete the import process.</p>
+            <p>Once the import is completed view a screen of statistics stating how many profiles were inserted, updated, or skipped.</p>
+            <p class="p_37">Check for Accuracy of Import</p>
+            <p>By using Level 2 Query in the Profile Manager, search for all profiles with a <span class="span_1">Create Date</span>, <span>From </span>today and <span>To </span>today, or stamp some other constant in records with which to Query. Review newly imported profile data and verify that all information was imported properly. </p>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;<span class="VariablesPhoneNumber">310-641-8726</span> — <span class="VariablesTBO Option">Option 1</span></p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.TBOSupport@sabre.com?subject=TBO content">Trams.TBOSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © <span class="VariablesCurrentYear">2020</span> <span class="VariablesCompanyName">Trams Inc.</span> </p>
+        </MadCap:pageFooter>
+    </body>
+</html>

@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>&#160;Maintaining a General Ledger in Trams Back Office</title>&#160;<link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="resources/stylesheets/stylesheet.css" rel="stylesheet" /><script src="../Resources/Scripts/custom.modernizr.js"></script><script src="../Resources/Scripts/jquery.min.js"></script><script src="../Resources/Scripts/require.min.js"></script><script src="../Resources/Scripts/require.config.js"></script><script src="../Resources/Scripts/foundation.min.js"></script><script src="../Resources/Scripts/plugins.min.js"></script><script src="../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <p style="text-align: right;">
+            <img src="resources/images/tramsbackoffice.png" class="img_header" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="VariablesProduct">Trams Back Office</span> <span class="VariablesVersion no">4.09.00</span> - <span class="VariablesType">New Features and Enhancements</span></p>
+        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="VariablesNewDateTimeVariable">Sep, 2020</span> </p>
+        <p>&#160;</p>
+        <div role="main" id="mc-main-content">
+            <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_10_General_Ledger"></a>Chapter 10: General Ledger</span>
+            </p>
+            <h1><a name="General_Ledger" data-mc-generated-bookmark="TOC"></a><a name="kanchor50"></a>General Ledger</h1>
+            <p class="p_16">This chapter contains the following sections:</p>
+            <blockquote>
+                <ul style="list-style-type: square;">
+                    <li value="1"><span class="span_1">Maintaining a GL in Trams Back Office </span>
+                    </li>
+                    <li value="2"><span class="span_1">General Ledger Query Feature </span>
+                    </li>
+                    <li value="3"><span class="span_1">Journalized by Transaction vs. Through End of Period</span>
+                    </li>
+                    <li value="4"><span class="span_1">End of Period Journal Entry (Full and Pseudo)</span>
+                    </li>
+                    <li value="5"><span class="span_1">Journal Entry</span>
+                    </li>
+                    <li value="6"><span class="span_1">Budget Entry </span>
+                    </li>
+                    <li value="7"><span class="span_1">Year End</span>
+                    </li>
+                    <li value="8"><span class="span_1">Voiding End of Period and Year End</span>
+                    </li>
+                    <li value="9"><span class="span_1">Accounts </span>
+                    </li>
+                    <li value="10"><span class="span_1">Generate Budget</span>
+                    </li>
+                    <li value="11"><span class="span_1">G/L Account Reconciliation</span>
+                    </li>
+                </ul>
+            </blockquote>
+            <h2><a name="Maintaining_a_General_Ledger_in_Trams_Back_Office" data-mc-generated-bookmark="TOC"></a><a name="Maintaining_a_General_Ledger_in_Trams_Back_Office" data-mc-generated-bookmark="TOC"></a><a name="kanchor227"></a>Maintaining a General Ledger in Trams Back Office</h2>
+            <p>The <span class="trams">Trams</span> Back Office system includes a fully integrated General Ledger. Because the General Ledger is a direct by-product of the Four Core Reports, its successful implementation in <span class="trams">Trams Back Office </span>is key. This chapter outlines using the General Ledger in <span class="trams">Trams Back Office</span>.</p>
+            <p>The General Ledger is active the day the first invoice or payment is entered in <span class="trams">Trams Back Office</span>. The system makes it easy by automatically recording all the journal entries associated with every invoice, refund, client payment made or received, vendor payments made or received, and ARC/BSP settlement payments. <span class="trams_1">Trams Back Office </span><span>sends these journal entries to the general ledger with one routine called “End of Period.” </span>Learn more about the End of Period journal entries in this chapter. The only journal entries not included in the End of Period routine are those associated with bank withdrawals, and payments received or made using a Profile Type or Pay Method of “Other.” These types of transactions require journal entries transaction by transaction.</p>
+            <p>What follows is a basic overview on integrating the invoice and payment entries into the General Ledger. These procedures are only recommendations, and are designed to be simple and basic. An accountant is still recommended for review, adjustments, taxes and year-end closings. Any variations (and the level of detail) are entirely up to each agency and the user’s level of experience with accounting. It’s a good idea to confirm decisions with the agency’s accountant.</p>
+            <h2><a name="Query_-_Retrieving_an_Existing_JE" data-mc-generated-bookmark="TOC"></a><a name="Query_-_Retrieving_an_Existing_JE" data-mc-generated-bookmark="TOC"></a><a name="kanchor228"></a><span class="Heading2Char">Query</span> - Retrieving an Existing JE</h2>
+            <p>
+                <img src="resources/images/chapter 1 welcome/query retrieving an existing_516x386.png" style="width: 516;height: 386;" class="img_1" />
+            </p>
+            <p />
+            <p>Using Query, retrieve a previously entered journal entry. The fields displayed above identify the criteria by which a journal entry can be located. Use each of these fields captured within a journal entry to locate a journal entry. The more criteria entered in Query, the more selective the search for matching journal entries becomes. Enter the criteria available or applicable and the system provides a complete listing of journal entries matching that criteria.</p>
+            <p>For example, if the only criteria entered into the Query screen is the Journal Entry Type of End of Period, a listing of all End of Period journal entries ever created is displayed in the order they were created by JE number for selecting. If, in addition to the Journal Entry Type, an Activity Date is completed, then the list is narrowed and only includes End of Period journal entries created within that time frame.</p>
+            <p><strong class="bold_arial">NOTES</strong><span class="span_1">:</span> </p>
+            <p>Activity Date and Posting Date automatically default the To field to whatever is entered into the From field. This allows for quick retrieval by Date, or enter ranges.</p>
+            <p>To query by a debit or credit amount range, enter a range in the <span class="span_1">Amount from and to.</span></p>
+            <p>To the right of the <span class="span_1">Remarks</span> field is a separate field with selection options or operators: Is Equal To, Is Not Equal To, Is Blank, Is Not Blank, Starting With, Contains, In, and Not In. These operators help to more narrowly define the search. (When doing searches on fields containing “wildcard” search criteria using the selections of “IN” and “NOT IN," it is desired for the field to contain the complete string entered between the delimiters or the exact match). In other words, In and Not In works like Is Equal to or Is Not Equal to except that the list of values when using In and Not In when separated by a comma will search for each value in the list. The entire text would need to match exactly for Is Equal to or Is Not Equal to.</p>
+            <p>Buttons on the right side of the screen are also broken into two sections. <span class="span_1">Query, Reset, Count, Sort by, Columns</span>, <span class="span_1">View Detail </span>and <span class="span_1">Default</span> are </p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/query retrieving an existing.jpg" style="height: 241px;width: 115px;" class="img_1" />
+            </p>
+            <p><span class="span_1">Reset</span> clears away any previous query criteria in the General and Advanced tab.</p>
+            <p><span class="span_1">Count</span> gives the number of items that match the query criteria.</p>
+            <p><span class="span_1">Columns</span> is used to select which columns of data to display in the results screen. Click <span class="span_1">Columns</span> and choose the columns displayed by highlighting the column in the <span class="span_1">Available Fields</span> and clicking the left arrow to move it over to <span class="span_1">Displayed Fields</span>. Using the red up and down arrows, put the column in the order wanted to appear on the results screen. Click <span class="span_1">Save Settings </span>and <span class="span_1">OK. </span>Go to the results screen and size the columns. Go back into <span class="span_1">Columns, </span>click <span class="span_1">Save Settings </span>and <span class="span_1">OK</span> to save (make sure to select sorts before saving).</p>
+            <p><span class="span_1">Drag and drop the columns</span> to re-position them on the results screen if desired. Do this by clicking on the column to move, holding down the left mouse button, and sliding the column to any position on the query screen. To place a column to the right or left of any existing column, stop on the column to the right or left and release the mouse. The moved column is inserted in the correct place. Go into <span class="span_1">Columns, </span>click <span class="span_1">Save Settings </span>and <span class="span_1">OK </span>to save.</p>
+            <p><span class="span_1">View Detail </span>is similar to how the button works in the invoice query screen, when View Detail is selected, the details of each journal entry screen are now displayed in the query results grid. The query results default to the traditional summary view, when the view detail button is clicked the results changes to list each item in journal entry separately.</p>
+            <p><span class="span_1">Default </span>is where to save queries and filters in the query following these directions:</p>
+            <p>1. Change the selection criteria on the results screen for the new query to save.</p>
+            <p>2. Click <span class="span_1">Default</span>.</p>
+            <p>3. Type in the new query name in the <span class="span_1">Setting Name</span> field.</p>
+            <p>4. If this saved query is the default, at the top of the drop-down window, check <span class="span_1">Set As Default</span>.</p>
+            <p>5. Select <span class="span_1">Per User</span> (on this one workstation only) or Global (on everyone’s sets).</p>
+            <p>6. Click <span class="span_1">OK</span> to save.</p>
+            <p>To remove a saved query from the list, check the <span class="span_1">Remove the Current Named Setting</span> box, click <span class="span_1">OK </span>and the saved query is no longer available for use in the drop down field.</p>
+            <p>Once the listing of matching journal entries is displayed through Query, any journal entry can be added <span class="span_1">(New)</span>, viewed <span class="span_1">(View)</span>, copied<span class="span_1"> (Copy),</span> printed (<span class="span_1">Print JE) </span>or (<span class="span_1">Print Query) or </span>voided <span class="span_1">(Void)</span>.</p>
+            <h3><a name="Selecting_Queried_Journal_Entries" data-mc-generated-bookmark="TOC"></a><a name="Selecting_Queried_Journal_Entries" data-mc-generated-bookmark="TOC"></a>Selecting Queried Journal Entries</h3>
+            <p>To select a Journal Entry to view or modify, once the listing of matching journal entries is displayed on the screen, either double click the item or highlight the appropriate journal entry and click <span class="span_1">View</span>. <strong class="bold_arial">Note</strong>: If the journal entry was created from within a payment entry, <span class="span_1">Trams Back Office </span>suggests retrieving the payment to view the journal entry.</p>
+            <p><span>Tip: </span>Use Ctrl-PgDn/Ctrl-PgUp to access next or previous payment.</p>
+            <h3><a name="Updating_One_or_Multiple_J_E’s_Remarks_Simultaneously" data-mc-generated-bookmark="TOC"></a><a name="Updating_One_or_Multiple_J_E’s_Remarks_Simultaneously" data-mc-generated-bookmark="TOC"></a>Updating One or Multiple J/E’s Remarks Simultaneously</h3>
+            <p>By clicking <span class="span_1">View, </span>edit a Journal Entry remark and click <span class="span_1">Update. </span>Multiple remarks can be updated simultaneously (provided the same remark applies to multiple journal entry line items. Select multiple lines in the J/E screen at once by using Control/Click or Shift/Click. When multiple lines are selected, all of the fields at the top of the screen except Remarks and Detail Group are disabled. After entering a remark and/or a detail group, pressing update will update all of the selected line items. When only one line is selected, the screen works as it does now, and the global modify button is disabled.<br /></p>
+            <h3><a name="Copying_Queried_Journal_Entries" data-mc-generated-bookmark="TOC"></a><a name="Copying_Queried_Journal_Entries" data-mc-generated-bookmark="TOC"></a>Copying Queried Journal Entries</h3>
+            <p>To copy information from an existing journal entry as defaults into a new journal entry, highlight the appropriate journal entry to be copied, and click <span class="span_1">Copy</span>. The system displays a new journal entry record with all defaults completed from the copied journal entry. </p>
+            <p><strong class="bold_arial">Tip</strong><span>:</span> The date does not default to the copied journal entry's date but instead defaults to the <span class="span_3">system</span> date. Add, change or delete any of the journal entry lines by highlighting the line, making the change, and electing <span class="span_1">Add, Update, </span>or<span class="span_1"> Delete</span>. This shortcut may come in handy for quickly entering recurring journal entries, such as depreciation tables and budgets. If combined with the ability to Query by Journal Entry code, recurring journal entries are quickly captured into <span class="span_1">Trams Back Office</span>.</p>
+            <h3><a name="Print_Journal_Entry" data-mc-generated-bookmark="TOC"></a><a name="Print_Journal_Entry" data-mc-generated-bookmark="TOC"></a>Print Journal Entry</h3>
+            <p>To void and reenter a Journal Entry, use the Print JE button to take a snap shot of the entry to use as a reference for data entry. </p>
+            <p>1. Query the Journal Entry. </p>
+            <p>2. Click the Journal Entry to highlight the selection.</p>
+            <p>3. Click <span class="span_1">Print JE</span>.</p>
+            <h3><a name="Print_Query" data-mc-generated-bookmark="TOC"></a><a name="Print_Query" data-mc-generated-bookmark="TOC"></a>Print Query</h3>
+            <p>Use <span class="span_1">Print Query</span> to print out the isolated list created in the Journal Entry query screen. Select what Journal Entries are to be printed by using SHIFT and CTRL.</p>
+            <h3><a name="Right-Mouse_Click_Menu_in_Journal_Entry_Query" data-mc-generated-bookmark="TOC"></a><a name="Right-Mouse_Click_Menu_in_Journal_Entry_Query" data-mc-generated-bookmark="TOC"></a>Right-Mouse Click Menu in Journal Entry Query </h3>
+            <p class="p_12">
+                <img src="resources/images/chapter 1 welcome/updating one or multiple j.jpg" style="height: 104px;width: 87px;" class="img_1" />
+            </p>
+            <p><span>New -</span> create a new journal entry.</p>
+            <p><span>View</span> the journal entry.</p>
+            <p><span>Void</span> the journal entry.</p>
+            <p><span>Copy</span> the journal entry.</p>
+            <p><span>Print JE</span> - prints the journal entry.</p>
+            <h3><a name="Sorting_Journal_Entry_Data" data-mc-generated-bookmark="TOC"></a><a name="Sorting_Journal_Entry_Data" data-mc-generated-bookmark="TOC"></a>Sorting Journal Entry Data</h3>
+            <p>Sort data in all query screens in two ways:</p>
+            <p>1. “Quick” sort by one field by clicking on a column in the results screen. The first time click sorts the column in ascending order (first to last or earlier date to more current date), and clicking on the same column a second time sorts in descending order (last to first or current date to earlier date). </p>
+            <p>2. Sort in Ascending or Descending order by up to 3 columns. When clicking <span class="span_1">Sort By</span>, select the first, second or third column sort and what order (ascending or descending) the data is to be displayed. Enter the selection criteria and click <span class="span_1">Save Settings</span> and <span class="span_1">OK</span>.</p>
+            <h3><a name="Voiding_a_JE-_If_Record_Number_is_Known" data-mc-generated-bookmark="TOC"></a><a name="Voiding_a_JE-_If_Record_Number_is_Known" data-mc-generated-bookmark="TOC"></a>Voiding a JE- If Record Number is Known</h3>
+            <p>1. Click <span>General Ledger|Query</span>.</p>
+            <p>2. Type in the record number of the journal entry being voided. Click <span class="span_1">Query</span> to process. </p>
+            <p>3. Click and highlight the journal entry and click <span class="span_1">Void</span>.</p>
+            <p>4. <span class="span_1">Trams Back Office </span>prompts, <span class="span_1">Void This Journal Entry</span>? Click <span class="span_1">YES</span>.</p>
+            <h3><a name="Void_if_the_JE’s_Record_Number_is_Not_Known" data-mc-generated-bookmark="TOC"></a><a name="Void_if_the_JE’s_Record_Number_is_Not_Known" data-mc-generated-bookmark="TOC"></a>Void if the JE’s Record Number is Not Known</h3>
+            <p>1. Click <span>General Ledger|Query</span>.</p>
+            <p>2. Query by any one (or more) of the fields shown. (It is best not to fill in all of the fields. Usually two or three are sufficient.)</p>
+            <p>3. In the <span class="span_1">Journal Entry Type</span> field, click the arrow to see a list of types of journal entries to void. Choices are <span class="span_1">Normal</span>, <span class="span_1">End-of-Period</span>, <span class="span_1">Year-End, Recurring,</span><span class="span_1">Budget, </span>or choose <span class="span_1">All</span>.</p>
+            <p>4. In the <span class="span_1">Status</span> field, change the status to read <span class="span_1">Unposted</span>.</p>
+            <p>5. In the <span class="span_1">Activity Date</span> field, enter the date or a date range in <span class="span_1">From</span> and <span class="span_1">To</span>, that the journal was dated.</p>
+            <p>6. Click <span class="span_1">Query</span> to process.</p>
+            <p>7. <span class="span_1">Trams Back Office </span>displays all matches. Click the correct journal entry, highlight it, and then click <span class="span_1">Void</span>. </p>
+            <p><span>Note: </span>End of Period and Year End entries <span class="span_1">cannot</span> be voided from this screen. See “Void End of Period and Year End Entries” section of this chapter.</p>
+            <p>8. <span class="span_1">Trams Back Office </span>prompts, <span class="span_1">Void This Journal Entry</span>? Click <span class="span_1">YES</span>.</p>
+            <p><strong class="bold_arial">Note</strong><span>:</span> When a journal entry is voided in <span class="span_1">Trams Back Office</span>, no history of that journal entry is maintained. The journal entry record is erased from the system. If the journal entry was created from within a payment, also void the payment. <span class="span_1">Trams Back Office </span>suggests in this situation to void the payment and the system automatically voids the journal entry.</p>
+            <h2><a name="Journalized_by_Transaction_vs._Journalized_Through_the_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Journalized_by_Transaction_vs._Journalized_Through_the_End_of_Period" data-mc-generated-bookmark="TOC"></a>Journalized by Transaction vs. Journalized Through the End of Period</h2>
+            <h3><a name="Invoices" data-mc-generated-bookmark="TOC"></a><a name="Invoices" data-mc-generated-bookmark="TOC"></a>Invoices</h3>
+            <p>One purpose for entering invoices into <span class="span_1">Trams Back Office </span>is to maintain sales figures which are reflected in a report called the<span class="span_1"> Invoice Activity Report</span>. Sales and Cost of Sales (or Gross and Net) are reflected on the Invoice Activity Report and are printed for any specified period. Another reason for entering Invoices into <span class="span_1">Trams Back Office</span> is to create the Client, Vendor and ARC/BSP Balances passed through the agency as a result of these Sales and Cost of Sales. The Client Balances are created from the Total Fare or Sales figure and the vendor and/or ARC/BSP Balances are created from the Net Fare or Cost of Sale.</p>
+            <p>Instead of updating Sales, Cost of Sales, Client, Vendor and ARC/BSP Balance accounts within the General Ledger each time an invoice is entered, <span class="span_1">Trams Back Office </span>updates these accounts once through the “End of Period” journal entry. Therefore, during the period, invoices can be entered, modified, and voided with no effect on the General Ledger until the End of Period journal entry is created.</p>
+            <p>In the world of accounting, there are always at least two GL Accounts to every journal entry. In the case of Invoices, the Total Fare updates the Sales accounts and Accounts Receivable (Client Balances) and the Net Fare updates the Cost of Sales accounts and the Accounts Payable (Vendor and/or ARC/BSP Balances). In the case of payments affecting the bank account, one side updates the bank balance and the other side is a General Ledger account which indicates the description of the payment itself (what it was for).</p>
+            <h3><a name="Payments" data-mc-generated-bookmark="TOC"></a><a name="Payments" data-mc-generated-bookmark="TOC"></a>Payments</h3>
+            <p>In Trams Back Office, there are five types of payments received and made. Selecting the <span class="span_1">Profile Type</span> when entering a payment determines which reports will be affected. </p>
+            <table class="table_1">
+                <col style="width: 118pt;" />
+                <col style="width: 225pt;" />
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">Profile Type</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Report Affected</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_5">Client</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_5">Core/Client Balances</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_5">Vendor</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_5">Core/Vendor Balances</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_5">Agent</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_5">Prompts user to enter a Journal Entry</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_5">Other</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_5">Prompts user to enter a Journal Entry</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Each of these payments also update the bank balance.</p>
+            <table class="table_1">
+                <col style="width: 63pt;" />
+                <col style="width: 407pt;" />
+                <tr>
+                    <td colspan="2" class="td_1">
+                        <h4><a name="Payment_Types" data-mc-generated-bookmark="TOC"></a><a name="Payment_Types" data-mc-generated-bookmark="TOC"></a>Payment Types</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_4">Client </p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_5">Entering client payments updates specific client account balances and are either applied to specific ARC/BSP and Supplier type invoices or turned into a voucher, as a credit on the client's account. To maintain accurate client balances, all invoices and client payments received and made must be entered into Trams Back Office.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_4">Vendor</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_5">Entering vendor payments updates specific vendor account balances and are usually applied to invoices containing a <span class="span_1">Submit to</span> of <span class="span_1">Supplier</span>. To maintain accurate vendor balances, all Supplier type invoices, as well as all Vendor payments received and made, must be entered into Trams Back Office. </p>
+                        <p class="p_5">Entering Vendor payments received where the <span class="span_1">Submit To</span> field in an invoice contains <span class="span_1">Comm Track,</span> clears any commission tracking bookings. Vendor Statements (<span>Reports|Vendor|Statements</span>) are maintained by applying vendor payments to open Comm Track bookings. Comm Track-type bookings do not update the General Ledger until a Vendor-Comm Track payment has been applied to a booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_4">Agent </p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_5">Payments Received and Made with a Profile Type of Agent do not link to a Sale or Refund invoice, hence, the user is prompted to create a journal entry. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_4">Other</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_5">Payments Received or Made with a Profile Type of Other do not relate to Sale or Refund invoices, hence the user is prompted to create a journal entry; i.e., agency expenses and uninvoiced receipts.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_4">ARC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_5">Approximately ten days after submitting the ARC/BSP report, ARC/BSP either deposits or withdraws payment to/from the bank account. See the section ARC/BSP Settlement. Upon completing the ARC/BSP Settlement, all airline vendor account balances are updated, bank balances are automatically updated accordingly. </p>
+                    </td>
+                </tr>
+            </table>
+            <p>All Invoices and any payments attached to invoices update the General Ledger when an End of Period posting is performed (<span>General Ledger|End of Period</span>). Trams Back Office recommends creating an End of Period for each month or each accounting period, if using 13-period accounting. </p>
+            <p>Any payments entered with a Profile Type of Other or Pay Method of <span class="span_1">Other</span> triggers a prompt to complete the journal entry (journalized by transaction). The payment type of <span class="span_1">Withdrawal</span> is also journalized by transaction. Journal Prompting Options can be found under the <span>Utilities|Setup|Global Defaults/Prompt</span> tab. The prompting option choices are: <span class="span_1">Always, Recommended, Never</span>.</p>
+            <p><span>IMPORTANT!</span> Because the End of Period journal entry is a summarized posting of the total balance from the Four Core Reports (Client Balances, Vendor Balances, ARC/BSP Balances and Check Register), the key to creating an accurate End of Period journal entry is to first verify that the detail contained on each of the Core Reports are accurate. If any of the four Core reports is not accurate, the End of Period Journal entry will also be inaccurate. </p>
+            <h2><a name="Example_Journal_Entries_by_Transaction" data-mc-generated-bookmark="TOC"></a><a name="Example_Journal_Entries_by_Transaction" data-mc-generated-bookmark="TOC"></a><a name="kanchor229"></a>Example Journal Entries by Transaction</h2>
+            <h4><a name="All_Payments_Made_to_Other_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a><a name="All_Payments_Made_to_Other_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a>All Payments Made to Other Entries Should Include</h4>
+            <table class="table_3">
+                <col style="width: 239pt;" />
+                <col style="width: 131pt;" />
+                <col style="width: 74pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Amount of check</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cash in bank 1000 series</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amount of check</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Proper offsetting acct</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit </p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="All_Payments_Received_From_Other_Should_include" data-mc-generated-bookmark="TOC"></a><a name="All_Payments_Received_From_Other_Should_include" data-mc-generated-bookmark="TOC"></a>All Payments Received From Other Should include</h4>
+            <table class="table_3">
+                <col style="width: 239pt;" />
+                <col style="width: 133pt;" />
+                <col style="width: 74pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Amount of check</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cash in bank 1000 series</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amount of check</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Proper offsetting acct</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit </p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="All_Bank_Withdrawals_Entered_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a><a name="All_Bank_Withdrawals_Entered_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a>All Bank Withdrawals Entered Entries Should Include</h4>
+            <table class="table_3">
+                <col style="width: 240pt;" />
+                <col style="width: 131pt;" />
+                <col style="width: 74pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of withdrawal</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cash In Bank 1000 series</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of withdrawal</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Proper Offsetting Account</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="All_Payments_Made_to_Clients_with_Pay_Method_of_Other_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a><a name="All_Payments_Made_to_Clients_with_Pay_Method_of_Other_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a>All Payments Made to Clients with <span class="span_1">Pay Method</span> of <span class="span_1">Other</span> Entries Should Include</h4>
+            <table class="table_3">
+                <col style="width: 239pt;" />
+                <col style="width: 132pt;" />
+                <col style="width: 74pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Client Balances 1100</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Proper Offsetting Account</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="All_Payments_Received_from_Clients_with_Pay_Method_of_Other_Entries_Should_In..." data-mc-generated-bookmark="TOC"></a><a name="All_Payments_Received_from_Clients_with_Pay_Method_of_Other_Entries_Should_In..." data-mc-generated-bookmark="TOC"></a>All Payments Received from Clients with <span class="span_1">Pay Method </span>of <span class="span_1">Other</span> Entries Should Include</h4>
+            <table class="table_3">
+                <col style="width: 241pt;" />
+                <col style="width: 131pt;" />
+                <col style="width: 74pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Client Balances 1100</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Proper Offsetting Account</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="All_Payments_Made_to_Vendors_with_Pay_Method_of_Other_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a><a name="All_Payments_Made_to_Vendors_with_Pay_Method_of_Other_Entries_Should_Include" data-mc-generated-bookmark="TOC"></a>All Payments Made to Vendors with <span class="span_1">Pay Method</span> of <span class="span_1">Other</span> Entries Should Include</h4>
+            <table class="table_3">
+                <col style="width: 243pt;" />
+                <col style="width: 130pt;" />
+                <col style="width: 74pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Vendor Balances 2000</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Proper Offsetting Account</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;</p>
+            <h4><a name="All_Payments_Received_from_Vendors_with_Pay_Method_of_Other_Entries_Should_In..." data-mc-generated-bookmark="TOC"></a><a name="All_Payments_Received_from_Vendors_with_Pay_Method_of_Other_Entries_Should_In..." data-mc-generated-bookmark="TOC"></a>All Payments Received from Vendors with <span class="span_1">Pay Method </span>of <span class="span_1">Other </span>Entries Should Include</h4>
+            <table class="table_3">
+                <col style="width: 244pt;" />
+                <col style="width: 130pt;" />
+                <col style="width: 74pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Vendor Balances 2000</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amt of payment</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Proper Offsetting Account</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <h2><a name="Example_Journal_Entries_by_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Example_Journal_Entries_by_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="kanchor230"></a>Example Journal Entries by End of Period</h2>
+            <p>Invoices affect Sales/Cost of sales in the Income Statement. The submit to field and travel type fields in each invoice determine what effect will take place through an End of Period posting. Payments received and made (for all profile types except Other and Payment Methods of Other) affect Accounts Receivables (Client Balances) and Accounts Payables (Vendor Balances) through the End of Period posting. Profile type of Other and Pay method of Other prompt for a journal entry and hit the General Ledger automatically.</p>
+            <h4><a name="Submit_to_ARC_Invoices_Journal_Entries_Created_by_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Submit_to_ARC_Invoices_Journal_Entries_Created_by_End_of_Period" data-mc-generated-bookmark="TOC"></a>Submit to <span class="span_1">ARC </span>Invoices Journal Entries Created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 297pt;" />
+                <col style="width: 98pt;" />
+                <col style="width: 43pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Total fare amount in the invoice for the appropriate travel type for the <span>date of issuance.</span></p>
+                    </td>
+                    <td class="td_60">
+                        <p>Sales 4000’s</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Difference of the total fare less commission with appropriate travel type for the <span>date of issuance.</span></p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cost of Sales 5000’s</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amount of the total fare in the invoice.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Client Balances 1100 (A/R)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Difference between the total fare and commission amounts.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>ARC Balances 2010</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="p_12">&#160;</p>
+            <h4><a name="Submit_to_Supplier_Invoices_Journal_Entries_Created_by_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Submit_to_Supplier_Invoices_Journal_Entries_Created_by_End_of_Period" data-mc-generated-bookmark="TOC"></a>Submit to <span class="span_1">Supplier </span>Invoices Journal Entries Created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 292pt;" />
+                <col style="width: 103pt;" />
+                <col style="width: 43pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Total fare amount in the invoice for the appropriate travel type with the <span>date of issuance.</span></p>
+                    </td>
+                    <td class="td_60">
+                        <p>Sales 4000’s</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Difference of the total fare less commission for the same travel type with the <span>data of issuance.</span></p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cost of Sales 5000’s</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amount of the total fare in the invoice.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Client Balances 1100 (A/R)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Difference between the total fare and commission amounts.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Vendor Balances 2000 (A/P)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="p_12">&#160;</p>
+            <h4><a name="Submit_to_Commission_Track_Invoices_Journal_Entries_Created_by_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Submit_to_Commission_Track_Invoices_Journal_Entries_Created_by_End_of_Period" data-mc-generated-bookmark="TOC"></a>Submit to <span class="span_1">Commission Track </span>Invoices Journal Entries Created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 317pt;" />
+                <col style="width: 79pt;" />
+                <col style="width: 42pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Total fare amount in the invoice for the appropriate travel type with the <span>date of vendor payment </span>(the date payment was received).</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Sales 4000’s</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Difference of the total fare and commission for the appropriate travel type with the <span>data of the vendor payment.</span></p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cost of Sales 5000’s</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="p_12">&#160;</p>
+            <h4><a name="Payment_Received_with_Profile_Type_Client_and_Pay_Method_of_Cash_or_Check_JE’..." data-mc-generated-bookmark="TOC"></a><a name="Payment_Received_with_Profile_Type_Client_and_Pay_Method_of_Cash_or_Check_JE’..." data-mc-generated-bookmark="TOC"></a>Payment Received with Profile Type <span class="span_1">Client </span>and Pay Method of <br />C<span class="span_1">ash or </span><span class="span_1">C</span><span class="span_1">heck</span> JE’s Created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 228pt;" />
+                <col style="width: 164pt;" />
+                <col style="width: 46pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Payment amount entered.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Client Balances 1100 (A/R)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Payment amount entered.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cash in Bank 1000 Series</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="p_12">&#160;</p>
+            <h4><a name="Payment_Received_with_Profile_Type_Vendor_Supplier_and_Pay_Method_Cash_or_Che..." data-mc-generated-bookmark="TOC"></a><a name="Payment_Received_with_Profile_Type_Vendor_Supplier_and_Pay_Method_Cash_or_Che..." data-mc-generated-bookmark="TOC"></a>Payment Received with Profile Type <span class="span_1">Vendor Supplier </span>and Pay Method <br />C<span class="span_1">ash or </span><span class="span_1">C</span><span class="span_1">heck</span> JE’s created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 228pt;" />
+                <col style="width: 162pt;" />
+                <col style="width: 48pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Payment amount entered.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cash in Bank 1000 Series</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Payment amount entered</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Vendor Balances 2000 (A/P) </p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Payment_Received_with_Profile_Type_Vendor_Comm_Track_and_Pay_Method_Cash_or_C..." data-mc-generated-bookmark="TOC"></a><a name="Payment_Received_with_Profile_Type_Vendor_Comm_Track_and_Pay_Method_Cash_or_C..." data-mc-generated-bookmark="TOC"></a>Payment Received with Profile Type <span class="span_1">Vendor Comm Track </span>and Pay Method <br />C<span class="span_1">ash or </span><span class="span_1">C</span><span class="span_1">heck</span> JE’s Created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 277pt;" />
+                <col style="width: 119pt;" />
+                <col style="width: 43pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Total fare in the invoice (i.e. $400.00)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Sales 4000’s</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Difference between the total fare and commission for the appropriate travel type (i.e. $360.00)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Vendor Balances 2000 (A/P) </p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Amount of payment received.</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Cash in Bank 1000 Series</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;</p>
+            <h4><a name="Payment_Received_with_Profile_Type_Client_and_Pay_Method_CC_Merchant_JE’s_Cre..." data-mc-generated-bookmark="TOC"></a><a name="Payment_Received_with_Profile_Type_Client_and_Pay_Method_CC_Merchant_JE’s_Cre..." data-mc-generated-bookmark="TOC"></a>Payment Received with Profile Type <span class="span_1">Client </span>and Pay Method <span class="span_1">CC Merchant</span> JE’s <br />Created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 231pt;" />
+                <col style="width: 159pt;" />
+                <col style="width: 48pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Payment Amount</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Client Balances 1100 (A/R)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Payment Amount</p>
+                    </td>
+                    <td class="td_60">
+                        <p>CC Merchant 1150</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;</p>
+            <h4><a name="Payment_Made_with_Profile_Type_Supplier_and_Pay_Method_Cash_or_Check_JE’s_Cre..." data-mc-generated-bookmark="TOC"></a><a name="Payment_Made_with_Profile_Type_Supplier_and_Pay_Method_Cash_or_Check_JE’s_Cre..." data-mc-generated-bookmark="TOC"></a>Payment Made with Profile Type <span class="span_1">Supplier </span>and Pay Method <br />C<span class="span_1">ash or </span><span class="span_1">C</span><span class="span_1">heck</span> JE’s Created by End of Period</h4>
+            <table class="table_3">
+                <col style="width: 232pt;" />
+                <col style="width: 161pt;" />
+                <col style="width: 48pt;" />
+                <tr>
+                    <td class="td_60">
+                        <p>Payment Amount</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Client Balances 1100 (A/R)</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Credit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_60">
+                        <p>Payment Amount</p>
+                    </td>
+                    <td class="td_60">
+                        <p>Vendor Balances 2000 (A/P) </p>
+                    </td>
+                    <td class="td_60">
+                        <p>Debit</p>
+                    </td>
+                </tr>
+            </table>
+            <h2><a name="End_of_Period_Journal_Entry" data-mc-generated-bookmark="TOC"></a><a name="End_of_Period_Journal_Entry" data-mc-generated-bookmark="TOC"></a><a name="kanchor231"></a>End of Period Journal Entry</h2>
+            <p>The <span class="italic_1">End of Period</span> journal entry is created automatically when the user decides it’s time to create it by selecting <span>General Ledger|End of Period</span>. The system checks various management reports and takes the totals from those reports to create one large journal entry. This Journal Entry summarizes <span class="span_1">Sales, Client and Vendor Receipts and Disbursements</span>, and <span class="span_1">ARC/BSP payments</span> for the period. This journal entry eliminates the need to create separate journal entries for <span class="span_1">Invoices, Client and Vendor Payments</span>, and <span class="span_1">ARC/BSP payments</span>. </p>
+            <p>An <span class="span_1">End of Period</span> creates a single journal entry updating all <span class="span_1">Sales, Cost of Sales, Commission Income, Client Balances, Vendor Balances, ARC/BSP Balances</span> and <span class="span_1">Cash in Bank</span> General Ledger accounts based on invoice, client and vendor payments, and ARC/BSP payments created during the period. The first time the <span class="span_1">End of Period</span> is created, the system prompts for both <span class="span_1">From</span> and <span class="span_1">To</span> dates. All future <span class="span_1">End of Period</span> entries prompt only for a <span class="span_1">To</span> date, because the <span class="span_1">From</span> date is one day greater than the prior period's <span class="italic_1">To</span> date.</p>
+            <p>I<strong class="bold_arial">mportant Note: Although the End of Period creates a journal entry, as with any other journal entry entered into Trams Back Office, it is not posted to the General Ledger until the Posting routine is processed. See the section on Posting.</strong></p>
+            <p>Once creating an <span class="italic_1">End of Period</span> for a given month or accounting period, <span class="span_1">Trams Back Office </span>prohibits invoice or payment inputs or modifications within that period. As a result, any report can be printed, at any time, providing a detailed history (or audit trail) of figures used to create any <span class="italic_1">End of Period</span> Journal Entry. <span class="italic_1">Journal Entries, Bank Deposits,</span> and <span class="italic_1">Bank Withdrawals</span> can still be entered within the period.</p>
+            <p>To see a list of <span class="italic_1">End of Period</span> entries, print a <span class="italic_1">Journal Entry Analysis</span> report for <span class="italic_1">End of Period </span>entries.</p>
+            <p>If an <span class="italic_1">End of Period</span> entry is created in error or if corrections need to be made to invoices or payments, the <span class="italic_1">End of Period</span> can be voided. (See <span class="span_1">Voiding an End of Period.)</span></p>
+            <h3><a name="Full_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Full_End_of_Period" data-mc-generated-bookmark="TOC"></a>Full End of Period</h3>
+            <p><span>There are two types of End of Period entries, </span>Full End of Period and Pseudo EOP<span>. </span>Access the Full End of Period option by going to <span>General Ledger|End of Period</span>.</p>
+            <p>By default a Full End of Period is created, unless checking <span class="span_1">Pseudo EOP, see section below.) </span></p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/updating one or multiple j.png" style="height: 248px;width: 418px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p><span>Note: </span>Everyone is logged in automatically as Exclusive Access. Multiusers who are using TBO while a Full End of Period is being performed, receive a message warning them that they are locked out of the payment, invoice, etc. until the Full End of Period is completed. For this reason, multiusers may only want to use the Pseudo EOP option when doing some accounting tasks, until a final End of Period is performed. </p>
+            <p>Another error message received is <span class="span_1">Invalid G/L Number: 0. </span>If receiving this message, go to <span>Utilities|Setup|GL Accounts</span> and check the current setup. This error means that one or more of the fields in the <span>Utilities|Setup|GL Accounts</span> is blank. </p>
+            <p>The Full End of Period can be run and reversed, using the <span>General Led</span><span>ger|Void|End of Period</span>, as many times as necessary until journal entries are posted. A full End of Period must be created for each period in order to create a year end Journal Entry.</p>
+            <h3><a name="Supplier_Booking_Closed_by_CC_Can_Act_Like_a_Comm_Track_Booking" data-mc-generated-bookmark="TOC"></a><a name="Supplier_Booking_Closed_by_CC_Can_Act_Like_a_Comm_Track_Booking" data-mc-generated-bookmark="TOC"></a><a name="kanchor232"></a>Supplier Booking Closed by CC Can Act Like a Comm Track Booking</h3>
+            <p>Allow a Supplier booking closed by Credit Card to act like a Comm Track booking by modifying the End of Period so the sale is deferred until commission is received. To set up this feature:</p>
+            <p><span>Step 1:</span> Select a start date which should be at the beginning of an accounting period.</p>
+            <p><span>Step 2:</span> Verify that the accounting period prior to the start date is in balance and that the period is posted. </p>
+            <p><span>Step 3:</span> Select <span>General Ledger|Accounts</span> and create a GL account named Supplier CC Receivable in the 1000 series of accounts.</p>
+            <p><span>Step 4:</span> Select <span>Utilities|Setup|GL Accts|Others</span>. Next to the Supplier CC Receivable field, enter the GL account number that was created in Step 3.</p>
+            <p><span>Step 5:</span> Select <span>Utilities|Setup|Global Defaults|Prompt</span>. Change the Supplier C/C transaction in EOP field to <span class="span_1">Defer Sales Until Commission Received</span>.</p>
+            <p><span>Step 6:</span> Select <span>Reports|Report Generator| Print Report</span>. Print the Report Generator report, CL_TT_AS.RPT (Client Activity by Travel Type) with the following selection criteria.</p>
+            <p><span>Date Range: </span>Issue Date</p>
+            <p><span>Between: </span>Leave blank</p>
+            <p><span>And:</span> Enter the date one day prior to the start date</p>
+            <p><span>Invoice Type:</span> All</p>
+            <p><span>Submit To:</span> Supplier</p>
+            <p><span>Travel Type:</span> All</p>
+            <p><span>Invoice Payment Status Client:</span> Closed</p>
+            <p><span>Payment Method:</span> C/C</p>
+            <p><span>Invoice Payment Status Vendor:</span> Open</p>
+            <p><span>Step 7:</span> Select <span>General Ledger|Journal Entry</span> and create a journal entry dated one day prior to the start date. For each Travel Type listed on the report printed in <span>Step 6</span>, debit the appropriate Sales account for the Total Fare amount on the report, credit the appropriate Cost of Sales account for the Net Fare amount on the report, and credit the Supplier CC Receivable account for the Commission amount on the report.</p>
+            <h3><a name="Pseudo_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Pseudo_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="kanchor233"></a>Pseudo End of Period</h3>
+            <p>The other type of End of Period Entry is a <span>Pseudo End of Period. </span>This is used when using <span class="span_1">Trams Back Office</span> in Multiuser mode. This option creates an End of Period entry without disturbing other users. The entry the Pseudo End of Period creates is a “<span>Normal”</span> journal entry. Use this entry to view the financial and managerial reports in pseudo post. </p>
+            <p><strong class="bold_arial">IMPORTANT!</strong> When creating the Pseudo End of Period, there is a prompt to void the entry before creating another End of Period. Void this entry or it will distort the financial statements the next time an End of Period is run. To void a Pseudo End of Period, go to General-Ledger, Query.&#160; If you know the record number, enter that or you can type PS (standing for pseudo) into the Remarks field, then select query on the right.&#160; This bring ups all Pseudo EOP Entries. &#160;Highlight the Pseudo EOP, and select Void.</p>
+            <p>&#160;</p>
+            <h2><a name="Journal_Entry" data-mc-generated-bookmark="TOC"></a><a name="Journal_Entry" data-mc-generated-bookmark="TOC"></a><a name="kanchor234"></a>Journal Entry</h2>
+            <p>Journal Entries are created and then posted to the General Ledger, thereby updating the balances in specific General Ledger accounts. Since most day–to–day journal entries are created automatically from invoice and payment input, individual journal entries entered here are used primarily for adjusting or correcting entries.</p>
+            <p class="p_39">Entering Journal Entries</p>
+            <p>1. To create new journal entries from the General Ledger menu, select <span class="span_1">Journal Entries</span>, or from the <span class="span_1">Journal Entry Query </span>screen, click on <span class="span_1">New</span>, then select <span class="span_1">Journal Entry:</span></p>
+            <p>2. Select the desired settings.</p>
+            <p><span class="span_1">Trams Back Office </span>also prompts for specific Journal Entry line items:</p>
+            <table class="table_1">
+                <col style="width: 87pt;" />
+                <col style="width: 380pt;" />
+                <tr>
+                    <td class="td_61">
+                        <p class="p_81">Journal Entry Code</p>
+                    </td>
+                    <td class="td_62">
+                        <p class="p_81">For recurring journal entries a Journal Entry Code can be assigned here for future selection in the Query screen and for easy duplication.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_4">Activity Date</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Type in the date of the financial period to appear.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_4">Group</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">A GL Group created in <span>Utilities|Setup|Groups</span> can lump together multiple JE entries for reporting purposes. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_4">Remark</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Remarks are for reference. They appear on all General Ledger historical reports and apply to this entire Journal Entry.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;</p>
+            <table class="table_1">
+                <col style="width: 68pt;" />
+                <col style="width: 399pt;" />
+                <tr>
+                    <td colspan="2" class="td_63">
+                        <p class="p_7"><span>Table 1:</span><span>&#160;Journal Entry line items</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_61">
+                        <p class="p_81">Account Name /Number</p>
+                    </td>
+                    <td class="td_62">
+                        <p class="p_81">A specific G.L. account can be identified by either Account #, or Name. Enter all or part of either # or name and Trams Back Office presents a pull-down list of all matches, and allows for selection from that list. If Account Number is entered completely, Trams Back Office selects the specified account without prompting for Name.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_4">Branch </p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5"><span class="span_1">Trams Back Office </span>allows a branch specifier on journal entry lines where the account number is in the 4000-9999 range. This branch specifier is used when printing an Income Statement for a particular GL branch. Any GL branches are shown under<span> Utilities|Branch Numbers</span><span class="span_1">.</span> (<strong class="bold_arial">Note</strong>: Under <span>Utilities|Global Defaults</span><span class="span_1">, </span>remember to set the <span class="span_1">Branch</span> option to FULL.)If the system is set up for Multiple Balance Sheets, enter a specified branch for accounts in the 1000-3999 range also. This branch specifier is used when printing a Balance Sheet.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_61">
+                        <p class="p_81">Debits </p>
+                    </td>
+                    <td class="td_62">
+                        <p class="p_81">Enter the debit amount to be applied to the specific General Ledger account. If entry is to be a credit amount, leave field blank and click the Credit column.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_4">Credits </p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Enter the credit amount to be applied to the specific General Ledger account. If entry is to be a debit amount, leave field blank.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_4">Detail Group</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Tag a Debit or Credit entry with a Detail Group for reporting purposes. This group can be set up under <span>Utilities|Setup|Groups.</span> </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_5">
+                        <p class="p_4">Remark</p>
+                    </td>
+                    <td class="td_5">
+                        <p class="p_5">Enter a specific remark for this Debit or Credit Entry for reporting purposes.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Note that at the bottom of the column for both debits and credits, <span class="span_1">Trams Back Office </span>maintains a running total balance for each. For the journal entry to be accepted, debits must equal credits. Most daily journal entries are entered from within the Payments menu when prompted, except for the End of Period journal entry (which the system creates) and any correcting or adjusting entries made from within the General Ledger menu. If journal entries are entered directly from Payments, the Activity Date is set to the Payment Date, and the remarks are filled in, followed by the Profile Name.</p>
+            <p>On Payments Made, Payments Received and Withdrawals, <span class="span_1">Trams Back Office </span>automatically completes the first journal entry line (adding or subtracting from the appropriate bank account) and only the offsetting journal entry lines need to be completed. Be sure that bank accounts are assigned to proper General Ledger accounts under <span>Utilities|Setup|GL Accts</span>. </p>
+            <p>3. Click <span class="span_1">OK</span> to Save.</p>
+            <p>Please also review our General Ledger recorded trainings at select Training, TBO, and Recorded Trainings.</p>
+            <h3><a name="JE_Import_From_File" data-mc-generated-bookmark="TOC"></a><a name="JE_Import_From_File" data-mc-generated-bookmark="TOC"></a>JE Import From File</h3>
+            <p>If the agency has very large recurring periodic Journal Entries that would normally be entered by hand or copied and then modified manually there is an option to import an external JE from another source. </p>
+            <p>When creating a new Journal Entry, right-click anywhere in the JE line-by-line creation window at the bottom of the screen and an <span class="span_1">Import From File</span> option is displayed.</p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/updating one or multiple j_1.jpg" style="height: 358px;width: 541px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>Highlight the displayed box and left- click on it for an <span class="span_1">Import Journal Entry Details From Files</span> window to open, then browse and select a <span class="span_1">tab delimited</span> .txt file created for a specific normal Journal Entry. </p>
+            <p>When that <span class="span_1">tab delimited</span> .txt file has been created using the proper format, then the Journal Entry, GL Account lines will be populated automatically from the file. </p>
+            <p><span class="span_3">Column Headers that Must be Present in </span><span class="span_12">Tab Delimited</span><span class="span_3"> .txt File for Import to be Successful:</span>
+            </p>
+            <p class="p_12">&#160;</p>
+            <p class="p_12">GLNO GLNAME BRANCHNO DEBITAMT CREDITAMT REMARKS GROUP</p>
+            <p>&#160;</p>
+            <p>See Help files, <span>General Ledger|Budget Entry</span> for more details.</p>
+            <h2><a name="Posting_JEs_to_the_General_Ledger" data-mc-generated-bookmark="TOC"></a><a name="Posting_JEs_to_the_General_Ledger" data-mc-generated-bookmark="TOC"></a><a name="kanchor235"></a>Posting JEs to the General Ledger</h2>
+            <p>In order to maintain an accurate audit trail within the General Ledger, a routine is performed monthly to lock in any journal entries made to date so they can no longer be changed or voided. This routine is called <span class="italic_1">Posting your Journal Entries</span><sup class="sup_1">.</sup> Until a journal entry is posted it can be changed or voided, even the End of Period journal entry. </p>
+            <p><strong class="bold_arial">Note</strong>: <span>Because of posting's permanent effect, this routine is performed with caution, and only after all Core reports are balanced and their corresponding General Ledger accounts are in sync; usually about the middle of the following month.</span> </p>
+            <p>Once posted, all invoices, payments and journal entries for that period can no longer be changed or voided. However, journal entries can always be added to a posted period if an adjustment needs to be entered. Always process a Trial Balance report before posting, saying <span class="span_1">yes</span> to Pseudo Post to see the effects Posting will have.</p>
+            <p>Much time is spent recording daily activities and balancing them. To protect from any future changes once everything is reflecting what it should, posting should be performed. Posting protects the agency from changes that may affect the financials and tax reporting. <span class="span_1">It does not, however prevent a journal entry from being added to a closed and posted period. </span>We therefore recommend that the creation of journal entries (General ledger/Journal entry) be limited to the person or persons in charge of the financials and be regulated by the use of individual logins. We would also recommend that printed copies of monthly financials be kept on file so that if changes have been made to closed periods they can be identified more easily for verification.</p>
+            <p>It is also recommended that at the end of each month, run a Journal Entry Query with the <span class="span_1">Status</span> set as <span class="span_1">Unposted</span>. Run for an appropriate posted period, year-to-date of last posted period, last-year-to date of last posted period, etc., to view any unposted items that someone might have added or changed in a posted period. Then verify or delete those items, post them, and run new monthly financials to reflect the changes made. </p>
+            <h3><a name="Steps_to_Post_to_General_Ledger" data-mc-generated-bookmark="TOC"></a><a name="Steps_to_Post_to_General_Ledger" data-mc-generated-bookmark="TOC"></a><a name="kanchor236"></a>Steps to Post to General Ledger</h3>
+            <p>
+                <img src="resources/images/chapter 1 welcome/updating one or multiple j_2.jpg" style="height: 219px;width: 344px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>1. Click <span>General Ledger|Posting</span>.</p>
+            <p>2. In the <span class="span_1">Latest Posting Date</span> field, type in the last day of the period being posted. All entries are posted up to and including this date. Click <span class="span_1">OK</span> to process.</p>
+            <p>3. <span class="span_1">Trams Back Office </span><span class="span_18">prompts: </span><span class="span_1">XX Item (s) Will Be Posted? Continue? Yes </span>or<span class="span_1"> No</span></p>
+            <p>4. Click <span class="span_1">YES</span>.</p>
+            <p>5. Please also review our General Ledger Recorded Trainings at www.Trams.com, select Support, Recorded Trainings.</p>
+            <h2><a name="Pseudo_Posting_Journal_Entries" data-mc-generated-bookmark="TOC"></a><a name="Pseudo_Posting_Journal_Entries" data-mc-generated-bookmark="TOC"></a><a name="kanchor237"></a>Pseudo Posting Journal Entries</h2>
+            <p>Posting journal entries is not just a <span class="span_1">Trams Back Office </span>function, but a general accounting function. Unique to <span class="span_1">Trams Back Office </span>though, is the ability to print financial statements (Income Statements and Balance Sheets) <span class="italic_1">before</span> Posting the journal entries. <span class="span_1">Trams Back Office </span>does this through a reporting feature called “<span class="italic_1">Pseudo Posting</span>.” This means that, as long as all Invoices and Payments have been turned into journal entries (by transaction and through End of Period), preliminary financial statements can be gathered from <span class="span_1">Trams Back Office </span>while waiting for bank statements and ARC/BSP reports to be reconciled by Pseudo Posting. </p>
+            <p>&#160;</p>
+            <p class="p_12">
+                <img src="resources/images/chapter 1 welcome/updating one or multiple j_3.jpg" style="height: 252px;width: 591px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <h2><a name="Budget_Entry" data-mc-generated-bookmark="TOC"></a><a name="Budget_Entry" data-mc-generated-bookmark="TOC"></a><a name="kanchor238"></a>Budget Entry </h2>
+            <p>Budget Entries provide the ability to estimate <span class="italic_1">Sales, Cost of Sales</span>, and <span class="italic_1">Expenses</span> and compare <span class="italic_1">Actual to Budget</span> in the <span class="italic_1">Income Statement</span>. </p>
+            <p>Entering a <span class="italic_1">Budget Entry</span> is exactly the same as entering a<span class="italic_1"> Journal Entry</span>, except that with a Budget Entry, only specify General Ledger accounts in the 4000-9999 range, and the entry doesn’t have to balance - the debits and credits don't have to match. There is also an automatic Budget Entry option (see Generate Budget below). This saves all the work of putting in the budget entries one at a time.</p>
+            <p>Budget Entries don’t affect the Trial Balance or Balance Sheet. The only report they affect is the Income Statement, when choosing to print Budget Entries. They are not posted to the General Ledger as part of the normal posting routine.</p>
+            <p>See a list of Budget Entries, by printing a Journal Entry Analysis report for Budget Entries.</p>
+            <h3><a name="Creating_a_Budget_Using_JE_Import_From_File" data-mc-generated-bookmark="TOC"></a><a name="Creating_a_Budget_Using_JE_Import_From_File" data-mc-generated-bookmark="TOC"></a>Creating a Budget Using JE Import From File</h3>
+            <p>A Budget Journal Entry can also be created from a budget that has been created outside of Trams Back Office, in say Excel. When creating a new Budget Entry, right-click anywhere in the JE line-by-line creation window at the bottom of the screen and an <span class="span_1">Import From File</span> option is displayed. </p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/updating one or multiple j_4.jpg" style="height: 398px;width: 596px;" class="img_1" />
+            </p>
+            <p>Highlight the displayed box and left-click on it and an <span class="span_1">Import Journal Entry Details From Files</span> window opens to browse and select a <span class="span_1">tab-delimited</span> .txt file created for a specific Budget Journal Entry. </p>
+            <p>When that tab-delimited .txt file has been created using the proper format, then the Budget Entry, GL Account lines are populated automatically from the file. </p>
+            <p><span class="span_3">Column Headers that Must be Present in </span><span class="span_12">Tab Delimited</span><span class="span_3"> .txt File for Import to be Successful:</span>
+            </p>
+            <p class="p_12">GLNO GLNAME BRANCHNO DEBITAMT CREDITAMT REMARKS</p>
+            <h2><a name="Year–End_Closing" data-mc-generated-bookmark="TOC"></a><a name="Year–End_Closing" data-mc-generated-bookmark="TOC"></a><a name="kanchor239"></a>Year–End Closing</h2>
+            <p>Year-End closing is done once a year. The year-end entry zeros out all Sales (4000 series accounts), Cost of Sales (5000 series accounts), and Expenses (6000, 7000, 8000, and 9000 series accounts), and rolls over the profit or loss into the Retained Earnings (3000 series account).The Retained Earnings account is designated in<span> Utilities|Setup|GL Accounts</span>. The Year-End routine creates a journal entry, which is then posted by the regular posting routine.</p>
+            <p>1. Enter any adjusting journal entries given by the accountant under <span>General Ledger|Journal Entry</span>. Date adjusting entries with the date the accounting year ends.</p>
+            <p>2. Go to <span>General Ledger|Posting</span> to post the adjusting Journal Entry. Click <span>General Ledger|Year-End</span>. </p>
+            <p>3. In the <span class="span_1">To</span> field, enter the year-end date. Click the <span class="span_1">OK</span> button to process. This creates the Year-End Journal Entry. Click the <span class="span_1">OK</span> button to save.</p>
+            <p>4. Select <span>General Ledger|Posting</span>. </p>
+            <p>5. Type in the <span class="span_1">Year-End</span> date in the <span class="span_1">Latest Posting Date</span> field. Click the OK button to process.</p>
+            <p>6. TBO prompts, <span class="span_1">"xxxx items will be Posted. Continue? Yes, No” Click Yes.</span></p>
+            <p><span>Notes: ***</span>If maintaining and balancing the GL in <span class="span_1">Trams, </span>do an End of Period and balance the last month of the year, and post it before doing the Year-End function.</p>
+            <p>***When a year-end posting has been performed, modifying, adding or voiding journal entries is prohibited if the entry falls within the year end range. If entering a payment or operating payable with a journal entry within the year end period, the payment will be saved but the user will not be able to finish the journal entry portion of the payment process hence users should void the payment. If trying to enter an operating payable since the journal entry cannot be saved, the entire entry is aborted.</p>
+            <h2><a name="Void_End_of_Period_and_Year_End_Entries" data-mc-generated-bookmark="TOC"></a><a name="Void_End_of_Period_and_Year_End_Entries" data-mc-generated-bookmark="TOC"></a><a name="kanchor240"></a>Void End of Period and Year End Entries </h2>
+            <h3><a name="Voiding_an_End_of_Period" data-mc-generated-bookmark="TOC"></a><a name="Voiding_an_End_of_Period" data-mc-generated-bookmark="TOC"></a>Voiding an End of Period</h3>
+            <p>To Void an End of Period from the general ledger menu, click <span class="span_1">Void</span>, then <span class="span_1">End of Period</span>. When voiding an End of Period Journal Entry, the system prompts with the last entered End of Period time frame. If this End of Period Journal Entry has not been posted (a “pencil” posting in effect), the system voids the Journal Entry, deleting any history of it and erasing the End of Period restrictions, once again allowing for invoice or payment entries or modifications.</p>
+            <p>If the End of Period Journal Entry has been Posted (a “pen and ink” version in effect), a warning appears and if OK'd, a similar routine occurs. Instead of voiding the Journal Entry and deleting the history, because it was posted, a reversing entry is created and posted in one step. The reversing Journal Entry created is dated the same date as the original End of Period entry. Please also review our General Ledger recorded trainings at www.Trams.com, select Training, Trams Back Office, and Recorded Trainings.</p>
+            <h2><a name="Voiding_a_Year-End" data-mc-generated-bookmark="TOC"></a><a name="Voiding_a_Year-End" data-mc-generated-bookmark="TOC"></a><a name="kanchor241"></a>Voiding a Year-End</h2>
+            <p>To void a Year End from the General Ledger menu, click <span class="span_1">Void</span>, then <span class="span_1">Year End. </span>When voiding a Year End journal entry, the system prompts with the last entered Year End's <span class="italic_1">To</span> Date. If this Year End journal entry has not been posted, the system voids the Journal Entry, deleting any history of it.</p>
+            <p>If the Year End journal entry has been Posted, a warning appears and if OK'd, a similar routine occurs. Instead of voiding the Journal Entry and deleting the history, the system creates a reversing entry. The reversing Journal Entry created is dated the same date as the original Year End entry.</p>
+            <h2><a name="Accounts_(Chart_of_Accounts)" data-mc-generated-bookmark="TOC"></a><a name="Accounts_(Chart_of_Accounts)" data-mc-generated-bookmark="TOC"></a><a name="kanchor242"></a>Accounts (Chart of Accounts)</h2>
+            <p>Please refer to chapter <span class="span_1">Setting Up Trams Back Office, </span>and the section, "Setting Up the Chart of Accounts." Directions on how to add, delete, and modify an account are discussed in great detail. </p>
+            <p>
+                <img src="resources/images/chapter 1 welcome/year end closing.jpg" style="height: 338px;width: 447px;" class="img_1" />
+            </p>
+            <h3><a name="Choose_Columns_on_the_General_Ledger_Accounts_Screen" data-mc-generated-bookmark="TOC"></a><a name="Choose_Columns_on_the_General_Ledger_Accounts_Screen" data-mc-generated-bookmark="TOC"></a>Choose Columns on the General Ledger Accounts Screen</h3>
+            <p>Users can select the columns to appear in the G/L accounts display. Also adjusting column widths in the display are saved when the save settings box is checked.</p>
+            <p class="p_12">Example: </p>
+            <p>1. Go to <span>General Ledger|Accounts.</span></p>
+            <p>2. Expand the Account Name field to display more of the name field.</p>
+            <p>3. Click <span class="span_1">Columns</span>.</p>
+            <p>4. Make any adjustments to which columns will be displayed</p>
+            <p>5. Click the <span class="span_1">Save Settings</span> box.</p>
+            <p>6. Both the column width and the column selections will be saved and displayed.</p>
+            <p>&#160;</p>
+            <h2><a name="Generate_Budget" data-mc-generated-bookmark="TOC"></a><a name="Generate_Budget" data-mc-generated-bookmark="TOC"></a><a name="kanchor243"></a>Generate Budget</h2>
+            <p><span class="span_1">Trams Back Office </span>has an option of creating a budget based on actual numbers from an income statement. </p>
+            <p>1. Generate a budget by going to the main General Ledger menu, then to the Generate Budget menu option.</p>
+            <p class="p_12">Generate Budget Entry</p>
+            <p class="p_12">
+                <img src="resources/images/chapter 1 welcome/year end closing_1.jpg" style="height: 197px;width: 416px;" class="img_1" />
+            </p>
+            <p>2. The <span class="italic_1">Budget Entry Date</span> is the date of the budget. If this is October and a budget for November is being created, this date would be 11/30/xx. The Income Statement Period contain the dates of the previous Income Statement used to calculate this new budget. In this example, we are creating a budget for 11/30/12 by using our Income Statement from November 2011. Make sure an End of Period has been performed for the Income Statement dates, otherwise income from invoices is NOT included. </p>
+            <p>3. Enter a G/L Branch for which a budget is being created from the drop-down menu. </p>
+            <p>4. Enter a percentage increase (or decrease). A percentage increase or decrease affects both sales and expenses. A 10% increase in sales also increases the expenses by 10%. This may not be the goal, so increase or decrease the items individually.</p>
+            <p>5. Click <span class="span_1">OK</span> to generate the budget journal entry. </p>
+            <p>Notice this entry does not balance. <span>Budget entries do not need to balance. </span>They do not involve balance sheet accounts, only Income Statement accounts. Each line item on the budget can be adjusted manually by highlighting the entry, make changes above, click <span class="span_1">Update</span>. Edit the <span class="italic_1">Remark</span> field, clarifying the budget name or period. Click <span class="span_1">OK</span> to save this budget entry. </p>
+            <p>Budgets allow analyzing and evaluating the progress of the agency’s business, making any adjustments to generate sales or cut expenses to reach goals. This makes budget creation quick and easy.</p>
+            <table class="table_1">
+                <col style="width: 468pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_16">You are creating a budget for the month of October and want this budget based on the income statement for the same period last year. Select the main General Ledger menu, then the Generate Budget option. Your Activity Date is “10/31/14.” Enter income statement dates of “10/01/14” to “10/31/14” and put in a 10% increase. </p>
+                        <p><span class="trams">Trams Back Office </span><span class="span_1">uses the income statement from October 2014 as a base and adds 10% to these numbers. Click OK to save your new budget entry. </span>
+                        </p>
+                        <p><span class="span_1">On October 7, you create an End of Period, and go to the Income Statement screen. Enter the dates “10/01/14” to “10/07/14” in the first line with type set to </span><span class="italic_1">Actual</span><span class="span_1">. You enter “10/01/14” to “10/31/14” on the second line with type set to Budget. Click OK to process this report and see how your agency is progressing. After realizing how much fun this is, you focus on your goal and create a budget for every month of the year.</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h2><a name="G_L_Account_Reconciliation" data-mc-generated-bookmark="TOC"></a><a name="G_L_Account_Reconciliation" data-mc-generated-bookmark="TOC"></a><a name="kanchor244"></a>G/L Account Reconciliation</h2>
+            <p>View any selected GL Account, GL Account Group, GL Branch or GL Branch Group with the appropriate activity date range. Toggle closed corresponding debit &amp; credit items that are deemed matches. </p>
+            <p>Debits and Credits must equal to save the reconciliation and the amounts are shown in <span class="span_1">red</span> when the Debits and Credits do not match. Query GL transactions by <span class="span_1">Posted Status</span>, and <span class="span_1">Cleared Status</span> (All, Cleared, Not Cleared) which is very much like only looking at cleared or uncleared in the bank account reconciliation, only it can be done for any GL account. </p>
+            <p>This reconciliation does not affect any accounting data and the status of any reconciled items is only reflected on the G/L Reconciliation screen itself. </p>
+            <p>This feature is very useful for 'slush' accounts where items go in and out all the time and the agency just needs to know what items are not yet offset or OPEN. Use it for both company credit card charges to keep track of what has been charged but not yet billed/paid and also for a payroll account that lists advances to employees which need to 'clear' or 'close' after entering the payroll deduction.</p>
+            <h2><a name="Suggested_General_Ledger_Procedures" data-mc-generated-bookmark="TOC"></a><a name="Suggested_General_Ledger_Procedures" data-mc-generated-bookmark="TOC"></a><a name="kanchor245"></a>Suggested General Ledger Procedures</h2>
+            <p>1. <span>ARC/BSP Balance Report</span></p>
+            <p class="p_13">- Enter sales and payment information on a daily basis. </p>
+            <p class="p_13">- Submit the report weekly to ARC/BSP.</p>
+            <p class="p_13">- Reconcile the ARC/BSP Settlement each week. </p>
+            <p>2. <span>Client Balances Report</span></p>
+            <p class="p_13">- Enter sales and payment information on a daily basis.</p>
+            <p class="p_13">- View on a regular basis and review for accuracy.</p>
+            <p>3. <span>Vendor Balances Report</span></p>
+            <p class="p_13">- Enter sales and payment information on a daily basis.</p>
+            <p class="p_13">- View on a regular basis and review for accuracy.</p>
+            <p>4. <span>Check Register Report</span></p>
+            <p class="p_13">- Enter Deposits, Withdrawals and Checks on a daily basis. </p>
+            <p class="p_13">- Balance and reconcile against the Bank Statement each month. </p>
+            <h3><a name="Daily_Routine" data-mc-generated-bookmark="TOC"></a><a name="Daily_Routine" data-mc-generated-bookmark="TOC"></a>Daily Routine</h3>
+            <p>1. Capture Sale and Refund Invoices (manual or interface). Enter all adjustment invoices such as debit/credit memos.</p>
+            <p>2. Enter Receipts and balance the Bank Deposit:</p>
+            <p class="p_13">a) Enter each separate receipt under <span>Payments|Received</span>. (If there is information available, consider entering any EFT (Electronic Fund Transfer) or Direct Deposit receipts for the day. As these type transactions hit the Check Register directly, these items are not included in the daily deposit to the bank.)</p>
+            <p class="p_13">b) Under <span>Payments|Deposits</span>, verify the date for which the deposit is being done and <span class="span_1">Query </span>for the receipts to be included in the Deposit.</p>
+            <p class="p_13">c) Verify the receipts that are included are receipts actually going to be deposited in the bank.</p>
+            <p class="p_13">d) Print 2 deposit slips - one for the agency records and one for the bank.</p>
+            <p>3. Print a copy of a Receipts Report (<span>Reports|Payments|Receipts</span>) for all Cash/Check receipts for each bank account for the day. Balance the total on the report to the bank deposit slip. Attach the report to the agency copy of the deposit slip and file.</p>
+            <p>4. Enter all agency disbursements in <span>Payments|Made</span>.</p>
+            <p>5. Run the Four Core Reports and review for errors: Client Balances, Vendor Balances, ARC/BSP Reconciliation and Check Register.</p>
+            <p>6. Run the G/L Reconciliation Report to catch any G/L errors daily.</p>
+            <p>7. Backup files (<span>Utilities|Backup)!</span></p>
+            <h3><a name="Weekly_(ARC_IAR_Sales_Report_Reconciliation)_Routine_..97" data-mc-generated-bookmark="TOC"></a><a name="Weekly_(ARC_IAR_Sales_Report_Reconciliation)_Routine_..96" data-mc-generated-bookmark="TOC"></a>Weekly (ARC/IAR Sales Report/Reconciliation) Routine</h3>
+            <p><span>Step 1.</span> Check that the data in the IAR Sales Report matches data in <span class="span_1">Trams Back Office</span> by one of three methods: </p>
+            <p class="p_13"><span>a) Method One:</span> Run a list of all invoices captured in <span class="span_1">Trams</span> by going into <span>Reports|Invoice|Analysis</span> and verifying that all invoices for the week are accounted for in <span class="span_1">Trams</span>. Then, run a list of all tickets captured in <span class="span_1">Trams</span> by going into <span>Reports|Invoice|ARC/BSP Reconciliation</span> and verifying that all tickets issued for the week are accounted for in <span class="span_1">Trams</span>, and be sure to set ticket status to <span>ALL</span>. </p>
+            <p class="p_13"><span>b) Method Two:</span> Download the IAR file from the IAR website. Go to <span>Reports|Invoice|IAR Reconciliation</span> and click the IAR File button to point to the path of the downloaded .txt file obtained from the IAR website. Print out an Exception Report which points out differences between what was submitted to IAR and <span class="span_1">Trams</span> Back Office. </p>
+            <p class="p_13"><span>c) Method Three:</span> Download the IAR file from the IAR website. </p>
+            <p class="p_13">-- Go to <span>Payments|ARC Settlement</span>. </p>
+            <p class="p_13">-- Query for the week’s ARC tickets so they are displayed on the settlement screen. </p>
+            <p class="p_13">-- Click IAR Reconciliation on the ARC Settlement screen. </p>
+            <p class="p_13">-- Click IAR Filename and map to the weekly IAR file. </p>
+            <p class="p_13">-- Click Query to see the standard IAR Reconciliation Report. </p>
+            <p class="p_13">-- For tickets where <span class="span_1">Net Remit Do Not Match</span>, <span class="span_1">Ticket Is Voided in IAR but Not in Trams</span>, or <span class="span_1">Missing IAR Ticket</span>, click <span class="span_1">Find Ticket</span> and the cursor lands on the appropriate ticket on the ARC Settlement screen so <span class="span_1">Edit Invoice</span> appears as normal. </p>
+            <p class="p_13">-- For tickets that are <span class="span_1">Voided In Trams but Not In IAR</span>, click <span class="span_1">Find Ticket</span> to go to the booking containing that voided ticket in TBO, so it can be unvoided, allowing the ticket to now show correctly on the ARC Settlement Screen. </p>
+            <p class="p_13">-- For any exceptions that are <span class="span_1">Missing Trams Ticket</span>, click off the IAR Reconciliation screen, and manually add the missing tickets. If doing this method, no need to do Steps 2 and 4 below. </p>
+            <p class="p_13"><span>Note:</span> This is the same IAR Reconciliation exception report that was only available before under <span>Reports|Invoice|IAR Reconciliation</span>. The IAR Reconciliation from the ARC Settlement screen works the same way and provides that same exception report, but now has linking ability to the tickets displayed on the ARC Settlement Screen. </p>
+            <p><span>Step 2.</span> Enter any missing Refunds, Debit Memos, Voids, etc. so <span class="span_1">Trams Back Office</span> agrees with IAR Sales Report. </p>
+            <p><span>Step 3.</span> Enter and balance the ARC/BSP Settlement for the week under <span>Payments|ARC Settlement</span>. Do this by comparing the amount withdrawn to the amount <span class="span_1">Trams</span> calculated as the Net Remittance amount for that ARC/BSP week. If the two numbers do not balance exactly, review the ARC/BSP Settlement section of this manual. </p>
+            <p><span>Step 4.</span> Submit the IAR Sales Report. </p>
+            <p>If processing through ARC/IAR, complete the ARC Settlement right after submitting the IAR Sales Report. </p>
+            <h3><a name="Weekly_(BSP_Sales_Report_Reconciliation)_..98" data-mc-generated-bookmark="TOC"></a><a name="Weekly_(BSP_Sales_Report_Reconciliation)_..97" data-mc-generated-bookmark="TOC"></a>Weekly (BSP Sales Report/Reconciliation)</h3>
+            <p class="p_48">
+                <img src="resources/images/chapter 1 welcome/year end closing_2.jpg" style="height: 44px;width: 80px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>Complete the BSP Settlement after Weekly Sales Summary has been received from BSP as amounts could be changed from what was submitted.</p>
+            <p>1. Print an Invoice Analysis Report (<span>Reports|Invoice|Analysis</span>) to verify all invoices issued during the week are entered in <span class="span_1">Trams</span>.</p>
+            <p>2. Print a BSP Reconciliation Report (<span>Reports|Core|BSP Reconciliation</span>). Set the ticket status to ALL to verify all tickets issued for the week are entered in <span class="span_1">Trams</span>.</p>
+            <p>3. Submit BSP Link report through the Internet. If necessary, print the BSP Report (<span>Report|Invoice|BSP</span>), set the <span class="span_1">Included Items</span> to <span class="span_1">Manual,</span> and mail it to the area bank.</p>
+            <p>4. If not using the BSP Link, print the BSP Report (<span>Reports/Invoice/BSP</span>) and mail it to the area bank with the auditors’ coupons from the tickets issued, <span class="span_3">or</span> verify cash and credit card totals and period net remit if submitting the report through BSP Link.</p>
+            <p>5. Reconcile BSP’s Weekly Sales Summary Report by entering the amount of the BSP Withdrawal in <span>Payments|BSP Settlement. </span>Adjust each <span class="span_1">Trams</span> entry to match BSP’s report and close all bookings paid for in that BSP period.</p>
+            <p class="p_39">Weekly BSP HOT Reconciliation Routine</p>
+            <p class="p_48">
+                <img src="resources/images/chapter 1 welcome/year end closing_2.jpg" style="height: 44px;width: 80px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>A BSP HOT Reconciliation can be found under <span>Reports|Invoice|BSP Reconciliation</span>. To receive a copy of the BSP Report in the HOT file format, contact:</p>
+            <p><a href="../../../../../../sg0892339/Documents/ePublisher Designer Projects/TBO/Output/Target 1/TBO/www.IATA.org/customer">www.IATA.org/customer </a><span class="span_23"><br /></span>
+                <br /><span class="span_1">Trams Back Office</span> compares the data in the HOT file to the information in <span class="span_1">Trams Back Office </span>and generates an exception report which lists all the differences between the <span class="span_1">Trams Back Office</span> data and the HOT file. Once the transactions on the exceptions reports have been addressed, the BSP Settlement routine can be completed. The <span class="span_1">Submit to</span> field in the TBO booking must be set to BSP (for both BSP and Web bookings reported via BSP). For web booking exchange transactions, see additional information below.</p>
+            <h4><a name="Reconciliation_Steps" data-mc-generated-bookmark="TOC"></a><a name="Reconciliation_Steps" data-mc-generated-bookmark="TOC"></a>Reconciliation Steps</h4>
+            <p>1. Download the HOT file from the IATA Web Site</p>
+            <p>2. In TBO, go to Reports/Invoice/HOT Reconciliation</p>
+            <p>3. Click the HOT File Button and browse to where the file was saved</p>
+            <p>4. Click the Preview Button</p>
+            <p>5. Reconcile the Exceptions that appear on the Exception Report</p>
+            <h4><a name="Sample_Exceptions" data-mc-generated-bookmark="TOC"></a><a name="Sample_Exceptions" data-mc-generated-bookmark="TOC"></a>Sample Exceptions</h4>
+            <table class="table_1">
+                <col style="width: 73pt;" />
+                <col style="width: 49pt;" />
+                <col style="width: 345pt;" />
+                <tr>
+                    <td class="td_16">
+                        <p class="p_12">Ticket #</p>
+                    </td>
+                    <td class="td_16">
+                        <p class="p_12">Inv #</p>
+                    </td>
+                    <td class="td_16">
+                        <p class="p_12">Exception Reason</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_16">
+                        <p>7771113333 </p>
+                    </td>
+                    <td class="td_16">
+                        <p>5589 </p>
+                    </td>
+                    <td class="td_16">
+                        <p>Missing HOT Ticket – Ticket is not listed in the HOT file </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_16">
+                        <p>7771113358 </p>
+                    </td>
+                    <td class="td_16">
+                        <p>5598 </p>
+                    </td>
+                    <td class="td_16">
+                        <p>Missing TBO Ticket – Ticket is listed in the HOT file but cannot be found in TBO</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_16">
+                        <p>7771113362 </p>
+                    </td>
+                    <td class="td_16">
+                        <p>5600</p>
+                    </td>
+                    <td class="td_16">
+                        <p>Remittance Amounts do not match – Commission amounts do not match</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_16">
+                        <p>7771113375 </p>
+                    </td>
+                    <td class="td_16">
+                        <p>5612 </p>
+                    </td>
+                    <td class="td_16">
+                        <p>Total Fares do not match – Ticket amount does not match total fare amount in TBO</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Non-automated air web booking exchanges (Air Canada, Westjet, etc.), must contain <span class="span_1">Trams</span> Descriptor codes to properly flag the transaction as an exchange. The original ticket number must also be added to populate the original ticket field in the booking.</p>
+            <h4><a name="Examples_(to_be_added_in_addition_to_other_accounting_line_information)" data-mc-generated-bookmark="TOC"></a><a name="Examples_(to_be_added_in_addition_to_other_accounting_line_information)" data-mc-generated-bookmark="TOC"></a>Examples (to be added in addition to other accounting line information)</h4>
+            <p>*EXE – Even exchange</p>
+            <p>*EXA – Exchange with an add collect</p>
+            <p>*EXR – Exchange Refund</p>
+            <p>*OT – Original Ticket number</p>
+            <p>&#160;</p>
+            <p class="p_82">Sabre </p>
+            <p class="p_38">ACOTH1/SUPPLY/DOC/P11/950.00/0/ALL/CK/*SBA*TT1*VCAC*EXE*OT7771113375</p>
+            <p class="p_82">Worldspan</p>
+            <p class="p_38">AC1-A*TT1*VCAC*EXE*OT7771113375</p>
+            <p class="p_82">Apollo</p>
+            <p class="p_38">T-MS9A*VCAC*TT1*CM10*CF123456*SG*EXE*OT7771113375</p>
+            <p class="p_82">Amadeus </p>
+            <p class="p_38">RM*9A*VCAC*TT1*CM10*CF123456*SG*EXE*OT7771113375</p>
+            <h3><a name="Monthly_Checklist" data-mc-generated-bookmark="TOC"></a><a name="Monthly_Checklist" data-mc-generated-bookmark="TOC"></a>Monthly Checklist</h3>
+            <p>1. Using <span class="trams">Trams Back Office </span>Bank Reconciliation routine under (<span>Payments|Bank Reconciliation</span>), balance the bank statement to the <span class="trams">Trams Back Office </span>check register. <span class="span_3">Print a copy of the Check Register for the month for ALL along with a second Check Register Report for Not Cleared, and staple it to the statement from the bank and file.</span></p>
+            <p>2. Create an End of Period journal entry (<span>General Ledger|End of Period</span>) for the month.</p>
+            <p>3. Print a trial balance. Compare the Management Summary Report balances to their corresponding General Ledger accounts and make sure they are the same. If not, print a GL Reconciliation (<span>Reports|General Ledger|GL Reconciliation</span>) to locate any possible errors. <span>Note: </span>There is a <span class="span_1">Total Base </span>column on this report, The yield percentage is the commission divided by total base.</p>
+            <p><span>Optional:</span> Run a Journal Entry Query with the <span class="span_1">Status</span> set as <span class="span_1">Unposted</span>. Run for an appropriate posted period, year-to-date of last posted period, last-year-to date of last posted period, etc., to view any unposted items that someone might have added or changed in a posted period. Verify or delete those items, post them, and run new monthly financials to reflect the changes made.</p>
+            <p>4. When (and only when) everything is in balance, post the journal entries made and print Financial Statements. Audit Trail reports could include Trial Balance, Income Statement, Balance Sheet, End of Period Reports, Account History, or Journal Entry Analysis. </p>
+            <h3><a name="TBO_End_of_Period_Reports" data-mc-generated-bookmark="TOC"></a><a name="TBO_End_of_Period_Reports" data-mc-generated-bookmark="TOC"></a>TBO End of Period Reports</h3>
+            <p>End of Period reports can be found under <span>Reports|Batch Reports|Load</span>. </p>
+            <p>1. <span class="span_3">Sales Activity Report:</span> Select <span>Reports|Invoice|Activity</span>. Set Format to “Summary”, set Submit To as “ARC or BSP/Supplier” and set Invoice Status to “All.”</p>
+            <p><span class="span_1">Trams</span> uses this report to show what has been updated in the GL by the End of Period in Sales, Cost of Sales, Client Balances, Vendor Balances and ARC/BSP Balances. The ARC/BSP Adjustments account is also updated for Debit/Credit Invoices.</p>
+            <p>2. <span class="span_3">Sales Activity Report:</span> Select<span> Reports|Invoice|Activity</span>. Set Format to “Summary”, set Submit To as “Comm Track” and set Invoice Status to “Closed.”</p>
+            <p>If Commission Track Payments in EOP under <span>Utilities|Setup|Global Defaults</span> is set to the Sales/Cost of Sales option, <span class="span_1">Trams</span> uses this report to show what has been updated in the GL by EOP in Sales, Cost of Sales and Cash in Bank. If it is set to the Commission Income option, <span class="span_1">Trams</span> updates Cash in Bank and Commission Income.</p>
+            <p>3. <span class="span_3">Receipts Report:</span> Select <span>Reports|Payments|Receipts</span>. Set the Pay Method as “Credit Card” and set Received From as “Client.”</p>
+            <p><span class="span_1">Trams</span> uses this report to show what has been update by the EOP in Client Balances, Vendor Balances &amp; ARC/BSP Balances.</p>
+            <p>4. <span class="span_3">Disbursements Report:</span> Select <span>Reports|Payments|Disbursements</span>. Set the Pay Method to “Credit Card” and set Paid To as “Client.”</p>
+            <p><span class="span_1">Trams</span> uses this report to show what has been updated by EOP in Client Balances, Vendor Balances &amp; ARC/BSP Balances.</p>
+            <p>5. <span class="span_3">Receipts Report:</span> Select <span>Reports|Payments|Receipts</span>. Set the Pay Method to “Cash/Check/EFT” and set Received From as “Client.” <span class="span_1">Trams</span> creates this report for each bank account. The system creates the report a second time with Received From set to “Vendor.” </p>
+            <p><span class="span_1">Trams</span> uses this report to show what has been updated by EOP in Cash, Client Balances &amp; Vendor Balances. The Receipts Report also shows EOP updates in ARC/BSP Balances for EFT's from ARC/BSP.</p>
+            <p>6. <span class="span_3">Disbursements Report:</span> Select <span>Reports|Payments|Disbursements</span>. Set the Pay Method to “Cash/Check/EFT” and set Profile Type as “Client.” <span class="span_1">Trams</span> creates this report for each bank account. The system creates the report a second time with Paid To set to “Vendor.”</p>
+            <p><span class="span_1">Trams</span> uses this report to show EOP updates in Cash, Client Balances and Vendor Balances. The Disbursements Report also updates ARC/BSP Balances for EFT's to ARC/BSP.</p>
+            <p>7. <span class="span_3">Receipts Report:</span> Select <span>Reports|Payments|Receipts</span>. Set the Pay Method to “CC Merchant” and set Received From as “Client.”</p>
+            <p><span class="span_1">Trams</span> uses this report to show EOP updates in Cash and the CC Merchant account.</p>
+            <p>8. <span class="span_3">Disbursements Report:</span> Select <span>Reports|Payments|Disbursements</span>. Set the Pay Method to “CC Merchant” and set Paid To as “Client.” </p>
+            <p><span class="span_1">Trams</span> uses this report to show EOP updates to Cash and the CC Merchant account.</p>
+            <h3><a name="Additional_End_of_Period_Reports_for_BSP_Users" data-mc-generated-bookmark="TOC"></a><a name="Additional_End_of_Period_Reports_for_BSP_Users" data-mc-generated-bookmark="TOC"></a>Additional End of Period Reports for BSP Users</h3>
+            <p class="p_48">
+                <img src="resources/images/chapter 1 welcome/year end closing_2.jpg" style="height: 44px;width: 80px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>At the end of each month, run the following reports to verify the amount of TAX to be paid. </p>
+            <p>1) Run an Invoice Activity Report by going to <span>Reports|Invoice|Activity.</span></p>
+            <p>2) Compare the tax amounts on this report with the amounts in the Balance Sheet accounts created for these taxes (<span>Reports|General Ledger|Account History)</span>.</p>
+            <p>3) When sending the quarterly check to pay the tax due, go to <span>Payments|Made</span>. Enter the amount of the tax due. Use the profile type "Other" that was created for these taxes and create the following journal entry:</p>
+            <p class="p_12">Debit Credit</p>
+            <p>Cash in Bank 500.00</p>
+            <p>GST Payable 500.00 </p>
+            <h3><a name="Summary" data-mc-generated-bookmark="TOC"></a><a name="Summary" data-mc-generated-bookmark="TOC"></a>Summary</h3>
+            <p>If the Core Reports are being successfully maintained, financial statements are easily obtained through <span class="span_1">Trams, </span>provided opening balances have been correctly entered. It is important to provide these basic financial statements, as well as a detailed audit trail, to the agency accountant for review. In addition to the Income Statement and Balance Sheet reports, several audit trail reports, including the Account History report, are also available.</p>
+            <p><strong class="bold_arial">Note: The recommendations contained in this application Note are designed to allow the </strong><strong class="bold_arial_4">Trams</strong><strong class="bold_arial_4">Back Office </strong><strong class="bold_arial">system to produce information in a manner which </strong><strong class="bold_arial_4">Trams</strong><strong class="bold_arial"> believes to be useful to a travel agency; however, </strong><strong class="bold_arial_4">Trams</strong><strong class="bold_arial"> makes no representation or warranty that the recommendations, if applied, will conform to generally accepted accounting or auditing practices or principals or to any type of financial reporting requirements. To the extent that any reports generated by </strong><strong class="bold_arial_4">Trams Back Office</strong><strong class="bold_arial"> are used for reporting purposes, including tax reporting, we strongly suggest to review these recommendations either with a certified public accountant or tax advisor, as applicable.</strong>
+            </p>
+            <h2><a name="Maintain_the_GL_&amp;_Balancing_Core_Reports_to_Trial_Balance_Report" data-mc-generated-bookmark="TOC"></a><a name="Maintain_the_GL_&amp;_Balancing_Core_Reports_to_Trial_Balance_Report" data-mc-generated-bookmark="TOC"></a><a name="kanchor246"></a>Maintain the GL &amp; Balancing Core Reports to Trial Balance Report</h2>
+            <p>Once the bank statement and all ARC/BSP reports for the month are reconciled: </p>
+            <p>1. Click <span>General Ledger|End of Period</span> and create the <span class="span_1">End of Period</span> journal entry.</p>
+            <p>2. Print the <span class="span_1">Trial Balance Report</span>. (<span>Reports|General Ledger|Trial Balance</span>)</p>
+            <p>3. Print the Management Summary Report and Note the balances for the following Core Report totals:</p>
+            <p class="p_12">Client Balances </p>
+            <p class="p_12">Vendor Balances </p>
+            <p class="p_12">ARC Balances</p>
+            <p class="p_12">Check Register</p>
+            <p><span>Note: </span>There is a <span class="span_1">Total Base </span>column on this report, The yield percentage is the commission divided by total base.</p>
+            <p>5. Each month, compare the <span class="span_1">Ending Balances</span> of all <span class="span_1">Core Reports</span> against the <span class="span_1">Trial Balance</span> Report. The Core Reports and the Trial Balance Report should balance <span class="span_3">to the penny</span><span class="span_1">before</span> posting occurs. If one or more of the Core Reports does not balance to the Trial Balance, print the <span class="span_1">GL Reconciliation</span><span class="span_1">Report</span>. </p>
+            <p>a. Click <span>Reports|General Ledger|GL Reconciliation</span>.</p>
+            <p>b. Although not every entry on this report needs to be cleared off, the report gives the best idea of why the Trial Balance is out of balance. Check each item’s warning message. (For warning definitions see the manual under <span>Reports|General Ledger|GL Reconciliation Report</span>.) To make corrections, Void the End of Period first. </p>
+            <p>c. After making corrections, create the End of Period journal entry again.</p>
+            <p>d. Print the Core Reports again, along with the Trial Balance Report. </p>
+            <p>e. Verify that the Core Reports and the Trial Balance are now in sync.</p>
+            <p>6. When the Four Core Reports match the Trial Balance, go ahead and post. Posting to the General Ledger is permanent. Changes can no longer be made to the journal entries; however, adjusting journal entries can always be added to the period if needed. Click <span>General Ledger|Posting</span> and <span class="span_1">Post</span> to the General Ledger. </p>
+            <h2><a name="GL_Reconciliation_Report" data-mc-generated-bookmark="TOC"></a><a name="GL_Reconciliation_Report" data-mc-generated-bookmark="TOC"></a><a name="kanchor247"></a>GL Reconciliation Report</h2>
+            <p>The GL Reconciliation report is used to aid in reconciling financial reports at the end of the month. It flags items that could possibly cause financials to be out of balance when compared against the Core reports.</p>
+            <ol start="1" class="ol_2">
+                <li class="ListParagraph" value="1">Select <span>Reports|General Ledger|GL Reconciliation</span>.</li>
+            </ol>
+            <p class="p_32">
+                <img src="resources/images/chapter 1 welcome/year end closing_3.jpg" style="height: 234px;width: 432px;" class="img_1" />
+            </p>
+            <p class="ListParagraph">&#160;</p>
+            <p>2. Type in the <span class="span_1">From</span> and <span class="span_1">To</span> dates for the period being reconciled.</p>
+            <p>3. Click <span class="span_1">Preview</span> to view on screen. (Or click<span class="span_1"> Print </span>to send report directly to the printer without viewing.)</p>
+            <p>4. The report displays a list of items that may need correcting. Query each item and correct it if needed.</p>
+            <h4><a name="Possible_GL_Reconciliation_Messages" data-mc-generated-bookmark="TOC"></a><a name="Possible_GL_Reconciliation_Messages" data-mc-generated-bookmark="TOC"></a>Possible GL Reconciliation Messages</h4>
+            <table class="table_1">
+                <col style="width: 127pt;" />
+                <col style="width: 340pt;" />
+                <tr>
+                    <td class="td_31">
+                        <p class="p_83">Message</p>
+                    </td>
+                    <td class="td_31">
+                        <p class="p_83">Description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Payable is not Journalized and Should Be</p>
+                    </td>
+                    <td class="td_31">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Payment Is Journalized and Shouldn’t Be</p>
+                    </td>
+                    <td class="td_31">
+                        <p>Only Payments Received and Made where the Profile Type is Other or where the Payment Method is Other, or Bank Withdrawals should be journalized. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Payment Is Not Journalized and Should Be</p>
+                    </td>
+                    <td class="td_31">
+                        <p>Payments Received and Made where the Profile Type is Other, or where the Payment Method is Other, or Bank Withdrawals <span class="span_3">must</span> have a journal entry.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Payment Amount Doesn’t Match Journal Entry Amount</p>
+                    </td>
+                    <td class="td_31">
+                        <p>The amount of the payment does not match the amount posted to the Cash in Bank account in the journal entry. This message also appears if the amount is being posted to the incorrect Cash in Bank account or the debits and credits have been reversed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Payment Date Doesn’t Match Journal Entry Date</p>
+                    </td>
+                    <td class="td_31">
+                        <p>The date on the payment screen should always match the date in the journal entry screen.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Pymt Invalid For JE That Affects Client Balances***</p>
+                    </td>
+                    <td class="td_31">
+                        <p>1) A journal entry should only affect Client Balances when a Payment Received or Made is entered that has a payment method of Other and a profile type of Client.</p>
+                        <p>2) A Pseudo EOP entry exists.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Pymt Invalid For JE That Affects ARC/BSP***</p>
+                    </td>
+                    <td class="td_31">
+                        <p>1) A journal entry should only affect ARC/BSP when a Payment Received or Made is entered that has a payment method of EFT and a profile type of Vendor-ARC/BSP.</p>
+                        <p>2) A Pseudo EOP entry exists.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Pymt Invalid For JE That Affects Vendor Balances***</p>
+                    </td>
+                    <td class="td_31">
+                        <p>1) A journal entry should only affect Vendor Balances when a Payment Received or Made is entered that has a payment method of Other and a profile type of Vendor-Supplier.</p>
+                        <p>2) A Pseudo EOP entry exists.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Pymt Invalid For JE That Affects Cash In Bank***</p>
+                    </td>
+                    <td class="td_31">
+                        <p>1) A journal entry should only affect Cash in Bank when a Payment Received or Made is entered that has a payment method of cash, check or EFT and a profile type of Client, Vendor or Other. Also for Bank Withdrawals.</p>
+                        <p>2) A Pseudo EOP entry exists.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Credit Card Pymt Date Doesn’t Match Invoice Date</p>
+                    </td>
+                    <td class="td_31">
+                        <p>A client payment with a payment method of Credit Card should have the same date of the invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Bank Account #1 Difference Between Receipts And Deposits: 500.00</p>
+                    </td>
+                    <td class="td_31">
+                        <p>There should always be a receipts report to match every deposit. The message means there is a discrepancy and the deposit entered needs to be re-reconciled.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_31">
+                        <p class="p_12">Zero Dollar Client or Vendor Balance Journal Entries Exist</p>
+                    </td>
+                    <td class="td_31">
+                        <p>User creates a payment received from a client with a payment method of other, invoice appears and user marks it closed. When the journal entry comes up TBO shows credit to Client Balances (which is correct), but the user then makes the Debit to Client Balances also which throws off the GL. </p>
+                    </td>
+                </tr>
+            </table>
+            <p>*** When a <span class="span_3">Posted</span> End of Period is voided, the entry is converted back into a normal journal entry and a reversing journal entry is also created. This results in these messages seen here. If receiving these messages as the result of a voided End of Period, ignore the message. </p>
+        </div>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;<span class="VariablesPhoneNumber">310-641-8726</span> — <span class="VariablesTBO Option">Option 1</span></p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.TBOSupport@sabre.com?subject=TBO content">Trams.TBOSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © <span class="VariablesCurrentYear">2020</span> <span class="VariablesCompanyName">Trams Inc.</span> </p>
+        </MadCap:pageFooter>
+    </body>
+</html>

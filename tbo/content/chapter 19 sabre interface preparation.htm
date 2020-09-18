@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>Preparing for Interface</title>&#160;<link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" /><link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" /><link href="resources/stylesheets/stylesheet.css" rel="stylesheet" /><script src="../Resources/Scripts/custom.modernizr.js"></script><script src="../Resources/Scripts/jquery.min.js"></script><script src="../Resources/Scripts/require.min.js"></script><script src="../Resources/Scripts/require.config.js"></script><script src="../Resources/Scripts/foundation.min.js"></script><script src="../Resources/Scripts/plugins.min.js"></script><script src="../Resources/Scripts/MadCapAll.js"></script></head>
+    <body>
+        <p style="text-align: right;">
+            <img src="resources/images/tramsbackoffice.png" class="img_header" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="VariablesProduct">Trams Back Office</span> <span class="VariablesVersion no">4.09.00</span> - <span class="VariablesType">New Features and Enhancements</span></p>
+        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="VariablesNewDateTimeVariable">Sep, 2020</span> </p>
+        <p>&#160;</p>
+        <div role="main" id="mc-main-content">
+            <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_17_SABRE_Interface_Preparation"></a>Chapter 17: SABRE&#160;Interface Preparation</span>
+            </p>
+            <h1><a name="SABRE_Interface_Preparation" data-mc-generated-bookmark="TOC"></a><a name="kanchor308"></a><a name="kanchor48"></a>SABRE Interface Preparation</h1>
+            <h2><a name="Preparing_for_Interface_..2" data-mc-generated-bookmark="TOC"></a><a name="Preparing_for_Interface_..2" data-mc-generated-bookmark="TOC"></a>Preparing for Interface</h2>
+            <p>Preparing for Interface starts by contacting your SABRE representative. Interface is an option offered by SABRE, and there may be charges incurred. <span class="trams">Trams</span> does not charge for interface options. SABRE enables interface options by assigning a line number or address referred to as a LNIATA. This is similar to the terminal and printer addresses in your main office. Any branch access and STP sites should be linked via SABRE, and Interface options should be discussed with the SABRE customer service center. You can view your agency options by typing PE*PCC. The PCC represents your pseudo city code. The following considerations should be discussed with SABRE.</p>
+            <h3><a name="Interface_Option_6" data-mc-generated-bookmark="TOC"></a><a name="Interface_Option_6" data-mc-generated-bookmark="TOC"></a>Interface Option 6</h3>
+            <p>Professional SABRE agencies use SABRE option 2 which allows for invoicing and ticketing. To enable interface, your site must be <span>cutover</span> to allow for SABRE option 6 features, which include the creation and format of Interface records. (Interface options are controlled by SABRE.) </p>
+            <p>Interface options can be flagged in your Agency profile referred to as the TJR. These options include flags to include Refunds and Exchanges, E-tickets, invoice only or invoice and itineraries for hotel updates as well as manual fare by leg information for segments not auto-priced by SABRE.</p>
+            <h3><a name="SABRE_Printing_Module" data-mc-generated-bookmark="TOC"></a><a name="SABRE_Printing_Module" data-mc-generated-bookmark="TOC"></a>SABRE Printing Module</h3>
+            <p>
+                <img src="resources/images/chapter 1 welcome/sabre interface preparation.jpg" style="height: 226px;width: 621px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p>In most SABRE platforms, SABRE uses the Sabre Printing Module to control HOST devices such as ticket printers, invoice printers, hardcopy printers or interface records. A SABRE field services technician or SABRE hardware support desk can help you configure the utility for interface files or cable options.</p>
+            <h3><a name="Images_to_File" data-mc-generated-bookmark="TOC"></a><a name="Images_to_File" data-mc-generated-bookmark="TOC"></a>Images to File</h3>
+            <p>SABRE Net locations require interface configured to a file, while other platforms give you an option. When configured as a Device Type: File, Trams must have network access to the folder location named in the Device properties. Default configuration:</p>
+            <p class="p_12">C:\SABRE\APPS\INTERFACE\PNRDATA.TXT</p>
+            <h3><a name="SABRE_Interface_Control" data-mc-generated-bookmark="TOC"></a><a name="SABRE_Interface_Control" data-mc-generated-bookmark="TOC"></a><a name="kanchor309"></a>SABRE Interface Control</h3>
+            <p>Sabre assigns a terminal line address or LNIATA when interface is first established. SABRE refers to this line address as the MINI DEVICE. You need to know the LNIATA for some of the formats used for interface control. The Sabre Interface Records are held on a Point of Sale or POS queue by Sabre, pending transmission to your office, for <span>10 days</span>.</p>
+            <p>Transmitted records are only available for re-transmission from the DWLIST until midnight of the original invoice date. A request to the SABRE QP/FSGG queue can allow access to the DWLIST for an extended period of time. Just request the extension in advance of changes to your interface configuration. SABRE protects the records prior to interface, by using an asynchronous protocol for transmission. If SABRE records leave the queue, and are not received by Windows Interface, it is likely that a file or other device has been configured incorrectly. While rare, it’s important to Note, that SABRE does not transmit records if a device address is not ready to receive the records. <span class="span_1">Interface options are controlled by SABRE. </span></p>
+            <h3><a name="Checking_Status_of_the_Interface_Queue_DX_STATUS" data-mc-generated-bookmark="TOC"></a><a name="Checking_Status_of_the_Interface_Queue_DX_STATUS" data-mc-generated-bookmark="TOC"></a>Checking Status of the Interface Queue DX STATUS</h3>
+            <p>This entry allows you to see the status of the Point of Sale or POS queue. Sabre responds with a status of the Interface Queue and the number of messages on the queue. Q2 displays normal interface records. The status is<span class="span_1"> on hold</span> or <span class="span_1">active</span>. </p>
+            <table class="table_1">
+                <col style="width: 279pt;" />
+                <tr>
+                    <td class="td_49">
+                        <p>POS Queue 741E1A</p>&#160;<p>Q0 0 on hold</p><p>Q1 0 on hold</p><p>Q2 33 on hold</p></td>
+                </tr>
+            </table>
+            <h3><a name="Start_Transmission_of_Pending_Message_DX_TRANSMIT" data-mc-generated-bookmark="TOC"></a><a name="Start_Transmission_of_Pending_Message_DX_TRANSMIT" data-mc-generated-bookmark="TOC"></a>Start Transmission of Pending Message DX TRANSMIT</h3>
+            <p>This entry requests SABRE begin the transmission of all pending Interface records from the POS queue to <span class="trams">Trams</span>. Status on Q2 and Q1 changes to active. If <span class="trams">Trams</span> is not ready to receive records before initiating transmission, SABRE times out and reports a failed state. Just get <span class="trams">Trams</span> ready to receive and try the DX TRANSMIT command again. </p>
+            <h3><a name="Stop_Transmission_of_Pending_Message_DX_END" data-mc-generated-bookmark="TOC"></a><a name="Stop_Transmission_of_Pending_Message_DX_END" data-mc-generated-bookmark="TOC"></a>Stop Transmission of Pending Message DX END</h3>
+            <p>This entry requests Sabre to stop the transmission of records from the interface queue to <span class="trams">Trams</span> after the last record on queue is transmitted. If DX STATUS displays 20 records on Q2 the DX END message becomes record number 21, and places the queue on HOLD after the current transmission is completed. The DX END command can follow the DX TRANSMIT command every evening. All existing records are transmitted and the end message puts the transmission on hold after the last record is received.</p>
+            <h3><a name="Stop_Transmission_Immediately_DX_HOLD" data-mc-generated-bookmark="TOC"></a><a name="Stop_Transmission_Immediately_DX_HOLD" data-mc-generated-bookmark="TOC"></a>Stop Transmission Immediately DX HOLD</h3>
+            <p>This entry requests SABRE to stop the transmission of records from the queue to <span class="trams">Trams</span>, immediately. If for some reason, you need to stop transmission to <span class="trams">Trams</span>, this entry places the interface queue on hold after the next record is received. If records leave the interface queue, BUT do not get to <span class="trams">Trams</span>, do the DX HOLD to preserve the records. SABRE only allows retransmission of records on the same day invoiced.</p>
+            <p>Because of the way SABRE is configured for interface, it is unusual for SABRE to release records. SABRE should notice that <span class="trams">Trams</span> is not ready and “put itself on hold." If for some reason this is not happening contact the SABRE help desk.</p>
+            <h3><a name="Retransmit_Records_DWLIST" data-mc-generated-bookmark="TOC"></a><a name="Retransmit_Records_DWLIST" data-mc-generated-bookmark="TOC"></a>Retransmit Records DWLIST</h3>
+            <p>The SABRE Interface Records are held on a Point of Sale or POS queue by Sabre, pending transmission to your office, for 10 days. Transmitted records are only available for re-transmission from the DWLIST until midnight of the original invoice date. If necessary, SABRE can hold the DWLIST longer. Please request this in writing with a queue message to SABRE SCS at QP/FSGG.</p>
+            <p class="p_98">DWLIST list of completed work for PCC</p>
+            <p class="p_98">DW1 resends item number 1 to the POS Queue</p>
+            <p class="p_98">DWALL resends all items to the POS Queue</p>
+            <p class="p_98">DWYES confirms request to resend item to POS Queue</p>
+            <h3><a name="Check_History_of_Transmission_Activity_DX_HISTORY" data-mc-generated-bookmark="TOC"></a><a name="Check_History_of_Transmission_Activity_DX_HISTORY" data-mc-generated-bookmark="TOC"></a>Check History of Transmission Activity DX HISTORY</h3>
+            <p>This entry displays the history of activity to and from the queue. Used by SABRE to audit activity on the queue. If transmission of records fails, SABRE logs a reason code that can be viewed here.</p>
+            <p class="p_99">TMO NO ACK RCVD= Sabre is not receiving acknowledgment from your site.</p>
+            <p>*Check that the Sabre print Module (SPM/SJPM) is running and displayed in the System Tray (bottom right corner of screen). If the ICON does not appear, contact the Sabre support desk at 1-866-334-7551 for assistance, select Option 2 for Hardware.</p>
+            <h2><a name="Establishing_Daily_Procedures_..3" data-mc-generated-bookmark="TOC"></a><a name="Establishing_Daily_Procedures_..3" data-mc-generated-bookmark="TOC"></a><a name="kanchor310"></a>Establishing Daily Procedures</h2>
+            <p><strong class="bold_arial_4">Go over the Interface Overview Section for a detailed description of the Download and Processing Steps. Use this as your guide to establishing daily procedures. </strong><span class="span_14">Check that </span><span class="trams_1">Trams</span><span class="span_14"> is ready to receive records.</span>
+            </p>
+            <p>Interface is a great tool for communication with the <span class="span_1">Trams</span> back office system. The goal of interface is effective data entry into <span class="span_1">Trams. </span>In order to optimize the database that <span class="span_1">Trams </span>is creating from your AIRs, you’ll want to setup some minimum daily requirements to ensure the integrity of the data and to maintain the system. <span>Note:</span><span class="span_1">TBO=Trams Back Office.</span></p>
+            <h3><a name="Download_Procedures_for_TBO_..4" data-mc-generated-bookmark="TOC"></a><a name="Download_Procedures_for_TBO_..4" data-mc-generated-bookmark="TOC"></a>Download Procedures for TBO</h3>
+            <p>1) From the <span class="span_1">Trams</span> Main menu select <span>Interface|Download</span></p>
+            <p>2) Click <span class="span_1">Download</span> to receive the records into <span class="span_1">Trams</span></p>
+            <p>3) Click <span class="span_1">Close</span> to exit from the download screen</p>
+            <h3><a name="Continued_Procedures_for_TBO_..5" data-mc-generated-bookmark="TOC"></a><a name="Continued_Procedures_for_TBO_..5" data-mc-generated-bookmark="TOC"></a>Continued Procedures for TBO</h3>
+            <p>1) From the <span class="trams">Trams</span> Main menu select <span>Reports|Interface</span> </p>
+            <p class="p_59">• Review the Download Error Log for missing invoices.</p>
+            <p class="p_59">• Print the Interface Invoice List to compare to your invoice hard copies.</p>
+            <p>2) From the <span class="trams">Trams</span> Main menu select <span>Interface|Process</span></p>
+            <p class="p_59">• Process all records until the file is empty.</p>
+            <p>3) From the <span class="trams">Trams</span> Main menu select <span>Invoice|Query</span></p>
+            <p class="p_59">• Enter the date range you just processed and reconcile to your invoice hard copies.</p>
+            <p class="p_59">• Make any changes to records at the invoice or booking level.</p>
+            <p class="p_59">• Add any missing invoices</p>
+            <p class="p_59">• Void any invoices to be voided</p>
+            <p class="p_59">• Enter Full Invoice refunds</p>
+            <p>4) From the <span class="trams">Trams</span> Main menu select <span>Reports|Invoice</span></p>
+            <p class="p_59">• Run the ARC/BSP reconciliation report</p>
+            <p class="p_59">• Reconcile agent/auditor coupons to the ARC reconciliation report</p>
+            <p class="p_59">• Correct any errors in the booking itself by going to <span>Invoice|Query</span>.</p>
+            <p>5) From the <span class="trams">Trams </span>Main menu select <span>Payments|Received</span> </p>
+            <p class="p_59">• Enter any cash/check payments received from clients and vendors. </p>
+            <p>6) From the <span class="trams">Trams</span> Main menu select <span>Reports|Payments|Receipts</span></p>
+            <p class="p_59">• Reconcile the days’ receipts to the bank deposit slip </p>
+            <p>7) From the <span class="trams">Trams</span> Main menu select <span>Payments|Made</span> </p>
+            <p class="p_59">• Enter all the agency disbursements</p>
+            <p>8) From the <span class="trams">Trams</span> Main menu select <span>Reports|Core</span></p>
+            <p class="p_59">• Process and review the Core Reports - Client Balances, Vendor Balances, ARC|BSP Balances and Check Register. The ARC/BSP Balance report only displays data after the first ARC settlement has been processed in <span class="span_1">Trams</span>. Until the first ARC settlement is processed in <span class="span_1">Trams</span>, the ARC/BSP Reconciliation (<span>Reports|Invoice|ARC/BSP Reconciliation</span>) report may be used to verify all ARC/BSP documents.</p>
+            <p>9) From the <span class="trams">Trams</span> Main menu select <span>Utilities|Backup</span>.</p>
+            <h3><a name="Interfacing_Multiple_Branches_..6" data-mc-generated-bookmark="TOC"></a><a name="Interfacing_Multiple_Branches_..6" data-mc-generated-bookmark="TOC"></a><a name="kanchor311"></a>Interfacing Multiple Branches</h3>
+            <p>If you have multiple branches linked to a single PCC in Sabre, <span class="trams">Trams</span> sorts the invoices into their proper branch using the branch definitions you setup in <span class="trams">Trams</span> Utilities. There is no separate licensing agreement for interface from multiple branches handled with a single <span class="trams">Trams</span> general ledger.</p>
+            <p>Multiple general ledgers is a billable feature of <span class="trams">Trams</span>, but can be accommodated in a single database, with branch designations pointing to separate ARC/BSP numbers and/or general ledgers. Consult with a Trams sales representative for pricing and a <span class="trams">Trams</span> accounting support representative for optimal use of these features. If multiple branches are being maintained in separate <span class="trams">Trams</span> programs or database aliases, then branch commands at time of ticketing are needed to separate the interface records for transmission from separate interface queues.</p>
+            <p>Also go to the <span>Utilities|Setup|Global Default</span> menu and be sure the field “Allow Branch Entries” is set to “STP” or “FULL." To set up Branches in <span class="span_1">Trams Back Office,</span> go to <span>Utilities|Set Up|Branches. </span></p>
+            <h3><a name="Processing_by_ARC_Number" data-mc-generated-bookmark="TOC"></a><a name="Processing_by_ARC_Number" data-mc-generated-bookmark="TOC"></a>Processing by ARC Number</h3>
+            <p>Branches linked to the main office send interface records to a single POS Queue. Records received by Trams can be processed by individual ARC Number. Records can be processed by more than one operator working on individual ARC numbers.</p>
+            <h2><a name="Entries_Affecting_Invoices_and_Tickets_..7" data-mc-generated-bookmark="TOC"></a><a name="Entries_Affecting_Invoices_and_Tickets_..7" data-mc-generated-bookmark="TOC"></a><a name="kanchor312"></a><span class="Heading2Char">Entries Affe</span>cting Invoices and Tickets</h2>
+            <p>The SABRE Interface Record transmitted to the <span class="trams">Trams</span> system gets its information from the PNRs you create. How information is entered into the PNR is directly related to <span class="trams">Trams</span> success in translating the information. Accounting Remark lines entered with a 5.* or 5.S* format can be included in the PNR before invoicing. This allows the capture of specific information about the customer and the transaction. These entries do not affect the Sabre invoice but transmit to <span class="trams">Trams</span>. Some descriptor codes can be entered at the booking level instead of the Invoice level. See the DESCRIPTOR CODES tables in this section for a complete description of codes.</p>
+            <p class="p_34">Interfaced Air bookings (ARC and non-ARC) that don't have fare by leg information, will have fare-by-leg auto-calculated based on the Base Fare divided by the number of legs.</p>
+            <table class="table_1">
+                <col style="width: 231pt;" />
+                <col style="width: 231pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">Remark prints on Sabre Invoice</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.*[code][data] </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">Suppress printing of remark on Sabre Invoice</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*[code][data] </p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Customer_Number_as_the_Interface_ID_DK" data-mc-generated-bookmark="TOC"></a><a name="Customer_Number_as_the_Interface_ID_DK" data-mc-generated-bookmark="TOC"></a>Customer Number as the Interface ID DK </h3>
+            <p>The<span class="italic_1"> Customer ID</span> is an important field to link the invoice to the correct client during interface. <span class="trams">Trams</span> recommends a unique client profile for every customer to help build your customer data base and mailing list. An easy number to use for leisure and walk-in clients is their 10-digit telephone number. This allows the front office agents to capture the interface ID without the need to look up a client list. Corporate or VIP clients that have SABRE profiles may warrant a more traditional DK based on their name or company name for easy recognition.</p>
+            <p>The Customer ID can be entered with a SABRE DK format or as a <span class="span_35">5.S*AN</span> accounting remark. The SABRE DK prints as reference information on the SABRE invoice and ticket, so is a natural choice for tracking the customer number. The SABRE DK can be defined as 6, 7 or 10 characters, but always interfaces to <span class="trams">Trams</span> as 10 alphanumeric characters. SABRE left fills the DK with zeros, so it may look confusing at first. <span class="trams">Trams</span> looks at the 10 characters literally when searching or creating the Interface ID in the client profile.</p>
+            <p>DK010030 would be sent to <span class="trams">Trams</span> as Interface ID <span class="span_35">0010000030 and </span>DK3105191225 would be sent to <span class="trams">Trams</span> as Interface ID <span class="span_35">3105191225.</span></p>
+            <p><span class="trams">Trams</span> normally reads the branch designation from the ARC number in the Interface record, and uses the entire DK number (filled to 10 characters), as a literal customer number or Interface ID. Trams options in <span>Utilities|Setup|Global Defaults</span>, do allow for Branch overrides. <span class="trams">Trams</span> search options eliminate the need for HOUSE DK’s by agent. </p>
+            <h3><a name="Customer_Number_as_a_Remark_5.S*AN" data-mc-generated-bookmark="TOC"></a><a name="Customer_Number_as_a_Remark_5.S*AN" data-mc-generated-bookmark="TOC"></a>Customer Number as a Remark 5.S*AN</h3>
+            <p>You have an additional option for sending the customer ID to <span class="trams">Trams</span>. An Interface ID can be added with an accounting remark 5.S*ANxxxxxxxxxx, if you choose not to use the SABRE DK option. This coded remark is translated by <span class="trams">Trams</span> as the customer interface ID. The remark is ignored by SABRE if you choose to suppress printing. If both exist in the PNR, <span class="trams">Trams</span> ignores the DK and uses only the AN remark as the interface ID. This might prove beneficial when transitioning from House DKs or Agent DKs to Leisure customer profiles.</p>
+            <p>New client profiles can be created in <span class="trams">Trams</span> during the interface processing. This slows the interface processing down at first, but saves a lot of manual data entry, time and research. It allows you to start interfacing to an empty data base.</p>
+            <h3><a name="Billing_Address_5_" data-mc-generated-bookmark="TOC"></a><a name="Billing_Address_5_" data-mc-generated-bookmark="TOC"></a>Billing Address 5/</h3>
+            <p>Customer name and address information can interface to <span class="trams">Trams</span> for any new clients. The address interfaces when creating new client profiles during the interface process. <span class="trams">Trams</span> can accept up to 40 characters for each address line. A change of address for existing clients is Noted in the Processing Error Log for review, but does not update profiles automatically. <span class="trams">Trams</span> translates the billing address fields as the client name and address.</p>
+            <table class="table_1">
+                <col style="width: 101pt;" />
+                <col style="width: 133pt;" />
+                <col style="width: 140pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="description_1">Client billing name</p>
+                        <p class="description_1">Address1/Address2</p>
+                        <p class="p_100">&#160;</p>
+                        <p class="description_1">City, St Zip</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5/</span><span class="span_35">ABC</span><span class="span_35">TOY</span><span class="span_35">COMAPNY</span>
+                        </p>
+                        <p><span class="span_35">5/345 </span><span class="span_35">MAIN</span><span class="span_35">STREET</span><span class="span_35">/</span><span class="span_35">SUITE</span><span class="span_35"> 1235</span>
+                        </p>
+                        <p><span class="span_35">5/</span><span class="span_35">LOS ANGELES</span><span class="span_35">, </span><span class="span_35">CA</span><span class="span_35"> 90045</span>
+                        </p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5/</span><span class="span_35">CLIENT NAME</span>
+                        </p>
+                        <p><span class="span_35">5/</span><span class="span_35">ADDRESS1</span><span class="span_35">/</span><span class="span_35">ADDRESS</span><span class="span_35">2</span>
+                        </p>
+                        <p><span class="span_35">5/</span><span class="span_35">CITY</span><span class="span_35">STATE</span><span class="span_35">ZIPCODE</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p><span class="span_30"><br /></span>To assist the back office in distinguishing new leisure clients from corporate clients, it may help to assign alpha Interface ID’s for corporate clients. </p>
+            <h3><a name="Phone_Number_5.S*PH" data-mc-generated-bookmark="TOC"></a><a name="Phone_Number_5.S*PH" data-mc-generated-bookmark="TOC"></a>Phone Number 5.S*PH</h3>
+            <p>The customer’s telephone number is also captured, in <span class="span_1">Trams</span> when creating new client profiles during the Interface process. The first SABRE telephone entry marked as H or B, in the PNR, is interpreted as the primary phone number, in the <span class="span_1">Trams</span> profile. Only one phone number is captured.</p>
+            <table class="table_1">
+                <col style="width: 213pt;" />
+                <col style="width: 165pt;" />
+                <tr>
+                    <td class="td_73">
+                        <p class="description_2">Add Phone number to the Trams profile (TBO Windows) </p>
+                    </td>
+                    <td class="td_73">
+                        <p class="p_5"><span class="span_35">9LAX310-641-8726-</span><span class="span_35">H</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_73">
+                        <p class="p_4">Add Phone number to the Trams profile (Trams30)</p>
+                    </td>
+                    <td class="td_73">
+                        <p class="p_90">5.S*PH310-641-8726</p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Fax_Number_5.S*FX" data-mc-generated-bookmark="TOC"></a><a name="Fax_Number_5.S*FX" data-mc-generated-bookmark="TOC"></a>Fax Number 5.S*FX</h3>
+            <p>The customers fax phone number may be captured when creating new client profiles during the Interface process. The FX code is added to the remark field and transmits to the phone field called Fax in the <span class="span_1">Trams</span> profile</p>
+            <table class="table_1">
+                <col style="width: 153pt;" />
+                <col style="width: 225pt;" />
+                <tr>
+                    <td class="td_73">
+                        <p class="description_2">Add Fax phone number to the Trams profile </p>
+                    </td>
+                    <td class="td_73">
+                        <p class="p_90">5.S*FX310-555-1213</p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Client_Email_Address" data-mc-generated-bookmark="TOC"></a><a name="Client_Email_Address" data-mc-generated-bookmark="TOC"></a>
+                <br />Client Email Address</h3>
+            <p>The Client Email address is captured via interface when creating new clients or to update existing client profiles with an Email address. If a different Email address exists in the current profile, Trams captures the address as an additional Email address. The EU entry is added as a remark in the PNR prior to invoicing. Trams captures the remark to the Client Profile/Communications screen. </p>
+            <table class="table_1">
+                <col style="width: 178pt;" />
+                <col style="width: 198pt;" />
+                <tr>
+                    <td class="td_73">
+                        <p class="p_4">paulmcc@apple.com</p>
+                        <p class="p_4">b_gates@msoft.com</p>
+                        <p class="p_4">mickey-mouse@disney.com</p>
+                    </td>
+                    <td class="td_73">
+                        <p class="example_1">5.S*EUPAULMCC*APPLE.COM</p>
+                        <p class="example_1">5.S*EUB//GATES*MSOFT.COM</p>
+                        <p class="example_1">5.S*EUMICKEY-MOUSE*DISNEY.COM</p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <br />Trams translates the following SABRE characters accepted in the remark field.</p>
+            <p class="p_12">* use for @ at symbol</p>
+            <p class="p_12">// use for the _ underscore symbol</p>
+            <p class="p_12">- use for the - dash symbol</p>
+            <p><span class="span_1">Trams</span> does not capture or track Email addresses at the passenger level. Other SABRE formats for Email address in the PNR do NOT interface to Trams.</p>
+            <h3><a name="Sales_Agent_Sabre_Agent_Sine" data-mc-generated-bookmark="TOC"></a><a name="Sales_Agent_Sabre_Agent_Sine" data-mc-generated-bookmark="TOC"></a>Sales Agent Sabre Agent Sine</h3>
+            <p>The SABRE sine-in agent who creates the original PNR is included in the IUR and interpreted by <span class="trams">Trams</span> as the inside agent. The agent sine is created in SABRE as a 2 character alphanumeric code. This agent ID should match the Interface ID in the <span class="trams">Trams</span> Agent Profile. <span class="trams">Trams</span> interprets this sine-in agent as the first sales agent for all bookings in the invoice. The inside agent can be overridden but is a great way to analyze agent productivity. Up to 9 agents can be linked to a single booking by adding agents at the invoice or booking level.</p>
+            <h3><a name="Agent_ID_Override_or_Additional_Sales_Agents_5.S*SA" data-mc-generated-bookmark="TOC"></a><a name="Agent_ID_Override_or_Additional_Sales_Agents_5.S*SA" data-mc-generated-bookmark="TOC"></a>Agent ID Override or Additional Sales Agents 5.S*SA</h3>
+            <p>The sine-in agent ID can be overridden with the 5.S*SAXX entry. To add a second agent to a booking without ignoring the sine-in agent, two entries are required as follows; 5.S*SA(original sine-in agent ID) and 5.S*SA(second sales agent ID). If default commission rates are defined for the inside agent in the agent profile, the commission entry added here overrides the default commission rate. Rates are a percentage of the agency commission. <span>The space following the agent sine and the commission or remarks is mandatory.</span></p>
+            <p><strong class="bold_arial">Note: </strong>Inside agents can be linked to a customer profile instead of interfacing. Use one option or the other, or two 2 sales agents are attached to the invoice. Adding a sales agent at the booking level does not override the default inside sales agent Two sales agent id’s will appear on the booking.</p>
+            <table class="table_1">
+                <col style="width: 145pt;" />
+                <col style="width: 268pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To ignore the booking agent sine-in.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*SA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To override a booking agent with agent 33.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*SA33</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To override a booking agent with agent MM @ 20% commission</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*SAMM 20</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To override a booking agent with agent J8 @ 15% for overrides.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*SAJ8 15 OVERRIDE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To override the booking agent with J8 @ 20.00 commission</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">5.S*SAJ8 A20.00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To add a booking agent with agent 38 @ 20% for a Promo on this booking only.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">ACSEA1/003020/fpt/300.00/1000.00/0/CK/1-*TT5*SA38 20 PROMO</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To add the booking agent on segment 2 only.</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.S*</span><span class="span_35">MS</span><span class="span_35">1*</span><span class="span_35">SA</span><span class="span_35">33 20 BONUS OVERRIDE</span>
+                        </p>&#160;</td>
+                </tr>
+            </table>
+            <h3><a name="Outside_Agent_ID_5.S*OA" data-mc-generated-bookmark="TOC"></a><a name="Outside_Agent_ID_5.S*OA" data-mc-generated-bookmark="TOC"></a>Outside Agent ID 5.S*OA</h3>
+            <p><span class="trams">Trams</span> can track outside agents in addition to inside agents for commission statements and productivity reports. A total of nine agents can be linked to a booking. The Outside Agent ID should match the Interface ID in the <span class="trams">Trams</span> Agent profile. Up to 10 characters can be used as the Outside Agent Interface ID. <span class="span_1">The space following the sales agent code and commission is mandatory.</span></p>
+            <p><span>Notes: </span>Outside agents can be linked to a customer profile instead of interfacing. Use one option or the other, or 2 outside sales agents are attached to the Invoice. Adding a sales agent at the booking level does not override the default inside sales agent for the invoice. Two sales agent ID’s appear on the booking<span>.</span></p>
+            <table class="table_1">
+                <col style="width: 98pt;" />
+                <col style="width: 276pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To add an outside agent SM</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*OASM</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To add an outside agent 45 @ 50% </p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*OA45 50</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To add outside agent 45 @ 50.00 commission</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">5.S*OA45 A50.00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To add outside agent SM @15% for Promo</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.S*OA</span><span class="span_35">sm</span><span class="span_35"> 15 </span><span class="span_35">PROMO</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To add outside agent Judy @15% for this booking.</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">AC</span><span class="span_35">OTH1/006001/</span><span class="span_35">SVC</span><span class="span_35">/10/300.00/30.00/ALL/CK/1-*TTINS*OA55 15</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <br />If default commission rates are defined for the outside agent in the agent profile, the commission entry added here overrides the default commission rate. Rates are a percentage of the agency commission. Since Trams allows multiple agents per booking, there should be flex edits or QC procedures in place to avoid multiple OA agents per booking.</p>
+            <h3><a name="Department_Information_5.S*DP" data-mc-generated-bookmark="TOC"></a><a name="Department_Information_5.S*DP" data-mc-generated-bookmark="TOC"></a>Department Information 5.S*DP</h3>
+            <p>Department Information interfaces to <span class="trams">Trams</span> with the 5.S*DP entry. You can enter up to 20 alphanumeric characters for the department. This allows for reporting of activity by departments. Departments entered at the invoice level attach to each booking. Departments can also be defined within a clients’ profile. This entry does not update the Client Profile, but attaches to the invoice or booking for reporting.</p>
+            <table class="table_1">
+                <col style="width: 104pt;" />
+                <col style="width: 270pt;" />
+                <tr>
+                    <td class="td_78">
+                        <p class="p_89">Department ID at invoice level</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">DP</span><span class="span_35">340</span><span class="span_35">WEST</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_79">
+                        <p class="p_89">Add department at the booking level</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">ACTOR</span><span class="span_35">1/006001/</span><span class="span_35">FPT</span><span class="span_35">/10/300.00/30.00/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">5*</span><span class="span_35">DP</span><span class="span_35">1234</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_80">
+                        <p class="p_89">Add department at booking level</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">VD</span><span class="span_35">002010*</span><span class="span_35">TT</span><span class="span_35">9*</span><span class="span_35">TF</span><span class="span_35">1000.00*</span><span class="span_35">CM</span><span class="span_35">0*</span><span class="span_35">DPSONY</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="UDIDS_Remarks_5.S*UD1" data-mc-generated-bookmark="TOC"></a><a name="UDIDS_Remarks_5.S*UD1" data-mc-generated-bookmark="TOC"></a>UDIDS Remarks 5.S*UD1</h3>
+            <p>User Defined Interface Data Storage or UDIDS remarks track customer related information used for reporting and sorting purposes in the <span class="trams">Trams</span> report generator. UDIDS can be used for any information you wish to track for a customer or a market. You may enter a maximum of 999 UDIDS remark lines. <span class="trams">Trams</span> allows up to 60 alphanumeric characters per line. The UDID number can be unique for each customer or global for tracking markets and special reporting data. By including UDID definitions in the SABRE Customer Profile Star ensures consistent use and transfer to the PNR.</p>
+            <table class="table_1">
+                <col style="width: 375pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_16">A corporate client has asked for travel management reports that contain information on his employees travel patterns, by employee number and department. Run some sample reports to test how the information should be captured and stored. By assigning a UDID for employee number and requiring the department for each passenger, a report can be run to your customers specifications.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <br />You must indicate an appropriate UDIDS number after the UD entry for <span class="trams">Trams</span> to sort the remarks correctly. The <span>space</span> following the UDID number is <span>mandatory</span> to allow for alphanumeric data.</p>
+            <table class="table_1">
+                <col style="width: 94pt;" />
+                <col style="width: 281pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add employee number 9866 for a customer</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">UD</span><span class="span_35">1 9866</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add marketing information for the office</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*UD20 PROMO224</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add UDIDS at booking level</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">VCRCLL</span><span class="span_35">*</span><span class="span_35">TT</span><span class="span_35">9*</span><span class="span_35">TF</span><span class="span_35">1000.00*</span><span class="span_35">CM</span><span class="span_35">0*</span><span class="span_35">UD</span><span class="span_35">1 </span><span class="span_35">SALES</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">To capture UDID for each passenger use the remark format</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">-Smith/John*U1-FREEFLOW</p>
+                        <p><span class="span_35">NOTICE: </span><span class="span_30">UDID format differs when used in name statement. Passenger associations attach to air segments only.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add UDID for a specific ARC booking</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">5.S*MS101*UD2 EUROPE PROMO</p>
+                        <p class="p_89">Note: 101 will link to the 1st air accounting line. The UDID information will apply to the booking that includes that accounting line information.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <br />UDIDS can also be used globally to track market information for special promotions. Using UDIDs in this manner requires that specific UDIDs are defined by the agency to ALWAYS mean a marketing code, or reconciliation code. Often they act as invoice level flags for reporting or reconciliation programs. </p>
+            <p><span>Note:</span> Any agency having a conflict with the Client Remarks field of a booking being interfaced to a UDID field, can ignore UDID formats in the Client Remarks field of a booking by entering <span>-NU</span> in the <span class="span_1">Option </span>field on the Download Screen.</p>
+            <table class="table_1">
+                <col style="width: 514pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_16">The agency has just started an advertising campaign to promote cruises. To test the effectiveness of the cruise promotions, a special marketing code was included in the advertisement. In one advertisement, clients were directed to request information on the “Year 2000 Cruise”. In another advertisement clients were asked to request information on the "Millennium Madness" cruise. Both advertisements were promoting the same cruise. Each time a cruise was booked the sales agent entered the appropriate marketing code.</p>
+                        <p class="example_4">UD20 mKY2000</p>
+                        <p class="example_4">UD20 mKMMAD</p>
+                        <p><span class="span_1">A report was created in the </span><span class="trams">Trams</span><span class="span_1"> report generato</span><span class="span_1">r </span><span class="span_1">that included a UD1 field to compare the results of each advertising campaign. When run for cruise sales, and UDID1 with a value of MK, the report helped to determine which advertising campaign was most effective.</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Group_Affiliation_5.S*GP" data-mc-generated-bookmark="TOC"></a><a name="Group_Affiliation_5.S*GP" data-mc-generated-bookmark="TOC"></a>Group Affiliation 5.S*GP</h3>
+            <p>Group affiliation can be entered by front office agents and linked to the invoice as an invoice group. This allows for reports on groups of invoices. Clients that belong to a group for reporting purposes can also be linked in <span class="trams">Trams</span> through the Client Profile as shown in the Profile section of the manual. Group names can be defined in <span>Utilities|Setup|Groups</span>. The Group name can be up to 10 alphanumeric characters. </p>
+            <p>Group information received through interface using the 5.S*GP entry is captured to the invoice and the payment group field (for the appropriate client payment closing the booking) for reporting and querying purposes. The group information can also be 10 alpha-numeric characters. <span class="span_1">The </span><span class="trams_1">Trams</span><span class="span_1"> client profile is not updated with group information through the interface process.</span></p>
+            <table class="table_1">
+                <col style="width: 120pt;" />
+                <col style="width: 254pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p><span class="span_30">Add group ID to invoice and payment group field</span><span class="span_30">s</span>
+                        </p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*GPSUPERBOWL</p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Invoice_Remarks_5.S*IM" data-mc-generated-bookmark="TOC"></a><a name="Invoice_Remarks_5.S*IM" data-mc-generated-bookmark="TOC"></a>
+                <br />Invoice Remarks 5.S*IM</h3>
+            <p>Invoice Remarks added with the 5.S*IM entry displays when applying client payments in <span class="trams">Trams</span>. Up to 35 alphanumeric characters can be included in this entry.</p>
+            <table class="table_1">
+                <col style="width: 133pt;" />
+                <col style="width: 241pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add invoice remarks to assist with payment processing.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.s*imbill to smith corp</p>
+                        <p class="example_3">5.s*imcruise deposit</p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Client_Remarks_5.S*RM_FREE_FLOW" data-mc-generated-bookmark="TOC"></a><a name="Client_Remarks_5.S*RM_FREE_FLOW" data-mc-generated-bookmark="TOC"></a>
+                <br />Client Remarks 5.S*RM FREE FLOW</h3>
+            <p>Client remarks can be interfaced to <span class="trams">Trams</span> with the 5.S*RM entry. A total of 60 characters can be included in the remarks field. The remarks appear on wide format statements and client summary reports.</p>
+            <table class="table_1">
+                <col style="width: 109pt;" />
+                <col style="width: 265pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add a client remark</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">RMCORP</span><span class="span_35">BILLING</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add remark at the booking level</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">ACSEA</span><span class="span_35">1/002020/</span><span class="span_35">DEP</span><span class="span_35">/0/300.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">4*</span><span class="span_35">RMPROMOTIONAL</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add remark at the booking level</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">VCRCCL</span><span class="span_35">*</span><span class="span_35">TT</span><span class="span_35">9*</span><span class="span_35">TF</span><span class="span_35">1000.00*</span><span class="span_35">CM</span><span class="span_35">0*</span><span class="span_35">RMCORP</span><span class="span_35">BILLING</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_81">
+                        <p class="p_89">Add remark as passenger statement information in the name field</p>
+                    </td>
+                    <td class="td_81">
+                        <p><span class="span_35">-</span><span class="span_35">SMITH/JOHN</span><span class="span_35">MR</span><span class="span_35">*</span><span class="span_35">LEISURE</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Passenger_Statement_Information_-LAST_NAME_FIRST*" data-mc-generated-bookmark="TOC"></a><a name="Passenger_Statement_Information_-LAST_NAME_FIRST*" data-mc-generated-bookmark="TOC"></a>
+                <br />Passenger Statement Information -LAST NAME/FIRST*</h3>
+            <p>Statement information is entered in the name field of the Sabre PNR. Passenger remarks entered here appear on the invoice/itinerary and ticket. SABRE allows up to 25 characters of information. For translation to <span class="trams">Trams</span>, remarks entered here should be preceded with a valid booking level descriptor code. The # represents the SABRE cross of lorraine.</p>
+            <table class="table_1">
+                <col style="width: 195pt;" />
+                <col style="width: 180pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add UDIDS as passenger statement information.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">-MEYER/SHARON*U1-9866#-MILLER/J *U1-1922</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add passenger statement information for client remark.</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">-</span><span class="span_35">ROSEN</span><span class="span_35">/</span><span class="span_35">LEE</span><span class="span_35">*</span><span class="span_35">LEISURE</span><span class="span_35">#-2</span><span class="span_35">AHLSMITH</span><span class="span_35">/</span><span class="span_35">S</span><span class="span_35">MR</span><span class="span_35">/</span><span class="span_35">D</span><span class="span_35">MRS</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Fare_Savings_Report_Information_..8" data-mc-generated-bookmark="TOC"></a><a name="Fare_Savings_Report_Information_..8" data-mc-generated-bookmark="TOC"></a>
+                <br />Fare Savings Report Information </h3>
+            <p><span class="trams">Trams</span> receives Fare Savings Report information through interface. The Fare Justification code is entered with the 5.S*FJ entry and should match the Fare Code table in <span class="trams">Trams</span> utilities. The invoice remarks are entered separately and cannot be entered as a single remark. For information on Fare Savings Reports see the REPORTS section of the <span class="trams">Trams</span> User Manual.&#160; <span class="span_37">Note:</span><span class="span_37">For ARC air segments, Fare Savings can be entered at Invoice Level.&#160; For non-ARC supplier segments, Fare Savings must be entered at Booking Level.&#160; </span></p>
+            <table class="table_1">
+                <col style="width: 114pt;" />
+                <col style="width: 261pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Add Fare Justification Code</p>
+                        <p class="p_89">Add Full Fare amount</p>
+                        <p class="p_89">Add Low Fare amount</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*FJEX</p>
+                        <p class="example_3">5.S*FF638.00</p>
+                        <p class="example_3">5.S*LF68.00</p>
+                        <p class="p_89">&#160;</p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <br />Go to <span>Utilities|Setup|Fare Codes</span> to set up fare justification codes.</p>
+            <h3><a name="Form_of_Payment_Override_5.S*FP" data-mc-generated-bookmark="TOC"></a><a name="Form_of_Payment_Override_5.S*FP" data-mc-generated-bookmark="TOC"></a>Form of Payment Override 5.S*FP</h3>
+            <p><span class="trams">Trams</span> receives the FOP used to create Sabre generated tickets and invoices. No additional entries are required for interface. The ability to override the FOP generated by Sabre is to be used at the agencies discretion with a <span class="span_35">5.S*FP</span> entry. The Form of Payment override can also be used at the booking level as shown in the Descriptor codes available at booking level in the example section of this manual. </p>
+            <table class="table_1">
+                <col style="width: 180pt;" />
+                <col style="width: 195pt;" />
+                <tr>
+                    <td class="td_82">
+                        <p class="p_89">Check or Cheque</p>
+                        <p class="p_89">Check or Cheque</p>
+                        <p class="p_89">Cash</p>
+                        <p class="p_89">All other entries are interpreted as credit card</p>
+                    </td>
+                    <td class="td_83">
+                        <p class="example_3">5.S*FPCH</p>
+                        <p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">FPCK</span>
+                        </p>
+                        <p class="example_3">5.S*FPCASH</p>
+                        <p class="example_3">5.S*FPAX304172345667</p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <br />Client payment options are available at the booking level to enhance the payment options available through interface. Such options include Electronic fund transfers and Credit card merchant pay methods. Client payment options must comply with the form of payment entered at the invoice level.</p>
+            <p><span class="description">To clarify the invoice Credit card FOP as CC </span><span class="description">M</span><span class="description">erchant FOP for service charges. The expirations date entry must follow the CP4 entry:</span>
+            </p>
+            <p><span class="span_35">ACOTH1/000006/SVC/10.00/10.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCAX</span><span class="span_35">432133355566042 1.1 </span><span class="span_35">JONES</span><span class="span_35">THOMAS</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">11*</span><span class="span_35">CP</span><span class="span_35">4 *</span><span class="span_35">XP</span><span class="span_35">0603</span>
+            </p>
+            <h3><a name="Branch_Override_5.S*BR" data-mc-generated-bookmark="TOC"></a><a name="Branch_Override_5.S*BR" data-mc-generated-bookmark="TOC"></a>Branch Override 5.S*BR </h3>
+            <p><span class="trams">Trams</span> uses the ARC/BSP number definitions to sort invoices by branch during the interface process. You can override the branch designation with the 5.S*BR entry in Sabre. <span class="trams">Trams</span> can track up to 249 branches. The main branch should be defined as branch zero (0) in <span class="trams">Trams</span> Utilities.</p>
+            <table class="table_1">
+                <col style="width: 220pt;" />
+                <col style="width: 154pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Override to specific branch and associated ARC/BSP number</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*BR7</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_89">Override to specific branch and different ARC/BSP number</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*BR7*01234567</p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Face_Value_and_Income_Earned_5.S*FV" data-mc-generated-bookmark="TOC"></a><a name="Face_Value_and_Income_Earned_5.S*FV" data-mc-generated-bookmark="TOC"></a>
+                <br />Face Value and Income Earned 5.S*FV</h3>
+            <p>Discounted Cash or Check FOP transactions can be included for interface. Enter the fare charged to the client followed by the income earned by the agency after the discount amount is subtracted from the commission.</p>
+            <p><span>Note:</span> Trams Back Office reads SABRE ACL lines as defined in Format Finder. For an online example in SABRE see ACL*AIR, ACL*DOC or ACL*SUP for appropriate use of the ACL function. To manually add an accounting line to a PNR to show discount information for air ticket transactions. If your AC option is turned off or to read discounts and markups without showing on the SABRE invoice, use the Face Value option as shown below.</p>
+            <table class="table_1">
+                <col style="width: 185pt;" />
+                <col style="width: 283pt;" />
+                <tr>
+                    <td colspan="2" class="td_64">
+                        <p>ACL/012345/DIS/25.00/1.50/ONE/N1.1-OPTIONAL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="description">Add the total fare followed by the net commission (after discount)</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.s*fv2400*60</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="description">Add the total fare followed by the net commission, in this example, zero.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*FV350.86*0</p>
+                        <p class="example_3">5.s*fv350.86</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="example_3">face Value with passenger association for Multiple tickets (see appending or overriding data in an automated AC line)</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">5.S*MS101*FVXXX.XX*CMYYY.YY*TFZZZ.ZZ</p>
+                        <p class="example_3">X=The face value amt of the ticket that appears in the FV field in the expanded fare info tab</p>
+                        <p class="example_3">Y=The commission earned by agency</p>
+                        <p class="example_3">Z=Total fare collected from the client</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;</p>
+            <table class="table_1">
+                <col style="width: 541pt;" />
+                <tr>
+                    <td class="td_64">
+                        <p><span class="span_1">Example:</span><span class="span_1"> An ARC ticket for $385.95 is sold to the employee at a net fare. By entering the above information for Face value, </span><span class="trams">Trams</span><span class="span_1"> captures the correct amount to be collected from the employees 0.00 commission earned, and the real value of the ARC document from the ticketing information. </span><span class="trams">Trams</span><span class="span_1"> interprets the transaction as follows for accounting and the ARC report.</span>
+                        </p>
+                        <p class="p_16">The invoice reflects the amount to collect from the customer in the total fare. Base fare and Taxes can be changed manually, but neither affects the ARC report.</p>
+                        <p class="example_5">Total Fare:350.86|Base Fare:324.91|Taxes 25.95|Commission:0.00</p>
+                        <p><span class="span_1">The expanded fare information screen reflects the Face Value of </span><span class="example_1">385.95</span>
+                        </p>
+                        <p class="p_16">The ARC report shows the correct totals for reporting to ARC.</p>
+                        <p class="example_5">Gross Fare:385.95|Commission:35.09|Rate:10.00|Net Remit:350.86</p>
+                        <p><strong class="bold_arial_4">Note</strong><span class="span_1">:</span><span class="span_1"> This is not to be used for Credit Card transactions to ARC.</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h3><a name="Segment_Information_..9" data-mc-generated-bookmark="TOC"></a><a name="Segment_Information_..9" data-mc-generated-bookmark="TOC"></a>
+                <br />Segment Information</h3>
+            <p>Fare-by-Leg information is controlled by SABRE pricing and the Fare-by-leg option in the TJR. Trams reads the segment fares based on the auto-price features in SABRE. When pricing and driving a ticket in SABRE, the interface record includes a breakdown of the segment Fares-by-Leg. Trams reads up to 255 segment fare lines in a single interface record. To capture segment fares on non-auto priced tickets use a manual FARE BY LEG mask. To capture segment information on non-ARC air, use the *SG at the booking level.</p>
+            <p>A more accurate Fare-by-Leg for non-ARC/BSP air bookings, or ARC/BSP bookings that do not have the Fare-by-Leg included, is calculated by using a mileage formula when mileage is present in the interface record. When mileage is not present in an interface record then Fare-by-Leg is be calculated as presently done, by dividing the base fare by the number of Origin/Destination trips. </p>
+            <h3><a name="Capture_Foreign_and_Local_Currency" data-mc-generated-bookmark="TOC"></a><a name="Capture_Foreign_and_Local_Currency" data-mc-generated-bookmark="TOC"></a>Capture Foreign and Local Currency</h3>
+            <p>Trams captures Foreign Currency and Local Currency for each booking where both are present. The local currency populates the General Tab Total Fare and the Foreign Currency populates the Total Fare on the Foreign Currency Tab. </p>
+            <p><span>Note:</span> We read automated HK segments when both local property currency and local agency currency are included in the PNR. </p>
+            <h3><a name="Mileage_..10" data-mc-generated-bookmark="TOC"></a><a name="Mileage_..10" data-mc-generated-bookmark="TOC"></a>Mileage</h3>
+            <p><span class="span_1">Trams</span> captures segment mileage if present in the IUR. The mileage is recorded under the segment tab of the invoice booking. This information may also be entered manually in <span class="span_1">Trams.</span></p>
+            <h3><a name="Partial_Payment_5.S*PP" data-mc-generated-bookmark="TOC"></a><a name="Partial_Payment_5.S*PP" data-mc-generated-bookmark="TOC"></a>Partial Payment 5.S*PP</h3>
+            <p>Trams has the ability to interface a <span class="span_1">Partial Payment</span>. Only one partial payment is allowed per booking. The partial payment applies to the invoice level and not the booking level. No credit card (CC) transactions can have a partial payment, only Cash/Check &amp; CC Merchant payments. You must have the box "Allow Cash/Ck Payments" in Utilities/Setup/Global Defaults/Interfacemailmerge Prompt Tab "Checked", or this partial payment enhancement will not be active for the Cash/Check partial payments, but, is not required for the CC merchant partial payment to interface. The entry for your GDS needs to contain (amount), (form of payment), (Check or CC Number/expiration date for CC Merchant). All other forms of payments are ignored, including the form of payment in the 5.S*MS line when the 5.S*PP entry is present.</p>
+            <table class="table_1">
+                <col style="width: 207pt;" />
+                <col style="width: 207pt;" />
+                <tr>
+                    <td class="td_74">
+                        <p>CASH </p>
+                    </td>
+                    <td class="td_74">
+                        <p class="p_89">5.S*PP100.00*CASH</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_74">
+                        <p>CHECK OR CK </p>
+                    </td>
+                    <td class="td_74">
+                        <p class="p_89">5.S*PP100.00*CHECK*5432 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_74">
+                        <p>CHEQUE</p>
+                    </td>
+                    <td class="td_74">
+                        <p class="p_89">5.S*PP100.00*CHEQUE*5432</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_74">
+                        <p>CREDIT CARD MERCHANT</p>
+                    </td>
+                    <td class="td_74">
+                        <p class="p_89">5.S*PP100*4855265986325645/0504</p>
+                    </td>
+                </tr>
+            </table>
+            <h2><a name="Descriptor_Codes_-_Valid_at_Invoice_Level" data-mc-generated-bookmark="TOC"></a><a name="Descriptor_Codes_-_Valid_at_Invoice_Level" data-mc-generated-bookmark="TOC"></a><a name="kanchor313"></a>
+                <br />Descriptor Codes - Valid at Invoice Level</h2>
+            <p>Descriptor codes entered as a SABRE Invoice remark cannot be strung together and apply to the entire invoice. An &lt;<span class="defaultparagraphfont0_3">S</span><span class="span_30">&gt;</span> preceding the descriptor code suppresses the remark from printing on the invoice. All descriptor codes are preceded by an asterisk.</p>
+            <p class="p_12">5.S*AN3106418726</p>
+            <p><span class="span_35">5.S* </span><span>[code][data] does not print on invoice</span>
+            </p>
+            <p><span class="span_35">5.* </span><span>[code][data] does print on invoice</span>
+            </p>
+            <table class="table_7">
+                <col style="width: 33pt;" />
+                <col style="width: 39pt;" />
+                <col style="width: 168pt;" />
+                <col style="width: 211pt;" />
+                <tr>
+                    <td class="td_84">
+                        <p class="description_3">Code</p>
+                    </td>
+                    <td class="td_84">
+                        <p class="p_12">Length</p>
+                    </td>
+                    <td class="td_84">
+                        <p class="p_12">Descriptor</p>
+                    </td>
+                    <td class="td_84">
+                        <p class="p_12">Example</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="description_3">AN</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">10</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_13">Alphanumeric Customer ID must match </span><span class="span_13">i</span><span class="span_13">nterface ID in client profile</span>
+                        </p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">AN</span><span class="span_35">3106418726</span>
+                        </p>
+                        <p class="example_3">MANEUVERABILITY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="description_3">FV</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">13</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Not valid for Credit Card Form of Payment</p>
+                        <p class="description_4">Face Value for discounted ARC/BSP documents</p>
+                        <p class="description_4">Fare Savings at Passenger level. </p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">FV1200.00</p>
+                        <p class="example_3">FV1200.00*300.00</p>
+                        <p class="example_3">FV1200*300.00@P1</p>
+                        <p class="example_3">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="description_3">FJ</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">2</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Fare Justification Code as defined in Utilities/Setup/Fare Codes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">FJA</p>
+                        <p class="example_3">FJEX</p>
+                        <p class="example_3">FJEX@P1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="description_3">FF</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">13</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Full Fare for Fare Savings Tracking</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">FF650.00</p>
+                        <p class="example_3">FF650.00@P1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="description_3">LF </p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">13</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Low Fare for Fare Savings Tracking</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">LF69.00</p>
+                        <p class="example_3">LF69.00@P1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">UD</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description">60</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_13">User Defined Interface Data can be used for any customer data you </span><span class="span_13">want</span><span class="span_13"> to track for reporting purposes</span>
+                        </p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">UD</span><span class="span_35">1 </span><span class="span_35">FREE FLOW</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">MI</p>
+                    </td>
+                    <td class="td_64">
+                        <p>10</p>
+                    </td>
+                    <td class="td_64">
+                        <p>Indicates the marketing ID (code) (IC's client profile <span class="span_1">Interface ID</span>) for each invoice created by the IC who chooses not share their client profile information with the Host agency (single <span class="span_1">House Account</span> client profile).</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">MIXXXXX</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">GP</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description">10</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Group affiliation included in invoice and payments for reporting purposes</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">GPTAHITI</span><span class="span_35">97</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">IM</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description">35</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Invoice remarks display on the sales invoice screen</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">IMFAMILY PLAN</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">RM</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description">60</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Client remarks</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">ARMCHAIRE BILLING</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">DP</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description">20</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Department </p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">DPSALES</p>
+                        <p class="example_3">DP00234</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">SA</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description">10</p>
+                        <p class="description">11</p>
+                        <p class="description">16</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Sales Agent Overrides the sign in agent </p>
+                        <p class="description_4">Commission% or Amount override Agent Profile</p>
+                        <p class="description_4">Sales Agent Remarks</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">SA32</p>
+                        <p class="example_3">SAMM 25</p>
+                        <p class="example_3">SA8M 30 CRUISE PROMO</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">OA</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description">10</p>
+                        <p class="description">11</p>
+                        <p class="description">16</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="description_4">Outside Agent added to booking </p>
+                        <p class="description_4">Commission% or Amount overrides% in Agent Profile</p>
+                        <p class="description_4">Sales Agent Remarks</p>
+                        <p>S&#160; Space required between fields</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">OA44</p>
+                        <p class="example_3">OA70 30</p>
+                        <p class="example_3">OASUE 30 Ail OVERRIDE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">BR</p>
+                    </td>
+                    <td class="td_64">
+                        <p>12</p>
+                    </td>
+                    <td class="td_64">
+                        <p>To override the agency branch number ONLY.</p>
+                        <p>To override the ARC/BSP number of the branch override to a different branch</p>
+                    </td>
+                    <td class="td_64">
+                        <p><span class="span_35">BR</span><span class="span_35">99</span>
+                        </p>
+                        <p class="example_3">&#160;</p>
+                        <p><span class="span_35">BR</span><span class="span_35">99*01234567</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">FP</p>
+                    </td>
+                    <td class="td_64">&#160;</td>
+                    <td class="td_64">
+                        <p class="description">No form of payment</p>
+                        <p class="description">Form of payment check</p>
+                        <p class="description">Form of payment cash</p>
+                        <p class="description">Form of payment credit card</p>
+                    </td>
+                    <td class="td_64">
+                        <p>&#160;</p>
+                        <p><span class="span_35">FP</span><span class="span_35">CHECK, CHEQUE </span><span class="span_35">OR</span><span class="span_35">FPCH</span>
+                        </p>
+                        <p class="p_89">Cash</p>
+                        <p><span class="span_35">FPAX</span><span class="span_35">3782443987654</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p class="p_12">FPAR</p>
+                    </td>
+                    <td class="td_64">&#160;&#160;&#160;&#160;&#160;</td>
+                    <td class="td_64">
+                        <p>AR (Accounts Receivable) can be added for use with *FP at the Invoice and Booking levels. When the <span class="span_1">Allow Cash/Check Payments</span> option in the <span>Utilities|Setup|Interface Mailmerge</span> tab is checked and the *FPAR override format is added, the invoice bookings interface as <span class="span_1">Open</span> and appear on Client Balances &amp; Statements.</p>
+                        <p>Enables agencies to streamline the processing of receipts in the back office.</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">FPAR</p>
+                        <p class="p_89">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p>IN</p>
+                    </td>
+                    <td class="td_64">
+                        <p>8</p>
+                    </td>
+                    <td class="td_64">
+                        <p>Override the GDS Invoice Number</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">IN123456</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p>IC</p>
+                    </td>
+                    <td class="td_64">&#160;</td>
+                    <td class="td_64">
+                        <p>Independent Contractor code. The IC Agency enters the IC code from the "Host" Agency. (For more details See the TBO Manual or Help Screen)</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">ICxxxxxxx</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p>GQ</p>
+                    </td>
+                    <td class="td_64">
+                        <p>1</p>
+                    </td>
+                    <td class="td_64">
+                        <p>VALID IN BSP VERSION ONLY</p>&#160;&#160;<p>A=No GST or QST</p><p>B=GST only</p><p>C=QST only</p><p>D=GST and QST</p></td>
+                    <td class="td_64">
+                        <p><span class="span_30">Note: </span><span class="span_30">TBO automatically zeros out GST/QST/VAT on commission for International Air Bookings processed via Interface</span>
+                        </p>
+                        <p class="p_89">GQA</p>
+                        <p class="p_89">GQB</p>
+                        <p class="p_89">GQC</p>
+                        <p class="p_89">GQD</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p>HU</p>
+                    </td>
+                    <td class="td_64">
+                        <p>0</p>
+                    </td>
+                    <td class="td_64">
+                        <p>No data follows - Update indicator to capture update itinerary information such as car, hotel, flight (depart, arrive, date, time) information changes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="example_3">HU</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p>EU</p>
+                    </td>
+                    <td class="td_64">
+                        <p>0</p>
+                    </td>
+                    <td class="td_64">
+                        <p>Email update causes Trams to capture an Email address to a client profile.</p>
+                        <p>* = @ at</p>
+                        <p>// = _ underscore</p>
+                        <p>- = - dash</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">EU</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_64">
+                        <p>PP</p>
+                    </td>
+                    <td class="td_64">&#160;</td>
+                    <td class="td_64">
+                        <p>Partial Payment Cash</p>
+                        <p>Partial Payment Check</p>
+                        <p>Partial Payment CK*</p>
+                        <p>Partial Payment Cheque</p>
+                        <p>Partial Payment CC Merchant</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_89">PP100.00*Cash</p>
+                        <p class="p_89">PP100.00*Check*5432</p>
+                        <p class="p_89">PP100.00*CK*5432</p>
+                        <p class="p_89">PP100.00*CHEQUE*5432</p>
+                        <p class="p_89">PP100.00*4888602388226584/05044</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_85">
+                        <p class="p_12">IX</p>
+                    </td>
+                    <td class="td_86">
+                        <p>1</p>
+                        <p>1</p>
+                        <p>1</p>
+                    </td>
+                    <td class="td_86">
+                        <p>International Indicator </p>
+                        <p>Transborder Indicator</p>
+                        <p>Domestic Indicator</p>
+                    </td>
+                    <td class="td_86">
+                        <p>IXI</p>
+                        <p>IXT</p>
+                        <p>IXD</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;</p>
+            <h2><a name="Descriptor_Codes_-_Valid_at_Booking_Level" data-mc-generated-bookmark="TOC"></a><a name="Descriptor_Codes_-_Valid_at_Booking_Level" data-mc-generated-bookmark="TOC"></a><a name="kanchor314"></a>Descriptor Codes - Valid at Booking Level</h2>
+            <p>The following descriptor codes can be added or linked to an AC line to interface additional information about the transaction to <span class="trams">Trams</span>. See AC*SUP for format description and examples. <span class="trams">Trams</span> reads only the following segment types when linked with an AC line. SEA, TOR, OTH, AIR, PTA, MCO, HHT, CAR, INS. All other segment types are ignored by <span class="trams">Trams</span>.</p>
+            <p>Descriptor codes can be added as freeflow remarks to the end of a manual AC or ACL line. </p>
+            <p class="p_26">ACOTH1/SUPPLY/DOC/P11/950.00/0/ALL/CK/1-28 CHARACTER FREE FLOW</p>
+            <p>Descriptor codes can be added in an MS line that links to the sold segment of the PNR. Display the PNR itinerary and use the SABRE numbering to link to the sold segment. Using a segment number larger than the segments in the PNR results in an additional segment added to the accounting record.</p>
+            <p class="p_26">5.s*ms1s*fa3000.00*fc370.00*fd03jun97*vnroyal caribbean</p>
+            <p class="p_26">5.s*ms101s*fa3000.00*fc370.00*fd03jun97*vnroyal caribbean</p>&#160;<table class="table_1"><col style="width: 29pt;" /><col style="width: 37pt;" /><col style="width: 173pt;" /><col style="width: 208pt;" /><tr><td class="td_49"><p class="description_3">Code</p></td><td class="td_49"><p class="description_3">Length</p></td><td class="td_49"><p class="description_3">Description</p></td><td class="td_49"><p class="description_3">Example</p></td></tr><tr><td class="td_64"><p class="p_12">VC</p></td><td class="td_64"><p class="description">10</p></td><td class="td_64"><p class="description">Alpha-numeric Vendor Code should match Interface ID in Vendor Profile</p></td><td class="td_64"><p class="p_89">VC002505</p><p class="p_89">VCRCCL</p></td></tr><tr><td class="td_64"><p class="p_12">VN</p></td><td class="td_64"><p class="description">40</p></td><td class="td_64"><p class="description">Vendor Name should match Name in Vendor Profile</p></td><td class="td_64"><p class="p_89">VNPRINCESS CRUISES</p></td></tr><tr><td class="td_64"><p class="p_12">TT</p></td><td class="td_64"><p class="description">10</p></td><td class="td_64"><p>Travel Type numbers are found under Utilities/Setup/Travel Typ<span class="description">e</span></p></td><td class="td_64"><p class="p_89">TT4</p><p class="p_89">&#160;</p></td></tr><tr><td class="td_64"><p class="p_12">TF</p></td><td class="td_64"><p class="description">13</p></td><td class="td_64"><p class="description">Total Fare (amount charged to Client)</p></td><td class="td_64"><p class="p_89">TF595.00</p></td></tr><tr><td class="td_64"><p class="p_12">CM</p></td><td class="td_64"><p class="description">7</p><p class="description">13</p></td><td class="td_64"><p class="description">Commission override percent%</p><p class="description">Commission override Amount</p></td><td class="td_64"><p class="p_89">CM15</p><p class="p_89">CMA25.50</p></td></tr><tr><td class="td_64"><p class="p_12">SB</p></td><td class="td_64"><p class="description">3</p></td><td class="td_64"><p class="description">Submit To override </p></td><td class="td_64"><p class="p_89">SBCOM</p><p class="p_89">SBSUP</p><p class="p_89">SBARC</p></td></tr><tr><td class="td_64"><p>FB</p></td><td class="td_64">&#160;</td><td class="td_64"><p>Add FB followed by the Fare Basis</p></td><td class="td_64"><p class="p_89">FBQXR345</p></td></tr><tr><td class="td_64"><p>FB</p></td><td class="td_64">&#160;</td><td class="td_64"><p>*FB override on the MS line to set the fare basis code for all segments linked to the booking.</p></td><td class="td_64"><p class="p_89">*FB on the MS line</p></td></tr><tr><td class="td_64"><p class="p_12">BF</p></td><td class="td_64"><p class="description">13</p></td><td class="td_64"><p class="description">Base Fare</p></td><td class="td_64"><p class="p_89">BF421.48</p></td></tr><tr><td class="td_64"><p class="p_12">TX</p></td><td class="td_64"><p class="description">13</p></td><td class="td_64"><p class="description">Tax [Optional Tax ID] Amount with decimal [25.00]</p></td><td class="td_64"><p class="p_89">TX25.00</p><p><span class="span_30">Note: </span><span class="span_30">Tax codes may be entered individually in the following format:</span></p><p class="p_89">TXUS13.00*TXXT3.00*TXXY6.00</p></td></tr><tr><td class="td_64"><p class="p_12">IN</p></td><td class="td_64"><p class="description">1</p><p class="description">1</p><p class="description">1</p></td><td class="td_64"><p class="description">International Indicator </p><p class="description">Transborder Indicator</p><p>Domestic Indicator</p><p>*Affects BSP only at Invoice Level</p></td><td class="td_64"><p class="p_89">INI</p><p class="p_89">INT</p><p class="p_89">IND</p></td></tr><tr><td class="td_64">&#160;<p class="description_3">GQ</p></td><td class="td_64">&#160;<p class="description_4">1</p></td><td class="td_64"><p class="description_4">VALID IN BSP VERSION ONLY</p><p>** to be decremented, as TBO (Windows) reads SABRE codes A,B,C,D used at ticketing.</p><p class="description_4">A=No GST or QST</p><p class="description_4">B=GST only</p><p class="description_4">C=QST only</p><p class="description_4">D=GST and QST</p></td><td class="td_64"><p class="example_3">&#160;</p><p class="example_3">GQA</p><p class="example_3">GQB</p><p class="example_3">GQC</p><p class="example_3">GQD</p></td></tr><tr><td class="td_64"><p>GC</p></td><td class="td_64">&#160;</td><td class="td_64"><p>Overrides the auto-calculations on GST</p></td><td class="td_64"><p class="example_3">GC10.00</p></td></tr><tr><td class="td_64"><p>QC</p></td><td class="td_64">&#160;</td><td class="td_64"><p>Overrides the auto-calculations on QST </p></td><td class="td_64"><p class="example_3">QC5.00</p></td></tr><tr><td class="td_64"><p class="description_3">AL</p></td><td class="td_64"><p class="description_4">2</p></td><td class="td_64"><p class="description_4">Validating Carrier [mandatory for ARC/BSP transactions]</p></td><td class="td_64"><p class="example_3">ALUA</p></td></tr><tr><td class="td_64"><p class="description_3">CF</p></td><td class="td_64"><p class="description_4">24</p></td><td class="td_64"><p class="description_4">Confirmation number</p></td><td class="td_64"><p class="example_3">CF123456789</p></td></tr><tr><td class="td_64"><p class="description_3">TK</p></td><td class="td_64"><p class="description_4">20</p></td><td class="td_64"><p class="description_4">Ticket number [mandatory for ARC/BSP transactions]</p></td><td class="td_64"><p class="example_3">TK8031234567890</p></td></tr><tr><td class="td_64"><p>SG</p></td><td class="td_64"><p>0</p></td><td class="td_64"><p>No data required - captures segment information from Air segment in PNR on non-ARC/BSP suppliers</p></td><td class="td_64"><p class="example_3">SG</p><p class="p_89">OR</p><p class="p_89">SG 01 02 03 04 (to specify air segments, include segment number)</p></td></tr><tr><td class="td_64"><p class="description_3">FV</p></td><td class="td_64"><p class="description_4">13</p></td><td class="td_64"><p class="description_4">Face Value of ARC/BSP document for discounted A/R transactions</p><p>At the Global level</p>&#160;&#160;<p>At the AC line level (FT, FV and CMA must be defined</p>&#160;</td><td class="td_64"><p class="p_89">&#160;</p><p class="example_3">&#160;</p><p class="example_3">&#160;</p><p class="example_3">FV1200.00</p><p class="example_3">FV1200.00*300.00</p><p class="example_3">&#160;</p><p class="example_3">*MS103*TF600*FV627.05*CMA72.05</p><p class="p_89">&#160;</p></td></tr><tr><td class="td_64"><p class="description_3">FJ</p></td><td class="td_64"><p class="description_4">2</p></td><td class="td_64"><p class="description_4">Fare Justification Code as defined in Utilities/Setup/Fare Codes</p></td><td class="td_64"><p class="example_3">FJA</p><p class="example_3">FJEX</p></td></tr><tr><td class="td_64"><p class="description_3">FF</p></td><td class="td_64"><p class="description_4">13</p></td><td class="td_64"><p class="description_4">Full Fare for Fare Savings Tracking</p></td><td class="td_64"><p class="example_3">FF650.00</p></td></tr><tr><td class="td_64"><p class="description_3">LF</p></td><td class="td_64"><p class="description_4">13</p></td><td class="td_64"><p class="description_4">Low Fare for Fare Savings Tracking</p></td><td class="td_64"><p class="example_3">LF69.00</p></td></tr><tr><td class="td_64"><p class="description_3">PN</p></td><td class="td_64"><p class="description_4">30</p></td><td class="td_64"><p class="description_4">Passenger Name</p></td><td class="td_64"><p class="example_3">PNJOHNSMITH</p></td></tr><tr><td class="td_64"><p class="description_3">NP</p></td><td class="td_64"><p class="description_4">2</p></td><td class="td_64"><p class="description_4">Number of Passengers for Car Booking</p></td><td class="td_64"><p class="example_3">NP3</p></td></tr><tr><td class="td_64"><p class="description_3">NR</p></td><td class="td_64"><p class="description_4">2</p></td><td class="td_64"><p class="description_4">Number of Rooms for Hotel Booking</p></td><td class="td_64"><p class="example_3">NR1</p></td></tr><tr><td class="td_64"><p class="description_3">DE</p></td><td class="td_64"><p class="description_4">10</p></td><td class="td_64"><p class="description_4">Car/Hotel Description</p></td><td class="td_64"><p class="example_3">DEICAR</p><p class="example_3">DESNGL</p></td></tr><tr><td class="td_64"><p class="description_3">DP</p></td><td class="td_64"><p class="description_4">20</p></td><td class="td_64"><p class="description_4">Department Information</p></td><td class="td_64"><p class="example_3">DPSALES</p><p class="example_3">DP00234</p></td></tr><tr><td class="td_64"><p class="description_3">SA</p></td><td class="td_64"><p class="description_4">11</p><p class="description_4">16</p></td><td class="td_64"><p class="description_4">Add inside sales agent</p><p class="description_4">Commission% override</p><p class="description_4">Sales Agent Remarks</p><p>space required between fields</p></td><td class="td_64"><p class="example_3">SA32</p><p class="example_3">SAMM 25</p><p class="example_3">SA8M 30 CRUISE PROMO</p></td></tr><tr><td class="td_64"><p class="description_3">OA</p></td><td class="td_64"><p class="description_4">10</p><p class="description_4">11</p><p class="description_4">16</p></td><td class="td_64"><p class="description_4">Outside Agent added to booking </p><p class="description_4">Commission% or Amount overrides% in Agent Profile</p><p class="description_4">Sales Agent Remarks</p><p>space required between fields</p></td><td class="td_64"><p class="example_3">OA44</p><p class="example_3">OA70 30</p><p class="example_3">OASUE 30 UA OVERRIDE</p></td></tr><tr><td class="td_64"><p class="description_3">PD</p></td><td class="td_64"><p class="description_4">8</p></td><td class="td_64"><p class="description_4">Payable Date format DDMMYY</p></td><td class="td_64"><p class="example_3">PD31AUG96</p></td></tr><tr><td class="td_64"><p>PI</p></td><td class="td_64">&#160;</td><td class="td_64"><p>To create a booking for each invoice generated from one PNR (i.e service fee’s)</p></td><td class="td_64"><p class="p_89">PI</p></td></tr><tr><td class="td_64"><p class="example_3">RL</p></td><td class="td_64"><p class="example_3">5</p></td><td class="td_64"><p>Specifies a booking-level Record Locator</p></td><td class="td_64"><p><span class="span_35">*RLxxxxx OR USING </span><span class="span_35">ms</span><span class="span_35">LINK</span><span class="span_35">,</span></p><p><span class="span_35">[5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">1*</span><span class="span_35">RLXXXXX</span><span class="span_35">]</span></p></td></tr><tr><td class="td_64"><p class="description_3">UD</p></td><td class="td_64"><p class="description_4">60</p></td><td class="td_64"><p class="description_4">User Defined Interface Data -received in UDID field</p><p>space required between fields</p></td><td class="td_64"><p class="example_3">UD1 FREEFLOW</p></td></tr><tr><td class="td_64"><p class="description_3">IT</p></td><td class="td_64"><p class="description_4">88</p></td><td class="td_64"><p class="description_4">Itinerary</p></td><td class="td_64"><p class="example_3">ITLAXDFWLAX</p></td></tr><tr><td class="td_64"><p class="description_3">RM</p></td><td class="td_64"><p class="description_4">90</p></td><td class="td_64"><p class="description_4">Client Remarks</p></td><td class="td_64"><p class="example_3">RMNEW ADDRESS</p></td></tr><tr><td class="td_64"><p class="description_3">VR</p></td><td class="td_64"><p class="description_4">90</p></td><td class="td_64"><p class="description_4">Vendor Remarks display on invoice and reports</p></td><td class="td_64"><p class="example_3">VRNET DUE ONLY</p></td></tr><tr><td class="td_64"><p class="description_3">SD</p></td><td class="td_64"><p class="description_4">7</p></td><td class="td_64"><p class="description_4">Start/Depart Date</p></td><td class="td_64"><p><span class="span_35">SD25</span><span class="span_35">SEP</span><span class="span_35">97</span></p></td></tr><tr><td class="td_64"><p class="description_3">ED</p></td><td class="td_64"><p class="description_4">7</p></td><td class="td_64"><p class="description_4">End/Arrival Date</p></td><td class="td_64"><p><span class="span_35">ed29SEP</span><span class="span_35">97</span></p></td></tr><tr><td class="td_64"><p class="description_3">FA</p></td><td class="td_64"><p class="description_4">13</p></td><td class="td_64"><p class="description_4">Final Payment Amount for reporting</p></td><td class="td_64"><p class="example_3">FA3400.00</p></td></tr><tr><td class="td_64"><p class="description_3">FC</p></td><td class="td_64"><p class="description_4">13</p></td><td class="td_64"><p class="description_4">Final Commission Amount for reporting</p></td><td class="td_64"><p class="example_3">FC480.00</p></td></tr><tr><td class="td_64"><p class="description_3">FD</p></td><td class="td_64"><p class="description_4">8</p></td><td class="td_64"><p class="description_4">Final Payment Due Date for reporting</p></td><td class="td_64"><p class="example_3">FD03JUN97</p></td></tr><tr><td class="td_64"><p class="description_3">FP</p></td><td class="td_64"><p class="description_4">21</p></td><td class="td_64"><p class="description_4">Form of Payment overrides SABRE form of payment for individual booking</p></td><td class="td_64"><p class="example_3">FPCK</p><p class="example_3">fpcheck</p><p class="example_3">FPCASH</p><p class="example_3">FPAX334104230004311/0302</p></td></tr><tr><td class="td_64"><p class="description_3">CP</p></td><td class="td_64"><p class="description">1</p></td><td class="td_64"><p class="description">Client Payment Method used in conjunction with a valid Form of Payment entry</p><p class="description">1=CASH</p><p class="description">2=CHECK</p><p class="description">3=CREDIT CARD</p><p class="description">4=CC MERCHANT ACCOUNT</p><p>Note: Add credit card information to the CC Merchant format.</p><p class="description">5=ELECTRONIC FUNDS TRANSFER (EFT) </p><p class="description">6=OTHER</p><p>7= ACH OPTION to *CP override entry</p></td><td class="td_64"><p class="example_3">&#160;</p><p class="example_3">CP1</p><p class="example_3">cp2</p><p class="example_3">cp3</p><p class="p_89">CP4 or</p><p class="p_89">CP4*cccc cccc cccc/mmyy</p><p class="p_89">&#160;</p><p class="example_3">&#160;</p><p class="example_3">&#160;</p><p class="example_3">cp5</p><p class="example_3">&#160;</p><p class="example_3">cp6</p><p class="example_3">&#160;</p><p class="example_3">*CP7=ACH</p></td></tr><tr><td class="td_64"><p>XP</p></td><td class="td_64"><p>4</p></td><td class="td_64"><p>Credit card expiration date</p><p>Note: may be used with the FP and CP form of payment codes on MS line and free flow of the SABRE accounting line only</p></td><td class="td_64"><p class="example_3">XPmmyy</p><p class="example_3">&#160;</p><p class="p_89">MM=Month</p><p class="p_89">YY=Year</p></td></tr><tr><td class="td_64"><p>BK</p></td><td class="td_64">&#160;</td><td class="td_64"><p>Alternate CC Merchant Bank Account</p></td><td class="td_64"><p class="example_3">BK</p></td></tr><tr><td class="td_64"><p class="example_3">CC</p></td><td class="td_64"><p class="example_3">3</p></td><td class="td_64"><p>Currency Code </p></td><td class="td_64"><p class="example_3">CCJPY</p></td></tr><tr><td class="td_64"><p class="example_3">CV</p></td><td class="td_64"><p class="example_3">10</p></td><td class="td_64"><p>Foreign Currency Amount </p></td><td class="td_64"><p class="example_3">CV590.00</p></td></tr><tr><td class="td_64"><p>IG</p></td><td class="td_64">&#160;</td><td class="td_64"><p>Ignores an otherwise valid accounting line. For example, if you have a discount line that you would like to ignore, *IG on the discount line instructs TBO to ignore that line and not include it in the invoice.</p></td><td class="td_64"><p class="p_89">*IG on the accounting line</p></td></tr><tr><td class="td_64"><p>OT</p></td><td class="td_64"><p>10</p></td><td class="td_64"><p>Indicate the original ticket number for non ARC/BSP ticket exchanges</p></td><td class="td_64"><p class="p_89">OT1234567890</p></td></tr><tr><td class="td_64"><p>EX</p></td><td class="td_64"><p>3</p></td><td class="td_64"><p>Indicate the ticket type for non ARC/BSP air</p></td><td class="td_64"><p><span class="span_30">EXE Even Exchange</span><span class="span_30"><br />EXR Refund Exchange</span><span class="span_30"><br />EXA Add collect</span></p></td></tr></table><p><span>Note: </span>TBO reads the airline record locator from the SABRE Automated Air segment if present in the record.</p><h2><a name="Hotel_and_Car_Segments_..11" data-mc-generated-bookmark="TOC"></a><a name="Hotel_and_Car_Segments_..11" data-mc-generated-bookmark="TOC"></a><a name="kanchor315"></a>Hotel and Car Segments</h2><p>Standard SABRE formats for booking Cars and Hotels interfaces to <span class="trams">Trams</span> without additional formats. <span class="trams">Trams</span> captures the segment as a Commission Track booking unless otherwise indicated with an override for the booking type. For a full list of descriptor codes used at the booking level see the Descriptor Codes Valid at Booking level chart. </p><p><span>Foreign Currency: </span>Trams reads the total fare in whatever currency booked, unless the USD equivalent exists in the record.</p><p>Trams checks the local currency code in Sabre Hotel bookings (HHL) and sets the fare to zero if the local currency code doesn't match the local currency code in <span>Utilities|Setup|</span><span>Global Defaults|Interface-Mailmerge</span>. When processing Car and Hotel interface records, where there's a foreign currency and no equivalent local currency, Trams Back Office will look at the currency conversion table and uses that rate if present. If no rate is found, the local currency is set to zero. For this feature to work properly, the TBO user must insure that Currency Codes and Conversion Rates are set up for each currency that may be interfaced, in <span>Utilities|Setup|Conversion Rates</span>.</p><p><span>**</span>If there is a credit card number in the automated hotel segment for guarantee purposes, a client remark will automatically get created in the booking 'Guaranteed to: AX37-XXXX-9999' which will then be printed on the invoice re-print associated to the hotel booking. </p><p><span>**</span>If there is no guarantee credit card number in the automated car and hotel segment, the PNR FOP credit card number will get mapped to the commtrackccno field in the expanded fare tab. It will then print 'Charged to' on the invoice re-print associated to the car or hotel booking.</p><p><span>**</span>If the -NG option is entered in the download.exe, then the 'Guaranteed to' information will not be added to the client remarks, hence will not be included on the invoice re-print.</p><p><span>**</span>If the -NC option is entered in the download.exe, then the credit card number will not be added to the commtrackccno field and the 'Charged to' information will not be included on the invoice re-print.</p><p><span>Note: </span>TBO excludes car vendor profiles when searching by Interface ID if there's a property code (i.e. Hotel). This prevents bookings from being processed to a car profile that has the same two letter code as a hotel chain code. In the past when a hotel property did not exist in Trams prior to interface, bookings could be processed to a car profile with the same ID as a hotel chain code.</p><h3><a name="Automated_Hotel_Segment_..12" data-mc-generated-bookmark="TOC"></a><a name="Automated_Hotel_Segment_..12" data-mc-generated-bookmark="TOC"></a>Automated Hotel Segment</h3><p>Hotel segments booked through Sabre interface to <span class="trams">Trams</span> with the following defaults. The total fare is determined by calculating the number of nights by the nightly rate. A commission of 10% is assumed for all bookings, based on the default commission set in Trams <span>Utilities|Setup|Global Defaults</span>. The actual commission rate can be added to the invoice to override the default by entering an MS entry that matches the segment # assigned to the booking being overridden</p><p>For automated Hotel bookings, Trams reads the G-CC field, if present, to populate the CommTrackCCNo with the credit card number used to guarantee the booking. For any Comm Track booking where no CommTrackCCNo is specified, the PNR FOP (if C/C) is captured and displayed in the CommTrack CC NO field on the Expanded Fare Tab of the booking.</p><table class="table_1"><col style="width: 138pt;" /><col style="width: 236pt;" /><tr><td class="td_73"><p class="example_1">Override the default 10% commission</p></td><td class="td_73"><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">3*</span><span class="span_35">CM</span><span class="span_35">20</span></p><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">3*</span><span class="span_35">CMA</span><span class="span_35">20.00</span></p></td></tr></table><p>Trams maintains cars and hotels on invoices only. If booking a car or hotel only, without having invoiced the PNR yet, use one of the samples below to add a zero AC line for the hotel only invoice. </p><table class="table_1"><col style="width: 152pt;" /><col style="width: 222pt;" /><tr><td class="td_64"><p class="p_89">To add a zero AC line for an information only invoice. The Product type i.e. OTH must match the sold product type.</p></td><td class="td_64"><p><span class="span_35">0</span><span class="span_35">OTHAAGK</span><span class="span_35">1</span><span class="span_35">;LAX</span><span class="span_35">12</span><span class="span_35">APR</span><span class="span_35">-</span><span class="span_35">HOTEL</span><span class="span_35">ONLY</span><span class="span_35">COURTESY</span><span class="span_35">BOOKING</span></p><p><span class="span_35">ACOTH</span><span class="span_35">3/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">DEP</span><span class="span_35">/0/0.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1</span></p></td></tr><tr><td class="td_64"><p><span class="span_30">To add a zero AC line for hotel only invoice. The Product type i.e. </span><span class="span_30">HHL must match the sold product type.</span></p></td><td class="td_64"><p><span class="span_35">ACHHL</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">DEP</span><span class="span_35">/0/0.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-</span></p></td></tr></table><p><br />Using the Misc. OTH booking and AC line allows Trams to read the hotel information directly from the sold segment, which includes name, address and property code.</p><h3><a name="Itinerary_Updates_5.S*HU" data-mc-generated-bookmark="TOC"></a><a name="Itinerary_Updates_5.S*HU" data-mc-generated-bookmark="TOC"></a>Itinerary Updates 5.S*HU</h3><p><span>Interfacing itinerary is an option set in the TJR. The TJR Setting INTERFACE ITINERARY</span> controls whether or not Sabre sends an itinerary to the back office when you perform a DIT entry.</p><p>To view the current TJR settings, in Sabre, enter W/TA*PCC, where PCC is the pseudo city code. Contact Sabre Software support to request updates to the TJR.</p><p>Once the TJR option for Interfacing Itinerary is turned on, subsequent updates driven with DIT or DIT#DP from the same PNR are automatically updated through interface to Trams Back Office (TBO). 5.S*HU alerts Trams Back Office to update the existing Trams invoice with new ITINERARY information. </p><p>For all Commission Track Car and Hotel records or Air Flight Changes in the Itinerary, Trams interfaces and processes these Non-Invoiced records and searches for existing invoices in the system by the Sabre Record Locator. If no *HU entry is entered into the PNR then the itinerary is ignored by Trams. Any Tour or Cruise records are ignored. Only Car, Hotel and Air Flight change records are read. </p><p>*HU will update certain air segment information (Arrival/Depart Dates &amp; Times and Flight #s) by matching Invoices with the Sabre Record Locator Number. </p><p class="p_12">Only matching segments [based on depart city] are updated. New segments are not added and existing cities are not changed (such as a new connecting city on the return).</p><p>When Trams finds one or more invoices with the same Record Locator that is in the Itinerary Record, it voids any existing commission track records in any or all invoices, and add the most current CAR &amp; HOTEL records only to the most recently dated invoice in the system. If exiting commission track records do not exist in the invoices, new ones are added. Unlike the CAR/HOTEL updates a Flight update will update all Invoices in TBO that have the same record locator and not just the most recent invoice.&#160; The reason for this is so every invoice for the same record locator for a group is updated accordingly.&#160;</p><p>When updating hotel or car bookings, the HU logic compares the depart date for the hotel/car booking to the HU issue date (not the current date). If the HU date is later than the check-out or drop-off date the transaction will not be updated.</p><p>If an Itinerary Update doesn't find a matching invoice in TBO, a message is added to the processing log and the record is deleted. There is no chance to reprocess the record. </p><p>TBO uses the default Travel Categories in <span>Utilities|Setup|GlobalDefaults|TravelTypes</span> to distinguish car and hotel bookings from other commission track bookings.</p><p>No global updates via an HU, will be updated except for segment info. Only individual booking records are updated, so Agent overrides (*SA or *OA), Fare Savings information, etc. will not have any effect on existing bookings.</p><h4><a name="UDID&#160;Related_..13" data-mc-generated-bookmark="TOC"></a><a name="UDID&#160;Related_..13" data-mc-generated-bookmark="TOC"></a>UDID&#160;Related</h4><p class="p_2">For reporting purposes, UDID’s can define categories for each booking, giving access to information which may be important for clients and to customer service — as well as, the agency database. By listing the UDID’s in a table, they are easier to read and input and they are separated from the client remarks field. UDID’s can contain both negative and positive dollar values which are added together in the report generator. </p><p class="p_2">If you update UDIDs using the UU override function with HU codes:</p><ul><li value="1">Existing UDID values will be over-written with the updated *UU values.</li><li value="2">Blank *UU values will not clear or delete existing UDID values.</li><li value="3">UDIDs will only be updated if both the *HU and *UU values exist.</li><li value="4">*UU will work for all GDS and will work the same way *HU works today (by issuing an itinerary, not an invoice).</li><li value="5">It is not possible to mix regular UDID entries and UU overrides in the same record. When updating a hotel or car, issue the standard HU itinerary (with the original UDIDs) then if UDID entries need to be updated add the *UU entries and drive a new itinerary.</li></ul><p>Example:</p><ul><li value="1">*HU</li><li value="2">*UU10 Free flow text</li></ul><p class="p_2">To de-activate a UDID, go to <span>Utilities|Setup|UDIDS, </span>click on the UDID and the <span class="span_1">Inactive </span>button at the top of the screen.</p><h3><a name="Foreign_Currency_in_Hotel_Bookings" data-mc-generated-bookmark="TOC"></a><a name="Foreign_Currency_in_Hotel_Bookings" data-mc-generated-bookmark="TOC"></a>Foreign Currency in Hotel Bookings</h3><p>When selling a foreign hotel through SABRE, the hotel confirms with a sold HK segment as sampled here: </p><p class="p_99">&#160;&#160;&#160; 0HK27APRHHL 0282342625- DALHX-OUT02MAY 5NT 14476DALLAS DOWNTOWN TX 1B2DABC 104.00USD/150.98CAD/AGT60645211/GAX373577751692019EXP 04 02-MCINTOSH/CD-001636000/C06P/SI-NONSMOKING 2 DOUBLES-CF-82342625- @1015 ELM STREET#DALLAS TX 75202#FONE 214-742-5678#FAX 214-744-6167 @</p><p>SABRE knows the agency location and rates are displayed in local currency of the property and the agency if available. Trams does not assume that both rates are present, and reads the first rate displayed which is often the local currency of the property and not the agency. To override the foreign currency rate, enter the equivalent rate as an MS link, with any other overrides that may apply.</p><p class="p_101">5.S*MS#*TF150.98*CM15</p><p><span>Note:</span> Trams will read automated HK segments when both local property currency and local agency currency are included in the PNR. </p><h3><a name="Non-Automated_Hotel_Segment_..14" data-mc-generated-bookmark="TOC"></a><a name="Non-Automated_Hotel_Segment_..14" data-mc-generated-bookmark="TOC"></a>Non-Automated Hotel Segment</h3><p>Manual hotel segments booked with the 0HHT format interfaces to <span class="trams">Trams</span> if included as part of a valid invoice. <span class="trams">Trams</span> translates the rate information from the sell segment and assume a comm track booking type at 10% commission. You can override the assumed commission rate and you may want to override the hotel vendor name field with a vendor code for better control during interface processing.</p><table class="table_1"><col style="width: 150pt;" /><col style="width: 225pt;" /><tr><td class="td_64"><p class="p_89">Example of a hotel booking:</p></td><td class="td_64"><p><span class="span_35">0</span><span class="span_35">HHTAAGK</span><span class="span_35">1</span><span class="span_35">DFWIN</span><span class="span_35">27</span><span class="span_35">JUL</span><span class="span_35">-</span><span class="span_35">OUT</span><span class="span_35">2</span><span class="span_35">AUG</span><span class="span_35">/</span><span class="span_35">HI</span><span class="span_35">AIRPORT</span><span class="span_35">WEST</span><span class="span_35">/</span><span class="span_35">SGLB</span><span class="span_35">/75.00/</span><span class="span_35">SI</span><span class="span_35">-@5827 </span><span class="span_35">OCEAN</span><span class="span_35">DRIVE</span><span class="span_35">#</span><span class="span_35">MIAMI</span><span class="span_35">FL</span><span class="span_35"> 38834#</span><span class="span_35">PHONE</span><span class="span_35">305-555-1111@</span><span class="span_35">RQNEAR</span><span class="span_35">POOL</span><span class="span_35">/</span><span class="span_35">CF</span><span class="span_35">89732901</span></p></td></tr><tr><td class="td_64"><p class="p_89">Append or override segment 4</p></td><td class="td_64"><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">4*</span><span class="span_35">VCHI</span><span class="span_35">0554*</span><span class="span_35">CM</span><span class="span_35">15</span></p></td></tr></table><p><br />Trams maintains cars and hotels on invoices only. If booking a car or hotel only, without having invoiced the PNR yet, use the sample below to add a zero AC line for the hotel only invoice. Subsequent updates driven with DIT from the same PNR are automatically updated through interface. </p><table class="table_1"><col style="width: 159pt;" /><col style="width: 216pt;" /><tr><td class="td_64"><p class="p_89">To add a zero AC line for an information only invoice. The Product type i.e. OTH must match the sold product type.</p></td><td class="td_64"><p><span class="span_35">0</span><span class="span_35">OTHAAGK</span><span class="span_35">1</span><span class="span_35">LAX</span><span class="span_35">12</span><span class="span_35">APR</span><span class="span_35">-</span><span class="span_35">HOTEL ONLY</span><span class="span_35">COURTESY</span><span class="span_35">BOOKING</span></p><p><span class="span_35">ACOTH</span><span class="span_35">3/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">DEP</span><span class="span_35">/0/0.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1</span></p></td></tr></table><p>&#160;</p><table class="table_1"><col style="width: 158pt;" /><col style="width: 216pt;" /><tr><td class="td_64"><p class="p_89">To add a zero AC line for hotel only invoice by linking the AC line to the hotel segment sold.</p></td><td class="td_64"><p><span class="span_35">ACHHT</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">DEP</span><span class="span_35">/0/0.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1</span></p></td></tr></table><p><br />The 2 samples above have different results in how Trams captures the hotel property details. The OTH segment option works best for new properties as all property information from the original booking are captured.</p><p><span>Note:</span> Due to the free form structure of the manual hotel entry, the hotel ID and property code is not read from the sell segment. For manual hotel only PNR's add the hotel ID to the free flow area of the zero accounting line. </p><p class="p_12">ACHHT1/SUPPLY/DEP/0/0.00/0/ALL /CK/1-*VCHI5555</p><p>For manual hotel bookings that are included in a PNR with other transactions, you may add the hotel ID to an MS line override linked to the hotel segment in the SABRE PNR. </p><p class="p_12">5.S*MS3*VCH55555*CM15</p><h3><a name="Automated_Car_Segment_..15" data-mc-generated-bookmark="TOC"></a><a name="Automated_Car_Segment_..15" data-mc-generated-bookmark="TOC"></a>Automated Car Segment</h3><p>Cars booked through Sabre interfaces to <span class="trams">Trams</span> without additional entries. The total fare is calculated based on the rates booked. A commission of 10% is assumed for all bookings. The actual commission rate can be added to the invoice to override the <span class="trams">Trams</span> default by entering an MS entry that matches the segment # assigned to the booking.</p><table class="table_1"><col style="width: 131pt;" /><col style="width: 243pt;" /><tr><td class="td_64"><p class="defaultparagraphfont0_1">Override commission:</p></td><td class="td_64"><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">3*</span><span class="span_35">CM</span><span class="span_35">20</span></p><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">4*</span><span class="span_35">TF</span><span class="span_35"> 200.00*</span><span class="span_35">CMA</span><span class="span_35">20.00</span></p></td></tr></table><p><span class="span_1"><br /></span><span class="span_1">T</span><span class="span_1">rams maintains cars and hotels on invoices only.</span> If booking a car or hotel only, without having invoiced the PNR yet, use the sample below to add a zero AC line for the car only invoice.</p><table class="table_1"><col style="width: 131pt;" /><col style="width: 243pt;" /><tr><td class="td_64"><p class="p_89">Create a zero accounting line for a car only invoice</p></td><td class="td_64"><p><span class="span_35">ACCAR</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">SVC</span><span class="span_35">/0/0.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1</span></p></td></tr></table><h3><a name="Manual_Car_Segment" data-mc-generated-bookmark="TOC"></a><a name="Manual_Car_Segment" data-mc-generated-bookmark="TOC"></a>Manual Car Segment</h3><p>The total fare for car transactions is calculated based on the rate designator and number of days. <span class="trams">Trams</span> assumes a default commission of 10%. You can include an MS remark to override default information or to capture additional information in <span class="trams">Trams</span>.</p><table class="table_1"><col style="width: 151pt;" /><col style="width: 224pt;" /><tr><td class="td_64"><p class="p_89">Example of a Car booking</p></td><td class="td_64"><p><span class="span_35">0</span><span class="span_35">CARZDGK</span><span class="span_35">1</span><span class="span_35">SFO</span><span class="span_35">16</span><span class="span_35">APR</span><span class="span_35">-18</span><span class="span_35">APR</span><span class="span_35">/</span><span class="span_35">ECAR</span><span class="span_35">/</span><span class="span_35">RT</span><span class="span_35">-37.99 </span><span class="span_35">UNL</span><span class="span_35">DAILY</span><span class="span_35">/</span><span class="span_35">CF</span><span class="span_35">-39556688/</span><span class="span_35">SI</span><span class="span_35">-</span><span class="span_35">FREE</span><span class="span_35">FLOW</span><span class="span_35">/</span><span class="span_35">ID</span><span class="span_35">-12345678</span></p></td></tr><tr><td class="td_64"><p class="p_89">Override commission rate.</p></td><td class="td_64"><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">4*</span><span class="span_35">CM</span><span class="span_35">0</span></p></td></tr></table><p><span class="span_1"><br /></span><span class="span_1">Trams maintains cars and hotels on invoices only.</span> If booking a car or hotel only, without having invoiced the PNR yet, use the sample below to add a zero AC line for the hotel only invoice. </p><table class="table_1"><col style="width: 144pt;" /><col style="width: 230pt;" /><tr><td class="td_64"><p class="p_89">Create a zero accounting line for a car only invoice</p></td><td class="td_64"><p><span class="span_35">ACCAR</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">SVC</span><span class="span_35">/0/0.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1</span></p></td></tr></table><h2><a name="ARC_BSP_Ticketing_and_Invoicing_..16" data-mc-generated-bookmark="TOC"></a><a name="ARC_BSP_Ticketing_and_Invoicing_..16" data-mc-generated-bookmark="TOC"></a><a name="kanchor316"></a>ARC/BSP Ticketing and Invoicing</h2><p>The following procedures for ticketing and invoicing are examples for handling various transactions that interface successfully to <span class="trams">Trams</span>. Except as Noted, your PNR can have a combination of ARC/BSP and non-ARC/BSP segments. For information on SABRE formats refer to the SABRE DRS or Format Finder references. (For a full list of descriptor codes used at the booking level see the Descriptor Codes Valid at Booking level chart.) Automated accounting lines for ARC/BSP tickets can be appended to include additional information regarding the transaction, using coded remark lines. See overriding automated ARC AC lines.</p><h3><a name="Sabre_Invoice_and_Ticketing_Commands" data-mc-generated-bookmark="TOC"></a><a name="Sabre_Invoice_and_Ticketing_Commands" data-mc-generated-bookmark="TOC"></a>Sabre Invoice and Ticketing Commands</h3><table class="table_1"><col style="width: 66pt;" /><col style="width: 308pt;" /><tr><td class="td_64"><p class="p_26">W#</p></td><td class="td_64"><p class="defaultparagraphfont0_1">Issue ticket, invoice and Interface record</p></td></tr><tr><td class="td_64"><p class="p_26">W#kp10</p></td><td class="td_64"><p class="defaultparagraphfont0_1">Issue ticket at 10% comm, Invoice and Interface record</p></td></tr><tr><td class="td_64"><p class="p_26">din</p></td><td class="td_64"><p class="defaultparagraphfont0_1">Issue invoice and Interface record</p></td></tr><tr><td class="td_64"><p class="p_26">dit</p></td><td class="td_64"><p class="defaultparagraphfont0_1">Issue itinerary only. Interface record is an option in the TJR. </p></td></tr></table><h3><a name="Issue_Automated_ARC_BSP_Ticket_..17" data-mc-generated-bookmark="TOC"></a><a name="Issue_Automated_ARC_BSP_Ticket_..17" data-mc-generated-bookmark="TOC"></a><br />Issue Automated ARC/BSP Ticket</h3><p>Create the Sabre PNR, and issue the ticket and invoice with a valid SABRE ticketing command: <span class="span_35">W#</span></p><p>BSP ONLY: Per Sabre - The standard VAT rate codes can be overridden in the ticketing entry by using TG.</p><p>EXAMPLE - W#KP10#TGA</p><p><span class="span_1">Trams </span>does not conform to the definitions developed by SABRE, but reads A, B, C as meaning no VAT tax is to be calculated on the commission. Trams assumes the value of the VAT on the sale as handed off by SABRE.</p><h3><a name="Issue_Invoice_for_Hand_Written_ARC_BSP_Ticket" data-mc-generated-bookmark="TOC"></a><a name="Issue_Invoice_for_Hand_Written_ARC_BSP_Ticket" data-mc-generated-bookmark="TOC"></a>Issue Invoice for Hand Written ARC/BSP Ticket </h3><p>Create the Sabre PNR and add valid accounting line for ARC/BSP ticket. Include check digit in ticket number field. Refer to AC*AIR in SABRE for additional information</p><table class="table_1"><col style="width: 374pt;" /><tr><td class="td_87"><p><span class="span_35">AC</span><span class="span_35">/</span><span class="span_35">AA</span><span class="span_35">/</span><span class="span_35">12345678904/P</span><span class="span_35">8/198.00/19.80/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35"> 1.1</span><span class="span_35">DOE</span><span class="span_35">J</span><span class="span_35">/1/</span><span class="span_35">D</span></p></td></tr></table><p><br />Issue the invoice with the format: <span class="span_35">DIN</span></p><h3><a name="Issue_Invoice_for_Prepaid_Ticket_Advice_-_PTA" data-mc-generated-bookmark="TOC"></a><a name="Issue_Invoice_for_Prepaid_Ticket_Advice_-_PTA" data-mc-generated-bookmark="TOC"></a>Issue Invoice for Prepaid Ticket Advice - PTA </h3><p>Create the Sabre PNR. <span class="trams">Trams</span> supports SABRE automated PTA accounting lines. For handwritten PTAs add a valid accounting line for the PTA. Include check digit in ticket number field and the prepaid charges in the base fare. Refer to AC*DOC in SABRE for additional information.</p><table class="table_1"><col style="width: 374pt;" /><tr><td class="td_64"><p><span class="span_35">ACPTA</span><span class="span_35">1/</span><span class="span_35">TW</span><span class="span_35">/12345678904/</span><span class="span_35">P</span><span class="span_35">8/198.00/19.80/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1</span></p></td></tr></table><p><br />Issue the invoice with the format: <span class="span_35">DIN</span></p><h3><a name="Issue_Invoice_for_Miscellaneous_Charge_Order_(MCO)_..18" data-mc-generated-bookmark="TOC"></a><a name="Issue_Invoice_for_Miscellaneous_Charge_Order_(MCO)_..18" data-mc-generated-bookmark="TOC"></a>Issue Invoice for Miscellaneous Charge Order (MCO) </h3><p>Create the Sabre PNR. <span class="trams">Trams</span> supports SABRE automated MCO accounting information. For handwritten MCOs add a valid accounting line for the MCO. Include check digit in the ticket number field. Refer to AC*DOC for additional information</p><table class="table_1"><col style="width: 374pt;" /><tr><td class="td_64"><p><span class="span_35">ACMCO</span><span class="span_35">1/</span><span class="span_35">AA</span><span class="span_35">/12345678904/</span><span class="span_35">P</span><span class="span_35">8/198.00/19.80/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1</span></p></td></tr></table><p>Issue the invoice with the format: <span class="span_35">DIN</span></p><p><span class="trams">Trams</span> assumes the vendor ARC/BSP and a travel type of Domestic AIR for automated MCOs. To specify a different travel type and/or a secondary vendor on manual MCOs, append the AC line with appropriate descriptor codes before driving the invoice.</p><table class="table_1"><col style="width: 466pt;" /><tr><td class="td_64"><p><span class="span_35">ACMCO</span><span class="span_35">1/</span><span class="span_35">AA</span><span class="span_35">/12345678904/</span><span class="span_35">P</span><span class="span_35">10/198.00/19.80/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">10*</span><span class="span_35">VCBRENDAN</span></p></td></tr></table><p>** See Service Fee MCO</p><h3><a name="Issue_an_Automated_Exchange_Ticket" data-mc-generated-bookmark="TOC"></a><a name="Issue_an_Automated_Exchange_Ticket" data-mc-generated-bookmark="TOC"></a>Issue an Automated Exchange Ticket</h3><p>Translation of exchange formats is dependent upon TJR option Exchanges and Refunds turned on. Create the Sabre PNR with the new itinerary information. Issue an exchange ticket and invoice with valid exchange ticketing commands or SABRE mask. Drive the exchange ticket with a valid exchange ticketing entry such as: <span class="span_35">W#ET</span></p><p>For non ARC/BSP transactions to interface with an exchange, select the option <span class="span_1">Allow Comm Track On Exchanges </span>from <span>Utilities|Setup|Global Defaults|Interfacemailmerge Prompt.</span></p><h3><a name="Issue_Invoice_for_Manual_Exchange_Ticket" data-mc-generated-bookmark="TOC"></a><a name="Issue_Invoice_for_Manual_Exchange_Ticket" data-mc-generated-bookmark="TOC"></a>Issue Invoice for Manual Exchange Ticket </h3><p>Create the Sabre PNR and add valid accounting line for a new ARC/BSP ticket.</p><table class="table_1"><col style="width: 374pt;" /><tr><td class="td_73"><p class="p_5"><span class="span_35">AC</span><span class="span_35">/</span><span class="span_35">AA</span><span class="span_35">/12345678904/</span><span class="span_35">P</span><span class="span_35">10/198.00/19.80/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1/</span><span class="span_35">D</span></p></td></tr></table><p /><p>Use the base tax and commission rates for add collect. Include check digit in ticket number field. Add a valid exchange remark to include net base and taxes. The tax ID’s are optional.</p><p class="defaultparagraphfont0_2">E = EVEN A= Exchange with ADD collect R= Exchange with REFUND</p><p><span class="span_28">5.S*EXA*[base fare]*[tax id][tax amt]*[tax id2][tax amt 2</span>]</p><table class="table_1"><col style="width: 138pt;" /><col style="width: 236pt;" /><tr><td colspan="2" class="td_63"><p class="p_88" /></td></tr><tr><td class="td_73"><p class="description_5">Even exchange</p><p class="description_5">Exchange with Add-collect</p><p class="description_5">Exchange with Refund</p><p class="description_5">Exchange with multiple taxes and codes</p></td><td class="td_73"><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">EXE</span></p><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">EXA</span><span class="span_35">*115.45.*</span><span class="span_35">US</span><span class="span_35">11.55*</span><span class="span_35">XT</span><span class="span_35">3.00</span></p><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">EXR</span><span class="span_35">*115.45*14.55</span></p><p><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">EXA</span><span class="span_35">*196.40*</span><span class="span_35">CA</span><span class="span_35">26.64*</span><span class="span_35">XG</span><span class="span_35">15.61*</span><span class="span_35">GS</span><span class="span_35">6.40</span></p></td></tr></table><p><br />Issue the invoice with the format: <span class="span_35">DIN</span></p><p>For non ARC/BSP transactions to interface with an exchange, select the option <span class="span_1">Allow Comm Track On Exchanges </span>from <span>Utilities|Setup|Global Defaults|Interfacemailmerge Prompt.</span></p><h3><a name="Electronic_ARC_Documents_(ARC_E_Tickets)" data-mc-generated-bookmark="TOC"></a><a name="Electronic_ARC_Documents_(ARC_E_Tickets)" data-mc-generated-bookmark="TOC"></a>Electronic ARC Documents (ARC E Tickets)</h3><p><span class="span_1">Trams</span> reads the automated Electronic Air Ticket records as defined by SABRE. <span class="span_1">Trams</span> also reads E-ticket transactions when the NIET option is turned on in the TJR. With the NIET option turned on, no AC line is generated at the time of ticketing. When confirmation of ticketing is received by FAX from Southwest Airlines, a manual accounting line can be entered, and the invoice driven at that time.</p><p>(See AC*ETN for ARC, Non-Interactive Electronic Air Ticketing.)</p><p>AC/WN/1234567890/7.00/100.00/8.00/ONE/CC 1.1DOE J/1/D/E-V-123ABC/P-123ABC</p><h3><a name="Manual_ARC_Travel_Agency_Service_Fees_-_CC_FOP" data-mc-generated-bookmark="TOC"></a><a name="Manual_ARC_Travel_Agency_Service_Fees_-_CC_FOP" data-mc-generated-bookmark="TOC"></a>Manual ARC Travel Agency Service Fees - CC FOP</h3><p class="p_34">This option applies to SABRE agencies who are enrolled in TAFP directly with ARC. For format examples see AC*AIR for other information.</p><p>Create the SABRE PNR and add a valid accounting line for the TAFP service charge.</p><table class="table_1"><col style="width: 374pt;" /><tr><td class="td_73"><p class="p_5"><span class="span_35">AC</span><span class="span_35">/</span><span class="span_35">XD</span><span class="span_35">/12345678904/</span><span class="span_35">P</span><span class="span_35">0/22.73/2.72/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CCAX</span><span class="span_35">372112341234123 1.1</span><span class="span_35">ROSEN</span><span class="span_35">L</span><span class="span_35">/1/</span><span class="span_35">D</span></p><p class="example_1">5.S*MS101*SBSUP</p></td></tr></table><h3><a name="Voids" data-mc-generated-bookmark="TOC"></a><a name="Voids" data-mc-generated-bookmark="TOC"></a><br />Voids</h3><p>Voided tickets interface to <span class="span_1">Trams</span> if the SABRE option has been set in the agencies TJR. To determine if the SABRE option for voids has been initiated enter W/VOD#* at a SABRE workstation. Refer to the SABRE Helpdesk if further assistance is needed. (Set the interface Void option to <span class="span_12">Prompt or Always</span> in <span>Utilities|Setup|Global Defaults| Interface/Mailmerge</span>.)</p><p> <b>NOTE:</b> Do not issue a ticket and void it immediately without ending the record after the original ticket is issued. This causes Sabre to send the IUR for the VOID ticket, but not the IUR for the original issued ticket. TBO will not have the original ticket for the VOID to process properly.</p><h3><a name="Sabre_MX_Record" data-mc-generated-bookmark="TOC"></a><a name="Sabre_MX_Record" data-mc-generated-bookmark="TOC"></a>Sabre MX Record </h3><p>Sabre has added a TJR option called the Interface IUR MX Record, which controls the creation and transmission of the MX record. &#160;The MX record may contain up to 99 tax codes and amounts. The TJR option will default to OFF.&#160; When switched to ON, the taxes will no longer appear in the accounting lines.&#160; Before turning on this option refer to the Sabre Format Finder or contact our Sabre Help Desk.</p><p>All taxes captured from the MX record, via the interface, shall be populated on the Tax Detail tab (Tax Related) of the Trams Invoice booking, along with their tax codes.&#160; The tax codes will be assigned based on the Tax Related set up screen in the <span>Utilities|Set Up|Global Defaults</span> menu. </p><p>Tax 1 - Tax 4 amounts under the Tax Amounts tab of the booking will also be added to the total in the Taxes field on the General Info Tab of the booking.&#160; The taxes will also populate the fields Tax 1 - Tax 4 in the Report Generator Reports.&#160; </p><p>For&#160; International Versions of Trams Back Office; Any tax codes that are assigned to GST/HST or VAT under Global Defaults | Tax-Related tab (for example, RC or XG) will populate the Client GST/HST or Client VAT field on the Tax Amounts tab of the invoice.&#160; They shall also be added to the total in the Taxes field on the General Info Tab of the booking.</p><p>For additional information regarding the MX record, please refer to the Sabre format finder or contact our Sabre reservations help desk.</p><h3><a name="Manual_Refunds_ACR*AIR" data-mc-generated-bookmark="TOC"></a><a name="Manual_Refunds_ACR*AIR" data-mc-generated-bookmark="TOC"></a>Manual Refunds ACR*AIR</h3><p>Trams Back Office reads refund accounting lines as well as full invoice refunds. Refunds can only be interfaced if the TJR option for "Refunds and Discount Lines is activated. (See SABRE documentation and examples at ACR*AIR and ACR*DOC.) </p><p class="p_89">ACR/LH/28282828280/8.00/100.00/8.00/ONE/CK 1.1DOE J/1/A/F1234567/D</p><h3><a name="Discount_ACL" data-mc-generated-bookmark="TOC"></a><a name="Discount_ACL" data-mc-generated-bookmark="TOC"></a>Discount ACL</h3><p>Discounted Cash or Check FOP transactions can be included for interface. Enter the fare charged to the client followed by the income earned by the agency after the discount amount is subtracted from the commission.</p><p><span>Note:</span> Trams Back Office reads SABRE ACL lines as defined in Format Finder. For an online example in SABRE see ACL*AIR, ACL*DOC or ACL*SUP for appropriate use of the ACL function. To manually add an accounting line to a PNR to show discount information for air ticket transactions. Trams Back Office reads descriptor codes valid at booking level if entered in the optional free-flow area of the discount line.</p><table class="table_1"><col style="width: 138pt;" /><col style="width: 236pt;" /><tr><td class="td_73"><p class="example_1">Sample ACL discount lines.</p></td><td class="td_73"><p class="example_1">ACL/SUPPLY/DIS/20.00/1.00/ALL-*FPCASH</p><p class="example_1">ACL/012345/DIS/25.00/1.50/ONE/N1.1-OPTIONAL-*FPCASH</p><p class="example_1">ACL/AGENCY/DIS/40.00/0.00/PER-*FPCASH</p></td></tr></table><p><br />For options regarding the verbiage used by SABRE see Format Finder.</p><p><span>Note: </span>AC line entries with a negative total fare and commission amount (i.e refund or discounts) must now have an TBO FP code to indicate form of payment (FPCASH). If the FP code is absent, the payment will be read from the invoice FOP. </p><h3><a name="Bulk_Ticketing_5.S*FV" data-mc-generated-bookmark="TOC"></a><a name="Bulk_Ticketing_5.S*FV" data-mc-generated-bookmark="TOC"></a>Bulk Ticketing 5.S*FV</h3><p><span class="span_1">Trams</span> does not recognize the ACB line used in SABRE to markup net or special fare transactions. <span class="span_1">Trams</span> reads the fare of the ticket sold, but requires a *FV entry to calculate the face value for ARC/BSP and the net commission earned. Create the invoice as normal using the net fare for ticketing and the ACB line for the markup to the client for proper invoicing. Add the Trams Face Value entry to interface the proper fares and commission to <span class="span_1">Trams</span>.</p><table class="table_1"><col style="width: 246pt;" /><col style="width: 128pt;" /><tr><td class="td_73"><p class="example_1">Add the total fare followed by the markup or net commission.</p></td><td class="td_73"><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">FV</span><span class="span_35">2400*60</span></p></td></tr><tr><td class="td_73"><p class="example_1">Add the total fare followed by the net commission, or markup amount.</p></td><td class="td_73"><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">FV</span><span class="span_35">350.86*0 </span><span class="span_35">OR</span></p><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">FV</span><span class="span_35">350.86</span></p></td></tr></table><p><br />Markups when using CC merchant account for the markup.</p><table class="table_7"><col style="width: 509pt;" /><tr><td class="td_64"><p><span class="span_1">&#160; </span><span class="span_1">SELL the ticket like normal</span><span class="span_1">,</span><span class="span_1"> but before ENDING the RECORD, add the ACB line to reflect the markup for the SABRE invoice.</span></p><p><span class="span_1">&#160;&#160;&#160;&#160;&#160; </span><span class="span_1">ACB/009005/BLK/329.50/0.00/ONE/N1.1-SWISHER </span></p><p> <span class="span_1">Add the following 5.S* lines: </span></p><p><span class="span_1">&#160; </span><span class="span_1">5.</span><span class="span_1">S*FV808.00*349.50 - This is the 5.S*FV[gross to be billed the client]*[gross comm earned]</span><span class="span_1"><br /></span><span class="span_1"><br /></span><span class="span_1">&#160; </span><span class="span_1">5.S*MS101*CP4*XP0304 - This is to process the CC in full from the client, thru your CC merchant </span><span class="span_1">account, the </span><span class="span_1">ARC report shows this ticket as FOP CHECK by SABRE design.</span></p></td></tr></table><h3><a name="Appending_or_Overriding_Data_in_an_Automated_AC_line_5.S*MSXXX" data-mc-generated-bookmark="TOC"></a><a name="Appending_or_Overriding_Data_in_an_Automated_AC_line_5.S*MSXXX" data-mc-generated-bookmark="TOC"></a><br />Appending or Overriding Data in an Automated AC line 5.S*MSXXX</h3><p>To link an MS line to a specific AC line for the purpose of supplementing or overriding accounting data is often used to add fare savings information or travel type overrides. Display the accounting information in the PNR with *PAC</p><p>The Accounting lines are numbered... use the 100 series to link to any accounting line...i.e. 101, 102, 103 would link to accounting lines 1, 2, and 3. 5.S*MS101 would link to accounting line #1.</p><table class="table_1"><col style="width: 106pt;" /><col style="width: 287pt;" /><tr><td class="td_73"><p class="example_1">Link to AC1</p></td><td class="td_73"><p class="example_1">5.S*MS101*TT4*VCFLYAWAY </p></td></tr><tr><td class="td_73"><p class="example_1">Link to AC2</p></td><td class="td_73"><p class="example_1">5.S*MS102*FJEX*FF842.88*LF99.80</p></td></tr></table><p><span><br /></span><span>Note:</span> There is limit to the number of codes that can be added in an MS line. You should limit your entry to a single line screen display in SABRE. Multiple lines can be linked to a single accounting line by repeating the SAME MS segment number.</p><h3><a name="Sabre_Holding_List_HL" data-mc-generated-bookmark="TOC"></a><a name="Sabre_Holding_List_HL" data-mc-generated-bookmark="TOC"></a>Sabre Holding List HL </h3><p><span class="span_1">Trams</span> captures segment and itinerary data from invoices when the bookings have a confirmation status of HL (Holding List). These are waitlisted segments that are auto priced, ticketed and invoiced, even though the seats are not holding confirmed.</p><h3><a name="Ancillary_Airline_Charges_EMD_..19" data-mc-generated-bookmark="TOC"></a><a name="Ancillary_Airline_Charges_EMD_..19" data-mc-generated-bookmark="TOC"></a>Ancillary Airline Charges EMD</h3><p>Separate booking records for each EMD accounting line are created in the TBO invoice. The Submit to field defaults to ARC/BSP (as these transactions are reconciled through ARC/BSP).&#160; The travel type field will be triggered by the name of Misc. If there is no Travel Type of Misc, then the default will be to the first Travel Type in the list that has the Category of&#160;'Other'.&#160; The Travel Types may be modified in the travel type set up screen under the <span>Utilities/Global Defaults/Travel Type</span> menu. </p><p>Since there can be many different options as to what travel types the various EMD transactions may be linked to and the EMD accounting line is automated, we suggest using the 5.S*MS101*TT entry to force the transaction to go to the desired travel type. (See the Appending or Overriding Data in an Automated AC line 5.S*MSXXX section for more details.) </p><p>In each booking record, a notation of the EMD charge type is placed in the Remarks tab in the Client Remarks field. The number of passengers the fee applies to is placed in the Number of Rooms/Cars field in the expanded fare tab.</p><h3><a name="OB_Fees" data-mc-generated-bookmark="TOC"></a><a name="OB_Fees" data-mc-generated-bookmark="TOC"></a>OB Fees</h3><p>Added support to read the Airline OB fees from the Sabre Interface Record. This fee is being treated as a tax by BSP/ARC therefore to properly reconcile the BSP/ARC report and to see the OB fee broken out, the OB code must be added to Utilities/Setup/Global Defaults/Tax Related Tab. The Tax code to place in tax code field 1,2,3 or 4 is OB. To ensure the OB fee is not combined with any other taxes, ensure the code is added to a tax field that is not currently be used to capture any other taxes. Additionally the Read Multiple Taxes option under <span>Utilities|Setup|Global Defaults|Interface Mailmerge Tab</span> must also be enabled (checked).</p><h2><a name="Non-ARC_BSP_Supplier_Invoice_..20" data-mc-generated-bookmark="TOC"></a><a name="Non-ARC_BSP_Supplier_Invoice_..20" data-mc-generated-bookmark="TOC"></a><a name="kanchor317"></a>Non-ARC/BSP Supplier Invoice</h2><p>The issuance of invoices for non-ARC/BSP items are dependent on the use of a supplier segment and a matching accounting line. See AC*SUP for additional information on SABRE formats. The SABRE AC line can be appended with up to 28 characters that do not print on the invoice. Use the <span class="trams">Trams</span> booking descriptor codes to supplement the AC line with information for <span class="trams">Trams</span>. Trams does not translate the FOP for Non-ARC Suppliers unless the “Allow Supplier Payments” option in <span>Utilities|Setup|Global Defaults</span> is enabled (checked).</p><p><span class="trams">Trams</span> reads valid AC/AD lines linked to the following segment types:</p><p class="p_12">AIR, CAR, HHT, TOR, SEA, OTH, INS, ATX</p><p>All other segment types are ignored. If you are using customized scripts based on MS formats you may need to disable <span class="trams">Trams</span> ability to read AC/AD lines. Check with your script writer.</p><p>To disable the SABRE features enter -U:0 in the hardware setup options under Interface setup. If you are using Trams Back Office, you may enter the -U:0 in the Options field in the <span>Interface|Download</span> screen. To record an additional booking using an MS line, the segment number must be larger than what exists in the PNR. </p><p>Refer to the SABRE Format Finder screens for additional information on SABRE formats. AC*DOC and AC*. (For a full list of descriptor codes used at the booking level see the Descriptor Codes Valid at Booking level chart.)</p><table class="table_1"><col style="width: 99pt;" /><col style="width: 275pt;" /><tr><td class="td_73"><p class="example_1">Create a sell segment and a matching AC line</p></td><td class="td_73"><p class="p_5"><span class="span_35">0</span><span class="span_35">OTHAAHK</span><span class="span_35">2</span><span class="span_35">SFO</span><span class="span_35">4</span><span class="span_35">AUG</span><span class="span_35">-</span><span class="span_35">AMERICAN</span><span class="span_35">EXPRESS</span><span class="span_35">/</span><span class="span_35">ITAMX</span><span class="span_35">5567/</span><span class="span_35">DBLB</span><span class="span_35">/</span><span class="span_35">SI</span><span class="span_35">-3 </span><span class="span_35">NIGHT</span></p><p class="p_5">&#160;</p></td></tr></table><p><span class="span_35"><br /></span><span class="span_35">ACOTH1/SUPPLY/DOC/P11/950.00/0/ALL/CK/1-28 CHARACTER FREE FLOW</span></p><table class="table_1"><col style="width: 16pt;" /><col style="width: 16pt;" /><col style="width: 23pt;" /><col style="width: 23pt;" /><col style="width: 30pt;" /><col style="width: 30pt;" /><col style="width: 30pt;" /><col style="width: 19pt;" /><col style="width: 22pt;" /><col style="width: 22pt;" /><col style="width: 39pt;" /><col style="width: 48pt;" /><tr><td class="td_64">&#160;</td><td class="td_87"><p>A</p></td><td class="td_87"><p>B</p></td><td class="td_87"><p>C</p></td><td class="td_87"><p>D</p></td><td class="td_87"><p>E</p></td><td class="td_87"><p>F</p></td><td class="td_87"><p>G</p></td><td class="td_87"><p>H</p></td><td class="td_87"><p>I</p></td><td class="td_87"><p>J</p></td><td class="td_87"><p>K</p></td></tr></table><p>&#160;</p><table class="table_2"><col style="width: 7pt;" /><col style="width: 533pt;" /><tr><td class="td_4"><p>A </p></td><td class="td_4"><p>= The type of segment</p></td></tr></table><p class="p_13">B = Segment Number of the corresponding segment sold</p><p class="p_13">C = 6 character vendor code if defined in <span class="trams">Trams</span> Vendor Profile as Interface ID</p><p class="p_13">D = 3 letter supply code found in DU*/ACT</p><p class="p_13">E = Commission amount or percent. P=percent A=actual with decimal</p><p class="p_13">F = Base Fare with decimalSUP</p><p class="p_13">G = Tax amount</p><p class="p_13">H = Amount by passenger: Use ALL for all passengers on invoice.</p><p class="p_13">I = Form of payment</p><p class="p_13">J = Number of documents</p><p class="p_13">K = 28 character free flow area does not print on invoice, but are included in the interface record.</p><h3><a name="Issuing_Invoice_for_Tour_Deposit_..21" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_Tour_Deposit_..21" data-mc-generated-bookmark="TOC"></a>Issuing Invoice for Tour Deposit</h3><p>Create a valid tour segment in the PNR. Add an appropriate accounting line linked to the segment type sold. The data entered after the dash in the accounting line can be read by <span class="trams">Trams</span> using valid booking level descriptor codes. SABRE allows up to 28 characters in the free flow field of an accounting line. The booking type determines how the sale is accounted for. Check with your <span class="trams">Trams</span> operator to determine the preferred option for your office.</p><p><span class="trams">Trams</span> reads the vendor code from the standard AC line, or as a coded field appending the AC line. </p><table class="table_1"><col style="width: 93pt;" /><col style="width: 348pt;" /><tr><td class="td_73"><p class="example_1">Append a Supplier sale</p><p class="p_5">&#160;</p><p class="p_5">&#160;</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACTOR</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">DEP</span><span class="span_35">/0.00/200.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">9*</span><span class="span_35">VCRCCL</span><span class="span_35">*</span><span class="span_35">CF</span><span class="span_35">37842</span></p><p class="p_90">&#160;</p><p class="p_5"><span class="span_35">ACTOR</span><span class="span_35">1/002200/</span><span class="span_35">DEP</span><span class="span_35">/0/200.00/0/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CA</span><span class="span_35"> 1.1</span><span class="span_35">JONES</span><span class="span_35">D</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">9*</span><span class="span_35">CF</span><span class="span_35">37842</span></p><p class="example_1">&#160;</p></td></tr></table><p>&#160;</p><table class="table_1"><col style="width: 94pt;" /><col style="width: 348pt;" /><tr><td class="td_73"><p class="example_1">Reporting data can be linked to the AC line with an accounting remark that matches the AC line number.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACTOR</span><span class="span_35">1/002012/</span><span class="span_35">DEP</span><span class="span_35">/0/200.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CHECK</span><span class="span_35"> 1.1</span><span class="span_35">JONES</span><span class="span_35">D</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">9*</span><span class="span_35">CF</span><span class="span_35">37842</span></p><p class="p_90">&#160;</p><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">1</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">FA</span><span class="span_35">3000.00*</span><span class="span_35">FC</span><span class="span_35">370.00*</span><span class="span_35">FD</span><span class="span_35">03</span><span class="span_35">JUN</span><span class="span_35">04*</span><span class="span_35">VNROYAL</span><span class="span_35">CARIBBEAN</span></p></td></tr></table><p>&#160;</p><table class="table_1"><col style="width: 95pt;" /><col style="width: 347pt;" /><tr><td class="td_73"><p class="p_5"><span class="span_30">Tours booked through non-defined vendors can be entered with an MS line</span><span class="description">.</span></p></td><td class="td_73"><p class="p_5"><span class="span_35">5.S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">VCPRINCESS</span><span class="span_35">*</span><span class="span_35">TT</span><span class="span_35">9*</span><span class="span_35">TF</span><span class="span_35">200.00*</span><span class="span_35">CM</span><span class="span_35">0*</span><span class="span_35">CF</span><span class="span_35">37842</span></p><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9*</span><span class="span_35">FC</span><span class="span_35">370.00*</span><span class="span_35">FD</span><span class="span_35">03</span><span class="span_35">JUN</span><span class="span_35">04*</span><span class="span_35">FA</span><span class="span_35">3000.00</span></p><p class="p_90">&#160;</p><p class="example_1">Use a segment number larger than what exists in the PNR.</p></td></tr></table><h3><a name="Issuing_Invoice_for_Tour_Final_Payment" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_Tour_Final_Payment" data-mc-generated-bookmark="TOC"></a><br />Issuing Invoice for Tour Final Payment</h3><p>If using the same PNR to issue the final payment invoice, remove or amend the original AC line, or both accounting lines interface to <span class="trams">Trams</span>. The SB descriptor code can be used to change the booking type from Supplier to Commission Track or ARC. </p><table class="table_1"><col style="width: 71pt;" /><col style="width: 365pt;" /><tr><td class="td_73"><p class="example_1">Append the AC line with booking level descriptor codes.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACTOR</span><span class="span_35">1/002030/</span><span class="span_35">FPT</span><span class="span_35">/370.00/1000.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT10</span><span class="span_35">*</span><span class="span_35">CF</span><span class="span_35">123345</span></p><p class="p_90">&#160;</p><p class="p_5"><span class="span_35">ACTOR1</span><span class="span_35">/002030/</span><span class="span_35">FPT</span><span class="span_35">/440.00/1400.00/0/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CCVI</span><span class="span_35">123466694321903 1.2 </span><span class="span_35">KELLY</span><span class="span_35">G</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">10*</span><span class="span_35">CF</span><span class="span_35">99</span><span class="span_35">YYLR</span></p></td></tr><tr><td class="td_73"><p class="example_1">Use the *SBCOM to change the supplier booking to comm track</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACTOR</span><span class="span_35">1/002133/</span><span class="span_35">FPT</span><span class="span_35">/370.00/1000.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCAX</span><span class="span_35">1234567890111 1.1</span><span class="span_35">JONES</span><span class="span_35">K</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">10*</span><span class="span_35">CF</span><span class="span_35">123345*</span><span class="span_35">SBCOM</span></p></td></tr></table><h3><a name="Issuing_Invoice_for_Cruise_Deposit_..22" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_Cruise_Deposit_..22" data-mc-generated-bookmark="TOC"></a><br />Issuing Invoice for Cruise Deposit</h3><p>Create a valid cruise segment in the PNR. Add an appropriate accounting line linked to the segment type sold. The data entered after the dash in the accounting line can be read by <span class="trams">Trams</span> using valid booking descriptor codes. SABRE allows up to 28 characters in the free flow field of an accounting line. The booking type determines how the sale is accounted for. Check with your <span class="trams">Trams</span> operator to determine the preferred option for your office.</p><table class="table_1"><col style="width: 85pt;" /><col style="width: 289pt;" /><tr><td class="td_73"><p class="example_1">Append the AC line with booking level descriptor codes.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACSEA</span><span class="span_35">1/004010/</span><span class="span_35">DEP</span><span class="span_35">/0.00/1000.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35"> 1.1</span><span class="span_35">JACOBS</span><span class="span_35">K</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">6*</span><span class="span_35">CF</span><span class="span_35">4891</span><span class="span_35">YFG</span></p><p class="p_5"><span class="span_35">ACSEA</span><span class="span_35">1/</span><span class="span_35">PRINCE</span><span class="span_35">/</span><span class="span_35">DEP</span><span class="span_35">/0/1000.00/0/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CC</span><span class="span_35"> 1.1</span><span class="span_35">SMITH</span><span class="span_35">J</span><span class="span_35">/1-*</span><span class="span_35">FA</span><span class="span_35">3200*</span><span class="span_35">FC</span><span class="span_35">420*</span><span class="span_35">FD</span><span class="span_35">03</span><span class="span_35">JUN</span><span class="span_35">97</span></p></td></tr><tr><td class="td_73"><p class="example_1">Additional information can be linked to the booking to include the booking level codes.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACSEA</span><span class="span_35">1/004432/</span><span class="span_35">DEP</span><span class="span_35">/0/1000.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35"> 1.1</span><span class="span_35">JACOBS</span><span class="span_35">K</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">6*</span><span class="span_35">CF</span><span class="span_35">5689332</span></p><p class="p_90">&#160;</p><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS1S</span><span class="span_35">*</span><span class="span_35">FA</span><span class="span_35">3000.00*</span><span class="span_35">FC</span><span class="span_35">370.00*</span><span class="span_35">FD</span><span class="span_35">03</span><span class="span_35">JUN</span><span class="span_35">97*</span><span class="span_35">VNROYAL</span><span class="span_35">CARIBBEAN</span></p></td></tr><tr><td class="td_73"><p class="example_1">Cruises booked through non-defined vendors can be entered with an MS line.</p></td><td class="td_73"><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">VCPRINCESS</span><span class="span_35">*</span><span class="span_35">TT</span><span class="span_35">4*</span><span class="span_35">TF</span><span class="span_35">200.00*</span><span class="span_35">CM</span><span class="span_35">0*</span><span class="span_35">CF</span><span class="span_35">4337842</span></p><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9*</span><span class="span_35">FC</span><span class="span_35">370.00*</span><span class="span_35">FD</span><span class="span_35">03</span><span class="span_35">JUN</span><span class="span_35">97*</span><span class="span_35">FA</span><span class="span_35">3000.00</span></p></td></tr></table><p><br />To add a separate booking use a segment number larger than what exists in the PNR. To link the MS line to an AC line, use the same segment number.</p><h3><a name="Issuing_Invoice_for_Cruise_Final_Payment" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_Cruise_Final_Payment" data-mc-generated-bookmark="TOC"></a>Issuing Invoice for Cruise Final Payment</h3><p class="description_4">The SB descriptor code can be used to change the booking type from Supplier to Commission Track or ARC.</p><table class="table_1"><col style="width: 71pt;" /><col style="width: 347pt;" /><tr><td class="td_73"><p class="p_89">Append the AC line with booking level descriptor codes.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACSEA</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">FPT</span><span class="span_35">/0.00/1000.00/0.00/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">7*</span><span class="span_35">VCPRINCESS</span><span class="span_35">*</span><span class="span_35">CF</span><span class="span_35">1234ab2</span></p><p class="p_5"><span class="span_35">ACSEA</span><span class="span_35">1/004300/</span><span class="span_35">FPT</span><span class="span_35">/0.00/1000.00/0.00/</span><span class="span_35">ONE</span><span class="span_35">/</span><span class="span_35">CCVI</span><span class="span_35">433278436788 1.1</span><span class="span_35">JACOBS</span><span class="span_35">M</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">7*</span><span class="span_35">CF</span><span class="span_35">1234ab2</span></p></td></tr><tr><td class="td_73"><p class="p_89">Use the *SBCOM to change the supplier booking to comm track</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACSEA</span><span class="span_35">1/004213/</span><span class="span_35">FPT</span><span class="span_35">/420.00/1000.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCAX</span><span class="span_35">1234567890111 1.1</span><span class="span_35">JONES</span><span class="span_35">K</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">10*</span><span class="span_35">CF</span><span class="span_35">123345*</span><span class="span_35">SBCOM</span></p></td></tr></table><h3><a name="Issuing_Invoice_for_Service_Fees" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_Service_Fees" data-mc-generated-bookmark="TOC"></a><br />Issuing Invoice for Service Fees</h3><p>How Service Fee bookings are accounted for are often determined by the client form of payment options. You can enter 96.5% of the total fare or 100% of the total fare as the commission in TAFP bookings. The <span class="trams">Trams </span>operator may have a preference for how these are handled.</p><table class="table_1"><col style="width: 95pt;" /><col style="width: 351pt;" /><tr><td class="td_73"><p class="p_89">A supplier sale</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACOTH</span><span class="span_35">1/005001/</span><span class="span_35">VCH</span><span class="span_35">/10.00/10.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">11</span></p></td></tr><tr><td class="td_73"><p class="p_89">A supplier sale for CC FOP if the agency acts as the CC Merchant.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACOTH</span><span class="span_35">1/000009/</span><span class="span_35">FPT</span><span class="span_35">/9.65/10.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCVI</span><span class="span_35">4321480768443072 1.1</span><span class="span_35">TADA</span><span class="span_35">J</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">11</span><span class="span_35">*</span><span class="span_35">CP</span><span class="span_35">4</span></p></td></tr><tr><td class="td_73"><p class="p_89">A supplier sale for CC FOP if handled thru TAFP.</p></td><td class="td_88"><p class="p_5"><span class="span_35">ACOTH</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">VCH</span><span class="span_35">/9.65/10.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCVI</span><span class="span_35">4321480768443072 1.1</span><span class="span_35">TADA</span><span class="span_35">J</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">11</span><span class="span_35">*</span><span class="span_35">VCTAFP</span></p></td></tr></table><p><span><br /></span><span>Note: </span>Trams reads the ticket number in the void record for a Sabre E-Merchant Card - Services charged and matched to the Confirmation Number in a TBO supplier booking, closed by CC and with a Travel Category of Service Fee, if a match, Trams voids the booking. To utilize this feature, check that <span>Utilities|Setup|Global Defaults\ Interface/Mailmerge Prompt Tab</span> has <span class="span_1">Allow Voids</span> set to <span class="span_1">Prompt</span>.</p><h3><a name="Issuing_Invoice_for_Insurance_..23" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_Insurance_..23" data-mc-generated-bookmark="TOC"></a>Issuing Invoice for Insurance</h3><p>See the booking level descriptor codes for information on Canadian taxes.</p><table class="table_1"><col style="width: 136pt;" /><col style="width: 293pt;" /><tr><td class="td_73"><p class="example_1">A supplier segment for insurance, suppressing GST and QST.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACINS</span><span class="span_35">1/007001/</span><span class="span_35">VCH</span><span class="span_35">/1.54/10.00/0.00/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">11*</span><span class="span_35">CF</span><span class="span_35">1073237842*</span><span class="span_35">TXCA</span><span class="span_35">1.80*</span><span class="span_35">GQA</span></p></td></tr></table><h3><a name="Issuing_Invoice_for_Non-ARC_BSP_Air_..24" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_Non-ARC_BSP_Air_..24" data-mc-generated-bookmark="TOC"></a>Issuing Invoice for Non-ARC/BSP Air</h3><p>The <span class="trams">Trams</span> descriptor code *SG allows air segment detail from a passive air segment to interface to <span class="trams">Trams</span> as segment information.</p><table class="table_1"><col style="width: 77pt;" /><col style="width: 365pt;" /><tr><td class="td_73"><p class="example_1">A supplier booking with segment information</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACOTH</span><span class="span_35">1/</span><span class="span_35">SUPPLY</span><span class="span_35">/</span><span class="span_35">DOC</span><span class="span_35">/6.90/64.20/6.90/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">1*</span><span class="span_35">VCWN</span><span class="span_30">*</span><span class="span_30">SG</span><span class="span_30">*</span><span class="span_30">FJL</span><span class="span_30">*</span><span class="span_30">FF</span><span class="span_30">467.00*</span><span class="span_30">LF</span><span class="span_30">103.50</span></p><p class="p_90">&#160;</p><p class="p_5"><span class="span_35">ACOTH</span><span class="span_35">1/001006/</span><span class="span_35">FPT</span><span class="span_35">/10</span><span class="span_35">P</span><span class="span_35">/380.00/33.40/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCVI</span><span class="span_35">3078778740829004 1.1</span><span class="span_35">JACKSON</span><span class="span_35">L</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">1</span></p></td></tr><tr><td class="td_73"><p class="example_1">Comm track booking</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACOTH</span><span class="span_35">1/001120/</span><span class="span_35">FPT</span><span class="span_35">/10</span><span class="span_35">P</span><span class="span_35">/380.00/33.40/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCVI</span><span class="span_35">3078778740829004 1.1</span><span class="span_35">JACKSON</span><span class="span_35">L</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">1*</span><span class="span_35">SG</span><span class="span_35">*</span><span class="span_35">SBCOM</span></p></td></tr><tr><td class="td_73"><p class="example_1">Add Fare Savings to Non ARC/BSP booking </p></td><td class="td_73"><p class="p_5"><span class="span_30">ACOTH</span><span class="span_30">1/</span><span class="span_30">SUPPLY</span><span class="span_30">/</span><span class="span_30">DOC</span><span class="span_30">/6.90/64.20/6.90/</span><span class="span_30">ALL</span><span class="span_30">/</span><span class="span_30">CK</span><span class="span_30">/1-*</span><span class="span_30">TT</span><span class="span_30">1*</span><span class="span_30">VCWN</span><span class="span_30">*</span><span class="span_30">SG</span><span class="span_30">*</span><span class="span_30">FJL</span><span class="span_30">*</span><span class="span_30">FF</span><span class="span_30">467.00*</span><span class="span_30">LF</span><span class="span_30">LF103.50</span></p></td></tr></table><p><br />The SG descriptor code can be used to capture the segment information for non-ARC/BSP transactions to be available for reporting purposes in <span class="trams">Trams</span>. This *SG entry has been expanded to allow the user to specify which segments are to be included. The format is "*SG 01 02 03 04" where each segment number is separated by a space. You will now be able to specify the proper segments for each booking in an invoice.</p><p>Descriptor codes valid at booking level can be used to capture segment and fare savings information for non-ARC and manual AIR segments.</p><h3><a name="Supplier_Exchange_Ticket" data-mc-generated-bookmark="TOC"></a><a name="Supplier_Exchange_Ticket" data-mc-generated-bookmark="TOC"></a>Supplier Exchange Ticket</h3><p>Trams reads a supplier exchange ticket even when an ARC/BSP sale is in the same invoice, when entered at the booking level using MS line options. </p><p>For example: </p><p class="p_89">5.S*MS2S*VCWEBAIR*TT1*CF1234567890*SG*EXA </p><p class="p_89">5.S*MS2*BF201.00*TXXG14.07 </p><p class="p_89">5.S*MS2*FPVI12345678901234*XP1107 </p><p><span>Note: </span>Sabre Non-ARC tickets entered via AC lines (i.e. Southwest) now interface as Supplier transactions. Previously Trams read the WN in a Sabre record as Southwest Air, but creating it in TBO as a Comm Track booking. In the days of commission, the Comm Track booking was easy to reconcile through PayMode. But in order to get the sale on the Income Statement, the agency had to manually close out all of the zero commission comm track bookings which was a lot of extra work. Now with the bookings interfacing as Supplier, CC with no commission, the vendor side auto closes, eliminating having to manually close them out.</p><h3><a name="Issuing_Invoice_for_a_Cruise_Deposit_(Sabre_Deposit_Accounting_Line)" data-mc-generated-bookmark="TOC"></a><a name="Issuing_Invoice_for_a_Cruise_Deposit_(Sabre_Deposit_Accounting_Line)" data-mc-generated-bookmark="TOC"></a>Issuing Invoice for a Cruise Deposit (Sabre Deposit/Accounting Line)</h3><p>If there is more than one deposit line in the SABRE PNR, <span class="span_1">Trams</span> reads the last deposit line from the SABRE interface record created.</p><table class="table_1"><col style="width: 112pt;" /><col style="width: 263pt;" /><tr><td class="td_73"><p class="example_1">Deposit for a cruise deposit</p></td><td class="td_73"><p class="p_5"><span class="span_30">ADSEA2/</span><span class="span_30">SUPPLY</span><span class="span_30">/DEP/0/300.00/10.00/ALL/CK/1-*TT4</span><span class="span_30">*VCRCCL</span></p></td></tr></table><h3><a name="Non-ARC_Air_-_Ticketless_-_Southwest_Electronic_Tickets" data-mc-generated-bookmark="TOC"></a><a name="Non-ARC_Air_-_Ticketless_-_Southwest_Electronic_Tickets" data-mc-generated-bookmark="TOC"></a><br />Non-ARC Air - Ticketless - Southwest Electronic Tickets</h3><p>There are 3 possible options for issuing Southwest tickets so that they interface properly to Trams Back Office (TBO). </p><h4><a name="OPTION_1" data-mc-generated-bookmark="TOC"></a><a name="OPTION_1" data-mc-generated-bookmark="TOC"></a>OPTION 1</h4><p>TBO reads the automated Electronic Air Ticket records as defined by SABRE for Southwest non-ARC transactions. Records generated in this fashion interface as supplier bookings. The Interface record includes the TCN or Ticketless Control Number contained in the AC line created by Sabre. </p><p><span>Note:</span> Electronic Ticket numbers from Southwest Airlines are received only by fax after a ticket has been issued,usually 30 minutes after driving the ticket request. </p><p>If you desire the ability to delay invoicing until the electronic ticket numbers are received, your TJR settings must be updated to inhibit the automatic accounting lines in a PNR at the time of ticketing. This is an optional procedure applicable only to non-interactive electronic ticketing. </p><p>To override the automated AC line created by SABRE use an MS line that links to the Accounting line using a 100 based numbers, i.e. 101 links to AC line 1; 102 to AC line 2, etc. *PAC and display the Accounting lines generated by SABRE to link to the correct AC line. Enter an appropriate link only to override the automated AC line. Be sure to add the CF code for the confirmation/ticket number. </p><p>Drive the ticket with W#KP8#ETR </p><p><span class="span_3">Example: Link to AC 1 line</span><span class="span_3">:</span> </p><p class="p_89">5.S*MS101*SBSUP *VCWN*CF1256895872 </p><h4><a name="OPTION_2" data-mc-generated-bookmark="TOC"></a><a name="OPTION_2" data-mc-generated-bookmark="TOC"></a>OPTION 2</h4><p>Trams also reads E-ticket transactions when the NIET option is turned on in the TJR settings. With the NIET option, no interface record is generated at the time of ticketing. When confirmation of ticketing is received by FAX from Southwest Airlines, a manual accounting line can be entered, and the invoice driven at that time. (See AC*ETN for ARC, Non-Interactive Electronic Air Ticketing.) </p><p class="p_89">AC/WN/1234567890/7.00/100.00/8.00/ONE/CC 1.1DOE J/1/D/E-V-123ABC/P-123ABC-*SBSUP*VCWN*CF1234567891 </p><p>By adding the *SBSUP to the end of the AC line this will allow Trams to read this booking as Supplier instead of ARC. </p><p>Drive the invoice with DIN#DP </p><h4><a name="OPTION_3" data-mc-generated-bookmark="TOC"></a><a name="OPTION_3" data-mc-generated-bookmark="TOC"></a>OPTION 3</h4><p class="p_15">Southwest ticket done on a manual AC OTH Supplier line:</p><p class="p_89">ACOTH1/SUPPLY/DOC/6.90/64.20/6.90/ALL/CK/1-*VCWN </p><p class="p_89">*SG*FJL*FF467.00*LF103.50 (This sample includes the fare savings code options) </p>&#160;<p class="p_89">ACOTH1/SUPPLY/FPT/10P/380.00/33.40/ALL/CCV </p><p class="p_89">I3078778740829004 1.1JACKSON L/1-*VCWN*SG </p><p class="p_102">Comtrack booking:</p><p><br /><span class="span_30">ACOTH1/001120/FPT/10P/380.00/33.40/ALL/CCVI3078778740829004 1.1JACKSON L/1- *SG*SBCOM </span></p>&#160;<p class="p_15">Add Fare Savings to Non ARC/BSP booking:</p><p><br /><span class="span_30">ACOTH1/SUPPLY/DOC/6.90/64.20/6.90/ALL/CK/1- *VCWN*SG*FJL*FF467.00*LF103.50 </span></p><p><br />Drive the invoice with DIN#DP</p><h3><a name="Split_Form_of_Payment_..25" data-mc-generated-bookmark="TOC"></a><a name="Split_Form_of_Payment_..25" data-mc-generated-bookmark="TOC"></a>Split Form of Payment</h3><p>A single booking, should include a single FOP. <span class="trams">Trams</span> processes payment information at the booking level. This allows a different FOP for each booking. When receiving a split form of payment from the customer for a single transaction, you must account for the transaction with separate bookings. This records the proper fare and commission totals for clients and vendors.</p><table class="table_1"><col style="width: 136pt;" /><col style="width: 356pt;" /><tr><td class="td_73"><p class="example_1">Use multiple AC lines linked to the same sell segment. One for each form of payment.</p></td><td class="td_73"><p class="p_5"><span class="span_35">ACTOR</span><span class="span_35">1/002020/</span><span class="span_35">FPT</span><span class="span_35">/450.00/600.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CK</span><span class="span_35"> 1.1</span><span class="span_35">KING</span><span class="span_35">M</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">10*cf3456789</span></p><p class="p_5">&#160;</p><p class="p_5"><span class="span_35">ACTOR</span><span class="span_35">1/002020/</span><span class="span_35">FPT</span><span class="span_35">/450.00/600.00/0/</span><span class="span_35">ALL</span><span class="span_35">/</span><span class="span_35">CCVI</span><span class="span_35">4321307899873042 1.1</span><span class="span_35">KING</span><span class="span_35">M</span><span class="span_35">/1-*</span><span class="span_35">TT</span><span class="span_35">10*</span><span class="span_35">CF</span><span class="span_35">3456789</span></p></td></tr><tr><td class="td_73"><p class="example_1">Additional form of payment added as an MS line.</p></td><td class="td_73"><p class="p_5"><span class="span_35">5.</span><span class="span_35">S</span><span class="span_35">*</span><span class="span_35">MS</span><span class="span_35">9</span><span class="span_35">C</span><span class="span_35">*</span><span class="span_35">VC</span><span class="span_35">002020*</span><span class="span_35">TF</span><span class="span_35">400.00*</span><span class="span_35">CMO</span><span class="span_35">*</span><span class="span_35">FPAX</span><span class="span_35">1234567890011*</span><span class="span_35">TT</span><span class="span_35">10</span></p></td></tr></table><h3><a name="Discounts_ACL" data-mc-generated-bookmark="TOC"></a><a name="Discounts_ACL" data-mc-generated-bookmark="TOC"></a><br />Discounts ACL </h3><p>Discounted Cash or Check FOP transactions can be included for interface. Enter the fare charged to the client followed by the income earned by the agency after the discount amount is subtracted from the commission. </p><p><span>Notes: </span>Trams reads SABRE ACL lines as defined in Format Finder. For an online example in SABRE see ACL*SUP for appropriate use. To manually add an accounting line to a PNR to show discount information for air ticket transactions. Trams Back Office reads descriptor codes from the optional free-flow area of the discount line.</p><table class="table_1"><col style="width: 144pt;" /><col style="width: 231pt;" /><tr><td class="td_73"><p class="example_1">Sample ACL discount lines.</p></td><td class="td_73"><p class="example_1">ACL/SUPPLY/DIS/20.00/1.00/ALL</p><p class="example_1">ACL/012345/DIS/25.00/1.50/ONE/N1.1-OPTIONAL</p></td></tr><tr><td class="td_73"><p class="example_1">Add tax identifiers if needed</p></td><td class="td_73"><p class="example_1">ACL/123456/DIS/40.00/0.00/C4.40/ALL</p></td></tr></table><p><br />By design the ACL information prints on the SABRE invoice. For options regarding the verbiage used by SABRE see Format Finder.</p><h2><a name="Ancillary_Seats_Upgrades" data-mc-generated-bookmark="TOC"></a><a name="Ancillary_Seats_Upgrades" data-mc-generated-bookmark="TOC"></a>Ancillary Seats Upgrades</h2><p>To interface to TBO enter an OTH accounting line, linked to an OTH sell segment. The entry would be similar to what can be entered for an agency ticket fee or other miscellaneous transactions. For report tracking, create a Vendor Profile with a unique interface Id. &#160;&#160;Example:&#160; SEATUPG &#160;&#160;and append other descriptor codes, such as *TT for Travel Type, Dom Air, Intl Air etc. </p><p>Example: </p><p>ACOTH1/SUPPLY/FPT/0.00/89.00/0/ONE/CCVI4321480768443072 1.1TADA J/1-*VCSEATUPG*TT1</p></div>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;<span class="VariablesPhoneNumber">310-641-8726</span> — <span class="VariablesTBO Option">Option 1</span></p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.TBOSupport@sabre.com?subject=TBO content">Trams.TBOSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © <span class="VariablesCurrentYear">2020</span> <span class="VariablesCompanyName">Trams Inc.</span> </p>
+        </MadCap:pageFooter>
+    </body>
+</html>
