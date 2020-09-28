@@ -459,3 +459,15 @@ p.footer-sub
 	/* Links */
 }
 
+ul.arrow
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.arrow > li::marker
+{
+	font-family: 'Times New Roman';
+	content: '⁘';
+}
+

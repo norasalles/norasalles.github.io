@@ -397,58 +397,6 @@
 	margin-bottom: 10px;
 }
 
-.micro-response .dropDown
-{
-	border-bottom: 1px solid #d0d3d5;
-	padding: 10px 0;
-}
-
-.micro-response .dropDownHotspot
-{
-	cursor: hand;
-	text-decoration: none;
-	color: #45494c;
-	font-size: 20pt;
-	font-weight: bold;
-	border-bottom: none;
-}
-
-.micro-response .dropDownHotspot:link
-{
-	cursor: hand;
-	text-decoration: none;
-	color: #45494c;
-	font-size: 20pt;
-	font-weight: bold;
-	border-bottom: none;
-}
-
-.micro-response .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('Minus.png');
-	padding-left: 10px;
-	padding-right: 0;
-}
-
-.micro-response .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('Plus.png');
-	padding-left: 10px;
-	padding-right: 0;
-}
-
-.micro-response .dropDownHead
-{
-	text-decoration: none;
-}
-
-.micro-response .dropDownBody
-{
-	padding: 10px 30px 0;
-}
-
 .micro-response .MCWebHelpFramesetLink a
 {
 	
