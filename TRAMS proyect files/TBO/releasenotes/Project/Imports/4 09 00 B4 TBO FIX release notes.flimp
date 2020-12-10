@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  ImportFolder=""
+  LastImport="2020-02-18T14:04:18.1435379-03:00">
+  <Files>
+    <Url
+      Source="../../../4 09 00 B4 TBO FIX release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/OneDrive - Sabre/My Projects/TRAMS/Release Notes/Trams Back Office Release Notes/4 09 00 B4 TBO FIX release notes.docx" />
+    <Url
+      Source="../../../4 09 00 B4 TBO NFET release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/OneDrive - Sabre/My Projects/TRAMS/Release Notes/Trams Back Office Release Notes/4 09 00 B4 TBO NFET release notes.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Trams Back Office 4 09 00.htm"
+      TimeStamp="2/18/2020 2:03:18 PM" />
+    <Url
+      Source="../../Content/Trams Back Office 4 09 Beta_1.htm"
+      TimeStamp="2/18/2020 2:03:18 PM" />
+    <Url
+      Source="../TOCs/4 09 00 B4 TBO FIX release notes.fltoc"
+      TimeStamp="2/18/2020 2:03:18 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/4 09 00 B4 TBO FIX release notes.css"
+      TimeStamp="2/18/2020 2:03:18 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading1"
+      Style="Word" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading2"
+      Style="Word" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading3"
+      Style="Word" />
+    <Map
+      From="List Paragraph"
+      To="p.ListParagraph"
+      Style="Word" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.Hyperlink"
+      Style="Word" />
+    <Map
+      From="Strong"
+      To="span.Strong"
+      Style="Word" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+</MsWordImport>

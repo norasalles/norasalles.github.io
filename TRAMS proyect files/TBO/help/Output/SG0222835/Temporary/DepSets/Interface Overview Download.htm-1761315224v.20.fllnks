@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle="Overview of Interface"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_11.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_12.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_13.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_14.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_15.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_16.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_17.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_18.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_19.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_11.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_12.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_13.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_14.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_15.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_16.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_17.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_18.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Interface Overview Download_19.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_5_Interface_Overview_Download_Processing" />
+    <Anchor
+      Name="kanchor66" />
+    <Anchor
+      Name="Overview_of_Interface" />
+    <Anchor
+      Name="Trams_Back_Office_Interface_Utilities_Setup" />
+    <Anchor
+      Name="Introduction_to_Interface_Download_Process" />
+    <Anchor
+      Name="kanchor67" />
+    <Anchor
+      Name="Capturing_Interface_Records" />
+    <Anchor
+      Name="kanchor68" />
+    <Anchor
+      Name="Images_to_File_..148" />
+    <Anchor
+      Name="Images_to_File" />
+    <Anchor
+      Name="Download_Interface_Records_into_TBO" />
+    <Anchor
+      Name="kanchor69" />
+    <Anchor
+      Name="Interface_Reports_..149" />
+    <Anchor
+      Name="Interface_Reports" />
+    <Anchor
+      Name="Download_Log" />
+    <Anchor
+      Name="Download_Error_Log" />
+    <Anchor
+      Name="Process_Interface_Records" />
+    <Anchor
+      Name="kanchor70" />
+    <Anchor
+      Name="Automatic_or_Ignore_All_When_Processing_Creates_a_Processing_Error_Log" />
+    <Anchor
+      Name="Client_Profiles" />
+    <Anchor
+      Name="No_Match_On_Client_ID" />
+    <Anchor
+      Name="Select_Modify" />
+    <Anchor
+      Name="No_Matching_Profiles_Found_During_the_Client_Name_Search" />
+    <Anchor
+      Name="Create_a_New_Client_Profile" />
+    <Anchor
+      Name="Query_Client_Profiles" />
+    <Anchor
+      Name="Invoice_Notes" />
+    <Anchor
+      Name="Vendor_Profiles_..150" />
+    <Anchor
+      Name="kanchor71" />
+    <Anchor
+      Name="Vendor_Profiles" />
+    <Anchor
+      Name="No_Match_On_Vendor_Name_or_ID" />
+    <Anchor
+      Name="Select_Modify_..151" />
+    <Anchor
+      Name="Select_Modify2" />
+    <Anchor
+      Name="Create_New_Vendor_Profile" />
+    <Anchor
+      Name="Alternate_Interface_ID" />
+    <Anchor
+      Name="Query_Option" />
+    <Anchor
+      Name="Sales_Agent_Profiles" />
+    <Anchor
+      Name="kanchor72" />
+    <Anchor
+      Name="No_Match_On_Agent_ID" />
+    <Anchor
+      Name="Record_Not_Found_by_Agent_ID_Search" />
+    <Anchor
+      Name="Enter_a_New_Profile_" />
+    <Anchor
+      Name="Enter_a_New_Profile" />
+    <Anchor
+      Name="Processing_Errors" />
+    <Anchor
+      Name="kanchor73" />
+    <Anchor
+      Name="Duplicate_or_Invalid_Invoice_Number" />
+    <Anchor
+      Name="Duplicate_Ticket_Number" />
+    <Anchor
+      Name="Invalid_Ticket_Numbers" />
+    <Anchor
+      Name="Processing_Void_Ticket" />
+    <Anchor
+      Name="Unprocessed_Interface_Records" />
+    <Anchor
+      Name="Interface_Troubleshooting_of_Errors_in_Downloading" />
+    <Anchor
+      Name="kanchor74" />
+    <Anchor
+      Name="Automatic_Interface_Download_&amp;_Processing_Setup_with_Windows_Task_Scheduler" />
+    <Anchor
+      Name="kanchor75" />
+    <Anchor
+      Name="Automatic_Interface_Download_and_Processing_Setup_with_Windows_Task_Scheduler_" />
+    <Anchor
+      Name="Steps_to_Set_Up_Automatic_Interface_Download" />
+    <Anchor
+      Name="Command-line_parameters_for_example_above" />
+    <Anchor
+      Name="Download_options_available_to_use_in_the_command-line_parameter" />
+    <Anchor
+      Name="Additional_Trams_Interface_Download_command_line_EXAMPLES_which_can_be_entere..." />
+    <Anchor
+      Name="Additional_Trams_Interface_Download_command_line_EXAMPLES_which_can_be_entered_in_the_Scheduler_Task_screen" />
+    <Anchor
+      Name="Steps_to_Set_Up_Automated_Interface_Processing_in_Windows_Scheduler" />
+    <Anchor
+      Name="Steps_to_Set_Up_Automated_Import_from_File_in_Windows_Scheduler" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Skins/Default/Stylesheets/Slideshow.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/TextEffects.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Topic.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Mobile.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

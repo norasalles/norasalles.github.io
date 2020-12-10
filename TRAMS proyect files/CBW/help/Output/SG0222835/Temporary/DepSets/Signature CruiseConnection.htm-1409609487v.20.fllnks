@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Signature CruiseConnection "
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="mailto:info@signaturetravelnetwork.com" />
+    <Link
+      Url="http://www.signaturetravelnetwork.com/" />
+    <Link
+      Url="Content/Resources/Images/Signature CruiseConnection/Signature CruiseConnection.jpg" />
+    <Link
+      Url="Content/Resources/Images/Signature CruiseConnection/Signature CruiseConnection_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Signature CruiseConnection/Signature CruiseConnection_2.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="mailto:info@signaturetravelnetwork.com" />
+    <Link
+      Url="http://www.signaturetravelnetwork.com/" />
+    <Link
+      Url="Content/Resources/Images/Signature CruiseConnection/Signature CruiseConnection.jpg" />
+    <Link
+      Url="Content/Resources/Images/Signature CruiseConnection/Signature CruiseConnection_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Signature CruiseConnection/Signature CruiseConnection_2.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor267" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

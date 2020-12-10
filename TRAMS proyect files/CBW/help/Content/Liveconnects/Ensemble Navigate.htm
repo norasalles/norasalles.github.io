@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DraftStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>Ensemble Navigate</h2>
+        <p>For Ensemble Navigate access, please contact Navigate Support at <a href="mailto:navigate@ensembletravel.com">navigate@ensembletravel.com</a>.</p>
+        <h3>Set Up Ensemble Navigate</h3>
+        <p>Upon receiving login information for each agent in your office, take the following steps to setup ClientBase for Live Connect.</p>
+        <p><b>Step 1)</b> Create a Live Connect Provider for Ensemble Navigate if none exists by going to <b>Utilities|Live Connect Providers</b>, and clicking <b>Add</b>.</p>
+        <p>
+            <img src="../Resources/Images/Ensemble CBW/Ensemble Navigate.png" style="height: 375px;width: 365px;" class="img_1" />
+        </p>
+        <p><b>Provider Name:</b> Enter Ensemble Navigate</p>
+        <p><b>URL:</b> Enter https://navigate.ensembletravel.com/app/0/poweragent_sso_v1/0/clientbase_sso_login.html?clear=all</p>
+        <p><b>Travel Category:</b> Enter Cruise from the drop-down menu</p>
+        <p><b>Import XML from:</b> Enter HTML Source</p>
+        <p><b>Step 2)</b> Set up for Live Connect agent logins can be done individually. When Live Connect is launched, the system first looks to see if there is login information at the User Login level, and if not, then asks the user to login at the provider website. Users can set up their own logins by going to <b>Utilities|My Login|Live Connect</b> and clicking Add.</p>
+        <p><b>Live Connect Provider:</b> Select <b>Ensemble Navigate</b> from the drop-down list.</p>
+        <p><b>User Name, Password:</b> Enter your User Name and Password. Account Number and Agency Code are left blank.</p>
+        <p><b>Step 3)</b> From the Profile Manager, retrieve the desired Vendor from the list below or create a new Vendor profile if one does not already exist. From the General Info tab, click Live Connect Providers. Click Add, then select <b>Ensemble Navigate</b> from the drop-down list. Enter the corresponding Vendor Code from the table below.</p>
+        <h3>Ensemble Navigate Participating Vendors and Vendor Codes</h3>
+        <table class="TableGrid">
+            <col style="width: 156pt;" />
+            <col style="width: 156pt;" />
+            <col style="width: 156pt;" />
+            <thead>
+                <tr class="tr_1">
+                    <th class="th_1">
+                        <p class="NormalWeb_1">CODE</p>
+                    </th>
+                    <th class="th_2">
+                        <p class="NormalWeb_1">VENDOR NAME</p>
+                    </th>
+                    <th class="th_2">
+                        <p class="NormalWeb_1">LIVE CONNECT PROVIDER</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Aida</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">AD</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Azamara Club Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">AZA</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Carnival Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Carnival Cruise Line - AU/NZ</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CCA</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Celebration Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CBC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Celebrity Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CEL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Celestyal Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">LCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Costa Cruise Lines</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CST</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Croisieres de France</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CDF</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">CroisiEurope</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CE</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Crucemundo</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CRU</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Cruise &amp; Maritime Voyages</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CMV</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Crystal Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CRS</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Cunard</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">CUN</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Disney Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">DCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Fred Olsen Cruise Lines</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">FOL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Hapag Lloyd</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">HAP</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Holland America Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">HAL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Hurtigruten Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">HCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Lindblad Expeditions</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">LEX</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">MSC Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">MSC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Norwegian Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">NCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Oceania Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">OCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Orion Expedition Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">OEX</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">P&amp;O Cruises Australia</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">POA</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">P&amp;O Cruises UK</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">POC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Paul Gauguin Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">PGC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Peter Deilmann Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">PDC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Phoenix Reisen</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">PHN</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Politours</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">PT</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Ponant</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">PON</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Princess Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">PCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Pullmantur Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">PUL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Regent Seven Seas Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">RDC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Royal Caribbean International</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">RCC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Saga Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">SGC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Scenic Tours</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">STR</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Seabourn Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">SBN</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">SeaDream Yacht Club</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">SDY</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Silversea Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">SRX</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Star Clippers</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">SCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Star Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">STA</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Thomson Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">THC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Titan Travel</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">TTN</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">TUI Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">TUI</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Variety Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">VAR</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Victory Cruise Line</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">VCL</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Viking Ocean Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">VOC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Viking River Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">VRX</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+                <tr class="tr_1">
+                    <td class="td_1">
+                        <p class="NormalWeb">Windstar Cruises</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">WSC</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb">Ensemble Navigate</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Live Connect Features Supported by Ensemble Navigate</h3>
+        <p>Ensemble Navigate supports the following Live Connect features if checked:</p>
+        <p>
+            <img src="../Resources/Images/Ensemble CBW/Ensemble Navigate_1.png" style="height: 341px;width: 574px;" class="img_1" />
+        </p>
+        <h3>Creating a New Reservation</h3>
+        <p><b>Step 1)</b> When ready to book on-line, create a client Res Card and fill in the <b>Agent, Status, Reservation Cycle, Trip Name, Region/Destination</b> fields and select the travelers. Use the <b>Add Reservation</b> button to start a new reservation. Fill in the <b>Vendor and Travel Category</b> fields and then click <b>Live Connect</b>.</p>
+        <p>
+            <img src="../Resources/Images/Ensemble CBW/Ensemble Navigate.jpg" style="height: 134px;width: 560px;" class="img_1" />
+        </p>
+        <p><b>Step 2)</b> Select <b>Ensemble Navigate</b> from the drop-down menu by Connect To (if not defaulted), and then click <b>Create New Reservation</b>.</p>
+        <p><b>Step 3)</b> Select any customer information to use to book the reservation. This data is automatically passed to Ensemble Navigate and saves time during the booking process, as less fields need to be completed manually. Click <b>Connect</b>.</p>
+        <p>
+            <img src="../Resources/Images/Ensemble CBW/Ensemble Navigate_1.jpg" style="height: 366px;width: 519px;" class="img_1" />
+        </p>
+        <p><b>Step 4)</b> Although still in <b>ClientBase</b>, you are now on-line at the booking site. Complete the booking and when done, scroll to the bottom and click on <b>View Your Order.</b></p>
+        <p>&#160;</p>
+        <img src="../Resources/Images/Travelport Cruise and Tour CBW/Step 3 Select customer data_561x281.png" style="width: 561;height: 281;" class="img_1">
+        </img>
+        <p><b>Step 5)</b> You’ll be taken to a summary of the booking and can then click <b>Import Reservation.</b></p>
+        <p><span><img src="../Resources/Images/Ensemble CBW/Ensemble Navigate_2.png" style="height: 319px;width: 624px;" class="img_1" /></span>
+        </p>
+        <p>All reservation data booked on-line is now located in the reservation fields in <b>ClientBase</b>.</p>
+        <p>When connecting to Ensemble Navigate multiple times in a session of <b>ClientBase</b>, the site will give you a prompt of whether or not you want to continue with the last client. As long as you’re connecting with a new client, choose <b>No</b> on this prompt for it to continue with the new client details being sent from <b>ClientBase</b>.</p>
+        <p>
+            <img src="../Resources/Images/Ensemble CBW/Ensemble Navigate_3.png" style="height: 138px;width: 624px;" class="img_1" />
+        </p>
+        <h3 class="Heading3">Importing an Existing Reservation</h3>
+        <p><b>Step 1)</b> Create a new reservation in <b>ClientBase</b> and after entering vendor information, click <b>Live Connect</b> and <b>Import an Existing Reservation</b>. Enter a confirmation number or leave blank, but when in booking site, locate the retrieve reservation area.<br /><br /><b>Step 2)</b> When the reservation is confirmed on the <b>Thank You Page</b>, click <b>Import Reservation</b>.</p>
+        <p class="NormalWeb">
+            <img src="../Resources/Images/Travelport Cruise and Tour CBW/Step 3 Select customer data_1_561x286.png" style="width: 561;height: 286;" class="img_1">
+            </img>
+        </p>
+        <p>All reservation data booked on-line is now located in the reservation fields in <b>ClientBase.</b></p>
+        <h3 class="Heading3">Retrieve an Existing Reservation for Editing or Cancelling</h3>
+        <p>To edit or cancel an existing reservation using Live Connect, follow these steps:</p>
+        <p><span>Step 1) </span>Launch Live Connect from inside the existing reservation to edit or cancel in <span class="span_3">ClientBase</span>.</p>
+        <p><span>Step 2) </span>A dialog box appears. Click <span class="span_3">Retrieve Reservation.</span></p>
+        <p><span>Step 3) </span>Live Connect launches the booking engine site. Edit or cancel the reservation using instructions supplied by the booking engine, and click <span class="span_3">Import Reservation. </span>All reservation data edited or cancelled online is now located in the <span class="span_3">ClientBase</span> reservation record.<br /></p>
+        <p>&#160;</p>
+        <p>Need help on the Ensemble Navigate site? Contact Navigate Support at <a href="mailto:navigate@ensembletravel.com">navigate@ensembletravel.com</a>.</p>
+    </body>
+</html>

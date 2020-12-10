@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('Resources\PageLayouts\MasterPage.flmsp');">
+    <head>
+        <link href="Resources/TableStyles/Normal_Table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Introduction</h1>
+        <p>The <i>Trams API</i> simplifies creation of 3rd party applications that leverage the Trams and ClientBase application logic to read and write data to the Trams database in a structured manner - Query, Load, Insert, and Update capabilities for Profiles, Activities, Invoices, Payments, and Res Cards.</p>
+        <p>&#160;</p>
+        <p>The <i>Trams API</i> uses the <i style="font-weight: normal;">TramsAppServer</i> service to function.  This service is installed automatically, but is not enabled.</p>
+        <p>Enabling the service involves changing the startup to Automatic and configuring an alias via the <i>TramsAppServerSettings</i> tool.</p>
+        <p>&#160;</p>
+        <p>Instructions for installing TramsAppServer are <a href="http://static.trams.com/tramslibrary/documentation/tbo/ConnectTramsAppServer.pdf" title="Connect to TramsAppServer PDF" alt="Connect to TramsAppServer PDF">located here</a>.</p>
+        <p>&#160;</p>
+        <h3>
+            <MadCap:keyword term="Technical Aspects" />Technical Aspects</h3>
+        <ul>
+            <li style="font-size: 10pt;">Can be accessed by any development platform that supports web services.</li>
+            <li style="font-size: 10pt;">Implemented using standard HTTP protocols.</li>
+            <li style="font-size: 10pt;">REST-based.</li>
+            <li style="font-size: 10pt;">Uses JSON for making requests and retrieving responses.</li>
+            <li style="font-size: 10pt;">Each connection needs to include a header with the content-type defined as application/json.</li>
+        </ul>
+        <p style="font-size: 10pt;">&#160;</p>
+        <table style="width: 100%;mc-table-style: url('Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <col class="TableStyle-Normal_Table-Column-Column1" />
+            <col class="TableStyle-Normal_Table-Column-Column1" />
+            <col class="TableStyle-Normal_Table-Column-Column1" />
+            <col class="TableStyle-Normal_Table-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;text-align: center;">Module Name</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;text-align: center;">Method</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;text-align: center;">Parameters</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;text-align: center;">JSON Result</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Login</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Logout</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">InvoiceQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">	GetParams</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Params</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">InvoiceQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">RunQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONParams</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>PaymentQuery</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">GetParams</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Params</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">PaymentQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">RunQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONParams</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">ProfileQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">GetParams</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Params</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">ProfileQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">RunQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONParams</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">ResCardQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">GetParams</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Params</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">ResCardQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">RunQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONParams</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">ActivityQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">GetParams</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Params</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">ActivityQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">RunQuery</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONParams</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Invoice</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Load</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, RecNo</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Payment</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Load</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, RecNo</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Profile</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Load</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, RecNo</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">ResCard</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Load</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, RecNo</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">Dataset</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Invoice</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Insert/Update</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONDeltaDataset</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">RecNo</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Payment</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Insert/Update</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONDeltaDataset</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">RecNo</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Profile</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">Insert/Update</td>
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">SessionID, JSONDeltaDataset</td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">RecNo</td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">ResCard</td>
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">Insert/Update</td>
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">SessionID, JSONDeltaDataset</td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">RecNo</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;&#160;</p>
+    </body>
+</html>

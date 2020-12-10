@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Set Up to Use ClientBase Online"
+    Link="/Content/Set Up to Use ClientBase Online.htm"
+    ComputeToc="true"
+    ComputedTocAction="Replace"
+    ComputedTocDepth="4"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="Getting to Know ClientBase"
+    Link="/Content/Getting to Know ClientBase.htm#Getting_to_Know_ClientBase"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+  <TocEntry
+    Title="An In-Depth Look at Client Profiles"
+    Link="/Content/An In Depth Look at Client.htm#An_In-Depth_Look_at_Client_Profiles"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+  <TocEntry
+    Title="Using the Profile Manager"
+    Link="/Content/Using the Profile Manager.htm#Using_the_Profile_Manager_to_Manage_Profiles"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+  <TocEntry
+    Title="Putting Profiles to Work for You"
+    Link="/Content/Putting Profiles to Work for.htm#Putting_Profiles_to_Work_for_You"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+  <TocEntry
+    Title="An In-Depth Look at Activities"
+    Link="/Content/An In Depth Look at Activities.htm#An_In-Depth_Look_at_Activities"
+    ComputeToc="true"
+    ComputedTocAction="Replace"
+    ComputedTocDepth="4" />
+  <TocEntry
+    Title="Using the Activity Manager to Manage Your Activities"
+    Link="/Content/Using the Activity Manager.htm#Using_the_Activity_Manager_to_Manage_Your_Activities"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+  <TocEntry
+    Title="An In-Depth Look at Res Cards"
+    Link="/Content/An In Depth Look at Res Cards.htm#An_In-Depth_Look_at_Res_Cards"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true"></TocEntry>
+  <TocEntry
+    Title="An In-Depth Look at Live Connect"
+    Link="/Content/An In Depth Look at Live Connect.htm">
+    <TocEntry
+      Title="AFCNET"
+      Link="/Content/Liveconnects/AFCNET.htm" />
+    <TocEntry
+      Title="All About Tours (formerly All About Travel)"
+      Link="/Content/Liveconnects/All About Tours formerly All.htm" />
+    <TocEntry
+      Title="Allianz AgentMax Online"
+      Link="/Content/Liveconnects/Allianz AgentMax Online.htm"></TocEntry>
+    <TocEntry
+      Title="Allianz Global Assistance (Canada)"
+      Link="/Content/Liveconnects/Allianz Global Assistance.htm" />
+    <TocEntry
+      Title="American Express Vacations"
+      Link="/Content/Liveconnects/American Express Vacations.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Liveconnects/Apple Vacations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Arch RoamRight Travel Insurance"
+      Link="/Content/Liveconnects/Arch RoamRight Travel Insurance.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Auto Europe"
+      Link="/Content/Liveconnects/Auto Europe.htm" />
+    <TocEntry
+      Title="Avanti Destinations"
+      Link="/Content/Liveconnects/Avanti Destinations.htm" />
+    <TocEntry
+      Title="Bedsonline"
+      Link="/Content/Liveconnects/Bedsonline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Berkshire Hathaway Travel Protection"
+      Link="/Content/Liveconnects/Berkshire Hathaway Travel.htm" />
+    <TocEntry
+      Title="Brendan Vacations"
+      Link="/Content/Liveconnects/Brendan Vacations.htm" />
+    <TocEntry
+      Title="Casa Travel"
+      Link="/Content/Liveconnects/Casa Travel.htm" />
+    <TocEntry
+      Title="CCRATravel Hotel Booking Portal"
+      Link="/Content/Liveconnects/CCRATravel Hotel Booking Portal.htm" />
+    <TocEntry
+      Title="Centrav"
+      Link="/Content/Liveconnects/Centrav.htm" />
+    <TocEntry
+      Title="Chubb Travel Protection"
+      Link="/Content/Liveconnects/Chubb Travel Protection.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="CIE Tours"
+      Link="/Content/Liveconnects/CIE Tours.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Classic Vacations"
+      Link="/Content/Liveconnects/Classic Vacations.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Liveconnects/Collette.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Contiki Vacations"
+      Link="/Content/Liveconnects/Contiki Vacations.htm"></TocEntry>
+    <TocEntry
+      Title="Costsaver"
+      Link="/Content/Liveconnects/Costsaver.htm" />
+    <TocEntry
+      Title="Delta Vacations"
+      Link="/Content/Liveconnects/Delta Vacations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Ensemble Cruise Express"
+      Link="/Content/Liveconnects/Ensemble Cruise Express.htm" />
+    <TocEntry
+      Title="Ensemble Navigate"
+      Link="/Content/Liveconnects/Ensemble Navigate.htm" />
+    <TocEntry
+      Title="Europe Express"
+      Link="/Content/Liveconnects/Europe Express.htm" />
+    <TocEntry
+      Title="Exclusive Group Travel"
+      Link="/Content/Liveconnects/Exclusive Group Travel.htm" />
+    <TocEntry
+      Title="Globus and Cosmos Family"
+      Link="/Content/Liveconnects/Globus and Cosmos Family.htm" />
+    <TocEntry
+      Title="Globus Family Agent Lingo (Canada)"
+      Link="/Content/Liveconnects/Globus Family Agent Lingo.htm" />
+    <TocEntry
+      Title="GOGO Vacations"
+      Link="/Content/Liveconnects/GOGO Vacations.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Liveconnects/ID Travel Group.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Insight Vacations"
+      Link="/Content/Liveconnects/Insight Vacations.htm" />
+    <TocEntry
+      Title="iTravelinsured"
+      Link="/Content/Liveconnects/iTravelinsured.htm"></TocEntry>
+    <TocEntry
+      Title="Luxury Gold"
+      Link="/Content/Liveconnects/Luxury Gold.htm" />
+    <TocEntry
+      Title="Manulife Travel Insurance"
+      Link="/Content/Liveconnects/Manulife Travel Insurance.htm" />
+    <TocEntry
+      Title="Pinsight"
+      Link="/Content/Liveconnects/Pinsightcbo.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Pleasant Holidays"
+      Link="/Content/Liveconnects/Pleasant Holidays.htm" />
+    <TocEntry
+      Title="Polar Online"
+      Link="/Content/Liveconnects/Polar Online.htm" />
+    <TocEntry
+      Title="Regent Seven Seas - Partner Access"
+      Link="/Content/Liveconnects/Regent Seven Seas Partner.htm" />
+    <TocEntry
+      Title="RezSaver"
+      Link="/Content/Liveconnects/RezSaver.htm" />
+    <TocEntry
+      Title="Sabre Cruises"
+      Link="/Content/Liveconnects/Sabre Cruises.htm" />
+    <TocEntry
+      Title="Sabre Vacations Canada"
+      Link="/Content/Liveconnects/Sabre Vacations Canada Sirev.htm" />
+    <TocEntry
+      Title="Shore Excursions Group"
+      Link="/Content/Liveconnects/Shore Excursions Group.htm" />
+    <TocEntry
+      Title="ShoreTrips"
+      Link="/Content/Liveconnects/ShoreTrips.htm" />
+    <TocEntry
+      Title="Signature CruiseConnection"
+      Link="/Content/Liveconnects/Signature CruiseConnection.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Liveconnects/Signature HotelConnection.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Special Needs Group"
+      Link="/Content/Liveconnects/Special_Needs_Group.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Squaremouth Travel Insurance"
+      Link="/Content/Liveconnects/Squaremouth Travel Insurance.htm" />
+    <TocEntry
+      Title="Tandem from Passport Online"
+      Link="/Content/Liveconnects/Tandem from Passport Online.htm" />
+    <TocEntry
+      Title="Trafalgar"
+      Link="/Content/Liveconnects/Trafalgar.htm" />
+    <TocEntry
+      Title="Transat Travel Insurance"
+      Link="/Content/Liveconnects/Transat Travel Insurance.htm" />
+    <TocEntry
+      Title="Travefy"
+      Link="/Content/Liveconnects/Travefy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Travel Guard ezTips"
+      Link="/Content/Liveconnects/Travel Guard ezTips.htm" />
+    <TocEntry
+      Title="Travel Impressions"
+      Link="/Content/Liveconnects/Travel Impressions.htm" />
+    <TocEntry
+      Title="Travel Insured Agent Portal (TAP)"
+      Link="/Content/Liveconnects/Travel Insured Agent Portal.htm" />
+    <TocEntry
+      Title="Travel Insured"
+      Link="/Content/Liveconnects/Travel Insured.htm" />
+    <TocEntry
+      Title="Travel2/Islands In The Sun/Qantas Vacations"
+      Link="/Content/Liveconnects/Travel2 Islands In The Sun.htm" />
+    <TocEntry
+      Title="Travelex Insurance Services"
+      Link="/Content/Liveconnects/Travelex Insurance Services.htm" />
+    <TocEntry
+      Title="Travelport Cruise and Tour"
+      Link="/Content/Liveconnects/Travelport Cruise and Tour.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="TravelSafe Vacation Insurance"
+      Link="/Content/Liveconnects/TravelSafe Vacation Insurance.htm" />
+    <TocEntry
+      Title="TravelSavers CruiseExpress"
+      Link="/Content/Liveconnects/TravelSavers CruiseExpress.htm" />
+    <TocEntry
+      Title="TravTech CruiseBase"
+      Link="/Content/Liveconnects/TravTech CruiseBase.htm" />
+    <TocEntry
+      Title="TripAssure (Formerly MHRoss.com)"
+      Link="/Content/Liveconnects/TripAssure Formerly MHRoss.htm" />
+    <TocEntry
+      Title="Umapped"
+      Link="/Content/Liveconnects/Umapped.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="Vacation.com CruisePRO"
+      Link="/Content/Liveconnects/Vacation com CruisePRO.htm" />
+    <TocEntry
+      Title="Vacation Express"
+      Link="/Content/Liveconnects/Vacation Express.htm" />
+    <TocEntry
+      Title="VAX VacationAccess Vacations"
+      Link="/Content/Liveconnects/VAX VacationAccess Vacations.htm" />
+    <TocEntry
+      Title="Virtuoso Cruise Tool"
+      Link="/Content/Liveconnects/Virtuoso Cruise Tool.htm" />
+    <TocEntry
+      Title="Virtuoso"
+      Link="/Content/Liveconnects/Virtuoso.htm" />
+    <TocEntry
+      Title="Walt Disney Travel Company"
+      Link="/Content/Liveconnects/Walt Disney Travel Company.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Using Inventory"
+    Link="/Content/Using Inventory.htm#Using_Inventory"
+    ComputeToc="true"
+    ComputedTocAction="Replace"
+    ComputedTocDepth="4" />
+  <TocEntry
+    Title="Using the Res Card Manager to Manage Your Res Cards"
+    Link="/Content/Using the Res Card Manager.htm#Using_the_Res_Card_Manager_to_Manage_Your_Res_Cards"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+  <TocEntry
+    Title="An In-Depth Look at Vendor and Service Provider Profiles"
+    Link="/Content/An In Depth Look at Vendor.htm#An_In-Depth_Look_at_Vendor_and_Service_Provider_Profiles"
+    ComputeToc="true"
+    ComputedTocAction="Replace"
+    ComputedTocDepth="4"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="An In-Depth Look at Agent Profiles"
+    Link="/Content/An In Depth Look at Agent.htm#An_In-Depth_Look_at_Agent_Profiles"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true"
+    StartSection="false" />
+  <TocEntry
+    Title="An In-Depth Look at Other Profiles"
+    Link="/Content/An In Depth Look at Other.htm#An_In-Depth_Look_at_Other_Profiles"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+  <TocEntry
+    Title="An In-Depth Look at PNR Import"
+    Link="/Content/An In Depth Look at PNR Import.htm#An_In-Depth_Look_at_PNR_Import"
+    ComputedTocDepth="4"
+    ComputedTocAction="Replace"
+    ComputeToc="true" />
+</CatapultToc>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2019-03-25T14:19:00.3864234-05:00"
+  ProjectName="CBW Help"
+  ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\CBW Help 47\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../Content/Resources/Stylesheets/Styles.css"
+  LastImport="2019-03-25T14:19:53.0124334-05:00">
+  <Files>
+    <Url
+      Source="../../../../../../../Desktop/Ensemble/Ensemble CBW.docx"
+      AbsoluteSource="file:///C:/Users/sg0217543/Desktop/Ensemble/Ensemble CBW.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Ensemble CBW/Ensemble Navigate.png"
+      TimeStamp="3/25/2019 2:19:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Ensemble CBW/Ensemble Navigate_1.png"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Ensemble CBW/Ensemble Navigate.jpg"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Ensemble CBW/Ensemble Navigate_1.jpg"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Ensemble CBW/Ensemble Navigate_2.png"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Ensemble CBW/Ensemble Navigate_3.png"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+    <Url
+      Source="../../Content/Ensemble CBW/Ensemble Navigate.htm"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+    <Url
+      Source="../TOCs/Ensemble CBW.fltoc"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Styles_99.css"
+      TimeStamp="3/25/2019 2:19:47 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

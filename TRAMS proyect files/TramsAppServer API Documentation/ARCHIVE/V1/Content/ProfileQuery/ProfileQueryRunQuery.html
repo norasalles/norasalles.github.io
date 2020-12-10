@@ -1,0 +1,1387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="26305" MadCap:lastWidth="720">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>ProfileQuery - RunQuery</h1>
+        <p style="font-style: italic;"><b style="background-color: #ffff00;">Documentation in development.</b>
+        </p>
+        <h3>Running the Query</h3>
+        <p>Before running an invoice query, make sure you've already called <MadCap:xref href="../Login.html">Login</MadCap:xref> and have your session id.</p>
+        <p>Do a post to the following URL (assuming you're running the API locally):</p>
+        <p>http://localhost:8085}/profilequery.runquery</p>
+        <p><b>Request:</b>
+        </p><pre>{ 
+}</pre>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Response:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody><pre>{
+    "apiVersion": "4.05",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "dataset": {
+            "name": "profileQuery",
+            "metaData": {
+                "profileQuery": {
+                    "profileNo": {
+                        "type": "largeInt"
+                    },
+                    "pr_profileType_LinkCode": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "pr_name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "pr_firstName": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_middleName": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_lastName": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_courtesyTitle": {
+                        "type": "string",
+                        "size": 15
+                    },
+                    "pr_creationDate": {
+                        "type": "dateTime"
+                    },
+                    "pr_createBy": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "pr_additionalName": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_modifyBy": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "pr_modifyDateTime": {
+                        "type": "dateTime"
+                    },
+                    "pr_referredBy": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "pr_salutation": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_interfaceID": {
+                        "type": "string",
+                        "size": 10
+                    },
+                    "pr_altInterfaceID": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "pr_misc1": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_SPUniqueID": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_rate1": {
+                        "type": "integer"
+                    },
+                    "pr_outsideRate": {
+                        "type": "integer"
+                    },
+                    "pr_webId": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "pr_webPassword": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "pr_vendorID": {
+                        "type": "string",
+                        "size": 10
+                    },
+                    "pr_primaryAgent_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "pr_preferredVendor": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "pr_branch_LinkNo": {
+                        "type": "integer"
+                    },
+                    "pr_isActive": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "pr_serviceProviderOnly": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "pr_CBPLookupItem_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "pr_attachmentCount": {
+                        "type": "integer"
+                    },
+                    "pr_PTC1": {
+                        "type": "integer"
+                    },
+                    "pr_PTC2": {
+                        "type": "integer"
+                    },
+                    "pr_PTC3": {
+                        "type": "integer"
+                    },
+                    "pr_PTC4": {
+                        "type": "integer"
+                    },
+                    "pr_PTC5": {
+                        "type": "integer"
+                    },
+                    "pr_PTC6": {
+                        "type": "integer"
+                    },
+                    "pr_PTC7": {
+                        "type": "integer"
+                    },
+                    "pr_PTC8": {
+                        "type": "integer"
+                    },
+                    "pr_PTC9": {
+                        "type": "integer"
+                    },
+                    "pr_PTC10": {
+                        "type": "integer"
+                    },
+                    "pr_moreFieldValue1": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue2": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue3": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue4": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue5": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue6": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue7": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue8": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue9": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue10": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue11": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue12": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue13": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue14": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue15": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue16": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue17": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue18": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue19": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue20": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue21": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue22": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue23": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue24": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue25": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue26": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue27": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue28": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue29": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue30": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue31": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue32": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue33": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue34": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue35": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue36": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue37": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue38": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue39": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue40": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue41": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue42": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue43": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue44": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue45": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue46": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue47": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue48": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue49": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue50": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue51": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue52": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue53": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue54": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue55": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue56": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue57": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue58": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue59": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue60": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue61": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue62": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue63": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue64": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue65": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue66": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue67": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue68": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue69": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue70": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue71": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue72": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue73": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue74": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue75": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue76": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue77": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue78": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue79": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue80": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue81": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue82": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue83": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue84": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue85": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue86": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue87": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue88": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue89": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue90": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue91": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue92": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue93": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue94": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue95": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue96": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue97": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue98": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_moreFieldValue99": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "prA_address1": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "prA_address2": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "prA_aptSuite": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "prA_city": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "prA_stateProvince": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "prA_zipPostalCode": {
+                        "type": "string",
+                        "size": 12
+                    },
+                    "prA_country": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "prA_description": {
+                        "type": "string",
+                        "size": 40
+                    },
+                    "prA_permitMarket": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prA_isValid": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prP_commValue": {
+                        "type": "string",
+                        "size": 200
+                    },
+                    "prP_description": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "prP_permitMarket": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prP_isValid": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prP_isPrimary": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prE_commValue": {
+                        "type": "string",
+                        "size": 200
+                    },
+                    "prE_description": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "prE_permitMarket": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prE_isValid": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prE_isPrimary": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prF_commValue": {
+                        "type": "string",
+                        "size": 200
+                    },
+                    "prF_description": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "prF_permitMarket": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prF_isValid": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "prF_isPrimary": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "tr_passengerNo": {
+                        "type": "largeInt"
+                    },
+                    "tr_name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "tr_firstName": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "tr_middleName": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "tr_lastName": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "tr_courtesyTitle": {
+                        "type": "string",
+                        "size": 15
+                    },
+                    "tr_tourSpecial": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_specialServices": {
+                        "type": "memo"
+                    },
+                    "tr_smoking": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "tr_salutation": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "tr_redressNo": {
+                        "type": "string",
+                        "size": 13
+                    },
+                    "tr_knownTravNo": {
+                        "type": "string",
+                        "size": 25
+                    },
+                    "tr_gender": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "tr_citizenship": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "tr_passportNo": {
+                        "type": "string",
+                        "size": 25
+                    },
+                    "tr_passportOriginCountry": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "tr_passportIssueCity": {
+                        "type": "string",
+                        "size": 40
+                    },
+                    "tr_passportIssueDate": {
+                        "type": "dateTime"
+                    },
+                    "tr_passportExpireDate": {
+                        "type": "dateTime"
+                    },
+                    "tr_passportNo2": {
+                        "type": "string",
+                        "size": 25
+                    },
+                    "tr_passportOriginCountry2": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "tr_passportIssueCity2": {
+                        "type": "string",
+                        "size": 40
+                    },
+                    "tr_passportIssueDate2": {
+                        "type": "dateTime"
+                    },
+                    "tr_passportExpireDate2": {
+                        "type": "dateTime"
+                    },
+                    "tr_htlSpecial": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_htlRoomLocation": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_htlBedding": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_escortPrefID": {
+                        "type": "integer"
+                    },
+                    "tr_cruiseSpecial": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_cruiseSize": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_cruiseDining": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_departPort": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "tr_cruiseShipName": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_aircraft": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_airClass": {
+                        "type": "integer"
+                    },
+                    "tr_airSeats": {
+                        "type": "integer"
+                    },
+                    "tr_airMeals": {
+                        "type": "integer"
+                    },
+                    "tr_airMealPrefCode": {
+                        "type": "string",
+                        "size": 8
+                    },
+                    "tr_airMealPref": {
+                        "type": "string",
+                        "size": 60
+                    },
+                    "tr_airSpecial": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_carType": {
+                        "type": "integer"
+                    },
+                    "tr_carSpecial": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "tr_birthMDYDay": {
+                        "type": "integer"
+                    },
+                    "tr_birthMDYMonth": {
+                        "type": "integer"
+                    },
+                    "tr_birthMDYYear": {
+                        "type": "integer"
+                    },
+                    "tr_emergncName": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "tr_emergncRelationship": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "tr_emergncPhone": {
+                        "type": "string",
+                        "size": 40
+                    },
+                    "tr_emergncEmail": {
+                        "type": "string",
+                        "size": 200
+                    },
+                    "tr_emergncMisc": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "trP_commValue": {
+                        "type": "string",
+                        "size": 200
+                    },
+                    "trP_description": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "trP_permitMarket": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trP_isValid": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trP_isPrimary": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trE_commValue": {
+                        "type": "string",
+                        "size": 200
+                    },
+                    "trE_description": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "trE_permitMarket": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trE_isValid": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trE_isPrimary": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trF_commValue": {
+                        "type": "string",
+                        "size": 200
+                    },
+                    "trF_description": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "trF_permitMarket": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trF_isValid": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "trF_isPrimary": {
+                        "type": "string",
+                        "size": 1
+                    }
+                }
+            },
+            "data": {
+                "profileQuery": [
+                    {
+                        "profileNo": 4,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/Jane",
+                        "pr_firstName": "Jane",
+                        "pr_middleName": " ",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Ms",
+                        "pr_creationDate": "1997-10-21T00:00:00.000Z",
+                        "pr_createBy": "SYSDBA",
+                        "pr_additionalName": null,
+                        "pr_modifyBy": "",
+                        "pr_modifyDateTime": "2000-01-12T00:00:00.000Z",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": null,
+                        "pr_interfaceID": "",
+                        "pr_altInterfaceID": null,
+                        "pr_misc1": null,
+                        "pr_SPUniqueID": null,
+                        "pr_rate1": null,
+                        "pr_outsideRate": null,
+                        "pr_webId": null,
+                        "pr_webPassword": null,
+                        "pr_vendorID": null,
+                        "pr_primaryAgent_LinkNo": 437,
+                        "pr_preferredVendor": "N",
+                        "pr_branch_LinkNo": null,
+                        "pr_isActive": "Y",
+                        "pr_serviceProviderOnly": null,
+                        "pr_CBPLookupItem_LinkNo": null,
+                        "pr_attachmentCount": 0,
+                        "pr_PTC1": null,
+                        "pr_PTC2": null,
+                        "pr_PTC3": null,
+                        "pr_PTC4": null,
+                        "pr_PTC5": null,
+                        "pr_PTC6": null,
+                        "pr_PTC7": null,
+                        "pr_PTC8": null,
+                        "pr_PTC9": null,
+                        "pr_PTC10": null,
+                        "pr_moreFieldValue1": null,
+                        "pr_moreFieldValue2": null,
+                        "pr_moreFieldValue3": null,
+                        "pr_moreFieldValue4": null,
+                        "pr_moreFieldValue5": null,
+                        "pr_moreFieldValue6": null,
+                        "pr_moreFieldValue7": null,
+                        "pr_moreFieldValue8": null,
+                        "pr_moreFieldValue9": null,
+                        "pr_moreFieldValue10": null,
+                        "pr_moreFieldValue11": null,
+                        "pr_moreFieldValue12": null,
+                        "pr_moreFieldValue13": null,
+                        "pr_moreFieldValue14": null,
+                        "pr_moreFieldValue15": null,
+                        "pr_moreFieldValue16": null,
+                        "pr_moreFieldValue17": null,
+                        "pr_moreFieldValue18": null,
+                        "pr_moreFieldValue19": null,
+                        "pr_moreFieldValue20": null,
+                        "pr_moreFieldValue21": null,
+                        "pr_moreFieldValue22": null,
+                        "pr_moreFieldValue23": null,
+                        "pr_moreFieldValue24": null,
+                        "pr_moreFieldValue25": null,
+                        "pr_moreFieldValue26": null,
+                        "pr_moreFieldValue27": null,
+                        "pr_moreFieldValue28": null,
+                        "pr_moreFieldValue29": null,
+                        "pr_moreFieldValue30": null,
+                        "pr_moreFieldValue31": null,
+                        "pr_moreFieldValue32": null,
+                        "pr_moreFieldValue33": null,
+                        "pr_moreFieldValue34": null,
+                        "pr_moreFieldValue35": null,
+                        "pr_moreFieldValue36": null,
+                        "pr_moreFieldValue37": null,
+                        "pr_moreFieldValue38": null,
+                        "pr_moreFieldValue39": null,
+                        "pr_moreFieldValue40": null,
+                        "pr_moreFieldValue41": null,
+                        "pr_moreFieldValue42": null,
+                        "pr_moreFieldValue43": null,
+                        "pr_moreFieldValue44": null,
+                        "pr_moreFieldValue45": null,
+                        "pr_moreFieldValue46": null,
+                        "pr_moreFieldValue47": null,
+                        "pr_moreFieldValue48": null,
+                        "pr_moreFieldValue49": null,
+                        "pr_moreFieldValue50": null,
+                        "pr_moreFieldValue51": null,
+                        "pr_moreFieldValue52": null,
+                        "pr_moreFieldValue53": null,
+                        "pr_moreFieldValue54": null,
+                        "pr_moreFieldValue55": null,
+                        "pr_moreFieldValue56": null,
+                        "pr_moreFieldValue57": null,
+                        "pr_moreFieldValue58": null,
+                        "pr_moreFieldValue59": null,
+                        "pr_moreFieldValue60": null,
+                        "pr_moreFieldValue61": null,
+                        "pr_moreFieldValue62": null,
+                        "pr_moreFieldValue63": null,
+                        "pr_moreFieldValue64": null,
+                        "pr_moreFieldValue65": null,
+                        "pr_moreFieldValue66": null,
+                        "pr_moreFieldValue67": null,
+                        "pr_moreFieldValue68": null,
+                        "pr_moreFieldValue69": null,
+                        "pr_moreFieldValue70": null,
+                        "pr_moreFieldValue71": null,
+                        "pr_moreFieldValue72": null,
+                        "pr_moreFieldValue73": null,
+                        "pr_moreFieldValue74": null,
+                        "pr_moreFieldValue75": null,
+                        "pr_moreFieldValue76": null,
+                        "pr_moreFieldValue77": null,
+                        "pr_moreFieldValue78": null,
+                        "pr_moreFieldValue79": null,
+                        "pr_moreFieldValue80": null,
+                        "pr_moreFieldValue81": null,
+                        "pr_moreFieldValue82": null,
+                        "pr_moreFieldValue83": null,
+                        "pr_moreFieldValue84": null,
+                        "pr_moreFieldValue85": null,
+                        "pr_moreFieldValue86": null,
+                        "pr_moreFieldValue87": null,
+                        "pr_moreFieldValue88": null,
+                        "pr_moreFieldValue89": null,
+                        "pr_moreFieldValue90": null,
+                        "pr_moreFieldValue91": null,
+                        "pr_moreFieldValue92": null,
+                        "pr_moreFieldValue93": null,
+                        "pr_moreFieldValue94": null,
+                        "pr_moreFieldValue95": null,
+                        "pr_moreFieldValue96": null,
+                        "pr_moreFieldValue97": null,
+                        "pr_moreFieldValue98": null,
+                        "pr_moreFieldValue99": null,
+                        "prA_address1": "123 Street Rd.",
+                        "prA_address2": "",
+                        "prA_aptSuite": "",
+                        "prA_city": "Manhattan Beach",
+                        "prA_stateProvince": "CA",
+                        "prA_zipPostalCode": "90266",
+                        "prA_country": "",
+                        "prA_description": null,
+                        "prA_permitMarket": "Y",
+                        "prA_isValid": "Y",
+                        "prP_commValue": "+1 (123) 555-1212",
+                        "prP_description": "+1 (123) 555-1212",
+                        "prP_permitMarket": "Y",
+                        "prP_isValid": "Y",
+                        "prP_isPrimary": "Y",
+                        "prE_commValue": null,
+                        "prE_description": null,
+                        "prE_permitMarket": null,
+                        "prE_isValid": null,
+                        "prE_isPrimary": null,
+                        "prF_commValue": null,
+                        "prF_description": null,
+                        "prF_permitMarket": null,
+                        "prF_isValid": null,
+                        "prF_isPrimary": null,
+                        "tr_passengerNo": 1,
+                        "tr_name": "Doe/Jane",
+                        "tr_firstName": "Jane",
+                        "tr_middleName": null,
+                        "tr_lastName": "Doe",
+                        "tr_courtesyTitle": null,
+                        "tr_tourSpecial": null,
+                        "tr_specialServices": null,
+                        "tr_smoking": null,
+                        "tr_salutation": "",
+                        "tr_redressNo": null,
+                        "tr_knownTravNo": null,
+                        "tr_gender": null,
+                        "tr_citizenship": null,
+                        "tr_passportNo": null,
+                        "tr_passportOriginCountry": null,
+                        "tr_passportIssueCity": null,
+                        "tr_passportIssueDate": null,
+                        "tr_passportExpireDate": null,
+                        "tr_passportNo2": null,
+                        "tr_passportOriginCountry2": null,
+                        "tr_passportIssueCity2": null,
+                        "tr_passportIssueDate2": null,
+                        "tr_passportExpireDate2": null,
+                        "tr_htlSpecial": null,
+                        "tr_htlRoomLocation": null,
+                        "tr_htlBedding": null,
+                        "tr_escortPrefID": null,
+                        "tr_cruiseSpecial": null,
+                        "tr_cruiseSize": null,
+                        "tr_cruiseDining": null,
+                        "tr_departPort": null,
+                        "tr_cruiseShipName": null,
+                        "tr_aircraft": null,
+                        "tr_airClass": null,
+                        "tr_airSeats": null,
+                        "tr_airMeals": null,
+                        "tr_airMealPrefCode": null,
+                        "tr_airMealPref": null,
+                        "tr_airSpecial": null,
+                        "tr_carType": null,
+                        "tr_carSpecial": null,
+                        "tr_birthMDYDay": null,
+                        "tr_birthMDYMonth": null,
+                        "tr_birthMDYYear": null,
+                        "tr_emergncName": null,
+                        "tr_emergncRelationship": null,
+                        "tr_emergncPhone": null,
+                        "tr_emergncEmail": null,
+                        "tr_emergncMisc": null,
+                        "trP_commValue": "+1 (123) 555-1212",
+                        "trP_description": "+1 (123) 555-1212",
+                        "trP_permitMarket": "Y",
+                        "trP_isValid": "Y",
+                        "trP_isPrimary": "Y",
+                        "trE_commValue": null,
+                        "trE_description": null,
+                        "trE_permitMarket": null,
+                        "trE_isValid": null,
+                        "trE_isPrimary": null,
+                        "trF_commValue": null,
+                        "trF_description": null,
+                        "trF_permitMarket": null,
+                        "trF_isValid": null,
+                        "trF_isPrimary": null
+                    },
+                    {
+                        "profileNo": 4,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/Jane",
+                        "pr_firstName": "Jane",
+                        "pr_middleName": " ",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Ms",
+                        "pr_creationDate": "1997-10-21T00:00:00.000Z",
+                        "pr_createBy": "SYSDBA",
+                        "pr_additionalName": null,
+                        "pr_modifyBy": "",
+                        "pr_modifyDateTime": "2000-01-12T00:00:00.000Z",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": null,
+                        "pr_interfaceID": "",
+                        "pr_altInterfaceID": null,
+                        "pr_misc1": null,
+                        "pr_SPUniqueID": null,
+                        "pr_rate1": null,
+                        "pr_outsideRate": null,
+                        "pr_webId": null,
+                        "pr_webPassword": null,
+                        "pr_vendorID": null,
+                        "pr_primaryAgent_LinkNo": 437,
+                        "pr_preferredVendor": "N",
+                        "pr_branch_LinkNo": null,
+                        "pr_isActive": "Y",
+                        "pr_serviceProviderOnly": null,
+                        "pr_CBPLookupItem_LinkNo": null,
+                        "pr_attachmentCount": 0,
+                        "pr_PTC1": null,
+                        "pr_PTC2": null,
+                        "pr_PTC3": null,
+                        "pr_PTC4": null,
+                        "pr_PTC5": null,
+                        "pr_PTC6": null,
+                        "pr_PTC7": null,
+                        "pr_PTC8": null,
+                        "pr_PTC9": null,
+                        "pr_PTC10": null,
+                        "pr_moreFieldValue1": null,
+                        "pr_moreFieldValue2": null,
+                        "pr_moreFieldValue3": null,
+                        "pr_moreFieldValue4": null,
+                        "pr_moreFieldValue5": null,
+                        "pr_moreFieldValue6": null,
+                        "pr_moreFieldValue7": null,
+                        "pr_moreFieldValue8": null,
+                        "pr_moreFieldValue9": null,
+                        "pr_moreFieldValue10": null,
+                        "pr_moreFieldValue11": null,
+                        "pr_moreFieldValue12": null,
+                        "pr_moreFieldValue13": null,
+                        "pr_moreFieldValue14": null,
+                        "pr_moreFieldValue15": null,
+                        "pr_moreFieldValue16": null,
+                        "pr_moreFieldValue17": null,
+                        "pr_moreFieldValue18": null,
+                        "pr_moreFieldValue19": null,
+                        "pr_moreFieldValue20": null,
+                        "pr_moreFieldValue21": null,
+                        "pr_moreFieldValue22": null,
+                        "pr_moreFieldValue23": null,
+                        "pr_moreFieldValue24": null,
+                        "pr_moreFieldValue25": null,
+                        "pr_moreFieldValue26": null,
+                        "pr_moreFieldValue27": null,
+                        "pr_moreFieldValue28": null,
+                        "pr_moreFieldValue29": null,
+                        "pr_moreFieldValue30": null,
+                        "pr_moreFieldValue31": null,
+                        "pr_moreFieldValue32": null,
+                        "pr_moreFieldValue33": null,
+                        "pr_moreFieldValue34": null,
+                        "pr_moreFieldValue35": null,
+                        "pr_moreFieldValue36": null,
+                        "pr_moreFieldValue37": null,
+                        "pr_moreFieldValue38": null,
+                        "pr_moreFieldValue39": null,
+                        "pr_moreFieldValue40": null,
+                        "pr_moreFieldValue41": null,
+                        "pr_moreFieldValue42": null,
+                        "pr_moreFieldValue43": null,
+                        "pr_moreFieldValue44": null,
+                        "pr_moreFieldValue45": null,
+                        "pr_moreFieldValue46": null,
+                        "pr_moreFieldValue47": null,
+                        "pr_moreFieldValue48": null,
+                        "pr_moreFieldValue49": null,
+                        "pr_moreFieldValue50": null,
+                        "pr_moreFieldValue51": null,
+                        "pr_moreFieldValue52": null,
+                        "pr_moreFieldValue53": null,
+                        "pr_moreFieldValue54": null,
+                        "pr_moreFieldValue55": null,
+                        "pr_moreFieldValue56": null,
+                        "pr_moreFieldValue57": null,
+                        "pr_moreFieldValue58": null,
+                        "pr_moreFieldValue59": null,
+                        "pr_moreFieldValue60": null,
+                        "pr_moreFieldValue61": null,
+                        "pr_moreFieldValue62": null,
+                        "pr_moreFieldValue63": null,
+                        "pr_moreFieldValue64": null,
+                        "pr_moreFieldValue65": null,
+                        "pr_moreFieldValue66": null,
+                        "pr_moreFieldValue67": null,
+                        "pr_moreFieldValue68": null,
+                        "pr_moreFieldValue69": null,
+                        "pr_moreFieldValue70": null,
+                        "pr_moreFieldValue71": null,
+                        "pr_moreFieldValue72": null,
+                        "pr_moreFieldValue73": null,
+                        "pr_moreFieldValue74": null,
+                        "pr_moreFieldValue75": null,
+                        "pr_moreFieldValue76": null,
+                        "pr_moreFieldValue77": null,
+                        "pr_moreFieldValue78": null,
+                        "pr_moreFieldValue79": null,
+                        "pr_moreFieldValue80": null,
+                        "pr_moreFieldValue81": null,
+                        "pr_moreFieldValue82": null,
+                        "pr_moreFieldValue83": null,
+                        "pr_moreFieldValue84": null,
+                        "pr_moreFieldValue85": null,
+                        "pr_moreFieldValue86": null,
+                        "pr_moreFieldValue87": null,
+                        "pr_moreFieldValue88": null,
+                        "pr_moreFieldValue89": null,
+                        "pr_moreFieldValue90": null,
+                        "pr_moreFieldValue91": null,
+                        "pr_moreFieldValue92": null,
+                        "pr_moreFieldValue93": null,
+                        "pr_moreFieldValue94": null,
+                        "pr_moreFieldValue95": null,
+                        "pr_moreFieldValue96": null,
+                        "pr_moreFieldValue97": null,
+                        "pr_moreFieldValue98": null,
+                        "pr_moreFieldValue99": null,
+                        "prA_address1": "123 Street Rd.",
+                        "prA_address2": "",
+                        "prA_aptSuite": "",
+                        "prA_city": "Manhattan Beach",
+                        "prA_stateProvince": "CA",
+                        "prA_zipPostalCode": "90266",
+                        "prA_country": "",
+                        "prA_description": null,
+                        "prA_permitMarket": "Y",
+                        "prA_isValid": "Y",
+                        "prP_commValue": "+1 (123) 555-1212",
+                        "prP_description": "+1 (123) 555-1212",
+                        "prP_permitMarket": "Y",
+                        "prP_isValid": "Y",
+                        "prP_isPrimary": "Y",
+                        "prE_commValue": null,
+                        "prE_description": null,
+                        "prE_permitMarket": null,
+                        "prE_isValid": null,
+                        "prE_isPrimary": null,
+                        "prF_commValue": null,
+                        "prF_description": null,
+                        "prF_permitMarket": null,
+                        "prF_isValid": null,
+                        "prF_isPrimary": null,
+                        "tr_passengerNo": 2,
+                        "tr_name": "Doe/John",
+                        "tr_firstName": "John",
+                        "tr_middleName": null,
+                        "tr_lastName": "Doe",
+                        "tr_courtesyTitle": null,
+                        "tr_tourSpecial": null,
+                        "tr_specialServices": null,
+                        "tr_smoking": null,
+                        "tr_salutation": "",
+                        "tr_redressNo": null,
+                        "tr_knownTravNo": null,
+                        "tr_gender": null,
+                        "tr_citizenship": null,
+                        "tr_passportNo": null,
+                        "tr_passportOriginCountry": null,
+                        "tr_passportIssueCity": null,
+                        "tr_passportIssueDate": null,
+                        "tr_passportExpireDate": null,
+                        "tr_passportNo2": null,
+                        "tr_passportOriginCountry2": null,
+                        "tr_passportIssueCity2": null,
+                        "tr_passportIssueDate2": null,
+                        "tr_passportExpireDate2": null,
+                        "tr_htlSpecial": null,
+                        "tr_htlRoomLocation": null,
+                        "tr_htlBedding": null,
+                        "tr_escortPrefID": null,
+                        "tr_cruiseSpecial": null,
+                        "tr_cruiseSize": null,
+                        "tr_cruiseDining": null,
+                        "tr_departPort": null,
+                        "tr_cruiseShipName": null,
+                        "tr_aircraft": null,
+                        "tr_airClass": null,
+                        "tr_airSeats": null,
+                        "tr_airMeals": null,
+                        "tr_airMealPrefCode": null,
+                        "tr_airMealPref": null,
+                        "tr_airSpecial": null,
+                        "tr_carType": null,
+                        "tr_carSpecial": null,
+                        "tr_birthMDYDay": null,
+                        "tr_birthMDYMonth": null,
+                        "tr_birthMDYYear": null,
+                        "tr_emergncName": null,
+                        "tr_emergncRelationship": null,
+                        "tr_emergncPhone": null,
+                        "tr_emergncEmail": null,
+                        "tr_emergncMisc": null,
+                        "trP_commValue": "+1 (123) 555-1212",
+                        "trP_description": "+1 (123) 555-1212",
+                        "trP_permitMarket": "Y",
+                        "trP_isValid": "Y",
+                        "trP_isPrimary": "Y",
+                        "trE_commValue": null,
+                        "trE_description": null,
+                        "trE_permitMarket": null,
+                        "trE_isValid": null,
+                        "trE_isPrimary": null,
+                        "trF_commValue": null,
+                        "trF_description": null,
+                        "trF_permitMarket": null,
+                        "trF_isValid": null,
+                        "trF_isPrimary": null
+                    }
+                ]
+            }
+        }
+    }
+}</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

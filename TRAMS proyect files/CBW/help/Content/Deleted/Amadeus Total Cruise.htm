@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="An In-Depth Look at Live Connect" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>&#160;Amadeus Total Cruise</title>
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <link href="../Resources/Stylesheets/DraftStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 class="Heading2"><a name="kanchor235"></a>Amadeus Total Cruise</h2>
+        <p>To register, current Amadeus customers need to contact their Amadeus Account Manager. If you currently do not use Amadeus as your GDS, call 1-888-AMADEUS or email <a href="mailto:salesinquiries@amadeus.com">salesinquiries@amadeus.com</a>.</p>
+        <h3 class="Heading3">Set Up Amadeus Total Cruise</h3>
+        <p>Upon receiving Amadeus Total Cruise, take the following steps to setup <span class="span_4">ClientBase</span> for Live Connect.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/LCstep1.flsnp" />
+        <blockquote>
+            <p> Create a Live Connect Provider for Amadeus Total Cruise if none exists by going to <span>Utilities|Live Connect Providers</span>, and clicking <span class="span_4">Add</span>. (It’s a good idea to check if the URL is correct.) </p>
+            <p>
+                <img src="../Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise.png" style="height: 388px;width: 375px;" class="img_1" />
+            </p>
+            <p><span>Provider Name: </span>Enter Amadeus Total Cruise.</p>
+            <p><span>URL: </span>Enter <br /><span>https://agents.amadeustotalcruise.com/apps/portal/cbcollect.asp?mode=AmadeusTotalCruise</span></p>
+            <p><span>Travel Category: </span>Enter Cruise from the drop-down menu.</p>
+            <p><span>Import XML from: </span>Enter HTML Source.</p>
+            <p>&#160;</p>
+        </blockquote>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/LCstep2.flsnp" />
+        </p>
+        <blockquote>
+            <p>Set up for Live Connect agent logins can be done individually. When Live Connect is launched, the system first looks to see if there is login information at the User Login level, and if not, then asks the user to login at the provider website. Users can set up their own logins by going to <span>Utilities|My Login|Live Connect </span>and clicking <span class="span_4">Add. </span></p>
+            <p>
+                <img src="../Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise_1_445x294.png" style="width: 445;height: 294;" class="img_1" />
+            </p>
+            <p class="p_2"><span>Live Connect Provider:</span> Select Amadeus Total Cruise to connect to the cruise booking engine, then complete the remaining fields, and save. </p>
+            <p class="p_2"><span>User Name </span><span>:</span> Enter assigned User Name.</p>
+            <p class="p_2"><span>Password</span><span>:</span> Enter assigned Password.</p>
+            <p class="p_2"><span>Account Number/Agency Code:&#160; </span>Leave blank.<br /></p>
+        </blockquote>
+        <p>&#160;</p>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/LCstep3.flsnp" />
+        </p>
+        <blockquote>
+            <p> From the list below of <span class="span_4">Amadeus Total Cruise Participating Vendors and Vendor Codes</span>, create a profile if none exists for those you are using. </p>
+            <p>Click <span class="span_4">Live Connect Providers</span> and <span class="span_4">Add</span> in the vendor profile. </p>
+            <p>Select <span class="span_4">Amadeus</span><span class="span_4"> Total Cruise</span>  from the drop-down menu and enter the <span class="span_4">Amadeus </span><span class="span_4">Total </span><span class="span_4">Cruise </span>vendor code as the unique vendor identifier. </p>
+            <p>&#160;</p>
+        </blockquote>
+        <h3 class="Heading3">Amadeus Total Cruise Participating Vendors and Vendor Codes</h3>
+        <table class="table_1">
+            <col style="width: 60pt;" />
+            <col style="width: 189pt;" />
+            <col style="width: 178pt;" />
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p><span class="span_5">C</span><span class="span_5">ODE</span> </p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_4">VENDOR NAME</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_4">LIVE CONNECT PROVIDER</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>AZA</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Azamara</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>CCL </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Carnival Cruise Lines </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>CEL </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Celebrity Cruises </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>CST </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Costa Cruise Lines </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>DCL</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Disney Cruise Line</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>HAL </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Holland America Line </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>MSC</p>
+                    </td>
+                    <td class="td_1">
+                        <p>MSC Cruises </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>NCL </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Norwegian Cruise Lines </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>OCL</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Oceania</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>PCL </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Princess Cruises </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>RCC </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Royal Caribbean International </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>SBN </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Seabourne Cruise Lines </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>SSC</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Silversea Cruises</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p>VRC</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Viking River Cruises</p>
+                    </td>
+                    <td class="td_1">
+                        <p>Amadeus Total Cruise</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3">Amadeus Total Cruise Features</h3>
+        <p>Amadeus Total Cruise supports the following Live Connect Features if checked:</p>
+        <p>
+            <img src="../Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features.jpg" style="height: 301px;width: 552px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20Live%20Connectaa.19.1.1.jpg" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Create Amadeus Total Cruise New Reservation</h3>
+        <p><span class="span_6">Step 1)</span> When ready to book on-line, create a client’s Res Card and fill in the <span class="span_4">Agent, Status, Reservation Cycle, </span>and<span class="span_4"> Trip Name Fields</span><span class="span_6">, </span>and select the travelers.</p>
+        <p><span class="span_6">Step 2)</span> If you do not know the vendor you are using, click the <span class="span_4">Live Connect</span> button in the lower right hand corner of the main Res Card screen to launch Amadeus Total Cruise from the Res Card level. </p>
+        <p>
+            <img src="../Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_624x335.png" style="width: 624;height: 335;" class="img_1" />
+        </p>
+        <p>If you do know the vendor you are booking, use the <span class="span_4">Add Reservation</span> button to start a new reservation. Fill in the<span class="span_4"> Vendor</span> and <span class="span_4">Travel Category </span>fields if not defaulted, click <span class="span_4">Live Connect</span>, and then <span class="span_4">Create New Reservation</span>.</p>
+        <p>
+            <img src="../Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_1.png" style="height: 81px;width: 492px;" class="img_1" />
+        </p>
+        <p><span>Step 3)</span> Select any customer data to book the reservation <span class="span_4">(Traveler, Credit Card</span>, <span class="span_4">Phone, </span>and<span class="span_4"> Billing Address), </span>click <span class="span_4">Connect:</span></p>
+        <p>
+            <img src="../Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_2_504x352.png" style="width: 504;height: 352;" class="img_1" />
+        </p>
+        <p><span>Step 4) </span>Although still in <span class="span_4">ClientBase</span>, you are now on-line at the Amadeus Total Cruise booking site. Complete the reservations using instructions supplied by Amadeus Total Cruise.</p>
+        <p><span>Step 5)</span> Upon completion of the reservation, click <span class="span_4">Import Reservation</span>, and all reservation details are imported back into the <span class="span_4">ClientBase</span> reservation record.</p>
+        <p>
+            <img src="../Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_3_625x219.png" style="width: 625;height: 219;" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Import Existing Reservation Made Outside of ClientBase</h3>
+        <p>First, create a new reservation and click <b>Import Existing Reservation</b>. Enter the confirmation number if known, or leave blank. If not taken directly to the booking, click the <b>Recent Booking Activity</b> to locate reservation. Once the reservation details are showing, click on <b>Export Booking</b> above the booking details. Leave the option set to Live Connect and click Continue. Once the new screen loads, click <b>Import Reservation</b> and the details of the reservation are imported into the <b>ClientBase</b> reservation record.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Retrieve an Existing Reservation for Editing or Cancelling</h3>
+        <p>To edit or cancel an existing reservation using Live Connect, follow these steps:</p>
+        <p><span>Step 1)</span> Launch Live Connect from inside the reservation to edit or cancel in <span class="span_4">ClientBase</span>.</p>
+        <p><span>Step 2) </span>A dialog box appears. Click <span class="span_4">Retrieve Reservation.</span> </p>
+        <p><span>Step 3) </span>Live Connect launches the booking engine site. Edit or cancel the reservation using instructions supplied by the booking engine, and click <span class="span_4">Import Reservation. </span>All reservation data edited or cancelled online is now located in the reservation fields in <span class="span_4">ClientBase</span> reservation record.</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="CBO 4.09.00"
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5 - Tripane.flskn"
+  ResultsPerPage="29"
+  OutputFile="index.html"
+  ExcludeUnreferencedContent="true"
+  PreCompileScaledImages="false"
+  MasterToc="/Project/TOCs/CBO409.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/DraftStylesheet.css"
+  ResolveCssVariables="false"
+  MakeFileLowerCase="true"
+  MoveOutputContentToRoot="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="doc" />
+</CatapultTarget>

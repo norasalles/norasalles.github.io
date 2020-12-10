@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" ConvertEquations="true" LastCollectTime="2018-07-25T13:40:18.7151450-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\CBO CBB Help 46\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../../../CBW Help/CBW Help 46/Content/Resources/Stylesheets/Styles.css" LastImport="2018-07-25T13:43:39.8166473-05:00">
+    <Files>
+        <Url Source="../../../../../../../Desktop/CIE Tours/CBO/CIE Tours CBO.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CIE Tours/CBO/CIE Tours CBO.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/CIE Tours CBO/CIE Tours.png" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/CIE Tours CBO/CIE Tours.htm" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/Resources/Images/CIE Tours CBO/CIE Tours Live Connect Features.png" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/Resources/Images/CIE Tours CBO/CIE Tours Live Connect Features.jpg" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/Resources/Images/CIE Tours CBO/CIE Tours Live Connect Features_1.jpg" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/Resources/Images/CIE Tours CBO/CIE Tours Live Connect Features_1.png" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/CIE Tours CBO/CIE Tours Live Connect Features.htm" TimeStamp="7/25/2018 1:43:37 PM" />
+        <Url Source="../TOCs/CIE Tours CBO.fltoc" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/Resources/MasterPages/CIE Tours CBO.flmsp" TimeStamp="7/25/2018 1:43:36 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_175.css" TimeStamp="7/25/2018 1:43:36 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Default" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

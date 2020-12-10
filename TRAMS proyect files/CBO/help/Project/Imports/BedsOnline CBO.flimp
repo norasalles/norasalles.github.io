@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="false" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" ConvertEquations="true" LastCollectTime="2019-03-19T13:28:17.6165293-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\CBO CBB Help 47\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles_176.css" LastImport="2019-03-19T13:30:37.8625554-05:00">
+    <Files>
+        <Url Source="../../../../../../../Desktop/BedsOnline/BedsOnline CBO.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/BedsOnline/BedsOnline CBO.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/BedsOnline CBO/To register go to www bedsonline.png" TimeStamp="3/19/2019 1:30:32 PM" />
+        <Url Source="../../Content/BedsOnline CBO/To register go to www bedsonline.htm" TimeStamp="3/19/2019 1:30:32 PM" />
+        <Url Source="../../Content/Resources/Images/BedsOnline CBO/Live Connect Features Supported.png" TimeStamp="3/19/2019 1:30:32 PM" />
+        <Url Source="../../Content/Resources/Images/BedsOnline CBO/Live Connect Features Supported_1.png" TimeStamp="3/19/2019 1:30:32 PM" />
+        <Url Source="../../Content/Resources/Images/BedsOnline CBO/Live Connect Features Supported_2.png" TimeStamp="3/19/2019 1:30:32 PM" />
+        <Url Source="../../Content/Resources/Images/BedsOnline CBO/Live Connect Features Supported_3.png" TimeStamp="3/19/2019 1:30:32 PM" />
+        <Url Source="../../Content/BedsOnline CBO/Live Connect Features Supported.htm" TimeStamp="3/19/2019 1:30:33 PM" />
+        <Url Source="../TOCs/BedsOnline CBO.fltoc" TimeStamp="3/19/2019 1:30:32 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_176_1.css" TimeStamp="3/19/2019 1:30:32 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 3" To="h3.Heading 3" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 3" />
+        <StyleName Name="Normal (Web)" />
+        <StyleName Name="p_2" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

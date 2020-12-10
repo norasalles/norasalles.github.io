@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/Stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <MadCap:snippetBlock src="../Snippets/Header.flsnp" />
+        <p>&#160;</p>
+        <MadCap:bodyProxy />
+        <p>&#160;</p>
+        <p>
+            <MadCap:pageFooter>
+                <MadCap:snippetBlock src="../Snippets/Footer.flsnp" />
+            </MadCap:pageFooter>
+        </p>
+    </body>
+</html>

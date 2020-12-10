@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UrlList>
+    <Url Source="Resources/Snippets/NewSnippet.flsnp" />
+    <Url Source="Resources/Snippets/runquery.flsnp" />
+    <Url Source="Resources/Snippets/retrieveparams.flsnp" />
+    <Url Source="Resources/Snippets/betanote.flsnp" />
+</UrlList>

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="ResCardQuery">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>ResCardQuery - RunQuery</title>
+        <link href="../Resources/TableStyles/codes.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/codes.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>ResCardQuery - RunQuery</h1>
+        <p><b>Note:</b><i> This is a beta with basic instruction. We hope to improve this documentation, but we need your help. Please visit the </i><a href="https://groups.google.com/forum/#!forum/tramsapi-beta" style="font-style: italic;">TramsAPI Google Group</a><i> and share your questions and suggestions.</i>
+        </p>
+        <h3>Running the Query</h3>
+        <p>Before running an invoice query, make sure you've already called <a href="../Login.html" class="MCXref xref">Login</a> and have your session id.</p>
+        <p>Do a post to the following URL (assuming you're running the API locally):</p>
+        <p>http://{localhost:8085}/rescardquery.runquery</p>
+        <p><b>Request:</b>
+        </p><pre xml:space="preserve">{ 
+}</pre>
+        <p style="font-weight: bold;">Response:</p><pre>{
+    "apiVersion": "4.06",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "dataset": {
+            "name": "resCardQuery",
+            "metaData": {
+                "resCardQuery": {
+                    "resCardNo": {
+                        "type": "largeInt"
+                    },
+                    "rc_branch_LinkNo": {
+                        "type": "integer"
+                    },
+                    "rc_createDate": {
+                        "type": "dateTime"
+                    },
+                    "rc_tripStartDate": {
+                        "type": "dateTime"
+                    },
+                    "rc_tripEndDate": {
+                        "type": "dateTime"
+                    },
+                    "rc_tripTitle": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "rc_tripLocator": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "rc_groupName": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "rc_destinationByRegion": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "rc_tripSource": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "rc_agentRemarks": {
+                        "type": "memo"
+                    },
+                    "rc_clientFeedback": {
+                        "type": "memo"
+                    },
+                    "rc_status": {
+                        "type": "integer"
+                    },
+                    "rc_resCycle": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "rc_clientNo": {
+                        "type": "largeInt"
+                    },
+                    "rc_clientName": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "rc_createAgent_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "rc_createAgent_Name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "rc_confirmedTotal": {
+                        "type": "largeInt"
+                    },
+                    "rc_invoicedTotal": {
+                        "type": "largeInt"
+                    },
+                    "rc_balance": {
+                        "type": "largeInt"
+                    },
+                    "rc_billToAddress": {
+                        "type": "string",
+                        "size": 256
+                    },
+                    "rc_shipToAddress": {
+                        "type": "string",
+                        "size": 256
+                    },
+                    "rc_useProfBillTo": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "rc_useProfShipTo": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "rc_destination": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_isActive": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "pr_profileNo": {
+                        "type": "largeInt"
+                    },
+                    "pr_profileType_LinkCode": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "pr_name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "pr_interfaceID": {
+                        "type": "string",
+                        "size": 10
+                    },
+                    "pr_firstName": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "pr_middleName": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "pr_lastName": {
+                        "type": "string",
+                        "size": 50
+                    },
+                    "pr_courtesyTitle": {
+                        "type": "string",
+                        "size": 15
+                    },
+                    "pr_creationDate": {
+                        "type": "dateTime"
+                    },
+                    "pr_createBy": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "pr_webId": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "pr_webPassword": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "pr_additionalName": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "pr_modifyBy": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "pr_modifyDateTime": {
+                        "type": "dateTime"
+                    },
+                    "pr_primaryAgent_Name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "pr_referredBy": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "pr_salutation": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "rsv_reservationNo": {
+                        "type": "largeInt"
+                    },
+                    "rsv_calcTotalBase": {
+                        "type": "largeInt"
+                    },
+                    "rsv_calcTotalComm": {
+                        "type": "largeInt"
+                    },
+                    "rsv_calcTotalTax": {
+                        "type": "largeInt"
+                    },
+                    "rsv_calcTotalFare": {
+                        "type": "largeInt"
+                    },
+                    "rsv_resConfStatus_LinkNo": {
+                        "type": "integer"
+                    },
+                    "rsv_confirmationNumber": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "rsv_travelCategory_LinkNo": {
+                        "type": "integer"
+                    },
+                    "rsv_vendor": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "rsv_resDate": {
+                        "type": "dateTime"
+                    },
+                    "rsv_depositDueDate": {
+                        "type": "dateTime"
+                    },
+                    "rsv_finalPymntDueDate": {
+                        "type": "dateTime"
+                    },
+                    "prv_providerNo": {
+                        "type": "largeInt"
+                    },
+                    "prv_allocatedTotalFare": {
+                        "type": "largeInt"
+                    },
+                    "prv_startDate": {
+                        "type": "dateTime"
+                    },
+                    "prv_endDate": {
+                        "type": "dateTime"
+                    },
+                    "prv_name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "prv_travelCategory_LinkNo": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "data": {
+                "resCardQuery": [
+                    {
+                        "resCardNo": 2,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-05T00:00:00.000Z",
+                        "rc_tripStartDate": "2015-10-03T00:00:00.000Z",
+                        "rc_tripEndDate": "2016-10-18T00:00:00.000Z",
+                        "rc_tripTitle": "Safari",
+                        "rc_tripLocator": "KBJRTY",
+                        "rc_groupName": "",
+                        "rc_destinationByRegion": "Africa",
+                        "rc_tripSource": "Manual",
+                        "rc_agentRemarks": "10/3/01",
+                        "rc_clientFeedback": "",
+                        "rc_status": "0",
+                        "rc_resCycle": "Under Deposit",
+                        "rc_clientNo": 463,
+                        "rc_clientName": "Doe/John",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": " Meyer",
+                        "rc_confirmedTotal": 1300000,
+                        "rc_invoicedTotal": 80000,
+                        "rc_balance": 1220000,
+                        "rc_billToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_useProfBillTo": "N",
+                        "rc_useProfShipTo": "N",
+                        "rc_destination": "Tanzania",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 463,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/John",
+                        "pr_interfaceID": "4805130703",
+                        "pr_firstName": "Doe",
+                        "pr_middleName": "",
+                        "pr_lastName": "John",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "1995-08-01T00:00:00.000Z",
+                        "pr_createBy": "MINDY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2013-02-05T12:18:14.000Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": "Barb &amp; Ken",
+                        "rsv_reservationNo": 1,
+                        "rsv_calcTotalBase": 1200000,
+                        "rsv_calcTotalComm": 180000,
+                        "rsv_calcTotalTax": 0,
+                        "rsv_calcTotalFare": 1200000,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": "4532",
+                        "rsv_travelCategory_LinkNo": 5,
+                        "rsv_vendor": "Abercrombie &amp; Kent",
+                        "rsv_resDate": "2016-08-24T00:00:00.000Z",
+                        "rsv_depositDueDate": "2001-08-28T00:00:00.000Z",
+                        "rsv_finalPymntDueDate": "2002-10-14T00:00:00.000Z",
+                        "prv_providerNo": 1,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2016-10-05T00:00:00.000Z",
+                        "prv_endDate": "2016-10-16T00:00:00.000Z",
+                        "prv_name": "Abercrombie &amp; Kent",
+                        "prv_travelCategory_LinkNo": 5
+                    },
+                    {
+                        "resCardNo": 2,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-05T00:00:00.000Z",
+                        "rc_tripStartDate": "2015-10-03T00:00:00.000Z",
+                        "rc_tripEndDate": "2016-10-18T00:00:00.000Z",
+                        "rc_tripTitle": "Safari",
+                        "rc_tripLocator": "KBJRTY",
+                        "rc_groupName": "",
+                        "rc_destinationByRegion": "Africa",
+                        "rc_tripSource": "Manual",
+                        "rc_agentRemarks": "10/3/01",
+                        "rc_clientFeedback": "",
+                        "rc_status": "0",
+                        "rc_resCycle": "Under Deposit",
+                        "rc_clientNo": 463,
+                        "rc_clientName": "Doe/John",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 1300000,
+                        "rc_invoicedTotal": 80000,
+                        "rc_balance": 1220000,
+                        "rc_billToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_useProfBillTo": "N",
+                        "rc_useProfShipTo": "N",
+                        "rc_destination": "Tanzania",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 463,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/John",
+                        "pr_interfaceID": "4805130703",
+                        "pr_firstName": "Doe",
+                        "pr_middleName": "",
+                        "pr_lastName": "John",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "1995-08-01T00:00:00.000Z",
+                        "pr_createBy": "MINDY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2013-02-05T12:18:14.000Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": "Barb &amp; Ken",
+                        "rsv_reservationNo": 1,
+                        "rsv_calcTotalBase": 1200000,
+                        "rsv_calcTotalComm": 180000,
+                        "rsv_calcTotalTax": 0,
+                        "rsv_calcTotalFare": 1200000,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": "4532",
+                        "rsv_travelCategory_LinkNo": 5,
+                        "rsv_vendor": "Abercrombie &amp; Kent",
+                        "rsv_resDate": "2016-08-24T00:00:00.000Z",
+                        "rsv_depositDueDate": "2001-08-28T00:00:00.000Z",
+                        "rsv_finalPymntDueDate": "2002-10-14T00:00:00.000Z",
+                        "prv_providerNo": 76,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2016-10-16T00:00:00.000Z",
+                        "prv_endDate": "2016-10-18T00:00:00.000Z",
+                        "prv_name": "Mobassa Hotel",
+                        "prv_travelCategory_LinkNo": 2
+                    },
+                    {
+                        "resCardNo": 2,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-05T00:00:00.000Z",
+                        "rc_tripStartDate": "2015-10-03T00:00:00.000Z",
+                        "rc_tripEndDate": "2016-10-18T00:00:00.000Z",
+                        "rc_tripTitle": "Safari",
+                        "rc_tripLocator": "KBJRTY",
+                        "rc_groupName": "",
+                        "rc_destinationByRegion": "Africa",
+                        "rc_tripSource": "Manual",
+                        "rc_agentRemarks": "10/3/01",
+                        "rc_clientFeedback": "",
+                        "rc_status": "0",
+                        "rc_resCycle": "Under Deposit",
+                        "rc_clientNo": 463,
+                        "rc_clientName": "Doe/John",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 1300000,
+                        "rc_invoicedTotal": 80000,
+                        "rc_balance": 1220000,
+                        "rc_billToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_useProfBillTo": "N",
+                        "rc_useProfShipTo": "N",
+                        "rc_destination": "Tanzania",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 463,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/John",
+                        "pr_interfaceID": "4805130703",
+                        "pr_firstName": "John",
+                        "pr_middleName": "",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "1995-08-01T00:00:00.000Z",
+                        "pr_createBy": "MINDY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2013-02-05T12:18:14.000Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": "Barb &amp; Ken",
+                        "rsv_reservationNo": 1,
+                        "rsv_calcTotalBase": 1200000,
+                        "rsv_calcTotalComm": 180000,
+                        "rsv_calcTotalTax": 0,
+                        "rsv_calcTotalFare": 1200000,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": "4532",
+                        "rsv_travelCategory_LinkNo": 5,
+                        "rsv_vendor": "Abercrombie &amp; Kent",
+                        "rsv_resDate": "2016-08-24T00:00:00.000Z",
+                        "rsv_depositDueDate": "2001-08-28T00:00:00.000Z",
+                        "rsv_finalPymntDueDate": "2002-10-14T00:00:00.000Z",
+                        "prv_providerNo": 264,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2016-10-05T00:00:00.000Z",
+                        "prv_endDate": "2016-10-07T00:00:00.000Z",
+                        "prv_name": "Nairobi Serena",
+                        "prv_travelCategory_LinkNo": 2
+                    },
+                    {
+                        "resCardNo": 2,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-05T00:00:00.000Z",
+                        "rc_tripStartDate": "2015-10-03T00:00:00.000Z",
+                        "rc_tripEndDate": "2016-10-18T00:00:00.000Z",
+                        "rc_tripTitle": "Safari",
+                        "rc_tripLocator": "KBJRTY",
+                        "rc_groupName": "",
+                        "rc_destinationByRegion": "Africa",
+                        "rc_tripSource": "Manual",
+                        "rc_agentRemarks": "10/3/01",
+                        "rc_clientFeedback": "",
+                        "rc_status": "0",
+                        "rc_resCycle": "Under Deposit",
+                        "rc_clientNo": 463,
+                        "rc_clientName": "Doe/John",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 1300000,
+                        "rc_invoicedTotal": 80000,
+                        "rc_balance": 1220000,
+                        "rc_billToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_useProfBillTo": "N",
+                        "rc_useProfShipTo": "N",
+                        "rc_destination": "Tanzania",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 463,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/John",
+                        "pr_interfaceID": "4805130703",
+                        "pr_firstName": "John",
+                        "pr_middleName": "",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "1995-08-01T00:00:00.000Z",
+                        "pr_createBy": "MINDY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2013-02-05T12:18:14.000Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": "Barb &amp; Ken",
+                        "rsv_reservationNo": 35,
+                        "rsv_calcTotalBase": 100000,
+                        "rsv_calcTotalComm": 12000,
+                        "rsv_calcTotalTax": 0,
+                        "rsv_calcTotalFare": 100000,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": "123456",
+                        "rsv_travelCategory_LinkNo": 5,
+                        "rsv_vendor": "TravelBound",
+                        "rsv_resDate": "2014-09-05T00:00:00.000Z",
+                        "rsv_depositDueDate": "2001-09-10T00:00:00.000Z",
+                        "rsv_finalPymntDueDate": "2002-08-30T00:00:00.000Z",
+                        "prv_providerNo": 55,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2015-10-03T00:00:00.000Z",
+                        "prv_endDate": "2015-10-05T00:00:00.000Z",
+                        "prv_name": "Radisson Hampshire Hotel",
+                        "prv_travelCategory_LinkNo": 2
+                    },
+                    {
+                        "resCardNo": 2,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-05T00:00:00.000Z",
+                        "rc_tripStartDate": "2015-10-03T00:00:00.000Z",
+                        "rc_tripEndDate": "2016-10-18T00:00:00.000Z",
+                        "rc_tripTitle": "Safari",
+                        "rc_tripLocator": "KBJRTY",
+                        "rc_groupName": "",
+                        "rc_destinationByRegion": "Africa",
+                        "rc_tripSource": "Manual",
+                        "rc_agentRemarks": "10/3/01",
+                        "rc_clientFeedback": "",
+                        "rc_status": "0",
+                        "rc_resCycle": "Under Deposit",
+                        "rc_clientNo": 463,
+                        "rc_clientName": "Doe/John",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 1300000,
+                        "rc_invoicedTotal": 80000,
+                        "rc_balance": 1220000,
+                        "rc_billToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. John Doe\r\n123 Street Rd.\r\nScottsdale, AZ 82558\r\n",
+                        "rc_useProfBillTo": "N",
+                        "rc_useProfShipTo": "N",
+                        "rc_destination": "Tanzania",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 463,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/John",
+                        "pr_interfaceID": "4805130703",
+                        "pr_firstName": "John",
+                        "pr_middleName": "",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "1995-08-01T00:00:00.000Z",
+                        "pr_createBy": "MINDY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2013-02-05T12:18:14.000Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": "Barb &amp; Ken",
+                        "rsv_reservationNo": 35,
+                        "rsv_calcTotalBase": 100000,
+                        "rsv_calcTotalComm": 12000,
+                        "rsv_calcTotalTax": 0,
+                        "rsv_calcTotalFare": 100000,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": "123456",
+                        "rsv_travelCategory_LinkNo": 5,
+                        "rsv_vendor": "TravelBound",
+                        "rsv_resDate": "2014-09-05T00:00:00.000Z",
+                        "rsv_depositDueDate": "2001-09-10T00:00:00.000Z",
+                        "rsv_finalPymntDueDate": "2002-08-30T00:00:00.000Z",
+                        "prv_providerNo": 111,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2015-10-22T00:00:00.000Z",
+                        "prv_endDate": "2015-10-23T00:00:00.000Z",
+                        "prv_name": "Intercontinental",
+                        "prv_travelCategory_LinkNo": 2
+                    },
+                    {
+                        "resCardNo": 3,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-27T00:00:00.000Z",
+                        "rc_tripStartDate": "2000-09-01T00:00:00.000Z",
+                        "rc_tripEndDate": "2001-05-31T00:00:00.000Z",
+                        "rc_tripTitle": "Panama Canal",
+                        "rc_tripLocator": "PKNJPK",
+                        "rc_groupName": "PANAMA 2017",
+                        "rc_destinationByRegion": "Central America",
+                        "rc_tripSource": "",
+                        "rc_agentRemarks": "",
+                        "rc_clientFeedback": "",
+                        "rc_status": "1",
+                        "rc_resCycle": "Paid in Full",
+                        "rc_clientNo": 150,
+                        "rc_clientName": "Doe/Jane",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 575055,
+                        "rc_invoicedTotal": 575055,
+                        "rc_balance": 0,
+                        "rc_billToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_useProfBillTo": "Y",
+                        "rc_useProfShipTo": "Y",
+                        "rc_destination": "Central America",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 150,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/Jane",
+                        "pr_interfaceID": "6048721192",
+                        "pr_firstName": "Jane",
+                        "pr_middleName": "",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "2010-02-09T00:00:00.000Z",
+                        "pr_createBy": "MARY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2016-06-23T13:04:59.332Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Agent",
+                        "pr_salutation": "Barbara &amp; Steve",
+                        "rsv_reservationNo": 2,
+                        "rsv_calcTotalBase": 430000,
+                        "rsv_calcTotalComm": 60200,
+                        "rsv_calcTotalTax": 15000,
+                        "rsv_calcTotalFare": 445000,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": "45674",
+                        "rsv_travelCategory_LinkNo": 4,
+                        "rsv_vendor": "Holland America Line",
+                        "rsv_resDate": "2000-08-27T00:00:00.000Z",
+                        "rsv_depositDueDate": "2000-08-31T00:00:00.000Z",
+                        "rsv_finalPymntDueDate": "2001-02-28T00:00:00.000Z",
+                        "prv_providerNo": 4,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2001-05-01T00:00:00.000Z",
+                        "prv_endDate": "2001-05-11T00:00:00.000Z",
+                        "prv_name": "Veendam",
+                        "prv_travelCategory_LinkNo": 4
+                    },
+                    {
+                        "resCardNo": 3,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-27T00:00:00.000Z",
+                        "rc_tripStartDate": "2000-09-01T00:00:00.000Z",
+                        "rc_tripEndDate": "2001-05-31T00:00:00.000Z",
+                        "rc_tripTitle": "Panama Canal",
+                        "rc_tripLocator": "PKNJPK",
+                        "rc_groupName": "PANAMA 2017",
+                        "rc_destinationByRegion": "Central America",
+                        "rc_tripSource": "",
+                        "rc_agentRemarks": "",
+                        "rc_clientFeedback": "",
+                        "rc_status": "1",
+                        "rc_resCycle": "Paid in Full",
+                        "rc_clientNo": 150,
+                        "rc_clientName": "Doe/Jane",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 575055,
+                        "rc_invoicedTotal": 575055,
+                        "rc_balance": 0,
+                        "rc_billToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_useProfBillTo": "Y",
+                        "rc_useProfShipTo": "Y",
+                        "rc_destination": "Central America",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 150,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/Jane",
+                        "pr_interfaceID": "6048721192",
+                        "pr_firstName": "Jane",
+                        "pr_middleName": "",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "2010-02-09T00:00:00.000Z",
+                        "pr_createBy": "MARY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2016-06-23T13:04:59.332Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Agent",
+                        "pr_salutation": "Barbara &amp; Steve",
+                        "rsv_reservationNo": 7,
+                        "rsv_calcTotalBase": 25000,
+                        "rsv_calcTotalComm": 8750,
+                        "rsv_calcTotalTax": 0,
+                        "rsv_calcTotalFare": 25000,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": null,
+                        "rsv_travelCategory_LinkNo": 8,
+                        "rsv_vendor": "Insurance Company of America",
+                        "rsv_resDate": "2000-09-01T00:00:00.000Z",
+                        "rsv_depositDueDate": null,
+                        "rsv_finalPymntDueDate": null,
+                        "prv_providerNo": 12,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2000-09-01T00:00:00.000Z",
+                        "prv_endDate": "2001-05-31T00:00:00.000Z",
+                        "prv_name": "Insurance Company of America",
+                        "prv_travelCategory_LinkNo": 8
+                    },
+                    {
+                        "resCardNo": 3,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-27T00:00:00.000Z",
+                        "rc_tripStartDate": "2000-09-01T00:00:00.000Z",
+                        "rc_tripEndDate": "2001-05-31T00:00:00.000Z",
+                        "rc_tripTitle": "Panama Canal",
+                        "rc_tripLocator": "PKNJPK",
+                        "rc_groupName": "PANAMA 2017",
+                        "rc_destinationByRegion": "Central America",
+                        "rc_tripSource": "",
+                        "rc_agentRemarks": "",
+                        "rc_clientFeedback": "",
+                        "rc_status": "1",
+                        "rc_resCycle": "Paid in Full",
+                        "rc_clientNo": 150,
+                        "rc_clientName": "Doe/Jane",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 575055,
+                        "rc_invoicedTotal": 575055,
+                        "rc_balance": 0,
+                        "rc_billToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_useProfBillTo": "Y",
+                        "rc_useProfShipTo": "Y",
+                        "rc_destination": "Central America",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 150,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/Jane",
+                        "pr_interfaceID": "6048721192",
+                        "pr_firstName": "Jane",
+                        "pr_middleName": "",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "2010-02-09T00:00:00.000Z",
+                        "pr_createBy": "MARY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2016-06-23T13:04:59.332Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Agent",
+                        "pr_salutation": "Barbara &amp; Steve",
+                        "rsv_reservationNo": 8,
+                        "rsv_calcTotalBase": 95500,
+                        "rsv_calcTotalComm": 5000,
+                        "rsv_calcTotalTax": 9555,
+                        "rsv_calcTotalFare": 105055,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": null,
+                        "rsv_travelCategory_LinkNo": 1,
+                        "rsv_vendor": "American Airlines",
+                        "rsv_resDate": "2000-09-01T00:00:00.000Z",
+                        "rsv_depositDueDate": null,
+                        "rsv_finalPymntDueDate": null,
+                        "prv_providerNo": 156,
+                        "prv_allocatedTotalFare": 105055,
+                        "prv_startDate": "2001-04-30T00:00:00.000Z",
+                        "prv_endDate": "2001-05-01T00:00:00.000Z",
+                        "prv_name": "American Airlines",
+                        "prv_travelCategory_LinkNo": 1
+                    },
+                    {
+                        "resCardNo": 3,
+                        "rc_branch_LinkNo": 7,
+                        "rc_createDate": "2015-08-27T00:00:00.000Z",
+                        "rc_tripStartDate": "2000-09-01T00:00:00.000Z",
+                        "rc_tripEndDate": "2001-05-31T00:00:00.000Z",
+                        "rc_tripTitle": "Panama Canal",
+                        "rc_tripLocator": "PKNJPK",
+                        "rc_groupName": "PANAMA 2017",
+                        "rc_destinationByRegion": "Central America",
+                        "rc_tripSource": "",
+                        "rc_agentRemarks": "",
+                        "rc_clientFeedback": "",
+                        "rc_status": "1",
+                        "rc_resCycle": "Paid in Full",
+                        "rc_clientNo": 150,
+                        "rc_clientName": "Doe/Jane",
+                        "rc_createAgent_LinkNo": 430,
+                        "rc_createAgent_Name": "S Meyer",
+                        "rc_confirmedTotal": 575055,
+                        "rc_invoicedTotal": 575055,
+                        "rc_balance": 0,
+                        "rc_billToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_shipToAddress": "Mr. and Mrs. Jane Doe\r\n123 Street St.\r\nSandy, UT 81092\r\n",
+                        "rc_useProfBillTo": "Y",
+                        "rc_useProfShipTo": "Y",
+                        "rc_destination": "Central America",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 150,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Doe/Jane",
+                        "pr_interfaceID": "6048721192",
+                        "pr_firstName": "Jane",
+                        "pr_middleName": "",
+                        "pr_lastName": "Doe",
+                        "pr_courtesyTitle": "Mr. and Mrs.",
+                        "pr_creationDate": "2010-02-09T00:00:00.000Z",
+                        "pr_createBy": "MARY",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2016-06-23T13:04:59.332Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Agent",
+                        "pr_salutation": "Barbara &amp; Steve",
+                        "rsv_reservationNo": 8,
+                        "rsv_calcTotalBase": 95500,
+                        "rsv_calcTotalComm": 5000,
+                        "rsv_calcTotalTax": 9555,
+                        "rsv_calcTotalFare": 105055,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": null,
+                        "rsv_travelCategory_LinkNo": 1,
+                        "rsv_vendor": "American Airlines",
+                        "rsv_resDate": "2000-09-01T00:00:00.000Z",
+                        "rsv_depositDueDate": null,
+                        "rsv_finalPymntDueDate": null,
+                        "prv_providerNo": 157,
+                        "prv_allocatedTotalFare": 105055,
+                        "prv_startDate": "2001-05-11T00:00:00.000Z",
+                        "prv_endDate": "2001-05-11T00:00:00.000Z",
+                        "prv_name": "American Airlines",
+                        "prv_travelCategory_LinkNo": 1
+                    },
+                    {
+                        "resCardNo": 4,
+                        "rc_branch_LinkNo": 0,
+                        "rc_createDate": "2000-05-15T00:00:00.000Z",
+                        "rc_tripStartDate": "2000-09-29T00:00:00.000Z",
+                        "rc_tripEndDate": "2000-10-11T00:00:00.000Z",
+                        "rc_tripTitle": "Eastern Caribbean Cruise",
+                        "rc_tripLocator": "",
+                        "rc_groupName": "",
+                        "rc_destinationByRegion": "Caribbean",
+                        "rc_tripSource": "Manual",
+                        "rc_agentRemarks": "Weather in fall in Caribbean - concerned about hurricanes",
+                        "rc_clientFeedback": "Clients loved Holland America. Said they would travel on them again any time.\r\n\r\nNext time wants a balcony and to be 
+
+midship\r\n\r\nDownside of sailing from San Juan was there were not enough days at sea\r\n\r\n",
+                        "rc_status": "1",
+                        "rc_resCycle": "Returned from Trip",
+                        "rc_clientNo": 384,
+                        "rc_clientName": "Jones/John",
+                        "rc_createAgent_LinkNo": 439,
+                        "rc_createAgent_Name": "James Smith",
+                        "rc_confirmedTotal": 485700,
+                        "rc_invoicedTotal": 485700,
+                        "rc_balance": 0,
+                        "rc_billToAddress": "Mr. John Jones\r\n123 Street Rd.\r\nLos Altos, CA 94022\r\n",
+                        "rc_shipToAddress": "Mr. John Jones\r\n123 Street Rd.\r\nLos Altos, CA 94022\r\n",
+                        "rc_useProfBillTo": "N",
+                        "rc_useProfShipTo": "Y",
+                        "rc_destination": "Caribbean",
+                        "pr_isActive": "Y",
+                        "pr_profileNo": 384,
+                        "pr_profileType_LinkCode": "I",
+                        "pr_name": "Jones/John",
+                        "pr_interfaceID": "6509881222",
+                        "pr_firstName": "John",
+                        "pr_middleName": "David",
+                        "pr_lastName": "Jones",
+                        "pr_courtesyTitle": "Mr.",
+                        "pr_creationDate": "1997-10-21T00:00:00.000Z",
+                        "pr_createBy": "SHARON",
+                        "pr_webId": "",
+                        "pr_webPassword": "",
+                        "pr_additionalName": "",
+                        "pr_modifyBy": "SHARON",
+                        "pr_modifyDateTime": "2016-08-01T09:25:13.507Z",
+                        "pr_primaryAgent_Name": "S Meyer",
+                        "pr_referredBy": "Yellow Pages",
+                        "pr_salutation": "Ken and Sue",
+                        "rsv_reservationNo": 3,
+                        "rsv_calcTotalBase": 350000,
+                        "rsv_calcTotalComm": 52500,
+                        "rsv_calcTotalTax": 12500,
+                        "rsv_calcTotalFare": 362500,
+                        "rsv_resConfStatus_LinkNo": 2,
+                        "rsv_confirmationNumber": "444565",
+                        "rsv_travelCategory_LinkNo": 4,
+                        "rsv_vendor": "Holland America Line",
+                        "rsv_resDate": "2000-08-31T00:00:00.000Z",
+                        "rsv_depositDueDate": null,
+                        "rsv_finalPymntDueDate": "2000-09-11T00:00:00.000Z",
+                        "prv_providerNo": 5,
+                        "prv_allocatedTotalFare": 0,
+                        "prv_startDate": "2000-10-02T00:00:00.000Z",
+                        "prv_endDate": "2000-10-09T00:00:00.000Z",
+                        "prv_name": "Veendam",
+                        "prv_travelCategory_LinkNo": 4
+
+                   
+                    }
+                ]
+            }
+        }
+    }
+}</pre>
+        <h3>Return Codes</h3>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/codes.css');" class="TableStyle-codes" cellspacing="0">
+            <col class="TableStyle-codes-Column-Column1" />
+            <col class="TableStyle-codes-Column-Column1" />
+            <col class="TableStyle-codes-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1" style="font-weight: bold;">Code</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1" style="font-weight: bold;">Meaning</td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1" style="font-weight: bold;">Description</td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1">200</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1"><b>Successful Response</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1">
+                        <p>The request succeeded. Information returned with the response depends on the method used in the request.</p>
+                        <p>Get: The entity corresponding to the requested resource is fetched and transmitted.</p>
+                        <p>Post: The entity describing or containing the result of the action is transmitted.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1">400</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1"><b>Bad Request</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1">The API&#160;does not support, or is unable to recognize, the request made to it.</td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1">404</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1"><b>Not Found</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1">The resource is invalid (unknown).</td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyB-Column1-Body1">500</td>
+                    <td class="TableStyle-codes-BodyB-Column1-Body1"><b>Internal System Error</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyA-Column1-Body1">The server encountered an unexpected condition that prevented it from fulfilling the request.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Transat Travel Insurance"
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="mailto:Iouise.dufort@ps-travelinsurance.com" />
+    <Link
+      Url="mailto:andrei.losinski@ps-travelinsurance.com" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="mailto:Iouise.dufort@ps-travelinsurance.com" />
+    <Link
+      Url="mailto:andrei.losinski@ps-travelinsurance.com" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Transat Travel Insurance/Transat Travel Insurance.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor272" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

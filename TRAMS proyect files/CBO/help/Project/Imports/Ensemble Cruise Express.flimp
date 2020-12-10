@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-18T13:00:50.0183237-05:00" ProjectName="CBW Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-18T13:01:02.9042095-05:00">
+    <Files>
+        <Url Source="../../../../../../Desktop/CBW Help/Ensemble Cruise Express.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Ensemble Cruise Express.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Ensemble Cruise Express/Ensemble Cruise Express.png" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Ensemble Cruise Express/Ensemble Cruise Express.htm" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Ensemble Cruise Express/Ensemble Cruise Express Participating.htm" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Resources/Images/Ensemble Cruise Express/Ensemble Cruise Express Features.png" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Resources/Images/Ensemble Cruise Express/Ensemble Cruise Express Features_1.png" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Resources/Images/Ensemble Cruise Express/Ensemble Cruise Express Features_2.png" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Resources/Images/Ensemble Cruise Express/Ensemble Cruise Express Features_3.png" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Resources/Images/Ensemble Cruise Express/Ensemble Cruise Express Features_4.png" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Ensemble Cruise Express/Ensemble Cruise Express Features.htm" TimeStamp="5/18/2017 1:01:01 PM" />
+        <Url Source="../../Content/Ensemble Cruise Express/Import Existing Reservation.htm" TimeStamp="5/18/2017 1:01:01 PM" />
+        <Url Source="../TOCs/Ensemble Cruise Express.fltoc" TimeStamp="5/18/2017 1:01:00 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_44.css" TimeStamp="5/18/2017 1:01:00 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

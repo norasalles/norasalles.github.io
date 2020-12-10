@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" style="mc-master-page: url('../Resources/PageLayouts/FIXES.flmsp');">
+    <head><title>ClientBase Windows 4.09.00 - Fixes</title>
+        <link href="../Resources/Stylesheets/Stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 class="Heading1_1"><span class="Strong_1">ClientBase Windows 4.09.00 <a name="Fix"></a>Fixes</span>
+        </h1>
+        <h2 class="Heading2">Changes made between ClientBase Windows <a name="4.09.00.067_4.09.00.076"></a>4.09.00.067 and 4.09.00.076</h2>
+        <h3 class="Heading3"><a name="PNR3"></a>PNR Import Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">[<span class="span_1">Beta Only</span>] [Sabre] Fixed a problem where a "List index out of bounds" error occurred during PNR import if an Other (OTH) segment is the first segment in the PNR.</p>
+            </li>
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">[<span class="span_1">Beta Only</span>] [Sabre] Fixed an issue where, for partially ticketed Air bookings, the number of travelers was not imported correctly.</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">[<span class="span_1">Beta Only</span>] [Sabre] Fixed an issue where, when using Sabre Red 360, the number of travelers on Hotel bookings was not imported correctly.&#160;<br /></p>
+            </li>
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">[<span class="span_1">Beta Only</span>] [Sabre] Fixed an issue where, when using Sabre Red 360, Hotel check-in and check-out times were not imported correctly.&#160;</p>
+                <p>&#160;</p>
+            </li>
+        </ul>
+        <h2 class="Heading2">Changes made between ClientBase Windows <a name="4.09.00.057_4.09.00.067&#xA;"></a>4.09.00.057 and 4.09.00.067</h2>
+        <h3 class="Heading3"><a name="PNR2"></a>PNR Import Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">[Amadeus] Fixed an issue where, when creating a new Hotel vendor during PNR Import, the Chain Code and Property ID were not saved to the new vendor’s Interface ID field, causing an incorrect prompt to create the vendor each time it was used.</p>
+            </li>
+            <li class="ListParagraph_2">
+                <p class="ListParagraph_3">[Amadeus] Fixed an issue where the same ticket numbers were imported for all Air reservation passengers.</p>
+            </li>
+        </ul>
+        <h3 class="Heading3"><a name="Query"></a>Query Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_2">
+                <p class="ListParagraph_3">Fixed an issue where the Inventory Query window was hidden behind other ClientBase windows when clicking outside the Inventory window while the query was still running.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h2 class="Heading2">Changes made between ClientBase Windows <a name="4.08.00.007_4.09.00.057&#xA;"></a>4.08.00.007 and 4.09.00.057</h2>
+        <h3 class="Heading3"><a name="PNR"></a>PNR Import Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Sabre] Fixed an issue where some PNRs returned a "Not a valid integer value" error and did not import correctly when imported from Sabre Red 360.&#160;</p>
+            </li>
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Sabre] Fixed a PNR Import issue for Air bookings where Seat Number and Fare Basis were not imported. Also fixed a related issue where the s[Sabre] Fixed a PNR Import issue for Air bookings where Seat Number and Fare Basis were not imported. Also fixed a related issue where the seat Status defaulted to "Confirmed" rather than "HRS" as in previous versions of ClientBase.&#160;</p>
+            </li>
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Sabre] Resolved a PNR Import issue where the Reservation Airline Code for the vendor was not being imported for ticketed Air segments.&#160;</p>
+            </li>
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Sabre] Fixed an issue where hotel and car segments with more than one passenger in PNR added all travelers to the Service Provider, rather than only the first one.</p>
+            </li>
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Amadeus] Fixed an issue where, when creating a new Hotel vendor during PNR Import, the Chain Code and Property ID were not saved to the new vendor’s Interface ID field, causing a prompt to create the vendor each time it was used.</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Amadeus] Fixed an issue where the Air Reservation number of travelers was set to 1, even when two or more passengers were in the booking.</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Amadeus] Fixed an issue where the same ticket numbers were imported for all Air reservation passengers.</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Worldspan] Fixed an issue where the Vendor Profile Commission Default and/or Global Default Commission Rate was not populated for Hotel reservations without commission in the PNR booking.</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">[Worldspan] Fixed an issue where importing the same Record Locator into the same Res Card created a new reservation instead of updating an existing record with the same confirmation number.</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_3">
+                <p class="ListParagraph_4">[All GDS] Fixed an issue where some segment statuses imported into Reservation Agent Remarks with only a short status description, e.g. "Status: Confirmed." We now always import the 2-letter status code and the long status description, formatted like this: "Status: &lt;2-letter Status Code&gt; &lt;Long Status Description&gt;."</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">[All GDS] Fixed an issue where&#160;Tour and Cruise segments with a linked accounting line were reading the vendor code from the accounting line instead of from the segment.</p>
+            </li>
+        </ul>
+        <h3 class="Heading3"><a name="Merge"></a>Merge to PNR Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">Corrected the Traveler Miscellaneous merge field names Emergency Phone Country Code,  Emergency Phone Area Code, and  Emergency Phone Prefix/Suffix to fields Emergency Contact Phone Country Code,&#160; Emergency Contact Phone Area Code, and&#160; Emergency Contact Phone Prefix/Suffix, respectively.</p>
+            </li>
+        </ul>
+        <h3 class="Heading3"><a name="Performa"></a>Performance Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph">
+                <p class="ListParagraph">Fixed an issue where the Inventory Query window was hidden behind other ClientBase windows when clicking outside the application before the query completes.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

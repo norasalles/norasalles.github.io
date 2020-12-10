@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/client survey marketing.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_6.jpg" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/client survey marketing.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 20 Understanding Your Database with Reports/Understanding Your Database_6.jpg" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_20_Understanding_Your_Database_with_Reports" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Reports Overview"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Reports Using Queries to Run"
+      Conditions=""
+      LocalConditions=""
+      Position="31" />
+    <IndexCacheEntry
+      Term="Reports for Profiles"
+      Conditions=""
+      LocalConditions=""
+      Position="52" />
+    <IndexCacheEntry
+      Term="Current Query Results, Profile Report"
+      Conditions=""
+      LocalConditions=""
+      Position="66" />
+    <IndexCacheEntry
+      Term="Lists, Profile Report"
+      Conditions=""
+      LocalConditions=""
+      Position="75" />
+    <IndexCacheEntry
+      Term="Statistics, Profile Report"
+      Conditions=""
+      LocalConditions=""
+      Position="92" />
+    <IndexCacheEntry
+      Term="Client Survey, Profile Report"
+      Conditions=""
+      LocalConditions=""
+      Position="122" />
+    <IndexCacheEntry
+      Term="Travel History Report, Profile Report"
+      Conditions=""
+      LocalConditions=""
+      Position="146" />
+    <IndexCacheEntry
+      Term="Reports for Activities"
+      Conditions=""
+      LocalConditions=""
+      Position="156" />
+    <IndexCacheEntry
+      Term="Current Query Results, Activity Report"
+      Conditions=""
+      LocalConditions=""
+      Position="159" />
+    <IndexCacheEntry
+      Term="Lists, Activity Report"
+      Conditions=""
+      LocalConditions=""
+      Position="167" />
+    <IndexCacheEntry
+      Term="Statistics - User Stats, Activity Report"
+      Conditions=""
+      LocalConditions=""
+      Position="175" />
+    <IndexCacheEntry
+      Term="Reports for Res Cards"
+      Conditions=""
+      LocalConditions=""
+      Position="179" />
+    <IndexCacheEntry
+      Term="Current Query Results, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="182" />
+    <IndexCacheEntry
+      Term="Final Payment Report, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="190" />
+    <IndexCacheEntry
+      Term="Reservation Cycle Report, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="196" />
+    <IndexCacheEntry
+      Term="Service Provider Activity, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="203" />
+    <IndexCacheEntry
+      Term="Vendor Booking Report, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="207" />
+    <IndexCacheEntry
+      Term="Agent Booking Report, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="215" />
+    <IndexCacheEntry
+      Term="Client Booking Report, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="223" />
+    <IndexCacheEntry
+      Term="Close Ratio Report, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="234" />
+    <IndexCacheEntry
+      Term="Statistics - Agent Stats, Res Card Report"
+      Conditions=""
+      LocalConditions=""
+      Position="241" />
+    <IndexCacheEntry
+      Term="Reports for Inventory"
+      Conditions=""
+      LocalConditions=""
+      Position="247" />
+    <IndexCacheEntry
+      Term="Current Query Results, Inventory Report"
+      Conditions=""
+      LocalConditions=""
+      Position="251" />
+    <IndexCacheEntry
+      Term="Client Lists, Inventory Report"
+      Conditions=""
+      LocalConditions=""
+      Position="259" />
+    <IndexCacheEntry
+      Term="Res Card List, Inventory Report"
+      Conditions=""
+      LocalConditions=""
+      Position="263" />
+    <IndexCacheEntry
+      Term="Traveler List, Inventory Report"
+      Conditions=""
+      LocalConditions=""
+      Position="266" />
+    <IndexCacheEntry
+      Term="Reports for Agency Operations"
+      Conditions=""
+      LocalConditions=""
+      Position="285" />
+    <IndexCacheEntry
+      Term="Trams Crystal Reports"
+      Conditions=""
+      LocalConditions=""
+      Position="444" />
+    <IndexCacheEntry
+      Term="Crystal Reports"
+      Conditions=""
+      LocalConditions=""
+      Position="444" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

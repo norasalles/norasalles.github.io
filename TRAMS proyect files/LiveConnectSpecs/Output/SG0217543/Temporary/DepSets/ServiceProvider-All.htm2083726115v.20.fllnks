@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/LiveConnectSpecs.htm" />
+    <Link
+      Url="Content/ServiceProvider.htm" />
+    <Link
+      Url="Content/Resources/Images/serviceprovider.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_general.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_flightdetails.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_travelerdetails.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_itininvoiceremarks.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_agentremarks.png" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspair.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsphotel.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspcar.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspcruise.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsprail.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsptransport.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspmisc.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsptour.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspsvcfee.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspinsurance.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/LiveConnectSpecs.htm" />
+    <Link
+      Url="Content/ServiceProvider.htm" />
+    <Link
+      Url="Content/Resources/Images/serviceprovider.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_general.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_flightdetails.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_travelerdetails.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_itininvoiceremarks.png" />
+    <Link
+      Url="Content/Resources/Images/SERVICEPROVIDER_Air_agentremarks.png" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspair.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsphotel.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspcar.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspcruise.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsprail.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsptransport.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspmisc.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlsptour.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspsvcfee.htm" />
+    <Link
+      Url="Content/Resources/PopUps/xmlspinsurance.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/TableStyles/Normal_Table.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

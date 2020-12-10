@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="423" MadCap:lastWidth="710">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Corporate and Group Profiles Matching Logic</h1>
+        <h2>Section 4</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no records are found via Sections 1, 2, or 3, OR there are still multiple AN and/or DK matches that haven't been resolved...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Insert a new Profile:</p>
+                <ol>
+                    <li>Of type Corporate if SP Profile Type is CRP.</li>
+                    <li>Of type Leisure if SP Profile Type is GRP.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If the SP Profile has AN Numbers...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Set PROFILE.INTERFACEID to the first available value (after <a href="corp-group-matching2.htm">Section 2</a> is performed).</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If the SP Profile does not have AN Numbers and does have DK Numbers...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Set PROFILE.INTERFACEID to the first available value (after <a href="corp-group-matching3.htm">Section 3</a> is performed).</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If the SP Profile does not have an AN or a DK...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Leave PROFILE.INTERFACEID blank.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If the SP Profile has both AN and DK numbers...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Set PROFILE.INTERFACEID to the first available AN or DK value (AN takes priority).</li>
+                    <li>Treat rest of the sync in of the SP Profile as an update.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

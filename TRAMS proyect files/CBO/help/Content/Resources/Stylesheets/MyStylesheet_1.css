@@ -1,0 +1,433 @@
+/*<meta />*/
+
+/*<meta sourceDocument="C:\Users\SG0222835\My Projects\TRAMS\Help Files\CBO Help files\CBO409 Help\PNR Integration SR360_CBO.docx" />*/
+
+p.MyStyle
+{
+	font-family: Arial;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+p.productnewfeature
+{
+	text-align: right;
+	margin-left: 1px;
+	color: #333333;
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: -0.9em;
+	font-size: 11;
+}
+
+p.releasedate
+{
+	text-align: right;
+	font-family: Batang;
+	color: #000000;
+	margin-top: 1.12em;
+	margin-bottom: 0.12em;
+}
+
+p.header_concept
+{
+	text-align: right;
+	color: #000000;
+	font-size: 10pt;
+	margin-bottom: -0.85em;
+	font-family: Roboto;
+}
+
+h1
+{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24pt;
+	color: #808080;
+	margin-bottom: -0.33em;
+	font-family: 'Roboto Black';
+}
+
+h2
+{
+	font-size: 18pt;
+	font-weight: bold;
+	color: #C00000;
+	font-style: inherit;
+	font-family: Roboto;
+}
+
+h3
+{
+	font: ;
+	color: #243F60;
+	font-size: 14pt;
+	font-weight: bold;
+	font-family: Roboto;
+}
+
+p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	color: #000000;
+}
+
+p.Footerbottomline
+{
+	text-align: right;
+	font-family: Arial;
+	color: #7d858a;
+	font-size: 10pt;
+}
+
+p.footer
+{
+	font-family: Roboto;
+	color: #696969;
+}
+
+li.ListParagraph
+{
+	font-family: Arial;
+	color: #000000;
+	font-size: 12pt;
+}
+
+h1.Contents	/*hide TOC*/
+{
+	mc-heading-level: 0;
+}
+
+hr
+{
+	
+}
+
+p.productnewfeaturepdf
+{
+	text-align: right;
+	margin-left: 1px;
+	color: #333333;
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: -0.9em;
+	font-size: 9pt;
+	margin-top: 0.12em;
+	letter-spacing: 1px;
+}
+
+p.p_1
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	color: #000000;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	color: #000000;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	color: #000000;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li.li_1
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	color: #000000;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	color: #000000;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+h1.Heading1
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-left: 0pt;
+	text-indent: 1pt;
+	mc-heading-level: 1;
+	font-family: Roboto;
+	font-weight: bold;
+	color: #000000;
+	font-size: 12pt;
+}
+
+img.img_1
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 134px;
+	height: 33px;
+}
+
+p.p_2
+{
+	margin-bottom: 1pt;
+	margin-left: 418pt;
+	margin-right: 0pt;
+}
+
+p.p_3
+{
+	margin-bottom: 0pt;
+	margin-left: 1pt;
+	text-align: center;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+span.span_1
+{
+	font-family: Roboto;
+	font-size: 12pt;
+}
+
+span.span_2
+{
+	font-family: Roboto;
+	color: #0563C1;
+	font-size: 12pt;
+	text-decoration: underline;
+}
+
+p.p_4
+{
+	margin-bottom: 1pt;
+	margin-left: 0pt;
+	text-indent: 1pt;
+}
+
+p.p_5
+{
+	margin-bottom: 1pt;
+	margin-left: 0pt;
+	text-indent: 1pt;
+	font-family: Roboto;
+	font-size: 12pt;
+}
+
+span.span_3
+{
+	font-family: Roboto;
+	font-style: italic;
+}
+
+span.span_4
+{
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: italic;
+}
+
+p.p_6
+{
+	margin-bottom: 0pt;
+	margin-left: 36pt;
+}
+
+img.img_2
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 481px;
+	height: 175px;
+}
+
+p.p_7
+{
+	margin-bottom: 0pt;
+}
+
+span.span_5
+{
+	font-family: Roboto;
+}
+
+span.span_6
+{
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+img.img_3
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 430px;
+	height: 216px;
+}
+
+span.span_7
+{
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+img.img_4
+{
+	z-index: 1;
+	visibility: visible;
+	mso-wrap-style: square;
+	mso-wrap-distance-left: 9pt;
+	mso-wrap-distance-top: 0;
+	mso-wrap-distance-right: 9pt;
+	mso-wrap-distance-bottom: 0;
+	mso-position-horizontal: absolute;
+	mso-position-horizontal-relative: page;
+	mso-position-vertical: absolute;
+	mso-position-vertical-relative: page;
+	margin-left: 480.6pt;
+	width: 133px;
+	height: 33px;
+}
+
+img.img_5
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 554px;
+	height: 471px;
+}
+
+p.p_8
+{
+	margin-bottom: 0pt;
+	margin-right: 85pt;
+	text-align: right;
+}
+
+p.p_9
+{
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	text-indent: 1pt;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+span.span_8
+{
+	font-family: Roboto;
+	font-style: italic;
+	font-size: 12pt;
+}
+
+span.span_9
+{
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12pt;
+}
+
+p.p_10
+{
+	margin-bottom: 0pt;
+	margin-left: 1pt;
+	text-align: center;
+}
+
+img.img_6
+{
+	z-index: 2;
+	visibility: visible;
+	mso-wrap-style: square;
+	mso-wrap-distance-left: 9pt;
+	mso-wrap-distance-top: 0;
+	mso-wrap-distance-right: 9pt;
+	mso-wrap-distance-bottom: 0;
+	mso-position-horizontal: absolute;
+	mso-position-horizontal-relative: page;
+	mso-position-vertical: absolute;
+	mso-position-vertical-relative: page;
+	margin-left: 491.4pt;
+	width: 133px;
+	height: 33px;
+}
+
+img.img_7
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 538px;
+	height: 296px;
+}
+
+p.p_11
+{
+	margin-bottom: 2pt;
+	margin-left: 36pt;
+	font-family: Roboto;
+	font-style: italic;
+}
+
+img.img_8
+{
+	visibility: visible;
+	mso-wrap-style: square;
+	width: 478px;
+	height: 287px;
+}
+
+p.p_12
+{
+	margin-right: 5pt;
+	margin-bottom: 0pt;
+	margin-left: 1pt;
+	text-align: center;
+	font-family: Roboto;
+	font-style: italic;
+}
+
+p.p_13
+{
+	margin-left: 5pt;
+	margin-right: 5pt;
+	margin-bottom: 0pt;
+	text-align: center;
+	font-family: Roboto;
+	font-style: italic;
+}
+

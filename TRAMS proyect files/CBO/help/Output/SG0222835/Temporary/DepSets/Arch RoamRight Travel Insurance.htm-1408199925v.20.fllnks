@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="https://www.roamright.com/partners/" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance1/RoamRight Travel Insurance.png" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/features.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/Profile Entries.png" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/booking_complete.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="https://www.roamright.com/partners/" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance1/RoamRight Travel Insurance.png" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/features.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/Profile Entries.png" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/booking_complete.jpg" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="RoamRight Travel Insurance"
+      Conditions=""
+      LocalConditions=""
+      Position="6" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

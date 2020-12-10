@@ -1,0 +1,1401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>Understanding the Agency’s Needs</title>
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <link href="Resources/Stylesheets/Stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_6_Set_Up_Trams_Back_Office"></a>Chapter 6: Set Up Trams Back Office</span>
+        </p>
+        <h1>
+            <MadCap:keyword term="Set Up Trams Back Office" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Trams Back Office</h1>
+        <p class="p_23"><span class="span_1">This chapter contains directions for setting up </span><span class="span_1">Trams Back Office</span><span class="span_1">:</span>
+        </p>
+        <blockquote>
+            <ul style="list-style-type: square;">
+                <li><span class="span_1">Understanding the Agency’s Needs</span>
+                </li>
+                <li><span class="span_1">Getting Started: Set Up Travel Types, Chart of Accounts, G/L Accounts, Prompt Tab in Global Defaults </span>
+                </li>
+                <li><span class="span_1">Set Up Client Balance Core Report </span>
+                </li>
+                <li><span class="span_1">Set Up Vendor Balance Core Report </span>
+                </li>
+                <li><span class="span_1">Set Up ARC/BSP Core Report </span>
+                </li>
+                <li><span class="span_1">Set Up Check Register Core Report and Bank Reconciliation</span>
+                </li>
+                <li><span class="span_1">Enter Opening Balances</span>
+                </li>
+                <li><span class="span_1">General Ledger Setup</span>
+                </li>
+                <li><span class="span_1">Suggested GL Procedures (Daily, Weekly, Monthly)</span>
+                </li>
+                <li><span class="span_1">Balancing Core Reports to Trial Balance Report</span>
+                </li>
+                <li><span class="span_1">Use of GL Reconciliation Report</span>
+                </li>
+                <li><span class="span_1">Set Up and Special Usage for Canadian Agencies</span>
+                </li>
+                <li><i>Remote Access Setup (using Direct Connect)</i>
+                </li>
+                <li><i>Additional Security Settings</i>
+                </li>
+            </ul>
+        </blockquote>
+        <p>&#160;</p>
+        <h2><a name="UnderstandingtheAgency"></a>Understanding the Agency’s Needs</h2>
+        <p class="p_2">Two things to consider before setting up <span class="span_1">Trams Back Office</span>:</p>
+        <p class="p_2">1) Most users have a single Balance Sheet and choose to have a single Income Statement or an Income Statement per branch. Multiple Balance Sheets are available, but are generally only needed if there is a need to print full financials (Balance Sheet and Income Statement) per branch or entity for tax reporting. This is usually only needed if branches are in separate states, or if for some other reason, separate balance sheets for tax purposes are needed.</p>
+        <p class="p_2">2) <span class="span_1">Trams Back Office</span> has the ability to account for invoices as Sales/Costs of Sales or Commission Income. Some agencies have used Commission Income accounting with previous back office systems and may want to consider converting to Sales/Cost of Sales when converting to<span class="span_1"> Trams Back Office</span> as nothing is lost, but much can be gained. </p>
+        <p class="p_2">Using Sales/Cost of Sales does allow for more flexibility especially with regards to yield management information, because we can track the sales/cost of sales for Commtrack invoices, based on the actual commission received. The cost of sales is determined by the difference between the total fare and the commission of the invoices that have a vendor payment. Converting from Commission Income to Sales/Cost of Sales accounting takes place at the time of loading beginning balances into <span class="span_1">Trams Back Office</span>. When using Commission Income method accounts are "rolled up" into a Commission Income account based on the actual commission received and the sales amount is not tracked.</p>
+        <p class="p_2">&#160;</p>
+        <h2><a name="Getting"></a>
+            <MadCap:keyword term="Getting Started" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Getting Started Steps</h2>
+        <p class="p_2">Here are the steps for setting up<span class="span_1"> Trams Back Office</span>:</p>
+        <ol start="1" class="ol_2">
+            <li class="ListParagraph_6" value="1"><a href="#Travel">Set Up Travel Types</a>
+            </li>
+            <li class="ListParagraph_6" value="2"><a href="#SetUp-ChartofAccounts">Set Up Chart of Accounts</a>
+            </li>
+            <li class="ListParagraph_6" value="3"><a href="#General_Ledger_Accounts_Setup">Set Up G/L Accounts</a>
+            </li>
+            <li class="ListParagraph_6" value="4"><a href="#SetUpPrompt">Set Up Prompt Tab in Global Defaults </a>
+            </li>
+            <li class="ListParagraph_6" value="5"><a href="#Set">Set Up Client/Vendor Balances Core Reports</a>
+            </li>
+            <li class="ListParagraph_6" value="6"> Set Up ARC/BSP Core Report </li>
+            <li class="ListParagraph_6">Set Up Check Register Core Report and Bank Reconciliation</li>
+            <li class="ListParagraph_6">Enter Opening Balances</li>
+            <li class="ListParagraph_6">General Ledger Setup<br /></li>
+        </ol>
+        <p>&#160;</p>
+        <h3><a name="Travel"></a>
+            <MadCap:keyword term="Travel Types" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Travel Types</h3>
+        <p class="p_2">Travel Types in <span class="span_1">Trams Back Office</span> are categories to organize bookings by the type of travel that they represent. For example, it is often useful to see a breakdown of the business by travel type. The travel types are initially set up as shown below. Modify any of the 50 available travel types to correspond to a category that are needed. </p>
+        <p class="p_2">Remember that travel types define what Sales/Cost of Sales that will be updated during an EOP journal entry. If adding a travel type, be sure to create a GL account for the Sales/Cost of Sales accounts under <span>General Ledger|Accounts</span> and update the table under <span>Utilities|GL Accts</span><span class="span_1">.</span></p>
+        <p class="p_20">Selecting Travel Categories</p>
+        <p class="p_20">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office.jpg" style="height: 312px;width: 450px;" class="img_1" />
+        </p>
+        <p class="p_2">To setup Travel Types go to <span>Utilities|Setup|Travel Types</span></p>
+        <p class="p_2">Rearrange the Travel Types by using the <span class="span_1">Move Up </span>and <span class="span_1">Move Down</span> buttons. However, if the agency plans to interface, we recommend NOT changing, moving or renaming DomAir, Hotel, Car, Rail, Int'l. In general, we recommend <span class="span_1">leaving the first eight Travel Types alone</span>. The first column contains the travel types used in the invoice booking screen. The second column contains pre-defined categories used to group travel types. These categories are edited by clicking on the travel type, making the changes at the top of the data entry screen and then clicking on <span class="span_1">Update</span> to save those changes. (If adding a new travel type, be sure to choose the correct Travel Category from the drop-down menu.)</p>
+        <p class="p_2">Travel Categories are used to facilitate the Interface from the GDS with uniform travel types. During the Interface, <span class="span_1">Trams Back Office</span> searches the Travel Category column for a similar match. When it finds a match in the Category column, this record is interfaced to the proper Travel Type. </p>
+        <p class="p_2">&#160;</p>
+        <h3><a name="SetUp-ChartofAccounts" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Set Up Chart of Accounts" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Chart of Accounts</h3>
+        <p class="p_2"><span class="span_1">Trams Back Office </span>comes with default General Ledger Accounts which are easily revised. Although a tremendous amount of flexibility is available in tailoring the Chart of Accounts, the following classification rules must be followed:</p>
+        <p class="p_2">&#160;</p>
+        <table style="border-top-left-radius: 3px;border-top-right-radius: 3px;border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;border-left-style: solid;border-left-width: 3px;border-right-style: solid;border-right-width: 3px;border-top-style: solid;border-top-width: 3px;border-bottom-style: solid;border-bottom-width: 3px;margin-left: auto;margin-right: auto;height: 20px;">
+            <col style="width: 80px;" />
+            <col style="width: 130px;" />
+            <col style="width: 130px;" />
+            <col style="width: 100px;" />
+            <col style="width: 100px;" />
+            <tr>
+                <td colspan="5" class="td_26">
+                    <p class="p_20">Account Classifications</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_27">
+                    <p class="p_41">Acct #</p>
+                </td>
+                <td class="td_27">
+                    <p class="p_41">Description</p>
+                </td>
+                <td class="td_27">
+                    <p class="p_42">Natural Balance</p>
+                </td>
+                <td class="td_27">
+                    <p class="p_41">Increase</p>
+                </td>
+                <td class="td_27">
+                    <p class="p_41">Decrease</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_28">
+                    <p class="p_43">1000</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Assets</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_45">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Credit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_29">
+                    <p class="p_44">2000</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Liabilities</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_45">Credit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Credit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Debit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_28">
+                    <p class="p_44">3000</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Capital</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_45">Credit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Credit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Debit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_29">
+                    <p class="p_44">4000</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Sales</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_45">Credit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Credit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Debit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_28">
+                    <p class="p_44">5000</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Cost of Sales</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_45">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Credit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_29">
+                    <p class="p_44">6000</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Expenses</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_45">Debit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Debit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Credit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_28">
+                    <p class="p_44">7000</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Expenses</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_45">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Credit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_29">
+                    <p class="p_44">8000</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Expenses</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_45">Debit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Debit</p>
+                </td>
+                <td class="td_29">
+                    <p class="p_44">Credit</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_28">
+                    <p class="p_44">9000</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Expenses</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_45">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Debit</p>
+                </td>
+                <td class="td_28">
+                    <p class="p_44">Credit</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p class="p_2">Within these classifications, assign account numbers and descriptions. For example, include up to 4,000 expense accounts, each of which must be numbered in the range 6000...9999. It is important to understand that every business is slightly different, with different assets, liabilities etc. Although <span class="span_1">Trams Back Office </span>comes with a default Chart of Accounts, time must be spent tailoring these accounts for the business before implementing the General Ledger.</p>
+        <p class="p_2">The accounts listed below are accounts automatically updated by <span class="span_1">Trams Back Office </span>when creating <span class="span_19">End of Period</span>, standard, and <span class="span_19">Year End</span> journal entries. These accounts numbers and descriptions should be modified with caution, and if changed, update the table found in <span>Utilities|Setup|Gl Accounts</span> if the <span class="span_19">End of Period</span> journal entry is to be used in <span class="span_1">Trams</span>. Following is an explanation of each:</p>
+        <table class="table_1">
+            <col style="width: 84pt;" />
+            <col style="width: 2pt;" />
+            <col style="width: 383pt;" />
+            <tr>
+                <td colspan="3" class="td_1">
+                    <p class="p_4">Account Definitions</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_2">
+                    <p class="p_4">1000 &amp; 1005 </p>
+                    <p class="p_5"><span>Default </span><span class="span_1">Cash In Bank</span><span> accounts. </span>
+                    </p>
+                </td>
+                <td class="td_2">
+                    <p class="p_5"><span class="span_1">Trams Back Office </span>can integrate up to 100 Check Registers into the General Ledger through the End of Period journal entry. Each Check Register established in <span>Utilities|Setup|Bank Accounts</span> should have a corresponding General Ledger account set up within the General Ledger. To identify which Check Register corresponds to which General Ledger account, update the area called Bank Accounts in GL setup screen under the <span>Utilities|Setup|G/L Accounts</span> menu options.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_2">
+                    <p class="p_4">1100</p>
+                    <p class="p_5"><span>Default </span><span class="span_1">Client Balances</span><span> Account </span>
+                    </p>
+                </td>
+                <td class="td_2">
+                    <p class="p_5"><span class="span_1">Trams Back Office </span>maintains all client balances in one management report called Client Balances. Because of this, one corresponding GL account is maintained within the General Ledger. If this corresponding account is changed from the default account, update Client Balances in GL Setup screen under the <span>Utilities|Setup|G/L Accounts</span> menu options.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_2">
+                    <p class="p_4">2000</p>
+                    <p class="p_5"><span>Default </span><span class="span_1">Vendor Balances</span><span> Account </span>
+                    </p>
+                </td>
+                <td class="td_2">
+                    <p class="p_5"><span class="span_1">Trams Back Office </span>maintains all vendor balances in one management report called Vendor Balances. Because of this, one corresponding GL account is maintained within the General Ledger. If this corresponding account is changed from the default account, update Vendor Balances in GL Setup screen under the <span>Utilities|Setup|G/L Accounts</span> menu options.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_2">
+                    <p class="p_4">2010</p>
+                    <p class="p_5"><span>Default </span><span class="span_1">ARC/BSP Balances</span><span> Account </span>
+                    </p>
+                </td>
+                <td class="td_2">
+                    <p class="p_5"><span class="span_1">Trams Back Office </span>maintains all ARC/BSP balances in one management report called <span>ARC/BSP Balances</span>. Because of this, one corresponding GL account is maintained within the General Ledger. If this corresponding account is changed from the default account, update ARC/BSP Balances in GL Setup screen under the <span>Utilities|Setup|G/L Accounts</span> menu options.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_2">
+                    <p class="p_4">3200</p>
+                    <p class="p_4">Retained Earnings</p>
+                </td>
+                <td class="td_2">
+                    <p class="p_5">When doing a Year End, the total of all the 4000, 5000, 6000, 7000, 8000, and 9000 accounts are put into Retained Earnings and these accounts are set to 0.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_2">
+                    <p class="p_4">4000-4060</p>
+                    <p class="p_4">5000-5060</p>
+                    <p class="p_5"><span>Default </span><span class="span_1">Sales and Cost of Sales</span><span> Accounts </span>
+                    </p>
+                </td>
+                <td class="td_2">
+                    <p class="p_5">A table located in <span>Utilities|Setup|Travel Types</span> allows users to classify sales activities into categories. Each category established in the Travel Type table should have a corresponding Sale and Cost of Sales account within the General Ledger. If these Travel Types are modified, update the General Ledger accounts so that each new Travel Type has a corresponding GL account, and then update the GL setup.</p>
+                    <p class="p_5"><span class="span_13">Note</span>: If the setting <span class="span_1">Commission Income</span> is chosen under <span>Utilities|Setup|Global Defaults</span>, the table must also have a corresponding Commission Income account for each Travel Type. Accounts are 4000 series account numbers.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="td_1">
+                    <p class="p_4">Account Types</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_4">Detail Accounts </p>
+                </td>
+                <td colspan="2" class="td_2">
+                    <p class="p_5">All <span class="span_19">Detail</span> accounts are treated individually on the Detail General Ledger reports. If a <span class="span_19">Detail</span> account's number is within the range specified for a <span class="span_19">Summary</span> account, its balance can also be reflected as part of that <span class="span_19">Summary's</span> account balance on all <span class="span_19">Summary</span> General Ledger reports.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_4">Summary Accounts </p>
+                </td>
+                <td colspan="2" class="td_2">
+                    <p class="p_5"><span class="span_1">Summary</span> accounts are used for summarizing a range of Detail accounts and cannot have balances posted to them. If a <span class="span_19">Summary</span> General Ledger report is selected, it summarizes any account balances numbered within the <span class="span_19">Summary</span> account's range.</p>
+                </td>
+            </tr>
+        </table>
+        <h4><a name="AddtotheGeneralLedger"></a>Add to the General Ledger Chart of Accounts</h4>
+        <p class="p_2">To add a to the existing Chart of Accounts:</p>
+        <p class="p_2">1. Click <span>General Ledger|Accounts</span>.</p>
+        <p class="p_2">2. Click <span class="span_1">New</span> then <span class="span_1">Account No</span> field and type in the number of the General Ledger account being added. When using all the General Ledger features in <span class="span_1">Trams</span>, the following series must be followed:</p>
+        <p class="p_23">1000 = Assets</p>
+        <p class="p_23">2000 = Liabilities</p>
+        <p class="p_23">3000 = Capital</p>
+        <p class="p_23">4000 = Sales</p>
+        <p class="p_23">5000 = Cost of Sales</p>
+        <p class="p_23">6000 - 9999 = Expenses</p>
+        <p class="p_2">3. Leave the <span class="span_1">Active GL Account</span> field checked.</p>
+        <p class="p_2">4. In the <span class="span_1">Account Name</span> field, type in the name of the account.</p>
+        <p class="p_2">5. Click the arrow to the right of the <span class="span_1">Account Type</span> field and choose <span class="span_1">Detail</span> or <span class="span_1">Summary.</span></p>
+        <p class="p_2">If adding a summary account, click the <span class="span_1">From</span> and <span class="span_1">To</span> fields and type in the account numbers to be summarized. Remember to include the summary General Ledger account in the range.</p>
+        <p class="p_2"><span class="span_20">Note</span>: There are <span class="span_3">two</span> types of General Ledger accounts:</p>
+        <p class="p_23"><span class="span_1">Detail</span>: accounts to which Journal Entries are directed. </p>
+        <p class="p_23"><span class="span_1">Summary</span>: accounts used to total any detailed accounts falling under a designated range of account numbers.</p>
+        <p class="p_20">For example:</p>
+        <p class="p_2">6000 Telephone Summary Account</p>
+        <p class="p_2">6005 Telephone - Local (Detail Account)</p>
+        <p class="p_2">6010 Telephone - Long Distance (Detail Account)</p>
+        <p class="p_2">6015 Telephone - Fax (Detail Account)</p>
+        <p class="p_2">If there are multiple expenses for phone services, account numbers 6005, 6010, and 6015 are the detail accounts to which journal entries are directed. Account number 6000 would be the Summary account which totals the balances from the range of account numbers 6000 through 6015.</p>
+        <p class="p_2">6. Click <span class="span_1">Add</span> to add the account to the list.</p>
+        <p class="p_2"><span class="span_21">7. </span>Once all accounts are added, click <span class="span_1">OK </span>to save.</p>
+        <table class="table_1">
+            <col style="width: 467pt;" />
+            <tr>
+                <td class="td_30">
+                    <p class="p_2">Fly Away Travel wants to add an expense account for “Employee Fam Trips.” They create an account 6261 by Clicking <span class="span_1">New</span> then entering the Account No. and the Account Name, then clicking on <span class="span_1">Add.</span></p>
+                </td>
+            </tr>
+        </table>
+        <p class="p_2"><span>Note: </span>The fields <span class="span_1">Category </span>and <span class="span_1">Expense Type</span> are used for Financial Modeling. Please refer to the Financial Modeling chapter for more detail. </p>
+        <h4>Account Status</h4>
+        <p class="p_2">Indicate a status of active or inactive on the general ledger accounts by selecting the main <span class="span_19">General Ledger</span> menu, then <span class="span_19">Accounts</span>. Highlight the account and click the <span class="span_19">Active GL Account</span>. When the checkmark is showing, the account is active and can be updated with a journal entry. When the checkmark is not showing, the account is dimmed and cannot be accessed or updated with a journal entry from a payment screen or general ledger Journal Entry. This provides continuity in the General Ledger and avoids entries to old accounts. </p>
+        <table class="table_1">
+            <col style="width: 467pt;" />
+            <tr>
+                <td class="td_30">
+                    <p class="p_2">Aloha Travel Center set up a general ledger expense account for their tenth anniversary office party. After the bills were reconciled, the account was marked <span class="span_1">inactive</span> preventing any further journal entries to this account. </p>
+                </td>
+            </tr>
+        </table>
+        <h4>Modifying General Ledger Chart of Accounts</h4>
+        <p class="p_2">General Ledger accounts can be renamed or they can be deleted if the account does not have activity attached to it. If an account can not be deleted, deactivate by removing the check mark from the box,<span class="span_19"> Active GL Account</span>.</p>
+        <h4>To Delete a General Ledger Account</h4>
+        <p class="p_2">1. Click <span>General Ledger|Accounts</span>.</p>
+        <p class="p_2">2. Click the account being deleted to highlight it and click <span class="span_1">Delete</span>.</p>
+        <p class="p_2">3.<span class="span_1"> Trams Back Office </span>prompts, “Delete Record? Click <span class="span_1">YES</span><span class="span_18">.</span></p>
+        <p class="p_2">4. Once all accounts are deleted, click <span class="span_1">OK </span>to save.</p>
+        <h4>To Rename a General Ledger Account</h4>
+        <p class="p_2">1. Click <span>General Ledger|Accounts</span>.</p>
+        <p class="p_2">2. Click the account being modified to highlight it. Click the <span class="span_1">Account Name</span> field and type in the new account name. Click the <span class="span_1">Update</span> button to store the change.</p>
+        <p class="p_2">3. Once all accounts are updated, click <span class="span_1">OK </span>to save.</p>
+        <h4>To Deactivate a General Ledger Account</h4>
+        <p class="p_2">Deactivate an account when it is longer wanted, but there is journal entry history attached to the account that is needed.</p>
+        <p class="p_2">1. Click <span>General Ledger|Accounts</span>.</p>
+        <p class="p_2">2. Click the account being deactivated to highlight it and the <span class="span_1">Active GL Account</span> box to remove the check mark. Click the <span class="span_1">Update</span> button to store the change.</p>
+        <p class="p_2">3. Once all accounts are updated, click <span class="span_1">OK </span>to save.</p>
+        <p class="p_2"><span class="span_20">Note: </span>Inactive accounts maintain their balances and print on Financial Statements. It is suggested to zero out the account balance before making the account inactive.</p>
+        <h4>To Activate a General Ledger Account</h4>
+        <p class="p_2">1. Click <span>General Ledger|Accounts</span>.</p>
+        <p class="p_2">2. Click on the account being activated to highlight it and click the <span class="span_1">Active GL Account</span> box. This places a check mark in the box. Click the <span class="span_1">Update</span> button to store the change.</p>
+        <p class="p_2">3. Once all modifications have been made, click <span class="span_1">OK</span>.</p>
+        <h4>Chart of Accounts Report</h4>
+        <p class="p_2">Click <span>Reports|General Ledger|Chart of Accounts</span>. <span class="span_1">Trams Back Office </span>prompts, “<span class="span_1">Only Active GL Accounts? Yes or No</span>.” Choose <span class="span_1">YES</span> to see only <span class="span_1">live</span> accounts. Choose <span class="span_1">NO</span> to see <span class="span_1">all</span> accounts.</p>
+        <p class="p_2">Once the report appears on the screen, click the printer icon.</p>
+        <p class="p_20">Chart of Accounts Report</p>
+        <p class="p_20">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_1.jpg" style="height: 297px;width: 262px;" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <h3><a name="GeneralLedger-AccountsSetup" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="General Ledger Accounts Setup" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up General Ledger Accounts</h3>
+        <p class="p_2">Before setting up the GL Accounts, first set up the Travel Types table and Chart of Accounts (see sections <span class="span_1">Travel Types </span>and <span class="span_1">Setting Up Chart of Accounts</span> this Chapter).</p>
+        <p class="p_2">1. Click <span>Utilities|Setup|GL Accounts</span>.</p>
+        <p class="p_2">2. Match the Sales and Cost of Sales accounts from the Chart of Accounts to each Sales and Cost of Sales account for each Travel Type on the General Ledger Accounts Setup table. Each <span class="span_1">Travel Type</span> needs a separate Sales and Cost of Sales account number.</p>
+        <p class="p_2">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_2.jpg" style="height: 466px;width: 473px;" class="img_1" />
+        </p>
+        <p class="p_2">(<span class="span_20">Exception</span><span>:</span> If the <span class="span_1">Comm Track Payments in EOP </span>field in the Global Defaults is set to<span class="span_1"> Commission Income</span>, there will also have to be a Commission Income account for each travel type.)</p>
+        <p class="p_2">3. Next, while still under <span>Utilities|Setup|GL Accts</span><span class="span_1">, </span>click the <span class="span_1">Bank Accounts</span> tab.</p>
+        <p class="p_2">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_3.jpg" style="height: 262px;width: 421px;" class="img_1" />
+        </p>
+        <p class="p_2">4. Match the Bank Account numbers (1, 2, 3, etc.) to their corresponding General Ledger accounts (1000 series). If the bank account is not a foreign account, the conversion field is not needed. Therefore, type in "6666" as the account number for this field.</p>
+        <p class="p_2">5. While still under <span>Utilities|Setup|GL Accts</span><span class="span_1">, </span>click the <span class="span_1">Others</span> tab.</p>
+        <p class="p_2">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_4.jpg" style="height: 440px;width: 450px;" class="img_1" />
+        </p>
+        <p class="p_2">6. Match the Client Balance, Vendor Balance, ARC/BSP Balance, etc. to their corresponding General Ledger accounts. If NOT using the CC Merchant Receivables account, type in “6666” as the account number for this field.</p>
+        <p class="p_2">&#160;</p>
+        <h3><a name="SetUpPrompt" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Set Up Prompt Tab" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Prompt Tab in Global Defaults</h3>
+        <p class="p_2">Choose a start date to enter beginning balances, usually the beginning of a month or quarter. On that start date, go to <span>Utilities|Setup|Global Defaults</span> and click on the <span class="span_1">Prompt</span> tab. Under the <span class="span_1">Journal Entry Prompting</span> tab, indicate to <span class="span_1">Trams Back Office </span>how interact with the program by selecting one of these settings.</p>
+        <p class="p_2">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_5.jpg" style="height: 416px;width: 493px;" class="img_1" />
+        </p>
+        <p class="p_2">1. <span class="span_19">All</span><span class="span_15"> - </span><span class="span_1">Trams Back Office </span>will prompt to create a journal entry for any payment received or made.</p>
+        <p class="p_2">2. <span class="span_19">None</span> - There are no prompts for the journal entry at the time of payment. While using this option, the only way to journalize a payment is by selecting General Ledger, then journal entry from the main menu.</p>
+        <p class="p_2">3<span class="span_15">. </span><span class="span_19">Recommended/Prompt</span> - <span class="span_1">Trams Back Office prompts </span>to create a journal entry when payments are received or made with a pay method of <span class="span_1">O</span><span class="span_19">ther</span> or a profile type of <span class="span_19">Other</span>.</p>
+        <p class="p_2">4. <span class="span_19">Recommended/Always </span><span class="span_1">- Trams Back Office </span>automatically displays a journal entry screen when payments are received or made with a pay method of <span class="span_19">Other</span> or a profile type of <span class="span_19">Other</span>. This option enters the first general ledger account necessary to fill in the journal entry. Supply the offset account to finish the journal entry. <span>This is </span><span class="span_1">Trams Back Office </span><span>recommended setting</span>.</p>
+        <p class="p_2">5. <span class="span_1">Mandatory</span> -<span class="span_1"> Trams Back Office</span> requires a journal entry before the payment can be saved.</p>
+        <p class="p_2"><span class="span_13">NOTE:</span> Do NOT use setting #1or #2 if using the General Ledger in the recommended manner. </p>
+        <p>&#160;</p>
+        <h3><a name="Set"></a>
+            <MadCap:keyword term="Set Up Client/Vendor Balances Core Reports" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Client/Vendor Balances Core Reports</h3>
+        <p class="p_2">Client Balances prior to the start of <span class="span_1">Trams Back Office</span> need to be entered into the <span class="span_1">Trams Back Office</span> program. When client payments are received, an invoice will be present in <span class="span_1">Trams Back Office</span> in order to apply payments. Client Balances are entered in <span class="span_1">Trams Back Office </span>by creating invoices. Agencies have two choices when entering prior Client Balances. By using <span>Method One</span>, enter each invoice individually with complete Client, Vendor and Agent details which ensure accurate Client and Agent Statements, and Vendor detailed reports. Or create a separate invoice for each Client Balance using the “short cut” <span>Method Two</span> below. Be aware that by using this method; however, may stop the program’s flexibility resulting in inaccurate Client and Agent Statements, and Vendor detailed reports.</p>
+        <h4>From Previous Back Office System, run:</h4>
+        <ul class="ul_1">
+            <li class="ListParagraph_7" value="1">Client Balance Report (Accounts Receivable)</li>
+            <li class="ListParagraph_7" value="2">Vendor Balance Report (Accounts Payable)</li>
+            <li class="ListParagraph_7" value="3">Income Statement (Profit/Loss Statement)</li>
+            <li class="ListParagraph_7" value="4">Balance Sheet</li>
+            <li class="ListParagraph_7" value="5">Trial Balance</li>
+        </ul>
+        <h3><a name="Set2"></a>
+            <MadCap:keyword term="Set Up Client Balance Report" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Client Balance Report</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_7" value="1">In <span class="span_1">Trams </span>run <span class="span_1">Report/Core/Client Balances</span><span>in detail</span> using date one day prior to the start-up date</li>
+            <li class="ListParagraph_7" value="2">Compare to previous system Client Report and note differences.</li>
+            <li class="ListParagraph_7" value="3">Make any entries in <span class="span_1">Trams Back Office</span> to correct report (see directions below). Remember to include unapplied balances!</li>
+            <li class="ListParagraph_7" value="4">Rerun Client Balance Report in detail using date one day prior to the start-up date. Verify that all balances match the report from the previous system.</li>
+        </ul>
+        <h3><a name="Set3"></a>
+            <MadCap:keyword term="Set Up Vendor Balance Report" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Vendor Balance Report</h3>
+        <p class="p_2">Vendor balances prior to the start of <span class="span_1">Trams Back Office</span> need to be entered into the <span class="span_1">Trams Back Office</span> program. When payments are made to Vendors, an invoice will be present in <span class="span_1">Trams Back Office</span> in order to apply payments. First steps for setting up the Vendor Balances:</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_7" value="1"><span>*</span>In <span class="span_1">Trams</span> run <span class="span_1">Report/Core/Vendor Balances</span> in detail using date one day prior to the start-up date.</li>
+            <li class="ListParagraph_7" value="2">*Compare to previous system Vendor Balance Report and Note differences.</li>
+            <li class="ListParagraph_7" value="3">*Make any entries in <span class="span_1">Trams Back Office</span> to correct report (see directions below). Remember to include unapplied balances.!</li>
+            <li class="ListParagraph_7" value="4">*Rerun Vendor Balance Report in detail using date one day prior to the start-up date. Verify that all balances are correct.</li>
+        </ul>
+        <h4>
+            <MadCap:keyword term="Creating Separate Invoices - Method One" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Creating Separate Invoices for Each Client/Vendor Balance - Method One</h4>
+        <p class="p_2">1. Click on <span>Invoices|Sale</span>.</p>
+        <p class="p_2">2. To create Client Balances<span class="span_22"> - </span>Enter all invoice details pointing to the correct client, agent and vendor profiles for all <span>client </span>outstanding balances. Use the correct issue date of the invoice<span class="span_22">. </span>Make sure the Submit To is properly set to ensure Client Balances for invoices is correct.</p>
+        <p class="p_2">3. To create Vendor Balances<span class="span_22"> - </span>Enter all invoice details, pointing to the correct client, agent and vendor references for all <span>vendor</span> outstanding balances. Use the correct issue date of the invoice<span class="span_22">. </span>Make sure the Submit To is properly set to ensure Vendor Balances for invoices is correct.</p>
+        <p class="p_2">4. Go to <span>Reports|Core</span> and run a Client Balance Report and a Vendor Balance Report with dates set one day prior to the startup date.</p>
+        <p class="p_2">5. Compare the Core Reports to the previous accounting system’s Account Receivable and Accounts Payable.</p>
+        <p class="p_2">6. Since creating an Invoice creates a Client balance and Vendor Payable which may have been paid prior to starting <span class="span_1">Trams</span>, write off any outstanding balances by using directions below.</p>
+        <p class="p_2">7. Add any unapplied balances by following directions below.</p>
+        <p class="p_2">8. WHEN COMPLETING ENTERING ALL INVOICES AND UNAPPLIED BALANCES (and have done write-offs, if necessary), DON’T FORGET TO RERUN THE CLIENT BALANCE CORE REPORT WITH DATES SET ONE DAY PRIOR TO THE START-UP DATE TO MAKE SURE THE BALANCES ARE ACCURATE.</p>
+        <h4>
+            <MadCap:keyword term="Remove/Write Off a Previous Client Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Remove/Write Off a Previous Client Balance</h4>
+        <p class="p_2">When setting up the Core Report, remove/write off a previous Client Balance by:</p>
+        <p class="p_2">1. Go to <span>Payments|Received</span>. </p>
+        <p class="p_2">2. Enter the Amount of invoice to be removed/written off.</p>
+        <p class="p_2">3. Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4. Choose Payment Method of OTHER.</p>
+        <p class="p_2">5. Under Remarks, type “Prior Receivable Write-off”.</p>
+        <p class="p_2">6. In the <span class="span_1">Name</span> field, enter the Client Name. </p>
+        <p class="p_2">7. Toggle the invoice closed by clicking <span class="span_1">Toggle Close</span>.</p>
+        <p class="p_2">8. Do NOT create a Journal Entry when prompted. (When the GL is set up, create a JE and write it off to a bad debt account which is usually a 6xxx account.)</p>
+        <h4>
+            <MadCap:keyword term="Remove/Write Off an Old Vendor Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Remove/Write Off an Old Vendor Balance</h4>
+        <p class="p_2">When setting up the Core Report, remove/write off a previous Vendor Balance by:</p>
+        <p class="p_2">1. Go to <span>Payments|Made</span>. </p>
+        <p class="p_2">2. Enter the Amount of Invoice to be removed/written off.</p>
+        <p class="p_2">3. Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4. Choose Payment Method of OTHER.</p>
+        <p class="p_2">5. Under Remarks, type “Prior Payable Write-off”.</p>
+        <p class="p_2">6. In the <span class="span_1">Name</span> field, enter the Vendor Name. </p>
+        <p class="p_2">7. Toggle the invoice closed by clicking <span class="span_1">Toggle Close</span>.</p>
+        <p class="p_2">8. Do NOT create a Journal Entry when prompted. (When the GL is set up, create a JE and write it off to a bad debt account which is usually a 6xxx account.)</p>
+        <h4>
+            <MadCap:keyword term="Set Up an Unapplied Client Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up an Unapplied Client Balance</h4>
+        <p class="p_2">1. Go to <span>Payments|Received</span>. </p>
+        <p class="p_2">2. Enter the Amount Client paid on account.</p>
+        <p class="p_2">3. Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4. Under Remarks, type “Prior Receivable”.</p>
+        <p class="p_2">5. In the <span class="span_1">Name</span> field, enter the Client Name. <span class="span_1">Trams</span> prompts to build a new profile if it does not find a match.<span> Note: If creating a new Client Profile, make sure to add an Interface ID #.</span> </p>
+        <p class="p_2">6. <span class="span_1">TBO</span> prompts to create a Voucher. Click Yes and Click OK.</p>
+        <h4>
+            <MadCap:keyword term="Set Up an Unapplied Vendor Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up an Unapplied Vendor Balance</h4>
+        <p class="p_2">1. Go to <span>Payments|Made</span>. </p>
+        <p class="p_2">2. Enter the Amount of the Vendor Balance on account.</p>
+        <p class="p_2">3. Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4. Under Remarks, type “Prior Payable”.</p>
+        <p class="p_2">5. In the <span class="span_1">Name</span> field, enter the Vendor Name. <span class="span_1">Trams</span> prompts to build a new profile if it does not find a match.<span> Note: If creating a new Vendor Profile, make sure to add an Interface ID #.</span> </p>
+        <p class="p_2">6. <span class="span_1">Trams </span>prompts to create a Voucher. Click Yes and Click OK.</p>
+        <p>&#160;</p>
+        <h4>
+            <MadCap:keyword term="Creating Separate Invoices - Method Two" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Create Invoices in Detail w/Shortcut Method Two</h4>
+        <p class="p_2">Client Balances are entered in <span class="span_1">Trams</span> by creating invoices. Create a separate invoice for each Client Balance. Click on <span>Invoices|Sale</span>.</p>
+        <p class="p_2">1. In the <span class="span_1">Invoice #</span> field, type in the invoice number of the unpaid invoice. </p>
+        <p class="p_2">2. The <span class="span_1">Issue Date</span> is the date <span class="span_3">prior</span> to the start-up date, e.g.12/31/xx if the start-up date is 01/01/xx.</p>
+        <p class="p_2">3. In the <span class="span_1">Remarks</span> field, type in <span class="span_1">Prior Receivable</span> or any other free flow information. </p>
+        <p class="p_2">4. In the <span class="span_1">Name</span> field, enter the Client Name. <span class="span_1">Trams</span> prompts to build a new profile if it does not find a match.<span> Note: If creating a new Client Profile, make sure to add an Interface ID #.</span> </p>
+        <p class="p_2">5. Click <span class="span_1">OK</span> to process.</p>
+        <p class="p_2">6. Change the <span class="span_1">Submit To</span> field to <span class="span_1">Supplier</span>.</p>
+        <p class="p_2">7. In the <span class="span_1">Vendor Name</span> field, type in <span class="span_1">Prior Client Balances</span>.<span class="span_1"> Trams</span> prompts to create a new profile if it does not find a match. </p>
+        <p class="p_2">8. In the <span class="span_1">Total Fare</span> field, type in the amount owed.</p>
+        <p class="p_2">9. The <span class="span_1">Taxes/Rate</span> and <span class="span_1">Commission/Rate</span> fields are <span class="span_1">0.00</span>.</p>
+        <p class="p_2">10. Click <span class="span_1">No </span>on the prompt “Enter a payment for this invoice?”</p>
+        <p class="p_2">Since creating a Receivable also creates a Payable, enter a Payment Made to close off all the Vendor Balances now contained in the Profile, “Prior Client Balances.”</p>
+        <p class="p_2">1. Click <span>Reports|Core|Vendor Balances</span>.</p>
+        <p class="p_2">2. In the <span class="span_1">As Of</span> field, enter the date. The date should be one day <span class="span_3">prior</span> to the start date.</p>
+        <p class="p_2">3. Change the <span class="span_1">Format</span> field to Summary, then click <span class="span_1">OK</span> to process. </p>
+        <p class="p_2">4. Find the <span class="span_1">Balance Due</span> total for the profile <span class="span_1">Prior Client Balances</span> and make a Note of the balance.</p>
+        <p class="p_2">5. Next, click <span>Payments|Made</span>.</p>
+        <p class="p_2">6. In the <span class="span_1">Amount</span> field, type in the total amount of the Prior Client Balances Noted from the Vendor Balance report.</p>
+        <p class="p_2">7. Change the <span class="span_1">Payment Method</span> to <span class="span_1">Other</span>.</p>
+        <p class="p_2">8. The <span class="span_1">Pay Date</span> is one day <span class="span_3">prior</span> to the start date.</p>
+        <p class="p_2">9. Leave the <span class="span_1">Check/CC No</span> field blank.</p>
+        <p class="p_2">10. Leave the <span class="span_1">Payment Code</span> field blank.</p>
+        <p class="p_2">11. Leave the <span class="span_1">Payment Group</span> field blank.</p>
+        <p class="p_2">12. In the <span class="span_1">Remark</span> field, type “<span class="span_1">To Close Prior Payable.</span>”</p>
+        <p class="p_2">13. Change <span class="span_1">Profile Type</span> to <span class="span_1">Vendor-Supplier</span>.</p>
+        <p class="p_2">14. In the <span class="span_1">Name</span> field, type “<span class="span_1">Prior Client Balances.”</span></p>
+        <p class="p_2">15. Click <span class="span_1">OK</span> to display open invoices. Click <span class="span_1">Close All</span>. Click <span class="span_1">OK</span> to save.</p>
+        <p class="p_2">16.<span class="span_1"> Trams</span><span class="span_15"> prompts, “</span><span class="span_19">Create a Journal Entry</span><span class="span_15">? Click </span><span class="span_19">NO</span><span class="span_15">.</span></p>
+        <h4>
+            <MadCap:keyword term="Set Up an Unapplied Client Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up an Unapplied Client Balance</h4>
+        <p class="p_2">1) Go to <span>Payments|Received</span>. </p>
+        <p class="p_2">2) Enter the Amount Client paid on account.</p>
+        <p class="p_2">3) Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4) Under Remarks, type “Prior Receivable”.</p>
+        <p class="p_2">5) In the <span class="span_1">Name</span> field, enter the Client Name. <span class="span_1">Trams</span> prompts to build a new profile if it does not find a match.<span> Note: If creating a new Client Profile, make sure to add an Interface ID #.</span> </p>
+        <p class="p_2">6) TBO prompts to create a Voucher. Click <span class="span_1">Yes</span> and <span class="span_1">OK</span>.</p>
+        <h4>
+            <MadCap:keyword term="Remove/Write Off a Prior Client Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Remove/Write Off a Prior Client Balance</h4>
+        <p class="p_2">1) Go to <span>Payments|Received</span>. </p>
+        <p class="p_2">2) Enter the Amount of Invoice to be removed/written off.</p>
+        <p class="p_2">3) Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4) Choose Payment Method of OTHER.</p>
+        <p class="p_2">5) Under Remarks, type “Prior Receivable Write-off”.</p>
+        <p class="p_2">6) In the <span class="span_1">Name</span> field, enter the Client Name. </p>
+        <p class="p_2">7) Toggle the invoice closed by clicking <span class="span_1">Toggle Close</span>.</p>
+        <p class="p_2">8) Do NOT create a Journal Entry when prompted. (<span>Note: </span>After the GL has been set up, write off a client balance using these directions with this current date, but you need to create a Journal Entry to credit Client Balances and debit a bad debt, agent error, or misc. adjustment account setup in the 6000’s or expense accounts.)</p>
+        <p class="p_2">WHEN COMPLETING ENTERING ALL INVOICES AND UNAPPLIED BALANCES (and have done write-offs, if necessary), DON’T FORGET TO RERUN THE CLIENT BALANCE CORE REPORT WITH DATES SET ONE DAY PRIOR TO THE START-UP DATE TO MAKE SURE THE BALANCES ARE ACCURATE.</p>
+        <p>&#160;</p>
+        <h4>
+            <MadCap:keyword term="Set Up Vendor Balances - w/Shortcut Method Two" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up Vendor Balances - w/Shortcut Method Two</h4>
+        <p class="p_2">Vendor balances are entered in <span class="span_1">Trams</span> by creating invoices. Create a separate invoice for each vendor balance. </p>
+        <p class="p_20">Note: If creating a new vendor profile, make sure to add an Interface ID #.</p>
+        <p class="p_2">1. Click <span>Invoices|Sale</span>.</p>
+        <p class="p_2">2. In the <span class="span_1">Invoice #</span> field, type in the invoice number of the unpaid invoice. </p>
+        <p class="p_2">3. The <span class="span_1">Issue Date</span> is the date <span class="span_3">prior</span> to the start-up date, e.g. 12/31/11 if the start-up date is 01/01/12.</p>
+        <p class="p_2">4. In the <span class="span_1">Remarks</span> field, type in <span class="span_1">Prior Payable</span> or any other free flow information. </p>
+        <p class="p_2">5. In the <span class="span_1">Name</span> field, type <span class="span_1">Prior Vendor Balances</span>. <span class="span_1">Trams</span> prompts to create a new profile. (Don’t forget Interface ID!)</p>
+        <p class="p_2">6. Click <span class="span_1">OK</span> to process.</p>
+        <p class="p_2">7. Change the <span class="span_1">Submit To</span> field to <span class="span_1">Supplier</span>.</p>
+        <p class="p_2">8. In the <span class="span_1">Vendor Name </span>field, enter the name of the vendor to be paid.</p>
+        <p class="p_2">9. In the <span class="span_1">Total Fare</span> field, type in the amount owed.</p>
+        <p class="p_2">10. Click <span class="span_1">No</span> on the prompt “Enter a payment for this invoice?”</p>
+        <p class="p_20">Since creating a Payable also creates a Receivable, enter a Payment Received to close off all the Client Balances now contained in the Profile, “Prior Vendor Balances.”</p>
+        <p class="p_2">1. Click <span>Reports|Core|Client Balances</span>.</p>
+        <p class="p_2">2. In the <span class="span_1">As Of</span> field, type in the date. The date should be one day <span class="span_3">prior</span> to the start date.</p>
+        <p class="p_2">3. Change the <span class="span_1">Format</span> field to <span class="span_1">Summary</span>, then click <span class="span_1">OK</span> to process.</p>
+        <p class="p_2">4. Find the <span class="span_1">Balance Due</span> total for the profile <span class="span_1">Prior Vendor Balances</span> and make a Note of the balance.</p>
+        <p class="p_2">5. Next, click <span>Payments|Received</span>.</p>
+        <p class="p_2">6. In the <span class="span_1">Amount</span> field, type in the total amount for <span class="span_1">Prior Vendor Balances</span>, Noted from the Client Balance report.</p>
+        <p class="p_2">7. Change the <span class="span_1">Payment Method</span> to <span class="span_1">Other</span>.</p>
+        <p class="p_2">8. The <span class="span_1">Pay Date</span> is one day <span class="span_3">prior</span> to the start date.</p>
+        <p class="p_2">9. Leave the <span class="span_1">Check/CC No</span> field blank.</p>
+        <p class="p_2">10. Leave the <span class="span_1">Payment Code</span> field blank.</p>
+        <p class="p_2">11. Leave the <span class="span_1">Payment Group</span> field blank.</p>
+        <p class="p_2">12. In the <span class="span_1">Remarks</span> field, type “<span class="span_1">To Close Prior Receivable.</span>”</p>
+        <p class="p_2">13. Change <span class="span_1">Profile Type</span> to <span class="span_1">Client</span>.</p>
+        <p class="p_2">14. In the <span class="span_1">Name</span> field, type in <span class="span_1">Prior Vendor Balances</span>.</p>
+        <p class="p_2">15. Click <span class="span_1">OK</span> to display open invoices. Click <span class="span_1">Close All</span>. Click <span class="span_1">OK</span> to save.</p>
+        <p class="p_2">16. <span class="span_1">Trams</span> prompts, “Create a Journal Entry?” Click NO.</p>
+        <p>&#160;</p>
+        <h4>
+            <MadCap:keyword term="Set Up an Unapplied Vendor Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up an Unapplied Vendor Balance</h4>
+        <p class="p_2">1. Go to <span>Payments|Made</span>. </p>
+        <p class="p_2">2. Enter the Amount of the Vendor Balance on account.</p>
+        <p class="p_2">3. Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4. Under Remarks, type “Prior Payable”.</p>
+        <p class="p_2">5. In the <span class="span_1">Name</span> field, enter the vendor Name. <span class="span_1">Trams</span> prompts to build a new profile if it does not find a match.<span> Note: If creating a new Vendor Profile, make sure to add an Interface ID #.</span> </p>
+        <p class="p_2">6. <span class="span_1">Trams</span> prompts to create a voucher. Click <span class="span_1">Yes</span> and <span class="span_1">OK</span>.</p>
+        <p class="p_2">&#160;</p>
+        <h4>
+            <MadCap:keyword term="Remove/Write Off a Prior Payable Vendor Balance" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Remove/Write Off a Prior Payable Vendor Balance</h4>
+        <p class="p_2">1. Go to <span>Payments|Made</span>. </p>
+        <p class="p_2">2. Enter the Amount of Invoice to be removed/written off.</p>
+        <p class="p_2">3. Use the Payment Date of one day prior to the start-up date.</p>
+        <p class="p_2">4. Choose Payment Method of OTHER.</p>
+        <p class="p_2">5. Under Remarks, type “Prior Payable Write-off”.</p>
+        <p class="p_2">6. In the <span class="span_1">Name</span> field, enter the Vendor Name. </p>
+        <p class="p_2">7. Toggle the invoice closed by clicking <span class="span_1">Toggle Close</span>.</p>
+        <p class="p_2">8. Do NOT create a Journal Entry when prompted. (<span>Note: </span>After the GL has been setup, write off a vendor balance using these directions with the current date, but you need to create a Journal Entry to debit Vendor Balance account and credit a bad debt, agent error, or misc. adjustment account setup in the 6000’s or expense accounts.)</p>
+        <p class="p_2">&#160;</p>
+        <h4>Adding a Negative Payable or Vendor Receivable</h4>
+        <p class="p_2">To enter Cruises, Tours, etc. paid by credit card (where commission is due), a Sale Invoice is created:</p>
+        <p class="p_2">1. Go to <span>Invoice|Sale</span> and enter invoices (using Method One as outlined in <span class="span_1">Setting Up Client Balances Core Report)</span>. </p>
+        <p class="p_2">2. Click <span class="span_1">Yes</span> on the prompt “Enter a payment for this invoice?” </p>
+        <p class="p_2">3. Enter credit card number.</p>
+        <p class="p_2">4. Repeat for each Negative Payable.</p>
+        <p class="p_2">WHEN COMPLETING ENTERING ALL INVOICES AND UNAPPLIED BALANCES (and have done write-offs, if necessary), DON’T FORGET TO RERUN THE VENDOR BALANCE CORE REPORT WITH DATES SET ONE DAY PRIOR TO THE START-UP DATE TO MAKE SURE THE BALANCES ARE ACCURATE.</p>
+        <p class="p_2">&#160;</p>
+        <h3><a name="SetUp_ARC/BSP_CoreReport"></a>
+            <MadCap:keyword term="Set Up the ARC/BSP Core Report" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up the ARC/BSP Core Report</h3>
+        <p class="p_2">ARC/BSP balances prior to the start of <span class="span_1">Trams</span>, need to be calculated and entered into <span class="span_1">Trams Back Office</span>. Then when ARC/BSP withdrawals take place, the unsettled ARC/BSP Net Remits are present in the ARC/BSP General Ledger Account.</p>
+        <h4>ARC/BSP Settlement if there is Old Data or Converted Data in TBO</h4>
+        <p class="p_2">1. Select <span>Payment|ARC(BSP) Settlement</span>.</p>
+        <p class="p_2">2. Leave the Amount field and Payment Type set at the default, but change the Payment Method to OTHER.</p>
+        <p class="p_2">3. For the ARC/BSP Settlement Date, use date of Sunday prior to the cutover date. </p>
+        <p class="p_2">4. Type in “To Start <span class="span_1">Trams</span>” in Remarks field.</p>
+        <p class="p_2">5. For the ARC/BSP Period, input the earliest possible date of invoices included in the settlement in first field and use the date of the Sunday prior to the cutover date in the To field. Click OK.</p>
+        <p class="p_2">6. Once inside the settlement feature, note the amount of the invoices at bottom of settlement screen and input this into the Amount field on the top and indicate the Payment Type (Received From or Paid To) at this time.</p>
+        <p class="p_2">7. Click on Close All and click OK to process. DO NOT CREATE A JOURNAL ENTRY WHEN ASKED.</p>
+        <p class="p_2">8. Now go to <span>Reports|Core|ARC or BSP</span> and run report with dates set one day prior to the startup date. Make sure this total agrees with previous system’s total. Retain this amount to enter into General Ledger (see next section, <span class="span_1">General Ledger Setup</span>).</p>
+        <p class="p_2">Only the interfacing of new records starts building the ARC/BSP Core Report for use after the StartUp Date. Do the ARC/BSP Settlement when received to reconcile the bank account and close off items on ARC Core Report.</p>
+        <p>&#160;</p>
+        <h4>For Clients Who Do Not Have Old/Converted ARC/BSP Data</h4>
+        <p class="p_2">1. A different way to determine the ARC/BSP balance as of the end of that month is to determine the last draft or deposit in that month from ARC/BSP and what ARC/BSP week that pertained to. The week following that week is still <span class="span_1">open</span>.</p>
+        <p class="p_2">2. Total up ARC/BSP invoices that belong to the ARC/BSP week prior to the startup date. Retain this amount to enter into the General Ledger (see next section, “General Ledger Setup”).</p>
+        <p>&#160;</p>
+        <h4>First ARC/BSP Settlement: If Payments were Made to ARC/BSP </h4>
+        <p class="p_2">1. Select <span>Payments|Made</span>, choose Cash as the Payment Type, Type “First ARC/BSP Settlement” in the Remarks field.</p>
+        <p class="p_2">2. Choose profile type of “Other,” and the Name, “ARC/BSP Balances.”</p>
+        <p class="p_2">3. If ARC/BSP was paid, when the journal entry comes up, Credit the correct Bank Account, and Debit the ARC/BSP Balances account. Click OK.</p>
+        <p class="p_46">First ARC/BSP Settlement: If Payments were Received from ARC/BSP: </p>
+        <p class="p_2">1. Select <span>Payments|Received</span>, choose Cash as the Payment Type, Type “First ARC/BSP Settlement” in the Remarks field.</p>
+        <p class="p_2">2. Choose profile type of “Other,” and the Name, “ARC/BSP Balances.”</p>
+        <p class="p_2">3. If the agency received money from ARC/BSP, Debit the correct Bank Account and Credit the ARC/BSP Balances Account. Click OK to save.</p>
+        <p class="p_2">Only the interfacing of new records starts building the ARC/BSP Core Report for use after the startup date. From this point onward, do the ARC/BSP Settlement when received to reconcile the bank account and close off items on ARC/BSP Core Report.</p>
+        <p>&#160;</p>
+        <h3>
+            <MadCap:keyword term="Set Up the Check Register Core Report and Bank Reconciliation" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><a name="SetUp_CheckRegister_CoreReport_BankReconciliation"></a>Set Up the Check Register Core Report and Bank Reconciliation</h3>
+        <p class="p_2">To begin using the Check Register and to set up the Bank Reconciliation, prepare the following information:</p>
+        <ol start="1" class="ol_2">
+            <li class="ListParagraph" value="1">The check register balance from the checkbook as of one day <span class="span_3">prior</span> to the start date. Example: If starting the check register 1/1/12, the ending balance from 12/31/11.</li>
+            <li class="ListParagraph" value="2">The ending balance from the <span class="span_3">prior</span> month's Bank Statement. i.e.: The Bank Statement from 12/31/xx.</li>
+            <li class="ListParagraph" value="3">A list of all outstanding items that have not cleared the bank as of the bank statement’s date. Include all deposits, checks and withdrawals. <span>Note:</span> Deposits can include EFT (Electronic Fund Transfer) Deposits not yet cleared the bank, including agency processed credit card transactions (CC Merchant). Withdrawals can include EFT Withdrawals not yet cleared the bank, including scheduled EFT expense withdrawals.</li>
+        </ol>
+        <table class="table_1">
+            <col style="width: 4pt;" />
+            <col style="width: 536pt;" />
+            <tr>
+                <td class="td_4">
+                    <p>&#160;</p>
+                </td>
+                <td class="td_4">
+                    <p>A list of all outstanding items that have not cleared the bank as of the bank statement’s date. Include all deposits, checks and withdrawals. <span>Note:</span> Deposits can include EFT (Electronic Fund Transfer) Deposits not yet cleared the bank, including agency processed credit card transactions (CC Merchant). Withdrawals can include EFT Withdrawals not yet cleared the bank, including scheduled EFT expense withdrawals.</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p class="p_2">To help gather the information needed<span class="span_1">, </span>complete the information below:</p>
+        <p class="p_20">&#160;</p>
+        <p class="p_20">Bank Statement Ending Balance _____________________________</p>
+        <p class="p_20">Total of Outstanding Checks - _____________________________</p>
+        <p class="p_20">Total of Outstanding Withdrawals - _____________________________</p>
+        <p class="p_20">Total of Outstanding Deposits + _____________________________</p>
+        <p class="p_20">Ending Balance = _____________________________</p>
+        <p class="p_2">&#160;</p>
+        <p class="p_2">1. Click<span> Reports|Core|Check Register</span>.</p>
+        <p class="p_2">2. In the <span class="span_1">From</span> and <span class="span_1">To</span> fields, enter the date one day <span class="span_3">prior</span> to the start date. (e.g., From: 12/31/11, To: 12/31/11)</p>
+        <p class="p_2">3. The <span class="span_1">Bank Acct</span> field should be the corresponding bank account number (1, 2, 3, etc.). To change the default, type in the new number, or click the arrow next to the field to see the list.</p>
+        <p class="p_2">4. Leave <span class="span_1">Bank Reconciliation</span> field to the default set to <span class="span_1">All</span>. Click <span class="span_1">Preview</span> to process. Note the Ending Balance at the end of the report. </p>
+        <p class="p_2">5. To zero out the Ending Balance enter a <span class="span_1">Withdrawal</span> (<span>Payments|Withdrawal</span>) if the amount is positive or enter a <span class="span_1">Deposit</span> (<span>Payments|Deposit</span>) if the amount is negative.</p>
+        <p class="p_2"><span class="span_20">Note</span>: The date of the Deposit or Withdrawal is one day <span class="span_3">prior</span> to the start date (or one day prior to the statement end date). In the <span class="span_1">Remark</span> field type, “<span class="span_1">To zero out acct.”</span></p>
+        <p class="p_2">6. Enter the Ending Balance from the bank statement by creating a <span class="span_1">Deposit</span> if the amount is positive or a <span class="span_1">Withdrawal</span> if the amount is negative. The date of the entry should be one day <span class="span_3">prior</span> to the start date. In the <span class="span_1">Remark</span> field, type “<span class="span_1">Bank Statement Balance</span>.”</p>
+        <p class="p_2">7. Next, click <span>Payment|Reconciliation|Bank Reconciliation</span>.</p>
+        <p class="p_2">8. Click <span class="span_1">Clearing Date</span> and enter the date one day <span class="span_3">prior</span> to the start date.</p>
+        <p class="p_2">9. Leave <span class="span_1">Stmt Ending Balance</span> blank. </p>
+        <p class="p_2">10. Click <span class="span_1">OK</span> to process.</p>
+        <p class="p_2">11. <span class="span_1">Trams</span> shows a list of payment items (Deposits, Withdrawals and Checks). Click <span class="span_1">Clear All</span> to mark all items as cleared. Click OK to save.</p>
+        <p class="p_2">12. <span class="span_1">Trams</span> prompts, “(Number) Payment(s) Will be Marked Cleared and (Number) Payment(s) Will be Marked Uncleared. Continue? Yes or No.” Click <span class="span_1">YES</span>.</p>
+        <p class="p_2">13. Next, enter the list of all outstanding deposits, withdrawals and checks under <span class="span_1">Payments</span> with actual dates as long as they are at least one day prior to the start-up date. DO NOT CREATE A JOURNAL ENTRY WHEN PROMPTED.</p>
+        <p class="p_2">14. Once all outstanding items are entered, click <span>Reports|Core|Check Register </span>and print as of one day <span class="span_3">prior</span> to the start date, with <span class="span_1">Bank Reconciliation</span> set to<span class="span_1"> All</span>. <span>Verify that the checkbook balance is correct</span>.</p>
+        <p class="p_2">&#160;</p>
+        <h3><a name="Entering"></a>
+            <MadCap:keyword term="Entering Opening Balances" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Entering Opening Balances</h3>
+        <p class="p_2">We recommend that Core Reports be set up in <span class="span_1">Trams Back Office </span>prior to entering General Ledger opening balances. Opening Balances reflect the current state of the agency’s financial position the day <span class="span_3">prior</span> to the General Ledger start date in <span class="span_1">Trams. </span>Obtain opening balances from the agency’s accountant, or from the Trial Balances from the prior bookkeeping system. </p>
+        <p class="p_2"><span class="span_13">IMPORTANT</span>! Opening Balances don’t have to be entered in <span class="span_1">Trams Back Office </span>to use the General Ledger. However, an end a period in <span class="span_1">Trams Back Office CANNOT BE CLOSED </span>without the opening balances.</p>
+        <p>&#160;</p>
+        <h3><a name="Setup"></a>
+            <MadCap:keyword term="Setup General Ledger" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Set Up General Ledger</h3>
+        <p class="p_2">The General Ledger does not need to be “turned on” because it is always active. Print monthly financial reports at any time without putting in the beginning balances. However, if accurate financial reports are wanted year-to-date, it is <span class="span_1">required</span> that the General Ledger be set up with accurate beginning balances and then balance the General Ledger on a monthly basis.</p>
+        <p class="p_2">1. Before beginning, establish the Four Core reports as described in previous section. After establishing the Core Reports, there is a solid foundation on which to build the General Ledger.</p>
+        <p class="p_2">2. Determine the General Ledger implementation date, <span class="span_1">e.g.0</span>1/01/xx.</p>
+        <p class="p_2">3. Get the General Ledger ending balances from the previous accounting program, manual bookkeeping records, or the agency accountant. The balances need to be from the day <span class="span_12">prior</span> to the implementation date. (<span class="span_1">e.g.</span> if the implementation date is 01/01/12, balances are from 12/31/11.) </p>
+        <p class="p_2"><span class="span_20">Note: </span>It is not necessary to have the General Ledger ending balances to implement the General Ledger as long as the Four Core reports are accurate.</p>
+        <p class="p_2">4. The <span class="span_1">Travel Types</span> table, <span class="span_1">General Ledger Accounts</span> table, and the <span class="span_1">Chart of Accounts</span> should all correspond. The Chart of Accounts should have a <span class="span_1">Sales</span> and <span class="span_1">Cost of Sales</span> account for each travel type listed in the Travel Type table. The General Ledger Accounts table should coincide with both the Chart of Accounts and Travel Type table. (For additional information on setup procedures for these tables, see General Ledger Accounts Setup below.)</p>
+        <p class="p_2">5. Click <span>Reports|General Ledger|Trial Balance</span> and print the <span class="span_1">Trial Balance</span> report. Enter the <span class="span_1">As Of</span> date as one day <span class="span_3">prior</span> to the General Ledger start date, <span class="span_1">e.g.</span> 12/31/xx. Verify that the Pseudo Post box is selected. Click <span class="span_1">Preview</span> to view to the screen (or click <span class="span_1">Print</span> to send directly to the printer without viewing first). Once the report is displayed on the screen, click the Printer icon to print. Check the report for any accounts with balances. If there are accounts with balances, proceed to step 6 to <span class="span_1">zero out</span> balances, in order to start with a clean General Ledger. If the account balances on the Trial Balance are zero, skip to step 7.</p>
+        <p class="p_2">6. To <span class="span_1">zero out</span> account balances on the Trial Balance report, click <span>General Ledger|Journal Entry</span> and create a <span class="span_1">journal entry</span> to reverse them. Enter the <span class="span_1">Activity Date</span> as the day <span class="span_3">prior</span> to the implementation date. In <span class="span_1">Remarks</span> field<span>,</span> type in “<span class="span_1">To Zero Out General Ledger</span>.” In the <span class="span_1">Account Name &amp; Number</span> field, enter the <span class="span_1">Account Name</span> or <span class="span_1">Number</span> or click the arrow to choose from the list. Enter the <span class="span_1">amount </span>as the opposite of how it appears on the Trial Balance report. (<span class="span_1">e.g. A</span>ccount 2000 shows a <span class="span_1">credit </span>of $400.00 on the Trial Balance. The journal entry will be a <span class="span_1">debit </span>of $400.00 to account 2000.) Once all accounts are entered and debits and credit equal, click <span class="span_1">OK</span> to save. After reversing all balances, print a new Trial Balance, with Pseudo Post selected. The report should now be <span class="span_12">zero</span>. If it is not, repeat steps 4 and 5.</p>
+        <p class="p_2">7. Print the Four Core Reports as of the day <span class="span_3">prior</span> to the implementation date. Verify that the Core report balances match the ending balances from the accountant or prior bookkeeping system.</p>
+        <p class="p_2">8. Enter new beginning balances in the General Ledger by clicking <span>General Ledger|Journal Entry</span>. Enter the <span class="span_1">Activity Date</span> as the day <span class="span_3">prior</span> to the implementation date. In the <span class="span_1">Remarks</span> field<span>, </span>type in <span class="span_1">“Beginning Balances.”</span> In the <span class="span_1">Account Name </span><span class="span_1">&amp; Number</span> field, enter the Account Name or Number, or click the arrow to select from the list. Enter the <span class="span_1">Amount</span> in the <span class="span_1">Debit</span> or <span class="span_1">Credit</span> column. If entering balances from a previous accounting system or from the accountant, copy the information line by line. If entering <span class="span_1">Core Report balances only</span>, see below. </p>
+        <p class="p_2">9. From the Check Register report, enter the <span class="span_1">Ending Balance</span> into the <span class="span_1">Cash in Bank</span> account. (1000 series number) If the ending balance on the Check Register report is positive, enter the amount in the debit column. If the ending balance is negative, enter the amount in the credit column. </p>
+        <p class="p_2">10. From the Client Balances report, enter the <span class="span_1">Balance Due</span> total into the <span class="span_1">Client Balances</span> account. (1000 series number) If the report total is a positive amount, enter in the amount in the debit column. If the report total is negative, enter in the credit column. </p>
+        <p class="p_2">11. From the Vendor Balances report, enter the <span class="span_1">Balance Due </span>total into the <span class="span_1">Vendor Balances</span> account. (2000 series number) If the total is a positive amount, enter in the amount in the debit column. If the total is negative, enter in the amount in the credit column. </p>
+        <p class="p_2">12. For the ARC/BSP Balances, enter the <span class="span_1">Net Remit</span> balance into the <span class="span_1">ARC/BSP Balances</span> account. (2000 series number) If the ARC/BSP Balance is positive, (ARC/BSP owes the agency) enter in the debit column. If the ARC/BSP Balance is negative, (ARC/BSP is owed) enter in the credit column.</p>
+        <p class="p_2">13. To balance the journal entry, put the difference between the debits and credits in the <span class="span_1">3999 - Suspense Account.</span> Set this account up if it does not already exist. (See Add To the General Ledger Chart Of Accounts in this chapter.) </p>
+        <p class="p_2">14. Once all accounts are entered and debits and credits equal, click <span class="span_1">OK</span> to save. If debits and credits do not balance, go back and check all the amounts in the journal entry against all the amounts from the previous Balance sheet. </p>
+        <p class="p_2">15. Now print the Trial Balance Report and compare against the Four Core reports and verify that they are all in balance.</p>
+        <p class="p_2">16. Finally, once having verified the General Ledger amounts are in balance, <span class="span_1">Post</span> the journal entry to the General Ledger. <span>This makes it permanent</span>. To post, click <span>General Ledger|Posting</span>. In the <span class="span_1">Latest Posting Date</span> field, enter date as the day <span class="span_3">prior</span> to the implementation date. (<span class="span_1">i.e.</span>12/31/04)</p>
+        <p class="p_2"><span class="span_20">NOTE:</span> Once the journal entry has been posted, print a final copy of the Four Core Reports and the Trial Balance report to keep in the agency files.</p>
+        <p class="p_2">From this point forward maintain the General Ledger on a monthly basis by balancing the General Ledger to the Four Core reports. (See <span class="span_1">Maintaining the General Ledger</span> below.)</p>
+        <h4>Suggested General <MadCap:keyword term="Ledger Procedures" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Ledger Procedures</h4>
+        <p class="p_2">1. <span>ARC/BSP Balance Report</span></p>
+        <p class="p_23">- Enter sales and payment information on a daily basis. </p>
+        <p class="p_23">- Submit the report weekly to ARC/BSP.</p>
+        <p class="p_23">- Reconcile the ARC/BSP Settlement each week. </p>
+        <p class="p_2">2. <span>Client Balances Report</span></p>
+        <p class="p_23">- Enter sales and payment information on a daily basis.</p>
+        <p class="p_23">- View on a regular basis and review for accuracy.</p>
+        <p class="p_2">3. <span>Vendor Balances Report</span></p>
+        <p class="p_23">- Enter sales and payment information on a daily basis.</p>
+        <p class="p_23">- View on a regular basis and review for accuracy.</p>
+        <p class="p_2">4. <span>Check Register Report</span></p>
+        <p class="p_23">- Enter Deposits, Withdrawals and Checks on a daily basis. </p>
+        <p class="p_23">- Balance and reconcile against the Bank Statement each month. </p>
+        <p class="p_23">&#160;</p>
+        <h3><a name="Daily_Routine_..136" data-mc-generated-bookmark="TOC"></a>Daily Routine</h3>
+        <p class="p_2">1. Capture Sale and Refund Invoices (manual or interface). Enter all adjustment invoices such as debit/credit memos.</p>
+        <p class="p_2">2. Enter Receipts and balance the Bank Deposit:</p>
+        <p class="p_23">a) Enter each separate receipt under <span>Payments|Received</span>. (If there is information available, consider entering any EFT (Electronic Fund Transfer) or Direct Deposit receipts for the day. As these type transactions hit the Check Register directly, these items are not included in the daily deposit to the bank.)</p>
+        <p class="p_23">b) Under <span>Payments|Deposits</span>, verify the date for which the deposit is being done and <span class="span_1">Query </span>for the receipts to be included in the Deposit.</p>
+        <p class="p_23">c) Verify the receipts that are included are receipts actually going to be deposited in the bank.</p>
+        <p class="p_23">d) Print 2 deposit slips - one for the agency records and one for the bank.</p>
+        <p class="p_2">3. Print a copy of a Receipts Report (<span>Reports|Payments|Receipts</span>) for all Cash/Check receipts for each bank account for the day. Balance the total on the report to the bank deposit slip. Attach the report to the agency copy of the deposit slip and file.</p>
+        <p class="p_2">4. Enter all agency disbursements in <span>Payments|Made</span>.</p>
+        <p class="p_2">5. Run the Four Core Reports and review for errors: Client Balances, Vendor Balances, ARC/BSP Reconciliation and Check Register.</p>
+        <p class="p_2">6. Run the G/L Reconciliation Report to catch any G/L errors daily.</p>
+        <p class="p_2">7. Backup files (<span>Utilities|Backup)!</span></p>
+        <h3><a name="Weekly_(ARC_IAR_Sales_Report_Reconciliation)_Routine_..137" data-mc-generated-bookmark="TOC"></a><a name="kanchor88"></a><a name="Weekly_ARC_IAR_Sales_Report_Reconciliation_Routine"></a>Weekly (ARC/IAR Sales Report/Reconciliation) Routine</h3>
+        <p class="p_2"><span>Step 1.</span> Check that the data in the IAR Sales Report matches data in <span class="span_1">Trams Back Office</span> by one of three methods: </p>
+        <p class="p_23"><span>a) Method One:</span> Run a list of all invoices captured in <span class="span_1">Trams</span> by going into <span>Reports|Invoice|Analysis</span> and verifying that all invoices for the week are accounted for in <span class="span_1">Trams</span>. Then, run a list of all tickets captured in <span class="span_1">Trams</span> by going into <span>Reports|Invoice|ARC/BSP Reconciliation</span> and verifying that all tickets issued for the week are accounted for in <span class="span_1">Trams</span>, and be sure to set ticket status to <span>ALL</span>. </p>
+        <p class="p_23"><span>b) Method Two:</span> Download the IAR file from the IAR website. Go to <span>Reports|Invoice|IAR Reconciliation</span> and click the IAR File button to point to the path of the downloaded .txt file obtained from the IAR website. Print out an Exception Report which points out differences between what was submitted to IAR and <span class="span_1">Trams</span> Back Office. </p>
+        <p class="p_23"><span>c) Method Three:</span> Download the IAR file from the IAR website. </p>
+        <p class="p_47">-- Go to <span>Payments|ARC Settlement</span>. </p>
+        <p class="p_47">-- Query for the week’s ARC tickets so they are displayed on the settlement screen. </p>
+        <p class="p_47">-- Click IAR Reconciliation on the ARC Settlement screen. </p>
+        <p class="p_47">-- Click IAR Filename and map to the weekly IAR file. </p>
+        <p class="p_47">-- Click Query to see the standard IAR Reconciliation Report. </p>
+        <p class="p_47">-- For tickets where <span class="span_1">Net Remit Do Not Match</span>, <span class="span_1">Ticket Is Voided in IAR but Not in Trams</span>, or <span class="span_1">Missing IAR Ticket</span>, click <span class="span_1">Find Ticket</span> and the cursor lands on the appropriate ticket on the ARC Settlement screen so <span class="span_1">Edit Invoice</span> appears as normal. </p>
+        <p class="p_47">-- For tickets that are <span class="span_1">Voided In Trams but Not In IAR</span>, click <span class="span_1">Find Ticket</span> to go to the booking containing that voided ticket in TBO, so it can be unvoided, allowing the ticket to now show correctly on the ARC Settlement Screen. </p>
+        <p class="p_47">-- For any exceptions that are <span class="span_1">Missing Trams Ticket</span>, click off the IAR Reconciliation screen, and manually add the missing tickets. If doing this method, no need to do Steps 2 and 4 below. </p>
+        <p class="p_47"><span>Note:</span> This is the same IAR Reconciliation exception report that was only available before under <span>Reports|Invoice|IAR Reconciliation</span>. The IAR Reconciliation from the ARC Settlement screen works the same way and provides that same exception report, but now has linking ability to the tickets displayed on the ARC Settlement Screen. </p>
+        <p class="p_2"><span>Step 2.</span> Enter any missing Refunds, Debit Memos, Voids, etc. so <span class="span_1">Trams Back Office</span> agrees with IAR Sales Report. </p>
+        <p class="p_2"><span>Step 3.</span> Enter and balance the ARC/BSP Settlement for the week under <span>Payments|ARC Settlement</span>. Do this by comparing the amount withdrawn to the amount <span class="span_1">Trams</span> calculated as the Net Remittance amount for that ARC/BSP week. If the two numbers do not balance exactly, review the ARC/BSP Settlement section of this manual. </p>
+        <p><span>Step 4.</span> Submit the IAR Sales Report. </p>
+        <p>If processing through ARC/IAR, complete the ARC Settlement right after submitting the IAR Sales Report. </p>
+        <h3><a name="Weekly_(BSP_Sales_Report_Reconciliation)_..138" data-mc-generated-bookmark="TOC"></a><a name="kanchor89"></a><a name="Weekly_BSP_Sales_Report_Reconciliation"></a>Weekly (BSP Sales Report/Reconciliation)</h3>
+        <p class="p_48">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_6.jpg" style="height: 44px;width: 80px;" class="img_1" />
+        </p>
+        <p class="p_2">Complete the BSP Settlement after Weekly Sales Summary has been received from BSP as amounts could be changed from what was submitted.</p>
+        <p class="p_2">1. Print an Invoice Analysis Report (<span>Reports|Invoice|Analysis</span>) to verify all invoices issued during the week are entered in <span class="span_1">Trams</span>.</p>
+        <p class="p_2">2. Print a BSP Reconciliation Report (<span>Reports|Core|BSP Reconciliation</span>). Set the ticket status to ALL to verify all tickets issued for the week are entered in <span class="span_1">Trams</span>.</p>
+        <p class="p_2">3. Submit BSP Link report through the Internet. If necessary, print the BSP Report (<span>Report|Invoice|BSP</span>), set the <span class="span_1">Included Items</span> to <span class="span_1">Manual,</span> and mail it to the area bank.</p>
+        <p class="p_2">4. If not using the BSP Link, print the BSP Report (<span>Reports/Invoice/BSP</span>) and mail it to the area bank with the auditors’ coupons from the tickets issued, <span class="span_3">or</span> verify cash and credit card totals and period net remit if submitting the report through BSP Link.</p>
+        <p class="p_2">5. Reconcile BSP’s Weekly Sales Summary Report by entering the amount of the BSP Withdrawal in <span>Payments|BSP Settlement. </span>Adjust each <span class="span_1">Trams</span> entry to match BSP’s report and close all bookings paid for in that BSP period.</p>
+        <h3><a name="Weekly_BSP_HOT_Reconciliation_Routine_..139" data-mc-generated-bookmark="TOC"></a><a name="kanchor90"></a><a name="Weekly_BSP_HOT_Reconciliation_Routine"></a>Weekly BSP HOT Reconciliation Routine</h3>
+        <p class="p_48">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_6.jpg" style="height: 44px;width: 80px;" class="img_1" />
+        </p>
+        <p class="p_2">A BSP HOT Reconciliation can be found under <span>Reports|Invoice|BSP Reconciliation</span>. To receive a copy of the BSP Report in the HOT file format, contact:</p>
+        <p class="p_2"><a href="../../../../../../sg0892339/Documents/ePublisher Designer Projects/TBO/Output/Target 1/TBO/www.IATA.org/customer">www.IATA.org/customer </a><span class="span_23"><br /></span>
+            <br /><span class="span_1">Trams Back Office</span> compares the data in the HOT file to the information in <span class="span_1">Trams Back Office </span>and generates an exception report which lists all the differences between the <span class="span_1">Trams Back Office</span> data and the HOT file. Once the transactions on the exceptions reports have been addressed, the BSP Settlement routine can be completed. The <span class="span_1">Submit to</span> field in the TBO booking must be set to BSP (for both BSP and Web bookings reported via BSP). For web booking exchange transactions, see additional information below.</p>
+        <p class="p_46">Reconciliation Steps:</p>
+        <p class="p_2">1. Download the HOT file from the IATA Web Site</p>
+        <p class="p_2">2. In TBO, go to Reports/Invoice/HOT Reconciliation</p>
+        <p class="p_2">3. Click the HOT File Button and browse to where the file was saved</p>
+        <p class="p_2">4. Click the Preview Button</p>
+        <p class="p_2">5. Reconcile the Exceptions that appear on the Exception Report</p>
+        <p class="p_20">Sample Exceptions:</p>
+        <table class="table_1">
+            <col style="width: 73pt;" />
+            <col style="width: 49pt;" />
+            <col style="width: 345pt;" />
+            <tr>
+                <td class="td_16">
+                    <p class="p_20">Ticket #</p>
+                </td>
+                <td class="td_16">
+                    <p class="p_20">Inv #</p>
+                </td>
+                <td class="td_16">
+                    <p class="p_20">Exception Reason</p>
+                </td>
+            </tr>
+            <tr style="height: 31pt;">
+                <td class="td_16">
+                    <p class="p_2">7771113333 </p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">5589 </p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">Missing HOT Ticket – Ticket is not listed in the HOT file </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_16">
+                    <p class="p_2">7771113358 </p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">5598 </p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">Missing TBO Ticket – Ticket is listed in the HOT file but cannot be found in TBO</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_16">
+                    <p class="p_2">7771113362 </p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">5600</p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">Remittance Amounts do not match – Commission amounts do not match</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_16">
+                    <p class="p_2">7771113375 </p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">5612 </p>
+                </td>
+                <td class="td_16">
+                    <p class="p_2">Total Fares do not match – Ticket amount does not match total fare amount in TBO</p>
+                </td>
+            </tr>
+        </table>
+        <p class="p_2">Non-automated air web booking exchanges (Air Canada, Westjet, etc.), must contain <span class="span_1">Trams</span> Descriptor codes to properly flag the transaction as an exchange. The original ticket number must also be added to populate the original ticket field in the booking.</p>
+        <p class="p_46">Examples (to be added in addition to other accounting line information):</p>
+        <p class="p_2">*EXE – Even exchange</p>
+        <p class="p_2">*EXA – Exchange with an add collect</p>
+        <p class="p_2">*EXR – Exchange Refund</p>
+        <p class="p_2">*OT – Original Ticket number</p>
+        <p class="p_46">Sabre </p>
+        <p class="p_21">ACOTH1/SUPPLY/DOC/P11/950.00/0/ALL/CK/*SBA*TT1*VCAC*EXE*OT7771113375</p>
+        <p class="p_46">Worldspan</p>
+        <p class="p_21">AC1-A*TT1*VCAC*EXE*OT7771113375</p>
+        <p class="p_46">Apollo</p>
+        <p class="p_21">T-MS9A*VCAC*TT1*CM10*CF123456*SG*EXE*OT7771113375</p>
+        <p class="p_46">Amadeus </p>
+        <p class="p_21">RM*9A*VCAC*TT1*CM10*CF123456*SG*EXE*OT7771113375</p>
+        <h3><a name="Monthly_Checklist_..140" data-mc-generated-bookmark="TOC"></a><a name="kanchor91"></a><a name="Monthly_Checklist"></a>Monthly Checklist</h3>
+        <p class="p_2">1. Using <span class="span_1">Trams Back Office </span>Bank Reconciliation routine under (<span>Payments|Bank Reconciliation</span>), balance the bank statement to the <span class="span_1">Trams Back Office </span>check register. <span class="span_3">Print a copy of the Check Register for the month for ALL along with a second Check Register Report for Not Cleared, and staple it to the statement from the bank and file.</span></p>
+        <p class="p_2">2. Create an End of Period journal entry (<span>General Ledger|End of Period</span>) for the month.</p>
+        <p class="p_2">3. Print a trial balance. Compare the Management Summary Report balances to their corresponding General Ledger accounts and make sure they are the same. If not, print a GL Reconciliation (<span>Reports|General Ledger|GL Reconciliation</span>) to locate any possible errors. <span>Note: </span>There is a <span class="span_1">Total Base </span>column on this report, The yield percentage is the commission divided by total base.</p>
+        <p class="p_2"><span>Optional:</span> Run a Journal Entry Query with the <span class="span_1">Status</span> set as <span class="span_1">Unposted</span>. Run for an appropriate posted period, year-to-date of last posted period, last-year-to date of last posted period, etc., to view any unposted items that someone might have added or changed in a posted period. Verify or delete those items, post them, and run new monthly financials to reflect the changes made.</p>
+        <p class="p_2">4. When (and only when) everything is in balance, post the journal entries made and print Financial Statements. Audit Trail reports could include Trial Balance, Income Statement, Balance Sheet, End of Period Reports, Account History, or Journal Entry Analysis. </p>
+        <h3><a name="TBO_End_of_Period_Reports_..141" data-mc-generated-bookmark="TOC"></a><a name="kanchor92"></a><a name="TBO_End_of_Period_Reports"></a>TBO End of Period Reports</h3>
+        <p class="p_2">End of Period reports can be found under <span>Reports|Batch Reports|Load</span>. </p>
+        <p class="p_2">1. <span class="span_3">Sales Activity Report:</span> Select <span>Reports|Invoice|Activity</span>. Set Format to “Summary”, set Submit To as “ARC or BSP/Supplier” and set Invoice Status to “All.”</p>
+        <p class="p_2"><span class="span_1">Trams</span> uses this report to show what has been updated in the GL by the End of Period in Sales, Cost of Sales, Client Balances, Vendor Balances and ARC/BSP Balances. The ARC/BSP Adjustments account is also updated for Debit/Credit Invoices.</p>
+        <p class="p_2">2. <span class="span_3">Sales Activity Report:</span> Select<span> Reports|Invoice|Activity</span>. Set Format to “Summary”, set Submit To as “Comm Track” and set Invoice Status to “Closed.”</p>
+        <p class="p_2">If Commission Track Payments in EOP under <span>Utilities|Setup|Global Defaults</span> is set to the Sales/Cost of Sales option, <span class="span_1">Trams</span> uses this report to show what has been updated in the GL by EOP in Sales, Cost of Sales and Cash in Bank. If it is set to the Commission Income option, <span class="span_1">Trams</span> updates Cash in Bank and Commission Income.</p>
+        <p class="p_2">3. <span class="span_3">Receipts Report:</span> Select <span>Reports|Payments|Receipts</span>. Set the Pay Method as “Credit Card” and set Received From as “Client.”</p>
+        <p class="p_2"><span class="span_1">Trams</span> uses this report to show what has been update by the EOP in Client Balances, Vendor Balances &amp; ARC/BSP Balances.</p>
+        <p class="p_2">4. <span class="span_3">Disbursements Report:</span> Select <span>Reports|Payments|Disbursements</span>. Set the Pay Method to “Credit Card” and set Paid To as “Client.”</p>
+        <p class="p_2"><span class="span_1">Trams</span> uses this report to show what has been updated by EOP in Client Balances, Vendor Balances &amp; ARC/BSP Balances.</p>
+        <p class="p_2">5. <span class="span_3">Receipts Report:</span> Select <span>Reports|Payments|Receipts</span>. Set the Pay Method to “Cash/Check/EFT” and set Received From as “Client.” <span class="span_1">Trams</span> creates this report for each bank account. The system creates the report a second time with Received From set to “Vendor.” </p>
+        <p class="p_2"><span class="span_1">Trams</span> uses this report to show what has been updated by EOP in Cash, Client Balances &amp; Vendor Balances. The Receipts Report also shows EOP updates in ARC/BSP Balances for EFT's from ARC/BSP.</p>
+        <p class="p_2">6. <span class="span_3">Disbursements Report:</span> Select <span>Reports|Payments|Disbursements</span>. Set the Pay Method to “Cash/Check/EFT” and set Profile Type as “Client.” <span class="span_1">Trams</span> creates this report for each bank account. The system creates the report a second time with Paid To set to “Vendor.”</p>
+        <p class="p_2"><span class="span_1">Trams</span> uses this report to show EOP updates in Cash, Client Balances and Vendor Balances. The Disbursements Report also updates ARC/BSP Balances for EFT's to ARC/BSP.</p>
+        <p class="p_2">7. <span class="span_3">Receipts Report:</span> Select <span>Reports|Payments|Receipts</span>. Set the Pay Method to “CC Merchant” and set Received From as “Client.”</p>
+        <p class="p_2"><span class="span_1">Trams</span> uses this report to show EOP updates in Cash and the CC Merchant account.</p>
+        <p class="p_2">8. <span class="span_3">Disbursements Report:</span> Select <span>Reports|Payments|Disbursements</span>. Set the Pay Method to “CC Merchant” and set Paid To as “Client.” </p>
+        <p class="p_2"><span class="span_1">Trams</span> uses this report to show EOP updates to Cash and the CC Merchant account.</p>
+        <h3><a name="Additional_End_of_Period_Reports_for_BSP_Users_..142" data-mc-generated-bookmark="TOC"></a><a name="Additional_End_of_Period_Reports_for_BSP_Users"></a>Additional End of Period Reports for BSP Users</h3>
+        <p class="p_48">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_6.jpg" style="height: 44px;width: 80px;" class="img_1" />
+        </p>
+        <p class="p_2">At the end of each month, run the following reports to verify the amount of TAX to be paid. </p>
+        <p class="p_2">1) Run an Invoice Activity Report by going to <span>Reports|Invoice|Activity.</span></p>
+        <p class="p_2">2) Compare the tax amounts on this report with the amounts in the Balance Sheet accounts created for these taxes (<span>Reports|General Ledger|Account History)</span>.</p>
+        <p class="p_2">3) When sending the quarterly check to pay the tax due, go to <span>Payments|Made</span>. Enter the amount of the tax due. Use the profile type "Other" that was created for these taxes and create the following journal entry:</p>
+        <p class="p_20">Debit Credit</p>
+        <p class="p_2">Cash in Bank 500.00</p>
+        <p class="p_2">GST Payable 500.00 </p>
+        <h3><a name="Summary_..143" data-mc-generated-bookmark="TOC"></a><a name="Summary"></a>Summary</h3>
+        <p class="p_2">If the Core Reports are being successfully maintained, financial statements are easily obtained through <span class="span_1">Trams, </span>provided opening balances have been correctly entered. It is important to provide these basic financial statements, as well as a detailed audit trail, to the agency accountant for review. In addition to the Income Statement and Balance Sheet reports, several audit trail reports, including the Account History report, are also available.</p>
+        <p class="p_2"><span>Note: The recommendations contained in this application Note are designed to allow the </span><span class="span_1">Trams</span><span class="span_1">Back Office </span><span>system to produce information in a manner which </span><span class="span_1">Trams</span><span> believes to be useful to a travel agency; however, </span><span class="span_1">Trams</span><span> makes no representation or warranty that the recommendations, if applied, will conform to generally accepted accounting or auditing practices or principals or to any type of financial reporting requirements. To the extent that any reports generated by </span><span class="span_1">Trams Back Office</span><span> are used for reporting purposes, including tax reporting, we strongly suggest to review these recommendations either with a certified public accountant or tax advisor, as applicable.</span>
+        </p>
+        <h2><a name="Maintain_the_GL_&amp;_Balancing_Core_Reports_to_Trial_Balance_Report_..144" data-mc-generated-bookmark="TOC"></a>Maintain the GL &amp; Balancing Core Reports to Trial Balance Report</h2>
+        <p class="p_2">Once the bank statement and all ARC/BSP reports for the month are reconciled: </p>
+        <p class="p_2">1. Click <span>General Ledger|End of Period</span> and create the <span class="span_1">End of Period</span> journal entry.</p>
+        <p class="p_2">2. Print the <span class="span_1">Trial Balance Report</span>. (<span>Reports|General Ledger|Trial Balance</span>)</p>
+        <p class="p_2">3. Print the Management Summary Report and Note the balances for the following Core Report totals:</p>
+        <p class="p_49">Client Balances </p>
+        <p class="p_49">Vendor Balances </p>
+        <p class="p_49">ARC Balances</p>
+        <p class="p_49">Check Register</p>
+        <p class="p_2"><span>Note: </span>There is a <span class="span_1">Total Base </span>column on this report, The yield percentage is the commission divided by total base.</p>
+        <p class="p_2">5. Each month, compare the <span class="span_1">Ending Balances</span> of all <span class="span_1">Core Reports</span> against the <span class="span_1">Trial Balance</span> Report. The Core Reports and the Trial Balance Report should balance <span class="span_3">to the penny</span><span class="span_1">before</span> posting occurs. If one or more of the Core Reports does not balance to the Trial Balance, print the <span class="span_1">GL Reconciliation</span><span class="span_1">Report</span>. </p>
+        <p class="p_23">a. Click <span>Reports|General Ledger|GL Reconciliation</span>.</p>
+        <p class="p_23">b. Although not every entry on this report needs to be cleared off, the report gives the best idea of why the Trial Balance is out of balance. Check each item’s warning message. (For warning definitions see the manual under <span>Reports|General Ledger|GL Reconciliation Report</span>.) To make corrections, Void the End of Period first. </p>
+        <p class="p_23">c. After making corrections, create the End of Period journal entry again.</p>
+        <p class="p_23">d. Print the Core Reports again, along with the Trial Balance Report. </p>
+        <p class="p_23">e. Verify that the Core Reports and the Trial Balance are now in sync.</p>
+        <p class="p_2">6. When the Four Core Reports match the Trial Balance, go ahead and post. Posting to the General Ledger is permanent. Changes can no longer be made to the journal entries; however, adjusting journal entries can always be added to the period if needed. Click <span>General Ledger|Posting</span> and <span class="span_1">Post</span> to the General Ledger. </p>
+        <h2><a name="GL_Reconciliation_Report_..145" data-mc-generated-bookmark="TOC"></a><a name="kanchor94"></a><a name="GL_Reconciliation_Report"></a>GL Reconciliation Report</h2>
+        <p class="p_2">The GL Reconciliation report is used to aid in reconciling financial reports at the end of the month. It flags items that could possibly cause financials to be out of balance when compared against the Core reports.</p>
+        <ol start="1" class="ol_2">
+            <li class="ListParagraph_7" value="1">Select <span>Reports|General Ledger|GL Reconciliation</span>.</li>
+        </ol>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_7.jpg" style="height: 234px;width: 432px;" class="img_1" />
+        </p>
+        <p class="p_2">2. Type in the <span class="span_1">From</span> and <span class="span_1">To</span> dates for the period being reconciled.</p>
+        <p class="p_2">3. Click <span class="span_1">Preview</span> to view on screen. (Or click<span class="span_1"> Print </span>to send report directly to the printer without viewing.)</p>
+        <p class="p_2">4. The report displays a list of items that may need correcting. Query each item and correct it if needed.</p>
+        <p class="p_20">Possible GL Reconciliation messages are listed below.</p>
+        <table class="table_1">
+            <col style="width: 127pt;" />
+            <col style="width: 340pt;" />
+            <tr>
+                <td class="td_31">
+                    <p class="p_50">Message</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_50">Description</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Payable is not Journalized and Should Be</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Payment Is Journalized and Shouldn’t Be</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">Only Payments Received and Made where the Profile Type is Other or where the Payment Method is Other, or Bank Withdrawals should be journalized. </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Payment Is Not Journalized and Should Be</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">Payments Received and Made where the Profile Type is Other, or where the Payment Method is Other, or Bank Withdrawals <span class="span_3">must</span> have a journal entry.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Payment Amount Doesn’t Match Journal Entry Amount</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">The amount of the payment does not match the amount posted to the Cash in Bank account in the journal entry. This message also appears if the amount is being posted to the incorrect Cash in Bank account or the debits and credits have been reversed.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Payment Date Doesn’t Match Journal Entry Date</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">The date on the payment screen should always match the date in the journal entry screen.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Pymt Invalid For JE That Affects Client Balances***</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2"><span class="span_15">1) </span>A journal entry should only affect Client Balances when a Payment Received or Made is entered that has a payment method of Other and a profile type of Client.</p>
+                    <p class="p_2">2) A Pseudo EOP entry exists.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_12">Pymt Invalid For JE That Affects ARC/BSP***</p>
+                </td>
+                <td class="td_31">
+                    <p>1) A journal entry should only affect ARC/BSP when a Payment Received or Made is entered that has a payment method of EFT and a profile type of Vendor-ARC/BSP.</p>
+                    <p>2) A Pseudo EOP entry exists.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Pymt Invalid For JE That Affects Vendor Balances***</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">1) A journal entry should only affect Vendor Balances when a Payment Received or Made is entered that has a payment method of Other and a profile type of Vendor-Supplier.</p>
+                    <p class="p_2">2) A Pseudo EOP entry exists.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Pymt Invalid For JE That Affects Cash In Bank***</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">1) A journal entry should only affect Cash in Bank when a Payment Received or Made is entered that has a payment method of cash, check or EFT and a profile type of Client, Vendor or Other. Also for Bank Withdrawals.</p>
+                    <p class="p_2">2) A Pseudo EOP entry exists.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Credit Card Pymt Date Doesn’t Match Invoice Date</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">A client payment with a payment method of Credit Card should have the same date of the invoice.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Bank Account #1 Difference Between Receipts And Deposits: 500.00</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">There should always be a receipts report to match every deposit. The message means there is a discrepancy and the deposit entered needs to be re-reconciled.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_31">
+                    <p class="p_20">Zero Dollar Client or Vendor Balance Journal Entries Exist</p>
+                </td>
+                <td class="td_31">
+                    <p class="p_2">User creates a payment received from a client with a payment method of other, invoice appears and user marks it closed. When the journal entry comes up TBO shows credit to Client Balances (which is correct), but the user then makes the Debit to Client Balances also which throws off the GL. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="p_51"><span>&#160;</span>*** When a <span class="span_3">Posted</span> End of Period is voided, the entry is converted back into a normal journal entry and a reversing journal entry is also created. This results in these messages seen here. If receiving these messages as the result of a voided End of Period, ignore the message. </p>
+        <h2><a name="Canadian_TBO_Set_Up_and_Special_Usage" data-mc-generated-bookmark="TOC"></a><a name="kanchor95"></a><a name="Canadian_TBO_Set_Up_and_Special_Usage"></a>Canadian TBO Set Up and Special Usage</h2>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_6.jpg" style="height: 44px;width: 80px;" class="img_1" />
+        </p>
+        <p class="p_2">This section of the TBO manual is for Canadian setup and usage. Please read through this section and mark it as a favorite in the help files for reference. Canadian agencies should follow the setup as outlined for all users in this section with the following exceptions.</p>
+        <h3><a name="BSP_Taxes_Initial_Setup" data-mc-generated-bookmark="TOC"></a><a name="BSP_Taxes_Initial_Setup"></a>BSP Taxes Initial Setup </h3>
+        <p class="p_2">Canadian taxes can get complicated. Here are the suggested steps to setting up the tax table in TBO. This needs to be setup prior to interfacing. If working with GDS Integration, get help with this after filling out an Interface Appointment sheet or set up an appointment by e-mailing <span>Trams.GDSDesk@sabre.com</span>.</p>
+        <p class="p_2">1) Go to <span>Utilities|Setup|Global Defaults|Tax Related Tab</span> to designate which taxes go to which tax fields when interfacing from the reservation system. </p>
+        <h4><a name="All_Provinces_Setup" data-mc-generated-bookmark="TOC"></a><a name="All_Provinces_Setup"></a>All Provinces Setup</h4>
+        <p class="p_20">
+            <img src="Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_8.jpg" style="height: 363px;width: 468px;" class="img_1" />
+        </p>
+        <p class="p_2"><span>BSP TAX 1: </span>Leave Blank.</p>
+        <p class="p_2"><span>BSP TAX 2: </span>Leave Blank, except Quebec, enter XQ.</p>
+        <p class="p_2"><span>BSP TAX 3: </span>Leave Blank (if any other taxes need to be tracked, do so in this or TAX 4 box).</p>
+        <p class="p_2"><span>BSP TAX 4: </span>Leave Blank.</p>
+        <p class="p_2"><span>Comm Rate: </span>5% or 10% (What is preference to use for interfacing?) The commission rate for vendors used in reservations defaults to the vendor commission field in the TBO vendor profile. If the vendor default commission in TBO is blank, then the commission defaults to the amount entered in the field called Comm Rate. </p>
+        <p class="p_2"><span>HST/GST Rate: </span>Enter the rate based on the province.</p>
+        <p class="p_2"><span>QST Rate: </span>7.5% subject to change by government regulation.</p>
+        <p class="p_2"><span>Tax 1 Codes: </span>Leave Blank. </p>
+        <p class="p_2"><span>Tax 1 GST Applies: </span>Leave Blank.</p>
+        <p class="p_2"><span>Tax 2 Codes - </span>Taxes wanted to report for clients; i.e. a Quebec agency wants to report to their client how much XQ Tax clients have paid, so they would put XQ in this field.)</p>
+        <p class="p_2"><span>Tax 2 GST Applies: </span>Leave Blank.</p>
+        <p class="p_2"><span>Tax 3 Codes: </span>Put code on any other tax to report. </p>
+        <p class="p_2"><span>Tax 3 GST Applies: </span>Leave Blank.</p>
+        <p class="p_2"><span>Tax 4 Codes: </span>Put code on any other tax to report.<br /><span>Tax 4 GST Applies: </span>Leave Blank.</p>
+        <p class="p_20">GST Codes - For Canada use XG,RC code only. </p>
+        <h4><a name="IMPORTANT_CONSIDERATIONS" data-mc-generated-bookmark="TOC"></a><a name="IMPORTANT_CONSIDERATIONS"></a>IMPORTANT CONSIDERATIONS</h4>
+        <p class="p_2">Since the <span>Client GST/HST</span> is passed to <span class="span_1">Trams Back Office</span> either via the GDS or the invoice generated from a ClientBase Res Card, our focus in this update has been on implementing place of supply logic to better default the percentage used to calculate the <span>Commission GST/HST</span>.</p>
+        <p class="p_2">A hard coded table of Provinces and their applicable GST/HST rates has been added that will be referenced during interface processing based on the rules of supply enhancement. </p>
+        <p class="p_23">AB 5%</p>
+        <p class="p_23">BC 12%</p>
+        <p class="p_23">MB 5%</p>
+        <p class="p_23">NB 13%</p>
+        <p class="p_23">NL/NF 13%</p>
+        <p class="p_23">NS 15%</p>
+        <p class="p_23">NT 5%</p>
+        <p class="p_23">NU 5%</p>
+        <p class="p_23">ON 13%</p>
+        <p class="p_23">PE 5%</p>
+        <p class="p_23">QC 5%</p>
+        <p class="p_23">SK 5%</p>
+        <p class="p_23">YT 5%</p>
+        <p class="p_2">To comply with the rules, a two prong approach was implemented. </p>
+        <p class="p_2">1. Create logic to determine the place of supply based on the Travel Category.</p>
+        <p class="p_2">2. Once the place of supply is determined, do a lookup of the Province GST/HST Rate associated with each Province.</p>
+        <p class="p_2">The new Commission GST/HST logic is only applied during interface processing. Invoices generated from ClientBase contain the Commission GST/HST based on Agent input.</p>
+        <h4><a name="Using_the_Travel_Category_to_Determine_Place_of_Supply_Logic" data-mc-generated-bookmark="TOC"></a><a name="Using_the_Travel_Category_to_Determine_Place_of_Supply_Logic"></a>Using the Travel Category to Determine Place of Supply Logic</h4>
+        <p class="p_2">During interface processing, based on the travel category linked to the travel type, logic will be applied to determine the Province of supply. Once the Province is identified, the Province rate will be determined based on a hard coded rate table.</p>
+        <p class="p_24">Travel Categories that use the Province in the Vendor Profile:</p>
+        <p class="p_49">Air</p>
+        <p class="p_49">Hotel</p>
+        <p class="p_49">Cruise</p>
+        <p class="p_49">Tour</p>
+        <p class="p_49">Rail</p>
+        <p class="p_49">Transportation</p>
+        <p class="p_24">Travel Category that Use the City in the Itinerary Field of the Booking Record:</p>
+        <p class="p_20">Car</p>
+        <p class="p_24">Travel Category that use the Province in the Client Profile:</p>
+        <p class="p_20">Service Fees</p>
+        <p class="p_24">Travel Categories that are HST Exempt:</p>
+        <p class="p_20">Insurance</p>
+        <p class="p_20">International</p>
+        <p class="p_20">Zero Rated</p>
+        <p class="p_2">Transborder 5% is applied to all Travel Categories</p>
+        <h4><a name="Better_Calculate_QST_Commission" data-mc-generated-bookmark="TOC"></a><a name="Better_Calculate_QST_Commission"></a>Better Calculate QST Commission</h4>
+        <p>During interface processing, before calculating QST on commission, a look up on the Vendor profile is done to determine the Vendor’s Province to apply the rules below:</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>If the vendor address province is outside of Canada (Province ≠ AB, BC, MB, NB, NL, NS, NT, NU, ON, PE, QC, SK, or YT), the vendor will not pay Commission QST.</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Since commission QST only applies to agencies located in Quebec, the QST Rate will determine if commission QST is to be applied. Commission QST is calculated using the QST rate indicated in the Utilities/Setup/Global Defaults/Tax Related tab or Utilites/Setup/Branches Record (used if QST only applies to some branches but all).&#160; In addition, if the vendor address province is Quebec (Province = QC), the Vendor will pay commission QST.</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Commission QST will be calculated for all domestic air travel.</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Commission QST will default to 0 and for all International and Transborder tickets. </p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Commission QST for Car bookings will default to 0. </p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Hotels located in Quebec – Commission QST is calculated.</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Hotels located outside of Quebec – No commission QST will be calculated. </p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Insurance - Commission QST will default to zero regardless of where the Insurance Company is located. </p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Service Fees - Commission QST applies if the customer address province is in Quebec. If the customer resides outside on Quebec <span class="span_3">no</span> commission QST will be calculated.</p>
+        <p>The above rules apply only to interfaced bookings. Commission QST amounts are not changed or updated by:</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Manual entries/updates</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Global Modify</p>
+        <p><span class="span_24">·</span><span class="span_25">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>Quick Edit</p>
+        <h4><a name="Setting_Up_Profiles_and_City_Code_Provinces" data-mc-generated-bookmark="TOC"></a><a name="Setting_Up_Profiles_and_City_Code_Provinces"></a>Setting Up Profiles and City Code Provinces</h4>
+        <p class="p_2">Since a large portion of the Commission GST/HST calculations will be based on the profile Province where the client and vendor resides, it is <span class="span_3">ESSENTIAL</span> to ensure the TBO client and vendor profiles contain a Province and non-Canadian Vendor profiles contain a Country code. The province should use 2 letter codes as follows: BC, AB, etc. (Please use drop-down menu to select province code.)</p>
+        <p class="p_2">The lookup logic on the profile will first look for Canadian profiles by checking the country field. If the country field contains CANADA or is blank, it will look in the Province field to determine if there's a match to one of the Provinces in the rate table and if so, use the applicable rate to calculate the Commission GST/HST for the booking.</p>
+        <p class="p_2">For cars, we will look for the pickup city in the itinerary field of the TBO booking, and then use the city code table to locate the province and lookup the province rate. Therefore, it is also important that the city code table (<span>Utilities|Setup|City Codes</span>) has province codes for each applicable city and they match the province codes listed above. </p>
+        <p class="p_2">
+            <img src="Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS.jpg" style="height: 327px;width: 572px;" class="img_1" />
+        </p>
+        <h4><a name="Processing_Error_Log_Entries" data-mc-generated-bookmark="TOC"></a><a name="Processing_Error_Log_Entries"></a>Processing Error Log Entries</h4>
+        <p class="p_2">It is important to review the log carefully for entries that pertain to HST. </p>
+        <p class="p_2">Entries that are now logged to <span>Reports|nterface|Processing Error Log</span> include the following examples:</p>
+        <p class="p_2">HST Set to 12% for Car Booking Based on City=YVR, Province=BC</p>
+        <p class="p_2">HST Province Lookup for Vendor Sheraton Failed; Province=</p>
+        <p class="p_2">HST Set to 5% for Service Fee Booking Based On Client ABC Manufacturing/, Province=AB</p>
+        <h4><a name="Markups_and_Discounts_and_Commission_GST_HST" data-mc-generated-bookmark="TOC"></a><a name="Markups_and_Discounts_and_Commission_GST_HST"></a>Markups and Discounts and Commission GST/HST</h4>
+        <p class="p_2">Since the place of supply rules also apply to markups and discounts, when creating an additional booking record in an invoice for the markup/discount, agencies will need to create a Markup/Discount Vendor for each Province and link to the proper profile (containing the province code) accordingly so that the correct percentage is used to make the calculation.</p>
+        <p class="p_2">For transactions with discounts/markups, where users are creating a separate booking in the invoice, a discount/markup vendor should be created for each Province with the Province field in the vendor profile populated for each province and also Canada in the Country field. The correct HST on Commission can then be calculated for these transactions.</p>
+        <h4><a name="Miscellaneous" data-mc-generated-bookmark="TOC"></a><a name="Miscellaneous"></a>Miscellaneous</h4>
+        <p class="p_2">**BSP ticket data seems to be pretty straight forward as the HST is broken out in the Interface record via an RC Code. This RC Code should be mapped in <span class="span_1">Trams Back Office </span>to the GST Tax field (which again will shortly be relabeled GST/HST). This is done by going to <span>Utilities|Global Defaults|Tax Related</span> and ensuring both XG (GST) and RC (HST) codes are captured in the GST Codes field. Separate them with a comma (XG,RC). Be sure the RC code is not also captured in any of the Tax 1 - 4 Codes.</p>
+        <p class="p_2">**We now accept multiple TX entries for Client GST (i.e. XG and RC) on the same MS line as long as the client GST was not already set from a previous line or some other non-MS entry. </p>
+        <p class="p_2">**For Sabre, we read any accumulated Client GST,QST taxes from the AC line which means we won't have a breakdown by tax code. GST/HST will go into Client GST, QST if present will go into the designated tax field and everything else goes into the tax field designated for XT or Tax 1. </p>
+        <p class="p_2">2) Next, Go to <span>Utilities|Global Defaults|Interface/Mailmerge Prompt Tab</span>.</p>
+        <p class="p_2">
+            <img src="Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS_1.jpg" style="height: 368px;width: 435px;" class="img_1" />
+        </p>
+        <p class="p_2">&#160;</p>
+        <p class="p_2">3) Fill in the local currency with CAD - this interfaces the Total Fare in each booking made in Canadian dollars.</p>
+        <p class="p_2">4) Check the box <span class="span_1">Read Multiple Taxes</span>.</p>
+        <p class="p_2">5) When all other setup has been completed, click OK to save.</p>
+        <p class="p_2"><span class="span_12">Notes:</span> </p>
+        <p class="p_2">**Transborder Indicator is interfaced at the Invoice level and is defined by the CRS. An International override can be triggered by placing a *IX in the remarks field of the PNR.</p>
+        <p class="p_2">** RBC Insurance Scripts: If the agency books with RBC Insurance, inform them of the cutover date to <span class="span_1">Trams Back Office</span>. This prompts them to change the profile so that the correct scripts are being utilized.</p>
+        <h3><a name="BSP_Bank_Accounts_Initial_Setup" data-mc-generated-bookmark="TOC"></a><a name="BSP_Bank_Accounts_Initial_Setup_"></a>BSP Bank Accounts Initial Setup </h3>
+        <p class="p_2">These are steps to setup bank accounts including use of Conversion Codes for different countries' currencies.</p>
+        <ol start="1" class="ol_2">
+            <li class="ListParagraph_7" value="1">Go to <span>Utilities|Setup|Bank Accounts</span> (make sure to enter the CAD currency code under <span>Utilities|Setup|Global Defaults|Interface|Mailmerge Prompt</span> as outlined above).</li>
+        </ol>
+        <p class="p_52">
+            <img src="Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS_2.jpg" style="height: 269px;width: 423px;" class="img_1" />
+        </p>
+        <p class="p_2">2) Highlight "Bank Acct No 1" and change the Name and Description in the entry boxes above to the Name of the primary bank account. Do not enter CAD in the Currency code because it was set up in the Global Defaults (see above). The Conversion Rate is 1.0000. Assign a G/L Branch if using more than one Branch. Click <span class="span_1">Update</span>.</p>
+        <p class="p_2">3) Click <span class="span_1">New </span>on the right hand side of the screen and enter the second Bank Account Name and Description. Leave the Currency code blank, Conversion rate 1.0000. Enter any other pertinent information and click <span class="span_1">Add</span>.</p>
+        <p class="p_2">4) Proceed to enter all of bank accounts in the same manner. Make sure all is seen correctly in the data entry screen below, and click <span class="span_1">OK</span> to save.</p>
+        <p class="p_2"><span>Note:</span> Entering the Account No. and Routing No. enables the printing of deposit slips to bring to the bank. (See section Deposits in Payments Chapter.) </p>
+        <p class="p_2">5) If there is a USD Bank account, enter the information about the account and also enter the USD Currency code. </p>
+        <table class="table_1">
+            <col style="width: 72pt;" />
+            <col style="width: 396pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_4">Currency Code</p>
+                </td>
+                <td class="td_3">
+                    <p class="p_5">The 3-letter code of the country the bank account is in. The code is entered only if the bank account is different than the local currency.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="p_4">Conversion Rate</p>
+                </td>
+                <td class="td_3">
+                    <p class="p_5">The current default rate from the bank is defaulted to 1.0000. If using local currency, do not change this area. If there is set up a Currency Code that is different from the local currency above, leave the default, and change the rate when the payment is received, or put the current conversion rate here. </p>
+                </td>
+            </tr>
+        </table>
+        <p class="p_2">6) When entering a Payment (Received, Made, Deposit, Withdrawal) using the USD Bank Account, a Conversion Rate and Equivalent Amount Box appears on the Payment screen. Enter the day's rate on this screen as each payment is entered, rather than going to <span>Utilities|Setup</span> to change it.</p>
+        <h3><a name="Canada_General_Ledger_Accounts_Initial_Setup" data-mc-generated-bookmark="TOC"></a><a name="Canada_General_Ledger_Accounts_Initial_Setup"></a>Canada General Ledger Accounts Initial Setup</h3>
+        <p class="p_2">If using Conversion Rates, set up special GL accounts in the Chart of Accounts. </p>
+        <ol start="1" class="ol_2">
+            <li class="ListParagraph_7" value="1">Go to <span>General-Ledger|Accounts</span> to add and modify G/L accounts.</li>
+        </ol>
+        <p class="p_52">
+            <img src="Resources/Images/Chapter 1 Welcome/Canada General Ledger Accounts.jpg" style="height: 337px;width: 447px;" class="img_1" />
+        </p>
+        <p class="p_2">2) Add bank accounts by highlighting each bank account and changing the name to the name of the bank account. If more than two bank accounts are needed, choose the next number in the series (1010) for the third account and 1020 for a fourth account.</p>
+        <p class="p_2">3) Add a conversion account to be used when converting CAD to USD and USD to CAD. This account is usually set up as: 1001 Currency Conversion.</p>
+        <p class="p_2">4) Add a Liability Account in the 2000 series for GST Payable and an Offset Account in the 2000 or 1000 series for GST Expense.</p>
+        <p class="p_2">5) If paying the QST tax, create the Liability - QST Payable and QST Offset account also.</p>
+        <p class="p_2">6) Add an Asset Account named "GST Receivable". (See G/L Accounts Setup below for more information.)</p>
+        <p class="p_2">7) The Payroll Tax Liability accounts in the 2100 series and the Payroll Expense accounts in the 6000 series should be renamed using the correct terminology for Canada. The FICA Payable tax, for example, is the same as the Canada Pension, or Quebec Pension. State Withholding Payable should be changed to Provincial Income Tax.</p>
+        <p class="p_2">8) Make a note of the Account Numbers added or changed.</p>
+        <p class="p_2">9) When these accounts are set up in the General Ledger, click <span class="span_1">OK</span> to save.</p>
+        <h3><a name="Canada_G_L_Accounts_Initial_Setup" data-mc-generated-bookmark="TOC"></a><a name="Canada_GL_Accounts_Initial_Setup_"></a>Canada G/L Accounts Initial Setup </h3>
+        <p class="p_2">Now we need to tell TBO where some of the GL accounts reside. </p>
+        <p class="p_2">1) Go to the <span>Utilities|Setup|G/L Accts</span>. (This is also called the End of Period Table because it tells the <span class="span_1">Trams Back Office</span> program where to journalize the information in the Invoices and Payment entries when the End of Period is created.) </p>
+        <p class="p_2">2) Under the Bank Accounts Tab, highlight each Bank Account and enter the correct G/L account number in the fields above. </p>
+        <p class="p_2">3) Any Bank Accounts that are not CAD - set the Conversion G/L No to 1001.</p>
+        <p class="p_2">4) Under the Others Tab make sure the GST Payable and QST Payable (if required) are set to the accounts that were created in <span>General-Ledger|Accounts</span>.</p>
+        <p class="p_2">5) In the GST Receivable account, enter the account that was created in <span>General-Ledger|Accounts</span>.</p>
+        <p class="p_2"><span>Note:</span> When the "GST Receivable" Account is entered into the GL Acct #2 field of an "Other" Profile, the same GST Calculation is performed as when the GST Payable account is entered.</p>
+        <h3><a name="Additional_End_of_Period_Reports_for_BSP_Users_..146" data-mc-generated-bookmark="TOC"></a><a name="Additional_End_of_Period_Reports_for_BSP_Users2"></a>Additional End of Period Reports for BSP Users</h3>
+        <p class="p_2">At the end of each month, run the following reports to verify the amount of TAX to be paid. </p>
+        <p class="p_2">1) Run an Invoice Activity Report by going to <span>Reports|Invoice|Activity.</span></p>
+        <p class="p_2">2) Compare the tax amounts on this report with the amounts in the Balance Sheet accounts created for these taxes (<span>Reports|General Ledger|Account History)</span>.</p>
+        <p class="p_2">3) When sending the quarterly check to pay the tax due, go to <span>Payments|Made</span>. Enter the amount of the tax due. Use the profile type "Other" that created for these taxes and create the following journal entry:</p>
+        <p class="p_20">Debit Credit</p>
+        <p class="p_2">Cash in Bank 500.00</p>
+        <p class="p_2">GST Payable 500.00 </p>
+        <h3><a name="Quebec_TAX_-_OPC_-_Consumer_Protection_Fund" data-mc-generated-bookmark="TOC"></a><a name="kanchor96"></a><a name="Quebec_TAX_-_OPC_-_Consumer_Protection_Fund"></a>Quebec TAX - OPC - Consumer Protection Fund</h3>
+        <p class="p_2">The Quebec government has introduced a new Consumer Protection Fund, and the agency has to collect the fees. The Consumer must pay 35% or $3.50 on every thousand dollars in Travel. This charge must be represented as a separate line item on the client's invoice. For the first year the agency is allowed to keep 10% of the monies collected during the quarter and 3% after the first year. Setup and use for OPC:</p>
+        <p class="p_2">1) Set up a new vendor. The name of the vendor optional, but one recommendation is OPC or OPC Fees. Enter an Interface ID, which could be OPCFEES.</p>
+        <p class="p_2">2) Go to <span>General-Ledger|Accounts</span> and create a new 4xxx Sales account and a new 5xxx Cost of Sales account.</p>
+        <p class="p_2">3) Go to <span>Utilities|Setup|Travel Types</span> and setup a new Travel Type, OPC Fees.</p>
+        <p class="p_2">4) Go to <span>Utilities|Setup|GL Accts</span> and point this new travel type to the new Sales and Cost of Sales accounts. </p>
+        <p class="p_2">5) In order to create the new booking on the invoice, drive a manual accounting line for this fee at 0% commission so that the vendor collects the entire amount payable and there is no income earned.</p>
+        <p class="p_2">6) At the end of the quarter send a check, along with the form, to the government. Deduct 10% which can then be taken as income.</p>
+        <p class="p_2">(Please note that at this time BSP does not process these credit card charges for the agency. Since it has to appear as a separate item on the client's invoice, it cannot be included in the existing service fees. One option is to have each agent enter the charges to the point of sale machine for every invoice generated which might work in a very small agency but not be effective in an agency with any kind of volume.)</p>
+        <p class="p_2"><span>Note:</span> Both IATS (TicketMaster), CSI (Card Services International, and Pinnacle Payment Solutions (formerly PRI) are willing to handle the OPC Fund charges provided the agency gives them their service fee business as well. This charge must appear on the client original invoice, and it cannot be backdated.</p>
+        <h3><a name="Air_Canada_Credit_Memos_..147" data-mc-generated-bookmark="TOC"></a><a name="kanchor97"></a><a name="Air_Canada_Credit_Memos"></a>Air Canada Credit Memos</h3>
+        <p class="p_2">As of April 2004, Air Canada began paying commissions via credit memos, which are processed through BSP. These are the recommended steps agencies should follow to properly account for these transactions. </p>
+        <p class="p_2">1) Create the invoice in <span class="span_1">Trams Back Office</span> either via interface or manual entry. The issue date will reflect the actual date of the sale: </p>
+        <p class="p_51">* Submit to = Supplier (Comm Track invoices would not account for sales/cost of sales in the general ledger) </p>
+        <p class="p_51">* Total Fare = Amount of ticket </p>
+        <p class="p_51">* Commission = Amount of commission earned on the ticket </p>
+        <p class="p_51">* Form of Payment = Credit card </p>
+        <p class="p_51">* Sales Agent(s) = Sales Agent(s) in PNR </p>
+        <p class="p_2">2) On the Monday after the BSP Canada Web sale, BSP will e-mail the Web Cash Reward report and Web Account file. </p>
+        <p class="p_2">3) When receiving the BSP Report, it will list the credit memo, and at that time create an adjustment Invoice in <span class="span_1">Trams Back Office</span> (<span>Invoices|Adjustments</span>, or Debit/Credit Memo) - one booking record for each confirmation number.</p>
+        <p class="p_51">* Client name on the invoice = Air Canada </p>
+        <p class="p_51">* Vendor name on the invoice = Air Canada </p>
+        <p class="p_51">* Memo number in the invoice = Credit memo number </p>
+        <p class="p_51">* Original Ticket number in the invoice = Credit memo number </p>
+        <p class="p_51">* Do not enter any Sales Agents to the credit memo as they were already tagged when the supplier invoice was created in Step 1 </p>
+        <p class="p_2">4) Perform the BSP Settlement as usual.</p>
+        <p class="p_2">5) Run a Vendor Statement Summary report (<span>Reports|Vendor|Statement</span>) and compare this to the Credit Memo from Air Canada. This serves as a reconciliation process to ensure that the proper commissions were received from Air Canada on the Credit Memo.</p>
+        <p class="p_51">* Report type = Summary </p>
+        <p class="p_51">* Vendor Name = Air Canada </p>
+        <p class="p_51">* From and To dates = BSP reporting period </p>
+        <p class="p_2">6) Write off the Vendor Balance on the Vendor Balance Report created from Step 1. Go to <span>Payments|Received</span> after determining the amount of write-off based on the reconciliation process in Step 5. Enter the amount in the amount field of the payment received screen with a Pay Method = Other; Payment Date = BSP Settlement Date; Profile Type = Vendor Supplier; and Name = Air Canada. Toggle closed invoices that were paid by the Credit Memo from Air Canada and journalize to BSP Adjustments. </p>
+        <p class="p_2"><span>Note:</span> Agent Statements will be affected by the write-off of the Vendor Balance, as this is a Supplier CC transaction and should be set to Vendor Payment Date. </p>
+        <h2><a name="Remote_Access_Setup_(using_Direct_Connect)" data-mc-generated-bookmark="TOC"></a><a name="Remote_Access_Setup_using_Direct_Connect"></a>Remote Access Setup (using Direct Connect)</h2>
+        <p>This section describes Trams Back Office setup using Direct Connect in lieu of Terminal Services.&#160; The method uses a remote instance of TramsAppServer.&#160; <a href="http://static.trams.com/tramslibrary/documentation/tbo/ConnectTramsAppServer.pdf"><span class="Hyperlink">Click here for setup instructions.</span></a></p>
+        <h2><a name="Additional_Security_Settings" data-mc-generated-bookmark="TOC"></a>Additional Security Settings</h2>
+        <p>Additional security settings were created with the 4.05 release. New features and setup follows.</p>
+        <h3><a name="Security_Features" data-mc-generated-bookmark="TOC"></a>Security Features</h3>
+        <ul>
+            <li value="1">When a Profile, Res Card, or Reservation is viewed, created, updated, or deleted, the system logs this information to the changelog in order to record who has viewed or modified personal customer data and when.</li>
+            <li value="2">When a User Login record is viewed, modified, added, or deleted, these changes are logged, along with the user who made the change and at what date and time.</li>
+            <li value="3">Users are now temporarily locked out after three unsuccessful attempts to log in (e.g., incorrect password). A manager can unlock the user's account by changing their password for them; otherwise, the account will unlock after 30 minutes.</li>
+            <li value="4">Unsuccessful login attempts are now logged, as are the lockouts of user logins with too many unsuccessful login attempts.</li>
+        </ul>
+        <h3><a name="Security_Setup" data-mc-generated-bookmark="TOC"></a>Security Setup</h3>
+        <p><b>To take advantage of the above security features, you must take two steps:</b>
+        </p>
+        <ol>
+            <li value="1">Run the latest database update. Download the database update (DBUp.exe) <a href="http://static.trams.com/tramslibrary/Releaseandupdatefiles/Updates/misc_exe/DBup(latestversion)/dbup.exe">here</a>: Be sure to back up your database before running the database update. No one can be logged in while the database update is running.</li>
+            <li value="2">Set up and use the new Remote Database Connection feature (described below) to connect to the database:</li>
+        </ol>
+        <h4><a name="Remote_Database_Connection" data-mc-generated-bookmark="TOC"></a><b>Remote Database Connection</b>
+        </h4>
+        <p>-	ClientBase Windows has the option of configuring a centralized app server that all users connect to. Connecting this way allows ClientBase to track and log user login attempts and lock out users after three failed attempts. It also logs views of and changes to customers’ personal data.</p>
+        <p><b>Setting up to use the Remote Connection:</b>
+        </p>
+        <ol>
+            <li style="font-size: 10pt;" value="1">	Download the latest TramsAppServer version <a href="http://static.trams.com/tramslibrary/Releaseandupdatefiles/hotfix/tramsappserver/4/07/TramsAppServer.exe_4.07.00.031.zip">here</a>:</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li id="lia" value="1">Save it to C:\Program Files (x86)\Trams\Common Files and replace the old version, if present.</li>
+            </ol>
+            <li style="font-size: 10pt;" value="2">	Install TramsAppServer on the server:</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li id="lia" value="1">Open Windows ‘Command Prompt’ program by clicking on Windows Start Icon &gt; All Programs &gt; Accessories &gt; Command Prompt and right-click to ‘Run as administrator’.</li>
+                <li id="lia" value="2">	In Command Prompt, change directory to C:\Program Files (x86)\Trams\Common Files.</li>
+                <li id="lia" value="3">Write command ‘tramsappserver -install’ and press Enter.</li>
+                <li id="lia" value="4">	‘Service installed successfully’ displays.</li>
+            </ol>
+            <li style="font-size: 10pt;" value="3">	Run TramsAppServer:</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li id="lia" value="1">Make sure Port 211 is open on the server:</li>
+                <li id="lia" value="2">Go to Control Panel and launch "Windows Firewall."</li>
+                <li id="lia" value="3">Go to "Advanced Settings."</li>
+                <li id="lia" value="4">Select "Inbound Rules" in the left pane.</li>
+                <li id="lia" value="5">Select "New Rule…" in the right pane.</li>
+                <li id="lia" value="6">In the New Inbound Rule Wizard, select "Port" as Rule Type, then click "Next".</li>
+                <li id="lia" value="7">Select "TCP and enter "211" in "Specific local ports", then click "Next".</li>
+                <li id="lia" value="8">Select "Allow the connection", then click "Next".</li>
+                <li id="lia" value="9">Select all the checkboxes for “When does this rule apply,” then click "Next".</li>
+                <li id="lia" value="10">Enter “Trams App Server Rule” as the name, then click “Finish”.</li>
+            </ol>
+            <li style="font-size: 10pt;" value="4">Open Windows ‘Service’ program by clicking on Windows Start Icon &gt; typing in ‘Services’ in Search and clicking Services from the results.</li>
+            <li style="font-size: 10pt;" value="5">	Once Services is opened, scroll and select TramsAppServer, then click on “Start the service”.</li>
+            <li style="font-size: 10pt;" value="6">Launch tramsappserversettings.exe from the Common Files folder. This application allows Trams App Server settings to be changed. (These settings are stored in the registry.)</li>
+            <li style="font-size: 10pt;" value="7">All global aliases found in the Alias Utility will appear in a drop down. Select the database alias to connect to; or add a new alias name and browse to the database location in the Database Path field. More than one database alias can be set up, if your agency uses more than one database.</li>
+            <li style="font-size: 10pt;" value="8">	Enter the username and password to connect to the database with. Usernames and Passwords are stored in encrypted form.</li>
+            <li style="font-size: 10pt;" value="9"> The "Use Default Alias Checkbox," if checked, means that the database path will not be stored in the registry; it will always be looked up from the corresponding alias. If it is not checked, the path is stored in the registry and the path from the corresponding alias is ignored.</li>
+            <li style="font-size: 10pt;" value="10">	Optional: If your agency also uses ClientBase Online, to enable Trams App Server to send email when a user clicks the Forgot My Password link, click the Email Settings button and enter the SMTP settings for your agency.</li>
+            <li style="font-size: 10pt;" value="11">	Finally, on the ClientBase Windows login screen, click the Advanced Settings link. Change the connection type from Local to Remote. Specify the remote server name, which is then stored in the registry.</li>
+        </ol>
+        <h4><a name="TramsAppServer_Automatic_Update" data-mc-generated-bookmark="TOC"></a>TramsAppServer Automatic Update</h4>
+        <ol>
+            <li value="1">Launch TramsAppServerSettings.exe and click <i>Check for Updates</i>.<p> If updates are available, you will be asked to install them. </p></li>
+            <li value="2">When updates are complete, you will be prompted to restart the service.</li>
+            <li value="3"> Restarting the TramsAppServer service via Services [found under Control Panel | Administrative tools] completes the installation.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

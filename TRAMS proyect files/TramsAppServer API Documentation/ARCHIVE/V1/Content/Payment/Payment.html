@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="11331" MadCap:lastWidth="660">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Payment</h1>
+        <p><b style="background-color: #ffff00;">Documentation in development.</b>
+        </p>
+        <h3>Running the Query</h3>
+        <p>Before running an invoice query, make sure you've already called <MadCap:xref href="../Login.html">Login</MadCap:xref> and have your session id.</p>
+        <p>Do a post to the following URL (assuming you're running the API locally):</p>
+        <p>http://localhost:8085}/payment/Load/</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Response:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody><pre>{
+    "apiVersion": "4.05",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "dataset": {
+            "name": "NewPayment",
+            "flags": [
+                "insert",
+                "update",
+                "delete"
+            ],
+            "metaData": {
+                "NewPayment": {
+                    "paymentNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "insertOnly",
+                            "PKField",
+                            "autoAssign"
+                        ]
+                    },
+                    "payType_LinkNo": {
+                        "type": "integer",
+                        "flags": [
+                            "required",
+                            "insertOnly"
+                        ],
+                        "checkValues": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ]
+                    },
+                    "bank_LinkNo": {
+                        "type": "integer"
+                    },
+                    "code": {
+                        "type": "string",
+                        "size": 10
+                    },
+                    "paymentDate": {
+                        "type": "dateTime"
+                    },
+                    "dateCleared": {
+                        "type": "dateTime"
+                    },
+                    "payMethod_LinkNo": {
+                        "type": "integer",
+                        "flags": [
+                            "required",
+                            "insertOnly"
+                        ]
+                    },
+                    "profile_LinkNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "required"
+                        ],
+                        "linkField": "Profile.ProfileNo"
+                    },
+                    "JERecord_LinkNo": {
+                        "type": "largeInt",
+                        "linkField": "JE.JERecordNo"
+                    },
+                    "ckCCNo": {
+                        "type": "string",
+                        "size": 35
+                    },
+                    "checkNo": {
+                        "type": "double"
+                    },
+                    "submitTo_LinkCode": {
+                        "type": "string",
+                        "size": 1,
+                        "flags": [
+                            "insertOnly"
+                        ],
+                        "checkValues": [
+                            "A",
+                            "S",
+                            "C"
+                        ]
+                    },
+                    "amount": {
+                        "type": "largeInt",
+                        "flags": [
+                            "required"
+                        ]
+                    },
+                    "appExCr": {
+                        "type": "largeInt",
+                        "flags": [
+                            "insertOnly"
+                        ]
+                    },
+                    "convRate": {
+                        "type": "integer",
+                        "flags": [
+                            "insertOnly"
+                        ]
+                    },
+                    "remarks": {
+                        "type": "string",
+                        "size": 512
+                    },
+                    "payeeName": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "equivAmount": {
+                        "type": "largeInt",
+                        "flags": [
+                            "required"
+                        ]
+                    },
+                    "paymentGroup": {
+                        "type": "string",
+                        "size": 128
+                    },
+                    "currencyCode": {
+                        "type": "string",
+                        "size": 3
+                    },
+                    "payeeAddr": {
+                        "type": "string",
+                        "size": 512
+                    },
+                    "voided": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "branch_LinkNo": {
+                        "type": "integer"
+                    },
+                    "voucher_LinkNo": {
+                        "type": "integer",
+                        "flags": [
+                            "insertOnly"
+                        ]
+                    },
+                    "invoiceRef": {
+                        "type": "string",
+                        "size": 30
+                    },
+                    "CCDataMasked": {
+                        "type": "string",
+                        "size": 1,
+                        "checkValues": [
+                            "N",
+                            "Y"
+                        ]
+                    },
+                    "ckCCNoDecrypt": {
+                        "type": "string",
+                        "size": 30,
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "deposit_LinkNo": {
+                        "type": "integer"
+                    },
+                    "voucher_Type": {
+                        "type": "integer",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_InvoiceNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_InvoiceNumber": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_BranchNo": {
+                        "type": "integer",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_BookingNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_ClientNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_AgentNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_Remarks": {
+                        "type": "string",
+                        "size": 512,
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_InvoiceGroup": {
+                        "type": "string",
+                        "size": 128,
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_Amount": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_TravelType": {
+                        "type": "integer",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_TotalFare": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_HomeNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_HostNo": {
+                        "type": "largeInt",
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "voucher_ConfirmNo": {
+                        "type": "string",
+                        "size": 40,
+                        "flags": [
+                            "calculated"
+                        ]
+                    },
+                    "profileType_LinkCode": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "payDtl": {
+                        "payDetailNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "insertOnly",
+                                "PKField",
+                                "autoAssign"
+                            ]
+                        },
+                        "payment_LinkNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "required",
+                                "insertOnly"
+                            ],
+                            "linkField": "payment.paymentNo"
+                        },
+                        "invoice_LinkNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "required"
+                            ],
+                            "linkField": "Invoice.InvoiceNo"
+                        },
+                        "booking_LinkNo": {
+                            "type": "largeInt",
+                            "linkField": "Booking.BookingNo"
+                        },
+                        "amount": {
+                            "type": "largeInt",
+                            "flags": [
+                                "required"
+                            ]
+                        },
+                        "profileType_LinkCode": {
+                            "type": "string",
+                            "size": 1,
+                            "flags": [
+                                "required"
+                            ],
+                            "checkValues": [
+                                "I",
+                                "C",
+                                "V"
+                            ]
+                        }
+                    },
+                    "depositDtl": {
+                        "deposit_LinkNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "required",
+                                "insertOnly"
+                            ],
+                            "linkField": "payment.paymentNo"
+                        },
+                        "receipt_LinkNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "required"
+                            ],
+                            "linkField": "Payment.PaymentNo"
+                        },
+                        "amount": {
+                            "type": "largeInt",
+                            "flags": [
+                                "required"
+                            ]
+                        }
+                    },
+                    "attachment": {
+                        "attachNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "insertOnly",
+                                "PKField",
+                                "autoAssign"
+                            ]
+                        },
+                        "attachType": {
+                            "type": "integer"
+                        },
+                        "filename": {
+                            "type": "string",
+                            "size": 128
+                        },
+                        "directoryName": {
+                            "type": "string",
+                            "size": 255
+                        },
+                        "computerName": {
+                            "type": "string",
+                            "size": 20
+                        },
+                        "originalSize": {
+                            "type": "integer"
+                        },
+                        "compressedSize": {
+                            "type": "integer"
+                        },
+                        "fileDateTime": {
+                            "type": "dateTime"
+                        },
+                        "modifiedDateTime": {
+                            "type": "dateTime"
+                        },
+                        "modifiedBy": {
+                            "type": "string",
+                            "size": 20
+                        },
+                        "data": {
+                            "type": "BLOB"
+                        },
+                        "isCompressed": {
+                            "type": "string",
+                            "size": 1
+                        },
+                        "description": {
+                            "type": "string",
+                            "size": 255
+                        },
+                        "appType_Owner": {
+                            "type": "integer"
+                        },
+                        "payment_LinkNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "required",
+                                "insertOnly"
+                            ],
+                            "linkField": "payment.paymentNo"
+                        }
+                    },
+                    "JE": {
+                        "JERecordNo": {
+                            "type": "largeInt",
+                            "flags": [
+                                "insertOnly",
+                                "PKField",
+                                "autoAssign"
+                            ]
+                        },
+                        "JEType_LinkNo": {
+                            "type": "integer",
+                            "flags": [
+                                "required"
+                            ],
+                            "checkValues": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6
+                            ]
+                        },
+                        "code": {
+                            "type": "string",
+                            "size": 10
+                        },
+                        "creationDate": {
+                            "type": "dateTime"
+                        },
+                        "postDate": {
+                            "type": "dateTime"
+                        },
+                        "remarks": {
+                            "type": "string",
+                            "size": 512
+                        },
+                        "postedByBranch": {
+                            "type": "string",
+                            "size": 1,
+                            "flags": [
+                                "insertOnly"
+                            ]
+                        },
+                        "JEGroup": {
+                            "type": "string",
+                            "size": 128
+                        },
+                        "paymentNo": {
+                            "type": "largeInt",
+                            "linkField": "payment.paymentNo"
+                        },
+                        "payableNo": {
+                            "type": "largeInt"
+                        },
+                        "JEDtl": {
+                            "JEDetailNo": {
+                                "type": "largeInt",
+                                "flags": [
+                                    "insertOnly",
+                                    "PKField",
+                                    "autoAssign"
+                                ]
+                            },
+                            "indexNo": {
+                                "type": "integer",
+                                "flags": [
+                                    "required"
+                                ]
+                            },
+                            "JERecord_LinkNo": {
+                                "type": "largeInt",
+                                "flags": [
+                                    "required",
+                                    "insertOnly"
+                                ],
+                                "linkField": "JE.JERecordNo"
+                            },
+                            "GL_LinkNo": {
+                                "type": "integer",
+                                "flags": [
+                                    "required"
+                                ],
+                                "linkField": "GL.GLNo"
+                            },
+                            "branch_LinkNo": {
+                                "type": "integer"
+                            },
+                            "amount": {
+                                "type": "largeInt",
+                                "flags": [
+                                    "required"
+                                ]
+                            },
+                            "creditAmount": {
+                                "type": "largeInt"
+                            },
+                            "debitAmount": {
+                                "type": "largeInt"
+                            },
+                            "remarks": {
+                                "type": "string",
+                                "size": 80
+                            },
+                            "FC_LinkNo": {
+                                "type": "integer"
+                            },
+                            "cleared": {
+                                "type": "string",
+                                "size": 1
+                            },
+                            "JEDtlGroup": {
+                                "type": "string",
+                                "size": 128
+                            },
+                            "GLName": {
+                                "type": "string",
+                                "size": 80
+                            }
+                        }
+                    }
+                }
+            },
+            "data": {
+                "NewPayment": [
+                    {
+                        "paymentNo": 4,
+                        "payType_LinkNo": 1,
+                        "bank_LinkNo": 1,
+                        "code": "",
+                        "paymentDate": "1994-01-02T00:00:00.000Z",
+                        "dateCleared": null,
+                        "payMethod_LinkNo": 3,
+                        "profile_LinkNo": 33,
+                        "JERecord_LinkNo": null,
+                        "ckCCNo": "5279-XXXX",
+                        "checkNo": null,
+                        "submitTo_LinkCode": null,
+                        "amount": 39800,
+                        "appExCr": 0,
+                        "convRate": 0,
+                        "remarks": "Pymt For Inv #55630",
+                        "payeeName": null,
+                        "equivAmount": 39800,
+                        "paymentGroup": null,
+                        "currencyCode": "",
+                        "payeeAddr": null,
+                        "voided": null,
+                        "branch_LinkNo": null,
+                        "voucher_LinkNo": null,
+                        "invoiceRef": null,
+                        "CCDataMasked": "N",
+                        "ckCCNoDecrypt": null,
+                        "deposit_LinkNo": null,
+                        "voucher_Type": null,
+                        "voucher_InvoiceNo": null,
+                        "voucher_InvoiceNumber": null,
+                        "voucher_BranchNo": null,
+                        "voucher_BookingNo": null,
+                        "voucher_ClientNo": null,
+                        "voucher_AgentNo": null,
+                        "voucher_Remarks": null,
+                        "voucher_InvoiceGroup": null,
+                        "voucher_Amount": null,
+                        "voucher_TravelType": null,
+                        "voucher_TotalFare": null,
+                        "voucher_HomeNo": null,
+                        "voucher_HostNo": null,
+                        "voucher_ConfirmNo": null,
+                        "profileType_LinkCode": "I",
+                        "payDtl": [
+                            {
+                                "payDetailNo": 4,
+                                "payment_LinkNo": 4,
+                                "invoice_LinkNo": 12,
+                                "booking_LinkNo": 23,
+                                "amount": 39800,
+                                "profileType_LinkCode": "I"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="658" MadCap:lastWidth="728">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Corporate and Group Profiles Matching Logic</h1>
+        <h2>Section 2</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no record found via SPUniqueID...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Look for a match of the AN Number via the Remarks (CategoryCode="PNR" and TypeCode="OT") to a CB Profile Interface ID of a CB Leisure or CB Corporate profile type.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If SP Profile has multiple AN Numbers...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Order the SP Remarks records by OrderSequenceOrder.</li>
+                    <li>Log a warning message that multiple AN Numbers were found.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <p>For each AN:</p>
+        <ol>
+            <li>Query Client Profiles (Leisure/Corporate) where the AN equals PROFILE.InterfaceID and SPUNQIUEID is empty/null.</li>
+        </ol>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no records are found...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Repeat Step 1 if there is another AN to try.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If multiple records are found...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Repeat Step 1 if there is another AN to try.)</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If there are no more ANs to try OR there are multiple AN matches...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to <a href="corp-group-matching3.htm">Section 3</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If one matching profile is found by AN...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Update PROFILE.SPUNIQUIEID and PROFILE.PCC to the current SP Profile values.</li>
+                    <li>Treat rest of the sync in of the SP Profile as an update.</li>
+                </ol>
+                <p>Note: CB Travelers within the profile will be created or updated based on the SP Travelers in the Corporate or Group profile using the Traveler Match rules in <a href="sabre-traveler-matching5.htm">Section 5</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

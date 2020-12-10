@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle="Preparing for Interface"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/SABRE Interface Preparation.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/SABRE Interface Preparation.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_17_SABRE_Interface_Preparation" />
+    <Anchor
+      Name="kanchor308" />
+    <Anchor
+      Name="Preparing_for_Interface_..2" />
+    <Anchor
+      Name="Interface_Option_6" />
+    <Anchor
+      Name="SABRE_Printing_Module" />
+    <Anchor
+      Name="Images_to_File" />
+    <Anchor
+      Name="SABRE_Interface_Control" />
+    <Anchor
+      Name="kanchor309" />
+    <Anchor
+      Name="Checking_Status_of_the_Interface_Queue_DX_STATUS" />
+    <Anchor
+      Name="Start_Transmission_of_Pending_Message_DX_TRANSMIT" />
+    <Anchor
+      Name="Stop_Transmission_of_Pending_Message_DX_END" />
+    <Anchor
+      Name="Stop_Transmission_Immediately_DX_HOLD" />
+    <Anchor
+      Name="Retransmit_Records_DWLIST" />
+    <Anchor
+      Name="Check_History_of_Transmission_Activity_DX_HISTORY" />
+    <Anchor
+      Name="Establishing_Daily_Procedures_..3" />
+    <Anchor
+      Name="kanchor310" />
+    <Anchor
+      Name="Download_Procedures_for_TBO_..4" />
+    <Anchor
+      Name="Continued_Procedures_for_TBO_..5" />
+    <Anchor
+      Name="Interfacing_Multiple_Branches_..6" />
+    <Anchor
+      Name="kanchor311" />
+    <Anchor
+      Name="Processing_by_ARC_Number" />
+    <Anchor
+      Name="Entries_Affecting_Invoices_and_Tickets_..7" />
+    <Anchor
+      Name="kanchor312" />
+    <Anchor
+      Name="Customer_Number_as_the_Interface_ID_DK" />
+    <Anchor
+      Name="Customer_Number_as_a_Remark_5.S*AN" />
+    <Anchor
+      Name="Billing_Address_5_" />
+    <Anchor
+      Name="Phone_Number_5.S*PH" />
+    <Anchor
+      Name="Fax_Number_5.S*FX" />
+    <Anchor
+      Name="Client_Email_Address" />
+    <Anchor
+      Name="Sales_Agent_Sabre_Agent_Sine" />
+    <Anchor
+      Name="Agent_ID_Override_or_Additional_Sales_Agents_5.S*SA" />
+    <Anchor
+      Name="Outside_Agent_ID_5.S*OA" />
+    <Anchor
+      Name="Department_Information_5.S*DP" />
+    <Anchor
+      Name="UDIDS_Remarks_5.S*UD1" />
+    <Anchor
+      Name="Group_Affiliation_5.S*GP" />
+    <Anchor
+      Name="Invoice_Remarks_5.S*IM" />
+    <Anchor
+      Name="Client_Remarks_5.S*RM_FREE_FLOW" />
+    <Anchor
+      Name="Passenger_Statement_Information_-LAST_NAME_FIRST*" />
+    <Anchor
+      Name="Fare_Savings_Report_Information_..8" />
+    <Anchor
+      Name="Form_of_Payment_Override_5.S*FP" />
+    <Anchor
+      Name="Branch_Override_5.S*BR" />
+    <Anchor
+      Name="Face_Value_and_Income_Earned_5.S*FV" />
+    <Anchor
+      Name="Segment_Information_..9" />
+    <Anchor
+      Name="Capture_Foreign_and_Local_Currency" />
+    <Anchor
+      Name="Mileage_..10" />
+    <Anchor
+      Name="Partial_Payment_5.S*PP" />
+    <Anchor
+      Name="Descriptor_Codes_-_Valid_at_Invoice_Level" />
+    <Anchor
+      Name="kanchor313" />
+    <Anchor
+      Name="Descriptor_Codes_-_Valid_at_Booking_Level" />
+    <Anchor
+      Name="kanchor314" />
+    <Anchor
+      Name="Hotel_and_Car_Segments_..11" />
+    <Anchor
+      Name="kanchor315" />
+    <Anchor
+      Name="Automated_Hotel_Segment_..12" />
+    <Anchor
+      Name="Itinerary_Updates_5.S*HU" />
+    <Anchor
+      Name="UDID Related_..13" />
+    <Anchor
+      Name="Foreign_Currency_in_Hotel_Bookings" />
+    <Anchor
+      Name="Non-Automated_Hotel_Segment_..14" />
+    <Anchor
+      Name="Automated_Car_Segment_..15" />
+    <Anchor
+      Name="Manual_Car_Segment" />
+    <Anchor
+      Name="ARC_BSP_Ticketing_and_Invoicing_..16" />
+    <Anchor
+      Name="kanchor316" />
+    <Anchor
+      Name="Sabre_Invoice_and_Ticketing_Commands" />
+    <Anchor
+      Name="Issue_Automated_ARC_BSP_Ticket_..17" />
+    <Anchor
+      Name="Issue_Invoice_for_Hand_Written_ARC_BSP_Ticket" />
+    <Anchor
+      Name="Issue_Invoice_for_Prepaid_Ticket_Advice_-_PTA" />
+    <Anchor
+      Name="Issue_Invoice_for_Miscellaneous_Charge_Order_(MCO)_..18" />
+    <Anchor
+      Name="Issue_an_Automated_Exchange_Ticket" />
+    <Anchor
+      Name="Issue_Invoice_for_Manual_Exchange_Ticket" />
+    <Anchor
+      Name="Electronic_ARC_Documents_(ARC_E_Tickets)" />
+    <Anchor
+      Name="Manual_ARC_Travel_Agency_Service_Fees_-_CC_FOP" />
+    <Anchor
+      Name="Voids" />
+    <Anchor
+      Name="Sabre_MX_Record" />
+    <Anchor
+      Name="Manual_Refunds_ACR*AIR" />
+    <Anchor
+      Name="Discount_ACL" />
+    <Anchor
+      Name="Bulk_Ticketing_5.S*FV" />
+    <Anchor
+      Name="Appending_or_Overriding_Data_in_an_Automated_AC_line_5.S*MSXXX" />
+    <Anchor
+      Name="Sabre_Holding_List_HL" />
+    <Anchor
+      Name="Ancillary_Airline_Charges_EMD_..19" />
+    <Anchor
+      Name="OB_Fees" />
+    <Anchor
+      Name="Non-ARC_BSP_Supplier_Invoice_..20" />
+    <Anchor
+      Name="kanchor317" />
+    <Anchor
+      Name="Issuing_Invoice_for_Tour_Deposit_..21" />
+    <Anchor
+      Name="Issuing_Invoice_for_Tour_Final_Payment" />
+    <Anchor
+      Name="Issuing_Invoice_for_Cruise_Deposit_..22" />
+    <Anchor
+      Name="Issuing_Invoice_for_Cruise_Final_Payment" />
+    <Anchor
+      Name="Issuing_Invoice_for_Service_Fees" />
+    <Anchor
+      Name="Issuing_Invoice_for_Insurance_..23" />
+    <Anchor
+      Name="Issuing_Invoice_for_Non-ARC_BSP_Air_..24" />
+    <Anchor
+      Name="Supplier_Exchange_Ticket" />
+    <Anchor
+      Name="Issuing_Invoice_for_a_Cruise_Deposit_(Sabre_Deposit_Accounting_Line)" />
+    <Anchor
+      Name="Non-ARC_Air_-_Ticketless_-_Southwest_Electronic_Tickets" />
+    <Anchor
+      Name="OPTION_1" />
+    <Anchor
+      Name="OPTION_2" />
+    <Anchor
+      Name="OPTION_3" />
+    <Anchor
+      Name="Split_Form_of_Payment_..25" />
+    <Anchor
+      Name="Discounts_ACL" />
+    <Anchor
+      Name="Ancillary_Seats_Upgrades" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="SABRE Interface Preparation"
+      Conditions=""
+      LocalConditions=""
+      Position="20" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

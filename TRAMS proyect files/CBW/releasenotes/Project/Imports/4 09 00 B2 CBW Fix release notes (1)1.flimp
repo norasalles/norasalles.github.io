@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  ImportFolder="B2"
+  LastImport="2020-03-18T13:05:10.6330470-03:00">
+  <Files>
+    <Url
+      Source="../../../4 09 00 B2 CBW Fix release notes (1).docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/My Projects/TRAMS/Release Notes/ClientBase Windows Release Notes/4 09 00 B2 CBW Fix release notes (1).docx" />
+    <Url
+      Source="../../../4 09 00 Beta 2 CBW NFET release notes (2).docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/My Projects/TRAMS/Release Notes/ClientBase Windows Release Notes/4 09 00 Beta 2 CBW NFET release notes (2).docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/B2/ClientBase Windows 4 09 00.htm"
+      TimeStamp="3/18/2020 1:05:04 PM" />
+    <Url
+      Source="../../Content/B2/ClientBase Windows 4 09 00_1.htm"
+      TimeStamp="3/18/2020 1:05:04 PM" />
+    <Url
+      Source="../TOCs/4 09 00 B2 CBW Fix release notes (1)1.fltoc"
+      TimeStamp="3/18/2020 1:05:04 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/4 09 00 B2 CBW Fix release notes (1)1.css"
+      TimeStamp="3/18/2020 1:05:04 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading1"
+      Style="Word" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading2"
+      Style="Word" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading3"
+      Style="Word" />
+    <Map
+      From="List Paragraph"
+      To="p.ListParagraph"
+      Style="Word" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Strong"
+      To="span.Strong"
+      Style="Word" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+</MsWordImport>

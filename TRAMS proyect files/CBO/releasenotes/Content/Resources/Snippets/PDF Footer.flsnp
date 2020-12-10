@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/Stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="productnewfeature" style="font-weight: bold;text-align: right;">
+            <img src="../../Images/cbreleasenotes.png" style="height: auto;width: 250px;float: right;vertical-align: baseline;" MadCap:mediastyle="@media print { height: auto;width: 250px; }" />
+        </p>
+        <p>&#160;</p>
+        <p class="header_concept">&#160;</p>
+        <p class="productnewfeaturepdf"><MadCap:variable name="Variables_old.Product" /> <MadCap:variable name="Variables_old.Version no" /> / <MadCap:variable name="Variables_old.Date" /></p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;">&#160;</p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+        </p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;">Phone:&#160;310 - 641 - 8726 — Option 2</p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;">Email:&#160;<a href="mailto:Trams.CBSupport@sabre.com">Trams.CBSupport@sabre.com</a></p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;">&#160;</p>
+        <hr style="font-size: 9pt;" />
+        <p class="footer" style="font-size: 8pt;text-align: center;">All Rights Reserved © <MadCap:variable name="Variables_old.Current year" /> <MadCap:variable name="Variables_old.CompanyName" /> </p>
+    </body>
+</html>

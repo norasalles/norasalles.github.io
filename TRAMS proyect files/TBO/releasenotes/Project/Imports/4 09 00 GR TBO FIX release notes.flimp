@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  ImportFolder=""
+  LastImport="2020-03-03T18:12:55.5030437-03:00">
+  <Files>
+    <Url
+      Source="../../4 09 00 GR TBO FIX release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/My Projects/TRAMS/Release Notes/Trams Back Office Release Notes/Trams Back Office Release Notes 409/4 09 00 GR TBO FIX release notes.docx" />
+    <Url
+      Source="../../4 09 00 GR TBO NFET release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/My Projects/TRAMS/Release Notes/Trams Back Office Release Notes/Trams Back Office Release Notes 409/4 09 00 GR TBO NFET release notes.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Trams Back Office 4 09 Fixes.htm"
+      TimeStamp="3/3/2020 6:12:51 PM" />
+    <Url
+      Source="../../Content/Trams Back Office 4 09 New.htm"
+      TimeStamp="3/3/2020 6:12:51 PM" />
+    <Url
+      Source="../TOCs/4 09 00 GR TBO FIX release notes.fltoc"
+      TimeStamp="3/3/2020 6:12:51 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/4 09 00 GR TBO FIX release notes.css"
+      TimeStamp="3/3/2020 6:12:51 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="List Paragraph"
+      To="p.ListParagraph"
+      Style="Word" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Strong"
+      To="span.Strong"
+      Style="Word" />
+  </CharacterStyles>
+  <NewTopicStyles />
+</MsWordImport>

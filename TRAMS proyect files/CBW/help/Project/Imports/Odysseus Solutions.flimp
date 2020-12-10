@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2017-06-16T10:38:18.7399115-05:00"
+  ProjectName="CBW Help"
+  ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../Content/Resources/Stylesheets/Styles.css"
+  LastImport="2017-06-16T10:38:36.9497323-05:00">
+  <Files>
+    <Url
+      Source="../../../../../../Desktop/Odysseus Solutions.docx"
+      AbsoluteSource="file:///C:/Users/sg0217543/Desktop/Odysseus Solutions.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Odysseus Solutions/Odysseus Solutions.png"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Odysseus Solutions/Odysseus Solutions.htm"
+      TimeStamp="6/16/2017 10:38:34 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Odysseus Solutions/Click Live Connect Providers.jpg"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Odysseus Solutions/Click Live Connect Providers_1.jpg"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Odysseus Solutions/Click Live Connect Providers_2.jpg"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Odysseus Solutions/Click Live Connect Providers_3.jpg"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Odysseus Solutions/Click Live Connect Providers.png"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Odysseus Solutions/Click Live Connect Providers_1.png"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Odysseus Solutions/Click Live Connect Providers.htm"
+      TimeStamp="6/16/2017 10:38:34 AM" />
+    <Url
+      Source="../TOCs/Odysseus Solutions.fltoc"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Styles_94.css"
+      TimeStamp="6/16/2017 10:38:33 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

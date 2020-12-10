@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="false"
+  ImportResourcesLocation="NoImport"
+  SourceFolders=""
+  ImportTopics="content"
+  LastImport="2020-04-08T11:50:11.6627046-03:00"
+  ImportTopicsLocation="Content/">
+  <Files>
+    <Url
+      Source="../../../../TBO/Content/Installing Trams Back Office.htm"
+      AbsoluteSource="file:///C:/Users/SG0222835/My Projects/TRAMS/Help Files/TBO/Content/Installing Trams Back Office.htm" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Installing Trams Back Office.htm"
+      TimeStamp="4/8/2020 11:50:08 AM" />
+    <Url
+      Source="../TOCs/Installing Trams Back Office.fltoc"
+      TimeStamp="4/8/2020 11:50:11 AM" />
+  </GeneratedFiles>
+</HtmlImport>

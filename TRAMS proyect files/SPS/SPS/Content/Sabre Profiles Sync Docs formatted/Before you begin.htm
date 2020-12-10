@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3 class="Heading3"><a name="_Toc17116005"></a>Before you begin</h3>
+        <p>You must have the keyword ACCESS and duty code 9 (type SI9 to activate) in your <span class="span_1">Employee Profile Record</span> (EPR) to update the <span class="span_1">Travel Journal Record</span> (TJR).</p>
+        <table class="table_2">
+            <col style="width: 236pt;" />
+            <col style="width: 236pt;" />
+            <tr>
+                <td class="td_7">
+                    <p>Add branch access to a single PCC:</p>
+                </td>
+                <td class="td_8">
+                    <p>W/TAA(your PCC)¥B(branch PCC)</p>
+                    <p>W/TAAB4T0¥BKK41</p>
+                    <p>Note: To have reciprocal branch access, each PCC must make this entry.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_8">
+                    <p><a href="javascript:toggleBlock('41985_36038')" title="&quot;&quot; t "><img src="../Resources/Images/Sabre Profiles Sync Docs formatted/Before you begin.gif" style="height: 15px;width: 18px;" alt="Show" class="img_1" /></a>System Response:</p>
+                    <table class="table_1">
+                        <col style="width: 462pt;" />
+                        <tr>
+                            <td class="td_9">
+                                <p>BRNCH ACC UPDATE OK</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table class="table_2">
+            <col style="width: 208pt;" />
+            <col style="width: 26pt;" />
+            <col style="width: 238pt;" />
+            <tr>
+                <td colspan="2" class="td_8">
+                    <p>Add branch access to multiple PCCs:</p>
+                </td>
+                <td class="td_8">
+                    <p>W/TAA(your PCC)¥B(branch PCC)/(branch PCC)</p>
+                    <p>W/TAAB4T0¥BKK41/KJ41</p>
+                    <p>Note: You can grant access to up to five PCCs in one entry.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_8">
+                    <p>Delete branch access from a single PCC:</p>
+                </td>
+                <td class="td_8">
+                    <p>W/TAD(your PCC)¥B(branch PCC)</p>
+                    <p>W/TADB4T0¥BKK41</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="td_8">
+                    <p><a href="javascript:toggleBlock('41985_36040')" title="&quot;&quot; t "><img src="../Resources/Images/Sabre Profiles Sync Docs formatted/Before you begin.gif" style="height: 15px;width: 18px;" alt="Show" class="img_1" /></a>System Response:</p>
+                    <table class="table_1">
+                        <col style="width: 462pt;" />
+                        <tr>
+                            <td class="td_9">
+                                <p>BRNCH ACC UPDATE OK</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_8">
+                    <p>Delete branch access from multiple PCCs:</p>
+                </td>
+                <td colspan="2" class="td_8">
+                    <p>W/TAD(your PCC)¥B(branch PCC)/(branch PCC)</p>
+                    <p>W/TADB4T0¥BKK41/KJ41</p>
+                    <p>Note: You can delete access to up to five PCCs in one entry.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">Click on Modify: Event Notification Service</li>
+            <li class="ListParagraph_1">Select your PCC </li>
+            <li class="ListParagraph_1">Choose Profiles only and click Next</li>
+            <li class="ListParagraph_1">Put your request in the notes field</li>
+        </ul>
+    </body>
+</html>

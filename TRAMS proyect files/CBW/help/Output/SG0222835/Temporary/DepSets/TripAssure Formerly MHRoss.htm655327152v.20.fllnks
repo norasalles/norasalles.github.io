@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" TripAssure (Formerly MHRoss.com)"
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/TripAssure/TripAssure Features.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor285" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

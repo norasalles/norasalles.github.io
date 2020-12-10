@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:onlyLocalStylesheets="True">
+    <head><title></title>
+        <link href="Resources/Stylesheets/DraftStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="bookmark"><span style="color: #ffffff;"><a name="Chapter_21_Tools_for_Maintaining_a_Healthy_Database"></a>Chapter 21: Tools for Maintaining a Healthy Database</span>
+        </p>
+        <h1>
+            <MadCap:keyword term="Tools for Maintaining a Healthy Database">&#160;</MadCap:keyword>Tools for Maintaining a Healthy Database</h1>
+        <p class="p_2">A healthy database is one of your agency’s biggest assets. It is the foundation for building your business. For a database to carry the weight of a growing business, the integrity of the data must be maintained. This chapter outlines guidelines for maintaining a healthy database.</p>
+        <h2>Introduction</h2>
+        <p>Saving data files at the end of each day's work is absolutely vital! If you do not, you run the risk of losing data - one of your agency’s most precious assets. Even though PC hardware has become more reliable, and <span class="span_2">ClientBase</span> makes every effort to protect the integrity of the system against mechanical failures and user errors, no system is 100% failure-proof.</p>
+        <h2>
+            <MadCap:keyword term="Back Up the Trams Database Overview">&#160;</MadCap:keyword>Back Up the Trams Database</h2>
+        <h3>Why Perform a Backup?</h3>
+        <p><span class="span_2">Because some day the computer housing the Trams database </span><span class="span_3">WILL</span><span class="span_2"> crash.</span> <span class="span_2">Backup is the ONLY insurance</span><span>!</span></p>
+        <h3>Preparing for Backup Tips</h3>
+        <p><span>Use the </span><span class="span_2">Trams</span><span> Backup Utility</span>. Use the <span class="span_2">Trams</span> Backup Utility (Ibbackup.exe) to create a Trams.gbk.zip file. This file would be used to restore the database should the need arise. Backing up just the database file (.IB) would not provide the ability to restore a database, as it is not a restorable file. Restoring a.gbk.zip backup file also re-indexes the database files.</p>
+        <p><span>Backup must be done regularly</span>. Backup every day, prior to adding more data to the system,. Formatting two sets of backup media (Flash drive, i.e.), and labeling them "A" and "B" is recommended. Rotate the media, using one, then the other. Suggestion to take an extra backup once a week and take it off-site. To start the backup utility, go to <span>Start|Programs|Trams|</span><span class="span_2">Database Backup Restore</span>. </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy.jpg" style="height: 343px;width: 382px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.01.jpg" class="img_1" />
+        </p>
+        <p><span>Database Alias: </span><span class="span_2">Database Alias</span> from the drop-down. This is the database which will be backed up. </p>
+        <p><span>Database Path</span>: By default below the <span class="span_2">Database Alias</span> is the path where the data currently resides that was setup in the Alias Utility. </p>
+        <p><span>Username: </span>By default the SYSDBA is the <span class="span_2">Username.</span> </p>
+        <p><span>Password: </span>Enter the password for the SYSDBA. </p>
+        <p><span>Server Username and Server Password:</span> Are used when backing up an EUA enabled database. For EUA databases, there's a server-wide SYSDBA user and a database SYSDBA user that are different. Both need to be specified. For non-EUA databases, just the traditional username/password needs to be specified.</p>
+        <p><span>Backup Type: </span>Select <span class="span_2">Full Backup, Full Dump, </span>or <span class="span_2">Incremental Dump </span>(See below section below, <span class="span_2">Interbase XE Additional Backup Options</span>.)</p>
+        <p><span>Backup To: </span>Enter or search for the drive, medium, or directory to which to backup. </p>
+        <p><span>Compress Backup File: </span>Place a checkmark in the <span class="span_2">Compress Backup File</span> box to compress the backup file. </p>
+        <p><span>Encrypt Backup File/Password/Confirm: </span>An option to encrypt and password protect the backup file. If a password is specified during the backup and the backup is being compressed, the resulting zip file will be encrypted using AES 256 encryption. </p>
+        <p><span>Note: </span>When restoring a compressed backup that is password-protected, if the user specifies an invalid password, then the restore will fail. <span class="span_2">If the encryption password is lost, there is currently no method for recovering the password and the encrypted backup cannot be restored.</span> </p>
+        <p><span>Validate DB prior To Backup:</span> The validate option works with both backup and restore steps. Validating on restore is a bit slower, but it ensures that the database is valid. Validating on the backup is much slower than a normal backup and the validation does not fix issues. A database that is restored and fails validation will have the db fail flag set. Users cannot log in until the restore is complete, regardless of whether validation is done.</p>
+        <p><span>Create a Shortcut: </span>Once the backup utility is set up for the first time, clicking the button creates a shortcut on the desktop that can be used every time backup is performed. All of the settings/options will be retained. </p>
+        <h3>
+            <MadCap:keyword term="Back Up, Interbase XE Additional Backup Options">&#160;</MadCap:keyword>Interbase XE Additional Backup Options</h3>
+        <p>Interbase XE adds some additional backup options for enabling very fast backups/restores. Interbase now has an option for what is called an <span class="span_2">Online Dump</span>. An online dump is an exact copy of the database that can be created while the database is in use. The resulting dump file is a complete copy of database at the point in time when the online dump is started, but is in read-only mode. </p>
+        <p>The initial creation of the dump file can take a few minutes. Once created, incremental dumps can be performed which only update those parts of the original database that have been modified and are typically very fast.</p>
+        <h4>Options for creating a backup via Online Dump</h4>
+        <p><span>Dump Copy:</span> Similar to a full backup, creates a new Dump file, compresses it, then stores the file in the target location. The resulting file will be larger than a normal full backup, but should get created faster.</p>
+        <p><span>Dump Full:</span> Creates a new Dump file on the server, overwriting any existing dump file with the same name. The target directory must be located on the server or be on a shared folder that the server can access.</p>
+        <p><span>Dump Incremental:</span> Updates an existing Dump file on the server with any changes since the last update.</p>
+        <p><span>Dump Full or Dump Incremental. </span>If the file doesn't already exist, then this works like a Dump Full and a new Dump file is created. Dump Full/Incremental creates a file with the same name as the database but ending in .DMP instead of .IB.</p>
+        <p><span>We have not automated the process of restoring a dump file</span>, however for a manual restore: </p>
+        <p>Copy the .DMP file to the directory where the database is normally located and rename to .IB. Connect to the database via IB Console and change the Read Only property under Options on the General tab of Database Properties from TRUE to FALSE.</p>
+        <h4>Considerations</h4>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">The Dump file is an exact copy of the database, except in read-only mode. Any corruption present in the original database will carry over to the Dump copy. It is still recommended to create periodic full backups using the original method.</li>
+            <li class="ListParagraph_1">The Dump file should be restored to the same version of Interbase where it was created. Moving to a newer version of Interbase should be ok, but moving to an older version won't work.</li>
+            <li class="ListParagraph_1">The Dump file is typically maintained on the same server as the database. Recommendation is that the Dump file be stored on a separate volume on the server so that a disk failure won't affect both the database and the dump file. It's possible to store the dump file on a separate server, but it requires additional configuration.</li>
+            <li class="ListParagraph_1">The Online Dump process can run while users are in the system and while a Full Backup is being run.</li>
+        </ul>
+        <p>
+        </p>
+        <p class="p_3">Example backup schedule for typical large agency:</p>
+        <p>Every 2 hours during business hours: Incremental Dump</p>
+        <p>Daily after hours: Full Backup to external media.</p>
+        <p>Weekly after hours: New Full Dump.</p>
+        <h3>The Backup Utility contains additional options that pertain to an XE database version</h3>
+        <p>New Server username and Server password fields have been added and are used when backing up an EUA enabled database. For EUA databases, there's a server-wide SYSDBA user and a database SYSDBA user that are different. Both need to be specified. For non-EUA databases, just the traditional username/password needs to be specified.</p>
+        <p><span>The Backup Type drop</span><span>-</span><span>down field contains the following options:</span>
+        </p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">Full Backup</li>
+            <li class="ListParagraph_1">Full Dump</li>
+            <li class="ListParagraph_1">Incremental Dump</li>
+        </ul>
+        <h3>Disaster Recovery</h3>
+        <p>Interbase XE and higher adds some additional backup options for enabling very fast backups/restores. </p>
+        <p>Interbase now has an option for what is called an <span class="span_2">Online Dump</span>. An Online Dump is an exact copy of the database that can be created while the database is in use. The resulting dump file is a complete copy of database at the point in time when the online dump is started, but is in read-only mode. </p>
+        <p>The initial creation of the dump file can take a few minutes. Once created, we can perform incremental dumps which only update those parts of the original database that have been modified and are typically very fast.</p>
+        <h4>Options for creating a backup via Online Dump</h4>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">Dump Full: Creates a new Dump file on the server, overwriting any existing dump file with the same name. The target directory must be located on the server or be on a shared folder that the server can access.</li>
+            <li class="ListParagraph_1">Dump Incremental: Updates an existing Dump file on the server with any changes since the last Dump Full or Dump Incremental. If the file doesn't already exist, then this works like a Dump Full and a new Dump file is created.</li>
+            <li class="ListParagraph_1">Dump Full/Incremental creates a file with the same name as the database but ending in .DMP instead of .IB.</li>
+        </ul>
+        <p>We have not automated the process of restoring a dump file, but it's pretty simple: </p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">Copy the .DMP file to the directory where the database is normally located and rename to .IB. </li>
+            <li class="ListParagraph_1">Connect to the database via IB Console and change the Read Only property under Options on the General tab of Database Properties from TRUE to FALSE.</li>
+        </ul>
+        <h4>Considerations</h4>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">The Dump file is an exact copy of the database, except in read-only mode. Any corruption present in the original database, will carry over to the Dump copy. We still recommend creating periodic full backups using the original method.</li>
+            <li class="ListParagraph_1">The Dump file should be restored within the same version of Interbase that created it. Moving to a newer version of Interbase should be ok, but moving to an older version won't work.</li>
+            <li class="ListParagraph_1">The Dump file is typically maintained on the same server as the database. We recommend that the Dump file be stored on a separate volume on the server so that a disk failure won't affect both the database and the dump file. It's possible to store the dump file on a separate server, but it requires additional configuration.</li>
+            <li class="ListParagraph_1">The Online Dump process can run while users are in the system and while a Full Backup is being run.</li>
+        </ul>
+        <h4>Example backup schedule for typical large agency</h4>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">Every 2 hours during business hours: Incremental Dump</li>
+            <li class="ListParagraph_1">Daily after hours: Full Backup to external media.</li>
+            <li class="ListParagraph_1">Weekly after hours: New Full Dump.</li>
+        </ul>
+        <p>The full dump only needs to be done one time. Specify the backup type as Full Dump. Identify where to store the DUMP file. Enter the path in the Backup To field.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_1.jpg" style="height: 326px;width: 371px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.02.jpg" class="img_1" />
+        </p>
+        <p>The incremental backup would look almost the same except the Backup Type is set to Incremental:</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_2.jpg" style="height: 305px;width: 347px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.03.jpg" class="img_1" />
+        </p>
+        <h4>Create a scheduled task for the incremental dump</h4>
+        <p>To create the command line to use in the scheduled task:</p>
+        <p>1. Click &lt;Create Shortcut&gt; </p>
+        <p>2. Go to the newly created shortcut, right click on the shortcut icon and select properties</p>
+        <p>3. Copy the information in the target field </p>
+        <p>4. Paste the command line in the scheduled task.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_3.jpg" style="height: 389px;width: 278px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.04.jpg" class="img_1" />
+        </p>
+        <h4>In the event of a disaster</h4>
+        <p>1. If there are connections to the affected database, disconnect all connections by shutting down the IBServer service.</p>
+        <p>2. Copy the .DMP file to the directory where the database is normally located and rename to .IB. </p>
+        <p>3. Connect to the database via IB Console (see detailed instructions below)</p>
+        <p>4. Change the Read Only property under Options on the General tab of Database Properties from TRUE to FALSE. (see screen snap in detailed instructions below)</p>
+        <h4>Using IBConsole</h4>
+        <p>IBConsole is a database management tool included with the Interbase Server installation. The IBConsole.exe shortcut will normally be found in the Interbase XE group in your Programs menu. Double-click to launch IBConsole.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_4.jpg" style="height: 137px;width: 642px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.05.jpg" class="img_1" />
+        </p>
+        <p>Double-click on the Interbase Servers item in the tree shown on the left side of the form. This will display the Register Server and Connect form.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_5.jpg" style="height: 317px;width: 338px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.06.jpg" class="img_1" />
+        </p>
+        <p>Usually <span>IBConsole</span> is operated on the machine hosting the Interbase database so the default selection of <span>Local Server</span> is typically used. If the database is hosted on a remote machine then select <span>Remote Server</span>, enter the <span>Server Name</span> in DNS or IP format and select the <span>Network Protocol </span>(usually TCP/IP).</p>
+        <p>In this case it is preferable to use <span>Remote Server</span>, a <span>Server Name</span> of localhost, an appropriate <span>Network Protocol </span>(usually TCP/IP) and an <span>Alias Name</span> to identify the server in the configuration.</p>
+        <p>Enter the User Name (default administrator User Name is shown, SYSDBA) and password. Press OK to connect to the server using the configuration options shown.</p>
+        <p>If the connection was successful the configuration in IBConsole will update.<img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_6.jpg" style="height: 179px;width: 641px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.07.jpg" class="img_1" /></p>
+        <p>Double-click on Local Server to expand the connection options, shown below. </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_7.jpg" style="height: 173px;width: 641px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.08.jpg" class="img_1" />
+        </p>
+        <p>Right-click on Databases to display the database registration menu.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_8.jpg" style="height: 176px;width: 641px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.09.jpg" class="img_1" />
+        </p>
+        <p>Select Register to display the Register Database and Connect form.</p>
+        <p>The actual database file must be specified using this form. Press the file open button to the right of the Database File edit to browse and select the IB file.</p>
+        <p><span>Note:</span> When using Remote server connections the file browse button will be disabled, you must manually type in the path and name of the Trams.ib file. Make sure Save Alias Information is checked. Enter the User Name for the database server and the Password in the fields on the form.</p>
+        <p>Other options can be left at their defaults.</p>
+        <p>Click <span class="span_2">OK</span> to connect to the specified database.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_9.jpg" style="height: 555px;width: 492px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.10.jpg" class="img_1" />
+        </p>
+        <p>Double-click Properties to display the database properties which are seen below.</p>
+        <h3>E-mail Notification on ibbackup</h3>
+        <p>There is a backup e-mail notification feature that will send an e-mail to the specified user if a backup fails with an option to send e-mails for completed backups as well.</p>
+        <h4>Setup Process</h4>
+        <p>1. Go to the Trams program group under <span>Start/All Programs/Trams/Database Backup</span> and open the backup utility.</p>
+        <p>2. Ensure the user name and password are filled in</p>
+        <p>3. Click the Create Shortcut button. The places a backup shortcut on the desktop.</p>
+        <p>4. Right-click on the backup shortcut on the desktop and select properties.</p>
+        <p>5. In the Target field right-arrow to the end of the existing information in the field.</p>
+        <p>6. Add the information in the example below replacing the generic -EMAILSERVER information with the proper e-mail server address and also replace the -EMAILTOADDR information with the proper e-mail address for the recipient.</p>
+        <p>7. Click <span class="span_2">OK</span> to save the changes.</p>
+        <p><span>Note:</span> If you currently have scheduled backup information in the backup shortcut, append this additional information to the end of that command line.</p>
+        <h4>New ibbackup command-line options</h4>
+        <p>EMAILSERVER &lt;servername&gt;</p>
+        <p>EMAILTOADDR &lt;to-address&gt;</p>
+        <p>EMAILNOTIFYALL</p>
+        <p><span>Example: </span>"C:\Program Files\Trams\Common Files\ibbackup.exe" -EMAILSERVER mail.sabre.com -EMAILTOADDR youre-mailaddress@hotmail.com -EMAILNOTIFYALL</p>
+        <p>The EMAILNOTIFYALL option sends an e-mail for completed backups. If only failed backup notifications are required, eliminate this option.</p>
+        <p>This feature is only designed for simple SMTP.</p>
+        <p>- no authentication</p>
+        <p>- default port: 25</p>
+        <p>- no TLS/SSL</p>
+        <p>- no MAPI SUPPORT</p>
+        <h3>
+            <MadCap:keyword term="Scheduled Backup on Vista/Windows 7/Server 2008/Server 2012;Backup, Scheduled Backup on Vista/Windows 7/Server 2008/Server 2012">&#160;</MadCap:keyword>Scheduled Backup on Vista/Windows 7/Server 2008/Server 2012</h3>
+        <h4>Getting the Parameters for the Automatic Backup</h4>
+        <p>Create a shortcut for the backup process on the desktop.</p>
+        <ol start="1" class="ol_2">
+            <li class="ListParagraph">Start the Trams Backup Utility. You can click on Start, (All) Programs, TRAMS, and Trams Backup Restore or Start, (All) Programs, Trams Back Office, then Database Backup.</li>
+        </ol>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_10.jpg" style="height: 298px;width: 404px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.11.jpg" class="img_1" />
+        </p>
+        <p>2. Make sure the Username is SYSDBA. Enter the appropriate password.</p>
+        <p>3. Currently, nothing should be entered in Server Username or Server Password.</p>
+        <p>4. If the desired backup location is not already displayed next to "Backup to," click on the Folder icon to browse to and select the path you wish to back up to.</p>
+        <p>5. Compress Backup File should normally be checked if you want the backup to be compressed to zip format.</p>
+        <p>6. Click "Create Shortcut"</p>
+        <p>At this point, you will have an icon on the desktop named "Backup," plus your alias name. Usually it will be named "Backup TRAMS." When double clicked, it will bring up the same parameters as entered when Create Shortcut was clicked. For the purposes of creating the automatic backup, what we need are these parameters.</p>
+        <p>7. Right click on this Backup TRAMS shortcut icon on the Desktop and select "Properties".</p>
+        <p>8. If the text in the Target box is already highlighted right click on the highlighted text and select "Copy."</p>
+        <p>9. If not, right click inside the Target box, choose "Select All" then follow step 2 to copy the text. </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_11.jpg" style="height: 137px;width: 288px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.12.jpg" class="img_1" />
+        </p>
+        <p>10. Close the Shortcut's properties.</p>
+        <p>The full copied text will look something like this: "C:\Program Files (x86)\Trams\Common Files\ibbackup.exe" -UserName SYSDBA -EncPwd1 "696D28D2F51DB07CEF" -Alias "TRAMS" "E:\TRAMSBCKUP"</p>
+        <h4>Creating the Scheduled Task in Windows Vista/Windows 7/Server 2008/Server 2012</h4>
+        <p>1. Open up Windows Task Scheduler </p>
+        <p>Click Start, Programs - Accessories - System Tools - Task Scheduler. Also you can click Start, and type "task" into the Start Menu Search box and Select Task Scheduler from the results, or open the Control Panel - Administrative Tools - Task Scheduler.</p>
+        <p>2. Select 'Create Basic Task' from the right hand pane and the 'Create Basic Task Wizard' will open.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_12.jpg" style="height: 382px;width: 507px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.13.jpg" class="img_1" />
+        </p>
+        <ol start="3" class="ol_2">
+            <li class="ListParagraph">With the Wizard open, type a 'Name' (example TRAMS Backup) and 'Description' (optional) for this task. Click Next.</li>
+        </ol>
+        <p class="ListParagraph">
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_13.jpg" style="height: 365px;width: 526px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.14.jpg" class="img_1" />
+        </p>
+        <ol start="4" class="ol_2">
+            <li class="ListParagraph">Select when you would like the event/task to run. Daily would be the most common and logical choice as we recommend a backup be done every day. Click Next.</li>
+        </ol>
+        <p class="ListParagraph">
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_14.jpg" style="height: 374px;width: 543px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.15.jpg" class="img_1" />
+        </p>
+        <ol start="5" class="ol_2">
+            <li class="ListParagraph">Select the exact time and date at which you wish the first task to start (each task afterward will run based on your selection in step 3) then click Next. Automated backups are generally run in the evening, rather than during the work day. The computer must be on for the task to occur. Click Next.</li>
+        </ol>
+        <p class="p_4">
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_15.jpg" style="height: 398px;width: 570px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.16.jpg" class="img_1" />
+        </p>
+        <ol start="6" class="ol_2">
+            <li class="ListParagraph">Leave the action set to "Start a Program" and click Next.</li>
+        </ol>
+        <p class="p_4">
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_16.jpg" style="height: 313px;width: 440px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.17.jpg" class="img_1" />
+        </p>
+        <p class="p_5">* Note, this next part is a little tricky, please try to follow the steps carefully.</p>
+        <p>7. We copied the command line for the backup in the steps at the beginning of this document. Unfortunately, we need to split it up into the two boxes on this next screen and make a slight change to the Additional Arguments.</p>
+        <p class="p_6">a. First, right click in the Program/script box and select paste.</p>
+        <p class="p_6">b. Press the End key on your keyboard.</p>
+        <p class="p_6">c. Press the Backspace key to delete characters from the end of what you pasted, until you reach ibbackup.exe" and do not delete the quote mark.</p>
+        <p class="p_6">d. What you should have left is this (or something very similar):</p>
+        <p class="p_6">
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_17.jpg" style="height: 69px;width: 494px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.18.jpg" class="img_1" />
+        </p>
+        <p class="p_6">e. Alternatively, at this step, you could have clicked Browse… and found the ibbackup.exe program under the C drive, Program Files (x86)\Trams\Common Files.</p>
+        <p>8. Next, we need to get the correct portion of that command line into the "Add Arguments" box.</p>
+        <p class="p_6">a. Right click in the "Add Arguments" box and select paste.</p>
+        <p class="p_6">b. Press the Home key on your keyboard.</p>
+        <p class="p_6">c. Press the Delete key (not Backspace) until you reach the first dash symbol, do not delete the dash. Next to the dash should be "UserName."</p>
+        <p class="p_6">d. With the cursor still at the left side of the box, type "-auto" and a space. What you should see is this:<img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_18.jpg" style="height: 48px;width: 503px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.19.jpg" class="img_1" /></p>
+        <p class="p_6">e.Click Next.</p>
+        <p>9. Check the box that says "Open the Properties dialog for this task when I click Finish." Click Finish.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_19.jpg" style="height: 116px;width: 485px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.20.jpg" class="img_1" />
+        </p>
+        <p>10. Check the box that says Run with Highest Privileges.</p>
+        <p>11. Under the Security options, you can have the task run if the Windows user that created the task is logged on, but it would be more common to set it to "Run whether user is logged on or not." If you set this option, when you click on Okay, it will prompt you to enter your Windows password for this user.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_20.jpg" style="height: 260px;width: 627px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.21.jpg" class="img_1" />
+        </p>
+        <p class="p_7">Additional Scheduled backup command line options for EUA enabled databases:</p>
+        <p>-USERNAME &lt;username&gt;</p>
+        <p>-PASSWORD &lt;password&gt;</p>
+        <p>-ALIAS &lt;database alias,database alias,...&gt;</p>
+        <p>-DBPATH &lt;database path&gt;</p>
+        <p>-AUTO</p>
+        <p>-RESTORE</p>
+        <p>-COMPRESS</p>
+        <p>-VALIDATE</p>
+        <p>-DBUSERNAME &lt;database username&gt;</p>
+        <p>-DBPASSWORD &lt;database password&gt;</p>
+        <p>-ENCPWD &lt;encrypted password&gt;</p>
+        <p>-ENCDBPWD &lt;encrypted password&gt;</p>
+        <p>-DUMPFULL</p>
+        <p>-DUMPINCREMENTAL</p>
+        <p>-PAGESIZE &lt;4096, 8192, 16384&gt;</p>
+        <p>-LOGFILEPATH &lt;path for log file&gt;</p>
+        <p>-EMAILSERVER &lt;email server name&gt;</p>
+        <p>-EMAILTOADDR &lt;recipient's email address&gt;</p>
+        <p>-EMAILNOTIFYALL</p>
+        <h3>
+            <MadCap:keyword term="Restore Database">&#160;</MadCap:keyword>Restore</h3>
+        <p><span>NEVER restore the </span><span class="span_2">Trams</span><span>.ib</span> until the backup has been restored someplace else by following the procedures outlined below. The agency may be instructed by our support department to do a backup and then restore the database. This could be to re-index certain database tables or to troubleshoot some other issue. In any event, following these steps will ensure the integrity of the database backup, and will alleviate the possibility of restoring over an existing database. These steps should work for any version of Interbase, <span>but not for doing an upgrade of Interbase</span>. </p>
+        <p>Close out of TBO (and <span class="span_2">ClientBase</span>) to restore data. </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_21.jpg" style="height: 336px;width: 384px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.22.jpg" class="img_1" />
+        </p>
+        <p>Select the <span class="span_2">Restore Tab</span>. The restore function recovers backup data saved on medium that used the <span class="span_2">Trams</span> backup function. <span class="span_2">Restore</span> replaces current data files with those on the backup medium. This restore program <span>restores both </span><span class="span_2">Trams Back Office</span><span> and </span><span class="span_2">ClientBase</span><span> Data. Since the two programs share a common database, restore cannot be done on one without affecting the other. </span></p>
+        <p>1) Make sure everyone is out of <span class="span_2">ClientBase</span>, <span class="span_2">Trams Back Office</span> and any other applications connecting to the database.</p>
+        <p>2) If the database is a Sync database, please go to scheduled tasks in the Control Panel in Windows. If the task that controls synchronization is currently running, please wait for it to finish (refresh the screen). Once it is not running (status Ready), disable the task by double- clicking it and un-checking the box that says <span class="span_2">Enabled</span> and then clicking <span class="span_2">Apply/Okay</span>.</p>
+        <p>3) Perform a backup of the database.</p>
+        <p>4) Shut down the Interbase Guardian service. Go to <span>Control Panel|Administrative Tools|Services</span> and then highlighting Interbase Guardian and clicking <span class="span_2">Stop Service</span>. This will automatically stop the Interbase Server service as well.</p>
+        <p>5) In Windows Explorer go where the <span class="span_2">Trams</span>.ib is located and rename it from <span class="span_2">Trams</span>.ib to <span class="span_2">Trams</span>.ib.old.</p>
+        <p>6) Start the Interbase Guardian Service (as before, the Interbase Server service will be updated automatically).</p>
+        <p>7) Restore the backup that was done in Step 2. It <span class="span_4">should not</span> prompt that it's overwriting an existing database. Go to <span>Start|Programs|</span><span class="span_2">Trams Back Office</span><span>|Database Backup</span>. Click on the Restore tab.</p>
+        <p class="p_6"><span>Database Alias: </span><span class="span_2">Database Alias</span> from the drop-down. This is the database which will be backed up.</p>
+        <p class="p_6"><span>Database Path</span>: By default below the <span class="span_2">Database Alias</span> is the path where the data currently resides. This was setup in the Alias Utility. </p>
+        <p class="p_6"><span>Username: </span>By default the SYSDBA is the <span class="span_2">Username.</span></p>
+        <p class="p_6"><span>Password: </span>Enter the password for the SYSDBA.</p>
+        <p class="p_6"><span>Server Username/Server Password: </span>In preparation for Password Management enhancements in <span class="span_2">ClientBase Windows</span> and <span class="span_2">Trams Back Office</span>, there are new fields on the Backup Utility called Server Username and Server Password. These fields should be left blank when performing a backup or restore. </p>
+        <p class="p_6"><span>Restore From: </span>Enter or search for the drive, medium, or directory to which the backup was performed and find the <span class="span_2">Trams</span>.gbk.zip file. </p>
+        <p class="p_6"><span>Page Size: </span>The Page Size option with choices &lt;default&gt;, 4K, 8K and 16K (for Interbase 2007 and higher) are for users who have Interbase 2007 installed. Restoring a database with a larger page size results in a performance increase in the database. Typically the time needed for the database to send data requested by the application has been decreased up to 10% (comparing 4kb to 16 kb page size). </p>
+        <p class="p_6"><span>Encrypt Password: </span>Type the password used when backing up and encrypting the database. When restoring a compressed backup that is password-protected, if the user specifies an invalid password, then the restore will fail. <span>Note: </span>When restoring a compressed backup that is password-protected, if the user specifies an invalid password, then the restore will fail. <span class="span_2">If the encryption password is lost, there is currently no method for recovering the password and the encrypted backup cannot be restored.</span> </p>
+        <p class="p_6"><span>Validate DB prior To Backup/Restore:</span> The validate option works with both backup and restore steps. Validating on restore is a bit slower, but it ensures that the database is valid. Validating on the backup is much slower than a normal backup and the validation does not fix issues. A database that is restored and fails validation will have the db fail flag set. Users cannot log in until the restore is complete, regardless of whether validation is done.<span>Overwrite Existing Database: </span>Check here to overwrite the existing database.</p>
+        <p>8) Once verifying that the restore completed successfully, have everyone go back into <span class="span_2">ClientBase</span> and/or TBO. (Leave the renamed database and the backup in place until everyone is satisfied that the system is working correctly).</p>
+        <p>9) If the Sync scheduled task was disabled in Step 2, go back into the sync task's properties and enable it.</p>
+        <p>If there are any questions about these steps or there is any difficulty in following them, don't hesitate to contact our support department.</p>
+        <h2>
+            <MadCap:keyword term="Access Code">&#160;</MadCap:keyword>Access Code</h2>
+        <p>When ready to renew your <span class="span_2">ClientBase</span> subscription, you need to enter a new access code supplied to you by <span class="span_2">Trams</span> Products and Services in this area to continue using <span class="span_2">ClientBase</span>. Click <span>Utilities|Access Code</span> to enter the new code. You can get the new code by e-mailing Trams.Billing@Sabre.com. </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_22.jpg" style="height: 162px;width: 247px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.23.jpg" class="img_1" />
+        </p>
+        <h2>
+            <MadCap:keyword term="My Login">&#160;</MadCap:keyword>My Login</h2>
+        <p>To view personal login permissions and further customize <span class="span_2">ClientBase</span> for your own workstation only, click <span class="span_2">My Login</span> in the Utilities Menu:</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_23.jpg" style="height: 365px;width: 543px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.24.jpg" class="img_1" /> </p>
+        <p><span>User Settings: </span>Enter/Modify <span class="span_2">User Name, Title </span>and<span class="span_2"> E-mail Address.</span></p>
+        <p><span>Automatically Update E-mail Calendar for Uncompleted Reminders: </span>Enable the ability to update an E-mail calendar with Reminders created in <span class="span_2">ClientBase</span>. Select from the drop-down:</p>
+        <p><span>Never: </span>Reminders are never sent to the e-mail calendar.</p>
+        <p><span>All Reminders:</span> All Open Reminders are sent to the e-mail calendar.</p>
+        <p><span>Only Reminders set for a Time </span>- Only Open Reminders with a selected Start Time are sent to the e-mail calendar.</p>
+        <p><span>Only Reminders set with an Alarm</span> - Only Open Reminders with the Set Alarm Box checked are sent to the e-mail calendar</p>
+        <p>The user's e-mail address is used for sending Reminders to the E-mail Calendar. If the user does not have an e-mail address entered in their User Settings, <span class="span_2">Never</span> is the only setting that can be entered for this field.</p>
+        <p>When creating or editing reminders a new checkbox, <span class="span_2">Update E-mail Calendar after Saving Changes</span> was added. When checked, updates are sent to user's e-mail address. This box is checked by default when the setting from User Settings is <span class="span_2">All Reminders</span> or <span class="span_2">Only for Reminders when time is set</span>.</p>
+        <p>Upon saving the Reminder, an e-mail is sent to the user. If the <span class="span_2">Default E-mail Client setting is Outlook/MAPI Client or MAPI Client</span>, the e-mail includes the e-mail appointment setup screen as an attachment. Open the attachment and click <span class="span_2">Save and Close</span> to save the Reminder to the e-mail calendar. If <span class="span_2">Default E-mail Client setting is SMTP</span>, the e-mail appears as a meeting request and includes a link to the Activity. Click <span class="span_2">Accept</span> to save the Reminder to the e-mail calendar.</p>
+        <p><span>Query Folder Defaults: </span>Select the saved folder you want opened when logging into any <span class="span_2">ClientBase</span> Managers - <span class="span_2">Profile, Activity, Res Card, </span>and <span class="span_2">Inventory.</span></p>
+        <p><span>Profile Defaults: </span>Select the Profile tab you want opened when entering a profile - <span class="span_2">Leisure, Corporate, Vendor, Service Provider, Agent </span>and<span class="span_2"> Other.</span></p>
+        <p><span>Communication Defaults: </span>If you have a different country/area code than the agency default, enter it here along with any differing <span class="span_2">Communication Defaults Settings for New Profiles.</span></p>
+        <p><span>Live Connect: </span>Enter your own unique login here for any Live Connect Providers your agency uses. </p>
+        <p><span>PNR Import: </span>You may be required for PNR import to enter information here for this feature to work.</p>
+        <p><span>E-mail Settings: </span>If your e-mail settings differ from default agency settings, enter settings here. You can also include a default e-mail signature if this has been set up under <span class="span_2">Global Defaults. </span>For complete directions on setting up your e-mail settings, under the help files tab <span class="span_2">Contents, </span>review the section entitled, <span class="span_2">E-mail Marketing in ClientBase.</span></p>
+        <p><span>Manager Defaults: </span>There’s a tab within the <span class="span_2">ClientBase</span> main Managers called <span class="span_2">Home</span> which takes you to your private label's home page (for <span>Nexion, Signature, Vcom, Ensemble Users, and other new consortia that use our private label) </span>and auto logs you in via your <span class="span_2">ClientBase</span> login. In order for this auto login to your private label's intranet to occur, each user must enter their login and password into their <span class="span_2">ClientBase</span> User Login by going to <span>Utilities|My Login|Manager</span>. (SYSDBA login can enter for all users as well.) Once captured, your <span class="span_2">ClientBase</span> login auto logs you into your private label's Intranet. The Intranet URL for your Private label comes defaulting starting with version 3.03 but can be updated or removed, if desired, by going to <span>Global Defaults|Manager Defaults|Home Page URL</span>.</p>
+        <p><span>For agencies not configured with a specific private labeled version of </span><span class="span_2">ClientBase</span><span>, </span>and those that participate in the <span class="span_2">ClientBase</span> Marketing Services (CBMS) marketing program, you can enter your CBMS Login and Password into your <span class="span_2">ClientBase</span> User Login here. (SYSDBA login can enter for all Users as well.) Once captured, your <span class="span_2">ClientBase</span> login will auto log you into CBMS and access to your marketing calendar and other CBMS information becomes instantly available and right within <span class="span_2">ClientBase</span>.</p>
+        <p>You can also select either <span class="span_2">Home, Profiles, Activities, Res Cards or Internet</span> as the Login default <span class="span_2">ClientBase</span> Manager from this area.</p>
+        <h2>
+            <MadCap:keyword term="Who is Logged In?">&#160;</MadCap:keyword>Who is Logged In?</h2>
+        <p>If you are about to reset your server or restore data, view who is logged into <span class="span_2">ClientBase</span> by clicking <span class="span_2">Who is Logged In?</span> in the Utilities Menu:</p>
+        <p class="p_8">
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_24.jpg" style="height: 237px;width: 294px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.25.jpg" class="img_1" />
+        </p>
+        <p>This allows you to give fair warning and have users exit the program.</p>
+        <h2>
+            <MadCap:keyword term="Profile Dupe Checker">&#160;</MadCap:keyword>Profile Dupe Checker</h2>
+        <p>As your <span class="span_2">ClientBase</span> customer database grows, so does the possibility of having duplicate profile records for the same entity. If you have <span class="span_2">Trams Back Office</span>, you may already have loads of duplicate client and vendor profiles. Since duplications only water down the effectiveness of the database, a utility has been created in <span class="span_2">ClientBase</span> to identify <span class="span_2">possible</span> duplications in the system. Set one profile as the <span class="span_2">master</span> and then merge the duplicate profiles into that master profile. Then you can delete, or mark as inactive, these unwanted profiles. </p>
+        <p><span>Suggestion: </span>Run the Profile Dupe Checker once a month to keep the database dupe free.</p>
+        <p><span>Step 1: Backup your database</span> using the <span class="span_2">Trams</span> IBBackup utility by going to <span>Start|Programs|</span><span class="span_2">Trams</span><span>|</span><span class="span_2">Trams</span><span> Backup Restore</span>. (There is no "Undo Merge All" feature!)</p>
+        <p><span>Step 2: Access the Profile Dupe Checker.</span> Go to <span>Utilities|Profile Dupe Checker</span>, right-mouse click in the results screen after performing a Level 1, 2, or 3 Query and click<span class="span_2"> Dupe Check, </span>or in the Profile Manager Screen, click the <span class="span_2">Dupe Checker Results </span>tab and then <span class="span_2">Filter</span> to access the Profile Dupe Checker utility.</p>
+        <p><span>Step 3: Do the Comparison. </span>Designate the criteria with which the system searches and compares profiles. Be sure to include aggressive filters to narrow your results as much as possible. You do not want to merge profiles that really are not duplicate profiles after all.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_25.jpg" style="height: 447px;width: 325px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.26.jpg" class="img_1" />
+        </p>
+        <p><span>Check for duplicate profiles in: </span>From a drop-down menu, select the type of profiles to include in the duplicate search. Choices include <span class="span_2">Entire Database, Current Results in Level 1 Query, Current Results in Level 2 Query, </span>and<span class="span_2"> Current Results in Level 3 Query. </span>If you do not want any filters on profiles, check <span class="span_2">Disable Dupe Check Filters.</span></p>
+        <p><span>Include Profile Types: </span>Select the type of profiles to include in this duplicate search. Check any or all profile types by clicking once on the check box. (<span>Hint:</span> It may be easier to search for duplications one profile type at a time except in the case of Leisure/Corporate.)</p>
+        <p><span>Field Name, Length, Direction:</span> Select the fields to compare and search for common entries. The fewer you select, the more results you are likely to find. The more you select, the more discriminating the system is in displaying possible duplications.</p>
+        <p>To select a field name, place a check in the box by clicking once. Then, the length of the field search and direction can be established. The length is a numeric field, indicating the number of characters within that field to be compared. Select the direction by clicking the arrow to the right of the field and choosing either <span class="span_2">Right to Left</span> or <span class="span_2">Left to Right</span>. </p>
+        <p>Keep it simple, perhaps using only the Last Name, Address 1, and Phone (or e-mail) as criteria. By default <span class="span_2">Ignore Profile if ALL filter fields (above) are BLANK</span> is checked<span class="span_2">. </span>Also defaulted is the checked box, <span class="span_2">Active Profiles Only</span> if you don’t want to include profiles that have been designated as “inactive.” Since duplicates can exist within inactive profiles, unchecking this box may produce more thorough results. To display duplicate corporate and leisure profiles grouped together, check <span class="span_2">Group Leisure and Corporate Types Together</span>. </p>
+        <p>The system compares profiles, then displays a list of all those with common elements sorted by the fields used as search criteria. For example, if last name and e-mail are the search fields, all profiles with the same last name and e-mail are listed together shaded in gray or blue in the results screen of the profile manager under the Dupe Checker Results tab.</p>
+        <p>Keep in mind the resulting profiles with common data may not actually be a duplication of the same customer. For example, if the criteria entered for doing the comparison are last name and first name, your results may include different customers with the same name.</p>
+        <p><span>Step 4: Decide which profile to use as the </span><span class="span_2">Master</span><span> (the one that information is merged into).</span> You can manually select the Master profile from within each dupe grouping by clicking on the desired Master Profile and clicking <span class="span_2">Set as Master</span>. You can also use <span class="span_2">Auto Set Your Masters</span> which allows you to set a Master for every dupe grouping all at one time by using the profile within each that has either the <span class="span_2">Earliest Creation Date, Latest Creation Date, Earliest Modified Date </span>or<span class="span_2"> Latest Modified Date</span>.</p>
+        <p>(When using <span class="span_2">Auto Set Masters</span>, be sure to follow step 5 below.) </p>
+        <p><span>Step 5: Review your entire listing of possible dupe groupings to identify any groupings that are not definitely duplicate profiles and un-select the master profile so they do not result in merging.</span> For example, your Dupe Check results may include 100 profiles made up of 40 possible dupe groupings. You may determine that 5 of those possible dupe groupings may not be dupes and so you do not want to merge them. Be sure to un-set those Masters so they do not get merged. This is done by individually highlighting each undesired Master (the profile in red) and clicking <span class="span_2">Set as Master</span>, a button, which toggles between set and un-set as Master (profile is no longer in red). Any dupe grouping without a Master set will not get merged. You can also use this technique to change the Master profile set by the <span class="span_2">Auto Set Master</span> feature in the cases where you would prefer a different master than the one selected by the <span class="span_2">Auto Set Master</span>.</p>
+        <p class="p_9">WARNING: The AUTO SET MASTER FEATURE method of performing a profile dupe check may results in errors to your database. It is best advised to call support for guidance before using this method. Also make sure you have taken a recent backup.</p>
+        <p><span>Step 6: </span>Next, highlight the profile you want to merge into the master and click <span class="span_2">Merge</span> if you are merging profiles one at time, or <span class="span_2">Merge All </span>if you want to merge each grouping of dupes within the Dupe Check results that has a <span class="span_2">Master</span> profile set for that grouping, all at one time. </p>
+        <p>Upon clicking either <span class="span_2">Merge </span>or <span class="span_2">Merge All</span>, the system prompts with a screen that allows you to select and include merging data from the following profile tabs: <span class="span_2">Addresses, Communications, Special Dates, Cards, PNR Entries, Travelers/Contacts, Groups </span>and<span class="span_2"> Attachments.</span> (The system automatically merges all Activities, Marketing Codes, Res Cards, Invoices, Payments and Unapplied Balanced from the duplicate profile into the profile designated as the Master profile.) </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_26.jpg" style="height: 449px;width: 361px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.27.jpg" class="img_1" />
+        </p>
+        <p>When including any of these tabs of data in the profile merge, all data is appended to existing data within the master profile and removed from the duplicate profile. Place a check next to each tab you choose to include in the merge. These check marks are saved locally and will be "remembered" the next time you merge profiles from the Dupe Check feature.</p>
+        <p><span>Delete Profile/Set Profile to Inactive: </span>Once deleted, all data from the old profile not included in the merge is erased. If you are unsure you may want to say no to deleting and mark these profiles, once merged into the master, as inactive instead.</p>
+        <p>Upon clicking <span class="span_2">OK, </span>the merge takes place. If you have selected <span class="span_2">Merge All</span> you will receive a prompt with a message <span class="span_2">XX Profiles will be merged into 14 Masters. Merge ALL profiles to their Masters?</span> Verify that the numbers align with what you are trying to merge before selecting OK.</p>
+        <p><span>Note: </span>The Profile Dupe Checker routine works with the ability to link Traveler records to multiple profiles. When a Traveler is merged to a master profile, a new Traveler Link record is created. When the option to Delete Profile after merging is selected, the Traveler records are not deleted; the Link record is deleted instead. </p>
+        <p><span>Note: Sync Activated databases </span>can only be set to inactive rather than deleted upon merging. This setting has been hard-coded to reduce the potential for unresolved items to occur during synchronization as the result of one location updating a profile while the other location is deleting that profile via Dupe Checker.</p>
+        <p><span>*Important Note:</span> Steps 1 and 5 are the most important steps within this process. Once a profile is merged to another, there is no way to "un-merge" them so you want to be very careful that you review the listing of potential dupes and unset any Masters that you have any question are not actually duplicate profiles. We also recommend that you limit access to this feature via your <span class="span_2">ClientBase</span> User permission settings (go to <span>Advanced Permissions|Menu Options</span> and uncheck <span class="span_2">Profile Dupe Checker</span> within the Utilities menu options when you set user up by going in as SYSDBA and clicking <span>Utilities|User Logins</span>). Consider this a power tool that should be used with great caution and proper training.</p>
+        <p><span>Step 6:</span> <span>Maintain Regular Dupe Checker Schedule.</span> Maintaining a rich (yet clean) database of accurate customer information improves the effectiveness of every marketing effort. Run the dupe checker regularly to eliminate duplicate profiles.</p>
+        <h3>Run Dupe Checker from Level 1, 2, or 3 Query</h3>
+        <p>Ever spot duplicate profiles while working in the profile manager queries and want to merge them right then and there? Now you can. </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_27.jpg" style="height: 376px;width: 539px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.28.jpg" class="img_1" />
+        </p>
+        <p>Simply right-click anywhere on your current Query results and select <span class="span_2">Dupe Check</span> from the listing; or, click the Dupe Checker Results Tab and <span class="span_2">Filter</span>. By default the Dupe Checker routine is run on the entire database, but a field called <span class="span_2">Check for duplicate profiles in,</span> allows you to setup using: <span class="span_2">Entire Database, Current Results in Level 1 Query, Current Results in Level 2 Query,</span> or <span class="span_2">Current Results in Level 3 Query</span>. </p>
+        <p>If set to <span class="span_2">Using the Current Results,</span> rather than the <span class="span_2">Entire Database</span>, by default the <span class="span_2">Disable Dupe Check Filters</span> are checked, and by clicking <span class="span_2">OK,</span> you obtain the current Query results displayed in the Dupe Checker window, so that you can use the <span class="span_2">Merge to Master</span> feature. 2</p>
+        <h2>
+            <MadCap:keyword term="Global Modify">&#160;</MadCap:keyword>Global Modify</h2>
+        <p>Global Modify allows you to change multiple profiles, activities, or Res Cards simultaneously without having to enter each to make the desired change. For example, you have an agent who left your company and you want to replace the former agent’s name in profiles with the new one. Or you want to globally modify all primary e-mails with a marketing permission of <span class="span_2">Yes </span>or add or remove a marketing code. You can also use the global modify feature to add, remove, or change profile group names or change the Res Card fields. Adding, replacing, or exchanging fields and codes using global modify is an easy and efficient way to make necessary changes in the database. </p>
+        <p><span>Step 1: Backup.</span> When you use global modify, you make permanent and automatic changes, therefore, we suggest you backup the database before using this feature. In doing so, you are covered in case you change something unintentionally. If you have a backup, you have the option to overwrite the changes you have made and try again. To back up your database, go to <span>Start|Programs|</span><span class="span_2">Trams</span><span>|</span><span class="span_2">Trams</span><span> Back up/Restore</span>. See the <span class="span_2">Backing Up </span>and <span class="span_2">Restoring</span> sections of this chapter for further details.</p>
+        <p><span>Step 2: Query your Database.</span> Use the <span class="span_2">Profile, Activity and Res Card Manager</span> to Query for the profiles, activities or Res Cards to modify. When you have the desired Query results, modify all results at once or hold down the Ctrl key and use your mouse to select the profiles you want to change. You can also right mouse click in the Results Screen or click <span>Edit</span> on the menu bar to <span class="span_2">Invert All, Select All </span>or <span class="span_2">Unselect All.</span> </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_28.jpg" style="height: 358px;width: 428px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.29.jpg" class="img_1" />
+        </p>
+        <p><span>Step 3: </span>Once you queried and selected the records to modify, select <span>Utilities|Global Modify</span><span class="span_2">. </span></p>
+        <p><span class="span_4">Globally Modifying Profiles:</span> Select <span class="span_2">Set Value</span> or <span class="span_2">Exchange With. </span>Fields available to modify: </p>
+        <p><span class="span_2">Profile:</span><span class="span_2"> Last Name, First Name, Middle Name, Courtesy Title, Additional Name, Interface ID, Primary Agent, Branch, Web ID, Web Password, Referred By, Salutation, Creation Date, Create By, Active, Vendor Commission % (Vendor Only), Travel Category (Vendor Only)</span>
+        </p>
+        <p>[<span>Hint: </span>If Address Line 1 was used in the past to capture an additional name, Global Modify that name into the new Additional Name field. Next, Global Modify the actual address information from Address Line 2 into Address Line 1.]</p>
+        <p><span class="span_2">Primary PhoneTable/FaxTable:</span><span class="span_2"> Country Code, Area Code</span>
+        </p>
+        <p><span class="span_2">PhoneTable, FaxTable, E-mailTable:</span><span class="span_2"> Marketing Permission</span>
+        </p>
+        <p><span class="span_2">PrimaryAddrTable, BillToAddrTable, ShipToAddrTable, AlternateAddrTable:</span><span class="span_2"> Address Line 1/Line 2, Apt/Suite, City, State, Zip Code, Country, Description</span>
+        </p>
+        <p class="p_10">More Fields</p>
+        <p><span class="span_2">Marketing Codes:</span><span class="span_2"> Add or remove marketing codes from Query results.</span>
+        </p>
+        <p><span class="span_2">Groups: </span><span class="span_2">Add or remove groups from Query results.</span>
+        </p>
+        <p><span class="span_4">Globally Modifying Activities</span><span>: </span>Globally modify Activities or Profiles to which Activities are linked. Select <span class="span_2">Set Value </span>or <span class="span_2">Convert Type. </span>Select <span class="span_2">Activity to Modify (Reminders, Notes, Mailers). </span>Fields available to modify:</p>
+        <p><span class="span_2">Activity: </span><span class="span_2">Date of Reminder, To Do, Login/Created Name, Priority, Private, Type, Subject, Completed, Remarks.</span>
+        </p>
+        <p><span class="span_4">Globally Modifying Res Cards</span><span>:</span> Globally modify Res Cards or Profiles to which the Res Cards are linked. Fields available to modify:</p>
+        <p><span class="span_2">Rescard: </span><span class="span_2">Status, ResCycle, Create Agent, Marketing Source, Group Name, Branch #, Trip Name, Locator #, </span>and <span class="span_2">Region/Destination</span></p>
+        <p><span>Step 4: Identify Records to Include.</span> On the bottom right side of the Profile Fields and the Marketing fields screen, there is a setting called <span class="span_2">Include Records</span>. This defines whether to use all the profiles that are in the profile Query result screen, or use only ones that have been highlighted and selected. You also have the ability to apply changes to a range of profiles within the current results. When selecting <span class="span_2">Range (Mth to Nth),</span> enter the range of profiles you want to global modify. This range is based on the line number from and to within the results of the current Query.</p>
+        <p><span>Step 5: Click Global Modify Now.</span> Finally, select <span class="span_2">Global Modify Now</span>. Confirm that you want to global modify. Remember, this makes an automatic change that is not reversible. Please check your steps carefully before committing (remember to make a good backup first). Click <span class="span_2">Yes </span>to continue or <span class="span_2">No </span>to cancel. You are notified once the global modify is complete, and see statistics of how many of the total records were skipped or modified.</p>
+        <p><span>Note: </span>When Global Modifying a formatted More Field, Global Modify detects what the Format Type is and use the rule that applies. When global modifying a More Field you can only set or exchange the value with the same format type as the existing one. <span class="span_2">For example:</span> If More Field has the Format Type of Numbers Only, when modifying, you can only set or exchange the value to another numeric value. If incorrect value is entered a message is displayed informing you of the proper format.</p>
+        <p><span>Note: </span>Because the Primary Traveler checkbox has been added in ClientBase v.3.08, agencies may wish to use Global Modify to change the Primary relationship to another value, as the new checkbox provides a better way to identify Primary Travelers. </p>
+        <p>Therefore, the field PROFILE.Traveler Relationship was added to the Profile Fields tab in the Global Modify tool. With a Traveler column included in the results of a query, it is now possible to use Global Modify to change the relationship of the Travelers to their Profiles in a batch.</p>
+        <p>The Profile Dupe Checker routine now works with the ability to link Traveler records to multiple profiles. When a Traveler is merged to a master profile, a new Traveler Link record is created. When the option to Delete Profile after merging is selected, the Traveler records are not deleted; the Link record is deleted instead. </p>
+        <h2>
+            <MadCap:keyword term="Global Modify for Marketing Codes">&#160;</MadCap:keyword>Partial Global Modify for Marketing Codes</h2>
+        <p>Need your agents help with efficiently coding your client profiles with the proper marketing codes, but afraid to give them the ability to use the full Global Modify feature? You are not alone, so we added the ability to add one marketing code at a time, but to multiple profile results directly from the Profile Manager Query results. The next time you have a deluxe cruise promotion, for example, ask your agents to Query their client profiles and from the results hold down the &lt;Ctrl&gt; key while clicking on each client record that you would like to identify as a deluxe cruiser. After all desired profiles from the list have been selected (highlighted), use the mouse and right-click and select Add Marketing Code from the options. </p>
+        <p>First add the marketing code for Deluxe (you will be prompted with a message<span class="span_2"> Add Deluxe to Selected Results in Profile Manager</span>). Then right-click again and add the marketing code for Cruisers. </p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_29.jpg" style="height: 386px;width: 293px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.30.jpg" class="img_1" />
+        </p>
+        <h2>
+            <MadCap:keyword term="Mask Credit Card Number">&#160;</MadCap:keyword>Mask Credit Card Number</h2>
+        <p>Remove credit card information for Payments, Booking CommTrack CC Numbers, and Reservation Deposit CC Numbers that may no longer be of use. To use this feature the database must be credit card encrypted. Masking the credit card number removes the full encrypted credit card number and replaces it with a masked version of the number.</p>
+        <p>Go to <span>Utilities|Mask Credit Card Number</span>:</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_30.jpg" style="height: 156px;width: 380px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.31.jpg" class="img_1" /> </p>
+        <p>In the Records to Mask field, choose the type of record to remove from the drop-down. <span class="span_2">ClientBase</span> only database options for removal are <span class="span_2">Payments, Booking CommTrack CC Numbers and Reservation Deposit CC Numbers</span>. <span class="span_2">ClientBase</span> databases that are <span class="span_2">Trams Back Office</span> also, can only remove <span class="span_2">Reservation Deposit CC Numbers</span>. Payments and Booking CommTrack CC Numbers affect accounting data and therefore removal must occur in the TBO program. </p>
+        <p>In the <span class="span_2">Purge As Of</span> field, enter the Purge Date. For example, if you wanted to remove records prior to 01/01/2008, the Purge Date is 12/31/2007. Records are removed by date as follows:</p>
+        <p class="p_10">Payments (by Payment Date)</p>
+        <p class="p_10">Booking CommTrack CC Numbers (by Depart Date)</p>
+        <p class="p_10">Reservation Deposit CC Numbers (by Deposit Due Date)</p>
+        <p>After entering the purge date, click <span class="span_2">Mask</span>. A message appears indicating what type of records will be masked and as of what date. Click <span class="span_2">Yes</span> to continue or <span class="span_2">No</span> to return to the selection criteria.</p>
+        <h2>
+            <MadCap:keyword term="Case Converter">&#160;</MadCap:keyword>Case Converter</h2>
+        <p>The Case Converter takes the results of a current Query and automatically converts the case for selected fields. </p>
+        <p><span>Step 1: </span>Use the Profile Manager, Activity Manager, or Res Card Manager Queries to Query the profiles to run the case converter on.</p>
+        <p><span>Step 2:</span> Go to <span>Utilities|Case Converter</span> to access the utility.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_31.jpg" style="height: 339px;width: 457px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.32.jpg" class="img_1" />
+        </p>
+        <p><span>Step 3: </span>Select <span class="span_2">Conversion Type</span> which determines how you would like the case converter utility to change the case of the selected fields. Select either <span class="span_2">Upper Case First Letter of Each Word, Upper Case all Letters, or Lower Case all Letters</span>.</p>
+        <p><span>Step 4: </span>Select the <span class="span_2">Fields to Convert</span>. Place a check into each field convert, including Profile, Address and Traveler/Contact fields.</p>
+        <p><span>Step 5: </span>Select either <span class="span_2">Current Results</span> or <span class="span_2">Select Results</span>. </p>
+        <p><span>Step 6: </span>Click <span class="span_2">Global Convert Now</span> to run the case conversion utility. Displayed is the number of records affected by the conversion.</p>
+        <h2>
+            <MadCap:keyword term="Live Connect Providers, Utilities">&#160;</MadCap:keyword>Live Connect Providers</h2>
+        <p><span class="span_2">ClientBase</span> comes defaulted with the proper URL for each Live Connect provider, but this default URL can be changed from within the Utilities menu by clicking <span class="span_2">Modify</span> in case the Live Connect booking engine changes URL's between releases of <span class="span_2">ClientBase</span>.</p>
+        <p>
+            <img src="Resources/Images/Chapter 21 Tools for Maintaining a Healthy Database/Tools for Maintaining a Healthy_32.jpg" style="height: 295px;width: 309px;" alt="http://static.trams.com/CBW38/images/Tools%20for%20Maintaining%20a%20Healthy%20Database.40.1.33.jpg" class="img_1" /> </p>
+        <p>Also if we add a new booking engine between releases, we send an announcement to all <span class="span_2">ClientBase</span> subscribers with the URL details including <span class="span_2">Travel Category </span>and <span class="span_2">Import XML From</span>, so you have the option of adding them to your Live Connect listing, and don’t have to wait for a new software update. If you want to make a Live Connect Provider inactive, click <span class="span_2">Status|Inactive. </span></p>
+        <p><span class="span_2">Include Authentication </span>is a setting used only by Live Connect Providers that include an additional authentication step in their login process. It is only checked if the Live Connect Provider setup instructions specify so. When implemented, it allows for <span class="span_2">ClientBase</span> to first authenticate the User Login and Password via the booking engine's authentication security layer, obtain an authentication code, and then repost to the booking engine URL with the authentication code in addition to the login and client data.</p>
+        <p>&#160;</p>
+    </body>
+</html>

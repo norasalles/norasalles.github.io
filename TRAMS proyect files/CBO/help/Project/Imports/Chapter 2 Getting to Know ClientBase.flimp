@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-19T13:15:18.3100925-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-19T13:15:33.0364925-05:00">
+    <Files>
+        <Url Source="../../../../../../Desktop/CBB CBO Help/Chapter 2 Getting to Know ClientBase.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBB CBO Help/Chapter 2 Getting to Know ClientBase.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_1.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_2.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_3.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_4.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_5.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_1.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_2.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_3.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_4.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_5.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_6.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_7.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_8.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_9.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_10.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_11.png" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_6.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_7.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_8.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_9.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_10.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase_11.jpg" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Chapter 2 Getting to Know ClientBase/Getting to Know ClientBase.htm" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../TOCs/Chapter 2 Getting to Know ClientBase.fltoc" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/MasterPages/Chapter 2 Getting to Know ClientBase.flmsp" TimeStamp="5/19/2017 1:15:29 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_94.css" TimeStamp="5/19/2017 1:15:29 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 1" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+        <StyleName Name="Heading 4" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles />
+</MsWordImport>

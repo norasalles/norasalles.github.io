@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-30T12:28:22.0201158-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-30T12:28:34.3434048-05:00">
+    <Files>
+        <Url Source="../../../../../../Downloads/Sabre Vacations Canada.docx" AbsoluteSource="file:///C:/Users/sg0217543/Downloads/Sabre Vacations Canada.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Sabre Vacations Canada/Sabre Vacations Canada Sirev.htm" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/Images/Sabre Vacations Canada/Additional Administrator Set.png" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/Images/Sabre Vacations Canada/Additional Administrator Set_1.png" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/Images/Sabre Vacations Canada/Additional Administrator Set_2.png" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Sabre Vacations Canada/Additional Administrator Set.htm" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/Images/Sabre Vacations Canada/Live Connect Features Supported.png" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/Images/Sabre Vacations Canada/Live Connect Features Supported.jpg" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/Images/Sabre Vacations Canada/Live Connect Features Supported_1.png" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Sabre Vacations Canada/Live Connect Features Supported.htm" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../TOCs/Sabre Vacations Canada.fltoc" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/MasterPages/Sabre Vacations Canada.flmsp" TimeStamp="5/30/2017 12:28:31 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_140.css" TimeStamp="5/30/2017 12:28:31 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+        <StyleName Name="List Paragraph" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

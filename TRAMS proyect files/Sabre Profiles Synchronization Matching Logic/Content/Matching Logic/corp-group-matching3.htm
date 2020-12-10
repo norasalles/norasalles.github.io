@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="605" MadCap:lastWidth="728">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Corporate and Group Profiles Matching Logic</h1>
+        <h2>Section 3</h2>
+        <p>&#160;</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If any of the following occur: 1. No record found via AN Number. 2. No additional ANs to try. 3. Multiple AN matches...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Look for a match of the DK Number via the SP Customer Reference Info to a CB Profile Interface ID of a CB Leisure or CB Corporate profile type.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If SP Profile has multiple DK Numbers...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Order the SP Customer Reference Info records by OrderSequenceOrder.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If SP Profile has multiple DK Numbers...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Log a warning message that multiple DK Numbers were found.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <p>For each DK:</p>
+        <ol>
+            <li>Query Client Profiles (Leisure/Corporate) where the DK equals PROFILE.InterfaceID and SPUNQIUEID is empty/null.</li>
+        </ol>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no records are found...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Repeat Step 1 if there is another DK to try.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If multiple records are found...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Repeat Step 1 if there is another DK to try.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If there are no more DKs to try OR there are multiple DK matches...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to <a href="corp-group-matching4.htm">Section 4</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If one matching profile is found by DK...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Update PROFILE.SPUNIQUIEID and PROFILE.PCC to the current SP Profile values</li>
+                    <li>Treat rest of the sync in of the SP Profile as an update.</li>
+                </ol>
+                <p>Note: CB Travelers within the profile will be created or updated based on the SP Travelers in the Corporate or Group profile using the Traveler Match rules in <a href="sabre-traveler-matching5.htm">Section 5</a>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_11.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 4 Importing Profiles from Other Sources/Import Profiles from Other_11.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_4_Import_Profiles_from_Other_Sources" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Import Profiles from Other Sources"
+      Conditions=""
+      LocalConditions=""
+      Position="10" />
+    <IndexCacheEntry
+      Term="ASCII Delimited Text Files"
+      Conditions=""
+      LocalConditions=""
+      Position="20" />
+    <IndexCacheEntry
+      Term="Import Data, 3 Ways"
+      Conditions=""
+      LocalConditions=""
+      Position="71" />
+    <IndexCacheEntry
+      Term="Import, Step-by-Step Instructions"
+      Conditions=""
+      LocalConditions=""
+      Position="110" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/TableStyles/Normal_Table.css" />
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

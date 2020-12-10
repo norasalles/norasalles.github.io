@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="Resources/Stylesheets/MyStylesheet.css" rel="stylesheet" />
+    </head>
+    <body>
+        <p class="p_4"><span class="Strong_1">ClientBase Windows 4.09.00 Fixes</span>
+        </p>
+        <p class="p_5"><span class="span_1">Changes made between ClientBase Windows 4.08.00.007 and 4.09.00.090</span>
+        </p>
+        <p class="p_6">Miscellaneous</p>
+        <ul class="ul_4">
+            <li class="ListParagraph_7">
+                <p class="ListParagraph"> [EUA Enabled Databases Only] Fixed a messaging issue where, after changing a password, an incorrect second prompt to change the password came up, then&#160;the incorrect message "Password Has Been Used Before".&#160;</p>
+            </li>
+        </ul>
+        <p class="p_7">PNR Import Related</p>
+        <ul class="ul_5">
+            <li class="ListParagraph_7_1">
+                <p class="ListParagraph_1">Sabre:</p>
+            </li>
+        </ul>
+        <ul class="ul_4">
+            <li class="ListParagraph_7">
+                <p class="ListParagraph">Fixed an issue where some PNRs returned a "Not a valid integer value" error and did not import correctly when imported from Sabre Red 360.&#160;</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_7">&#160;</p>
+        <ul class="ul_4">
+            <li class="ListParagraph_7">
+                <p class="ListParagraph">Fixed a PNR Import issue for Air bookings where Seat Number and Fare Basis were not imported. Also fixed a related issue where the seat Status defaulted to "Confirmed" rather than "HRS" as in previous versions of ClientBase.&#160;</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_7">&#160;</p>
+        <ul class="ul_4">
+            <li class="ListParagraph_7">
+                <p class="ListParagraph">Resolved a PNR Import issue where the Reservation Airline Code for the vendor was not being imported for ticketed Air segments.&#160;</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_7">&#160;</p>
+        <ul class="ul_4">
+            <li class="ListParagraph_7">
+                <p class="ListParagraph">Fixed an issue where, for partially ticketed Air bookings, the number of travelers was not imported correctly.</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_7">&#160;</p>
+        <ul class="ul_5">
+            <li class="ListParagraph_7_2">
+                <p class="ListParagraph_2">Amadeus:</p>
+            </li>
+        </ul>
+        <ul class="ul_4">
+            <li class="ListParagraph_7_3">
+                <p class="ListParagraph_3">Fixed an issue where, when creating a new Hotel vendor during PNR Import, the Chain Code and Property ID were not saved to the new vendor’s Interface ID field, causing an incorrect prompt to create the vendor each time it was used.</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_7_1">&#160;</p>
+        <ul class="ul_4">
+            <li class="ListParagraph_7_4">
+                <p class="ListParagraph_4">Fixed an issue where the same ticket numbers were imported for all Air reservation passengers.</p>
+                <p class="ListParagraph">&#160;</p>
+            </li>
+            <li class="ListParagraph_7">
+                <p class="ListParagraph">Fixed an issue where the Air Reservation number of travelers was set to 1, even when two or more passengers were in the booking.</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_7">&#160;</p>
+        <ul class="ul_5">
+            <li class="ListParagraph_7_1">
+                <p class="ListParagraph_1">Worldspan: </p>
+            </li>
+        </ul>
+        <ul class="ul_4">
+            <li class="ListParagraph_7">
+                <p class="ListParagraph"><span>Fixed an issue when importing Hotel reservations where the Vendor Profile Commission Default and/or Global Default Commission rate was not being applied to the booking.</span>
+                </p>
+                <p class="ListParagraph">&#160;</p>
+            </li>
+            <li class="ListParagraph_7">
+                <p class="ListParagraph">Fixed an issue where importing the same Record Locator into the same Res Card created a new reservation instead of updating an existing record with the same confirmation number.</p>
+            </li>
+        </ul>
+        <p class="p_8"><span class="Strong">Performance Related</span>
+        </p>
+        <ul class="ul_6">
+            <li class="ListParagraph_7_5">
+                <p class="ListParagraph_5">Fixed an issue where opening Agent profiles with slow travel history queries took a long time.</p>
+            </li>
+            <li class="ListParagraph_7_5">
+                <p class="ListParagraph_5">Corrected an issue where opening group security records, particularly in larger databases, took a long time.</p>
+            </li>
+            <li class="ListParagraph_7_5">
+                <p class="ListParagraph_5">Fixed a Merge to PNR performance issue where the PNR Builder window is slow to display if the profile has many associated travelers.</p>
+            </li>
+        </ul>
+        <p class="p_8"><span class="Strong">Profile Related</span>
+        </p>
+        <ul class="ul_6">
+            <li class="ListParagraph_7">
+                <p class="ListParagraph">Fixed an issue where the Vendor Profile commission default percentage field was sometimes left blank when it should have displayed as 0.00.</p>
+            </li>
+        </ul>
+        <p class="p_6">Query Related</p>
+        <ul class="ul_6">
+            <li class="ListParagraph_7_5">
+                <p class="ListParagraph_5">Fixed an issue where the Inventory Query window was hidden behind other ClientBase windows when clicking outside the Inventory window while the query was still running.</p>
+            </li>
+        </ul>
+    </body>
+</html>

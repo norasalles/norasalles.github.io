@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-15T13:14:38.4748866-05:00" ProjectName="CBW Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-15T13:14:50.4556866-05:00">
+    <Files>
+        <Url Source="../../../../../../Desktop/CBW Help/Chapter 15 Using the Res Card Manager.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Chapter 15 Using the Res Card Manager.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/Using the Res Card Manager.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Chapter 15 Using the Res Card Manager/Using the Res Card Manager.htm" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/Chapter 15 Using the Res Card Manager.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/Chapter 15 Using the Res Card Manager_1.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/Chapter 15 Using the Res Card Manager.png" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Chapter 15 Using the Res Card Manager/Chapter 15 Using the Res Card Manager.htm" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/To enter the search criteria.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/To enter the search criteria_1.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/To enter the search criteria_2.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/To enter the search criteria_3.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 15 Using the Res Card Manager/To enter the search criteria_4.jpg" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Chapter 15 Using the Res Card Manager/To enter the search criteria.htm" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../TOCs/Chapter 15 Using the Res Card Manager.fltoc" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/MasterPages/Chapter 15 Using the Res Card Manager.flmsp" TimeStamp="5/15/2017 1:14:48 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_13.css" TimeStamp="5/15/2017 1:14:48 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 1" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+        <StyleName Name="Heading 4" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles />
+</MsWordImport>

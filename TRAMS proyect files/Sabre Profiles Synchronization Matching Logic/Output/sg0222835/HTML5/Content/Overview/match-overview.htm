@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Overview">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Sabre Profiles Synchronization</title>
+        <link href="../Resources/TableStyles/Normal_Table.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Sabre Profiles Synchronization</h1>
+        <h2>Overview</h2>
+        <p>The Sabre Profile Synchronization routine provides a two-way sync between Sabre Profiles and ClientBase Profiles.  Because Sabre Profiles and ClientBase Profiles differ in structure, this document references:</p>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">What Syncs?</li>
+            <li style="font-size: 10pt;" value="2">What Profile Fields Match up?</li>
+            <li style="font-size: 10pt;" value="3">Wrapper Profile Creation</li>
+            <li style="font-size: 10pt;" value="4">What Constitutes a Match During Initial Sync-In?</li>
+            <li style="font-size: 10pt;" value="5">What Constitutes a Match/Update During On-Going Sync?</li>
+            <li style="font-size: 10pt;" value="6">What Data Fields Are Deleted vs. Updated?</li>
+            <li style="font-size: 10pt;" value="7">Update Logic</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>What Syncs?</h3>
+        <p>Sabre Profiles and ClientBase Profiles do not have similar program designs.  For example, while a Sabre Profiles Corporate Profile is synonymous with a ClientBase Corporate Profile, a Sabre Profiles Corporation Profile can have multiple names and multiple AN/DK Numbers, while the current ClientBase Corporate Profile design allows for only one name and one AN/DK Number. Therefore, only one name and one AN/DK Number is imported, and the rest is ignored.</p>
+        <p>&#160;</p>
+        <p>Likewise, a Sabre Profiles Group Profile is synonymous with a ClientBase Leisure Profile.  While a Sabre Group Profile can have can multiple names and AN/DK Numbers, the current ClientBase Leisure Profile design allows for only one name and one AN/DK Number. Therefore, only one is imported and the rest is ignored.</p>
+        <p>&#160;</p>
+        <p>A Sabre Profiles Traveler Profile is synonymous with a ClientBase Traveler/Contact within a Profile.  This is another design difference as the ClientBase Traveler/Contact must be linked to a ClientBase Profile and in the Sabre Profiles, the Traveler Profile is not.  Furthermore, a Sabre Profiles Traveler can have multiple names, while the current ClientBase design allows for only one name.  Therefore, only one name is imported and the rest is ignored.  If a Sabre Profiles Traveler Profile does not have any valid associations to any other ClientBase Profiles, a new “wrapper” ClientBase Profile is created.</p>
+        <h2>What Profile Fields Match Up?</h2>
+        <p>Let’s take a look at how Sabre Profiles and ClientBase Profile elements line up.</p>
+        <h3>Sabre Profiles/ClientBase Corporate Imported Profile Fields</h3>
+        <p>A Sabre Profiles <i>Corporate</i> Profile is synonymous with a ClientBase <i>Corporate</i> Profile.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Sabre Profiles
+ Corporate Profile Fields</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>ClientBase
+ Corporate Profile Fields</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CorporateInfo</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Company Name </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>ContactName</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Courtesy Title, First Name, Middle Name,
+ Last Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Remark</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Interface ID (AN
+ number)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CustomerReferenceInfo</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Interface ID (DK number)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Telephone</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Phone, Fax</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Email</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Email</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CompanyURL</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Web Site</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Address</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Address Line 1, Address Line 2, Apt/Suite,
+ Zip Code, City, State, Country, Description, Address Types (Primary, Bill To,
+ Ship To types only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>PaymentForm</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Card Type, Card
+ Code, Card Description, Card Number, Expiration, Name on Card, Remarks</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>Priority Remarks</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <p>Remarks</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Sabre Profiles Group/ClientBase Leisure Imported Profile Fields</h3>
+        <p>A Sabre Profiles <i>Group</i> Profile is synonymous with a ClientBase <i>Leisure</i> Profile.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Sabre Profiles
+ Group</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>ClientBase
+ Leisure</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>GroupInfo</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Additional Name </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>ContactName</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Courtesy Title, First Name, Middle Name,
+ Last Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Remark</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Interface ID (AN
+ number) – If both an AN and a DK exist, the AN has priority.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CustomerReferenceInfo</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Interface ID (DK number)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Telephone</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Phone, Fax</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Email</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Email</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CompanyURL</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Web Site</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Address</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Address Line 1, Address Line 2, Apt/Suite,
+ Zip Code, City, State, Country, Description, Address Types (Primary, Bill To,
+ Ship To types only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>PaymentForm</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <p>Card Type, Card
+ Code, Card Description, Card Number, Expiration, Name on Card, Remarks</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Sabre Profiles Traveler/ClientBase Traveler/Contact Imported Profile Fields</h3>
+        <p>A Sabre Profiles <i>Traveler</i> Profile is not linked to another Profile whereas a ClientBase <i>Traveler/Contact</i> must be.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Sabre Profiles
+ Traveler Profile</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>ClientBase
+ Traveler/Contact</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>PersonName</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Courtesy Title,
+ First Name, Middle Name, Last Name, Gender, Citizenship, Birthdate,
+ Salutation/Nickname,</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>TPA_Identity ProfileName (if no PersonName element exist)</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>First Name, Last Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Telephone</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Phone, Fax</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Email</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Email</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Priority Remarks</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Remarks</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Address</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Address Line 1, Address Line 2, Apt/Suite,
+ Zip Code, City, State, Country, Description, Address Types (Primary, Bill To,
+ Ship To types only)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>OrderSequenceNo</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Passport Number,
+ Expiration, Issue Date, Issuing City, Issuing Country, Primary, Emergency
+ Contact</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>PaymentForm</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <p>Card Type, Card Code, Card Description, Card
+ Number, Expiration, Name on Card, Remarks</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Wrapper Profile Creation</h2>
+        <p>If a Sabre Profiles Traveler Profile does not have any valid associations to any other ClientBase Profiles, a new Corporate “wrapper” ClientBase Profile is created.  Fields imported are First Name, Last Name, Middle Name, Courtesy and Title.  The Sabre Profiles Traveler Profile is inserted into the Corporate “wrapper” ClientBase Profile. (If desired, this new Profile can be changed from Corporate to Leisure by using the Type drop-down in the General Info tab.)</p>
+        <p>&#160;</p>
+        <p>Here are the instances when a wrapper Profile is created.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Instance</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>ClientBase</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Traveler Profile with at least one allowed associated profiles exists
+ in the database</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>No wrapper profile
+ is created; traveler will be added to the associated profile</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Traveler Profile with zero allowed associated profiles existing in
+ the database and has a AN/DK Number that exists in one and only one ClientBase
+ Client (Leisure/Corporate) profile</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>No wrapper profile is created; traveler will
+ be added to the matching profile</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Traveler Profile with no AN/DK number and no allowed associated
+ profiles existing in the database</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>A Corporate “wrapper” Profile is
+ created. The Interface ID is populated based on the format for generating
+ Interface ID under Default Values for New Profiles if specified, or left
+ blank if no such default format is established</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>Traveler Profile with no associated profiles existing in the database
+ and has a AN/DK Number that exists in zero or more than one ClientBase Client
+ (Leisure/Corporate) profiles</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <p>A Sabre Profiles Traveler can have multiple AN/DK
+ Numbers. The current ClientBase logic will only create one wrapper profile.
+ Therefore, only one wrapper (Corporate) profile will be created for the first
+ AN/DK Number and the rest will be ignored</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>What Constitutes a Match During the Initial Sync-In?</h3>
+        <p>Before there can be on-going synchronization between Sabre Profiles and ClientBase, an initial Sync-In must be performed.  We define this as Syncing in all data from Sabre Profiles into ClientBase for an agency with no previous Sabre Profiles information. This is a one-time import which brings Sabre Profiles into ClientBase by merging and inserting Profiles and Profile data.  During this process, the first consideration is to determine what constitutes a match between Sabre Profiles and ClientBase Profile data fields.</p>
+        <h3>What Matches During Initial Sync-In?</h3>
+        <p>During the Sync-In process, if a Profile in ClientBase is found via a lookup method during the Initial Sync that does not use the UniqueID, the Profile is merged and logged to the changelog.  If a matching ClientBase field is empty/null and the Sabre Profile element/attribute has data, the ClientBase field is populated with Sabre Profile data.</p>
+        <p>&#160;</p>
+        <p>If a matching ClientBase field and a Sabre Profile element/attribute BOTH have data, then the Date/Time the record was last modified and the UpdateDateTime of the Sabre Profile is compared.  If both are equal, the Sabre Profiles Profile wins.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Subject</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>Determination</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>ADDRESS</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1"> No merging
+ takes place for Addresses during an import, only updates. </li>
+                            <li style="font-size: 10pt;" value="2"><b>For Traveler Addresses:</b> the
+ ClientBase Traveler Address is only replaced if the ClientBase Traveler does
+ not have an address, but the Sabre Profiles Traveler does have an address.
+ Insert the Sabre Profiles Traveler Address into the ClientBase
+ Traveler.&#160; Otherwise, do nothing. </li>
+                            <li style="font-size: 10pt;" value="3"> <b>For Profile Addresses:</b> Address
+ records are sorted by OrderSequenceNo value (non-visible attribute).
+ Addresses with a Billing LocationTypeCode (BIL) are grouped together.
+ Addresses with a Delivery LocationTypeCode (DEL) are grouped together.&#160;
+ Any remaining Address records are grouped together, regardless of the
+ LocationTypeCode. </li>
+                            <li style="font-size: 10pt;" value="4">Rules for
+ assigning Address Types in ClientBase. <ul style="list-style-type: circle;"><li value="1"> If there is
+ already a Primary address in ClientBase, keep that one marked as Primary. </li><li value="2">If there is
+ no Primary address in ClientBase, or if the Primary address is BLANK, use the
+ Billing Address with the lowest OrderSequenceNo value (non-visible attribute).&#160;
+  </li><li value="3">If the Sabre
+ Profiles profile does not have any Billing addresses, use the Delivery
+ Address with the lowest OrderSequenceNo value (non-visible attribute).&#160; </li><li value="4">If the Sabre
+ Profiles profile does not have any Delivery addresses, use any remaining
+ Address element with the earliest OrderSequenceNo value (non-visible
+ attribute).&#160; </li><li value="5"> If there is
+ no Sabre Profiles Address data, do nothing. </li><li value="6">The Billing
+ Address with the earliest OrderSequenceNo value (non-visible attribute) will
+ be inserted as the Bill To address. </li><li value="7">The Delivery
+ Address with the earliest OrderSequenceNo value (non-visible attribute) will
+ become the Ship To address. </li><li value="8"> If two or
+ more Sabre Profiles addresses are the same except for the LocationTypeCode,
+ insert it into ClientBase only once and check all the applicable address type
+ boxes. For example, if all the matching criteria are identical for two Sabre
+ Profile address records, but one has LocationTypeCode = BIL and one has DEL,
+ create one address with both Bill To and Ship To checked in ClientBase. </li><li value="9">Any
+ additional Addresses will be inserted into ClientBase as uncategorized.  This means extra Billing, Delivery, and
+ uncategorized Addresses with later OrderSequenceNos values (non-visible
+ attributes.)</li><li value="10"> If there is
+ only one address in Sabre Profiles, and no address in ClientBase, insert it
+ as Primary/Bill To/Ship To.  </li><li value="11">
+  If
+ there is already a ClientBase Bill To/Ship To, do not replace this
+ designation with the Sabre Profiles Billing or Delivery address.  Insert as uncategorized UNLESS the Bill To
+ and/or Ship To are BLANK, in which case, overwrite with the Billing or
+ Delivery address with the earliest OrderSequenceNo value (non-visible
+ attribute).  This would mean if there
+ is an address in ClientBase marked as primary/billto/shipto, as is the
+ default, it keeps all its designations.  </li><li value="12"> If there is
+ no ClientBase "Bill To" (and the ClientBase Primary and "Ship
+ To" are), insert the Sabre Profiles BILLING address with the earliest OrderSequenceNo
+ value (non-visible attribute) as the ClientBase "Bill To".&#160; </li><li value="13">Similarly, if
+ there is a defined ClientBase Primary and "Bill To" and no defined
+ ClientBase "Ship To"; insert the Sabre Profiles DELIVERY address
+ with the earliest as the ClientBase "Ship To". </li></ul></li>
+                            <li style="font-size: 10pt;" value="5">ClientBase
+ Address1 must match Sabre Profiles AddressLine 1</li>
+                            <li style="font-size: 10pt;" value="6"> ClientBase
+ Address2 must match Sabre Profiles AddressLine 2</li>
+                            <li style="font-size: 10pt;" value="7">ClientBase
+ City must match Sabre Profiles City </li>
+                            <li style="font-size: 10pt;" value="8"> ClientBase
+ Zip Code must match Sabre Profiles Zip </li>
+                            <li style="font-size: 10pt;" value="9"> ClientBase
+ State must match Sabre Profiles code/description.&#160; This means that the
+ ClientBase State must match the Sabre Profiles State code exactly. Either the
+ ClientBase State is converted to a Sabre Profiles State Code and matches the
+ Sabre Profiles State Code, or the ClientBase State matches the Sabre Profiles
+ State Code converted to its description. </li>
+                            <li style="font-size: 10pt;" value="10"> ClientBase
+ Country must match Sabre Profiles code/description.&#160; This means that the
+ ClientBase Country must match the Sabre Profiles Country code exactly. Either
+ the ClientBase Country is converted to a Sabre Profiles Country code and
+ matches the Sabre Profiles Country code, or the ClientBase Country matches
+ the Sabre Profiles Country code converted to its description. </li>
+                            <li style="font-size: 10pt;" value="11"> If Country is
+ empty in ClientBase and State exists, default the Country as United States if
+ the State is a valid US state.</li>
+                            <li style="font-size: 10pt;" value="12">Apt/Suite
+ (which populates from Sabre Address Line 3) intentionally is not considered
+ for matching purposes. Consider Apt 3, Number 3, #3, etc.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>COMMUNICATIONS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Email: No merging
+ takes place for Email addresses during an import, only updates. </li>
+                            <li style="font-size: 10pt;" value="2"> The Sabre
+ Profiles and ClientBase Email Address must match.  If no match is found, an insert will occur.</li>
+                            <li style="font-size: 10pt;" value="3">Primary email
+ is only
+ set when
+  the ClientBase profile or traveler has no existing records of that
+ type.&#160; Primary is then set to the Sabre Profiles record with the earliest
+ OrderSequenceNo value (non-visible attribute).&#160; If the data exists for a
+ type, primary is not changed for any existing or new record. </li>
+                            <li style="font-size: 10pt;" value="4">Phone/Fax: No merging
+ takes place for phone/fax numbers during an import, only updates.</li>
+                            <li style="font-size: 10pt;" value="5"> If no match
+ is found, an insert will occur. </li>
+                            <li style="font-size: 10pt;" value="6">The converted
+ communication types must match.&#160; If the Sabre Profiles Phone Location
+ Type Code is Fax, then the ClientBase type of the potential match must be
+ Fax. </li>
+                            <li style="font-size: 10pt;" value="7"> If the Sabre
+ Profiles Phone Location Type Code is anything else, then&#160;the ClientBase
+ type of the potential match must be phone. </li>
+                            <li style="font-size: 10pt;" value="8">Sabre
+ Profiles Phone Number is converted to canonical format [+1 (212) 555-1212].&#160;
+ The converted Sabre Profiles field must match the ClientBase Field.</li>
+                            <li style="font-size: 10pt;" value="9"> Primary phone
+ is only
+ set when
+  the ClientBase Profile/Traveler has no existing records of that type.&#160;
+ Primary is then set to the Sabre Profiles record with the earliest
+ OrderSequenceNo value (non-visible attribute).&#160; If the data exists for a
+ type, primary is not changed for any existing or new record. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>EMERGENCY CONTACT</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1"> No
+ merging takes place for Addresses during an import, only updates. </li>
+                            <li style="font-size: 10pt;" value="2">The
+ ClientBase Traveler's Emergency Contact is only updated if the ClientBase
+ Traveler does not have an emergency contact, but the Sabre Profiles Traveler
+ does have an Emergency contact. Insert the Sabre Profiles Traveler Emergency
+ Contact into the ClientBase Traveler.&#160; Otherwise, do nothing. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>PAYMENT CARDS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">No merging
+ takes place for Credit Cards during an import, only updates.</li>
+                            <li style="font-size: 10pt;" value="2"> If no match
+ is found, an insert will occur.</li>
+                            <li style="font-size: 10pt;" value="3">The Sabre
+ Profiles Bank Card Vendor Code must match the ClientBase Card Code. </li>
+                            <li style="font-size: 10pt;" value="4"> The Sabre
+ Profiles Card Number must match the ClientBase Decrypted Card Number OR the Sabre
+ Profiles Card Number, once masked using the ClientBase masking logic, must
+ match the ClientBase Masked Card Number. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>LOYALTY CARDS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">No merging
+ takes place for Loyalty Cards during an import, only updates.</li>
+                            <li style="font-size: 10pt;" value="2">If no match
+ is found, an insert will occur.</li>
+                            <li style="font-size: 10pt;" value="3">The converted
+ Sabre Profiles Vendor Type Code must match the ClientBase Card Type. </li>
+                            <li style="font-size: 10pt;" value="4"> The Sabre
+ Profiles Vendor Code must match the ClientBase Card Code. </li>
+                            <li style="font-size: 10pt;" value="5">The Sabre
+ Profiles Membership ID must match the ClientBase Decrypted Card Number.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>PASSPORTS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Sabre
+ Profiles Document number must match the ClientBase Passport No.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CLIENTBASE TRAVELER
+  
+  (fields of only 1 instance)</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Field values
+ must match exactly.</li>
+                            <li style="font-size: 10pt;" value="2">If&#160;a
+ matching ClientBase field is empty/null and the Sabre Profiles
+ element/attribute has data, populate the ClientBase Field with Sabre Profiles
+ Data. Otherwise do nothing.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>CLIENTBASE PROFILE (fields of only 1
+ instance)</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Field values
+ must match exactly.</li>
+                            <li style="font-size: 10pt;" value="2">If a matching
+ ClientBase field is empty/null and the Sabre Profiles element/attribute has
+ data, populate the ClientBase Field with Sabre Profiles Data. Otherwise do
+ nothing.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>What Constitutes a Match/Update During On-Going Sync?</h2>
+        <p>After the initial Sync-In has completed, an On-Going sync process is begun to update and insert Profiles. The sync routine first looks to find the Sabre Profile ID in ClientBase.  This is a unique Sabre Profiles Profile number that has come over in the intial sync in process.  The Sabre PCC identifies the branch.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="../Resources/Images/profiles.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>In Sabre Profiles, what we would consider an "update" is actually the deletion of the old record and the addition of the new record.</b>
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">	If there is a matching record for both a Delete action and an Add action in the Sabre Profile, then an update is performed on that record in ClientBase.</li>
+            <li style="font-size: 10pt;" value="2">	If there is only a matching record on an Add in the Sabre Profile, then an update is performed in ClientBase.</li>
+            <li style="font-size: 10pt;" value="3">	If there is only a match on a Delete in the Sabre Profile, then a delete is performed in ClientBase.</li>
+            <li style="font-size: 10pt;" value="4">	If there is no match and there is both a Delete action and an Add action in the Sabre Profile, then an insert is performed in ClientBase.</li>
+            <li style="font-size: 10pt;" value="5">	If there is no match and there is only an Add action in the Sabre Profile, then an insert is performed in ClientBase.</li>
+            <li style="font-size: 10pt;" value="6">	If there is no match and there is only a Delete action in the Sabre Profile, then nothing is changed in ClientBase.</li>
+            <li style="font-size: 10pt;" value="7">	If there is a match on Delete, then no match on Add, in ClientBase the matching record is deleted, and the new record (with the new address from the Sabre Profile) is inserted in ClientBase.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Import Rules</b>
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">If a Profile in ClientBase is found via a lookup method that does not use the UniqueID, the Profile is merged and logged to the changelog.</li>
+            <li style="font-size: 10pt;" value="2">If a matching ClientBase field is empty/null, and the Sabre Profile element has data, the ClientBase field is populated with the Sabre Profile Data.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Merge Rules</b>
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 10pt;" value="1">	If a matching ClientBase field is empty/null and the Sabre Profile element/attribute has data, the ClientBase Field is populated with Sabre Profile data.</li>
+            <li style="font-size: 10pt;" value="2">	If a matching ClientBase field and a Sabre Profile element/attribute BOTH have data, the Data/Time the record was last modified is compated to the UpdateDateTime of the Sabre Profile.  If both are equal, the Sabre Profiles Profile wins.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>No half merges! For the following subject areas, if a matching record is found in ClientBase, ALL of the Sabre Profiles record will be merged.  (This means blank fields from the Sabre Profiles record may replace populated ClientBase fields in these areas.</p>
+        <p>&#160;</p>
+        <p><b>NOTE:</b> Fields that only exist in one product (e.g. Credit Limit in ClientBase, etc., are ignored and will not cause such overwriting.</p>
+        <h2>What Matches During On-Going Sync?</h2>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>SUBJECT</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>DETERMINATION</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>ADDRESS</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">ClientBase Address1 must match Sabre
+ Profile AddressLine 1</li>
+                            <li style="font-size: 10pt;" value="2">  ClientBase Address2 must match Sabre
+ Profile AddressLine 2</li>
+                            <li style="font-size: 10pt;" value="3">ClientBase City must match Sabre
+ Profile City </li>
+                            <li style="font-size: 10pt;" value="4">
+  ClientBase Zip Code must match Sabre
+ Profile Zip  </li>
+                            <li style="font-size: 10pt;" value="5">  ClientBase State must match Sabre
+ Profile code/description.&#160; This means that the ClientBase State must
+ match the Sabre Profile State code exactly. Either the ClientBase State is
+ converted to a Sabre Profile State Code and matches the Sabre Profile State
+ Code, or the ClientBase State matches the Sabre Profile State Code converted
+ to its description. </li>
+                            <li style="font-size: 10pt;" value="6">
+  ClientBase Country must match Sabre
+ Profile Code/Description.&#160; This means that the ClientBase Country must
+ match the Sabre Profile Country code exactly. Either&#160;the ClientBase
+ Country is converted to a Sabre Profile Country code and matches the Sabre
+ Profile Country code, or the ClientBase Country matches the Sabre Profile
+ Country code converted to its description. </li>
+                            <li style="font-size: 10pt;" value="7">
+  If Country is empty in ClientBase
+ and State exists, default the Country as United States, if the State is a
+ valid US state.</li>
+                            <li style="font-size: 10pt;" value="8">ü&#160;
+  Apt/Suite (which populates from
+ Sabre Address Line 3) intentionally is not considered for matching purposes.
+ Consider Apt 3, Number 3, #3, etc. &#160;</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>COMMUNICATIONS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Email - The Sabre Profile and ClientBase
+ Email Address must match.</li>
+                            <li style="font-size: 10pt;" value="2"> Phone/Fax -The converted communication types
+ must match.&#160; </li>
+                            <li style="font-size: 10pt;" value="3"> If the Sabre
+ Profiles Phone Location Type Code is Fax, then the ClientBase type of the
+ potential match must be Fax. </li>
+                            <li style="font-size: 10pt;" value="4"> If the Sabre
+ Profiles Phone Location Type Code is anything else, the ClientBase type of
+ the potential match must be Phone. </li>
+                            <li style="font-size: 10pt;" value="5">Sabre
+ Profiles Phone Number is converted to canonical format [+1 (212) 555-1212].&#160;
+ The converted Sabre Profiles field must match the ClientBase Field.&#160; </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CREDIT CARDS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">The Sabre Profile Bank Card Vendor
+ Code must match the ClientBase Card Code. </li>
+                            <li style="font-size: 10pt;" value="2">The
+ Sabre Profile Card Number must match the ClientBase Decrypted Card Number OR
+  </li>
+                            <li style="font-size: 10pt;" value="3">
+  The Sabre Profile Card Number, once
+ masked using the ClientBase masking logic, must match the ClientBase Masked
+ Card Number. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>LOYALTY CARDS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">The converted
+ Sabre Profiles Vendor Type Code must match the ClientBase Card Type. </li>
+                            <li style="font-size: 10pt;" value="2"> The Sabre
+ Profiles Vendor Code must match the ClientBase Card Code. </li>
+                            <li style="font-size: 10pt;" value="3">The Sabre
+ Profiles Membership ID must match the ClientBase Decrypted Card Number.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>PASSPORTS</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Sabre
+ Profiles Document number must match the ClientBase Passport No.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>CLIENTBASE TRAVELER
+ FIELDS (fields that only have one
+ instance, like name fields and birthdate)</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Field values
+ must match exactly.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>CLIENTBASE PROFILE
+ FIELDS   (fields that only have one instance, like name
+ fields and birthdate)</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Field values
+ must match exactly.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>What Updates During On-Going Sync?</h2>
+        <p>All updates are dictated by the ChangeHistory of the Sabre profile obtained by the ProfileHistoryRQ. The match logic occurs with Addresses (GRP/CRP only), Emails, Phone, Loyalty Cards (TVL only), Passports, and Credit Cards. The most recent ChangeHistory with a match is used, and all older ChangeHistory items are ignored.</p>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Subject</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>Determination</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Payment cards</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">
+  Update the ClientBase credit card
+ record with the Sabre Profile credit card record if the Date/Time the record
+ was last modified is earlier than the Sabre Profiles UpdateDateTime. If no
+ match is found, an insert will occur.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Loyalty cards</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Update
+ the ClientBase loyalty card record with the Sabre Profile loyalty card record
+ if the Date/Time the record was last modified is earlier than the Sabre
+ Profile UpdateDateTime.  If no match is
+ found, an insert will occur.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Passports</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">
+  If the Date/Time
+ the record was last modified of the Traveler record is earlier than the Sabre
+ Profile UpdateDateTime, replace the two ClientBase passports with first 2
+ Sabre Profile passports.&#160;If there are fewer than 2 Sabre Profile
+ Passports, then the ClientBase passport fields of the non-matching passport
+ are cleared. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>ADDRESSES</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">For TRAVELERS, if the Date/Time the
+ record was last modified is earlier than the Sabre Profile UpdateDateTime,
+ replace the ClientBase Traveler address with first Sabre Profile address (or
+ clear the ClientBase Traveler address if the Sabre Profile Traveler has no
+ addresses). &#160;</li>
+                            <li style="font-size: 10pt;" value="2">
+  For PROFILES, update matching
+ addresses if the Date/Time the ClientBase address record was last modifed is
+ earlier than the Sabre Profile UpdateDateTime. </li>
+                            <li style="font-size: 10pt;" value="3">  If no matching address is found, the
+ unmatched Sabre Profile addresses will be inserted into ClientBase as
+ uncategorized. </li>
+                            <li style="font-size: 10pt;" value="4">
+  If a ClientBase address is already
+ marked Primary, do not replace the address with this designation with a
+ non-matching address unless blank. </li>
+                            <li style="font-size: 10pt;" value="5">
+  If there is no Primary address in
+ ClientBase, or if the Primary address is BLANK, insert/update with the Sabre
+ Profile Billing Address with the lowest OrderSequenceNo value (non-visible
+ attribute). &#160;</li>
+                            <li style="font-size: 10pt;" value="6">
+  If there is already a ClientBase
+ Bill To/Ship To, do not replace the address with this designation with a
+ non-matching Sabre Profile Billing or non-matching Delivery address. Insert
+ these as uncategorized. </li>
+                            <li style="font-size: 10pt;" value="7">
+  If there is no Bill to address in
+ ClientBase, or if the Bill To address is BLANK, insert/update with the Sabre
+ Profile Billing Address with the lowest OrderSequenceNo value (non-visible
+ attribute). &#160;</li>
+                            <li style="font-size: 10pt;" value="8">
+  If there is no Ship To address in
+ ClientBase, or if the Ship To address is BLANK, insert/update with the Sabre
+ Profile Billing Address with the lowest value.</li>
+                            <li style="font-size: 10pt;" value="9">This would mean if there is an
+ address in ClientBase marked as Primary/Bill To/Ship To, as is our default,
+ it keeps all its designations. </li>
+                            <li style="font-size: 10pt;" value="10">  Any additional unmatched Sabre
+ Profile Addresses of any Type will be inserted into ClientBase as
+ uncategorized. </li>
+                            <li style="font-size: 10pt;" value="11">
+  If there is only one address in
+ Sabre Profiles, and no address in ClientBase, insert it as Primary/Bill
+ To/Ship To. </li>
+                            <li style="font-size: 10pt;" value="12">
+  If two or more Sabre Profile
+ addresses are the same except for the LocationTypeCode, insert it into
+ ClientBase only once and check all the applicable address type boxes. For
+ example, if all the matching criteria in are identical for two Sabre Profile
+ address records, but one has LocationTypeCode = BIL and one has DEL, create
+ one address with both Bill To and Ship To checked in ClientBase. </li>
+                            <li style="font-size: 10pt;" value="13">
+  If there is no ClientBase "Bill
+ To" (and the ClientBase Primary and "Ship To" are
+ non-matching), insert the Sabre Profile BILLING address with the lowest OrderSequenceNo
+ value (non-visible attribute) as the ClientBase "Bill To". &#160;</li>
+                            <li style="font-size: 10pt;" value="14">Similarly, if there is no ClientBase
+ "Ship To" (and the ClientBase Primary and "Bill To" are
+ non-matching); insert the Sabre Profile DELIVERY address with the lowest as
+ the ClientBase "Ship To". </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>What Data Fields Are Deleted vs. Updated</h2>
+        <p>Let’s explore when customer data is updated or deleted during the On-Going Sync Process.</p>
+        <h3>Updating and Deleting ClientBase Traveler Data from Sabre Profiles</h3>
+        <p>A ClientBase Traveler/Contact within a Profile is synonymous with a Sabre Profiles Traveler Profile.  When a ClientBase Traveler is deleted from ClientBase, it will not be deleted from Sabre Profiles. This table describes how Sabre Profiles will respond to subject areas (e.g. Communications, Cards, Passports, etc.) in a ClientBase Traveler/Contact Profile being deleted.</p>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Section</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>Determination</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>General</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Changes
+ to the General section indicate that user is updating a Traveler, not deleting.</li>
+                            <li style="font-size: 10pt;" value="2">Name
+ data is contained in elements called PersonName. If the first PersonName
+ element’s Courtesy Title, First Name, Last Name, Middle Name, and
+ Salutation/Nickname do not match, the element will be deleted. </li>
+                            <li style="font-size: 10pt;" value="3"> A
+ new PersonName element will be created if any of the Subject Areas is not
+ blank. </li>
+                            <li style="font-size: 10pt;" value="4">Gender,
+ Citizenship, and Birthdate are in the Customer element. If any of the Subject
+ areas do not match the matching attributes in Customer element is updated,
+ these attributes will be updated in the Customer element.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Communications</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1"> If
+ a ClientBase Traveler’s communication data is deleted or updated, all of the
+ supported Sabre Profiles communications will be deleted and all of the
+ supported ClientBase communications will be inserted. This is done because
+ ClientBase does not maintain a history of the data in a Communication record
+ just prior to update or deletion.</li>
+                            <li style="font-size: 10pt;" value="2">Phone
+ and Fax records come from the same Sabre Profiles element, Telephone. Whether
+ or not if a Telephone element becomes a phone or fax communication type in ClientBase
+ is determined if the LocationTypeCode attribute is “FAX”. </li>
+                            <li style="font-size: 10pt;" value="3"> Email
+ records come from Email SP elements.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Address</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1"> If
+ a ClientBase Traveler’s address data is deleted or updated, the first Sabre
+ Profiles address will be deleted. If the ClientBase Traveler has an address,
+ the address data will be re-inserted.</li>
+                            <li style="font-size: 10pt;" value="2">Address
+ data is contained in elements called Address. The first Address element will
+ be deleted. A new Address element will be created if any of the Subject Areas
+ is not blank.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Passport</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Passport:
+ Passport data is contained in elements called Document with a DocTypeCode of
+ “PSPT”.  The elements are Passport
+ Number, Expiration, Issue Date, Issuing city and Issuing Country.  If the first two passport Document elements
+ do not match, the elements will be deleted. New Document elements will be
+ created if any of the Subject Areas are not blank.</li>
+                            <li style="font-size: 10pt;" value="2"> Redress Number:
+ Redress Number is in the Customer element. If the Redress Number does not
+ match the attribute in Customer element, the attribute will be updated in the
+ Customer element.</li>
+                            <li style="font-size: 10pt;" value="3"> Known Traveler
+ Number:   Known Traveler Number is in the Customer
+ element. If the Known Traveler Number does not match the attribute in
+ Customer element, the attribute will be updated in the Customer element.</li>
+                            <li style="font-size: 10pt;" value="4">Emergency Contact
+ (Name, Phone, Miscellaneous, Notes): If
+ a ClientBase Traveler’s emergency contact data is deleted or updated, the
+ first Sabre Profiles emergency contact will be deleted. If the ClientBase
+ Traveler has an emergency contact, the emergency contact data will be
+ re-inserted.<ul style="list-style-type: circle;"><li value="1">If
+ the first EmergencyContactPerson element’s Name and Misc do not match or the
+ Phone is not found in any of the Telephone elements, the element will be
+ deleted. A new EmergencyContactPerson element will be created if any of the
+ Subject Areas is not blank. </li><li value="2">The
+ Name field is the combination of the individual Sabre Profiles Name field
+ elements in the following format: “FirstName MiddleName LastName” Example:
+ John Michael Doe. </li><li value="3"> An
+ emergency contact can have multiple phone numbers, so the Phone must match
+ one of the phone numbers.</li></ul></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Cards</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1"> If
+ a ClientBase Traveler’s card data is deleted or updated, all of the supported
+ Sabre Profiles credit cards and non-credit cards will be deleted and all of
+ the supported ClientBase cards will be inserted. This is done because
+ ClientBase does not maintain a history of the data in a card record just
+ prior to update or deletion.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Traveler Preferences</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1"> Traveler
+ Preferences are not supported. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>PNR Entries</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1"> PNR
+ Entries are not supported. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>Associated Profiles</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Only
+ Sabre Profile types of Corporation and Group are valid. All other profile
+ types are ignored. If a delete occurs, all the Associated Profiles records
+ with a UniqueID set (non-visible to the user) will be reviewed. If any valid
+ links exist in the Sabre Profile where they do not exist in ClientBase, the Sabre
+ Profile Associated Profile records will be deleted. </li>
+                            <li style="font-size: 10pt;" value="2"> Sabre
+ Profiles Corporation Profile type maps to ClientBase Corporate type. Sabre
+ Proiles Group Profile type maps to ClientBase Leisure type. Updates are
+ ignored. A ClientBase update to an Associated Profile link does not contain
+ any data that can be updated.</li>
+                            <li style="font-size: 10pt;" value="3">Associated
+ Profiles are looked up via AssocUniqueID and AssocProfileTypeCode
+ attributes.  The Associated Profile
+ links on any Sabre Profiles Corporation and Group Profile types will be
+ reviewed and deleted if needed.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Updating and Deleting ClientBase Corporate Profile Data from Sabre Profiles</h3>
+        <p>A ClientBase Corporate Profile is synonymous with a Sabre Profiles Corporate Profile.  When a ClientBase Profile is deleted from ClientBase, it will not be deleted from Sabre Profiles. This table describes how Sabre Profiles will respond to subject areas (e.g. Communications, Cards, Passports, etc.) when a ClientBase Corporate Profile is deleted.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td style="font-size: 10pt;font-weight: bold;" class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Section</p>
+                    </td>
+                    <td style="font-size: 10pt;font-weight: bold;" class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <p>Determination</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>General</p>
+                    </td>
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1"> Changes
+ to the General section indicate that user is updating a Corporate, not deleting.</li>
+                            <li value="2">Some
+ name data is contained in elements called ContactName. If the first ContactName
+ element’s Courtesy Title, First Name, Last Name, Middle Name, and
+ Salutation/Nickname do not match, the element will be deleted. </li>
+                            <li value="3"> A
+ newContactName element will be created if any of the Subject Areas is not
+ blank. </li>
+                            <li value="4">Gender,
+ Citizenship, and Birthdate are in the Customer element. If any of the Subject
+ areas do not match the matching attributes in Customer element is updated,
+ these attributes will be updated in the Customer element.</li>
+                            <li value="5">Some
+ name data is contained in elements called CorporateInfo. If the first CorporateInfo
+ element’s ComapnyName does not match, the element will be deleted. A new
+ CorporateInfo element will be created if any of the Subject Areas is not
+ blank. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Communications</p>
+                    </td>
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1"> If
+ a ClientBase Corporation Profile’s communication data is deleted or updated,
+ all of the supported Sabre Profiles communications will be deleted and all of
+ the supported ClientBase communications will be inserted. This is done
+ because ClientBase does not maintain a history of the data in a Communication
+ record just prior to update or deletion.</li>
+                            <li value="2">Phone
+ and Fax records come from the same Sabre Profiles element, Telephone. Whether
+ or not if a Telephone element becomes a phone or fax communication type in
+ ClientBase is determined if the LocationTypeCode attribute is “FAX”. </li>
+                            <li value="3">Email
+ records come from Email Sabre Profiles Corporate Profile elements.</li>
+                            <li value="4">Website
+ data is contained in elements callsed CorporateInfo. If a CorporateInfo
+ element is contains a CompanyURL attribute that does not match the any Web
+ site records for the Corporate profile in ClientBase, the CorporateInfo
+ element will be deleted and re-inserted with the CompanyURL cleared.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Address</p>
+                    </td>
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">If
+ any of a ClientBase Corporate Profile’s address data is deleted or updated,
+ all of the Sabre Profiles addresses will be deleted and all of the ClientBase
+ addresses will be inserted. This is done because ClientBase does not maintain
+ a history of the data in an Address record just prior to update or deletion.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Cards</p>
+                    </td>
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">If
+ any of a ClientBase Corporate profile’s card data is deleted or updated, all
+ of the supported Sabre Profiles credit cards and non-credit cards will be
+ deleted and all of the supported ClientBase cards will be inserted. This is
+ done because ClientBase does not maintain a history of the data in a card
+ record just prior to update or deletion.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p style="font-size: 10pt;" class="TableText">Travelers</p>
+                    </td>
+                    <td style="font-size: 10pt;" class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <ul>
+                            <li value="1">Only Sabre Profile types of Traveler are valid. All other profile types are ignored. If a delete occurs, all the Associated Profiles records with a UniqueID set (non-visual to the user) will be reviewed. If any valid links exist in the Sabre Profile where they do not exist in ClientBase, the Sabre Profiles Associated Profile records will be deleted.</li>
+                            <li value="2">Updates are ignored. A ClientBase update to a Traveler link does not contain any data that can be updated in Sabre Profiles.</li>
+                            <li value="3">Associated Profiles are looked up via AssocUniqueID and AssocProfileTypeCode attributes. The Associated Profile links on any Sabre Profiles Traveler profile types will be reviewed and deleted if needed.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Updating and Deleting ClientBase Leisure Profile Data from Sabre Profiles</h3>
+        <p>A ClientBase Leisure Profile is synonymous with a Sabre Profiles Group Profile. When a ClientBase Leisure Profile is deleted from ClientBase, it will not be deleted from Sabre Profiles. This area describes how Sabre Profiles will respond to subject areas (e.g. Communications, Cards, etc.) in a ClientBase profile being deleted.</p>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Normal_Table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+            <tbody>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1" style="font-weight: bold;">
+                        <p>Section</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1" style="font-weight: bold;">
+                        <p>Determination</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>General</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">Some name data is contained in
+ elements called ContactName. If the first ContactName element’s Courtesy
+ Title, First Name, Last Name, and Middle Name do not match, the element will
+ be deleted. </li>
+                            <li style="font-size: 10pt;" value="2">A new ContactName element will be
+ created if any of the Subject Areas is not blank. </li>
+                            <li style="font-size: 10pt;" value="3">Some name data is contained in
+ elements called GroupInfo. If the first GroupInfo element’s GroupName does
+ not match the Additional Name, the element will be deleted. A new GroupInfo
+ element will be created if any of the Subject Areas is not blank. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Communications</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">
+  If a Leisure Profile communication
+ data is deleted or updated, all of supported Sabre Profiles communications
+ will be deleted and all of the supported ClientBase communications will be
+ inserted. This is done because ClientBase does not maintain a history of the
+ data in a Communication record just prior to update or deletion.</li>
+                            <li style="font-size: 10pt;" value="2">  Phone and Fax records come from the
+ same Sabre Profiles element, Telephone. Whether or not if a Telephone element
+ becomes a phone or fax communication type in ClientBase is determined if the
+ LocationTypeCode attribute is “FAX”. </li>
+                            <li style="font-size: 10pt;" value="3">Email records come from Email Sabre
+ Profiles elements.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                        <p>Address</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">If any of a ClientBase Leisure
+ Profile’s address data is deleted or updated, all of the corresponding Sabre
+ Profile’s addresses will be deleted and all of the ClientBase addresses will
+ be inserted. This is done because ClientBase does not maintain a history of
+ the data in an Address record just prior to update or deletion.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Normal_Table-Body-Body1">
+                    <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                        <p>Cards</p>
+                    </td>
+                    <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                        <ul>
+                            <li style="font-size: 10pt;" value="1">If
+ any of a ClientBase Leisure profile’s card data is deleted or updated, all of
+ the supported Sabre Profiles credit cards and non-credit cards will be
+ deleted and all of the supported ClientBase cards will be inserted. This is
+ done because ClientBase does not maintain a history of the data in a card
+ record just prior to update or deletion.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

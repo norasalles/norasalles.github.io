@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://www.autoeurope.com/global-agent-signup.cfm" />
+    <Link
+      Url="Content/Resources/Images/Auto Europe1/Auto Europe.jpg" />
+    <Link
+      Url="Content/Resources/Images/Auto Europe1/Auto Europe_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/Profile Entries.png" />
+    <Link
+      Url="Content/Resources/Images/Auto Europe1/Auto Europe.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://www.autoeurope.com/global-agent-signup.cfm" />
+    <Link
+      Url="Content/Resources/Images/Auto Europe1/Auto Europe.jpg" />
+    <Link
+      Url="Content/Resources/Images/Auto Europe1/Auto Europe_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/Profile Entries.png" />
+    <Link
+      Url="Content/Resources/Images/Auto Europe1/Auto Europe.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Auto Europe"
+      Conditions=""
+      LocalConditions=""
+      Position="6" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-18T15:34:22.7019192-05:00" ProjectName="CBW Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-18T15:34:31.5471192-05:00">
+    <Files>
+        <Url Source="../../../../../../Desktop/CBW Help/TravTech CruiseBase.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/TravTech CruiseBase.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/TravTech CruiseBase/TravTech CruiseBase.jpg" TimeStamp="5/18/2017 3:34:29 PM" />
+        <Url Source="../../Content/Resources/Images/TravTech CruiseBase/TravTech CruiseBase.png" TimeStamp="5/18/2017 3:34:30 PM" />
+        <Url Source="../../Content/TravTech CruiseBase/TravTech CruiseBase.htm" TimeStamp="5/18/2017 3:34:30 PM" />
+        <Url Source="../TOCs/TravTech CruiseBase.fltoc" TimeStamp="5/18/2017 3:34:30 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_81.css" TimeStamp="5/18/2017 3:34:30 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

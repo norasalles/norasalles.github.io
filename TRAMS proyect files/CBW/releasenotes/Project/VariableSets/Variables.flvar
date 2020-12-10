@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName"
+    EvaluatedDefinition="Trams Inc.">Trams Inc.</Variable>
+  <Variable
+    Comment=""
+    Name="PhoneNumber"
+    EvaluatedDefinition="310-641-8726">310-641-8726</Variable>
+  <Variable
+    Name="Version no"
+    Comment=""
+    EvaluatedDefinition="4.09.00">4.09.00</Variable>
+  <Variable
+    Name="Type"
+    Comment=""
+    EvaluatedDefinition="New Features and Enhancements">New Features and Enhancements</Variable>
+  <Variable
+    Name="Product"
+    Comment=""
+    EvaluatedDefinition="ClientBase Windows">ClientBase Windows</Variable>
+  <Variable
+    Name="Date"
+    Comment=""
+    EvaluatedDefinition="Mar, 2020">Mar, 2020</Variable>
+  <Variable
+    Name="BuildDate"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2020-04-14T10:05:52.6495165-03:00"
+    EvaluatedDefinition="MMMM, yyyy">MMMM, yyyy</Variable>
+  <Variable
+    Name="current year"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2020-05-04T11:15:46.2770270-03:00"
+    EvaluatedDefinition="yyyy">yyyy</Variable>
+</CatapultVariableSet>

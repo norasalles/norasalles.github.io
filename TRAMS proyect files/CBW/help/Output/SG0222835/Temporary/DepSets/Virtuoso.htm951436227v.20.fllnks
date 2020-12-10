@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Virtuoso"
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="http://www.virtuoso.com/" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso_319x333.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso_1_624x268.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso.jpg" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso_2_485x339.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Step 3 Click the Create New_496x346.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Step 3 Click the Create New_1.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Step 3 Click the Create New_2_617x336.png" />
+    <Link
+      Url="mailto:help@virtuoso.com" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="http://www.virtuoso.com/" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso_319x333.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso_1_624x268.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso.jpg" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Virtuoso_2_485x339.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Step 3 Click the Create New_496x346.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Step 3 Click the Create New_1.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuosocbw/Step 3 Click the Create New_2_617x336.png" />
+    <Link
+      Url="mailto:help@virtuoso.com" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor290" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

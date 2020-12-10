@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Amadeus Total Cruise"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="mailto:salesinquiries@amadeus.com" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep1.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise.png" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep2.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise_1_445x294.png" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep3.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_624x335.png" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_1.png" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_2_504x352.png" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_3_625x219.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="mailto:salesinquiries@amadeus.com" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep1.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise.png" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep2.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise_1_445x294.png" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep3.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_624x335.png" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_1.png" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_2_504x352.png" />
+    <Link
+      Url="Content/Resources/Images/Amadeus Total Cruise/Amadeus Total Cruise Features_3_625x219.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor235" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

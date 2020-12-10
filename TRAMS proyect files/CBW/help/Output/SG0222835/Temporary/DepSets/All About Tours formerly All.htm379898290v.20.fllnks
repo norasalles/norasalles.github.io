@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" All About Tours (formerly All About Travel)"
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/All About Tours/All About Tours formerly All.jpg" />
+    <Link
+      Url="Content/Resources/Images/All About Tours/Create New All About Tours.jpg" />
+    <Link
+      Url="Content/Resources/Images/All About Tours/Create New All About Tours_1.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/All About Tours/All About Tours formerly All.jpg" />
+    <Link
+      Url="Content/Resources/Images/All About Tours/Create New All About Tours.jpg" />
+    <Link
+      Url="Content/Resources/Images/All About Tours/Create New All About Tours_1.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor231" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

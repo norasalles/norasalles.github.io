@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Sabre Profiles Sync Docs formatted/Address Types.htm'],s:['+'],p:[['+',19],['is',21],['type',9]]});

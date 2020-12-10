@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UrlList>
+    <Url Source="Resources/Images/PASSENGER_Air_Rail.png" />
+    <Url Source="Resources/Images/SERVICEPROVIDER_Air_travelerdetails.png" />
+    <Url Source="Resources/Images/travelers.png" />
+    <Url Source="Resources/Images/SERVICEPROVIDER_Air_agentremarks.png" />
+    <Url Source="Resources/Images/SERVICEPROVIDER_Air_itininvoiceremarks.png" />
+    <Url Source="Resources/Images/SERVICEPROVIDER_Air_flightdetails.png" />
+    <Url Source="Resources/Images/SERVICEPROVIDER_Air_general.png" />
+    <Url Source="Resources/Images/ITINERARY2.png" />
+    <Url Source="Resources/Images/ITEMAMOUNT2.png" />
+    <Url Source="Resources/Images/RESERVATION_remarks.png" />
+    <Url Source="Resources/Images/RESERVATION_agent_remarks.png" />
+    <Url Source="Resources/Images/RESERVATION_payment.png" />
+    <Url Source="Resources/Images/RESERVATION_main.png" />
+    <Url Source="Resources/Images/rescard.png" />
+    <Url Source="Resources/Images/sabrelogo.png" />
+    <Url Source="Resources/Images/passenger1.png" />
+    <Url Source="Resources/Images/reservation.png" />
+    <Url Source="Resources/Images/serviceprovider.png" />
+    <Url Source="Resources/Images/passenger2.png" />
+    <Url Source="Resources/Images/passenger3.png" />
+    <Url Source="Resources/Images/itinerary.png" />
+    <Url Source="Resources/Images/passengerTEST.png" />
+    <Url Source="Resources/Images/itemamountTEST.png" />
+    <Url Source="Resources/Images/itemamount.png" />
+    <Url Source="Resources/Images/sabrelogo.png" />
+    <Url Source="Resources/Images/Test Image.png" />
+</UrlList>

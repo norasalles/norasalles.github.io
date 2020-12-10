@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>&#160;</head>
+    <body>
+        <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+        </p>
+        <p class="header_concept" style="text-align: right;">Phone:&#160;<MadCap:variable name="Variables.PhoneNumber" /> — <MadCap:variable name="Variables.TBO Option" /></p>
+        <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.TBOSupport@sabre.com?subject=TBO content">Trams.TBOSupport@sabre.com</a></p>
+        <p class="header_concept" style="text-align: right;">&#160;</p>
+        <hr />
+        <p class="footer" style="text-align: center;">All Rights Reserved © <MadCap:variable name="Variables.CurrentYear" /> <MadCap:variable name="Variables.CompanyName" /> </p>
+    </body>
+</html>

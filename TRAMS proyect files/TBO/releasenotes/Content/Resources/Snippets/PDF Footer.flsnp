@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/MyStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+        </p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;">Phone:&#160;310 - 641 - 8726 — <MadCap:variable name="Variables.TBO Option" /></p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;">Email: <MadCap:variable name="Variables.TBO Email" /></p>
+        <p class="header_concept" style="text-align: right;font-size: 8pt;">&#160;</p>
+        <hr style="font-size: 9pt;" />
+        <p class="footer" style="font-size: 8pt;text-align: center;">All Rights Reserved © <MadCap:variable name="Variables.Current year" /><MadCap:variable name="Variables.CompanyName" /> </p>
+    </body>
+</html>

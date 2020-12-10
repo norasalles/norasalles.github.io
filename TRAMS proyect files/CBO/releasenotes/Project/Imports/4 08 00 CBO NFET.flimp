@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2019-09-20T17:15:25.9831462-03:00"
+  ProjectName="ClientBase Online Release Notes"
+  ProjectFolder="C:\Users\sg0222835\OneDrive - Sabre\My Projects\Trams Release Notes\ClientBase Online Release Notes\Archive\ClientBase Online Release Notes 408\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2019-09-20T17:16:53.5699672-03:00">
+  <Files>
+    <Url
+      Source="../../../../../../../../Downloads/CBO release notes/4 08 00 CBO NFET.docx"
+      AbsoluteSource="file:///C:/Users/sg0222835/Downloads/CBO release notes/4 08 00 CBO NFET.docx" />
+    <Url
+      Source="../../../../../../../../Downloads/CBO release notes/4 08 00 CBO FIX.docx"
+      AbsoluteSource="file:///C:/Users/sg0222835/Downloads/CBO release notes/4 08 00 CBO FIX.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/4 08 00 CBO NFET/ClientBase 4 08 00 New Features.htm"
+      TimeStamp="9/20/2019 5:15:26 PM" />
+    <Url
+      Source="../../Content/4 08 00 CBO NFET/Client Base 4 08 00 Fixes.htm"
+      TimeStamp="9/20/2019 5:15:26 PM" />
+    <Url
+      Source="../TOCs/4 08 00 CBO NFET.fltoc"
+      TimeStamp="9/20/2019 5:15:26 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/4 08 00 CBO NFET.css"
+      TimeStamp="9/20/2019 5:15:26 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 8" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  MasterPage="file:///C:/My Projects/TRAMS/Help Files/CBO Help files/CBO409 Help/Content/Resources/PageLayouts/MasterPage.flmsp"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_7.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_8.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/cbo/basiccboinvoicing.pdf" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_7.png" />
+    <Link
+      Url="https://helpx.adobe.com/acrobat/kb/quick-fix-view-pdfs-web.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_8.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_9.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_10.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Note If the GST HST amounts.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Note If the GST HST amounts_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_11.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/An In Depth Look at Res Cards_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_7.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Chapter 8 An In-Depth Look at Res Cards_8.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/cbo/basiccboinvoicing.pdf" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_7.png" />
+    <Link
+      Url="https://helpx.adobe.com/acrobat/kb/quick-fix-view-pdfs-web.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_8.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_9.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Itinerary Report Link_10.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Note If the GST HST amounts.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/Note If the GST HST amounts_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 An In-Depth Look at Res Cards/More on Generating an Invoice_11.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="An_In-Depth_Look_at_Res_Cards" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Res Cards, Overview"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Res Card, Create New"
+      Conditions=""
+      LocalConditions=""
+      Position="34" />
+    <IndexCacheEntry
+      Term="Res Card, Anatomy of a"
+      Conditions=""
+      LocalConditions=""
+      Position="123" />
+    <IndexCacheEntry
+      Term="Res Card Links"
+      Conditions=""
+      LocalConditions=""
+      Position="169" />
+    <IndexCacheEntry
+      Term="Res Card Travelers Link"
+      Conditions=""
+      LocalConditions=""
+      Position="181" />
+    <IndexCacheEntry
+      Term="Res Card Reservations Link"
+      Conditions=""
+      LocalConditions=""
+      Position="196" />
+    <IndexCacheEntry
+      Term="Itemize Reservation Pricing"
+      Conditions=""
+      LocalConditions=""
+      Position="271" />
+    <IndexCacheEntry
+      Term="Service Provider"
+      Conditions=""
+      LocalConditions=""
+      Position="316" />
+    <IndexCacheEntry
+      Term="Res Card, Invoices Link"
+      Conditions=""
+      LocalConditions=""
+      Position="357" />
+    <IndexCacheEntry
+      Term="Res Card, Activities Link"
+      Conditions=""
+      LocalConditions=""
+      Position="393" />
+    <IndexCacheEntry
+      Term="Res Card, Batch Reminders"
+      Conditions=""
+      LocalConditions=""
+      Position="423" />
+    <IndexCacheEntry
+      Term="Res Card, Attachments Link"
+      Conditions=""
+      LocalConditions=""
+      Position="451" />
+    <IndexCacheEntry
+      Term="Res Card, More Fields Link"
+      Conditions=""
+      LocalConditions=""
+      Position="478" />
+    <IndexCacheEntry
+      Term="Res Card/Invoice, Steps to Create"
+      Conditions=""
+      LocalConditions=""
+      Position="487" />
+    <IndexCacheEntry
+      Term="Invoice, Steps to Create"
+      Conditions=""
+      LocalConditions=""
+      Position="487" />
+    <IndexCacheEntry
+      Term="Canadian Agencies GST/HST Setup/Workflow"
+      Conditions=""
+      LocalConditions=""
+      Position="578" />
+    <IndexCacheEntry
+      Term="Generate an Invoice, More"
+      Conditions=""
+      LocalConditions=""
+      Position="655" />
+    <IndexCacheEntry
+      Term="Email an Invoice"
+      Conditions=""
+      LocalConditions=""
+      Position="813" />
+    <IndexCacheEntry
+      Term="Refund Invoices"
+      Conditions=""
+      LocalConditions=""
+      Position="831" />
+    <IndexCacheEntry
+      Term="Reservation, Copy/Paste"
+      Conditions=""
+      LocalConditions=""
+      Position="903" />
+    <IndexCacheEntry
+      Term="Res Card, Copy/Paste"
+      Conditions=""
+      LocalConditions=""
+      Position="913" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

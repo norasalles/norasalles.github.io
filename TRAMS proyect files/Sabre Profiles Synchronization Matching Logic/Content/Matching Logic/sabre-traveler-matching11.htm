@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="678" MadCap:lastWidth="728">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Corporate and Group Profiles Matching Logic</h1>
+        <h2>Section 11</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If more than one matching profile is found by AN/DK number...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ul>
+                    <li>Look at the Travelers in all of those profiles, one by one.</li>
+                    <li>Look for a match by Known Traveler Number.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If one match is found by KTN...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Update the CB Traveler with the SP Traveler data and Link the Traveler to any associated profiles found.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no match is found by KTN, or if there are multiple matches by KTN...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Look for a match by Passport Number + Issuing Country.</p>
+                <ul>
+                    <li>Both fields must match in order for this to be considered a match.</li>
+                    <li>The matching passport may be in Passport #1 or Passport #2.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If one match is found by Passport number + Issuing Country...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Update the CB Traveler with the SP Traveler data and Link the Traveler to any associated profiles found.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no match is found by Passport number + Issuing Country, or if there are multiple matches by Passport number + Issuing Country...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Look for a match by First Name + Middle Name + Last Name + Birth Date.</p>
+                <ul>
+                    <li>All four fields must match in order for this to be considered a match.</li>
+                    <li>Middle name can be considered a match if CB, SP, or both have a blank field.</li>
+                    <li>Birth Date can be considered a match if both sides are blank; if there is a value present both sides must have the same value.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If a match is found by First Name + Middle Name + Last Name + Birth Date...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Update the CB Traveler with the SP Traveler data.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no match is found by First Name + Middle Name + Last Name + Birth Date, or if there are multiple matches by First Name + Middle Name + Last Name + Birth Date...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Go to the next associated profile until all have been checked.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If no match found in any of the associated profiles, or if there are still multiple matches...</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>A new wrapper profile and new passenger (traveler) record shall be created in CB.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

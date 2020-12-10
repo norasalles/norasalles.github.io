@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1022" MadCap:lastWidth="410">
+    <head>
+        <link href="Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Login</h1>
+        <p>Login validates the username and password for the specified Alias/PCC  and returns a SessionID token.</p>
+        <p><b>Usage:</b> &lt;ServerURL&gt;/login</p>
+        <p>Login parameters need to be specified in the content portion of the request:</p>
+        <ul>
+            <li style="font-size: 10pt;"><b>Request</b> content:</li>
+        </ul><pre>{
+  "username":"SYSDBA", 
+  "password":"masterkey", 
+  "alias":"TRAMS", 
+  "appType":"0",
+  "accessKey":""
+}
+</pre>
+        <ul>
+            <li style="font-size: 10pt;">	Username, Password, and Alias are required parameters.</li>
+            <li style="font-size: 10pt;">Alias should correspond to a database alias that's been configured via the TramsAppServerSettings tool.</li>
+            <li style="font-size: 10pt;">	AppType is optional.  Valid AppType values are 0 for None, 1 for TBO, and 2000 for CB.  When specifying an AppType, the logged in user will have the same permissions they would when using the corresponding application.</li>
+            <li style="font-size: 10pt;">AccessKey is optional.  AccessKey is used to specify a key that will unlock certain API capabilities.  It's not enabled at this time, but may be enabled before general release.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Response:</b> Login returns the standard response with the addition of the SessionID token if the login was successful (resultcode=0):</p><pre xml:space="preserve">{
+    "apiVersion": "4.05",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "SessionID": "&lt;SessionID token&gt;",
+        "APICapabilities": [ ]
+    }
+}
+</pre>
+        <p>After you receive a SessionID token, you can add as an Authentication Header for subsequent requests so it’s provided each time:</p>
+        <p style="text-indent: 0.5in;">Authorization: Basic &lt;SessionID-token-base64-encoded&gt;</p>
+    </body>
+</html>

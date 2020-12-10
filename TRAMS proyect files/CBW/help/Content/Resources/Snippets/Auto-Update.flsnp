@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/DraftStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4><a name="Auto-Upd"></a>
+            <MadCap:keyword term="Auto-Update Feature">
+            </MadCap:keyword>Auto-Update Feature</h4>
+        <p><i>ClientBase</i> will automatically install updates when they become available. Auto-update greatly streamlines installing updates on users' workstations and ensures fixes are being installed in a timely manner. Auto-update will only install updates that match the current major version (4.09.01 or 4.08.02, for example).</p>
+        <p>When <i>ClientBase</i> is launched, the auto-update feature checks to see if a newer version is available, then automatically downloads and installs the update on the users' workstation. The automatic update works for <i>tramswin</i>, <i>download</i>, <i>ibbackup</i> and the <i>ibbackuplib</i> files. The earlier versions of the executables will be renamed by appending <i>.old</i> to the file name during the process, so they are available to roll back to an earlier version, if necessary.</p>
+        <p>Users can postpone the auto-update for 24 hours or 1 week; after which they will be prompted again that an update is available.</p>
+        <p style="text-indent: 0.5in;"><span class="span_3"><b>*Note</b>: </span>If a user does not have administrative rights, the auto-update routine won't be able to install the new versions. You can get around this by giving users Read &amp; Execute, List folder contents, Read, Write, Modify Security permissions to the Trams folder, subfolders and files in which <i>ClientBase</i> is installed (e.g., <i>C:\Program Files (x86)\Trams\</i>).</p>
+    </body>
+</html>

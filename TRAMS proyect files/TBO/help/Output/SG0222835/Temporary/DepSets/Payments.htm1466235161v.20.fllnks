@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Payments Received or Made"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="mailto:Trams.CBSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_6.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/ccmerchant/gettingstartedccmerchanttbo.pdf" />
+    <Link
+      Url="http://www.trams.com/home/products_services/products/credit_card_merchant/" />
+    <Link
+      Url="mailto:jmiller@nationaltransaction.com" />
+    <Link
+      Url="mailto:support@bluepay.ca" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_7.jpg" />
+    <Link
+      Url="https://www.iats.ticketmaster.com/english/help/rejects.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_11.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_12.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_13.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_14.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_15.jpg" />
+    <Link
+      Url="http://www.assethr.com/" />
+    <Link
+      Url="mailto:info@assethr.com" />
+    <Link
+      Url="mailto:support@zpay.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_16.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_17.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_18.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_19.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_20.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice.jpg" />
+    <Link
+      Url="http://www.comminfo.pegs.com/enrollment.asp" />
+    <Link
+      Url="https://secure.paymode.com/Paymode/login.jsp" />
+    <Link
+      Url="mailto:%20dori@wpsnetwork.com" />
+    <Link
+      Url="mailto:%20roger@commtrak.com" />
+    <Link
+      Url="http://static.trams.com/Tramslibrary/reports/index.html" />
+    <Link
+      Url="http://static.trams.com/Tramslibrary/reports/tbotcr.html" />
+    <Link
+      Url="mailto:ta.help@marriott.com" />
+    <Link
+      Url="https://www.merchante-solutions.com/jsp/secure/b2f/b2flogin.jsp" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payment Code Query.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="mailto:Trams.CBSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payments_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_6.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/ccmerchant/gettingstartedccmerchanttbo.pdf" />
+    <Link
+      Url="http://www.trams.com/home/products_services/products/credit_card_merchant/" />
+    <Link
+      Url="mailto:jmiller@nationaltransaction.com" />
+    <Link
+      Url="mailto:support@bluepay.ca" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_7.jpg" />
+    <Link
+      Url="https://www.iats.ticketmaster.com/english/help/rejects.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_11.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_12.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_13.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_14.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_15.jpg" />
+    <Link
+      Url="http://www.assethr.com/" />
+    <Link
+      Url="mailto:info@assethr.com" />
+    <Link
+      Url="mailto:support@zpay.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_16.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_17.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_18.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_19.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Note to Canadian Agencies_20.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice.jpg" />
+    <Link
+      Url="http://www.comminfo.pegs.com/enrollment.asp" />
+    <Link
+      Url="https://secure.paymode.com/Paymode/login.jsp" />
+    <Link
+      Url="mailto:%20dori@wpsnetwork.com" />
+    <Link
+      Url="mailto:%20roger@commtrak.com" />
+    <Link
+      Url="http://static.trams.com/Tramslibrary/reports/index.html" />
+    <Link
+      Url="http://static.trams.com/Tramslibrary/reports/tbotcr.html" />
+    <Link
+      Url="mailto:ta.help@marriott.com" />
+    <Link
+      Url="https://www.merchante-solutions.com/jsp/secure/b2f/b2flogin.jsp" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Invoice_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Payment Code Query.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_9_Payments" />
+    <Anchor
+      Name="Payments_Received_or_Made" />
+    <Anchor
+      Name="kanchor149" />
+    <Anchor
+      Name="Payments_Received|Made|Deposit|Withdrawal" />
+    <Anchor
+      Name="Payments_Received_Made_Deposit_Withdrawal" />
+    <Anchor
+      Name="General_Tab" />
+    <Anchor
+      Name="Payment_Received_Payment_Made_Fields" />
+    <Anchor
+      Name="ATTACHMENTS_TAB_Fields" />
+    <Anchor
+      Name="Payments_Received_From_(or_Made_To)_Clients" />
+    <Anchor
+      Name="Payments_Received_From_or_Made_To_Clients" />
+    <Anchor
+      Name="Payment_Received" />
+    <Anchor
+      Name="Payment_Received_Columns" />
+    <Anchor
+      Name="Right-Mouse_Click_to_Void_a_Booking_in_Create_New_Payment" />
+    <Anchor
+      Name="Payments_Received_from_Client_(Steps)" />
+    <Anchor
+      Name="kanchor150" />
+    <Anchor
+      Name="Payments_Received_from_Client_Steps" />
+    <Anchor
+      Name="Applying_Payments_to_Specific_Invoice_Bookings" />
+    <Anchor
+      Name="Payment_Received_Using_Invoice_Payment_Group" />
+    <Anchor
+      Name="kanchor151" />
+    <Anchor
+      Name="Payment_Received_Group" />
+    <Anchor
+      Name="Modifying_Pymt_Amt_Once_Account_Balances_Appear" />
+    <Anchor
+      Name="Partial_Payments" />
+    <Anchor
+      Name="G_L_Branch_Defaults" />
+    <Anchor
+      Name="Close_All_Invert_All" />
+    <Anchor
+      Name="Show_Quick_Edit" />
+    <Anchor
+      Name="Viewing_Editing_Invoices_by_Booking" />
+    <Anchor
+      Name="How_to_Use_Client_&amp;_Global_Settings" />
+    <Anchor
+      Name="kanchor152" />
+    <Anchor
+      Name="How_to_Use_Client_and_Global_Settings" />
+    <Anchor
+      Name="Automated_Clearing_House_(ACH)" />
+    <Anchor
+      Name="kanchor153" />
+    <Anchor
+      Name="Automated_Clearing_House_ACH" />
+    <Anchor
+      Name="Workflow_Scenario" />
+    <Anchor
+      Name="Detailed_Steps" />
+    <Anchor
+      Name="Electronic_Funds_Transfer" />
+    <Anchor
+      Name="kanchor154" />
+    <Anchor
+      Name="Overpayment_from_a_Client" />
+    <Anchor
+      Name="kanchor155" />
+    <Anchor
+      Name="Split_Forms_of_Payment_for_Client_Invoices" />
+    <Anchor
+      Name="kanchor156" />
+    <Anchor
+      Name="Partial_Payment_Received_From_Client" />
+    <Anchor
+      Name="kanchor157" />
+    <Anchor
+      Name="Transfer_Funds_from_One_Client_Account_to_Another" />
+    <Anchor
+      Name="kanchor158" />
+    <Anchor
+      Name="Remove_Write_Off_Client_Balance" />
+    <Anchor
+      Name="kanchor159" />
+    <Anchor
+      Name="Remove_Write_Off_Vendor_Balance" />
+    <Anchor
+      Name="kanchor160" />
+    <Anchor
+      Name="Gift_Certificate" />
+    <Anchor
+      Name="kanchor161" />
+    <Anchor
+      Name="Petty_Cash" />
+    <Anchor
+      Name="kanchor162" />
+    <Anchor
+      Name="Giving_Change_from_Petty_Cash" />
+    <Anchor
+      Name="Reimbursing_Petty_Cash" />
+    <Anchor
+      Name="Owner_Employee_Travel_Expenses_Paid_by_Agency" />
+    <Anchor
+      Name="kanchor163" />
+    <Anchor
+      Name="Foreign_Currency_Payments" />
+    <Anchor
+      Name="kanchor164" />
+    <Anchor
+      Name="Payment_Received_for_Commission_Track" />
+    <Anchor
+      Name="kanchor165" />
+    <Anchor
+      Name="Commtrack_Vendor_Pays_the_Commission_Due_Agency_via_the_Agency's_Credit_Card" />
+    <Anchor
+      Name="kanchor166" />
+    <Anchor
+      Name="Commission_Received_-_No_Invoice" />
+    <Anchor
+      Name="kanchor167" />
+    <Anchor
+      Name="Entering_Commission_Payments_Received_from_a_Clearing_House" />
+    <Anchor
+      Name="kanchor168" />
+    <Anchor
+      Name="Create_a_Negative_Sales_Invoice_for_the_Processing_Fee" />
+    <Anchor
+      Name="To_Receipt_the_Payment" />
+    <Anchor
+      Name="Note_to_Canadian_Agencies" />
+    <Anchor
+      Name="_gen__..98" />
+    <Anchor
+      Name="Agency_Processed_Credit_Card_aka_CC_Merchant" />
+    <Anchor
+      Name="kanchor169" />
+    <Anchor
+      Name="Account_for_CC_Merchant_Vendor_Bills_for_Service_Fee" />
+    <Anchor
+      Name="kanchor170" />
+    <Anchor
+      Name="Account_for_CC_Merchant_Vendor_Deducts_Service_Charge_at_Time_of_Deposit" />
+    <Anchor
+      Name="kanchor171" />
+    <Anchor
+      Name="EFT_Payment_Received" />
+    <Anchor
+      Name="Payment_Made_to_a_Vendor" />
+    <Anchor
+      Name="kanchor172" />
+    <Anchor
+      Name="Payments_Made_to_Agents" />
+    <Anchor
+      Name="kanchor173" />
+    <Anchor
+      Name="Payments_Made_for_Expenses" />
+    <Anchor
+      Name="kanchor174" />
+    <Anchor
+      Name="Void_or_Spoiled_Checks" />
+    <Anchor
+      Name="kanchor175" />
+    <Anchor
+      Name="Bounced_Checks" />
+    <Anchor
+      Name="kanchor176" />
+    <Anchor
+      Name="OPTION_ONE" />
+    <Anchor
+      Name="OPTION_TWO" />
+    <Anchor
+      Name="OPTION_THREE" />
+    <Anchor
+      Name="Payroll_Entry" />
+    <Anchor
+      Name="kanchor177" />
+    <Anchor
+      Name="Payroll_Tax_Report_and_Payment" />
+    <Anchor
+      Name="kanchor178" />
+    <Anchor
+      Name="Vouchers" />
+    <Anchor
+      Name="kanchor179" />
+    <Anchor
+      Name="No_Open_Invoices_Message_Create_Voucher" />
+    <Anchor
+      Name="Track_Voucher_Payments_Allocated_Across_Multiple_Invoices" />
+    <Anchor
+      Name="Adjusting_Client_and_Vendor_Balances" />
+    <Anchor
+      Name="kanchor180" />
+    <Anchor
+      Name="Clear_Balance-Acct_Balance_Zero_w_Total_Invoices_&amp;_Total_Unapplieds_Same" />
+    <Anchor
+      Name="kanchor181" />
+    <Anchor
+      Name="Clear_Check_That_Will_Never_be_Cashed" />
+    <Anchor
+      Name="kanchor182" />
+    <Anchor
+      Name="Interest_Income" />
+    <Anchor
+      Name="kanchor183" />
+    <Anchor
+      Name="Deposits_and_Withdrawals" />
+    <Anchor
+      Name="Deposits" />
+    <Anchor
+      Name="kanchor184" />
+    <Anchor
+      Name="Bank_Deposit_Fields" />
+    <Anchor
+      Name="Withdrawals" />
+    <Anchor
+      Name="kanchor185" />
+    <Anchor
+      Name="Bank_Withdrawal_Fields" />
+    <Anchor
+      Name="Bank_Transfers" />
+    <Anchor
+      Name="kanchor186" />
+    <Anchor
+      Name="Bank_Transfer" />
+    <Anchor
+      Name="Bank_Transfer_by_Issuing_a_Check" />
+    <Anchor
+      Name="kanchor187" />
+    <Anchor
+      Name="Bank_Transfer_by_Withdrawal" />
+    <Anchor
+      Name="kanchor188" />
+    <Anchor
+      Name="To_record_receipt_of_the_check" />
+    <Anchor
+      Name="Bank_Reconciliation" />
+    <Anchor
+      Name="kanchor189" />
+    <Anchor
+      Name="Making_Additional_Payment_Entries_Through_Bank_Reconciliation" />
+    <Anchor
+      Name="Modifying_Payment_Entries_from_Bank_Reconciliation" />
+    <Anchor
+      Name="Bank_Reconciliation_from_File" />
+    <Anchor
+      Name="kanchor190" />
+    <Anchor
+      Name="CC_Merchant_Reconciliation" />
+    <Anchor
+      Name="kanchor191" />
+    <Anchor
+      Name="Modifying_Payment_Entries_from_CC_Merchant_Reconciliation" />
+    <Anchor
+      Name="Printing_the_CC_Merchant_Reconciliation" />
+    <Anchor
+      Name="CC_Merchant_Automated_CC_Service_Fee_Processing" />
+    <Anchor
+      Name="Agent_Reconciliation" />
+    <Anchor
+      Name="kanchor192" />
+    <Anchor
+      Name="Agent_Reconciliation_Selection_Screen_-_Advanced_Tab" />
+    <Anchor
+      Name="Modifying_Entries_from_Agent_Reconciliation_Screen" />
+    <Anchor
+      Name="Printing_the_Agent_Reconciliation" />
+    <Anchor
+      Name="Bank_Charges" />
+    <Anchor
+      Name="kanchor193" />
+    <Anchor
+      Name="Create_Payables" />
+    <Anchor
+      Name="kanchor194" />
+    <Anchor
+      Name="Operating_Payables_Query" />
+    <Anchor
+      Name="kanchor195" />
+    <Anchor
+      Name="Right-Mouse_Click_Menu_in_Payables_Query" />
+    <Anchor
+      Name="Sorting_Payment_Data" />
+    <Anchor
+      Name="Recurring_Payables" />
+    <Anchor
+      Name="kanchor196" />
+    <Anchor
+      Name="Operating_Payable" />
+    <Anchor
+      Name="ARC_BSP_Settlement" />
+    <Anchor
+      Name="kanchor197" />
+    <Anchor
+      Name="Reconciling_IAR_Using_the_ARC_Settlement_Feature" />
+    <Anchor
+      Name="kanchor198" />
+    <Anchor
+      Name="Accounting_for_ARC_BSP_Settlement_When_Authorization_Amount_Not_Enough" />
+    <Anchor
+      Name="kanchor199" />
+    <Anchor
+      Name="Payroll_Import" />
+    <Anchor
+      Name="kanchor200" />
+    <Anchor
+      Name="Import_AssetHR_Payroll+" />
+    <Anchor
+      Name="kanchor201" />
+    <Anchor
+      Name="Z-Pay_PayWindow" />
+    <Anchor
+      Name="kanchor202" />
+    <Anchor
+      Name="To_Export_the_Trams_file_from_PayWindow" />
+    <Anchor
+      Name="To_Import_the_PayWindow_Export_file_into_TBO" />
+    <Anchor
+      Name="Payments_Import" />
+    <Anchor
+      Name="kanchor203" />
+    <Anchor
+      Name="kanchor204" />
+    <Anchor
+      Name="kanchor205" />
+    <Anchor
+      Name="kanchor206" />
+    <Anchor
+      Name="kanchor207" />
+    <Anchor
+      Name="kanchor208" />
+    <Anchor
+      Name="kanchor209" />
+    <Anchor
+      Name="kanchor210" />
+    <Anchor
+      Name="kanchor211" />
+    <Anchor
+      Name="Payment_Import_Setup" />
+    <Anchor
+      Name="Payment_Import_Run_the_Import_and_Reconciliation" />
+    <Anchor
+      Name="Reconciliation_Codes" />
+    <Anchor
+      Name="Invoice" />
+    <Anchor
+      Name="Voucher" />
+    <Anchor
+      Name="Payments_Import_Participants" />
+    <Anchor
+      Name="kanchor212" />
+    <Anchor
+      Name="Sabre_Card_Services" />
+    <Anchor
+      Name="kanchor213" />
+    <Anchor
+      Name="Daily" />
+    <Anchor
+      Name="Monthly" />
+    <Anchor
+      Name="Trams_Host" />
+    <Anchor
+      Name="kanchor214" />
+    <Anchor
+      Name="Payment_Query" />
+    <Anchor
+      Name="kanchor215" />
+    <Anchor
+      Name="Sorting_Payment_Data_..99" />
+    <Anchor
+      Name="Create_New_Payment,_Deposit,_Withdrawal_&amp;_ARC_BSP_Settlement_From_Payment_Query" />
+    <Anchor
+      Name="View_&amp;_Void_Invoices_from_Payment_Query" />
+    <Anchor
+      Name="kanchor216" />
+    <Anchor
+      Name="Changing_Existing_Payments" />
+    <Anchor
+      Name="kanchor217" />
+    <Anchor
+      Name="Copying_Payments" />
+    <Anchor
+      Name="kanchor218" />
+    <Anchor
+      Name="Void_a_Payment" />
+    <Anchor
+      Name="kanchor219" />
+    <Anchor
+      Name="Void_Payment" />
+    <Anchor
+      Name="Print_Check_from_Payment_Query" />
+    <Anchor
+      Name="kanchor220" />
+    <Anchor
+      Name="Print_Payment" />
+    <Anchor
+      Name="Print_Query_..100" />
+    <Anchor
+      Name="Re-apply_a_Payment" />
+    <Anchor
+      Name="kanchor221" />
+    <Anchor
+      Name="Right-Mouse_Click_Menu_in_Payment_Query" />
+    <Anchor
+      Name="Payment_Codes" />
+    <Anchor
+      Name="kanchor222" />
+    <Anchor
+      Name="To_Create_a_New_Payment_Using_the_Payment_Code" />
+    <Anchor
+      Name="Payment_Code_Query" />
+    <Anchor
+      Name="Processing_TAFP_Service_Fees_-_ARC_Only" />
+    <Anchor
+      Name="kanchor223" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Skins/Default/Stylesheets/Slideshow.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/TextEffects.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Topic.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Mobile.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

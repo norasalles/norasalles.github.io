@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-30T10:06:31.0635359-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-30T10:06:48.3328466-05:00">
+    <Files>
+        <Url Source="../../../../../../Downloads/Allianz Travel Insurance Website.docx" AbsoluteSource="file:///C:/Users/sg0217543/Downloads/Allianz Travel Insurance Website.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Allianz Travel Insurance Website/Allianz Travel Insurance.jpg" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Resources/Images/Allianz Travel Insurance Website/Allianz Travel Insurance_1.jpg" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Resources/Images/Allianz Travel Insurance Website/Allianz Travel Insurance_2.jpg" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Resources/Images/Allianz Travel Insurance Website/Allianz Travel Insurance_3.jpg" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Resources/Images/Allianz Travel Insurance Website/Allianz Travel Insurance_4.jpg" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Resources/Images/Allianz Travel Insurance Website/Allianz Travel Insurance.png" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Allianz Travel Insurance Website/Allianz Travel Insurance.htm" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../TOCs/Allianz Travel Insurance Website.fltoc" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Resources/MasterPages/Allianz Travel Insurance Website.flmsp" TimeStamp="5/30/2017 10:06:46 AM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_112.css" TimeStamp="5/30/2017 10:06:46 AM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

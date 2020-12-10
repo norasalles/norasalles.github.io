@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_7.jpg" />
+    <Link
+      Url="http://www.slproweb.com/products/Win32OpenSSL.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_9.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/misc/ImplementingSSL.pdf" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_11.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_12.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_7.jpg" />
+    <Link
+      Url="http://www.slproweb.com/products/Win32OpenSSL.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_9.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/misc/ImplementingSSL.pdf" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_11.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_12.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_8_E-mail_Marketing_in_ClientBase" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="E-mail Marketing"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="E-mail Signatures"
+      Conditions=""
+      LocalConditions=""
+      Position="31" />
+    <IndexCacheEntry
+      Term="E-mail MAPI Setup"
+      Conditions=""
+      LocalConditions=""
+      Position="44" />
+    <IndexCacheEntry
+      Term="E-mail Using MAPI"
+      Conditions=""
+      LocalConditions=""
+      Position="80" />
+    <IndexCacheEntry
+      Term="E-mail SMTP Setup"
+      Conditions=""
+      LocalConditions=""
+      Position="168" />
+    <IndexCacheEntry
+      Term="E-mail Using SMTP"
+      Conditions=""
+      LocalConditions=""
+      Position="305" />
+    <IndexCacheEntry
+      Term="Passport Online, Pre-Formatted HTML Emails"
+      Conditions=""
+      LocalConditions=""
+      Position="414" />
+    <IndexCacheEntry
+      Term="AlPlus e-Postcards"
+      Conditions=""
+      LocalConditions=""
+      Position="414" />
+    <IndexCacheEntry
+      Term="E-mail Marketing Results"
+      Conditions=""
+      LocalConditions=""
+      Position="506" />
+    <IndexCacheEntry
+      Term="E-mail Broadcast Response"
+      Conditions=""
+      LocalConditions=""
+      Position="560" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

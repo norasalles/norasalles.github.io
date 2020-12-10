@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UrlList>
+    <Url Source="Resources/Snippets/TCR.flsnp" />
+    <Url Source="Resources/Snippets/Auto-Update.flsnp" />
+    <Url Source="Resources/Snippets/SabrePNRfeatures.flsnp" />
+    <Url Source="Resources/Snippets/LCstep3.flsnp" />
+    <Url Source="Resources/Snippets/LCstep2.flsnp" />
+    <Url Source="Resources/Snippets/LCstep1.flsnp" />
+</UrlList>

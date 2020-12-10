@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <blockquote>
+            <h1>Traveler Contact and Emergency Contact Rules for each GDS</h1>
+            <h3>- Rules for each GDS  </h3>
+            <table style="mc-table-style: url('../Stylesheets/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="10">
+                <col class="TableStyle-TableStyle-Column-Column1" style="width: 180px;" />
+                <col class="TableStyle-TableStyle-Column-Column1" style="width: 350px;" />
+                <col class="TableStyle-TableStyle-Column-Column1" />
+                <col class="TableStyle-TableStyle-Column-Column1" />
+                <col class="TableStyle-TableStyle-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-TableStyle-Body-Body1" MadCap:pattern="1">
+                        <th class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #c0c0c0;text-align: center;font-family: Roboto;">
+                            <p>&#160;</p>
+                        </th>
+                        <th class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;font-family: Roboto;">
+                            <p>Sabre</p>
+                        </th>
+                        <th class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;font-family: Roboto;">
+                            <p>Amadeus</p>
+                        </th>
+                        <th class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;font-family: Roboto;">
+                            <p>Travelport - Worldspan</p>
+                        </th>
+                        <th class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: center;font-family: Roboto;">
+                            <p>Travelport – Apollo/Galileo</p>
+                        </th>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1" MadCap:pattern="1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="font-weight: bold;font-style: normal;font-family: Roboto;">
+                            <p>Traveler Contact - Phone</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>3CTCM/«Traveler Contact Primary Phone»«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>SRCTCM-«Traveler Contact Primary Phone»«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>3SSRCTCMYYHK1/«Traveler Contact Primary Phone»«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>¤:3SSRCTCMYYHK1/«NAME FIELD POS»/«Traveler Contact Primary Phone»</p>
+                            <p>&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1" MadCap:pattern="1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="font-weight: bold;font-style: normal;font-family: Roboto;">
+                            <p>Traveler Contact - Email</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>3CTCE/«Traveler Contact Primary E-Mail»«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>SRCTCE-«Traveler Contact Primary E-Mail»«NAME FIELD POS»</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>3SSRCTCEYYHK1/«Traveler Contact Primary E-Mail»«NAME FIELD POS»</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>¤:3SSRCTCEYYHK1/«NAME FIELD POS»/«Traveler Contact Primary E-Mail»</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1" MadCap:pattern="1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="font-weight: bold;font-style: normal;font-family: Roboto;">
+                            <p>Traveler Declined to Provide</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>3CTCR/PASSENGER REFUSED TO PROVIDE INFORMATION«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>SRCTCR-REFUSED/«NAME FIELD POS»</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>3SSRCTCRYYHK1/REFUSED TO PROVIDE«NAME FIELD POS»</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>¤:3SSRCTCRYYHK1/«NAME FIELD POS»/PASSENGER REFUSED TO PROVIDE INFORMATION</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1" MadCap:pattern="1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="font-weight: bold;font-style: normal;font-family: Roboto;">
+                            <p>Emergency Contact - Phone</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p style="font-weight: bold;">American:</p>
+                            <p>4PCTC/«Emergency Contact Name»/[«Citizenship»]US«Emergency Contact Phone Country Code»«Emergency Contact Phone Area Code»«Emergency Contact Phone Prefix/Suffix Without Dash»«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                            <p style="font-weight: bold;">All Other Airlines:</p>
+                            <p>3PCTC/«Emergency Contact Name»/[«Citizenship»]«Emergency Contact Phone Country Code»«Emergency Contact Phone Area Code»«Emergency Contact Phone Prefix/Suffix Without Dash»«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p>SRPCTCYYHK/«Emergency Contact Name»/[«Citizenship»]«Emergency Contact Phone Country Code»«Emergency Contact Phone Area Code»«Emergency Contact Phone Prefix/Suffix Without Dash»</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p style="font-weight: bold;">Not confirmed</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>¤:3SSRPCTCYYHK1/«Emergency Contact Name»/[«Citizenship»]«Emergency Contact Phone Country Code»«Emergency Contact Phone Area Code»«Emergency Contact Phone Prefix/Suffix Without Dash»«NAME FIELD POS»«Last Name»/«First Name».«Emergency Contact Relationship»</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1" MadCap:pattern="1">
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1" style="font-weight: bold;font-style: normal;font-family: Roboto;">
+                            <p>Emergency Contact - Email</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1">
+                            <p style="font-weight: bold;">American:</p>
+                            <p>4CTCEA/«Emergency Contact Name»/«Emergency Contact E-mail - //»[«Citizenship»]«NAME FIELD POS»</p>
+                            <p>&#160;</p>
+                            <p style="font-weight: bold;">All Other Airlines:</p>
+                            <p>3CTCEA/«Emergency Contact Name»/«Emergency Contact E-mail - //»[«Citizenship»]«NAME FIELD POS»</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1">
+                            <p>SRPCTCYYHK/«Emergency Contact Name»/[«Citizenship»]«Emergency Contact E-mail - //»</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1">
+                            <p style="font-weight: bold;">Not confirmed</p>
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyA-Column1-Body1">
+                            <p>N/A</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </blockquote>
+    </body>
+</html>

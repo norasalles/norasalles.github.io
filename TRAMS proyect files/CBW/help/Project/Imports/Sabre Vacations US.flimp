@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2017-05-18T14:27:54.6367463-05:00"
+  ProjectName="CBW Help"
+  ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../Content/Resources/Stylesheets/Styles.css"
+  LastImport="2017-05-18T14:28:06.4303463-05:00">
+  <Files>
+    <Url
+      Source="../../../../../../Desktop/CBW Help/Sabre Vacations US.docx"
+      AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Sabre Vacations US.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Sabre Vacations US/Sabre Vacations US.jpg"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Sabre Vacations US/Sabre Vacations US_1.jpg"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Sabre Vacations US/Sabre Vacations US_2.jpg"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Sabre Vacations US/Sabre Vacations US_3.jpg"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Sabre Vacations US/Sabre Vacations US.png"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+    <Url
+      Source="../../Content/Sabre Vacations US/Sabre Vacations US.htm"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+    <Url
+      Source="../TOCs/Sabre Vacations US.fltoc"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Styles_59.css"
+      TimeStamp="5/18/2017 2:28:04 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

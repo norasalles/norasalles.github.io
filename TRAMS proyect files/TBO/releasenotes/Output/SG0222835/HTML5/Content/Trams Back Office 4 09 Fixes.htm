@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Trams Back Office 4.09 Fixes</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/MyStylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <p class="productnewfeature" style="text-align: right;font-weight: bold;">
+            <img src="Images/tboreleasenotes.png" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;"><span class="VariablesProduct">Trams Back Office</span><![CDATA[  ]]><span class="VariablesVersion no">4.09.00</span>  -   Fixes / Reviewed <span class="VariablesCurrent Date">April, 2020</span></p>
+        <p>&#160;</p>
+        <h1><a name="fix"></a><a name="top"></a><span class="Strong_1">Trams Back Office 4.09 Fixes</span>
+        </h1>
+        <h2><a name="Fixes2"></a><span class="span_1"><a name="FixesTBO4.09.00.028_4.09.00.032"></a>Fixes made between Trams Back Office</span><span class="span_2"> 4.09.00.028 and 4.09.00.032</span>
+        </h2>
+        <h3><a name="Database"></a>Database Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1" value="1">
+                <p class="ListParagraph_2">Fixed an issue where an error sometimes occurred when attempting to save data.&#160;</p>
+            </li>
+        </ul>
+        <h3><a name="Payment2"></a>Payment Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1" value="1">
+                <p class="ListParagraph_2">Fixed an issue where a confusing prompt occurred when re-applying payments.</p>
+            </li>
+        </ul>
+        <h3><a name="Query"></a>Query Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1" value="1">
+                <p class="ListParagraph_2">Fixed an error where querying by Traveler name on the Payment Received/Made Global Settings tab did not correctly filter the results.&#160;</p>
+            </li>
+        </ul>
+        <h3><a name="Report2"></a>Report Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1" value="1">
+                <p class="ListParagraph_2">Fixed an issue where previewing a report did not work in formats other than PDF.</p>
+            </li>
+        </ul>
+        <h3><a name="Security"></a>Security Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1" value="1">
+                <p class="ListParagraph_2"><span class="span_3">[EUA Enabled Only] Fixed a messaging issue where, after changing a password, an incorrect second prompt to change the password came up, then&#160;the incorrect message "Password Has Been Used Before".</span>
+                </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h2><a name="Fixes"></a><span class="span_1"><a name="FixesTBO4.08.00.028_4.09.00.028"></a>Fixes made between Trams Back Office</span><span class="span_2"> 4.08.00.028 and 4.09.00.028</span>
+        </h2>
+        <h3><a name="Invoice"></a><span class="Strong_2">Invoice Related</span>
+        </h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_1" value="1">
+                <p class="ListParagraph_2"><span class="span_3">[Canada] Fixed an issue where, after updating a booking's More Taxes | Comm GST/HST or Comm QST Rate, the rate reverts to zero if the General Info | Commission field is 0.00 amount.</span>
+                </p>
+            </li>
+        </ul>
+        <h3><a name="Report"></a><span class="Strong_2">Report Related</span>
+        </h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_2" value="1">
+                <p class="p_4">Corrected an issue where, after printing a check, the default report printer was incorrectly changed to the default check printer.&#160;</p>
+            </li>
+        </ul>
+        <h3><a name="Payment"></a>Payment Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_3" value="1">
+                <p class="ListParagraph_3">Fixed a performance issue where, for invoices with many bookings, toggling a payment closed took longer than it should.</p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_4" value="1">
+                <p class="ListParagraph_4">Fixed an issue where an error was returned, if remotely connected, while manually reconciling TACS payment import items.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h2><a name="FixesDownload4.08.00.001_4.09.00.006"></a><span class="span_2">Fixes made between Download 4.08.00.001 and 4.09.00.006</span>
+        </h2>
+        <ul class="ul_1">
+            <li class="ListParagraph_5" value="1">
+                <p class="ListParagraph_5"><span class="span_3">[Sabre] Fixed an issue where E-tickets were imported without the E-ticket box checked on the Expanded Fare tab of the imported booking.</span>
+                </p>
+            </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_5" value="1">
+                <p class="ListParagraph_5"><span class="span_3">[Sabre] Fixed an issue where exchange tickets with no @ sign in front of the original ticket number caused Trams Back Office to present an ‘Invalid Ticket Number’ error message. Now ticket numbers will import with or without the @ sign. </span>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="FixesTramsAppServer4.08.00.019_4.09.00.028"></a><span class="span_2">Fixes made between TramsAppServer 4.08.00.019 and 4.09.00.028</span>
+        </h2>
+        <h3><a name="Remote"></a><span class="Strong_2">Remote Connection Related</span>
+        </h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_2" value="1">
+                <p class="p_4">Fixed an issue where the message "Cannot perform this operation on a closed dataset" appeared at login when using a TramsAppServer remote connection.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;310 - 641 - 8726 — <span class="VariablesTBO Option">Option 1</span></p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.TBOSupport@sabre.com">Trams.TBOSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © <span class="VariablesCurrent year">2020</span> <span class="VariablesCompanyName">Trams Inc.</span></p>
+        </MadCap:pageFooter>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  ImportFolder=""
+  LastImport="2020-04-14T10:15:47.7864415-03:00">
+  <Files>
+    <Url
+      Source="../../../../../../../OneDrive - Sabre/Documents/Trams Case/04843317/4 09 00 B3 CBW Fix release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/OneDrive - Sabre/Documents/Trams Case/04843317/4 09 00 B3 CBW Fix release notes.docx" />
+    <Url
+      Source="../../../../../../../OneDrive - Sabre/Documents/Trams Case/04843317/4 09 00 B3 CBW NFET release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/OneDrive - Sabre/Documents/Trams Case/04843317/4 09 00 B3 CBW NFET release notes.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/ClientBase Windows 4 09 00.htm"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+    <Url
+      Source="../../Content/ClientBase Windows 4 09 00_1.htm"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+    <Url
+      Source="../../Content/Traveler Contact and Emergency_1.htm"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+    <Url
+      Source="../../Content/Sabre.htm"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+    <Url
+      Source="../../Content/4 09 00 B3 CBW NFET release notes.htm"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+    <Url
+      Source="../../Content/4 09 00 B3 CBW NFET release notes_1.htm"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+    <Url
+      Source="../TOCs/4 09 00 B3 CBW Fix release notes.fltoc"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/4 09 00 B3 CBW Fix release notes.css"
+      TimeStamp="4/14/2020 10:15:40 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading1"
+      Style="Word" />
+    <Map
+      From="List Paragraph"
+      To="p.ListParagraph"
+      Style="Word" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Strong"
+      To="span.Strong"
+      Style="Word" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+</MsWordImport>

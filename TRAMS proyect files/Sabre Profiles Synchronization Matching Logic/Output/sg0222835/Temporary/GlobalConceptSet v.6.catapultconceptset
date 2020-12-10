@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlobalConceptSet
+  SavedSource="file:///C:/Users/sg0222835/OneDrive - Sabre/My Projects/Sabre Profiles Synchronization Matching Logic/Output/sg0222835/Temporary/GlobalConceptSet v.6.catapultconceptset">
+  <Concepts />
+  <SourceUrls>
+    <Url
+      Source="Matching Logic/corp-group-matching1.htm" />
+    <Url
+      Source="Matching Logic/corp-group-matching2.htm" />
+    <Url
+      Source="Matching Logic/corp-group-matching3.htm" />
+    <Url
+      Source="Matching Logic/corp-group-matching4.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching10.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching11.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching12.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching13.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching5.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching6.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching7.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching8.htm" />
+    <Url
+      Source="Matching Logic/sabre-traveler-matching9.htm" />
+    <Url
+      Source="Overview/match-overview.htm" />
+    <Url
+      Source="Resources/Images/profiles.png" />
+    <Url
+      Source="Resources/PageLayouts/Default.flpgl" />
+    <Url
+      Source="Resources/Stylesheets/Modern.css" />
+    <Url
+      Source="Resources/Stylesheets/Styles.css" />
+    <Url
+      Source="Resources/TableStyles/Normal_Table.css" />
+  </SourceUrls>
+  <UsedUrls />
+  <UsedConceptControlUrls />
+</CatapultGlobalConceptSet>

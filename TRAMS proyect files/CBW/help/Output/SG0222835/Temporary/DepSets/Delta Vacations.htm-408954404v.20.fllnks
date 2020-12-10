@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" WorldAgent Direct (MLT)"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="../../../../Desktop/CBW Help/www.worldagentdirect.com" />
+    <Link
+      Url="Content/Resources/Images/WorldAgent Direct/delta-vacations.jpg" />
+    <Link
+      Url="Content/Resources/Images/WorldAgent Direct/WorldAgent Direct MLT_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/WorldAgent Direct/create_new_screen.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="../../../../Desktop/CBW Help/www.worldagentdirect.com" />
+    <Link
+      Url="Content/Resources/Images/WorldAgent Direct/delta-vacations.jpg" />
+    <Link
+      Url="Content/Resources/Images/WorldAgent Direct/WorldAgent Direct MLT_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/WorldAgent Direct/create_new_screen.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor292" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-30T10:57:45.1859663-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-30T10:58:00.2555663-05:00">
+    <Files>
+        <Url Source="../../../../../../Downloads/Manulife Global Travel Insurance.docx" AbsoluteSource="file:///C:/Users/sg0217543/Downloads/Manulife Global Travel Insurance.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Manulife Global Travel Insurance/Manulife Travel Insurance.png" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Manulife Global Travel Insurance/Manulife Travel Insurance.htm" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/Images/Manulife Global Travel Insurance/Manulife Travel Insurance_1.png" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/Images/Manulife Global Travel Insurance/Manulife Travel Insurance_1.jpg" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/Images/Manulife Global Travel Insurance/Manulife Travel Insurance_1_1.jpg" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/Images/Manulife Global Travel Insurance/Manulife Travel Insurance_1_2.jpg" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/Images/Manulife Global Travel Insurance/Manulife Travel Insurance_1_1.png" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/Images/Manulife Global Travel Insurance/Manulife Travel Insurance_1_2.png" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Manulife Global Travel Insurance/Manulife Travel Insurance_1.htm" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../TOCs/Manulife Global Travel Insurance.fltoc" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/MasterPages/Manulife Global Travel Insurance.flmsp" TimeStamp="5/30/2017 10:57:57 AM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_133.css" TimeStamp="5/30/2017 10:57:57 AM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

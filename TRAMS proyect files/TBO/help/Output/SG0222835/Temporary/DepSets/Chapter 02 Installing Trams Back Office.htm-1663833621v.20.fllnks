@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Minimum Hardware Requirements"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Chapter 02 Installing Trams Back Office.htm" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/cb/hwsysrequire.pdf" />
+    <Link
+      Url="mailto:Trams.Implementation@sabre.com" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/Updates/40700/setup.exe" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_1.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_2.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_3.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_4.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_5.png" />
+    <Link
+      Url="Content/Resources/Images/setupinstalling.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_7.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_8.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_9.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_10.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutilmodifypath.png" />
+    <Link
+      Url="mailto:Trams.TechDesk@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/aliasutil.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutilmodify.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Chapter 02 Installing Trams Back Office.htm#Minimum" />
+    <Link
+      Url="Content/Chapter 02 Installing Trams Back Office.htm#Trams" />
+    <Link
+      Url="Content/Chapter 02 Installing Trams Back Office.htm#CBWaddingTBO" />
+    <Link
+      Url="Content/Chapter 02 Installing Trams Back Office.htm#AliasUtil" />
+    <Link
+      Url="Content/Chapter 02 Installing Trams Back Office.htm#LicenseMGR" />
+    <Link
+      Url="Content/Chapter 02 Installing Trams Back Office.htm#PCI" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/cb/hwsysrequire.pdf" />
+    <Link
+      Url="mailto:Trams.Implementation@sabre.com" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/Updates/40700/setup.exe" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_1.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_2.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_3.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_4.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_5.png" />
+    <Link
+      Url="Content/Resources/Images/setupinstalling.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_7.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_8.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_9.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_10.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutilmodifypath.png" />
+    <Link
+      Url="mailto:Trams.TechDesk@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/aliasutil.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutilmodify.png" />
+    <Link
+      Url="Project/ConditionTagSets/Default.flcts" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_2_Installing_Trams_Back_Office" />
+    <Anchor
+      Name="Minimum" />
+    <Anchor
+      Name="Trams" />
+    <Anchor
+      Name="Workstat" />
+    <Anchor
+      Name="Auto-Upd" />
+    <Anchor
+      Name="CBWaddingTBO" />
+    <Anchor
+      Name="Program" />
+    <Anchor
+      Name="AliasUtil" />
+    <Anchor
+      Name="Changing" />
+    <Anchor
+      Name="LicenseMGR" />
+    <Anchor
+      Name="PCI" />
+    <Anchor
+      Name="Credit" />
+    <Anchor
+      Name="Backgrou" />
+    <Anchor
+      Name="How" />
+    <Anchor
+      Name="Technica" />
+    <Anchor
+      Name="Use" />
+    <Anchor
+      Name="Password" />
+    <Anchor
+      Name="PassProtection" />
+    <Anchor
+      Name="Importan" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Installing Trams Back Office"
+      Conditions=""
+      LocalConditions=""
+      Position="20" />
+    <IndexCacheEntry
+      Term="Hardware Requirements"
+      Conditions=""
+      LocalConditions=""
+      Position="47" />
+    <IndexCacheEntry
+      Term="Installation for New Installs"
+      Conditions=""
+      LocalConditions=""
+      Position="56" />
+    <IndexCacheEntry
+      Term="Installation - Server"
+      Conditions=""
+      LocalConditions=""
+      Position="102" />
+    <IndexCacheEntry
+      Term="Installation - Workstation"
+      Conditions=""
+      LocalConditions=""
+      Position="177" />
+    <IndexCacheEntry
+      Term="Auto-Update Feature"
+      Conditions=""
+      LocalConditions=""
+      Position="258" />
+    <IndexCacheEntry
+      Term="Adding Trams Back Office"
+      Conditions=""
+      LocalConditions=""
+      Position="277" />
+    <IndexCacheEntry
+      Term="Program Components"
+      Conditions=""
+      LocalConditions=""
+      Position="297" />
+    <IndexCacheEntry
+      Term="Alias Utility"
+      Conditions=""
+      LocalConditions=""
+      Position="318" />
+    <IndexCacheEntry
+      Term="Alias Utility, Changing the Trams Alias"
+      Conditions=""
+      LocalConditions=""
+      Position="366" />
+    <IndexCacheEntry
+      Term="License Manager"
+      Conditions=""
+      LocalConditions=""
+      Position="384" />
+    <IndexCacheEntry
+      Term="PCI Compliance"
+      Conditions=""
+      LocalConditions=""
+      Position="418" />
+    <IndexCacheEntry
+      Term="Credit Card Encryption Background"
+      Conditions=""
+      LocalConditions=""
+      Position="421" />
+    <IndexCacheEntry
+      Term="Encryption Keys"
+      Conditions=""
+      LocalConditions=""
+      Position="455" />
+    <IndexCacheEntry
+      Term="Password Security"
+      Conditions=""
+      LocalConditions=""
+      Position="504" />
+    <IndexCacheEntry
+      Term="Password Protection"
+      Conditions=""
+      LocalConditions=""
+      Position="516" />
+    <IndexCacheEntry
+      Term="SYSDBA"
+      Conditions=""
+      LocalConditions=""
+      Position="606" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions>
+    <Condition
+      Tag="Default.Review" />
+  </AllConditions>
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

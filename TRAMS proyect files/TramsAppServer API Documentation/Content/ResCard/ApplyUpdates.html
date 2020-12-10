@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/codes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="ApplyUpdates" />ApplyUpdates</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/runquery.flsnp" />
+        <p>http://(localhost:8085)/rescard/applyUpdates</p>
+        <p style="font-weight: bold;">Response:</p><pre xml:space="preserve">
+{
+    "deltaDataset": {
+        "": [
+            {
+                "insert": {
+                    "profile_LinkNo": 5974,
+                    "status": 0,
+                    "createDate": "2019-11-01",
+                    "createAgent_LinkNo": 1375278,
+                    "tripStartDate": "2019-12-01",
+                    "tripEndDate": "2019-12-09",
+                    "allowTrackForeignCurr": "N",
+                    "resvtn": [
+                        {
+                            "insert": {
+                                "vendor_LinkNo": 3309,
+                                "totalBase": 6801,
+                                "totalCommission": 68,
+                                "startDate": "2019-12-01",
+                                "endDate": "2019-12-09",
+                                "resConfStatus_LinkNo": 1,
+                                "travelCategory_LinkNo": 2
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+</pre>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/returncodes.flsnp" />
+        <p>&#160;</p>
+    </body>
+</html>

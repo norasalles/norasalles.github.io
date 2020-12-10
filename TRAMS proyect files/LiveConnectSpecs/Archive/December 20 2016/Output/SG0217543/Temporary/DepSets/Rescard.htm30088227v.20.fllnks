@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/LiveConnectSpecs.htm" />
+    <Link
+      Url="Content/Resources/Images/rescard.png" />
+    <Link
+      Url="Content/Resources/PopUps/Dateformat.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/LiveConnectSpecs.htm" />
+    <Link
+      Url="Content/Resources/Images/rescard.png" />
+    <Link
+      Url="Content/Resources/PopUps/Dateformat.htm" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/TableStyles/Normal_Table.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

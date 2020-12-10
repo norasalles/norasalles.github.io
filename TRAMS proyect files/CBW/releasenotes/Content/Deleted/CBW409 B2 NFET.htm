@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head>
+        <link href="../Resources/Stylesheets/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/Stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 class="Heading1_1"><a name="NFET"></a>ClientBase Windows 4.09.00 New Features and Enhancements</h1>
+        <h2 class="Heading2_1_1"><a name="top"></a><span class="Strong_2">Enhancements made between ClientBase Windows <a name="4.09.00.057_4.09.00.076"></a>4.09.00.057 and 4.09.00.076</span>
+        </h2>
+        <h3 class="Heading3"><a name="Profile2"></a>Profile Related</h3>
+        <ul>
+            <li><span class="span_3">You can now select from two additional gender types, X (Unspecified) and U (undisclosed) from the Gender dropdown list for Travelers and Contacts.</span>
+            </li>
+        </ul>
+        <h3 class="Heading3"><a name="PNR2"></a>PNR Import Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_2">[Sabre] Implemented changes to properly link Sabre PNR passengers to their bookings, resolving an issue where some reservations imported into ClientBase without any travelers.&#160;</li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_2">[Sabre] For Service Fee and Other bookings, the&#160;type field indicators PER, ALL, and ONE are now parsed.</li>
+        </ul>
+        <blockquote>
+            <p class="ListParagraph_6_3"><b>PER:</b> This fee is charged for each traveler and will be multiplied by the number of travelers&#160;<br /><b>ALL:</b> One fee for all the travelers, no matter how many<br /><b>ONE:</b>&#160;This fee applies to one specific traveler&#160;</p>
+        </blockquote>
+        <p class="p_1">&#160;</p>
+        <h3 class="Heading3"><a name="Merge2"></a>Merge to PNR Related </h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_1"><span style="color: #b22222; font-weight: bold;">Important note for early Beta testers</span> <span class="span_3">on the Emergency Contact phone and e-mail rules: in the first Beta release, these merge fields were styled as “Emergency Phone” and “Emergency E-mail” rather than “Emergency Contact Phone” and “Emergency E-mail.” </span><span class="span_4"><b>Any Merge to PNR Rules created using the older format will need to be recreated using the new merge fields</b>.</span> </li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_1">To help you comply with IATA rule 830d, which requires the traveler’s contact e-mail address to be in a specific format, a new E-mail merge field, «Traveler Contact Primary Email», has been added to the Traveler Miscellaneous field group. Each GDS requires a slightly different format for the Traveler’s contact email address, and this merge field will automatically merge the correct format for the selected GDS.&#160;The Traveler Contact Primary Email merge field merges the Primary email address of the traveler. It is important to note that this merge field transmits the Primary email address assigned to the specific traveler. Profile level email addresses cannot be merged when using this field.&#160;</li>
+            <li class="ListParagraph_5_1">To enable you to create Merge To PNR phone rules that comply with IATA rule 830d, which requires the traveler’s contact phone number not to have a dash between the prefix and suffix, a new merge field, «Traveler Contact Primary Phone», has been added to the Traveler Miscellaneous field group.&#160;The Traveler Contact Primary Phone merge field merges the Primary phone number of the traveler. Profile level phone numbers cannot be merged when using this field.&#160;</li>
+            <li class="ListParagraph_5_1">The new Gender types, X (Unspecified) and U (undisclosed), will merge to PNR using the existing «Gender» merge field and any rules you have already created using this merge field.</li>
+            <li class="ListParagraph_5_1">Because the Emergency Contact phone number must be merged to PNR without a dash between the phone prefix and suffix, a new merge field,&#160;«Emergency Contact Phone Prefix/Suffix Without Dash», has been added to the Traveler Miscellaneous field group.</li>
+            <li class="ListParagraph_5_1">In order to allow you to create Merge to PNR rules that will merge the Emergency Contact e-mail address in the correct format for your GDS, two new merge fields, «Emergency Contact E-mail - @» and «Emergency Contact E-mail - //», have been added to the Traveler Miscellaneous field group.&#160;</li>
+        </ul>
+        <p class="ListParagraph_6_1">&#160;</p>
+        <h2 class="Heading2_1_1"><a name="Enhancem"></a><span class="Strong_2">Enhancements made between ClientBase Windows <a name="4.08.00.007_4.09.00.057"></a>4.08.00.007 and 4.09.00.057</span>
+        </h2>
+        <h3 class="Heading3"><a name="Profile"></a>Profile Related</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_1"><span class="span_2">Y</span><span class="span_3">ou can now select from two additional gender types, X (Unspecified) and U (undisclosed) from the Gender dropdown list for Travelers and Contacts.</span>
+            </li>
+        </ul>
+        <h3 class="Heading3"><a name="PNR"></a>PNR Import Related: Sabre Red 360</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_1"><span class="span_3">Updated the PNR Import process to use Sabre’s new GetReservation call, which replaces the obsolete GetItinerary call. Most reservations will import as they always have; however, we were able to make use of some new capabilities in GetReservation to improve the details we import. Here is a summary of changes by Travel Category: </span>
+                <ul>
+                    <li style="font-weight: bold;"><span style="font-weight: bold;">Transportation:</span>: </li>
+                </ul>
+                <blockquote>
+                    <ul>
+                        <li>BUS bookings used to import as Rail and will now import as Transportation.</li>
+                        <li>LAN/ATX bookings previously imported as Transportation and will still do so. </li>
+                        <li>LIMO/SUR bookings will not be imported.</li>
+                    </ul>
+                </blockquote>
+                <ul>
+                    <li class="ListParagraph_5_5"><b>Car: </b>&#160;</li>
+                </ul>
+                <blockquote>
+                    <ul>
+                        <li>Car segments now import into reservations with only the Traveler name the car reservation was confirmed under.BUS bookings used to import as Rail and will now import as Transportation.</li>
+                        <li>Car pricing is now imported and calculated per rental, rather than per day.  While approximate totals include tax, no breakdown is provided for the tax total.</li>
+                    </ul>
+                </blockquote>
+                <ul>
+                    <li><b>Insurance</b>: Pricing and Commission are now imported from the accounting line.</li>
+                </ul>
+                <ul>
+                    <li><span class="span_4"><b>Cruise</b>: </span><span class="span_3">The accounting line is ignored because cruises are not normally paid in full at the time of booking.</span>
+                        <br /><span>ClientBase now reads and imports the following cruise segment data:</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <table class="TableStyle-TableStyle2" style="width: 780px;margin-left: auto;margin-right: auto;mc-table-style: url('../Resources/Stylesheets/TableStyle.css');" cellspacing="0">
+            <col class="TableStyle-TableStyle2-Column-Column1" />
+            <col class="TableStyle-TableStyle2-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_3">Description</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_3">Format</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_4">Arrival date</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/DT-12OCT</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_4">Arrival point</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/AT-PIER 17</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_4">Arrival time</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/AR-725P</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_4">Confirmation number</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/CF-1234K2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_4">Departure time</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/LV-410P</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_4">Departure point</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/FR-PIER 3A</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_4">Name of ship or bus</p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/NA-SS NORWAY</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyE-Column1-Body1">
+                        <p class="p_6"><span class="span_6">Service information (Dining)</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyD-Column1-Body1">
+                        <p class="p_5">/SI-SECOND SEATING FOR MEALS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TableStyle2-Body-Body1">
+                    <td class="TableStyle-TableStyle2-BodyB-Column1-Body1">
+                        <p class="p_6"><span class="span_6">Space reserved (Cabin)</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-TableStyle2-BodyA-Column1-Body1">
+                        <p class="p_5">/SP-CABIN 34</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_7">&#160;</p>
+        <blockquote>
+            <ul class="ul_4">
+                <li class="ListParagraph_5_1"><span class="span_4"><b>Tour</b>: </span><span class="span_3">The accounting line is ignored because tours are not normally paid in full at the time of booking.</span>
+                </li>
+                <li class="ListParagraph_5_1"><span class="span_4"><b>Rail</b>:</span> <span class="span_3">Rail segments with more than one traveler previously imported the number of travelers as 1. The number of travelers on the reservation is now accurate. Pricing and commission are now read from the accounting line, if present. Ticket numbers are also imported if present.</span></li>
+                <li class="ListParagraph_5_1"><span class="span_4"><b>Hotel</b>:</span> <ul><li>Hotel pricing is now imported and calculated per room, rather than per person or per night. This resolves issues where amounts were calculated incorrectly when calculating pricing due to different room rates charged on different nights.</li><li><span class="span_3">For Hotel bookings, the Sabre Rate Description now populates the Room Description field of the Service Provider in ClientBase.&#160;</span></li><li><span class="span_3">Hotel segments now import into reservations with only the Traveler name the hotel reservation was confirmed under, rather than listing all the Res Card travelers. </span></li><li><span class="span_3">The Hotel Total Tax is now imported as part of the hotel pricing.&#160; When a hotel booking is imported, if it contains the Total Tax, we populate the ClientBase reservation's Tax field with that amount.&#160;If no Total Tax is provided, the ClientBase reservation's Tax field is left blank. The reservation’s Base Fare is calculated by deducting the Total Tax and Surcharge amounts from the Approximate Total cost of the hotel stay.</span></li><li><span class="span_3">Hotel commissions are now imported into ClientBase reservations. Commission in a hotel segment can be expressed as an amount or a percentage; we perform necessary calculations (e.g. multiplying per night) and populate the commission amount and rate fields accordingly. For commissionable bookings with no commission in the PNR, the ClientBase Vendor Commission&#160;Default Rate is used to calculate it; if no Vendor Default Rate is available, the ClientBase Global Commission Default rate is used.&#160;No commission is imported for non-commissionable bookings (indicated by the code NC).</span></li><li><span class="span_3">Added support for the new hotel formats for Content Services for Lodging (CSL) bookings created via aggregators/online travel agencies (Booking.com, BedsOnline.com, and Expedia Partner Solutions).&#160; In order to correctly import bookings using the aggregator as the Vendor, you will need to create a Vendor profile for each one using the chain code and property code as the Interface ID. (The correct Interface ID for Booking.com is 7B0, for BedsOnline it is 7H0, and for Expedia it is 7E0.) </span></li><li><span class="span_3">The hotel property details will be found under the Service Provider. </span><span class="span_5" style="color: #b22222; font-weight: bold;">Note: Sabre is still working on the Total Tax amounts for CSL hotel bookings, so be sure to double-check the amounts as they may be missing or inaccurate.</span></li></ul></li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul class="ul_4">
+                <li class="ListParagraph_5_1"><span class="span_4"><b>Other</b>:</span><span class="span_3"> OTH Segments are imported only if there is an associated accounting line.&#160; This is to prevent importing informational OTH segments, such as retention lines used to keep the PNR active in Sabre longer.</span>
+                </li>
+                <li class="ListParagraph_5_1"><span class="span_4"><b>MCO</b>:</span> <span class="span_3">For miscellaneous charge order segments pricing and commission will be read if associated with an accounting line.&#160; When using MCO segments to identify airline service fees, these will be imported as one Miscellaneous reservation with no pricing for the actual MCO segment and a separate reservation with pricing and commission for each automated Service Fee accounting line present in the PNR.</span><ul><li class="ListParagraph_5_1"><b>Air</b>: <ul class="ul_4"><li class="ListParagraph_5_3"><p class="ListParagraph_5_3"><span class="span_3">Enhanced PNR Import for Air bookings to read the Class of Service from a new call that obtains the latest information filed by the airline through ATPCO (Airline Tariff Publishing Company) daily.&#160; This will ensure the correct booking class is reflected on your ClientBase trip proposals and invoices. There is space for 20 characters in ClientBase, so any longer class of service names will be truncated.&#160;</span></p></li><li class="ListParagraph_5_2"><p class="ListParagraph_5_2">Enhanced PNR Import to correctly interpret Passenger Type codes. Previously, any code that was not recognized resulted in the passenger being marked as an Infant. Now, types INF and INS are imported as Infant; types CNN, C03, C04, C05, C06, C07, C08, C09, C10, and C11 are imported as Child; and ADT, NEG, and all other types are imported as Adult.&#160;</p></li><li class="ListParagraph_5_3"><p class="ListParagraph_5_3"><span class="span_3">If present, Commission now imports from the accounting line. If not, then Commission is read from the ClientBase Vendor Default or the ClientBase Global Commission Default, as before. </span></p></li><li class="ListParagraph_5_3"><p class="ListParagraph_5_3"><span class="span_3">Exchange tickets now update the existing reservation with the add collect amount rather than importing as a new booking. Be sure to remove any original stored price quotes (PQ) from the PNR in order to import the new and correct Fare Basis code.</span></p></li><li class="ListParagraph_5_3"><p class="ListParagraph_5_3"><span class="span_3">For fares involving multiple airlines validated on the international. carrier, the ticketing carrier will import as the Reservation vendor in ClientBase.&#160; All individual flight segments will import as Service Providers.</span></p></li><li class="ListParagraph_5_3"><p class="ListParagraph_5_3"><span class="span_3">When importing a Code Share flight, the operating carrier will be identified in the description field under the Service Provider’s Flight Details tab.</span></p></li><li class="ListParagraph_5_4"><p class="ListParagraph_5_4">Direct Flights will now import showing each leg of the flight separately.</p></li><li class="ListParagraph_5_3"><p class="ListParagraph_5_3"><span class="span_3">When issuing multiple tickets using segment select in the same PNR, each ticketed airline is imported as a separate Reservation and the associated flight segments are imported as Service Providers.&#160; </span></p></li><li class="ListParagraph_5_3"><p class="ListParagraph_5_3"><span class="span_3">Here are all the air segment fields that ClientBase will import if the information is available:</span></p></li></ul><blockquote><ul class="ul_5" style="list-style-type: circle;"><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Operating airline for each flight segment</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Passenger Name</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Passenger Type</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Sabre Record Locator</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Airline Record Locator</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Reservation Status</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Fare Type</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Ticket Number</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Commission Amount or Commission Percentage</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Base Fare</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Tax Amount</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Tax Code</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Client GST</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Count of reservation passengers</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Flight Number</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Connecting Flight</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Depart City</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Depart City Name</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Arrive City</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Arrive City Name</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Depart &amp; Arrive Date</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Depart &amp; Arrive Times</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Depart &amp; Arrive Terminal</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Aircraft Type</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Meal Service</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Flight Duration</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Segment Mileage</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Number of stops</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Seat numbers if assigned</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Class of Service</p></li><li class="ListParagraph_5_6"><p class="ListParagraph_5_6">Class Code</p></li></ul></blockquote></li></ul></li>
+            </ul>
+        </blockquote>
+        <h3 class="Heading3"><a name="Merge"></a>Merge to PNR Related: All GDS</h3>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_6"><span class="span_5" style="font-weight: bold;"><span style="color: #b22222;">Important note</span></span><b style="color: #b22222;"> </b><span class="span_5" style="font-weight: bold;"><span style="color: #b22222;">for early Beta testers</span></span> <span class="span_3">on the Emergency Contact phone and e-mail rules: in the first Beta release, these merge fields were styled as “Emergency Phone” and “Emergency E-mail” rather than “Emergency Contact Phone” and “Emergency E-mail.” </span><span class="span_4" style="font-weight: bold;">Any Merge to PNR Rules created using the older format will need to be recreated using the new merge fields.</span><b> </b></li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_2">The new Gender types, X (Unspecified) and U (undisclosed), will merge to PNR using the existing «Gender» merge field and any rules you have already created using this merge field.</li>
+        </ul>
+        <ul class="ul_1">
+            <li class="ListParagraph_5_6"><span class="span_3">To help your agency comply with new mandates, we have created new Traveler Contact and Emergency Contact merge fields for phone and email which automatically use the proper formatting as defined by each GDS system.</span>
+                <ul class="ul_3">
+                    <li class="ListParagraph_5_6"><span class="span_3">To enable you to create Merge to PNR e-mail rules that comply with IATA rule 830d, which requires the traveler’s contact e-mail address to be in specific formats, a new merge field, «Traveler Contact Primary E-Mail» has been added to the Traveler Miscellaneous field group. Each GDS requires a slightly different format for the Traveler’s contact email address, and this merge field will work correctly for each GDS.  For Traveler Contact, ClientBase will read the Primary e-mail address assigned to the Traveler selected.&#160; </span>&#160;</li>
+                    <li class="ListParagraph_5_6"><span class="span_3">To enable you to create Merge to PNR phone rules that comply with IATA rule 830d - which requires the traveler’s telephone number to contain no dashes or parentheses and include all dialng and area codes - a new merge field, «Traveler Contact Primary E-Mail» has been added to the Traveler Miscellaneous field group. For Traveler Contact, ClientBase will read the Primary phone number assigned to the Traveler selected.&#160; </span>
+                    </li>
+                </ul>
+                <ul class="ul_3">
+                    <li class="ListParagraph_5_7"><span class="span_4" style="font-weight: bold;">Important note</span><span class="span_3"> on Traveler Contact phone and e-mail: A 2-letter code to identify your client’s preferred language is optional. Currently ClientBase does not have a profile field to identify a language preference.&#160; If passing this code is necessary, you will need to use the Merge to PNR preview option in order to add the code to the format prior to sending it to your PNR.</span>
+                    </li>
+                    <li>In order to allow you to create Merge to PNR rules that will merge the Emergency Contact e-mail address in the correct format for your GDS, a new merge field, «Emergency Contact E-mail - //», has been added to the Traveler Miscellaneous field group. The existing field «Emergency Contact E-mail - @» now appears with the @ sign in the name to identify normal email formatting. <b>Please note</b> that for Emergency Contact, ClientBase will read the Emergency Contact e-mail address identified in the Advanced Traveler Info tab of the corresponding Traveler record.</li>
+                </ul>
+                <ul class="ul_3">
+                    <li class="ListParagraph_5_6"><span class="span_3">Because the Emergency Contact phone number must be merged to PNR without a dash between the phone prefix and suffix, a new merge field,&#160;«Emergency Contact Phone Prefix/Suffix Without Dash», has been added to the Traveler Miscellaneous field group.&#160;</span><span class="span_4" style="font-weight: bold;">Please note</span><span class="span_3"> that for Emergency Contact, ClientBase will read the Emergency Contact phone number identified in the Advanced Traveler Info tab of the corresponding Traveler record.</span>
+                    </li>
+                </ul>
+                <ul class="ul_3">
+                    <li class="ListParagraph_5_6"><span class="span_4" style="font-weight: bold;">Important note</span><span class="span_3"> on Emergency Contact phone and e-mail: Since we currently do not have a citizenship field for emergency contacts, we recommend using the Citizenship merge field for the traveler as the closest alternative.</span>
+                    </li>
+                </ul>
+                <ul class="ul_3">
+                    <li class="ListParagraph_5_6"><span class="span_3">Please see the table at the end of this document for specific formats per GDS. </span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

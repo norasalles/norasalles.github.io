@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>&#160;Exporting Profiles </title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="resources/stylesheets/draftstylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <p class="productnewfeature" style="text-align: right;font-weight: bold;">
+            <img src="resources/images/cbreleasenotes.png" class="imgheader" style="padding-left: 0pt;padding-right: 0pt;padding-top: 0pt;padding-bottom: 0pt;" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;"><span class="VariablesProduct">ClientBase Windows</span> <span class="VariablesVersion no">4.09.00</span>  - Released <span class="VariablesRelease Date">October, 2020</span></p>
+        <p>&#160;</p>
+        <div role="main" id="mc-main-content">
+            <p class="bookmark"><span style="color: #ffffff;"><a name="Chapter_22_Exporting_Profiles"></a>Chapter 22: Exporting Profiles</span>
+            </p>
+            <h1><a name="Exporting_Profiles" data-mc-generated-bookmark="TOC"></a><a name="kanchor210"></a>Exporting Profiles </h1>
+            <p><span class="span_2">This section demonstrates how to export data from </span><span class="span_3">ClientBase</span><span class="span_2"> into files for use outside the program. </span>
+            </p>
+            <h2><a name="Introduction" data-mc-generated-bookmark="TOC"></a>Introduction</h2>
+            <p><span class="span_4">ClientBase</span> provides agencies with the ability to export data in three different ways. In the chapter, <span>Putting Your Profiles to Work for You</span>, we demonstrated how the results of a Query with standard fields such as Name, Address, City, State, Zip and Phone Number can be merged to a file. Many agencies use the Merge to File or Merge to File Handoff options to send data to outside mailing houses. </p>
+            <p>However, there is a third, more robust export option in <span class="span_4">ClientBase</span>. It is the File Export menu item providing the capability to export even more <span class="span_4">ClientBase</span> data into files. This exported data can be used in site design or for loading into other software programs.</p>
+            <h3><a name="ASCII_Delimited_Text_Files" data-mc-generated-bookmark="TOC"></a>ASCII Delimited Text Files</h3>
+            <p><span class="span_4">ClientBase</span> exports its (.txt) files utilizing the ASCII format (American Standard Code for Information Interchange). Using a standardized coding scheme, various computer programs are able to exchange information. </p>
+            <p>Each record in the file includes information such as Name, Address 1, Address 2, City, etc. To recognize when one field ends and another field begins, a <span class="span_4">delimiter</span> is used, separating each field. This delimiter is a character and in <span class="span_4">ClientBase</span> can be either a <span>tab</span> or a <span>comma</span> in primary columns; or a <span>caret </span>or <span>semi-colon</span> in sub columns such as marketing codes within the marketing tables.</p>
+            <h3><a name="Exporting_Files" data-mc-generated-bookmark="TOC"></a>Exporting Files</h3>
+            <p><span class="span_4">1) It is suggested that you obtain the assistance of a Trams Support Rep to export successfully from this area.</span> More than one file needs to be created from this area. </p>
+            <p>When importing this data, the Profile General Info file is imported basically as-is first using the Import Utility, but no Traveler fields are mapped. Then a second file is created and imported containing Traveler Info. In the Import Utility, the <span class="span_4">Update Rule </span>must be set to <span class="span_4">Update if the INTERFACEID matches, </span>and the file is mapped to the <span class="span_4">Profile Type</span> and <span class="span_4">Profile Interface ID</span>. By skipping forward in the utility to the Traveler fields, mapping is then completed in the second file <span>ONLY</span> to the first Traveler. Then the file is imported. </p>
+            <p>To create the first file for export, go to <span>File|Export</span> in the <span class="span_4">ClientBase</span> menu:</p>
+            <p>
+                <img src="resources/images/chapter 22 export profiles/exporting profiles.jpg" style="height: 431px;width: 515px;" alt="http://static.trams.com/CBW38/images/Exporting%20Profiles.41.1.1.jpg" class="img_1" />
+            </p>
+            <p><span class="span_4">File Name:</span> Start the Export File process by naming the new file and selecting its location by clicking on the three dots to the right of the File Name field.</p>
+            <p><span class="span_4">IMPORTANT NOTE TO FREQUENT USERS OF THIS FEATURE! Load File/Save File:</span> After identifying the ASCII file type, selecting your various format options and selecting the fields to include within the file export, click the Save Settings button and create a .map file which saves these export settings for future use. To load these defaults settings saved in the .map file, click Load Settings. Locate the previously saved .map file and upon selecting all export settings are completed by default. The export file name and the records to include within the export still need to be completed.</p>
+            <p class="p_2">2) Set Up the Following:</p>
+            <p><span class="span_4">ASCII File Type:</span> Select Comma or Tab Delimiters.</p>
+            <p><span class="span_4">Include Columns:</span> From the drop-down menu, select which columns items to include - <span class="span_4">Profile General Information, Profile Marketing Information, Profile Traveler Information, or Profile Card Information</span>. Each selection has an extensive list of fields available for inclusion in the exported file.</p>
+            <p><span class="span_4">Include Records:</span> To determine which profile records are included in the export file, select Current Results in Profile Manager, Selected Results in Profile Manager or ReQuery Profile Manager.</p>
+            <p><span class="span_4">Include Field Names: </span>Check this box to include field names (also known as headers) in the export file. </p>
+            <p><span class="span_4">Export Clean Address Data Only: </span>Check here to exclude incomplete addresses in export file.</p>
+            <p><span>No Sorting:</span> Check here to create a file that is not sorted. This lessens compilation time.</p>
+            <p><span class="span_4">Include Marketing Information:</span> If the <span class="span_4">Include Columns</span> is set to <span class="span_4">Profile General Information</span>, then this checkbox appears. If in addition to the fields included in the General Information folder of a profile, you want to include the marketing categories and codes in the Marketing folder, check this box. Upon selection, notice the Marketing Information delimiter - either a caret (default) or a semi-colon. Each marketing category is separated with a comma or tab (as designated in ASCII File Type), and multiple codes within a category are separated with either the caret or semi-colon depending on which is selected here.</p>
+            <p><span class="span_4">Fields Available/Fields in Export Files: </span>Based upon the item selected in the <span class="span_4">Include Columns </span>field, a listing of <span class="span_4">Fields Available</span> is included to the left. This listing represents all fields that to include in the export file. </p>
+            <p>To change a field, move the highlighted field over to the other side by using the <span>&gt;</span> or <span>&lt; </span>arrow. By using the shift key and mouse, select as many consecutive entries as you want to move and use the <span>&gt;</span> or <span>&lt; </span>arrows. By using the control key and your mouse, you can select non-consecutive entries to move. Use <span>up </span>and <span>down</span> arrows to order your selections.</p>
+            <p class="p_3">General Fields Available for Export:</p>
+            <p>PROFILE.Profile Type</p>
+            <p>PROFILE.Interface ID</p>
+            <p>PROFILE.Name</p>
+            <p>PROFILE.Courtesy Title</p>
+            <p>PROFILE.First Name</p>
+            <p>PROFILE.Last Name</p>
+            <p>PROFILE.Salutation</p>
+            <p>PROFILE.Additional Name</p>
+            <p>PROFILE.Web ID</p>
+            <p>PROFILE.Web Password</p>
+            <p>ADDRESS.Address Line1</p>
+            <p>ADDRESS.Address Line2</p>
+            <p>ADDRESS.Apt/Suite</p>
+            <p>ADDRESS.City</p>
+            <p>ADDRESS.State</p>
+            <p>ADDRESS.Zip Code</p>
+            <p>ADDRESS.Country</p>
+            <p>PROFILE.Referred By</p>
+            <p>PROFILE.Primary Agent Name</p>
+            <p>PROFILE.Middle Name</p>
+            <p>PRIMARYPHONETABLE.Communication Entry</p>
+            <p>PRIMARYPHONETABLE.Communication Desc.</p>
+            <p>PRIMARYFAXTABLE.Communication Entry</p>
+            <p>PRIMARYFAXTABLE.Communication Desc.</p>
+            <p>PRIMARYEMAILTABLE.Communication Entry</p>
+            <p>PRIMARYEMAILTABLE.Communication Desc.</p>
+            <p>PRIMARYEMAILTABLE.Marketing Permission</p>
+            <p>PRIMARYWEBSITETABLE.Communication Entry</p>
+            <p>PRIMARYWEBSITETABLE.Communication Desc.1</p>
+            <p><span>Optional Fields:</span> PROFILE.Create By, PROFILE.Creation Date, PROFILE.Modified By, PROFILE.Modified Date</p>
+            <p><span>3)</span><span class="span_4"> Export. </span>Once selected fields are included, click <span class="span_4">Export</span> to complete the export and generate the first file.</p>
+            <p><span>4)</span><span class="span_4"> Create a second file for traveler information following directions above using </span><span>Profile Traveler Info Columns</span><span class="span_4">.</span> File is created in Level 3 where the Interface ID is not blank. The import will match up on the Interface ID to load travelers on the correct client profile.</p>
+            <p>Traveler Fields (only ones that can be exported):</p>
+            <p>TRAVELER.Name</p>
+            <p>TRAVELER.Department</p>
+            <p>TRAVELER.Courtesy Title</p>
+            <p>TRAVELER.Last Name</p>
+            <p>TRAVELER.First Name</p>
+            <p>TRAVELER.Middle Name</p>
+            <p>TRAVELER.Relationship</p>
+            <p>TRAVELER.Citizenship</p>
+            <p>TRAVELER.Gender</p>
+            <p>TRAVELER.Passport Number</p>
+            <p>TRAVELER.Passport Expire</p>
+            <p>TRAVELER.Passport Issue Date</p>
+            <p>TRAVELER.Passport Issuing City</p>
+            <p>TRAVELER.Passport Issuing Country</p>
+            <p>TRAVELER.Passport Number 2</p>
+            <p>TRAVELER.Passport Expire 2</p>
+            <p>TRAVELER.Passport Issue Date 2</p>
+            <p>TRAVELER.Passport Issuing City 2</p>
+            <p>TRAVELER.Passport Issuing Country 2</p>
+            <p>PROFILE.Profile Type</p>
+            <p>PROFILE.Interface ID</p>
+            <p><span>Note About Exporting Cards: </span>Although you can export some card information into Excel, this data cannot be imported into ClientBase. The file will contain masked Credit Card #’s for PCI Compliance.</p>
+            <h3><a name="Export_Traveler_or_Contact_Profile" data-mc-generated-bookmark="TOC"></a> Export Traveler or Contact Profile</h3>
+            <p>Users with Manager authorization can export profiles from the Travelers and Contacts tabs. </p>
+            <p><b>Note:</b>&#160;Remarks are also exported. Use caution if your agency uses the remarks fields for information that you do not want to provide to a customer.</p>
+            <p>To Export a Profile (Traveler):</p>
+            <ol>
+                <li value="1">Right-click on a Traveler in the Travelers tab.</li>
+                <li value="2">Click Export <i>Export Traveler.</i></li>
+            </ol>
+            <p>To Export a Profile (Contact):</p>
+            <ol>
+                <li value="1">Right-click on a Contact in the Contacts tab.</li>
+                <li value="2">Click Export <i>Export Contact.</i></li>
+            </ol>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;310 - 641 - 8726 — Option 2</p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.CBSupport@sabre.com">Trams.CBSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © <span class="VariablesCurrent Year">2020</span> <span class="VariablesCompanyName">Trams Inc.</span> </p>
+        </MadCap:pageFooter>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-19T13:36:51.4259347-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-19T13:37:47.4980851-05:00">
+    <Files>
+        <Url Source="../../../../../../Desktop/CBB CBO Help/Chapter 10 Using Inventory.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBB CBO Help/Chapter 10 Using Inventory.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Chapter 10 Using Inventory/Using Inventory.jpg" TimeStamp="5/19/2017 1:37:45 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 10 Using Inventory/Using Inventory_1.jpg" TimeStamp="5/19/2017 1:37:45 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 10 Using Inventory/Using Inventory_2.jpg" TimeStamp="5/19/2017 1:37:45 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 10 Using Inventory/Using Inventory_3.jpg" TimeStamp="5/19/2017 1:37:45 PM" />
+        <Url Source="../../Content/Chapter 10 Using Inventory/Using Inventory.htm" TimeStamp="5/19/2017 1:37:45 PM" />
+        <Url Source="../TOCs/Chapter 10 Using Inventory.fltoc" TimeStamp="5/19/2017 1:37:45 PM" />
+        <Url Source="../../Content/Resources/MasterPages/Chapter 10 Using Inventory.flmsp" TimeStamp="5/19/2017 1:37:45 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_102.css" TimeStamp="5/19/2017 1:37:45 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 1" />
+        <StyleName Name="Heading 2" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles />
+</MsWordImport>

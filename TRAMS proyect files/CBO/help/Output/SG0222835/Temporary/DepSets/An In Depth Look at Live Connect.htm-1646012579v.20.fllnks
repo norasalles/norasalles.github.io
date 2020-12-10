@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  MasterPage="file:///C:/Users/SG0222835/My Projects/TRAMS/Help Files/CBO Help files/CBO409 Help/Content/Resources/PageLayouts/MasterPage.flmsp"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/liveconnect/index.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 9 An In-Depth Look at Live Connect/An In Depth Look at Live Connect.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 9 An In-Depth Look at Live Connect/An In Depth Look at Live Connect.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 9 An In-Depth Look at Live Connect/An In Depth Look at Live Connect_1.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/liveconnect/index.html" />
+    <Link
+      Url="Content/Resources/Images/Chapter 9 An In-Depth Look at Live Connect/An In Depth Look at Live Connect.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 9 An In-Depth Look at Live Connect/An In Depth Look at Live Connect.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 9 An In-Depth Look at Live Connect/An In Depth Look at Live Connect_1.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="An_In-Depth_Look_at_Live_Connect" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Live Connect, Intro"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Live Connect Comparison Shopping, Steps"
+      Conditions=""
+      LocalConditions=""
+      Position="42" />
+    <IndexCacheEntry
+      Term="Live Connect Comparison Shopping"
+      Conditions=""
+      LocalConditions=""
+      Position="42" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

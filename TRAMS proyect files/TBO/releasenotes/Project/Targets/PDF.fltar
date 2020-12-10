@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/MyStylesheet.css"
+  PatchHeadingLevels="true"
+  ResolveCssVariables="false"
+  MasterPageLayout="/Content/Resources/PageLayouts/PDF.flpgl"
+  MasterToc="/Project/TOCs/409 PDF.fltoc">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <DocumentProperties
+    Author="Nora Salles" />
+  <Glossaries />
+  <PDF
+    TitleBar="DocumentTitle"
+    InitialMagnification="100"
+    PageLayout="SinglePage" />
+</CatapultTarget>

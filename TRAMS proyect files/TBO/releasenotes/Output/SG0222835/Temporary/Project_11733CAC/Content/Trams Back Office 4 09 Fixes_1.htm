@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="Resources/Stylesheets/4 09 00 Post GR Train 1 TBO FIX release notes.css" rel="stylesheet" />
+    </head>
+    <body>
+        <p class="p_1"><span class="Strong_1">Trams Back Office 4.09 Fixes</span>
+        </p>
+        <p class="p_2"><span class="span_1">Fixes made between Trams Back Office</span><span class="span_2"> 4.09.00.028 and 4.09.00.032</span>
+        </p>
+        <p class="p_3">&#160;</p>
+        <p class="p_4">Database Related</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">Fixed an issue where an error sometimes occurred when attempting to save data.&#160;</p>
+            </li>
+        </ul>
+        <p class="p_4">Payment Related</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">Fixed an issue where a confusing prompt occurred when re-applying payments.</p>
+            </li>
+        </ul>
+        <p class="p_4">Query Related</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">Fixed an error where querying by Traveler name on the Payment Received/Made Global Settings tab did not correctly filter the results.&#160;</p>
+            </li>
+        </ul>
+        <p class="p_4">Report Related</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">Fixed an issue where previewing a report did not work in formats other than PDF.</p>
+            </li>
+        </ul>
+        <p class="p_4">Security Related</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2"><span class="span_3">[EUA Enabled Only] Fixed a messaging issue where, after changing a password, an incorrect second prompt to change the password came up, then&#160;the incorrect message "Password Has Been Used Before".</span>
+                </p>
+            </li>
+        </ul>
+        <p class="ListParagraph_2">&#160;</p>
+        <p class="p_5"><span class="span_1">Fixes made between Trams Back Office 4.08.00.028 and 4.09.00.028</span>
+        </p>
+        <p class="p_6">&#160;</p>
+        <p class="ListParagraph_2"><span class="Strong_2">Invoice Related</span>
+        </p>
+        <ul class="ul_1">
+            <li class="ListParagraph_2">
+                <p class="ListParagraph_3"><span class="span_3">[Canada] Fixed an issue where, after updating a booking's More Taxes | Comm GST/HST or Comm QST Rate, the rate reverts to zero if the General Info | Commission field is 0.00 amount.</span>
+                </p>
+            </li>
+        </ul>
+        <p class="ListParagraph_3">&#160;</p>
+        <p class="ListParagraph_2"><span class="Strong_2">Report Related</span>
+        </p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">Corrected an issue where, after printing a check, the default report printer was incorrectly changed to the default check printer.&#160;</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_1_1">&#160;</p>
+        <p class="p_7">Payment Related</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_3">
+                <p class="ListParagraph_4">Fixed a performance issue where, for invoices with many bookings, toggling a payment closed took longer than it should.</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_1_2">&#160;</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_4">
+                <p class="ListParagraph_5">Fixed an issue where an error was returned, if remotely connected, while manually reconciling TACS payment import items.</p>
+            </li>
+        </ul>
+        <p class="ListParagraph_3">&#160;</p>
+        <p class="p_5"><span class="span_2">Fixes made between Download 4.08.00.001 and 4.09.00.006</span>
+        </p>
+        <p class="ListParagraph_1_2">&#160;</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_5">
+                <p class="ListParagraph_6"><span class="span_3">[Sabre] Fixed an issue where E-tickets were imported without the E-ticket box checked on the Expanded Fare tab of the imported booking.</span>
+                </p>
+            </li>
+        </ul>
+        <p class="ListParagraph_1_2">&#160;</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_5">
+                <p class="ListParagraph_6"><span class="span_3">[Sabre] Fixed an issue where exchange tickets with no @ sign in front of the original ticket number caused Trams Back Office to present an ‘Invalid Ticket Number’ error message. Now ticket numbers will import with or without the @ sign. </span>
+                </p>
+            </li>
+        </ul>
+        <p class="p_5"><span class="span_2">Fixes made between TramsAppServer 4.08.00.019 and 4.09.00.028</span>
+        </p>
+        <p class="ListParagraph_2">&#160;</p>
+        <p class="ListParagraph_2"><span class="Strong_2">Remote Connection Related</span>
+        </p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">
+                <p class="ListParagraph_2">Fixed an issue where the message "Cannot perform this operation on a closed dataset" appeared at login when using a TramsAppServer remote connection.</p>
+            </li>
+        </ul>
+    </body>
+</html>

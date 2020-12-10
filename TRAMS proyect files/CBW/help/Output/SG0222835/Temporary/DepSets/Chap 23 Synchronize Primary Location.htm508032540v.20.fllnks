@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_11.jpg" />
+    <Link
+      Url="mailto:Trams.sync@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_12.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_10.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_11.jpg" />
+    <Link
+      Url="mailto:Trams.sync@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 23 Sync Primary Location Database w Multiple Locations/Synchronize Primary Location_12.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_23_Synchronize_Primary_Location_Database_with_Multiple_Locations" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Synchronize Primary Location Database with Multiple Locations"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Synchronization, Preparing"
+      Conditions=""
+      LocalConditions=""
+      Position="50" />
+    <IndexCacheEntry
+      Term="Synchronization, Schedule an Appointment for One-Time Setup Process"
+      Conditions=""
+      LocalConditions=""
+      Position="96" />
+    <IndexCacheEntry
+      Term="Synchronization, Summary of Synch Process for Remote Locations"
+      Conditions=""
+      LocalConditions=""
+      Position="116" />
+    <IndexCacheEntry
+      Term="Synchronization, Automate"
+      Conditions=""
+      LocalConditions=""
+      Position="468" />
+    <IndexCacheEntry
+      Term="Synchronization, Recommended Routine to Verify Tasks Run"
+      Conditions=""
+      LocalConditions=""
+      Position="579" />
+    <IndexCacheEntry
+      Term="Synchronization, Handle Issues Sent to SyncInfo Log"
+      Conditions=""
+      LocalConditions=""
+      Position="591" />
+    <IndexCacheEntry
+      Term="Synchronization Frequently Asked Questions"
+      Conditions=""
+      LocalConditions=""
+      Position="641" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>Overview of Interface</title>
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+/*<![CDATA[*/
+
+ 
+/*]]>*/
+</script>
+        <link href="Resources/Stylesheets/Stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_5_Interface_Overview_Download_Processing"></a>Chapter 5: Interface Overview Download &amp; Processing</span>
+        </p>
+        <h1>
+            <MadCap:keyword term="Interface Overview" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Interface Overview Download &amp; Processing</h1>
+        <p class="p_38">This chapter contains:</p>
+        <blockquote>
+            <ul style="list-style-type: square;">
+                <li><span class="span_1"><a href="#Overview_of_Interface">Overview of Interface</a></span>
+                </li>
+                <li><a href="#Introduction_to_Interface_Download_Process"><span class="span_1">Introduction to Interface Download &amp; Processing</span></a>
+                </li>
+                <li><span class="span_1">Directions for Download &amp; Processing</span>
+                </li>
+            </ul>
+            <p>&#160;</p>
+        </blockquote>
+        <h2><a name="Overview"></a>
+            <MadCap:keyword term="Interface Overview" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Overview of Interface</h2>
+        <p>The interface process between The Host Reservation System, or GDS, and <span class="span_1">Trams</span>, is a means by which invoice and ticketing data entered in the Passenger Name Record (PNR) is automatically transmitted to the back office system. The interface commands used to control the interface between the GDS and <span class="span_1">Trams</span> are similar to the entries already used in the office to control the transmission of messages to various printers (e.g., ticket, invoice/itinerary, boarding pass and hardcopy).</p>
+        <p>Once the interface option is enabled by the GDS, an interface record or image is created every time a sales agent drives a ticket or an invoice. Specific accounting, client, vendor and booking information from the PNR is downloaded to Trams Back Office and becomes available for accounting, tracking and reporting needs.</p>
+        <p>The interface record created by driving the invoice is stored by the Host GDS on an Interface Queue, much like the ticketing queue. Instead of retrieving the data on queue back to the workstation to update, or to the printer to print, the record is downloaded to <span class="span_1">Trams</span> as a file for <span class="span_1">Trams</span> to read. </p>
+        <p>&#160;</p>
+        <h3>Trams Back Office <a name="InterfaceUtilSetup"></a>Interface Utilities Setup</h3>
+        <p>Trams does not control what is included in the interface record. The data captured is directly related to how it is entered in the PNR. What TBO does with the data can be controlled by default options established in <span>Utilities|Setup</span>. These options determine how TBO handles the information received from the interface record. Not all options in <span>Utilities|Setup</span> relate to interface. Please refer to the <span class="span_1"><MadCap:xref href="Chapter 03 Utilities.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Utilities</MadCap:xref></span> chapter in the manual or the <span class="span_1">Helpfiles</span> for directions on setting up the Trams Back Office program prior to commencing interface.</p>
+        <p>&#160;</p>
+        <h2>Introduction to <a name="InterfaceDownload/Process"></a>Interface Download/Process</h2>
+        <p>The accounting data being interfaced, the paper trail, the office work flow, and available personnel are all important parts of successful interface. Interface is an interaction between the front and back office systems, including human resources. Follow the steps outlined until the staff is proficient with Interface. Develop a daily routine, and teach at least one other person in the office how to handle Interface. Interface is an interactive process that requires coordination between the Host Reservation System, the Windows Interface program and Trams. Let's go over some terminology that we use at Trams for the different parts of the Interface procedures.</p>
+        <p><span>Download</span> involves Trams retrieving the interface records. In Trams Back Office this can be directly from the interface cable or a file. As the records are downloaded, Trams reformats the records and places them in a separate file for processing.</p>
+        <p>When records are retrieved from the source directory, the files are deleted and the directory is emptied. It's important when reading across a network that full file permissions are enabled for the client workstation downloading the records.</p>
+        <p><span>Process</span> is a procedure that merges the Interface records into the Trams database. Each invoice is tracked by Client, Vendor and Sales agent. Bookings within an invoice would all have the same client, but may have different vendors or sales agents. The process procedure matches each invoice item to the proper client, vendor and sales agent for reporting and accounting purposes. The procedure also generates any error messages related to the new data being received, and allows operator intervention for undefined profiles. <span class="span_1">You do not need to create Profiles prior to interface. </span>Trams can create new profiles during the Interface Process.</p>
+        <p><span>Capturing</span> Interface Records involves the images to file option configured by the GDS Vendor. If interface has been configured by the host in this manner, then be sure to ask them how to start, stop and review the utility or print server software they use to capture the records. It's also important to know the EXACT path and directory or file name for Trams to download the files.</p>
+        <p><span>Host Print Server, Pro Printer and Host Print Modules</span>, are utility programs used by the GDS vendor to enable the Host system to communicate with Host printers, including the interface device. If configured to capture to file, there are formats for the file as well as a location or path and file name to the interface records.</p>
+        <p><span>Network Access and File</span> sharing is a feature of the local hardware network. This option must be enabled in order for Trams to download records that are captured to a workstation on the network, versus Interface Download and Process records captured to the local hard drive where the download is handled. For our examples we'll assume the records are captured to the SAME workstation and hard drive where the Trams download is handled.</p>
+        <p><span>Windows Interface Utility or Trams Interface Utility</span> is the program that captures interface records via a cable. The program is configured to match the serial port communication protocol configured at the GDS controller. The program may launch at startup or can be controlled manually. </p>
+        <h2><a name="CapturingInterfaceRecords" data-mc-generated-bookmark="TOC"></a>Capturing Interface Records</h2>
+        <p>There are two ways to capture Interface records - Images to File and Interface via Cable.</p>
+        <h3><a name="Images_to_File_..148" data-mc-generated-bookmark="TOC"></a>Images to File</h3>
+        <p>If the GDS Vendor has configured interface to file, then capturing records to a file has already been set up. It's still important to know the EXACT path and directory or file name for Trams to download the files. Please check directly with the GDS Vendor for the location of the file, as well as the procedures for troubleshooting. Standard settings are explained in the specific GDS section of the Trams Interface Guides. Check the interface queue to verify that records are leaving the Host and available in the local interface file. Go to a GDS workstation and start the transmission of records.</p>
+        <h2><a name="DownloadInterfaceRecords"></a>Download <MadCap:keyword term="Interface Records" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Interface Records into TBO</h2>
+        <p>The download utility can be configured for multiple GDS systems and run outside of Trams Back Office from <span>Start|Programs|Trams Back Office|Download</span>. High volume agencies can create shortcuts for each download configuration and run them simultaneously, or as 'real-time' interface to the same or different workstations. Since all records are routed to a single log for processing, simultaneous downloads should be tested and used only after processing procedures are well established in the agency.</p>
+        <p><span>Step 1:</span> From Windows go to <span>Start|Programs|Trams Back Office|Download</span>.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download.jpg" style="height: 298px;width: 274px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.09.jpg" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <p><span>Step 2:</span> Select the correct database Alias - the default is Trams. The database Alias should NEVER be blank. Refer to the specific GDS section of the Interface Guide for specifics about the screen options listed here. Select the appropriate GDS. Scroll through a list of reservation systems with the down arrow.</p>
+        <p><span>Note:</span> Sabre and Worldspan have 2 options for GDS field. Check the folder for the file structure captured by the GDS. If multiple records exist, one per transaction, use Sabre or Worldspan as appropriate. If a single logair.dat or pnrdata.txt file exist, use Sabre Net or Worldspan Images to Disk as appropriate.</p>
+        <p><span>Note:</span> Any agency having a conflict with the Client Remarks field of a booking being interfaced to a UDID field, can ignore UDID formats in the Client Remarks field of a booking by entering <span class="span_1">-NU</span> in the Option field on the Download Screen.</p>
+        <p><span>Note for Worldspan Agencies:</span> There is a -D option to the Interface Download screen to make the dash following the 5SA, 5OA, 5FJ, 5LF, and 5FF entries in Worldspan optional. If not wanting to specifically identify an SA or OA entry as agent-related, then enter -D in the Options Field on the screen and the dash (-) after the SA and OA entry will not be required. There is a chance, based on the entry made if no dash (-) is present, that the name SANDY could be read as "SA", an override of the Original Sales Agent.</p>
+        <p><span>Note to Apollo Agencies: </span>To ignore e-mail updates in Apollo interface, enter -NE (No E-mail). </p>
+        <p><span>Step 3:</span> Click the PNR File Path button to locate the directory where the interface files reside. If using the default settings when installing Trams, the path should read: </p>
+        <p class="p_12">C:\Spool</p>
+        <p>If records are captured by the GDS vendor, or to a different workstation, then the PNR File Path may look considerably different. (Refer to the GDS section of this interface guide for more information about settings specific to the GDS platform.)</p>
+        <p><span>Note:</span> Changes to the <span class="span_1">PNR File Path</span> on the Interface/Download screen are now only saved if the user logs in as SYSDBA. A non-SYSDBA user can change the path when logged in, but when closing the Interface/Download screen or logging out of TBO, those changes are not saved. <span class="span_1">All changes to the GDS PNR File Path can only be done by the systems SYSDBA User.</span></p>
+        <p><span>Note:</span> Do not check Process Res.txt or Lanyon Format. Wait for New Records is used by high volume agencies to enable a 'real-time' interface. The download screen can be left open to read new messages from the file path as soon as they are created. </p>
+        <p>If receiving the warning "Unprocessed Interface Records Exist," </p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_1.jpg" style="height: 140px;width: 246px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.10.jpg" class="img_1" />
+        </p>
+        <p>there are interface records from a previous download session that have not been processed into TBO. If this is the first Interface Download and Process time interfacing, these may have been test records generated by the GDS host or support desk.</p>
+        <p><span>Cancel</span> = Escape and exit the interface program.</p>
+        <p><span>Append</span> = Add the new records to the existing unprocessed records.</p>
+        <p><span>Overwrite</span> = Overwrite the old records with the new.</p>
+        <p>If not sure about the unprocessed records, select cancel and return to the Interface processing screen to view the unprocessed records. Once processing has been ended, (the remaining records may be duplicates that need to be deleted), choose <span class="span_1">Overwrite</span> to delete the records and continue with the new download. Once selection has been made, Trams responds with the Interface Download Screen. See the invoice numbers flash on the download screen.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_2.jpg" style="height: 320px;width: 303px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.11.jpg" class="img_1" />
+        </p>
+        <p>Trams receives all records from the Destination directory and responds with a Record count of Received and Verified. There may be a difference between the number of records received and verified. Usually this is attributed to invalid invoices or invoices that do not contain accountable segments.</p>
+        <h3><a name="InterfaceReports"></a>
+            <MadCap:keyword term="Interface Reports" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Interface Reports</h3>
+        <p><span>Step 4:</span> Run Interface reports to use when reconciling invoices or investigating the download session. We would advise this on every session until user is comfortable with the TBO interface and front office formats. The reports are an excellent training tool for both front and back office staff.</p>
+        <p>First run the <span>Invoice List. </span>From the TBO main menu, select <span>Reports|Interface|Invoice List</span>. (A <span class="span_1">Print Invoice List</span> button is also located to the Interface Processing Screen so that the Invoice List can be printed prior to processing.) The Invoice List shows the valid invoice data received by TBO during the download process. The report shows how TBO interpreted the data entered in the PNR. Remember, how data is entered and invoices are driven, is directly related to how TBO interprets the PNR. The invoices are not yet available in the TBO database. This is a report of the invoices downloaded in to Trams during this session. Select <span class="span_1">Print Log </span>from the report menu bar to print this report.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_3.jpg" style="height: 291px;width: 476px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.12.jpg" class="img_1" />
+        </p>
+        <p><span>Note: </span>TBO shows the foreign currency value and currency code for comm track transactions on the Interface Invoice List report.</p>
+        <h3><a name="DownloadLog" data-mc-generated-bookmark="TOC"></a>Download Log</h3>
+        <p><span>Step 5:</span> Next run the <span>Download Log. </span>Go to <span>Reports|Interface|Download Processing Log</span>. Enter the date/s for the report. This report shows which interface records were received and rejected by TBO during the download session. If a record was rejected, the booking agent should research the PNR formats to correct and re-run the invoice. Agencies unable or who have a diverse sales staff may purchase or create scripts to make interface more seamless to their sales agents. It's also possible that the rejected records were boarding passes, or itineraries or PNRs that did not contain accounting information, and can be ignored. High volume agencies may want to research quality control procedures to ensure 100% accuracy prior to downloading or processing records into TBO. Select <span class="span_1">Print</span> from the report menu bar to print this report. Process the data received. From the TBO main menu go to <span>Interface|Process</span>.</p>
+        <p>&#160;</p>
+        <h2>
+            <MadCap:keyword term="Process Interface Records" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><a name="ProcessInterfaceRecords"></a>Process Interface Records</h2>
+        <p>During the processing, Trams Back Office tries to match up information received from the interface record with information stored in TBO. There are three types of profiles - client, vendor and agent - that must match before the invoice is processed by TBO. Clients, vendors, and sales agent profile identification is critical to the accurate accounting of a transaction.</p>
+        <h3><a name="AutomaticOrIgnore"></a>Automatic or Ignore All When Processing Creates a Processing Error Log</h3>
+        <p>When there is a mature database, selecting <span class="span_1">Automatic</span> for processing or <span class="span_1">Ignore All</span> from the first error dialog box, creates a <span class="span_1">Processing Error Log</span> that can be printed and processed later. (The processing of E-Ticket refunds is ignored during Automatic Interface Processing.) During the process procedure, TBO reads and logs the records to the correct client, agent and vendor, as it creates a TBO invoice for accounting and reporting.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_4.jpg" style="height: 320px;width: 536px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.13.jpg" class="img_1" />
+        </p>
+        <p class="p_13"><span class="span_1">- Delete Record</span> deletes a selected interface record. (Use SHIFT&#160;or CTRL key to select multiple records.)</p>
+        <p class="p_13"><span class="span_1">- Print Pending</span> prints the unprocessed record list as shown in the display.</p>
+        <p class="p_13"><span class="span_1">- Print Invoice List</span> prints out the invoice list prior to processing without going to <span>Reports|Interface|Invoice</span><span> List</span>. (When there is a new or empty database, it's easier to work through each interfaced record with access to invoice and ticket hard copies.) </p>
+        <p class="p_13"><span class="span_1">- View Source</span> views the native Interface record sent by the GDS. Be better able to make decisions on what to do with a specific record that is generating the error prompt. </p>
+        <p class="p_13"><span class="span_1">- Import from File</span> option is used for importing data from other back office systems, website captured data, when converting to Trams Back Office, or can be used to import records for a Host/IC setup.</p>
+        <p class="p_13"><span class="span_1">- Print Log</span> prints the Processing Error Log</p>
+        <p class="p_13"><span class="span_1">- Automatic</span> allows TBO to process all records without stopping for errors. Records with errors remain unprocessed and errors are reported on the Processing Error Log.</p>
+        <p class="p_13"><span class="span_1">- Print Invoice</span> prints a TBO invoice of each processed record.</p>
+        <p><span>Note:</span> Trams recommends that the back office operator have access to the invoice, tickets and cash receipts for proper accountability, and to maintain the integrity of the TBO. Go to <span>Reports|Interface|Processing Error Log</span> to review reported processing errors.</p>
+        <h3><a name="ClientProfiles"></a>Client Profiles</h3>
+        <p>The reservation system has a client account number format that TBO reads as interface ID. The same client number that printed on the invoice or ticket can interface to TBO as the account number. (See the GDS specific guide for more information.) Each Interface ID must be unique to a single billing entity. A House Account may be created to track "walk-in" clients, but this method cannot capture valuable marketing information. TBO recommends a separate profile for every billing entity. While profiles serve as client ledger cards, they also serve as reporting units and client mailing lists. <span>Profiles don't need to be created in TBO</span> prior to the first interface, but spend some extra processing time as the database is being built. If the message <span class="span_1">No Match on Client Interface ID</span> during processing of new clients is received, TBO builds the profile for each new client through processing the invoice. </p>
+        <p>If there is converted data from another back office system, then it's important to know the procedures required to <span class="span_1">restore</span> the converted data to TBO. Put off the first interface session until after the Interface Download &amp; Process converted data has been restored to create the TBO database.</p>
+        <h4><a name="NoMatchOnClientID"></a>
+            <MadCap:keyword term="No Match On Client ID" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />No Match On Client ID</h4>
+        <p>The message, <span class="span_1">No Match On Client ID</span> prompts when TBO does not find an identical Client Interface ID to the alphanumeric code that appears between the brackets [xxxxxxxxxx]. This occurs for various reasons. If there is no code within the brackets, [] Trams did not detect a customer number in the Interface record.</p>
+        <p>For inactive Profiles a Warning Message appears: <span class="span_1">Matching xxxxx Profile is Marked Inactive - Continue? </span>Select <span class="span_1">OK </span>to process the invoice to the inactive profile, and later, update the profile to active status. If <span class="span_1">Cancel</span> is selected, a prompt allows the operator to <span class="span_1">Modify</span> by selecting a different Profile or create a new Profile.</p>
+        <p>This screen shows an ID [1234567890] in brackets next to the name. This is the Customer ID the agent entered in the PNR. TBO did not find an exact match. Select <span class="span_1">Modify </span>to search for the client by Name.</p>
+        <h4><a name="SelectModify"></a>Select Modify</h4>
+        <p>By selecting Modify, Trams continues processing the Interface record, for input at each step of the procedure. The client type and name are the only fields available to modify. TBO defaults to Leisure. To modify the <span class="span_1">Client Type</span>, click the drop-down key to see the choices. Click Corporate in the Client Type field. By selecting Corporate without modifying the Client Name, TBO interprets the Client Name differently. This is not an optional default. If the client's name or spelling is in question, enter a few letters of the client's last name for a broader search. Next click the Client Name and move to the Profile query screen. From there, search for the correct profile.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_5.jpg" style="height: 210px;width: 488px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.14.jpg" class="img_1" />
+        </p>
+        <h5>
+            <MadCap:keyword term="No Matching Profiles Found" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />No Matching Profiles Found During the Client Name Search</h5>
+        <p class="p_34">
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_6.jpg" style="height: 126px;width: 318px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.15.jpg" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <h4><a name="NewClientProfile"></a>Create a New Client Profile</h4>
+        <p>Click <span class="span_1">Yes</span> and TBO to go to a new Client Profile screen. The information for the new client moves to the profile screen in TBO. The <span class="span_1">No</span> option returns to the previous screen. The information from the Interface record moves to the New Client Profile screen. TBO does a good job at translating ALL CAPS GDS entries into upper and lower case, but occasionally edit the information captured from the front office. Notice the Interface ID and address information is entered automatically. This came directly from the address and phone entries in the PNR. Click <span class="span_1">OK</span> to save the profile to return to the Interface processing screen to continue processing the rest of the record (s).</p>
+        <h4><a name="QueryClientProfiles"></a>Query Client Profiles</h4>
+        <p>Click <span class="span_1">Query</span> to start the search for the correct client profile. Click the down arrow in the 'argument' field prior to the name to select the name search criteria. If TBO does not find a match by Client type and name there is a prompt, <span class="span_1">Create a New Profile?</span> If TBO finds a probable match, there is a selection box. Highlight the customer name and click <span class="span_1">Select</span> to move back to the processing screen.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_7.jpg" style="height: 269px;width: 552px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.16.jpg" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <p>Click <span class="span_1">Select</span> to choose a name from the list and save to return to the Interface processing screen to continue processing the rest of the record (s). If the correct name is not on the list, click <span class="span_1">Reset</span>. Try the search with just a few letters of the name. Perhaps there is a misspelling?</p>
+        <p><span>Note:</span> Run a list of clients and vendors often as the mailing list grows. It is easy to create a duplicate profile as the staff adjusts to the disciplines of interface. Go to <span>Reports|Client|Lists and Labels</span>. Also use the Processing Error Log to update any existing Profiles with incorrect or missing Interface ID's. </p>
+        <h4><a name="InvoiceNotes"></a>Invoice Notes</h4>
+        <ul class="ul_3">
+            <li class="ListParagraph" value="1">During interface processing for a <span class="span_1">void</span> record, we added the ability for an invoice to automatically show as a voided invoice without user intervention if all other bookings in the invoice are already voided. There is a prompt, <span class="span_1">Confirm Void Invoice </span>prompt screen. For a single booking invoice containing an air ticket, nothing more need be done and the invoice is automatically voided. For an invoice containing multiple bookings, those booking would have had to been manually voided prior to the start of interface processing, for the invoice to be automatically voided. </li>
+        </ul>
+        <p class="p_13">Processing of the void record must be the last non-voided booking in the invoice, for the invoice to void automatically without having to re-query the invoice after processing and manually voiding. To implement this feature, check that <span>Utilities|Setup|Global Defaults/ Interface/Mailmerge Prompt Tab</span> has <span class="span_1">Allow Voids</span> set to <span class="span_1">Prompt</span>. Allow Voids = PROMPT.</p>
+        <p class="p_13">-- During interface processing, single payments are now created for each booking in the PNR invoice being processed even if the CC No. is the same. This allows for easier voiding of tickets during processing when each ticket has its own payment attached. Also multiple tickets contained in a single invoice are listed separately on a customer's credit card statement. So an invoice with two $500 tickets in it, $1000 total invoice amount, is shown on the credit card statement as one item with ticket number for the first $500 ticket, and as a second item with ticket number for the second $500 ticket.</p>
+        <h3><a name="Vendor"></a>Vendor Profiles</h3>
+        <p>ARC/BSP vendors, plus car and hotel vendors, are booked directly through the reservation system have an industry standard ID assigned through the reservation system. As these transactions are processed in TBO, allow Trams to create the vendor profile. Group several vendors together through the Vendor profile, or the invoice group field. (See the Profile section in the manual for a full description of field options.) TBO recommends tracking these vendors by property. ARC/BSP vendor profiles build by TBO include the airline code automatically. Include both the Interface ID and the airline code when building these vendors manually.</p>
+        <p>Trams maintains a table of ARC/BSP vendors, complete with address information. This table is used to create the ARC/BSP profile the first time the vendor is sold. Non-ARC/BSP vendors are also identified in Trams by Interface ID, but there is no industry standard at this time. The GDS may have restrictions on how these codes are entered within the booking or accounting line. (See the GDS section of this guide for more information.) It is important to coordinate with the front office staff before deciding on how these vendors should be identified.</p>
+        <p>Unlike Client Profiles, TBO searches for the Interface ID first and then the Vendor phone number and thirdly, the Vendor name for an exact match. Due to the flexibility allowed in the building of PNRs, it is important to establish standards used for the agency.</p>
+        <p><span>Note: </span>TBO matches Vendor Profiles by phone number when the Vendor name and/or Interface ID do not match during interface processing, because the Vendor name and/or Interface ID has changed but the phone number hasn't. A message is added to the <span class="span_1">Error Processing Log</span> during interface processing when a Vendor Profile has been matched by phone number.</p>
+        <p>When the name and the Interface ID changes, it's usually because a hotel property changes chains, and the name and ID would be changed but not the phone or address. Users need to be aware of the change so they can decide if they want to change the name and ID of the existing profile or create a new profile for the property. </p>
+        <p><span>Note: </span>-- Trams matches Non-ARC/BSP airline bookings to any vendor profile with a matching interface ID. So a ticket sold on United Airlines, but not processed through ARC/BSP can be added to a single United Airlines vendor Profile if the Interface ID matches.</p>
+        <h4><a name="NoMatchOnVendor"></a>No Match On Vendor Name or ID</h4>
+        <p>There is a <span class="span_1">No Match on Vendor Name or ID</span> prompt when TBO cannot find a profile for this vendor by Interface ID, phone number or name. </p>
+        <p>This screen shows an automated Vendor code received by the GDS at confirmation. </p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_8.jpg" style="height: 216px;width: 327px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.17.jpg" class="img_1" />
+        </p>
+        <p>If nothing is entered between the [brackets], the booking may have been entered as a passive segment without a vendor code. If there is an id between the brackets, but no name, the agent may not have entered a vendor name, just the code. Select <span class="span_1">Modify</span> and continue.</p>
+        <h4><a name="Select_Modify"></a>Select Modify</h4>
+        <p>The system now, by default, only shows matching vendors based on Name, State and Zip. Manually uncheck either or both to see matches just on name. The check boxes are enabled if the corresponding address field is populated in the Vendor Profile that is being processed from the GDS PNR. If there is no State or Zip Code in the record being processed then those options are dimmed and the match is on Name only.</p>
+        <p>When the database has multiple vendors with the same name such as "Southwest" and no location identification in the name, the match can be based on the Name and a part of the address. This should alleviate the problem of common vendor names being picked by name only and putting the booking under the incorrect vendor profile. TBO searches for the exact spelling of the Vendor Name. If the spelling is questionable, use only the first few letters of the name to broaden the search. Click <span class="span_1">OK </span>to begin the search.</p>
+        <p>TBO may want to attach to an existing profile with a similar name when clicking <span class="span_1">OK</span>. To prevent that, click the <span class="span_1">New </span>button to go straight to a new Vendor Profile screen.</p>
+        <p class="p_12">No matching Profiles Found during the Vendor Name Search</p>
+        <p class="p_12">
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_9.jpg" style="height: 101px;width: 318px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.18.jpg" class="img_1" />
+        </p>
+        <h4><a name="NewVendorProfile"></a>Create New Vendor Profile</h4>
+        <p>Clicking <span class="span_1">Yes</span> navigates to a new Client Profile Screen. The information for the new vendor moves to the profile screen in TBO. When selecting <span class="span_1">No</span>, return to the previous screen. If there is not a vendor profile in TBO, create a new one now by clicking <span class="span_1">OK</span>.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_10.jpg" style="height: 240px;width: 360px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.19.jpg" class="img_1" />
+        </p>
+        <p>The information from the Interface record moves to the new Vendor Profile screen. TBO does a good job at capturing address and phone details from automated Car and Hotel Vendors. Passive segments may require editing. The TBO operator would want to modify this record and assign an interface ID unique to this hotel. Any future passive hotels with using this same Interface ID will also interface to that profile automatically. <span>(Refer to the Front Office formats used to account for the vendor transaction, to ensure proper translation by TBO.)</span> Notice the Interface ID is entered automatically. The next time this property is booked using the same Interface ID, TBO will not require intervention. Using the mouse, click <span class="span_1">OK</span> to save the profile. </p>
+        <p>&#160;</p>
+        <h4><a name="Alternat"></a>Alternate Interface ID</h4>
+        <p>Some agencies interface from multiple GDS systems. Add an alternate interface ID to a vendor profile by selecting the Marketing Tab. By adding an alternate interface ID, TBO finds a match on either of the Interface ID's attached to the profile.</p>
+        <h4><a name="Query_Option" data-mc-generated-bookmark="TOC"></a>Query Option</h4>
+        <p>The Query option searches vendor profiles for a match. A query of Vendor profiles is also initiated by changing the Vendor Name on this query screen or from the Modify screen. Click <span class="span_1">Query</span> to begin. Because of the spelling of the Vendor name, this sample shows [No Matching Profiles Found.] If the query is successful, highlight the vendor and click with the mouse. If the query is too narrow or not successful, click <span class="span_1">Reset</span> to begin another search.</p>
+        <p>&#160;</p>
+        <h3><a name="Sales_Agent_Profiles" data-mc-generated-bookmark="TOC"></a><a name="Sales_Agent_Profiles"></a>Sales Agent Profiles</h3>
+        <p>Trams Back Office receives the original booking agent from the Interface Record and captures the agent as the primary or inside agent on the invoice. The Agent ID as it is translated from the reservation system must match the Agent Interface ID in TBO. This ID is often referred to as the "agent sine" and is defined in the agencies GDS profile. To review these agent sines before beginning interface. TBO reads alphanumeric sines. Non-booking agents that are tracked on an invoice can have an Interface ID unrelated to the automatic agent id used to designate the booking agent. (See the GDS section of the addendum for additional tracking options.) TBO allows up to 9 agents on a single booking. These are used to track inside and outside agents, promotions and commission splits.</p>
+        <h4><a name="No_Match_On_Agent_ID" data-mc-generated-bookmark="TOC"></a><a name="No_Match_On_Agent_ID"></a>No Match On Agent ID</h4>
+        <p>There is a <span class="span_1">No Match On Agent ID</span> prompt when TBO has no record of this agent in a sales agent profile. The Agent ID that Trams captured from the Interface record appears between the brackets. If there is not an agent ID, Trams did not detect an agent in the record. This sometimes occurs when records are retrieved from another agency or when bookings were created by the Airline Reservations Center and are taken over by the agency. Click <span class="span_1">Modify</span> to search by a different ID or to create a new Sales Agent profile. </p>
+        <p>Trams Back Office has no match on the Interface ID of the Agent displayed. This is probably a new agent with GDS agent sine of TG. When selecting <span class="span_1">Modify</span>, a prompt comes up to search for the agent by name. Even though the Agent ID is displayed, enter the agent name to search for the agent.</p>
+        <p>If clicking the Agent ID button, query for agents. If the down arrow is clicked in the window, similar names of agents appear. By default, TBO assumes the agent name and agent ID are the same. If profiles use first names for agent names, or other criteria, add the first letter of the agent name and click the down arrow to find an existing agent.</p>
+        <h4>Record <a name="NotFoundbyAgentID"></a>Not Found by Agent ID Search </h4>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_11.jpg" style="height: 107px;width: 288px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.20.jpg" class="img_1" />
+        </p>
+        <h4><a name="Enter_a_New_Profile_" data-mc-generated-bookmark="TOC"></a><a name="Enter_a_New_Profile"></a>Enter a New Profile?</h4>
+        <p>To create a new Sales Agent profile, click <span class="span_1">Yes</span>. Edit the Sales Agent name at this time. All other profile information can be modified later. Click <span class="span_1">OK</span> to save the profile.</p>
+        <p>If the Agent profile exists in Trams but you are not sure what the correct Agent ID is, highlight the Agent ID and press Delete. Click Agent ID and move to the Query screen. Click Query to see a list of Sales Agents.</p>
+        <p class="p_39">Search for Existing Agent by Agent ID</p>
+        <p>To search for an existing agent profile by agent ID, right click in the Agent field. A drop down list displays. Select search by ID and click <span class="span_1">OK</span>.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_12.jpg" style="height: 102px;width: 285px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.21.jpg" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <h2><a name="Processing_Errors" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Processing Errors" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Processing Errors</h2>
+        <p>TBO accepts only valid invoices through the Interface Download (with a few exceptions). Invoices without valid segment information, Itineraries, Voids and Full Invoice refunds are rejected during the download procedure. Valid invoices with missing or duplicate information is available for modification in the Process procedure.</p>
+        <p class="p_39">Invalid ARC Number</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_13.jpg" style="height: 185px;width: 299px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.22.jpg" class="img_1" />
+        </p>
+        <p>This error means this ARC/BSP number is not setup in the Branch Utilities. From the main menu, go to <span>Utilities|Setup|Branches</span>. Click the Add/Modify ARC/BSP button, and add the missing ARC/BSP number.</p>
+        <h3><a name="Duplicate_or_Invalid_Invoice_Number" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Duplicate or Invalid Invoice Number" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Duplicate or Invalid Invoice Number</h3>
+        <p>Trams Back Office does not allow duplicate invoice numbers within the same branch. A Duplicate Invoice Number prompt may appear for various reasons. Trams does not allow duplicate invoice numbers.</p>
+        <ul class="ul_3">
+            <li class="ListParagraph" value="1">The invoice may have been manually entered.</li>
+            <li class="ListParagraph" value="2">The invoice number was previously used in error.</li>
+            <li class="ListParagraph" value="3">The invoice was previously downloaded and resubmitted.</li>
+        </ul>
+        <p>There are several options. </p>
+        <p>1. First, select <span class="span_1">View Source</span> and note the details of the invoice such as passenger names and travel dates. Then select <span class="span_1">Abort</span> and go to the <span>Invoice|Query</span> tab and search for the invoice number. If the record to be processed is a true duplicate invoice, and the user does not want to process the record, it can be deleted during the next download.</p>
+        <p>2) Select <span class="span_1">Ignore</span> to move to the next record. The <span class="span_1">Ignore</span> and <span class="span_1">Ignore All</span> option does not remove the record(s) from the process log. The record remains and is reported on the Processing Log.</p>
+        <p>3) <span class="span_1">Modify</span> proceeds with the processing of this record and permits the entry of a new Invoice number. </p>
+        <p>A Select Invoice Number prompt appears. </p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_14.jpg" style="height: 185px;width: 252px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.23.jpg" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <p>4) Enter the Invoice Number. By deleting the number in the Invoice No field, and clicking <span class="span_1">OK</span>, TBO automatically assigns the next invoice number in the system. Or keep the same invoice number and capture the record to a different branch.</p>
+        <h3><a name="Duplicate_Ticket_Number" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Duplicate Ticket Number" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Duplicate Ticket Number</h3>
+        <p>A Duplicate Ticket Number prompt appears for various reasons.</p>
+        <p>1. The ticket may have been manually entered.</p>
+        <p>2. The ticket was previously downloaded.</p>
+        <p>Click <span class="span_1">OK</span> to accept the duplicate ticket number and continue processing records.</p>
+        <h3><a name="Invalid_Ticket_Numbers" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Invalid Ticket Numbers" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Invalid Ticket Numbers</h3>
+        <p>TBO displays a slightly different message if an invalid ticket numbers exist. Verify the correct ticket number and select modify to input the appropriate number.</p>
+        <h3><a name="Processing_Void_Ticket" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Processing Void Ticket" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Processing Void Ticket</h3>
+        <p>If Global Defaults is set to Prompt for void tickets, the ticket is voided without intervention if it's the only booking on the invoice. If there are multiple bookings, then the user will be given the option to void manually.</p>
+        <p>Unable to Void Ticket when the form of payment isn't a CC is another void type that needs intervention when the Global defaults is set to Prompt.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_15.jpg" style="height: 194px;width: 314px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.24.jpg" class="img_1" />
+        </p>
+        <p>Select <span class="span_1">Modify</span> to edit the Sale Invoice that contains the tickets to be voided.</p>
+        <h3><a name="Unprocessed_Interface_Records" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Unprocessed Interface Records" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Unprocessed Interface Records</h3>
+        <p>If a download is attempted again, without processing all of the previous records, TBO responds with <span class="span_1">Unprocessed Interface Records Exist</span>.</p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_16.jpg" style="height: 144px;width: 290px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.25.jpg" class="img_1" />
+        </p>
+        <p>If records were ignored during processing, they have not been removed from the Processing Log. They remain available until the next time the download is started. They can be kept or deleted from this screen. If choosing <span class="span_1">Append</span>, add new records to the existing records in the processing log. If choosing <span class="span_1">Overwrite</span>, replace (delete) existing records in the processing log with new records. Choose <span class="span_1">Cancel</span> to check the <span class="span_1">Interface|Process Log</span> to check before continuing with the new download.</p>
+        <h2><a name="InterfaceTroubleshooting"></a>
+            <MadCap:keyword term="Interface Troubleshooting of Errors" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Interface Troubleshooting of Errors in Downloading</h2>
+        <p>Clicking on download may result in an error message. Following each example are some common reasons and solutions to investigate:</p>
+        <p class="p_33">Error: 32 (0)</p>
+        <p>This error often means that the spool file is empty; or rather there are no records to download. Be sure records have left the GDS queue and reside in the appropriate folder.</p>
+        <p class="p_33">Error: Path Not Found 3(0) FileName: C:\spool\;Proc: FOpen() C:\spool\</p>
+        <p>This error also often means that the spool file is empty; or rather there are no records to download. Be sure records have left the GDS queue and reside in the appropriate folder. It does not mean that the spool folder can't be found, but the file within the spool folder isn't available. If reading from a network folder, there may not be a connection or permission to read, write and delete the records.</p>
+        <p>&#160;</p>
+        <h2><a name="Automatic_WindowsTask" data-mc-generated-bookmark="TOC"></a>
+            <MadCap:keyword term="Automatic Interface Download" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Automatic Interface Download &amp; Processing Setup with Windows Task Scheduler </h2>
+        <p>Set up automatic interface download and processing procedures using Windows Task Scheduler: </p>
+        <h3><a name="AutomaticDownloadSteps" data-mc-generated-bookmark="TOC"></a>Steps to Set Up <MadCap:keyword term="Automatic Interface Download" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Automatic Interface Download </h3>
+        <p>1. Set up a user profile/login that will specifically be used for the automated download and processing routines. For assistance with user profile set see the help file section under <span>Utilities|User Profile</span>. The log in and password will be used in subsequent steps.</p>
+        <p>2. Go to <span>Start|Programs|Accessories|System Tools|Schedule Task</span>. Click <span class="span_1">Add Scheduled Task. </span></p>
+        <p>3. Follow the Wizard by clicking <span class="span_1">Next, </span>and then <span class="span_1">Browse </span>to <span>Program Files|Trams|Tramswin|download.exe </span>(or where the download.exe is located). </p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_17.jpg" style="height: 308px;width: 406px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.26.jpg" class="img_1" />
+        </p>
+        <p>4. Next select how often the download is to run by selecting the following: <span class="span_17">Start Time</span><span class="span_18">, </span><span class="span_17">When task is performed </span><span class="span_18">and </span><span class="span_17">Start Day</span><span class="span_18">. </span></p>
+        <p>5. Enter the login for the computer (use the password entered when logging into the PC or to the network in the office, and make sure the password is correct and leave blank if there is no password). Be sure to check in the box next to <span class="span_1">Open Advanced Properties</span> for this task when clicking <span class="span_1">Finish.</span> A Task Tab window opens for TBO. </p>
+        <p>6. Ensure the correct information is entered (see below) in both the <span class="span_1">RUN: </span>and <span class="span_1">START IN: </span>fields. </p>
+        <p>
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_18.jpg" style="height: 420px;width: 380px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.27.jpg" class="img_1" />
+        </p>
+        <p><span>Run:</span> Enter the Trams Interface Download command-line (here's an example): </p>
+        <p class="p_12">"C:\Program Files\Trams\Tramswin\download.exe" -username Interface -password ********* -alias Trams -CRS 2 -path c:\spool -auto </p>
+        <h4><a name="Commandline_parameters" data-mc-generated-bookmark="TOC"></a>Command-line parameters for example above </h4>
+        <p><span>"C:\Program Files\Trams\Tramswin\download.exe"</span> - Path to where the download.exe resides </p>
+        <p><span>-username Interface -</span> User log in name </p>
+        <p><span>-password ******** -</span> User password </p>
+        <p><span>-alias Trams - </span>Database Alias Name </p>
+        <p><span>-CRS 2 -</span> GDS System </p>
+        <p>-crs &lt;crs no&gt; </p>
+        <p>0=Amadeus </p>
+        <p>1=Apollo/Galileo </p>
+        <p>2=Sabre </p>
+        <p>5=Worldspan </p>
+        <p><span>-path c:\spool -</span> Path to where the interface records reside </p>
+        <p><span>-auto - </span>Auto download 2 12/5/2005 </p>
+        <h4><a name="command-line_options" data-mc-generated-bookmark="TOC"></a>Download options available to use in the command-line parameter</h4>
+        <p>-J (Read Apollo Itin) </p>
+        <p>-NU (Ignore Remarks UDIDs - all GDS) </p>
+        <p>-D (Dash optional on MS code entries - Worldspan related) </p>
+        <p>-NG (Ignore CC guarantee - All GDS) </p>
+        <p>-NE (Ignore e-mail updates - All GDS) </p>
+        <p>-NC (No default comm. Track FOP - All GDS) </p>
+        <p>-RC (Ignore hotel rate code - All GDS) </p>
+        <p>-NM (Worldspan specific - ignores the NM- name entry in the WS H record and reads the name from the A/1.1 level instead)</p>
+        <p>"C:\Program Files\Trams\Tramswin\download.exe -username JUDITH -password authorized -alias Trams -CRS 1 -J -NG -path c:\MIR -auto"</p>
+        <p><span>Important: </span>All command line parameters after C:\Program Files\Trams\Tramswin\download.exe must have a space- (dash) before the option and "C:\Program Files\Trams\Tramswin\download.exe” must have the quotes around it. </p>
+        <h4><a name="Additionalcommand-line_EXAMPLES" data-mc-generated-bookmark="TOC"></a>Additional Trams Interface Download command line EXAMPLES which can be entered <br />in the Scheduler Task screen </h4>
+        <p>"C:\Program Files\Trams\Tramswin\download.exe -username MIEKE -password mieke -alias Trams45 -CRS 2 -path c:\Sabre2\spool -auto" </p>
+        <p>"C:\Program Files\Trams\Tramswin\download.exe -username JUDITH -password authorized -alias Trams -CRS 5 -path c:\wspan\tairs –auto </p>
+        <p>** auto download from file works only with folders containing individual records (multiple files) </p>
+        <p><span>Start In: </span>This area is defaulted to the .exe file browsed to in Step 2. Make sure it is correct. </p>
+        <p>7) Select the <span>Schedule Tab|Advanced:</span> </p>
+        <p class="p_40">
+            <img src="Resources/Images/Chapter 1 Welcome/Interface Overview Download_19.jpg" style="height: 387px;width: 524px;" alt="http://static.trams.com/tbo36/images/windownload.06.1.28.jpg" class="img_1" />
+        </p>
+        <p>&#160;</p>
+        <p>Create a separate Download Schedule for each CRS and database. </p>
+        <p><span>Note: </span>To further clarify, using this method does not utilize a user license for processing. If using <span>Interface|Download|Wait for New Records</span> and <span>Interface|Process|Automatic Process </span>options within TBO, then a user license is utilized which may become more of an issue if interfacing with all 4 GDS's concurrently.</p>
+        <h3>Steps to Set Up <a name="AutomatedProcessingSteps"></a><MadCap:keyword term="Automated Interface Processing" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Automated Interface Processing in Windows Scheduler </h3>
+        <p>Follow the steps above for setting up a Scheduled Task. In the <span class="span_1">Run Line </span>enter (an example): </p>
+        <p><span>"C:\Program Files\Trams\Tramswin\Tramswin.exe" </span>-username <span>SYSDBA </span>-password <span>******* </span>-alias <span>Trams </span>-autointerface </p>
+        <p>If there are no records to process, the task will open and then close. If there are records to process the task will auto process and close, leaving the errors to be handled manually. </p>
+        <h3>Steps to Set Up <a name="AutomatedImportSteps"></a><MadCap:keyword term="Automated Import" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Automated Import from File in Windows Scheduler </h3>
+        <p>Follow the steps above for setting up a Scheduled Task. In the <span class="span_1">Run Line </span>enter (an example): </p>
+        <p>Example: <span>"C:\Program Files (x86)\Trams\Tramswin\tramswin.exe" -username SYSDBA -password xxxxxxx -alias TRAMS -interfacefromfile C:\INTERFACE\IMPORT.TXT</span></p>
+        <p>The parameter entry must specify the file path and file name. Example: -interfacefromfile C:\INTERFACE\IMPORT.TXT and would be added to the standard, required parameters. The specified file (import.txt in this example) will be deleted from the specified folder after importing it. Once the file has been imported, it is ready to be processed (same processing routine used with download/process).</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  MasterPage="file:///C:/My Projects/TRAMS/Help Files/CBO Help files/CBO409 Help/Content/Resources/PageLayouts/MasterPage.flmsp"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/releaseandupdatefiles/updates/utilities/CBBComps.EXE" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_4.jpg" />
+    <Link
+      Url="http://www.trams.com/home/support/misc_downloads/" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_5.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/releaseandupdatefiles/updates/utilities/CBBComps.EXE" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/PNR Integration SR360_CBO/PNR Integration SR360_CBO_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_4.jpg" />
+    <Link
+      Url="http://www.trams.com/home/support/misc_downloads/" />
+    <Link
+      Url="Content/Resources/Images/Chapter 15 An in-depth look and pnr import/An In Depth Look at PNR Import_5.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="An_In-Depth_Look_at_PNR_Import" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="An In-Depth Look at PNR Import"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="PNR Import Overview"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="PNR Import Amadeus"
+      Conditions=""
+      LocalConditions=""
+      Position="17" />
+    <IndexCacheEntry
+      Term="PNR Import Apollo/Galileo"
+      Conditions=""
+      LocalConditions=""
+      Position="58" />
+    <IndexCacheEntry
+      Term="PNR Import for Sabre"
+      Conditions=""
+      LocalConditions=""
+      Position="110" />
+    <IndexCacheEntry
+      Term="PNR Import Sabre"
+      Conditions=""
+      LocalConditions=""
+      Position="110" />
+    <IndexCacheEntry
+      Term="PNR Import Worldspan"
+      Conditions=""
+      LocalConditions=""
+      Position="217" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" GOGO Vacations "
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="http://www.gogowwv.com/" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features.png" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features_1.png" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features_2.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="http://www.gogowwv.com/" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features.png" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features_1.png" />
+    <Link
+      Url="Content/Resources/Images/GOGO/GOGO Vacations Features_2.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor391" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

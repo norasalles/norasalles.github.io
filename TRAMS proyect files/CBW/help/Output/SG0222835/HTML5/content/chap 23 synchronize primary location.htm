@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>&#160;Synchronize Primary Location Database with Multiple Locations </title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="resources/stylesheets/draftstylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <p class="productnewfeature" style="text-align: right;font-weight: bold;">
+            <img src="resources/images/cbreleasenotes.png" class="imgheader" style="padding-left: 0pt;padding-right: 0pt;padding-top: 0pt;padding-bottom: 0pt;" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;"><span class="VariablesProduct">ClientBase Windows</span> <span class="VariablesVersion no">4.09.00</span>  - Released <span class="VariablesRelease Date">October, 2020</span></p>
+        <p>&#160;</p>
+        <div role="main" id="mc-main-content">
+            <p class="bookmark"><span style="color: #ffffff;"><a name="Chapter_23_Synchronize_Primary_Location_Database_with_Multiple_Locations"></a>Chapter 23: Synchronize Primary Location Database with Multiple Locations</span>
+            </p>
+            <h1><a name="Synchronize_Primary_Location_Database_with_Multiple_Locations" data-mc-generated-bookmark="TOC"></a><a name="kanchor318"></a>Synchronize Primary Location Database with Multiple Locations </h1>
+            <p><span class="span_2">This document provides steps on how to synchronize a primary location’s database with multiple locations using the </span><span class="span_3">ClientBase</span><span class="span_2"> Synchronization utility. Set up on-going synchronization manually or automatically using Windows Task Scheduler, or by using </span><span class="span_3">Trams</span><span class="span_2"> Sync Web Service. </span>
+            </p>
+            <h2><a name="What_is_ClientBase_Synchronization_" data-mc-generated-bookmark="TOC"></a>What is ClientBase Synchronization?</h2>
+            <p>Some agencies with multiple locations or remote access needs wish to maintain a separate copy of their <span class="span_4">ClientBase</span> database within each location because they lack high speed modems or remote access technology necessary to connect to a single, centralized database. For these agencies, <span class="span_4">ClientBase</span> has created a utility that includes the ability to create a "sync copy" of the primary database for use in multiple locations. </p>
+            <p>(This utility does <span class="span_5">not</span> allow you to merge two unique databases.)</p>
+            <h2><a name="What_is_Trams_Sync_Web_Service__..1" data-mc-generated-bookmark="TOC"></a>What is Trams Sync Web Service?</h2>
+            <p>When you set up your primary database to be synced with multiple locations, you choose how the sync files are communicated between locations. You may setup the synchronization files to be communicated as save to file or Web Services. After an Initial Sync Out/Sync In, you can use Windows Task Scheduler to automatically update both the primary and branch locations’ databases. </p>
+            <p>For this reason and preferably, an alternative way to communicate the sync files between locations is via the <span class="span_4">Trams</span><span> Sync Web Service</span> which acts as an intelligent automatic "Post Office". After a relatively easy initial setup of your primary and branch databases’ sync files on the <span class="span_4">Trams</span> Sync Web Service, the Web Service actually checks to see what is needed in the next update for each location, be it Sync In or Sync Out files, and pulls the precise file that each location needs without any hands-on. To find out more about the <span class="span_4">Trams</span> Sync Web Service, e-mail <span>Trams.Billing@sabre.com</span>. After you have signed up, <span>a </span><span class="span_4">Trams</span><span> Implementation Specialist will guide you through the initial setup and scheduled routines. Please wait for their call, as this process can be complicated without their guidance.</span></p>
+            <p>Please refer to the chapter <span class="span_4">Synchronize the Primary Database with a Trams Hosted Copy</span> for complete setup details.</p>
+            <h2><a name="How_Synchronization_Works" data-mc-generated-bookmark="TOC"></a>How Synchronization Works </h2>
+            <p>If you choose to set up your sync routine by syncing to a file, follow directions in this section. All information connected to Profiles, Activities, Res Cards and Invoices can be synchronized between the primary location’s database and multiple locations’ databases. To start the process, an "Initial Sync Out" is performed from the primary database and an "Initial Sync In" is performed at each of the other locations. This process is not automatic. </p>
+            <p>As the databases are used and changed, on-going "Sync Out" files are created by all locations and automatically sent to the primary database location. The primary location handles these changes by automatically doing a "Sync In" from each location to update the primary database. It then does an automatic "Sync Out" of this updated database to the other database locations. These locations then automatically do a "Sync In" and have the updates from all the locations.</p>
+            <p>The sync files created by the <span class="span_4">ClientBase</span> on-going synchronization process are quite small as they only include the records within the given profiles that have been added or changed. This on-going "Sync Out" and "Sync In" process can be performed manually (not suggested) or automatically (<span>preferred</span>) by using the Windows Task Scheduler. </p>
+            <p>In this section we cover the steps you need to set up and maintain synchronization:</p>
+            <p>1) Preparing Your Primary Database for Synchronization </p>
+            <p>2) Schedule an Appointment for One-Time Setup Process</p>
+            <p>3) Summary of Synchronization Process for Multiple Locations</p>
+            <p>4) Running the Initial Sync Out and Initial Sync In Routines</p>
+            <p>5) Create a Routine for On-going Synchronization including creating a Scheduled Task to Automate the On-going Sync Out and Sync In</p>
+            <p>6) Handling Issues Sent to the Unresolved Log</p>
+            <p>7) Synchronization FAQ’s</p>
+            <p><a name="kanchor319"></a><span class="span_6">Preparing Primary Database for </span><span class="span_6">Synchronization</span>
+            </p>
+            <p>The Primary database is where the synchronization process begins and is used to create the copy for your remote locations. Please take the following steps in your Primary database <span>BEFORE</span> you begin the Initial Synchronization process:</p>
+            <table>
+                <col style="width: 4pt;" />
+                <col style="width: 536pt;" />
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p class="p_2">If you currently have more than one database because of remote access challenges, you must consolidate those databases into one Primary database (the one used by Trams Back Office if you use that program) in order to establish the synchronization process. Please contact our Trams support desk for assistance with this at Trams.Sync@sabre.com, as they can review the tools we have that can assist you with this, including our ASCII Export/Import, and our XML Export/Import utilities.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p><span class="span_4">If you are new to ClientBase, you must first install the ClientBase program in your Primary location and set up the database to reflect the profiles, user logins and defaults that you would like to start each location off with. If you already have ClientBase installed, you must be on version </span><span class="span_4">3.05</span><span class="span_4"> or higher, and if you are a Trams Back Office subscriber, you must be on Trams Back Office version </span><span class="span_4">2.9.4</span><span class="span_4"> or higher.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p class="p_2">You need to obtain a separate and unique Serial # and Access Code for your Sync Copy databases, in addition to the Serial # and Access Code for your Primary database. Please contact our marketing department at Trams.Billing@sabre.com for this information if you do not already have them.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p><span class="span_4">Perform a </span><span class="span_4">backup</span><span class="span_4"> of your primary database prior to running your Initial Sync Out. Archive this backup in case it is ever needed in the future. </span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <p class="p_2">• </p>
+                        </td>
+                        <td class="td_1">
+                            <p><span class="span_4">Verify if your database is encrypted by going to </span><span class="span_4">Help|About. </span><span class="span_4">If you want an encrypted database, you will need to encrypt before the initial sync out. Implementation can assist you with this.</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2><a name="Schedule_an_Appointment_for_One-Time_Setup_Process_..2" data-mc-generated-bookmark="TOC"></a><a name="kanchor320"></a>Schedule an Appointment for One-Time Setup Process</h2>
+            <p>Once you have completed the steps above and prepared for synchronization, e-mail the following details so that we can schedule an appointment to walk you through the one-time setup process. All details below must be provided to <span>Trams.Implementation@sabre.com</span> in order to begin a setup appointment (they will be calling you as well to get these details and set up appointment). </p>
+            <p class="p_4">Agency Name:</p>
+            <p class="p_4">Agency City, State:</p>
+            <p class="p_4">Agency Contact:</p>
+            <p class="p_4">Phone:</p>
+            <p class="p_4">E-mail:</p>
+            <p><span class="span_7">ClientBase</span><span class="span_8"> Version:</span>
+            </p>
+            <p><span class="span_7">Trams Back Office</span><span class="span_8"> Version:</span>
+            </p>
+            <p><span class="span_7">ClientBase</span><span class="span_8"> Serial #:</span>
+            </p>
+            <p class="p_4">Windows Login and Password for the designated Sync Out computer:</p>
+            <p class="p_4">Date of Last Backup:</p>
+            <h2><a name="Summary_of_Synch_Process_for_Remote_Locations" data-mc-generated-bookmark="TOC"></a><a name="kanchor321"></a>Summary of Synch Process for Remote Locations</h2>
+            <table>
+                <col style="width: 4pt;" />
+                <col style="width: 536pt;" />
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p class="p_2">ClientBase designates the PRIMARY database location as the location where Trams Back Office is being maintained. The other database locations are designated as the SYNC COPY database locations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p class="p_2">The PRIMARY database location needs to install ClientBase and set up the database to reflect the profiles, branch info, user logins and defaults that they would like to start each location off with.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p class="p_2">The SYNC COPY database locations need to install ClientBase and make no changes to the Trams.ib (in older versions, Trams.gdb), which is the blank database, as this is overwritten when synchronization is first established via the Initial Sync In.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p><span class="span_4">All locations must install and be on the same ClientBase version </span><span class="span_4">3.05</span><span class="span_4"> or higher, and if you are a Trams Back Office subscriber you must install Trams Back Officer version </span><span class="span_4">2.9.4</span><span class="span_4"> or higher.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p class="p_2">Only the PRIMARY database location performs a one-time Initial Sync Out routine to create a specialized sync .tis file which thereafter allows synchronization. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p_2">• </p>
+                        </td>
+                        <td>
+                            <p class="p_2">As part of the Initial Sync Out routine, run only by the PRIMARY database location, a special "copy" of the PRIMARY database is created which is flagged as a synchronization database.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <p class="p_2">• </p>
+                        </td>
+                        <td class="td_1">
+                            <p class="p_2">The .tis file is provided to the SYNC COPY database locations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <p class="p_2">• </p>
+                        </td>
+                        <td class="td_1">
+                            <p class="p_2">Once the initial synchronization process is completed, on-going synchronization commences on some type of systematic routine, either daily or weekly, by use of the Sync Out and Sync In routines by the PRIMARY and SYNC COPY locations. These routines can either be performed manually (not suggested) OR automatically (preferred) by setting up a Sync Out/In Task, and by use of the Windows Task Scheduler.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2><a name="Running_the_Initial_Sync_Out_&amp;_Sync_In" data-mc-generated-bookmark="TOC"></a>Running the Initial Sync Out &amp; Sync In</h2>
+            <p>Once you have prepared your database for synchronization, you need to perform a one-time initial Sync Out from the <span class="span_4">PRIMARY</span> database and Sync In for each <span class="span_4">BRANCH (SYNC) </span>location.</p>
+            <h3><a name="Initial_Sync_Out" data-mc-generated-bookmark="TOC"></a>Initial Sync Out</h3>
+            <p><span class="span_4">ClientBase</span> designates the <span class="span_4">PRIMARY</span> database location as the location where <span class="span_4">Trams Back Office</span> is being maintained. The <span class="span_4">PRIMARY </span>location needs to install <span class="span_4">ClientBase</span> (version <span>3.05</span> or above and TBO <span class="span_4">2.9.4</span> or above) before commencing the synchronization process. Only the <span class="span_4">PRIMARY </span>location performs a one-time <span class="span_4">Initial Sync Out </span>routine which creates a specialized sync .tis (<span class="span_4">Trams</span> Initial Sync) file which thereafter allows synchronization. As part of the <span class="span_4">Initial Sync Out </span>routine, a "copy" of the <span class="span_4">PRIMARY</span> database is created within a .tis file. This .tis file, which is used in the <span class="span_4">Initial Sync In</span> process by the <span class="span_4">SYNC COPY </span>database locations, is sent or carried to the <span class="span_4">SYNC COPY </span>locations.</p>
+            <h3><a name="Steps_for_Performing_Initial_Sync_Out" data-mc-generated-bookmark="TOC"></a>Steps for Performing Initial Sync Out</h3>
+            <p><span>Step 1)</span> <span>Only the </span><span class="span_4">PRIMARY</span><span> database location performs an </span><span class="span_4">Initial Sync Out</span> (preferably on the Server)<span>.</span> To launch the <span class="span_4">ClientBase</span> Synchronization Utility Wizard, go to <span>Start|Programs|Run </span>and browse for <span class="span_4">C:\Program Files\Trams\CBPlus\cbpsync.exe</span> and click <span class="span_4">OK</span>, or click the shortcut you created on your desktop. </p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location.jpg" style="height: 333px;width: 421px;" class="img_1" />
+            </p>
+            <p>Fill in the following fields:</p>
+            <p><span>Alias:</span> From the drop down menu, choose the <span class="span_4">PRIMARY</span> location database alias.</p>
+            <p><span>Path: </span>Once the <span class="span_4">Alias </span>is selected, <span class="span_4">ClientBase</span> automatically maps to the correct path of the database.</p>
+            <p><span>User Name:</span> The SYSDBA is automatically chosen as the User Name.</p>
+            <p><span>Password:</span> Enter the password for the SYSDBA.</p>
+            <p><span>Step 2) Click </span><span class="span_4">Sync Activate</span><span>. </span>
+            </p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_1.jpg" style="height: 371px;width: 422px;" class="img_1" />
+            </p>
+            <p>A unique database name needs to be assigned to each database that takes part in the synchronization process. The reason unique names are required is so that you are able to identify which databases you are synchronizing. Use a naming technique that quite clearly identifies each database location. For example, "Primary Database" or "Newberry Office" etc. </p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_2.jpg" style="height: 514px;width: 547px;" class="img_1" />
+            </p>
+            <p>Click <span class="span_4">Next </span>to continue.</p>
+            <p><span>Important Note: </span>You have the choice of doing a Sync Activate and Initial Sync Out all at one time. If your database is smaller, perform the <span class="span_4">Sync Activate</span> and <span class="span_4">Initial Sync Out</span> at the same time by checking <span class="span_4">I would also like to setup an Initial Sync Out to be performed automatically after the Sync Activation has success completed</span>, but this can ONLY be done with <span>users logged out of the Primary Database</span>. For a larger database, do not check off this option and do a Sync Activation only before or after office hours. </p>
+            <p><span>If you are Sync Activating your database first, a summary screen appears and the activation begins. </span>Once enabled, a dialogue box appears, <span class="span_4">Done. </span>Come back into the sync utility to set up your <span class="span_4">Initial Sync Out, </span>by clicking on this menu item and following directions starting with Step 3). </p>
+            <p><span>If you are activating and performing an Initial Sync Out all at once, click </span><span class="span_4">Next </span><span>to continue to set up your Initial Sync Out.</span>
+            </p>
+            <p><span>Step 3) Assign a unique name to the database you are running the Initial Sync Out for.</span> </p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_3.jpg" style="height: 485px;width: 371px;" class="img_1" />
+            </p>
+            <p>Make sure the name you choose is unique to all other databases you will be synchronizing with. Use something simple that will be easy to identify. For example, "Dallas Branch" or "Sync Copy" or "Copy Dallas" etc. Don’t want credit card information to be sent? Check off <span class="span_4">Do not allow credit card information to be sent or stored on this database. </span></p>
+            <p>If you want to put the .tis file in a different directory, choose an appropriate directory by clicking on the three dots next to the <span class="span_4">Initial Synch Out File Name </span>field. By default when you type the <span class="span_4">Destination Database Name, </span>the file is created and stored in <span>C:\Documents and Settings\Your Login\MyDocuments\ </span>if you do not identify one. Please note that the <span class="span_4">Initial Sync Out </span>file contains almost your entire database (no General Ledger info), so the file it creates may be too large to e-mail. You could post the file on a Web area for download (contact <span class="span_4">Trams</span> if you need help with this), or carry it to the SYNC COPY database location by means of a flash drive, zip drive, etc. Also please insure you have sufficient disk space to create the file.</p>
+            <p><span>Add Another Database:</span> Proceed for each database location to fill in the <span class="span_4">Destination Database Name, </span>and<span class="span_4"> Credit Card Data Allowed. </span>Click <span class="span_4">Next</span> to continue.</p>
+            <p class="p_5">Step 4) Select a Sync Out File Delivery Method. </p>
+            <p>The Synchronization Utility is about to create a file with a .tis file extension, which stands for <span class="span_4">Trams</span> Initial <span class="span_4">S</span>ync. Select a delivery method for this file from the drop-down menu - <span class="span_4">Web Service</span><span class="span_4"> and</span><span class="span_4"> S</span><span class="span_4">end</span><span class="span_4"> to Fil</span><span class="span_4">e.</span></p>
+            <p><span>Note: </span>If you have signed up to use <span class="span_4">Trams</span><span> Web Service</span>, this service will be used for the ongoing sync files and is the default setting. See chapter, <span class="span_4">Synchronize the Primary Database with a Trams Hosted Copy </span>for complete setup instructions.</p>
+            <p class="p_6">DELIVERY METHODS:</p>
+            <p><span>Web Service</span> - See chapter, Synchronize the Primary Database with a <span class="span_4">Trams</span> Hosted Copy for complete setup instructions.</p>
+            <p class="p_7">Save to File</p>
+            <p>If you select <span class="span_4">Save to File, </span>the file will be created and be found in the path you have select for the <span class="span_4">Destination Database Name. </span>Click <span class="span_4">Next</span> to continue to the <span class="span_4">Summary Screen</span>. </p>
+            <p><span>Step 5) Review your selections on a summary screen. </span>If correct, click <span class="span_4">Finish</span> for <span class="span_4">ClientBase</span> to start the Initial Sync Out process. Click <span class="span_4">Finish.</span> </p>
+            <p>A progress bar appears during the activation process of the Initial Sync Out to better demonstrate how far the sync process is at any given point. You can <span class="span_4">Cancel </span>the Initial Sync Out processing once the sync activation process begins. A cancel button appears while the Initial Sync out takes place which can be selected if you decide the Initial Sync Out is taking longer than expected, and you would prefer doing at another time. If the process is cancelled during the exporting of the sync data, the file is not created, but the destination database should be removed from the Remote Database tab within the sync utility before starting the Initial Sync Out again.</p>
+            <p>There is an exclusive lock during the Initial Sync Out so InterBase Logins are detected and therefore minimizes the chance of someone connecting to the database during the Initial Sync Out process when they should not. Depending on the size of your database, this may take some time (approximately 1 1/2 times as along as a backup takes). You receive a message when this has been completed:</p>
+            <p><span>Step 7) Next, provide the new .tis file you created to the each </span><span class="span_4">SYNC COPY</span><span> database location.</span> This can be done depending on its size by carrying it to the <span class="span_4">SYNC COPY</span> database location by means of a flash or .zip drive, etc. or via an online storage site.</p>
+            <h3><a name="Initial_Sync_In" data-mc-generated-bookmark="TOC"></a>Initial Sync In</h3>
+            <p>Each SYNC COPY database location needs to install <span class="span_4">ClientBase</span> and make <span>no</span> <span>changes </span>to the <span class="span_4">Trams.ib (.gdb </span>in older installations) which is the blank database, as this is overwritten when performing <span class="span_4">Initial Sync In</span>. (Best to go to <span>Start|Programs|</span><span class="span_4">Trams</span><span>|Alias Utility</span> and rename the <span class="span_4">Trams</span> alias to<span class="span_4"> Trams.old). </span>Only the SYNC COPY database locations need to perform this one-time routine. </p>
+            <h3><a name="Steps_for_Performing_Initial_Sync_In" data-mc-generated-bookmark="TOC"></a>Steps for Performing Initial Sync In</h3>
+            <p><span>Step 1) Access the </span><span class="span_4">ClientBase</span><span> Synchronization wizard and fill out </span><span class="span_4">ClientBase</span><span> Login Parameters. </span>Go to <span>Start|Programs|Run </span>and browse for C:\Program Files\<span class="span_4">Trams</span>\CBPlus\cbpsync.exe and click <span class="span_4">OK</span>. </p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location.jpg" style="height: 333px;width: 421px;" class="img_1" />
+            </p>
+            <p>Fill in the following fields:</p>
+            <p><span>Alias:</span> From the drop down menu, choose the <span class="span_4">PRIMARY</span> location database alias.</p>
+            <p><span>Path: </span>Once the <span class="span_4">Alias </span>is selected, <span class="span_4">ClientBase</span> automatically maps to the correct path of the database.</p>
+            <p><span>User Name:</span> The SYSDBA is automatically chosen as the User Name.</p>
+            <p><span>Password:</span> Enter the password for the SYSDBA.</p>
+            <p>Click <span class="span_4">Initial Sync In</span> to continue.</p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_4.jpg" style="height: 329px;width: 354px;" class="img_1" />
+            </p>
+            <p><span>Step 2) Browse for the Initial Sync In File (.tis) created from the PRIMARY database location and provided to you. </span>Click on the three dots to find the file. Next enter your Branch’s unique <span class="span_4">ClientBase Serial Number</span> and <span class="span_4">Access Code</span>. <span>WARNING: </span>You need to obtain a separate and unique Serial # and Access Code for your <span class="span_4">Sync Copy</span> database, which is different from the Serial # and Access Code of your <span class="span_4">Primary</span> branch. Contact your <span class="span_4">Primary </span>branch to obtain these unique numbers, if you do not already have them.</p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_5.jpg" style="height: 286px;width: 348px;" class="img_1" />
+            </p>
+            <p>Click <span class="span_4">Next</span> to continue.</p>
+            <p><span>Step 3) Review your selections on a summary screen. </span>If correct, click <span class="span_4">Finish</span> for the <span class="span_4">Initial Sync In </span>wizard to start automatically restoring the "copy" of the <span class="span_4">PRIMARY </span>database: </p>
+            <p>Click <span class="span_4">Finish.</span> A dialog box <span class="span_4">Done</span> appears and now both databases contain the same data.</p>
+            <h2><a name="Creating_a_Routine_for_On-Going_Sync" data-mc-generated-bookmark="TOC"></a>Creating a Routine for On-Going Sync</h2>
+            <p>Once the PRIMARY database location has performed the one-time <span class="span_4">Initial Sync Out,</span> and the SYNC COPY database locations have each performed the one-time <span class="span_4">Initial Sync In</span>, on-going sychronization can begin. You may want to set up a systematic (daily or weekly) procedure of syncing out AND syncing in for each location. Changes made to either your primary <span class="span_4">ClientBase</span> database or the sync copy need to be passed back and forth via an on-going synchronization routine. The SYNC COPY databases need to send their changes for synchronization to the PRIMARY database by performing a <span class="span_4">Sync Out </span>which creates a .tsf file (<span class="span_4">Trams</span> Sync File) that is used by the <span class="span_4">Sync In </span>process at the PRIMARY location. Once received, the PRIMARY location <span class="span_4">Syncs In</span> the .tsf files received from the SYNCH COPY databases and sends one file to each of the SYNC COPY locations. This can be done manually (<span>NOT SUGGESTED</span>) or automatically (recommended) following the instructions that follow later in this section.</p>
+            <p><span>Important Note: </span>If you plan to use the <span class="span_4">ClientBase</span> Res Card invoicing feature, some set up needs to be done within the PRIMARY database before beginning the on-going sync routine. A unique starting invoice number series for each Branch record needs to be created. This is because the invoice numbers issued through the <span class="span_4">ClientBase</span> Res Card increment by one each time an invoice is issued, and to avoid duplicate invoice numbers, which the database does not allow, a unique series needs to be established in both the <span class="span_4">Primary Database</span> and the <span class="span_4">Sync Copy Databases</span>. (Invoice numbers cannot overlap the GDS and TBO invoice numbers.) Go to the <span>Utilities|Branch</span> and retrieve each Branch Record you plan to use. Within the General Branch Info tab, enter a unique <span class="span_4">Next Sales Invoice No</span> and a unique <span class="span_4">Next Refund Invoice No</span>. This needs to be done in both the <span class="span_4">Primary Database</span> and the <span class="span_4">Sync Copy</span> databases and different starting numbers should be used in each. </p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_6.jpg" style="height: 378px;width: 581px;" class="img_1" />
+            </p>
+            <h3><a name="Steps_for_Performing_Routine_Sync_Out" data-mc-generated-bookmark="TOC"></a>Steps for Performing Routine Sync Out</h3>
+            <p>If you want to perform a manual (<span>this is not recommended</span>), systematic (daily or weekly) procedure of syncing out and syncing in for each location, follow these guidelines.</p>
+            <p><span>1) Access the </span><span class="span_4">ClientBase</span><span> Synchronization Utility. </span>From each location go to <span>Start|Programs|Run </span>and browse for C:\Program Files\<span class="span_4">Trams</span>\CBPlus\cbpsync.exe and click <span class="span_4">OK</span>. Complete these fields:</p>
+            <p><span>Alias:</span> From the drop down menu, choose the database alias.</p>
+            <p><span>Path: </span>Once the <span class="span_4">Alias </span>is selected, <span class="span_4">ClientBase</span> automatically maps to the correct path of the database.</p>
+            <p><span>User Name:</span> The SYSDBA is automatically chosen as the User Name.</p>
+            <p><span>Password:</span> Input the password for the SYSDBA.</p>
+            <p>Click <span>Sync Out.</span> </p>
+            <p>The wizard defaults to the location for which you are creating the Sync Out file. If you are the PRIMARY location, it’ll give you a listing of all SYNC COPY locations. (You need to do this for each of the locations after you have Sync’d In their changes.) If you are one of the SYNC COPY locations, the wizard defaults to the PRIMARY location. Click <span class="span_4">Next</span> to continue. </p>
+            <p><span>2) Select a Sync Out Delivery Method.</span> <span class="span_4">ClientBase</span> creates a file with a .tsf extension (<span class="span_4">Trams</span> Sync file). Select a delivery method for this file from the drop-down menu. If you want to put this file in a particular directory, select <span class="span_4">Save to File </span>and choose an appropriate directory by clicking on the three dots next to the <span class="span_4">Sync Out File Name </span>field. By default the file is created and stored in <span>C:\Documents and Settings\Your Login\MyDocuments\ </span>. You may also select <span class="span_4">Web Service </span>as a delivery method. </p>
+            <p><span class="span_4">Trams</span> Products and Services offers its Web Service as a service for agencies that want to automate their Sync Out/In routines, by passing the sync files through a web utility hosted by <span class="span_4">Trams</span> that manages the communication and the files between both the primary and the copy database for more seamless processing. See chapter <span class="span_4">Synchronize the Primary Database with a Trams Hosted Copy</span> for complete setup details for this option.</p>
+            <p>Select also the <span>Sync Out Options</span> which include:</p>
+            <p><span>Start after last known exported Sync Change Log Data: </span>This is the default and with this option, the Sync Utility starts the sync data where it left off the last time a Sync Out was performed. This should be the option you select unless you need to re-generate a sync file.</p>
+            <ul class="ul_1">
+                <li class="ListParagraph_1" value="1"><span>Start at Sync Change Log number: </span>Input your own start log number to re-generate a sync file. </li>
+                <li class="ListParagraph_1" value="2"><span>Start on Sync Change Log entries made on: </span>Select a date from the calendar by clicking on the drop-down menu re-generate a sync file. </li>
+            </ul>
+            <p>Click <span class="span_4">Next </span>to continue.</p>
+            <p><span>Step 3) Review selections on the summary screen and click </span><span class="span_4">Finish </span><span>to continue.</span> </p>
+            <h3><a name="Steps_for_Performing_Routine_Sync_In" data-mc-generated-bookmark="TOC"></a>Steps for Performing Routine Sync In</h3>
+            <p>After you receive the .tsf file from either the PRIMARY database location or from the SYNC COPY database locations, you need to save the file to a local drive accessible to the machine from which you run your Synchronization utility. Here is how to proceed to synchronize it with your own database.</p>
+            <p><span>1) Access the </span><span class="span_4">ClientBase</span><span> Synchronization Utility.</span> Go to <span>Start|Programs|Run</span> and browse for <span>C:\Program Files\</span><span class="span_4">Trams</span><span>\CBPlus\cbpsync.exe</span> and click <span class="span_4">OK</span>, or click on the shortcut you created on your desktop. Complete the following fields:</p>
+            <p><span>Alias:</span> From the drop down menu, choose your database alias.</p>
+            <p><span>Path: </span>Once the <span class="span_4">Alias </span>is selected, <span class="span_4">ClientBase</span> automatically maps to the correct path of the database.</p>
+            <p><span>User Name:</span> The SYSDBA is automatically chosen as the User Name.</p>
+            <p><span>Password:</span> Input the password for the SYSDBA. Click <span>Sync In</span><span class="span_4">. </span></p>
+            <p><span>2) Select the file and Sync In Method you want to process for synchronization.</span> This is the .tsf (<span class="span_4">Trams</span> Sync file) that was sent to you from the other database location/s. Click on the 3 dots next to the <span class="span_4">Sync In File Name </span>field to locate this file. (If you choose Web Services, fill out the Web Services settings before continuing.) Click <span class="span_4">Next </span>to continue.</p>
+            <p>Select the following <span class="span_4">After Sync In Options: </span></p>
+            <p><span class="span_4">Do Nothing</span> (default), <span class="span_4">Delete</span> (*.tsf file after sync in); <span class="span_4">Rename</span> .*tsf file (after sync in - enter new file extension), or <span class="span_4">Move</span> (*tsf file after sync in - enter New location). Click <span class="span_4">Next</span> to continue. </p>
+            <p><span>3) Review selections on the summary screen and click </span><span class="span_4">Finish </span><span>to continue.</span>
+            </p>
+            <h3><a name="Creating_a_Scheduled_Task_to_Automate_the_On-going_Sync_In_and_Sync_Out" data-mc-generated-bookmark="TOC"></a><a name="kanchor322"></a>Creating a Scheduled Task to Automate the On-going Sync In and Sync Out </h3>
+            <p>Rather than remembering to run the Sync Out and Sync In utility on a regular basis as outlined above, the <span class="span_4">Schedule Task</span> feature "remembers" to run it for you, as long as the computer you have created the tasks on is running at the time the task is scheduled for. Below are the steps for creating, scheduling, and maintaining tasks for your <span class="span_4">Sync Out</span>, and <span class="span_4">Sync In</span> routines. <span>Important: </span>Remember, these steps need to be taken in both the primary and copy locations for both <span class="span_4">Sync Out</span> and <span class="span_4">Sync In</span> in order to fully automate your synchronization processing.</p>
+            <p class="p_8">Creating a Task for the Sync Out Process</p>
+            <p><span>1)</span> <span>Run the cbpsync.exe and enter your Alias and SYSDBA login information.</span></p>
+            <p><span>2)</span> <span>Select the </span><span class="span_4">Scheduled Tasks</span><span> button. </span></p>
+            <p>Enter the following settings necessary to run the <span class="span_4">Sync Out</span> routine. By default the Task Name, Application Name and ClientBase Database is defaulted. </p>
+            <p class="p_5">
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_7.jpg" style="height: 263px;width: 349px;" class="img_1" />
+            </p>
+            <p><span>Operation:</span> Click the drop-down and select <span class="span_4">Sync Out, </span>Sync In, or if you are using the Sync Web Service, select <span class="span_4">Sync In &amp; Out via Web Service </span>(see chapter, <span class="span_4">Synchronize the Primary Database with a Trams Hosted Copy </span>for complete setup instructions).</p>
+            <p><span>Sync Out File Delivery Method:</span> Options for delivering the file include <span class="span_4">Save to File </span>or<span class="span_4"> Web Service</span>. </p>
+            <p><span>Please Note:</span> When manually running a Sync Out via our synchronization utility, upon completion of the Sync Out, the change log number displayed in the <span class="span_4">Last Known Exported Sync Change Log Data</span> field is updated automatically. </p>
+            <p class="p_5">Step 3) Select Sync Out Start Settings.</p>
+            <p class="p_5">
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_8.jpg" style="height: 320px;width: 378px;" class="img_1" />
+            </p>
+            <p><span>Sync Out Start Setting:</span> Determines where the <span class="span_4">Sync Out</span> routine should start the changes from. Leave this setting to the default setting of <span class="span_4">Start after last known exported Sync Change Log Data</span>, which the task should normally start with. This can be overwritten with a <span class="span_4">Log number</span> or <span class="span_4">date</span>.</p>
+            <p><span>Sync Out File Name:</span> Determines the name given to the Sync Out file. We recommend using the <span class="span_4">Create Date, Time</span>, and <span class="span_4">Sync Out Log No</span>. This means the file name varies each time it runs. You can also use just the <span class="span_4">Sync Log Number</span>, or a static file name. If a static file name is used, then each time the Sync Out routine runs, the previous file is overwritten by the new file. </p>
+            <p>Click <span class="span_4">Next </span>to continue.</p>
+            <p class="p_5">Step 4) Select Time for Sync Out to Start:</p>
+            <p class="p_5">
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_9.jpg" style="height: 388px;width: 406px;" class="img_1" />
+            </p>
+            <p>These settings allows you to set a regular routine for your Sync Outs. Click <span class="span_4">Next </span>to continue.</p>
+            <p class="p_5">Step 5) Enter User Password Settings.</p>
+            <p>For the computer which will be doing the Sync Out, enter the User Name and Password and click <span class="span_4">Next </span>to continue.</p>
+            <p>A summary of the scheduled task is displayed. For more advanced settings, click <span class="span_4">Advanced. </span></p>
+            <p>Click <span class="span_4">Finish.</span></p>
+            <h3><a name="Creating_a_Task_for_the_Sync_In_Process" data-mc-generated-bookmark="TOC"></a>Creating a Task for the Sync In Process</h3>
+            <p class="p_5">1) Run the cbpsync.exe and enter your Alias and SYSDBA login information.</p>
+            <p><span>2) Select </span><span class="span_4">Scheduled Tasks</span><span>. </span>(If one task has already been added, click <span class="span_4">Add Task.)</span></p>
+            <p><span>3) Fill in the following settings:</span> </p>
+            <p><span>Operation:</span> Click the drop-down and select <span class="span_4">Sync In, </span>or if you are using the Sync Web Service, select <span class="span_4">Sync In &amp; Out via Web Service </span>(see instructions below for further steps on using the Sync Web Service and set up the Sync In &amp; Out routine all at the same time).</p>
+            <p><span>Sync In File (Delivery Method):</span> </p>
+            <p>Select Single Save to <span class="span_4">File</span><span class="span_4"> or </span> <span class="span_4">Web Service (</span>See chapter, <span class="span_4">Synchronize the Primary Database with a Trams Hosted Copy </span>for complete setup instructions).</p>
+            <p>If you have selected <span class="span_4">File </span>or <span class="span_4">Files in Directory </span>as the delivery method, specify by clicking on the three dots, the location of the .tsf file or directory in which the .tsf files are located. Click <span class="span_4">Next</span> to continue.</p>
+            <p class="p_5">Step 3) Select Sync In Options after TSF is Processed.</p>
+            <p><span class="span_4">Do Nothing </span>is the default. If you want to rename the file extension, delete the file after syncing, or move the file (and select a new location), check the appropriate box. Click <span class="span_4">Next </span>to continue.</p>
+            <p class="p_5">Step 5) Select Time for Sync In to Start:</p>
+            <p>These settings allow you to set a regular routine for your Sync Ins. Click <span class="span_4">Next </span>to continue.</p>
+            <p class="p_5">Step 6) Enter User Password Settings.</p>
+            <p>For the computer which will be doing the Sync In, enter the User Name and Password and click <span class="span_4">Next </span>to continue.</p>
+            <p>A summary of the scheduled task is displayed. For more advanced settings, click <span class="span_4">Advanced. </span>Click <span class="span_4">Finish.</span></p>
+            <h3><a name="Creating_a_Task_for_Sync_In_Out_via_Web_Service" data-mc-generated-bookmark="TOC"></a>Creating a Task for Sync In/Out via Web Service </h3>
+            <p>See chapter, <span class="span_4">Synchronize the Primary Database with a Trams Hosted Copy </span>for complete setup instructions.</p>
+            <h3><a name="Maintain_Your_Scheduled_Tasks" data-mc-generated-bookmark="TOC"></a>Maintain Your Scheduled Tasks</h3>
+            <p>The Task List tab of your Task Scheduler includes a listing of all scheduled sync tasks along with the <span class="span_4">Status, the Next Run Time, </span>and<span class="span_4"> the Last Run Time</span>. Please keep in mind that although you can run the sync utility from any computer on your network, scheduled tasks are created on a particular computer. So although you only create your scheduled tasks from one computer (you do not need to run sync from every computer) the scheduled task listed on this screen will only include tasks created on this computer.</p>
+            <p>Although your sync program runs automatically once you've scheduled your tasks, you want to develop a routine to periodically view the Task List and the Last Run Time to verify your sync processing is current. If your automated sync gets interrupted, the error causing the failure is logged in your Windows Event Viewer. To view the details of the error, go to <span>Start|Control Panel|Administrative Tools|Event Viewer</span>. An entry is placed into the Event Log each time a task is run and provides an information icon that displays whether the task ran successfully or if there was an error. The Event Viewer tracks everything related to Windows, so first select <span class="span_4">Application</span>, then click the column <span class="span_4">SOURCE</span> to sort by application source and look for any errors where the application is <span class="span_4">CBPSYNC</span>. Double-click the error to view the description and details of the error. Contact our support desk for assistance on how to rectify the error.</p>
+            <h3><a name="Recommended_Routine_for_Verifying_Your_Sync_Tasks_are_Running_Successfully" data-mc-generated-bookmark="TOC"></a><a name="kanchor323"></a>Recommended Routine for Verifying Your Sync Tasks are Running Successfully</h3>
+            <p><span>1) </span>In all locations, use <span class="span_4">ClientBase</span> to create a Reminder with an Alarm to remind you Daily, Weekly or Monthly (depending on how frequent your sync tasks are scheduled) to verify the Sync Out and Sync In routines are current.</p>
+            <p><span>2) </span>Use one of the following to view the last sync dates:</p>
+            <p>From within <span class="span_4">ClientBase</span>, go to Help/About and view the Last Sync In and Last Sync Out dates. Verify they are current based on your task scheduler frequency.</p>
+            <p>From the CBPSync.exe, go to the Schedule Task feature and from the View Task list verify the Last Run Time is current based on your task scheduler frequency.</p>
+            <p><span>3) </span>Use the Windows Event View to locate specifics on any errors if the Sync In or Sync Out routines become out-of-date.</p>
+            <h2><a name="Handling_Issues_Sent_to_the_SyncInfo_Log_..3" data-mc-generated-bookmark="TOC"></a><a name="kanchor324"></a>Handling Issues Sent to the SyncInfo Log</h2>
+            <p>After synchronization has occurred, any data that could not be updated is put in a <span class="span_4">ClientBase Sync Unresolved Log</span> file. Each time synchronization occurs, data contained in this log is reprocessed. Select <span class="span_4">View Unresolved Log. </span>To access this log to print out, access the <span class="span_4">ClientBase</span> Synchronization Utility by going to <span>Start|Programs|Run </span>and browse for C:\Program Files\<span class="span_4">Trams</span>\CBPlus\cbpsync.exe and click <span class="span_4">OK</span>. <span>Note: </span>A quick way to see if items are contained on the Unresolved Log is to click <span>Help|About</span>|<span>Sync Tab</span> in <span class="span_4">ClientBase</span>. This will tell you if you have any unresolved items.</p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_10.jpg" style="height: 480px;width: 371px;" class="img_1" />
+            </p>
+            <p>Select <span class="span_4">View Unresolved Log.</span></p>
+            <p class="p_2">
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_11.jpg" style="height: 246px;width: 454px;" class="img_1" />
+            </p>
+            <p>&#160;</p>
+            <p><span>Warning: </span>The first time you see anything on this log, please make sure to email <a href="mailto:Trams.sync@sabre.com"><span class="Hyperlink">Trams.sync@sabre.com</span></a> to get guidance on how to clean up your log. Someone will call you and lead you through the process of cleaning up your log.</p>
+            <p><span>Summarize:</span> Summarizes the highlighted record the synchronization utility has not been able to process.</p>
+            <p><span>Summarize All:</span> Summarizes all records the synchronization utility has not been able to process.</p>
+            <p><span>Clean Up:</span> First tries to process any unresolved records and then prompts you for the option of deleting those unresolved records.</p>
+            <p><span>Process Unresolveds:</span> Attempts to process any records that previously synchronization was not able to process.</p>
+            <p>Examples of how certain data can end up in the "unresolved log" include:</p>
+            <p>- Trying to <span class="span_4">Sync In</span> profile changes while the profile is actively open and being updated within the database you are syncing into. (The sync utility can be run while users are working in the database.) You can either go to the Unresolved Log and select <span class="span_4">Process Unresolveds</span> to reprocess that profile’s changes, or you can wait until your next <span class="span_4">Sync In</span>, as each time you <span class="span_4">Sync In</span>, the system automatically tries to process any lingering unresolved items.</p>
+            <p>- Someone deletes a profile in one database, and before synchronizing, someone adds an Invoice, Activity or Res Card to that same profile in the other database. The <span class="span_4">Sync In</span> routine at both locations results in unresolved records as the database that has the profile deleted cannot now add the Activity, Res Card or Invoice, and the database that has the new Invoice, Activity or Res Card cannot delete the profile because one of these records now exists. In this scenario you need to completely re-enter the profile and new Activity, Res Card or Invoice as a new profile, so it can now sync over to the database in which it was deleted, and you need to manually delete the old profile and Activity, Res Card or Invoice so there is not a duplicate. These items do not get resolved automatically, so you can use the <span class="span_4">Clean Up</span> feature to delete them out of unresolved.</p>
+            <p>- A duplicate Invoice # is issued by either location. As discussed in the section <span class="span_4">Steps for Preparing Your Primary Database for Synchronization</span>, it is very important that a Branch is setup for each location and that each location assigns this unique Branch number to EVERY Res Card created and invoiced by that location. Otherwise, the "next invoice number" default will be the same in each location and result in a duplicate Invoice number, which the database does not allow. If this happens, upon synchronizing the file in, the invoice with the duplicate invoice # will not get processed and go to the Unresolved log. The only way of addressing this is to change the duplicate invoice number within the Primary Database using <span class="span_4">Trams Back Office</span>. You can then either go to the Unresolved Log and select "Process Unresolves" to reprocess the Invoice, now that there is no duplicate number, or you can wait until your next <span class="span_4">Sync In</span>, as each time you <span class="span_4">Sync In</span> the system automatically tries to process any lingering unresolved items.</p>
+            <p><span>Note: </span>The Sync process includes the purging of old records in the syncchangelog. By default, the scheduled task Sync process now automatically purges 100,000 of the oldest completely processed SYNCCHANGELOG records that are older than 90 days. If you would like to change either of the defaults, modify the CBPSYNC command line parameters with new values: PURGEDAYS: 90 PURGESIZE: 100000</p>
+            <p>For example, if you wanted to change the number of days from 90 to 60, modify the command line parameter to read: "C:\Program Files\<span class="span_4">Trams</span>\CBplus\CBPSync.exe" PURGEDAYS:60 PURGESIZE:100000.</p>
+            <p><a name="kanchor325"></a><span class="span_6">Synchronization Frequently Asked Questions</span>
+            </p>
+            <p class="p_8">What Can Be Done in Primary DB I Can’t Do in the Sync Copies?</p>
+            <p>There are certain settings and routines that must be done from the Primary database and have been disabled within the sync copies for data integrity purposes. Below is a complete listing of what you can <span class="span_4">only do from the Primary database</span>:</p>
+            <ul class="ul_1">
+                <li class="ListParagraph_1" value="1"><span class="span_4">Update all Global Default Settings</span><span class="span_4"> including Default Field Values for Res Card settings.</span>
+                </li>
+                <li class="ListParagraph_2" value="2">Update all Branch Settings in the Utilities Menu (except Invoice/Refund #’s, these must sync out in the sync copy.)</li>
+                <li class="ListParagraph_2" value="3">Use the ASCII Import or XML Import Utility</li>
+                <li class="ListParagraph_2" value="4">Log into Trams Back Office</li>
+            </ul>
+            <p class="p_9">Note: The only thing a sync'd copy can do in the database is create User Logins, Change Branch Info including Invoice/Refund #'s (but not formats), and Enter Access Codes.</p>
+            <p class="p_8">What If I Change Same Profile in Each DB Between Synchronizations?</p>
+            <p>Adding new profiles, activities and Res Cards to each database between synchronizations of course results in the combination of all new records in both databases after synchronization. Adding new records to the same profile (new Communication entries, Family/Contact entries, Cards, Activities, Res Cards etc.) in each database between synchronizations also results in the combination of all new records in that single profile in both databases after synchronization. </p>
+            <p>But, what if the same record within an existing profile (same Communication entry, Family/Contact entry, Card, Activity, Res Card etc.) is updated in each database between synchronization? </p>
+            <p>Updating the same existing record within the same profile (the same phone entry, or card entry, or traveler entry or Activity, etc.) in each database between synchronizations results in only the update that occurred latest in time after the synchronization is performed. For example, if the traveler record for Christine Anderson is updated with a <span class="span_4">Courtesy Title</span> at 9:00 a.m. in the primary database, and the same traveler record for Christine Anderson is updated with a <span class="span_4">Gender</span> at 10:00 a.m. in the sync copy database and synchronization takes place at 11:00 a.m., the result includes a <span class="span_4">Gender</span> but no <span class="span_4">Courtesy Title</span> in Christine Anderson’s family record. </p>
+            <p>A record is defined as any screen that includes an <span class="span_4">OK</span>, <span class="span_4">Cancel</span> or <span class="span_4">Apply</span> button and all the fields included in that screen. To avoid the possible loss of data, we recommend you limit each location to only <span class="span_4">viewing</span> and <span class="span_4">adding</span> records to profiles that are not assigned to its branch. Avoid <span class="span_4">updating</span> records that are part of a profile that is not assigned to your branch. We also recommend synchronizing databases on a frequent, regular schedule. Synchronizing databases on a frequent basis (daily) also minimizes the chances of updating the same record between synchronizations and possibly losing data.</p>
+            <p class="p_8">What Happens If I Delete Record in One DB and Before Synchronizing, Change the Record in Other Database?</p>
+            <p>Deletions win. Regardless of the time stamp on the modifications, once both databases are synchronized the record is deleted. The exception would be in the case of modifying a profile by adding an invoice and then deleting the profile from the other database between synchronizations. </p>
+            <p class="p_8">What Does NOT Synchronize?</p>
+            <p>Workstation Defaults and certain <span class="span_4">Trams Back Office</span> data including Journal Entries and all General Ledger information other than the End of Period “To Date” do NOT synchronize.</p>
+            <p class="p_8">Do Invoices Generated from Res Card in Sync Copy DB Synchronize to the Primary DB?</p>
+            <p>Yes and visa versa. If you plan to use the <span class="span_4">ClientBase</span> Res Card invoicing feature, some setup needs to be done within each database before beginning the on-going sync routine. Each database needs to create a unique starting Invoice number series for each Branch record. This is because the invoice numbers issued through the <span class="span_4">ClientBase</span> Res Card increment by one each time an invoice is issued and to avoid duplicate invoice numbers (which go to unresolved and do not get processed by the synchronization routine), a unique series needs to be established in both the <span class="span_4">Primary Database</span> and the <span class="span_4">Sync Copy Database</span>. This can be done by going to the Utilities menu, selecting the Branch menu and retrieving each Branch Record you plan to use. Within the General Branch Info tab, enter a unique <span class="span_4">Next Sales Invoice No</span> and a unique <span class="span_4">Next Refund Invoice No</span>. This needs to be done in both the <span class="span_4">Primary Database</span> and the <span class="span_4">Sync Copy</span> database and different starting numbers should be used in each.</p>
+            <p class="p_8">What If I Do End of Period in Primary DB, and Before I Sync Out to Branch DB, Someone in Branch Generates Invoice from the Res Card Within Same Closed Period?</p>
+            <p>The branch database knows the last <span class="span_4">End of Period Through</span> date and does not allow Users to issue invoices within that time frame. In this case though, since the End of Period date has not yet synchronized to the branch, the Res Card allows the User to generate the invoice. After synchronizing that file out of the branch and upon synchronizing the file into the main office, the synchronization program detects the invoice within the closed period and stops the synchronization process; therefore, not allowing that sync file to be synchronized until the End of Period is voided in the Primary database. Since the branch database does not have a way of voiding the invoice, even if that is the desired result, you need to void the End of Period in the Primary database, so that you can Sync In the branch sync file. After syncing in the file, you can then void the Invoice using the Primary database, or reissue your End of Period if the invoice belongs.</p>
+            <p class="p_8">Can I Log into TBO From Any DB Other Than Primary DB?</p>
+            <p>As mentioned above, no. You can only connect to the <span class="span_4">Primary Database</span> using the <span class="span_4">Trams Back Office</span> program, as synchronization was designed for <span class="span_4">ClientBase</span> not <span class="span_4">Trams Back Office</span>. </p>
+            <p><span>Important Note: </span>Although you cannot log into your Sync Copy Database with the <span class="span_4">Trams Back Office</span> program (<span class="span_4">Trams</span>win.exe), if your agency uses <span class="span_4">Trams Back Office</span> you do need to keep your Sync Copy database upgraded to the same version your Primary database is running. Therefore, anytime you install a <span class="span_4">Trams Back Office</span> update in your Primary location, you will need to run the update in your Sync Copy location as well.</p>
+            <p class="p_8">Can I Regenerate Sync File that I’ve Already Created?</p>
+            <p>Yes, the synchronization utility defaults to starting the synchronization after the last known exported Sync Change Log data, but you can change this default and start your synchronization file using a Change Log number or a Change Log date.</p>
+            <p class="p_8">How Do I Allocate Inventory Across Sync Primary/Sync Copy DBs</p>
+            <p>In the past, agencies that have been synchronizing with another location were limited to creating and pulling from inventory in only the Primary location. The reason for this limitation was because of the potential to oversell inventory between synchronization processes. To overcome this danger, <span class="span_4">ClientBase</span> has the ability to allocate available inventory across your various sync databases. Sync activated databases have an additional entry tab in <span class="span_4">Inventory Details</span>, called <span class="span_4">Sync Database Allocation.</span>:</p>
+            <p>
+                <img src="resources/images/chapter 23 sync primary location database w multiple locations/synchronize primary location_12.jpg" style="height: 340px;width: 483px;" class="img_1" />
+            </p>
+            <p>Upon creating new Inventory (or updating existing Inventory) look at the count within the <span class="span_4">Available Inventory</span> field. Determine if this inventory should be re-allocated to other sync locations (databases) to facilitate better sales of this inventory. Click the <span class="span_4">Sync Database Allocation</span> tab and <span class="span_4">Re-allocate </span>to re-allocate any quantity available from your current database to any other Sync Copy database.</p>
+            <p>The system allocates the inventory to the database the user is connected to. When an agent <span class="span_4">Pulls From Inventory,</span> they are only able to pull inventory allocated to the database they are connected to. As agents use the inventory feature within the Res Card, if they determine that they have a client interested in inventory that is no longer available, they click the <span class="span_4">View Inventory Record</span> and the <span class="span_4">Sync Database Allocation</span> tab to see if there is available inventory in other locations (databases). If so they may suggest re-allocated some of that available inventory to locations (databases) that no longer have any available to them. To re-allocate inventory from one location (database) to another, you must connect to the database that has the available inventory. You can only re-allocate inventory from the database you are connecting to and you can only re-allocate inventory of the database has available inventory records to re-allocate.</p>
+            <p><span>***Important Note for agencies syncing to CB Hosted:</span> If you are synchronizing to the Hosted <span class="span_4">ClientBase</span> Online application, <span>DO NOT </span>allocate inventory to that database unless you are OK with not being able re-allocate it back out of CBO! </p>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;310 - 641 - 8726 — Option 2</p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.CBSupport@sabre.com">Trams.CBSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © <span class="VariablesCurrent Year">2020</span> <span class="VariablesCompanyName">Trams Inc.</span> </p>
+        </MadCap:pageFooter>
+    </body>
+</html>

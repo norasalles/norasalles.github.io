@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UrlList>
+    <Url Source="Resources/Snippets/TCE.flsnp" />
+    <Url Source="Resources/Snippets/HeaderFix.flsnp" />
+    <Url Source="Resources/Snippets/Header.flsnp" />
+    <Url Source="Resources/Snippets/PDF Footer.flsnp" />
+</UrlList>

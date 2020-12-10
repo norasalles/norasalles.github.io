@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" RoamRight Travel Insurance"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="https://www.roamright.com/partners/" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep1.flsnp" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_298x308.png" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep2.flsnp" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep3.flsnp" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/features.png" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/booking_complete.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="https://www.roamright.com/partners/" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep1.flsnp" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_298x308.png" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep2.flsnp" />
+    <Link
+      Url="Content/Resources/Snippets/LCstep3.flsnp" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/features.png" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/RoamRight Travel Insurance_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/RoamRight Travel Insurance/booking_complete.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor261" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

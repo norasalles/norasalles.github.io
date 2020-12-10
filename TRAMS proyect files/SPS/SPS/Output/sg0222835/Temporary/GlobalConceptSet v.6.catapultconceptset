@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlobalConceptSet
+  SavedSource="file:///C:/Users/sg0222835/Documents/My Projects/SPS/Output/sg0222835/Temporary/GlobalConceptSet v.6.catapultconceptset">
+  <Concepts />
+  <SourceUrls>
+    <Url
+      Source="Resources/Images/Sabre Profiles Sync Docs formatted/Before you begin.gif" />
+    <Url
+      Source="Resources/Images/Sabre Profiles Sync Docs formatted/Sabre Profiles Sync with ClientBase.png" />
+    <Url
+      Source="Resources/MasterPages/Sabre Profiles Sync Docs formatted.flmsp" />
+    <Url
+      Source="Resources/PageLayouts/Default.flpgl" />
+    <Url
+      Source="Resources/Stylesheets/Modern.css" />
+    <Url
+      Source="Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" />
+    <Url
+      Source="Resources/Stylesheets/Styles.css" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Address Types.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Assigning Other Address Types.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Before you begin.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Communications.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Efficiency.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Emergency Contact.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Establishing the ClientBase.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Flexibility.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Import Rules.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Import Rules_1.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Initial Sync In.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Let s look at how Sabre Profiles.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Merge Rules.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Overview.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Passports.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Payment Cards and Loyalty.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Profile Matching Logic.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Sabre Profiles Corporate Profile.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Sabre Profiles Group Profile.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Sabre Profiles Sync Docs formatted.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Sabre Profiles Sync Docs formatted_1.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Sabre Profiles Sync with ClientBase.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Sabre Profiles Traveler Profile.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Setting up Agency Branch Access.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Setting up to use Sabre Profiles.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Structure.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Table of Contents.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/The INIT Report.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Traveler Matching Logic.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What Else Happens During Initial.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What happens during a Profile.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What happens to credit card.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What Happens to my Data.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What happens when a profile.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What information will sync.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What Profile Fields Correspond.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/What Updates During Ongoing.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Why Sync your Sabre Profiles.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Working with Sabre Profiles.htm" />
+    <Url
+      Source="Sabre Profiles Sync Docs formatted/Wrapper Profile Creation.htm" />
+  </SourceUrls>
+  <UsedUrls />
+  <UsedConceptControlUrls />
+</CatapultGlobalConceptSet>

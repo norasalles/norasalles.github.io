@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-30T10:26:59.2322405-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-30T10:27:16.8446405-05:00">
+    <Files>
+        <Url Source="../../../../../../Downloads/Europe Express.docx" AbsoluteSource="file:///C:/Users/sg0217543/Downloads/Europe Express.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Europe Express/Europe Express.png" TimeStamp="5/30/2017 10:27:12 AM" />
+        <Url Source="../../Content/Resources/Images/Europe Express/Europe Express.jpg" TimeStamp="5/30/2017 10:27:12 AM" />
+        <Url Source="../../Content/Resources/Images/Europe Express/Europe Express_1.jpg" TimeStamp="5/30/2017 10:27:12 AM" />
+        <Url Source="../../Content/Resources/Images/Europe Express/Europe Express_2.jpg" TimeStamp="5/30/2017 10:27:12 AM" />
+        <Url Source="../../Content/Resources/Images/Europe Express/Europe Express_1.png" TimeStamp="5/30/2017 10:27:12 AM" />
+        <Url Source="../../Content/Europe Express/Europe Express.htm" TimeStamp="5/30/2017 10:27:12 AM" />
+        <Url Source="../TOCs/Europe Express.fltoc" TimeStamp="5/30/2017 10:27:12 AM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_126.css" TimeStamp="5/30/2017 10:27:12 AM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

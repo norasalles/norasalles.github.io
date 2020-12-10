@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/MyStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="productnewfeature" style="text-align: right;font-weight: bold;">
+            <img src="../../Images/tboreleasenotes.png" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;"><MadCap:variable name="Variables.Product" /><![CDATA[  ]]><MadCap:variable name="Variables.Version no" />  -   Fixes / Reviewed <MadCap:variable name="Variables.Current Date" /></p>
+    </body>
+</html>

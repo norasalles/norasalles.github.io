@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:onlyLocalStylesheets="True">
+    <head><title></title>
+        <link href="Resources/Stylesheets/DraftStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="bookmark"><span style="color: #ffffff;"><a name="Chapter_8_E-mail_Marketing_in_ClientBase"></a>Chapter 8: E-mail Marketing in ClientBase</span>
+        </p>
+        <h1>
+            <MadCap:keyword term="E-mail Marketing">&#160;</MadCap:keyword>E-mail Marketing in ClientBase</h1>
+        <p><span class="span_2">This section demonstrates how to setup and use Merge to E-mail in </span><span class="span_2">ClientBase to market to clients. It further outlines how to track mailings, and run follow-up reports.</span>
+        </p>
+        <h2>Introduction</h2>
+        <p>There are two e-mail options available for using <span class="span_2">ClientBase</span> Merge to E-mail feature: <span>MAPI </span>(Messaging Application Protocol Interface) and <span>SMTP</span> (Simple Mail Transfer Protocol). <span>MAPI </span>requires use with compatible e-mail programs such as Microsoft Outlook, Microsoft Express, Netscape and Eudora. E-mails sent with this option can be formatted in one of two modes - <span class="span_2">Plain Text </span>or<span class="span_2"> Document Template</span>. Setting the mode to document template allows you to insert merge fields into the body of a message, or select from a list of global default document templates.</p>
+        <p>The <span>SMTP</span> option offers 2 benefits: It does <span class="span_3">not</span> require a MAPI compatible e-mail program for the Merge to E-mail feature to work, and with this option, you can use extensive text formatting, even using HTML, as well as using document templates within e-mail messages.</p>
+        <p>The option for using either MAPI or SMTP as your method for sending e-mails is located within each user login. Upon installation of <span class="span_2">ClientBase</span> (or update), all user logins continue to default to MAPI as the method, and each user login record needs to be modified to change the option to SMTP, if desired, and to capture the necessary e-mail settings. Initial setup also includes adjusting or checking e-mail settings at the workstation level because these override the user level defaults.</p>
+        <p>Users can create e-mail signatures for use with the <span class="span_2">ClientBase</span> <span class="span_2">Merge to E-mail</span> feature. A global set of e-mail signatures can be created using formatted text, user login and agent merge fields and graphics. Each user login can link to one of these global e-mail signatures to set as that user’s default signature. Upon launching <span class="span_2">Merge to E-mail</span>, the system automatically launches the current user’s default signature or an e-mail signature can be selected at that time.</p>
+        <h2>
+            <MadCap:keyword term="E-mail Signatures">&#160;</MadCap:keyword>Set Up E-mail Signatures</h2>
+        <p>This option only works if e-mails are set up as SMTP. Go to <span>Global Defaults|General Setup|E-mail Signatures</span> and click <span class="span_2">Add.</span></p>
+        <p class="p_2">
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase.jpg" style="height: 293px;width: 425px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.01.jpg" class="img_1" />
+        </p>
+        <p>Enter a brief description for the signature. Next, create an e-mail signature using formatted text and merge fields. If desired, use the blue and yellow button (with a picture of a person) to insert a graphic file. Click <span class="span_2">OK </span>to save and repeat these steps to create multiple e-mail signatures.</p>
+        <p>Upon creating your global e-mail signatures, have each user go to <span>Utilities|My Login</span> and click the E-mail settings tab to select a default e-mail signature for each User.</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_1.jpg" style="height: 284px;width: 426px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.02.jpg" class="img_1" />
+        </p>
+        <h2>
+            <MadCap:keyword term="E-mail MAPI Setup">&#160;</MadCap:keyword>Set Up for MAPI E-mail</h2>
+        <p>Some sample MAPI compatible e-mail programs include Microsoft Outlook, Microsoft Express, Netscape, and Eudora. To learn if your e-mail program is MAPI compatible, we recommend you visit the website of your e-mail provider and search for information on MAPI compatibility. When you install the <span class="span_2">ClientBase</span> program, MAPI is the option which is defaulted in the user logins. </p>
+        <h3>Set Up ClientBase with MAPI Settings</h3>
+        <p><span>Step 1: </span>To obtain a list of all user login records, log into the database as SYSDBA (System Database Administrator). Go to <span>Utilities| Users Logins|User List</span>.</p>
+        <p>(<span class="span_2">Please note:</span> Users can access and setup their own login e-mail settings in addition to SYSDBA login by going to <span>Utilities|My Login</span>.</p>
+        <p><span>Step 2: </span>Highlight each user login, click <span class="span_2">Modify</span>|<span class="span_2">E-mail Settings</span>. The <span class="span_2">Default E-mail Client </span>is <span class="span_2">MAPI. </span>If you select <span class="span_2">Outlook/MAPI Client</span> under<span class="span_2">, </span>the system will first try to send e-mail via Outlook and if doesn't exist then it will resort to MAPI. This will put any e-mails sent through <span class="span_2">ClientBase</span> in the Sent Box of Outlook. </p>
+        <p>If you have set up a customized e-mail signature, select from the <span class="span_2">Default Signature </span>drop-down. No further setup is required. </p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_2.jpg" style="height: 317px;width: 471px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.03.jpg" class="img_1" />
+        </p>
+        <p><span>Step 3: </span>Click <span class="span_2">OK</span>.</p>
+        <p><span>Step 4: </span>From each workstation, sign into <span class="span_2">ClientBase</span> and go to <span>Workstation Defaults|Environment</span>.</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_3.jpg" style="height: 252px;width: 343px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.04.jpg" class="img_1" />
+        </p>
+        <p>Unless you need special workstation settings to override user settings setup by the SYSDBA as described above, verify that <span class="span_2">Default E-mail Client </span>is set to <span class="span_2">Ignore.</span></p>
+        <h2>
+            <MadCap:keyword term="E-mail Using MAPI">&#160;</MadCap:keyword>Using Merge to E-mail Configured for MAPI </h2>
+        <p>The first step in using the Merge to E-mail feature is to use the Profile Manager to find the profile(s) to <span class="span_2">Merge to E-mail</span> by using Level 1, 2, or 3 Query. E-mail addresses are kept in the communication entry table found in the general information tab of all types of profiles. </p>
+        <p>When merging information into an e-mail, merge the information to e-mail from the results screen:</p>
+        <p>1) Click the toolbar e-mail icon or select the menu item <span>Merge To|E-mail</span>, or;</p>
+        <p>2) Double-click a profile to enter the profile folder. From within the profile, click the toolbar E-mail icon. </p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_4.jpg" style="height: 291px;width: 579px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.05.jpg" class="img_1" />
+        </p>
+        <p><span>Sort by:</span> Choose how e-mails are sorted. Choices include <span class="span_2">Name, First Name, Last Name, </span>and<span class="span_2"> E-mail </span>(default).</p>
+        <p><span>Include Records:</span> Select <span class="span_2">Current Results in Profile Manager </span>(one e-mail is created for all profiles included in the results screen); or <span class="span_2">Selected Results in Profile Manager </span>(only those profiles that have been selected from results screen by holding down CTRL key and selecting and/or by right-mouse clicking results screen to <span class="span_2">Invert All, Select All </span>or<span class="span_2"> Unselect All</span>).</p>
+        <p><span>Look for E-mails In:</span> <span class="span_2">Profile (If none, then Primary Traveler) -</span> This option sends to the profile-level e-mail address, if there is one. If there isn't, then it will use the e-mail address of the primary traveler. </p>
+        <p><span class="span_2">Traveler (If none, then Profile) -</span> If no traveler has an e-mail address that meets the query criteria, then e-mail is sent to the profile address or addresses that meet the criteria. </p>
+        <p><span class="span_2">Traveler Only</span> - Looks only for traveler e-mail addresses based on matching query criteria. This option merges to all traveler e-mail addresses that meet the criteria. If there isn't one, then nothing is sent. </p>
+        <p><span class="span_2">All (Profile and Traveler)</span> - this option sends to all addresses in the profile that meet the query criteria. </p>
+        <p><span>Include Only E-mails With Marketing Permission Checked:</span> By default this is unchecked to include only e-mails with marketing permission.</p>
+        <p><span>Include Only Primary E-mail:</span> this box is checked by default. For any of the above options, if this box is checked, only the Primary E-mail address (either traveler, profile, or both, depending on the option chosen) will be sent to. If it's unchecked, then all e-mails, primary or non-primary, that meet the criteria will be used.</p>
+        <p><span>Use BCC Method of Sending E-mail: </span>For users who want to send one e-mail with all other recipients as <span class="span_2">Blind Carbon Copies</span>. This avoids having to delete many e-mails out of your <span class="span_2">Sent Box</span> for MAPI users<span class="span_2">. </span>It is a good idea to input your own e-mail address in the <span class="span_2">To</span> field as anti-Spam programs need to see at least one e-mail address. <span>Suggestion: </span>Don’t use this option.</p>
+        <h3>Set Up the Merge to E-mail Feature with MAPI</h3>
+        <p>Set up e-mail to send as MAPI:</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_5.jpg" style="height: 373px;width: 437px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.06.jpg" class="img_1" />
+        </p>
+        <p><span>To: </span>For each e-mail being sent, notice the <span class="span_2">Profile Name, Address, Phone </span>and<span class="span_2"> Fax Numbers. </span>To get to other e-mails in the series, use the arrows. </p>
+        <p><span>cc: </span>Best not to enter a cc here or you’ll get alot of copies. Do a mailer if you want a record of the e-mail you area sending.</p>
+        <p><span>Subject:</span> Type the subject of the e-mail.</p>
+        <p><span>Priority: </span>From the drop-down, select the priority.</p>
+        <p><span>Mode: </span>The <span class="span_2">Plain Text </span>mode sends the message in plain unformatted text. Setting the mode to <span class="span_2">Document Template</span> allows you to insert merge fields into the body of a message, or select from a list of global default document templates.</p>
+        <p><span>Font settings: </span>Select the font, size, color and background color from the drop-downs provided.</p>
+        <p><span>Greeting/Merge Fields:</span> Type the greeting of the e-mail, and from the drop-down menu, choose the field - <span class="span_2">First Name, Full Name, Courtesy Title Last Name, </span>or<span class="span_2"> Salutation </span>to merge to the e-mail. Tip: If you select Salutation|Courtesy Title Last Name or Salutation|First Name, or Salutation|Name as a merge field, the | character included in the Salutation means that if the Salutation field is not completed within one of the resulting profiles, then for just that profile, you want it to use the merge field following the |.</p>
+        <p><span>Signature Tab:</span> Click the Signature tab to view the default e-mail signature based on the current login and setup established in <span>Global Defaults|General Setup|E-mail Signatures</span>. Override the default signature or enter a unique signature directly from this tab if desired. Click the drop-down listing next to the field called <span class="span_2">Signature</span> to select from your default signatures setup in Global Defaults. Override any of these defaults by typing within the Signature area.</p>
+        <p><span>Attachment Tab: </span>Add an attachment to e-mail by clicking the attachments tab and clicking the "paper clip" to browse for the attachment.</p>
+        <p><span>Outlook Settings: </span><span class="span_3">You have the ability to schedule an e-mail blast for deferred delivery from Outlook</span>. Select the profile(s) to receive the e-mail. Merge to E-mail and create the e-mail content as usual. Click the "Outlook Settings" tab. Under the Deferred Delivery Settings, check the box "Do not deliver before:" and enter the date and time for delivery. Click send and e-mails remain in Outlook's Outbox until the designated date and time.</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_6.jpg" style="height: 368px;width: 438px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.07.jpg" class="img_1" />
+        </p>
+        <p><span>Note:</span> This feature only works with the e-mail setting as Outlook/MAPI Client. All other e-mail settings are not compatible with this feature. This setting is changed under <span>Workstation Defaults|Environment|E-mail Settings</span> or under the E-mail Settings tab of the User Login settings.</p>
+        <p><span>Send Current: </span>Sends only to the first e-mail in the series. <span>Hint:</span> It’s a good idea to send to yourself first, before doing a blast e-mail. Do this by making sure you are at the top of the e-mails, input your e-mail address and <span class="span_2">Send Current. </span>When you get ready to send all, click the double up arrow to get to the original first e-mail and the system puts the original e-mail back in place for you to send to everyone.</p>
+        <p><span>Send All: </span>Sends to all e-mails in the series.</p>
+        <p><span>Mailer:</span> To keep a history of any e-mails sent, be sure to create a <span class="span_2">Mailer</span> record. These mailers then create a history within each profile whenever an e-mail is sent. There is now also a mailer option to <span class="span_2">Auto-create</span> mailer after e-mail is successfully sent to each recipient. If an e-mail blast is interrupted and you selected auto-create checkbox, you will now be able to Query to exclude profiles that already received the e-mail.</p>
+        <h2>
+            <MadCap:keyword term="E-mail SMTP Setup">&#160;</MadCap:keyword>Set Up for SMTP E-mail</h2>
+        <p>If your agency would like to send formatted text or HTML e-mails, your mail server and <span class="span_2">ClientBase</span> e-mail settings must be configured for SMTP.</p>
+        <h3>Finding Mail Server’s SMTP Settings</h3>
+        <p>SMTP is a standard protocol (language) used for sending e-mail on the Internet or a network. Every mail server is capable of handling SMTP e-mail. Your agency can utilize this SMTP feature providing it has the proper mail server configuration. Contact the entity responsible for maintaining your mail server to confirm your SMTP settings:</p>
+        <p>1. If you are hosting your own e-mail server, contact your tech person that maintains or originally setup the server.</p>
+        <p>2. If you are using another party for your e-mail server, contact them by going to their website or calling their support line.</p>
+        <p>You’ll need to obtain the following information:</p>
+        <table class="table_1">
+            <col style="width: 4pt;" />
+            <col style="width: 536pt;" />
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p><span class="bulletsymbol">•</span> </p>
+                    </td>
+                    <td class="td_1">
+                        <p>Your outgoing mailserver name (e.g., mail.domainname.com, smtp.domainname.com, or gomail.wspan.com).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p><span class="bulletsymbol">•</span> </p>
+                    </td>
+                    <td class="td_1">
+                        <p>E-mail account login and password if authentication to SMTP mail server is required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col style="width: 4pt;" />
+            <col style="width: 536pt;" />
+            <tr>
+                <td class="td_1">
+                    <p><span class="bulletsymbol">•</span> </p>
+                </td>
+                <td class="td_1">
+                    <p>TCP/IP Port used for e-mail. (Usually Port 25, but confirm this with your network administrator.) </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">
+                    <p><span class="bulletsymbol">•</span> </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="span_2">ClientBase</span>'s Merge to E-mail via SMTP now supports SSL/TLS secure connections. There are four options available on the drop-down, <span class="span_2">None, TLS (if available), TLS, and SSL</span>. The type of connection you select is determined by the type of security supported by your e-mail provider or Internet Service Provider (ISP). Please contact your ISP to find out if it supports SSL/TLS and which setting is correct for your e-mail account.</p>
+                </td>
+            </tr>
+        </table>
+        <h3>Set Up CLientBase with Mail Server’s SMTP Settings</h3>
+        <p><span>Step 1: </span>To obtain a list of all user login records, log into the database as SYSDBA (System Database Administrator). Go to <span>Utilities| Users Logins|User List</span>.</p>
+        <p>(<span class="span_2">Please note:</span> Users can access and setup their own login e-mail settings in addition to SYSDBA login by going to <span>Utilities|My Login</span>.</p>
+        <p><span>Step 2: </span>Highlight each user login, click <span class="span_2">Modify|E-mail Settings</span>. Change the default <span class="span_2">e-mail Client</span> from <span class="span_2">MAPI</span> to <span class="span_2">SMTP Client</span>, from the drop-down list.</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_7.jpg" style="height: 300px;width: 445px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.08.jpg" class="img_1" />
+        </p>
+        <p><span>Step 3:</span> Complete the <span class="span_2">User Login SMTP Settings </span>obtained from the entity responsible for maintaining your mail server:</p>
+        <p><span>Default E-mail Client: </span>Choose SMTP off the drop-down menu. </p>
+        <p><span>Default SMTP Mode:</span> Offers different options for creating the body of the e-mail message. Select either <span class="span_2">Formatted Text, Document Templates, Raw HTML </span>or<span class="span_2"> Plain Text</span> from the drop-down list. This setting determines the default <span class="span_2">Mode</span> when using the <span class="span_2">Merge to E-mail</span> feature, but can be changed when sending an e-mail. </p>
+        <p><span>From E-mail Address:</span> Enter the e-mail address for the user login you are setting up. The address entered here appears as the from address for all e-mails sent from this user. If you wish to change this address frequently, do so at the e-mail level when you are sending it out.</p>
+        <p>In the <span class="span_2">From e-mail</span> field, if you type <span>joyce@abctravel.com</span> and a message is sent, you see the From field saying <span>joyce@abctravel.com</span>. Some people prefer it to look like this instead, <span>Joyce Smith</span>. To have it appear like this, type <span>Joyce Smith&lt;joyce@abctravel.com&gt;</span> instead of just <span>joyce@abctravel.com</span>. You can also use your company name or department name; for example, <span>Travel With the Stars&lt;sales@TWTS.com&gt; </span>or <span>Star Travel Marketing&lt;sales@TWTS.com&gt;.</span></p>
+        <p><span>Outgoing Mail Server:</span> Enter the outgoing mail server name determined in your steps above. Examples: mail.domainname.com, smtp.domainname.com, or gomail.wspan.com).</p>
+        <p><span>Port: </span>This setting defines the TCP/IP port which your e-mail application listens on for incoming mail. If left blank, this setting uses port 25 by default, which is the Internet standard for receiving SMTP mail. In some situations, you may have chosen to move the SMTP service to another port. Perhaps you already have a service on port 25, and you do not want the services to conflict over the port assignment. In such a case, enter the port <span class="span_2">ClientBase</span> should use. </p>
+        <p><span>Authentication Type:</span> This setting is used to authenticate your connection to the SMTP mail server by forcing a USER name and password. </p>
+        <p><span class="span_2">Default:</span> If the network login does not handle this authentication automatically, then set this field to <span class="span_2">Default.</span></p>
+        <p><span class="span_2">None</span><span>:</span> If your agency is hosting your own e-mail server and the network login has been configured to handle the authentication to the SMTP Server automatically, set this field to <span class="span_2">None. </span></p>
+        <p><span>E-mail Account Login and Password:</span> Use when <span class="span_2">Login Type</span> is set to <span class="span_2">Default. </span>Enter your e-mail account login and password here.</p>
+        <p><span>Secured Connections: </span>If your Internet Service Provider (ISP) supports SSL/TLS secure connections, there are four options available on the drop down: <span class="span_2">None, TLS (if available), TLS, and SSL</span>. The type of connection you select is determined by the type of security supported by your e-mail provider or Internet Service Provider (ISP). Please contact your ISP to find out which setting is correct for your e-mail account. </p>
+        <p class="p_2">SSL: Use SSL for encrypting e-mail sent via SMTP.</p>
+        <p class="p_2">TLS: Use TLS for encrypting e-mail sent via SMTP. </p>
+        <p class="p_2">TLS, if available: Attempt to use TLS for encrypting e-mail sent via SMTP. If the server does not support TLS, SSL will be attempted instead.</p>
+        <p class="p_2">None: You do not wish to encrypt your e-mail(s) or you SMTP server does not support SSL/TLS.</p>
+        <p><span>Note:</span> TLS (Transport Layer Security) is quickly becoming the common standard for encrypting e-mails. SSL (Secure Sockets Layer) is the predecessor to TLS. There are very few differences between SSL and TLS. TLS's encryption is a little stronger, however both types are almost identical, with only minor technical differences in the way the e-mail is encrypted and transmitted.</p>
+        <p>The default port for encrypted connections is 465 and unencrypted is 25. <span class="span_2">ClientBase</span> will automatically set the port to these defaults when choosing a Secure Connection setting. Note: Port 587 is also commonly used by many servers for encrypted connections. </p>
+        <p><span>Note:</span> that in order for Secure Connection: TLS/SSL to work with SMTP E-mail settings in <span class="span_2">ClientBase Windows</span>, you must install the 3rd party Win32 OpenSSL.</p>
+        <p>You can search for "win openssl" in your browser or click here to get to files:</p>
+        <p><a href="http://www.slproweb.com/products/Win32OpenSSL.html">https://www.slproweb.com/products/Win32OpenSSL.html</a>
+        </p>
+        <p>Scroll down, read, and install these two essential executables: <span>(FILES LISTED BELOW IN GRAPHIC MAYBE CHANGED REGULARLY. SO VERSION MAY BE DIFFERENT.)</span></p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_8.jpg" style="height: 207px;width: 462px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.09.jpg" class="img_1" />
+        </p>
+        <p><span>Step 4: </span>Click <span class="span_2">OK</span>.</p>
+        <p><span>Step 5: </span>From each workstation, sign into <span class="span_2">ClientBase</span> and go to <span>Workstation Defaults|Environment</span>.</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_9.jpg" style="height: 329px;width: 334px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.10.jpg" class="img_1" />
+        </p>
+        <p>Unless you need special workstation settings to override user settings setup by the SYSDBA as described above, verify that <span class="span_2">Default e-mail Client </span>is set to <span class="span_2">Ignore. </span><span>In the </span><span class="span_2">Reset Connection every X e-mails sent</span><span> field, enter 100</span><span class="span_2">, </span>unless it’s a phone or cable company, where you would enter 9.) </p>
+        <p><a href="http://static.trams.com/tramslibrary/documentation/misc/ImplementingSSL.pdf">For more instructions on Setting Up SMTP for your particular e-mail ISP click here.</a>
+        </p>
+        <h2>
+            <MadCap:keyword term="E-mail Using SMTP">&#160;</MadCap:keyword>Use Merge to E-mail Configured for SMTP</h2>
+        <p>The first step in using the Merge to E-mail feature is to use the Profile Manager to find the profile(s) to <span class="span_2">Merge to E-mail</span> by using Level 1, 2, or 3 Query. E-mail addresses are kept in the communication entry table found in the general information tab of all types of profiles. </p>
+        <p>When merging information into an e-mail, merge the information to e-mail from the results screen:</p>
+        <p>1) Click the toolbar e-mail icon or select the menu item <span>Merge To|E-mail</span>, or;</p>
+        <p>2) Double-click a profile to enter the profile folder. From within the profile, click the toolbar e-mail icon. </p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_4.jpg" style="height: 291px;width: 579px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.11.jpg" class="img_1" />
+        </p>
+        <p><span>Sort by:</span> Choose how e-mails are sorted. Choices include <span class="span_2">Name, First Name, Last Name, </span>and<span class="span_2"> E-mail </span>(default).</p>
+        <p><span>Include Records:</span> Select <span class="span_2">Current Results in Profile Manager </span>(one e-mail is created for all profiles included in the results screen); or <span class="span_2">Selected Results in Profile Manager </span>(only those profiles that have been selected from results screen by holding down CTRL key and selecting and/or by right-mouse clicking results screen to <span class="span_2">Invert All, Select All </span>or<span class="span_2"> Unselect All</span>).</p>
+        <p><span>Look for E-mails In:</span> Select <span class="span_2">Primary (if none, then Primary Traveler), Traveler (if none, then Profile), Traveler Only, All (Profile and Traveler).</span></p>
+        <p><span>Include Only E-mails With Marketing Permission Checked:</span> By default this is unchecked to include only e-mails with marketing permission.</p>
+        <p><span>Include Only Primary E-mail: </span>This gives the user the ability to exclude e-mail addresses marked as invalid when merging e-mails from the results of a Query.</p>
+        <p><span>Use BCC Method of Sending E-mail: </span>For users who want to send one e-mail with all other recipients as <span class="span_2">Blind Carbon Copies</span>. This avoids having to delete many e-mails out of your <span class="span_2">Sent Box</span> for MAPI users<span class="span_2">. </span>It is a good idea to input your own e-mail address in the <span class="span_2">To</span> field as anti-Spam programs need to see at least one e-mail address. <span>Suggestion: </span>Don’t use this option.</p>
+        <h3>Set Up the Merge to E-mail Feature with SMTP</h3>
+        <p>Setup the e-mail to send as SMTP:</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_10.jpg" style="height: 413px;width: 471px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.12.jpg" class="img_1" />
+        </p>
+        <p>For each e-mail being sent, notice the <span class="span_2">Profile Name, Address, Phone </span>and <span class="span_2">Fax Numbers. </span>To get to other e-mails in the series, use the navigation arrows. </p>
+        <p><span>Subject:</span> Type the subject of the e-mail.</p>
+        <p><span>Priority:</span> Select a priority label from the drop-down menu of <span class="span_2">Highest, High, Normal, Low </span>and<span class="span_2"> Lowest</span>.</p>
+        <p><span>Mode:</span> Select how you want to format the body of your message. Choices include:</p>
+        <p><span class="span_4">Formatted Text:</span> Free-flow your message by typing the text and using the toolbar to format it as desired. Please note if hyperlinks are included within the message, highlight the link and click the hyperlink icon on the toolbar to format it properly.</p>
+        <p><span class="span_4">Document Templates</span><span class="span_3">:</span> Complete your message by using any of the global document templates. Use <span>Load Doc Template</span> to select from a listing of global templates or use the<span> Insert Fields</span> to insert merge fields in combination with free-flow text.</p>
+        <p><span class="span_4">Raw HTML</span>: Paste RAW HTML into the body of the message. <span class="span_2">ClientBase</span> does not come with an HTML editor, so use a tool such as <span class="span_2">Front Page</span> or <span class="span_2">Dreamweaver</span> to create HTML, or right-click on any HTML page, <span class="span_2">View Source</span> and copy the contents to clipboard and then paste into the RAW HTML tab. Please see section below on sending out pre-formatted HTML marketing pieces.</p>
+        <p><span class="span_4">Plain Text</span>: Enter e-mail message without any formatting. This message can then be viewed by e-mail recipients, regardless of their e-mail service.</p>
+        <p><span class="span_4">Preview</span> is available for all e-mail modes and allows you to preview message in its formatted state before sending. Keep in mind that whether the recipient is able to view the HTML is dependent on the e-mail service used by the recipient. If HTML cannot be viewed by any of the recipients, then for just those recipients the message is rendered to plain text.</p>
+        <p>Font settings: Select the font, size, color and background color from the drop-downs provided.</p>
+        <p><span>Greeting/Merge Fields:</span> Type the greeting of the e-mail, and from the drop-down menu, choose the field - <span class="span_2">First Name, Full Name, Courtesy Title Last Name, </span>or<span class="span_2"> Salutation </span>to merge to the e-mail. <br /><br /><span>Tip:</span> If you select <span>Salutation|Courtesy Title Last Name</span><span>,</span> <span>Salutation|First Name</span>, or <span>Salutation|Name </span>as a merge field, the | character included in the Salutation means that if the Salutation field is not completed within one of the resulting profiles, then for just that profile, you want it to use the merge field following the |.</p>
+        <p><span>Using Spell Check:</span> Several dictionaries have automatically been installed onto each workstation running <span class="span_2">ClientBase</span> providing you with the ability to identify misspellings within Document Templates. By default, while typing within any of these three areas, the spell check feature automatically underlines each misspelled word. Right-click on a misspelled word and you will be offered suggested spellings along with the ability to <span class="span_2">Ignore, Ignore All </span>or<span class="span_2"> Add</span> to Dictionary. In addition a Spell Check button, labeled <span class="span_2">ABC</span> has been added to the toolbar of the e-mail allowing you to run the spell check routine across all data captured.</p>
+        <p><span>Signature Tab:</span> Click the Signature tab to view the default e-mail signature based on the current login and setup established in <span>Global Defaults|General Setup|E-mail Signatures</span>. Override the default signature or enter a unique signature directly from this tab if desired. Click the drop-down listing next to the field called <span class="span_2">Signature</span> to select from your default signatures setup in Global Defaults. Override any of these defaults by typing within the Signature area.</p>
+        <p><span>Attachment Tab: </span>Add an attachment to e-mail by clicking the attachments tab, and the "paper clip" to browse for the attachment.</p>
+        <p><span>SMTP Setting Tab: </span>Click the SMTP tab to override the user logins or workstation defaults as outlined above. The <span class="span_2">Test</span> button helps verify your SMTP settings are setup correctly before sending any of your e-mails. Three tests are performed and the results displayed within the window. A prompt is also given to send a test e-mail to the <span class="span_2">From E-mail</span> address so that you can test sending and receiving the e-mail you have setup.</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_11.jpg" style="height: 399px;width: 461px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.13.jpg" class="img_1" />
+        </p>
+        <p><span>Send Current: </span>Sends only to the current e-mail in the series. </p>
+        <p><span>Send All: </span>Sends to all e-mails in the series.</p>
+        <p><span>Mailer:</span> <span class="span_2">ClientBase</span> does not currently include a "Sent Box" for SMTP. To keep a history of any e-mails sent using the SMTP method, be sure to create a <span class="span_2">Mailer</span> record. These mailers then create a history within each profile whenever an e-mail is sent. There is now also a mailer option to <span class="span_2">Auto-create</span> mailer after e-mail is successfully sent to each recipient. If an e-mail blast is interrupted and you selected auto-create checkbox, you will now be able to Query to exclude profiles that already received the e-mail.</p>
+        <p><span>Note: </span>The Merge to E-mail feature has been enhanced so that if in the midst of an e-mail blast the connection to your SMTP server is lost the system prompts with a message and gives you the ability to <span class="span_2">Retry </span>or <span class="span_2">Cancel</span> the remaining e-mail blast. Also, the system now skips any bad e-mail addresses and logs them to the e-mail error log rather than interrupting the unattended mail merge.</p>
+        <h2>
+            <MadCap:keyword term="Passport Online, Pre-Formatted HTML Emails;AlPlus e-Postcards">&#160;</MadCap:keyword>Send Pre-Formatted HTML E-mails from Passport Online or AlPlus e-Postcards</h2>
+        <p>You don’t have to know HTML to be a pro in sending SMTP broadcast e-mails! In the Internet Manager is a default link for, <span class="span_2">Passport Online. </span>This site provides a database of nicely formatted travel promotions for use in an e-mail broadcast after the initial setup. Click each link to sign up. There is also a default link to <span class="span_2">AIPlus e-Postcards</span>. This site provides a variety of HTML formatted postcards for special occasions, destinations and agency value that can be easily customized and previewed for blast e-mailing using the <span class="span_2">ClientBase</span> and Merge to E-mail feature. These e-postcards and other creative marketing tools are part of the AgencyInc. Plus (AIPlus) program. To view e-postcard samples, find out more about the program and to register, click the default link added to your Internet Manager called AIPlus E-Postcards. For questions or to register via phone, call 800-477-6698 x 104.</p>
+        <h3>Steps to Launch Passport Online</h3>
+        <p>1) Once registered, click the <span class="span_2">Internet Manager </span>and <span class="span_2">Passport Online.</span></p>
+        <p>2) Query for the people in CBW you want to send the e-mails to.</p>
+        <p>3) Sign into Passport Online and pick your promotions and even if there's only one add it to clipboard.</p>
+        <p>
+            <img src="Resources/Images/Chapter 8 Email Marketing in ClientBase/E mail Marketing in ClientBase_12.jpg" style="height: 380px;width: 554px;" alt="http://static.trams.com/CBW38/images/E-Mail%20Marketing%20in%20CB.12.1.14.jpg" class="img_1" />
+        </p>
+        <p>3) From the clipboard, check off the promotions you want to include. Make sure to make note of the promotions' tracking codes.</p>
+        <p>4) Click Send E-mails Using Selected Offers.</p>
+        <p>5) Go to first screen and edit….Save then click Next. </p>
+        <p>6) Enter agency info and make sure to enter tracking code/s. Save and click Next.</p>
+        <p>7) You should see your offer/s. Click Next.</p>
+        <p>8) Click the anti-spam area and make sure your e-mail is correct. </p>
+        <p>9) Click Prepare for <span class="span_2">ClientBase</span>.</p>
+        <p>10) Click Continue to the <span class="span_2">ClientBase</span> Version of my E-mail.</p>
+        <p>11) You should see your promotion.</p>
+        <p>12) Go to Windows/Profile Manager and click your E-mail Icon (remember you have your clients selected)</p>
+        <p>13) Make sure the MODE is RAWS HTML.</p>
+        <p>14) Do a CTR/V to paste the HTML….preview to see your promotion.</p>
+        <p>15) Put in a subject, put in the plain text area anything you want to say. </p>
+        <p>16) Finally you are ready to send….to yourself! Yes, test this at least once to yourself first before sending it out to all of your clients. The easiest way to do this is to click the <span class="span_2">SMTP Settings tab</span>. Click <span class="span_2">Send, </span>and if the settings are correct, one copy is sent to your e-mail inbox as a test. Go to your personal e-mail inbox and view the broadcast as a final check for accuracy.</p>
+        <p>16) Create a mailer. </p>
+        <p><span>Date of Activity:</span> Defaults to today's date. Enter a different date by clicking the drop-down menu to access a calendar to double-click desired date, or simply key in date. </p>
+        <p><span>Response Date:</span> Check here when there is a response to the mailing. A checkmark accesses a date field to enter the date of the response. This prints a report showing you how successful your mailing was. </p>
+        <p><span>Login Name:</span> Defaults to the user currently logged into the system. Choose a different user by clicking the drop-down menu. </p>
+        <p><span>Subject:</span> Enter the subject of the mailer by clicking the drop-down menu and selecting from a customized list. Mailers are setup in <span>Global Defaults|General Setup|User Defined Fields|Mailer Subject.</span> Also type a free-flowing subject line in this field, although consistent subjects created for mailers make for some powerful reporting. We suggest that you enter the vendor and promotional offer as your subject line.</p>
+        <p><span>Create Date:</span> The date the mailer was created. </p>
+        <p>Enter any additional remarks or instructions in the text box at the bottom of the mailer entry screen. A good idea is to put in the HTML link that goes directly to the promotion that you selected. </p>
+        <p><span>Go to Profile Button:</span> Click here to toggle between the mailer and the profile the mailer is being created for. </p>
+        <p>There is now also a mailer option to <span class="span_2">Auto-create</span> mailer after e-mail is successfully sent to each recipient. If an e-mail blast is interrupted and you selected auto-create checkbox, you will now be able to Query to exclude profiles that already received the e-mail.</p>
+        <p>17) Go back to the <span class="span_2">ClientBase</span> e-mail window and click <span class="span_2">Send All</span> and broadcast away!</p>
+        <h2>Steps to Launch AI Plus e-Post Cards</h2>
+        <p>As outlined above, sign up to use <span class="span_2">AI Plus e-Post Cards</span> to obtain a user login and password to use these postcards and follow these steps to launch:</p>
+        <p>1. Access the category of interest to you (leisure, corporate, destinations, etc.)</p>
+        <p>2. Choose the e-marketing tool that best meets agency marketing needs.</p>
+        <p>3. Add a personal message using text OR copy and paste any of the following <span class="span_2">ClientBase</span> Merge fields: «Courtesy Title», «First Name», «Last Name», «Salutation» or «Primary Agent Name». </p>
+        <p>4. Hit PREVIEW to view message. If the border is distorted upon viewing, this means there is too much text. Edit the message and press <span class="span_2">Preview</span> again until the border is intact. When satisfied with the look, click <span class="span_2">Display Postcard</span>. </p>
+        <p>5. In the Profile Manager, Query the desired clients that match this marketing need, and select <span class="span_2">Merge to Mail</span>.</p>
+        <p>6. Set the e-mail mode to <span class="span_2">Raw HTML,</span> then click <span class="span_2">Copy from Manager</span> to copy the e-marketing piece from the Internet Manager to the e-mail message. </p>
+        <p>7. Preview and send to customer(s). </p>
+        <p><span>Hint:</span> If you want merged fields, it is much easier to first create a document template in <span class="span_2">ClientBase</span>. Go to <span>Global Defaults|General Setup|Document Template, </span>click <span>File|New</span> to create a basic template. Here’s an example:</p>
+        <p class="p_3">Hi «First Name»,</p>
+        <p class="p_3">Enter text</p>
+        <p class="p_3">Regards,</p>
+        <p class="p_3">«Primary Agent»</p>
+        <p class="p_3">Save the template (File/Save as) AiPlus</p>
+        <p>Now that you have a template, next time you launch the desired post card, go to <span>Global Defaults|Document Template|General Setup|Load AiPlus</span>, highlight and copy /paste merge fields into the AiPlus postcard in the internet manager.</p>
+        <h2>Track E-mail Broadcast Results</h2>
+        <p>Tracking the success of your marketing efforts is important. The results from an e-mail broadcast may come in the form of an actual booking for the product you promoted, as an inquiry, or as a booking of another product. It is essential that to setup good tracking in the form of <span class="span_2">Mailers</span> within <span class="span_2">ClientBase</span> so that you can determine what vendors and marketing pieces get the most results.</p>
+        <p><span>Example: </span>Agent Sharon sends out a Princess Alaska HTML e-mail broadcast to all clients interested in cruising and Alaska by doing a Level 2 Query from the client profile marketing tab. Before sending out the e-mail, Sharon clicks <span class="span_2">Mailer</span> so the system can automatically create a record of this e-mail broadcast within each of the clients’ profiles. (After every e-mail blast for SMTP, you are also prompted <span class="span_2">"Create a Mailer?" </span>before you leave the Merge to E-mail feature.) </p>
+        <p>When Sharon’s clients start replying to the mailer, Sharon keeps track of this by Querying up the <span class="span_2">Mailer</span> and entering a <span class="span_2">Response Date. </span>Because Sharon has created a <span class="span_2">Mailer</span>, she can follow up in a few weeks to see what kind of results she’s gotten from the e-mail broadcast.</p>
+        <h2>
+            <MadCap:keyword term="E-mail Marketing Results">&#160;</MadCap:keyword>Reports on E-mail Marketing Results</h2>
+        <p>The best part of doing e-mail marketing (outside of getting an actual booking) is using <span class="span_2">ClientBase</span> to measure how successful the e-mail broadcasts are. It is essential that you create <span class="span_2">Mailers</span> within <span class="span_2">ClientBase</span> each time you sent out e-mails. Analyze your success by running queries or reports to see the bookings or activity of only those people who received a particular e-mail. To do this you need to know the name of the <span class="span_2">Mailer</span> you created for a particular promotion.</p>
+        <h3>E-mail Broadcast Booking Direct Results Report</h3>
+        <p>To find how many bookings you received as a result of an e-mail broadcast, run the following Query and/or report that uses both the Res Cards and the invoices from travel history (in case your office does not use Res Cards for every reservation):</p>
+        <p>1) Open Level 3 Query and click <span class="span_2">Reset All</span>.</p>
+        <p>2) Click <span class="span_2">Add Filter, </span>and go to the <span class="span_2">Activities </span>tab. In the <span class="span_2">Subject</span> box, select <span class="span_2">Is Equal to</span>. Then use the drop-down arrow to select the mailer promotion. Next, go to the <span class="span_2">ResCards</span> tab and in <span class="span_2">Create Date, </span>choose <span class="span_2">Is From</span>, and type in a date using the date that you originally sent the e-mail broadcast, and in <span class="span_2">To</span>, type today's current date. Press <span class="span_2">OK</span>.</p>
+        <p>3) Click <span class="span_2">Add Filter </span>and go to the <span class="span_2">Activities</span> tab. In the <span class="span_2">Subject</span> box, select <span class="span_2">Is Equal to</span>. Then use the drop-down arrow to select the mailer promotion. Next, go to the <span class="span_2">Travel History</span> tab and in the <span class="span_2">Invoice Issue Date,</span> choose <span class="span_2">Is From</span>. Type in a date using the date that you originally sent the e-mail broadcast, and in <span class="span_2">TO</span>, type today's current date. Press <span class="span_2">OK.</span></p>
+        <p>4) Now you should have two filters in the Query window. Click <span class="span_2">Refresh</span>. </p>
+        <p>All of the clients in this Query have received the promotional e-mail, and booked something from your office after they received the e-mail. You may also have some people who called and the agent created an Res Card that is <span class="span_2">Under Consideration. </span>This means success! Now granted, it's possible that the client booked a different product other than what you were promoting. You'll need to open up their profiles and take a look at the Res Cards or travel history to see what they've booked.</p>
+        <h3>E-mail Broadcast Multiple Vendor Report Using Res Cards </h3>
+        <p>This is a comprehensive e-mail broadcast report based on the Res Cards alone, which you can use to judge if an e-mail broadcast increased the production for the vendor or possibly gave business to some of their competitors. (If you create reservations outside of the Res Cards, use <span class="span_2">Trams Back Office</span> to pull vendor production reports.) </p>
+        <p>This multiple vendor report details all vendor production for a specific time period:</p>
+        <p>1) Open the <span class="span_2">Res Cards Manager, </span>and do a Level 2 Query. Click <span class="span_2">Filter</span> and then <span class="span_2">Reset</span>.</p>
+        <p>2) In <span class="span_2">Create Date, </span>type in the <span class="span_2">FROM </span>field the date that you originally sent the e-mail broadcast, and in <span class="span_2">TO</span>, type in today's current date. Click <span class="span_2">OK</span>. </p>
+        <p>3) Go to <span>Reports|Res Card Reports|Vendor Booking Report</span>. Select <span class="span_2">Current Results in ResCard Manager</span>, and click <span class="span_2">OK</span>.</p>
+        <p>4) Analyze this report and see if the production increased for a specific vendor as a result of the e-mail broadcast. Pull this report for different date periods before the broadcast to get an idea of your "normal" production versus an "after the e-mail broadcast" time period. </p>
+        <p>Finally compare the client names in the multiple vendors report to the clients that showed up in the direct results report, and you have the exact revenue earned from your marketing efforts!</p>
+        <h3>
+            <MadCap:keyword term="E-mail Broadcast Response">&#160;</MadCap:keyword>E-mail Broadcast Response Report </h3>
+        <p>If you have been conscientiously entering the <span class="span_2">Response Date</span> in the <span class="span_2">Mailer</span> when clients are calling in about a marketing e-mail they received, you can print out a report to determine how many people have replied:</p>
+        <p>1) Open Level 2 Query and click<span class="span_2"> Filter, </span>and the <span class="span_2">Reset. </span></p>
+        <p>2) Go to the <span class="span_2">Activities </span>tab and check <span class="span_2">Mailer. </span>From the drop-down <span class="span_2">Completed/Responded </span>menu, select <span class="span_2">Completed/Responded, </span>and in the <span class="span_2">Date</span> From Field, enter the date of the promotion, and in the <span class="span_2">To </span>Field, enter today’s date. </p>
+        <p>3) In <span class="span_2">Subject</span>, select the <span class="span_2">Mailer</span> promotion from the drop-down Menu. Press <span class="span_2">OK</span>.</p>
+        <p>All of the clients in this Query have responded to the promotional e-mail. If you have kept a record of how many e-mail you sent, you can get a percentage of how many people responded to the e-mail to determine if the e-mail marketing campaign was successful.</p>
+        <h3>FAQ’s</h3>
+        <p class="p_3">Q: How can I cut and paste just an ordinary text from MS Word, the Internet, or any other program into my e-mail?</p>
+        <p><span>A:</span> Highlight any text you want to copy and press &lt;CTRL&gt;C to copy. Then place your cursor in the e-mail screen, and press &lt;CTRL&gt;V to paste. </p>
+        <p class="p_3">Q: How Can I Send Text Messages from Any E-mail Program</p>
+        <p><span>A: </span>You can input a person’s cell phone number followed by the @ sign and a proper domain depending on the carrier (AT&amp;T, Verizon, Sprint, etc.) as an e-mail address, and this indeed will send it as text message to them. To do this:</p>
+        <p>1. Enter it as an e-mail address entry.</p>
+        <p>2. Ask for the cell carrier.</p>
+        <p>3. Enter a description of SMS (or something like that) to help locate it.</p>
+        <p><span>Example:</span> If my cell is 310-293-4444 and my carrier is AT&amp;T, then e-mail me a text at 3102934444@txt.att.net.</p>
+        <p>&#160;</p>
+    </body>
+</html>

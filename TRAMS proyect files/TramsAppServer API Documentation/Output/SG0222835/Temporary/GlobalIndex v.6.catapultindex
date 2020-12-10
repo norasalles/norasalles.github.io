@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlobalIndex
+  SavedSource="file:///C:/Users/SG0222835/OneDrive - Sabre/My Projects/TRAMS/TramsAppServer API Documentation/Output/SG0222835/Temporary/GlobalIndex v.6.catapultindex">
+  <IndexEntry>
+    <Entries>
+      <IndexEntry
+        Term="ActivityQuery">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="ActivityQuery/ActivityQueryGetParams.html"
+            UsedConditions=""
+            LocalConditions="" />
+          <IndexLink
+            Link="ActivityQuery/ActivityQueryRunQuery.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="ApplyUpdates">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="ResCard/ApplyUpdates.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Data Flow Charts">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Data Flow Chart.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Invoice Chart">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Invoice Data Flow Chart.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="InvoiceQuery">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="InvoiceQuery/InvoiceQueryGetParams.html"
+            UsedConditions=""
+            LocalConditions="" />
+          <IndexLink
+            Link="InvoiceQuery/InvoiceQueryRunQuery.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Load Invoice">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Invoice/Invoice.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Load Payment">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Payment/Payment.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Load Profile">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Profile/Profile.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Load ResCard">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="ResCard/ResCard.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Login">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Login.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Logout">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Logout.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Payment Chart">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Payment Data Flow Chart.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="PaymentQuery">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="PaymentQuery/PaymentQueryGetParams.html"
+            UsedConditions=""
+            LocalConditions="" />
+          <IndexLink
+            Link="PaymentQuery/PaymentQueryRunQuery.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Profile Chart">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Profile Data Flow Chart.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="ProfileQuery">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="ProfileQuery/ProfileQueryGetParams.html"
+            UsedConditions=""
+            LocalConditions="" />
+          <IndexLink
+            Link="ProfileQuery/ProfileQueryRunQuery.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="ResCard Chart">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="ResCard Data Flow Chart.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="ResCardQuery">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="ResCardQuery/RescardQueryGetParams.html"
+            UsedConditions=""
+            LocalConditions="" />
+          <IndexLink
+            Link="ResCardQuery/RescardQueryRunQuery.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Return Codes">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Return Codes.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Technical Aspects">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Introduction.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+      <IndexEntry
+        Term="Version Method">
+        <Entries />
+        <Links>
+          <IndexLink
+            Link="Version Method.html"
+            UsedConditions=""
+            LocalConditions="" />
+        </Links>
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+      </IndexEntry>
+    </Entries>
+    <Links />
+    <SeeAlsoLinks />
+    <IndexControlLinks />
+    <SortAsLinks />
+  </IndexEntry>
+  <SourceUrls>
+    <Url
+      Source="Data Flow Chart.html" />
+    <Url
+      Source="Introduction.html" />
+    <Url
+      Source="Invoice Data Flow Chart.html" />
+    <Url
+      Source="Login.html" />
+    <Url
+      Source="Logout.html" />
+    <Url
+      Source="Payment Data Flow Chart.html" />
+    <Url
+      Source="Profile Data Flow Chart.html" />
+    <Url
+      Source="ResCard Data Flow Chart.html" />
+    <Url
+      Source="Return Codes.html" />
+    <Url
+      Source="Version Method.html" />
+    <Url
+      Source="ActivityQuery/ActivityQueryGetParams.html" />
+    <Url
+      Source="ActivityQuery/ActivityQueryRunQuery.html" />
+    <Url
+      Source="Images/all products.bmp" />
+    <Url
+      Source="Images/BG.jpg" />
+    <Url
+      Source="Images/bkg.bmp" />
+    <Url
+      Source="Images/invoice-flow-chart.png" />
+    <Url
+      Source="Images/login.bmp" />
+    <Url
+      Source="Images/menu.bmp" />
+    <Url
+      Source="Images/payment-flow-chart.jpg" />
+    <Url
+      Source="Images/profile-flow-chart.jpg" />
+    <Url
+      Source="Images/reports menu.bmp" />
+    <Url
+      Source="Images/rescard-flow-chart.jpg" />
+    <Url
+      Source="Images/TASAPI.jpg" />
+    <Url
+      Source="Images/TASBG.jpg" />
+    <Url
+      Source="Images/tboreleasenotes.png" />
+    <Url
+      Source="Images/update.bmp" />
+    <Url
+      Source="Invoice/Invoice.html" />
+    <Url
+      Source="InvoiceQuery/InvoiceQueryGetParams.html" />
+    <Url
+      Source="InvoiceQuery/InvoiceQueryRunQuery.html" />
+    <Url
+      Source="Payment/Payment.html" />
+    <Url
+      Source="PaymentQuery/PaymentQueryGetParams.html" />
+    <Url
+      Source="PaymentQuery/PaymentQueryRunQuery.html" />
+    <Url
+      Source="Profile/Profile.html" />
+    <Url
+      Source="ProfileQuery/ProfileQueryGetParams.html" />
+    <Url
+      Source="ProfileQuery/ProfileQueryRunQuery.html" />
+    <Url
+      Source="ResCard/ApplyUpdates.html" />
+    <Url
+      Source="ResCard/ResCard.html" />
+    <Url
+      Source="ResCardQuery/RescardQueryGetParams.html" />
+    <Url
+      Source="ResCardQuery/RescardQueryRunQuery.html" />
+    <Url
+      Source="Resources/PageLayouts/Default.flpgl" />
+    <Url
+      Source="Resources/PageLayouts/MasterPage.flmsp" />
+    <Url
+      Source="Resources/Snippets/betanote.flsnp" />
+    <Url
+      Source="Resources/Snippets/Footer.flsnp" />
+    <Url
+      Source="Resources/Snippets/NewSnippet.flsnp" />
+    <Url
+      Source="Resources/Snippets/retrieveparams.flsnp" />
+    <Url
+      Source="Resources/Snippets/runquery.flsnp" />
+    <Url
+      Source="Resources/Stylesheets/MyStylesheet.css" />
+    <Url
+      Source="Resources/Stylesheets/Styles.css" />
+    <Url
+      Source="Resources/TableStyles/codes.css" />
+    <Url
+      Source="Resources/TableStyles/Normal_Table.css" />
+  </SourceUrls>
+  <SourceLinkSetUrls>
+    <Url
+      Source="Advanced/Index Link Sets/IndexLinkSet.flixl" />
+  </SourceLinkSetUrls>
+  <UsedUrls>
+    <Url
+      Source="ActivityQuery/ActivityQueryGetParams.html"
+      Terms="ActivityQuery" />
+    <Url
+      Source="ActivityQuery/ActivityQueryRunQuery.html"
+      Terms="ActivityQuery" />
+    <Url
+      Source="Invoice/Invoice.html"
+      Terms="Load Invoice" />
+    <Url
+      Source="Payment/Payment.html"
+      Terms="Load Payment" />
+    <Url
+      Source="PaymentQuery/PaymentQueryRunQuery.html"
+      Terms="PaymentQuery" />
+    <Url
+      Source="Profile/Profile.html"
+      Terms="Load Profile" />
+    <Url
+      Source="ResCard/ResCard.html"
+      Terms="Load ResCard" />
+    <Url
+      Source="ResCardQuery/RescardQueryGetParams.html"
+      Terms="ResCardQuery" />
+    <Url
+      Source="ResCardQuery/RescardQueryRunQuery.html"
+      Terms="ResCardQuery" />
+    <Url
+      Source="Data Flow Chart.html"
+      Terms="Data Flow Charts" />
+    <Url
+      Source="ResCard/ApplyUpdates.html"
+      Terms="ApplyUpdates" />
+    <Url
+      Source="ProfileQuery/ProfileQueryRunQuery.html"
+      Terms="ProfileQuery" />
+    <Url
+      Source="ProfileQuery/ProfileQueryGetParams.html"
+      Terms="ProfileQuery" />
+    <Url
+      Source="PaymentQuery/PaymentQueryGetParams.html"
+      Terms="PaymentQuery" />
+    <Url
+      Source="InvoiceQuery/InvoiceQueryRunQuery.html"
+      Terms="InvoiceQuery" />
+    <Url
+      Source="InvoiceQuery/InvoiceQueryGetParams.html"
+      Terms="InvoiceQuery" />
+    <Url
+      Source="Introduction.html"
+      Terms="Technical Aspects" />
+    <Url
+      Source="Invoice Data Flow Chart.html"
+      Terms="Invoice Chart" />
+    <Url
+      Source="Login.html"
+      Terms="Login" />
+    <Url
+      Source="Logout.html"
+      Terms="Logout" />
+    <Url
+      Source="Payment Data Flow Chart.html"
+      Terms="Payment Chart" />
+    <Url
+      Source="Profile Data Flow Chart.html"
+      Terms="Profile Chart" />
+    <Url
+      Source="ResCard Data Flow Chart.html"
+      Terms="ResCard Chart" />
+    <Url
+      Source="Return Codes.html"
+      Terms="Return Codes" />
+    <Url
+      Source="Version Method.html"
+      Terms="Version Method" />
+  </UsedUrls>
+  <UsedIndexControlUrls />
+</CatapultGlobalIndex>

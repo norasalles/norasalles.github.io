@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle="Understanding the Agency’s Needs"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_6.jpg" />
+    <Link
+      Url="../../../../../sg0892339/Documents/ePublisher Designer Projects/TBO/Output/Target 1/TBO/www.IATA.org/customer" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Canada General Ledger Accounts.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/tbo/ConnectTramsAppServer.pdf" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/Updates/misc_exe/DBup(latestversion)/dbup.exe" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/hotfix/tramsappserver/4/07/TramsAppServer.exe_4.07.00.031.zip" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#Travel" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#SetUp-ChartofAccounts" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#General_Ledger_Accounts_Setup" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#SetUpPrompt" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#Set" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_6.jpg" />
+    <Link
+      Url="../../../../../sg0892339/Documents/ePublisher Designer Projects/TBO/Output/Target 1/TBO/www.IATA.org/customer" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Set Up Trams Back Office_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/IMPORTANT CONSIDERATIONS_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Canada General Ledger Accounts.jpg" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/tbo/ConnectTramsAppServer.pdf" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/Updates/misc_exe/DBup(latestversion)/dbup.exe" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/hotfix/tramsappserver/4/07/TramsAppServer.exe_4.07.00.031.zip" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_6_Set_Up_Trams_Back_Office" />
+    <Anchor
+      Name="UnderstandingtheAgency" />
+    <Anchor
+      Name="Getting" />
+    <Anchor
+      Name="Travel" />
+    <Anchor
+      Name="SetUp-ChartofAccounts" />
+    <Anchor
+      Name="AddtotheGeneralLedger" />
+    <Anchor
+      Name="GeneralLedger-AccountsSetup" />
+    <Anchor
+      Name="SetUpPrompt" />
+    <Anchor
+      Name="Set" />
+    <Anchor
+      Name="Set2" />
+    <Anchor
+      Name="Set3" />
+    <Anchor
+      Name="SetUp_ARC/BSP_CoreReport" />
+    <Anchor
+      Name="SetUp_CheckRegister_CoreReport_BankReconciliation" />
+    <Anchor
+      Name="Entering" />
+    <Anchor
+      Name="Setup" />
+    <Anchor
+      Name="Daily_Routine_..136" />
+    <Anchor
+      Name="Weekly_(ARC_IAR_Sales_Report_Reconciliation)_Routine_..137" />
+    <Anchor
+      Name="kanchor88" />
+    <Anchor
+      Name="Weekly_ARC_IAR_Sales_Report_Reconciliation_Routine" />
+    <Anchor
+      Name="Weekly_(BSP_Sales_Report_Reconciliation)_..138" />
+    <Anchor
+      Name="kanchor89" />
+    <Anchor
+      Name="Weekly_BSP_Sales_Report_Reconciliation" />
+    <Anchor
+      Name="Weekly_BSP_HOT_Reconciliation_Routine_..139" />
+    <Anchor
+      Name="kanchor90" />
+    <Anchor
+      Name="Weekly_BSP_HOT_Reconciliation_Routine" />
+    <Anchor
+      Name="Monthly_Checklist_..140" />
+    <Anchor
+      Name="kanchor91" />
+    <Anchor
+      Name="Monthly_Checklist" />
+    <Anchor
+      Name="TBO_End_of_Period_Reports_..141" />
+    <Anchor
+      Name="kanchor92" />
+    <Anchor
+      Name="TBO_End_of_Period_Reports" />
+    <Anchor
+      Name="Additional_End_of_Period_Reports_for_BSP_Users_..142" />
+    <Anchor
+      Name="Additional_End_of_Period_Reports_for_BSP_Users" />
+    <Anchor
+      Name="Summary_..143" />
+    <Anchor
+      Name="Summary" />
+    <Anchor
+      Name="Maintain_the_GL_&amp;_Balancing_Core_Reports_to_Trial_Balance_Report_..144" />
+    <Anchor
+      Name="GL_Reconciliation_Report_..145" />
+    <Anchor
+      Name="kanchor94" />
+    <Anchor
+      Name="GL_Reconciliation_Report" />
+    <Anchor
+      Name="Canadian_TBO_Set_Up_and_Special_Usage" />
+    <Anchor
+      Name="kanchor95" />
+    <Anchor
+      Name="BSP_Taxes_Initial_Setup" />
+    <Anchor
+      Name="All_Provinces_Setup" />
+    <Anchor
+      Name="IMPORTANT_CONSIDERATIONS" />
+    <Anchor
+      Name="Using_the_Travel_Category_to_Determine_Place_of_Supply_Logic" />
+    <Anchor
+      Name="Better_Calculate_QST_Commission" />
+    <Anchor
+      Name="Setting_Up_Profiles_and_City_Code_Provinces" />
+    <Anchor
+      Name="Processing_Error_Log_Entries" />
+    <Anchor
+      Name="Markups_and_Discounts_and_Commission_GST_HST" />
+    <Anchor
+      Name="Miscellaneous" />
+    <Anchor
+      Name="BSP_Bank_Accounts_Initial_Setup" />
+    <Anchor
+      Name="BSP_Bank_Accounts_Initial_Setup_" />
+    <Anchor
+      Name="Canada_General_Ledger_Accounts_Initial_Setup" />
+    <Anchor
+      Name="Canada_G_L_Accounts_Initial_Setup" />
+    <Anchor
+      Name="Canada_GL_Accounts_Initial_Setup_" />
+    <Anchor
+      Name="Additional_End_of_Period_Reports_for_BSP_Users_..146" />
+    <Anchor
+      Name="Additional_End_of_Period_Reports_for_BSP_Users2" />
+    <Anchor
+      Name="Quebec_TAX_-_OPC_-_Consumer_Protection_Fund" />
+    <Anchor
+      Name="kanchor96" />
+    <Anchor
+      Name="Air_Canada_Credit_Memos_..147" />
+    <Anchor
+      Name="kanchor97" />
+    <Anchor
+      Name="Air_Canada_Credit_Memos" />
+    <Anchor
+      Name="Remote_Access_Setup_(using_Direct_Connect)" />
+    <Anchor
+      Name="Remote_Access_Setup_using_Direct_Connect" />
+    <Anchor
+      Name="Additional_Security_Settings" />
+    <Anchor
+      Name="Security_Features" />
+    <Anchor
+      Name="Security_Setup" />
+    <Anchor
+      Name="Remote_Database_Connection" />
+    <Anchor
+      Name="TramsAppServer_Automatic_Update" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Set Up Trams Back Office"
+      Conditions=""
+      LocalConditions=""
+      Position="19" />
+    <IndexCacheEntry
+      Term="Getting Started"
+      Conditions=""
+      LocalConditions=""
+      Position="81" />
+    <IndexCacheEntry
+      Term="Travel Types"
+      Conditions=""
+      LocalConditions=""
+      Position="103" />
+    <IndexCacheEntry
+      Term="Set Up Chart of Accounts"
+      Conditions=""
+      LocalConditions=""
+      Position="125" />
+    <IndexCacheEntry
+      Term="General Ledger Accounts Setup"
+      Conditions=""
+      LocalConditions=""
+      Position="476" />
+    <IndexCacheEntry
+      Term="Set Up Prompt Tab"
+      Conditions=""
+      LocalConditions=""
+      Position="508" />
+    <IndexCacheEntry
+      Term="Set Up Client/Vendor Balances Core Reports"
+      Conditions=""
+      LocalConditions=""
+      Position="545" />
+    <IndexCacheEntry
+      Term="Set Up Client Balance Report"
+      Conditions=""
+      LocalConditions=""
+      Position="562" />
+    <IndexCacheEntry
+      Term="Set Up Vendor Balance Report"
+      Conditions=""
+      LocalConditions=""
+      Position="574" />
+    <IndexCacheEntry
+      Term="Creating Separate Invoices - Method One"
+      Conditions=""
+      LocalConditions=""
+      Position="589" />
+    <IndexCacheEntry
+      Term="Remove/Write Off a Previous Client Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="608" />
+    <IndexCacheEntry
+      Term="Remove/Write Off an Old Vendor Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="622" />
+    <IndexCacheEntry
+      Term="Set Up an Unapplied Client Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="636" />
+    <IndexCacheEntry
+      Term="Set Up an Unapplied Vendor Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="649" />
+    <IndexCacheEntry
+      Term="Creating Separate Invoices - Method Two"
+      Conditions=""
+      LocalConditions=""
+      Position="663" />
+    <IndexCacheEntry
+      Term="Set Up an Unapplied Client Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="745" />
+    <IndexCacheEntry
+      Term="Remove/Write Off a Prior Client Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="759" />
+    <IndexCacheEntry
+      Term="Set Up Vendor Balances - w/Shortcut Method Two"
+      Conditions=""
+      LocalConditions=""
+      Position="775" />
+    <IndexCacheEntry
+      Term="Set Up an Unapplied Vendor Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="851" />
+    <IndexCacheEntry
+      Term="Remove/Write Off a Prior Payable Vendor Balance"
+      Conditions=""
+      LocalConditions=""
+      Position="867" />
+    <IndexCacheEntry
+      Term="Set Up the ARC/BSP Core Report"
+      Conditions=""
+      LocalConditions=""
+      Position="894" />
+    <IndexCacheEntry
+      Term="Set Up the Check Register Core Report and Bank Reconciliation"
+      Conditions=""
+      LocalConditions=""
+      Position="931" />
+    <IndexCacheEntry
+      Term="Entering Opening Balances"
+      Conditions=""
+      LocalConditions=""
+      Position="1014" />
+    <IndexCacheEntry
+      Term="Setup General Ledger"
+      Conditions=""
+      LocalConditions=""
+      Position="1026" />
+    <IndexCacheEntry
+      Term="Ledger Procedures"
+      Conditions=""
+      LocalConditions=""
+      Position="1114" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle="Preparing for Interface"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/APOLLO GALILEO Interface Preparation.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/APOLLO GALILEO Interface Preparation.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_16_APOLLO_GALILEO_Interface_Preparation" />
+    <Anchor
+      Name="Preparing_for_Interface_..26" />
+    <Anchor
+      Name="MIRLvl92" />
+    <Anchor
+      Name="MIRDevLNIATA" />
+    <Anchor
+      Name="MIR_to_FILE_-_Apollo_Configuration" />
+    <Anchor
+      Name="APOLLO_Interface_Control" />
+    <Anchor
+      Name="Establishing_the_Link_-_HMLMLNIATADA" />
+    <Anchor
+      Name="Checking_the_Status_of_the_Link_-_HMLD" />
+    <Anchor
+      Name="Queue_Message_Count_-_HQC" />
+    <Anchor
+      Name="Bring_Up_the_Link_-_HMOMLNIATA-U" />
+    <Anchor
+      Name="Bring_Link_Down_-_HMOMLNIATA-D" />
+    <Anchor
+      Name="Bring_Up_the_Link_(Canadian_Customers)_-___HMUPAPOID" />
+    <Anchor
+      Name="Bring_Down_the_Link_(Canadian_Customers)_-___HMDPAPOID" />
+    <Anchor
+      Name="Quick_Start_-_HQSLNIATA" />
+    <Anchor
+      Name="Re-transmit_Records" />
+    <Anchor
+      Name="Controlling_the_Apollo_MIR" />
+    <Anchor
+      Name="Establishing_Daily_Procedures_..27" />
+    <Anchor
+      Name="Download_Procedures_for_TBO_..28" />
+    <Anchor
+      Name="Interfacing_Multiple_Branches_..29" />
+    <Anchor
+      Name="kanchor301" />
+    <Anchor
+      Name="Entries_Affecting_Invoices_and_Tickets_..30" />
+    <Anchor
+      Name="kanchor302" />
+    <Anchor
+      Name="Customer_ID_or_Customer_Number_T-CA" />
+    <Anchor
+      Name="W-Address_Field_W-" />
+    <Anchor
+      Name="Phone_Numbers_P:CTYR_" />
+    <Anchor
+      Name="Client_E-mail_Address_P:CTYE_" />
+    <Anchor
+      Name="Interface_Invoice_Over_to_TBO_as_Open_F-XINV_&amp;_F-XINVOICE" />
+    <Anchor
+      Name="Agent_ID_Override_T-SA" />
+    <Anchor
+      Name="Outside_Agent_ID_T-OA" />
+    <Anchor
+      Name="Department_Information_T-DP" />
+    <Anchor
+      Name="UDIDS_Remarks_T-UD1" />
+    <Anchor
+      Name="Group_Affiliation_T-GP" />
+    <Anchor
+      Name="Client_Remarks_T-RM_free_flow" />
+    <Anchor
+      Name="Passenger_Statement_Information_N:Last_Name_First*" />
+    <Anchor
+      Name="Invoice_Remarks_T-IM" />
+    <Anchor
+      Name="Invoice_Branch_Override_T-BR" />
+    <Anchor
+      Name="Form_of_Payment_Override_T-FP" />
+    <Anchor
+      Name="Segment_Information_..31" />
+    <Anchor
+      Name="Capturing_Foreign_and_Local_Currency_..32" />
+    <Anchor
+      Name="Mileage_..33" />
+    <Anchor
+      Name="Partial_Payment_T-PP" />
+    <Anchor
+      Name="DESCRIPTOR_CODES_-_Valid_at_Invoice_Level_..34" />
+    <Anchor
+      Name="kanchor303" />
+    <Anchor
+      Name="_gen_" />
+    <Anchor
+      Name="DESCRIPTOR_CODES_-_Valid_at_Booking_Level_..35" />
+    <Anchor
+      Name="kanchor304" />
+    <Anchor
+      Name="Hotel_and_Car_Segments_..36" />
+    <Anchor
+      Name="kanchor305" />
+    <Anchor
+      Name="Vendor_Profiles" />
+    <Anchor
+      Name="Automated_Hotel_Segment_..37" />
+    <Anchor
+      Name="Non-Automated_Hotel_Segment_..38" />
+    <Anchor
+      Name="Automated_Car_Segment_..39" />
+    <Anchor
+      Name="Non-Automated_Car_Segment_..40" />
+    <Anchor
+      Name="Itinerary_Updates_T-HU" />
+    <Anchor
+      Name="UDID Related_..41" />
+    <Anchor
+      Name="ARC_BSP_Ticketing_and_Invoicing_..42" />
+    <Anchor
+      Name="kanchor306" />
+    <Anchor
+      Name="Voided_Tickets_..43" />
+    <Anchor
+      Name="Sample_APOLLO_Invoice_&amp;_Ticketing_Commands" />
+    <Anchor
+      Name="_gen__..44" />
+    <Anchor
+      Name="Issue_Automated_ARC_BSP_Ticket_..45" />
+    <Anchor
+      Name="Issue_Automated_ARC_BSP_Full_Refund_Ticket" />
+    <Anchor
+      Name="Issue_Invoice_for_Hand_ARC_BSP_Ticket_..46" />
+    <Anchor
+      Name="Issue_ARC_BSP_EXCHANGE_Ticket" />
+    <Anchor
+      Name="Issue_Invoice_for_Prepaid_Ticket_Advice_(PTA)_..47" />
+    <Anchor
+      Name="Issue_Invoice_for_Misc._Charge_Order_(MCO)-Option__1" />
+    <Anchor
+      Name="Issue_Invoice_for_Misc._Charge_Order_(MCO)_-_Option__2" />
+    <Anchor
+      Name="Automated_MCO_for_Service_Fees" />
+    <Anchor
+      Name="Option_One" />
+    <Anchor
+      Name="Option_Two" />
+    <Anchor
+      Name="Discounts_..48" />
+    <Anchor
+      Name="OB_Fees_..49" />
+    <Anchor
+      Name="Ancillary_Airline_Charges_EMD_..50" />
+    <Anchor
+      Name="Non-ARC_BSP_Supplier_Invoice_..51" />
+    <Anchor
+      Name="kanchor307" />
+    <Anchor
+      Name="Issuing_Invoice_for_Non-ARC_BSP_Air_..52" />
+    <Anchor
+      Name="Supplier_Exchange_Ticket_..53" />
+    <Anchor
+      Name="Issuing_Invoice_for_Tour_Deposit_..54" />
+    <Anchor
+      Name="Issuing_Invoice_for_Tour_Final_Payment_..55" />
+    <Anchor
+      Name="Issuing_Invoice_for_Cruise_Deposit_..56" />
+    <Anchor
+      Name="Issuing_Invoice_for_Cruise_Final_Payment_..57" />
+    <Anchor
+      Name="Issuing_Invoice_for_Insurance_..58" />
+    <Anchor
+      Name="Issuing_Invoice_for_Service_Fees_..59" />
+    <Anchor
+      Name="Split_Form_of_Payment_..60" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="APOLLO/GALILEO Interface Preparation"
+      Conditions=""
+      LocalConditions=""
+      Position="19" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  ImportFolder=""
+  Stylesheet="file:///C:/My Projects/TRAMS/Release Notes/ClientBase Windows Release Notes/ClientBase Windows Release Notes 409/Content/Resources/Stylesheets/MyStylesheet.css"
+  PageBreaks="Ignore"
+  LastImport="2020-08-17T14:46:22.9749099-03:00">
+  <Files>
+    <Url
+      Source="../../../../../../../Users/SG0222835/OneDrive - Sabre/Documents/TRAMS case/05066281/4 09 00 GR CBW Fix release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/OneDrive - Sabre/Documents/TRAMS case/05066281/4 09 00 GR CBW Fix release notes.docx" />
+    <Url
+      Source="../../../../../../../Users/SG0222835/OneDrive - Sabre/Documents/TRAMS case/05066281/4 09 00 GR CBW NFET release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/OneDrive - Sabre/Documents/TRAMS case/05066281/4 09 00 GR CBW NFET release notes.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/ClientBase Windows 4 09 00.htm"
+      TimeStamp="8/17/2020 2:46:14 PM" />
+    <Url
+      Source="../../Content/ClientBase Windows 4 09 00_1.htm"
+      TimeStamp="8/17/2020 2:46:14 PM" />
+    <Url
+      Source="../TOCs/4 09 00 GR CBW Fix release notes1.fltoc"
+      TimeStamp="8/17/2020 2:46:14 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/MyStylesheet.css"
+      TimeStamp="8/17/2020 2:46:14 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading1"
+      Style="Word" />
+    <Map
+      From="List Paragraph"
+      To="p.ListParagraph"
+      Style="Word" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Strong"
+      To="span.Strong"
+      Style="Word" />
+  </CharacterStyles>
+  <NewTopicStyles />
+</MsWordImport>

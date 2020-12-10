@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-18T15:06:12.4455192-05:00" ProjectName="CBW Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-18T15:06:21.9771192-05:00">
+    <Files>
+        <Url Source="../../../../../../Desktop/CBW Help/Travel Bound.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Travel Bound.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Travel Bound/Travel Bound.htm" TimeStamp="5/18/2017 3:06:20 PM" />
+        <Url Source="../../Content/Resources/Images/Travel Bound/Travel Bound Features.jpg" TimeStamp="5/18/2017 3:06:19 PM" />
+        <Url Source="../../Content/Resources/Images/Travel Bound/Travel Bound Features_1.jpg" TimeStamp="5/18/2017 3:06:19 PM" />
+        <Url Source="../../Content/Resources/Images/Travel Bound/Travel Bound Features_2.jpg" TimeStamp="5/18/2017 3:06:20 PM" />
+        <Url Source="../../Content/Resources/Images/Travel Bound/Travel Bound Features.png" TimeStamp="5/18/2017 3:06:20 PM" />
+        <Url Source="../../Content/Resources/Images/Travel Bound/Travel Bound Features_1.png" TimeStamp="5/18/2017 3:06:20 PM" />
+        <Url Source="../../Content/Travel Bound/Travel Bound Features.htm" TimeStamp="5/18/2017 3:06:20 PM" />
+        <Url Source="../TOCs/Travel Bound.fltoc" TimeStamp="5/18/2017 3:06:20 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_71.css" TimeStamp="5/18/2017 3:06:20 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Hyperlink" />
+    </UsedCharacterStyles>
+</MsWordImport>

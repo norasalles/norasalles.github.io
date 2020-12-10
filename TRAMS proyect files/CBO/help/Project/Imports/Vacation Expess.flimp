@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-06-01T15:18:17.4658225-05:00" ProjectName="CBO CBB Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBO CBB Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../Content/Resources/Stylesheets/Styles.css" LastImport="2017-06-01T15:18:29.4778225-05:00">
+    <Files>
+        <Url Source="../../../../../../Downloads/Vacation Expess.docx" AbsoluteSource="file:///C:/Users/sg0217543/Downloads/Vacation Expess.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express.jpg" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express_1.jpg" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express_2.jpg" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express_3.jpg" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express_4.jpg" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express_5.jpg" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express_6.jpg" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Images/Vacation Expess/Vacation Express.png" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Vacation Expess/Vacation Express.htm" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../TOCs/Vacation Expess.fltoc" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/MasterPages/Vacation Expess.flmsp" TimeStamp="6/1/2017 3:18:27 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_162.css" TimeStamp="6/1/2017 3:18:27 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Default" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles />
+</MsWordImport>

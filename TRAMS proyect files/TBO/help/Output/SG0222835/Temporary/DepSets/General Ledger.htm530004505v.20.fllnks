@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Maintaining a General Ledger in Trams Back Office"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.CBSupport@sabre.com" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Query Retrieving an Existing_516x386.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Query Retrieving an Existing.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing_2.jpg" />
+    <Link
+      Url="../../../../../../sg0892339/Documents/ePublisher Designer Projects/TBO/Output/Target 1/TBO/www.IATA.org/customer" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing_3.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.CBSupport@sabre.com" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Query Retrieving an Existing_516x386.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Query Retrieving an Existing.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Updating One or Multiple J_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing_2.jpg" />
+    <Link
+      Url="../../../../../../sg0892339/Documents/ePublisher Designer Projects/TBO/Output/Target 1/TBO/www.IATA.org/customer" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Year End Closing_3.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_10_General_Ledger" />
+    <Anchor
+      Name="Maintaining_a_General_Ledger_in_Trams_Back_Office" />
+    <Anchor
+      Name="kanchor227" />
+    <Anchor
+      Name="Query_-_Retrieving_an_Existing_JE" />
+    <Anchor
+      Name="kanchor228" />
+    <Anchor
+      Name="Selecting_Queried_Journal_Entries" />
+    <Anchor
+      Name="Updating_One_or_Multiple_J_E’s_Remarks_Simultaneously" />
+    <Anchor
+      Name="Copying_Queried_Journal_Entries" />
+    <Anchor
+      Name="Print_Journal_Entry" />
+    <Anchor
+      Name="Print_Query" />
+    <Anchor
+      Name="Right-Mouse_Click_Menu_in_Journal_Entry_Query" />
+    <Anchor
+      Name="Sorting_Journal_Entry_Data" />
+    <Anchor
+      Name="Voiding_a_JE-_If_Record_Number_is_Known" />
+    <Anchor
+      Name="Void_if_the_JE’s_Record_Number_is_Not_Known" />
+    <Anchor
+      Name="Journalized_by_Transaction_vs._Journalized_Through_the_End_of_Period" />
+    <Anchor
+      Name="Invoices" />
+    <Anchor
+      Name="Payments" />
+    <Anchor
+      Name="Payment_Types" />
+    <Anchor
+      Name="Example_Journal_Entries_by_Transaction" />
+    <Anchor
+      Name="kanchor229" />
+    <Anchor
+      Name="All_Payments_Made_to_Other_Entries_Should_Include" />
+    <Anchor
+      Name="All_Payments_Received_From_Other_Should_include" />
+    <Anchor
+      Name="All_Bank_Withdrawals_Entered_Entries_Should_Include" />
+    <Anchor
+      Name="All_Payments_Made_to_Clients_with_Pay_Method_of_Other_Entries_Should_Include" />
+    <Anchor
+      Name="All_Payments_Received_from_Clients_with_Pay_Method_of_Other_Entries_Should_In..." />
+    <Anchor
+      Name="All_Payments_Made_to_Vendors_with_Pay_Method_of_Other_Entries_Should_Include" />
+    <Anchor
+      Name="All_Payments_Received_from_Vendors_with_Pay_Method_of_Other_Entries_Should_In..." />
+    <Anchor
+      Name="Example_Journal_Entries_by_End_of_Period" />
+    <Anchor
+      Name="kanchor230" />
+    <Anchor
+      Name="Submit_to_ARC_Invoices_Journal_Entries_Created_by_End_of_Period" />
+    <Anchor
+      Name="Submit_to_Supplier_Invoices_Journal_Entries_Created_by_End_of_Period" />
+    <Anchor
+      Name="Submit_to_Commission_Track_Invoices_Journal_Entries_Created_by_End_of_Period" />
+    <Anchor
+      Name="Payment_Received_with_Profile_Type_Client_and_Pay_Method_of_Cash_or_Check_JE’..." />
+    <Anchor
+      Name="Payment_Received_with_Profile_Type_Vendor_Supplier_and_Pay_Method_Cash_or_Che..." />
+    <Anchor
+      Name="Payment_Received_with_Profile_Type_Vendor_Comm_Track_and_Pay_Method_Cash_or_C..." />
+    <Anchor
+      Name="Payment_Received_with_Profile_Type_Client_and_Pay_Method_CC_Merchant_JE’s_Cre..." />
+    <Anchor
+      Name="Payment_Made_with_Profile_Type_Supplier_and_Pay_Method_Cash_or_Check_JE’s_Cre..." />
+    <Anchor
+      Name="End_of_Period_Journal_Entry" />
+    <Anchor
+      Name="kanchor231" />
+    <Anchor
+      Name="Full_End_of_Period" />
+    <Anchor
+      Name="Supplier_Booking_Closed_by_CC_Can_Act_Like_a_Comm_Track_Booking" />
+    <Anchor
+      Name="kanchor232" />
+    <Anchor
+      Name="Pseudo_End_of_Period" />
+    <Anchor
+      Name="kanchor233" />
+    <Anchor
+      Name="Journal_Entry" />
+    <Anchor
+      Name="kanchor234" />
+    <Anchor
+      Name="JE_Import_From_File" />
+    <Anchor
+      Name="Posting_JEs_to_the_General_Ledger" />
+    <Anchor
+      Name="kanchor235" />
+    <Anchor
+      Name="Steps_to_Post_to_General_Ledger" />
+    <Anchor
+      Name="kanchor236" />
+    <Anchor
+      Name="Pseudo_Posting_Journal_Entries" />
+    <Anchor
+      Name="kanchor237" />
+    <Anchor
+      Name="Budget_Entry" />
+    <Anchor
+      Name="kanchor238" />
+    <Anchor
+      Name="Creating_a_Budget_Using_JE_Import_From_File" />
+    <Anchor
+      Name="Year–End_Closing" />
+    <Anchor
+      Name="kanchor239" />
+    <Anchor
+      Name="Void_End_of_Period_and_Year_End_Entries" />
+    <Anchor
+      Name="kanchor240" />
+    <Anchor
+      Name="Voiding_an_End_of_Period" />
+    <Anchor
+      Name="Voiding_a_Year-End" />
+    <Anchor
+      Name="kanchor241" />
+    <Anchor
+      Name="Accounts_(Chart_of_Accounts)" />
+    <Anchor
+      Name="kanchor242" />
+    <Anchor
+      Name="Choose_Columns_on_the_General_Ledger_Accounts_Screen" />
+    <Anchor
+      Name="Generate_Budget" />
+    <Anchor
+      Name="kanchor243" />
+    <Anchor
+      Name="G_L_Account_Reconciliation" />
+    <Anchor
+      Name="kanchor244" />
+    <Anchor
+      Name="Suggested_General_Ledger_Procedures" />
+    <Anchor
+      Name="kanchor245" />
+    <Anchor
+      Name="Daily_Routine" />
+    <Anchor
+      Name="Weekly_(ARC_IAR_Sales_Report_Reconciliation)_Routine_..96" />
+    <Anchor
+      Name="Weekly_(BSP_Sales_Report_Reconciliation)_..97" />
+    <Anchor
+      Name="Reconciliation_Steps" />
+    <Anchor
+      Name="Sample_Exceptions" />
+    <Anchor
+      Name="Examples_(to_be_added_in_addition_to_other_accounting_line_information)" />
+    <Anchor
+      Name="Monthly_Checklist" />
+    <Anchor
+      Name="TBO_End_of_Period_Reports" />
+    <Anchor
+      Name="Additional_End_of_Period_Reports_for_BSP_Users" />
+    <Anchor
+      Name="Summary" />
+    <Anchor
+      Name="Maintain_the_GL_&amp;_Balancing_Core_Reports_to_Trial_Balance_Report" />
+    <Anchor
+      Name="kanchor246" />
+    <Anchor
+      Name="GL_Reconciliation_Report" />
+    <Anchor
+      Name="kanchor247" />
+    <Anchor
+      Name="Possible_GL_Reconciliation_Messages" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Skins/Default/Stylesheets/Slideshow.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/TextEffects.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Topic.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Mobile.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

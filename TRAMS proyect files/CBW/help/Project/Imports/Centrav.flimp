@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2017-05-18T10:26:50.1809149-05:00"
+  ProjectName="CBW Help"
+  ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../Content/Resources/Stylesheets/Styles.css"
+  LastImport="2017-05-18T10:27:00.1809636-05:00">
+  <Files>
+    <Url
+      Source="../../../../../../Desktop/CBW Help/Centrav.docx"
+      AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Centrav.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Centrav/Centrav.jpg"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Centrav/Centrav_1.jpg"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Centrav/Centrav_2.jpg"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Centrav/Centrav_3.jpg"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Centrav/Centrav.png"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../../Content/Centrav/Centrav.htm"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../../Content/Centrav/Import Existing Reservation.htm"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../TOCs/Centrav.fltoc"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Styles_40.css"
+      TimeStamp="5/18/2017 10:26:58 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

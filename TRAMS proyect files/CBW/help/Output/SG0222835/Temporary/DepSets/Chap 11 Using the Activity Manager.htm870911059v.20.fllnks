@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Using the Activity Manager.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Chapter 11 Using the Activity Manager.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Chapter 11 Using the Activity Manager_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Chapter 11 Using the Activity Manager.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/To enter the search criteria.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/To enter the search criteria_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/To enter the search criteria_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_5.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Using the Activity Manager.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Chapter 11 Using the Activity Manager.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Chapter 11 Using the Activity Manager_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Chapter 11 Using the Activity Manager.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/To enter the search criteria.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/To enter the search criteria_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/To enter the search criteria_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 11 Using the Activity Manager/Working with Query Results_5.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_11_Using_the_Activity_Manager_to_Manage_Your_Activities" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Activity Manager Overview"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Activities, Querying"
+      Conditions=""
+      LocalConditions=""
+      Position="19" />
+    <IndexCacheEntry
+      Term="Activity Manager Level 1 Query"
+      Conditions=""
+      LocalConditions=""
+      Position="29" />
+    <IndexCacheEntry
+      Term="Reminders, Querying TBO"
+      Conditions=""
+      LocalConditions=""
+      Position="50" />
+    <IndexCacheEntry
+      Term="Reminders, Querying TBO"
+      Conditions=""
+      LocalConditions=""
+      Position="50" />
+    <IndexCacheEntry
+      Term="Activity Manager Level 2 Query"
+      Conditions=""
+      LocalConditions=""
+      Position="53" />
+    <IndexCacheEntry
+      Term="Activity Manager Level 3 Query"
+      Conditions=""
+      LocalConditions=""
+      Position="92" />
+    <IndexCacheEntry
+      Term="Date Formulas in Queries"
+      Conditions=""
+      LocalConditions=""
+      Position="129" />
+    <IndexCacheEntry
+      Term="At A Glance"
+      Conditions=""
+      LocalConditions=""
+      Position="259" />
+    <IndexCacheEntry
+      Term="Activities, Globally Modify"
+      Conditions=""
+      LocalConditions=""
+      Position="330" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

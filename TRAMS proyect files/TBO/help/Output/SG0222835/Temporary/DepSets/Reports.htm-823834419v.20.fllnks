@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle="This chapter contains:"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Reports.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Reports_1_403x227.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Reports_2_368x233.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_471x191.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_1.jpg" />
+    <Link
+      Url="http://www.iata.org/customer" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_1_376x206.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_2_378x266.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_3_395x266.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_4_391x306.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_5_359x172.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Reports_353x264.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Statements_380x402.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Statements_1_377x297.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Statements_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Agent Commission Detail on_488x335.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Agent Commission Detail on_413x202.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Chapter 11 reports-1_399x186.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Chapter 11 reports-1_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Chapter 11 reports-1_2_384x172.png" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/reports/tbotcr.html" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Skins/Default/Stylesheets/Slideshow.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/TextEffects.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Topic.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Link
+      Url="Skins/Default/Stylesheets/Components/Mobile.css" />
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Images/tramsbackoffice.png" />
+    <Link
+      Url="http://www.sabretravelnetwork.com/trams" />
+    <Link
+      Url="mailto:Trams.TBOSupport@sabre.com" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Reports.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Reports_1_403x227.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Reports_2_368x233.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_471x191.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_1.jpg" />
+    <Link
+      Url="http://www.iata.org/customer" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_1_376x206.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_2_378x266.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_3_395x266.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_4_391x306.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Check Register_5_359x172.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Reports_353x264.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Statements_380x402.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Statements_1_377x297.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Client Statements_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Agent Commission Detail on_488x335.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Agent Commission Detail on_413x202.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Chapter 11 reports-1_399x186.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Chapter 11 reports-1_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Chapter 11 reports-1_2_384x172.png" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/reports/tbotcr.html" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_11_Reports" />
+    <Anchor
+      Name="kanchor248" />
+    <Anchor
+      Name="This_chapter_contains:" />
+    <Anchor
+      Name="Introduction" />
+    <Anchor
+      Name="kanchor249" />
+    <Anchor
+      Name="Print_Options" />
+    <Anchor
+      Name="E-mail_Reports_in_.pdf_Format" />
+    <Anchor
+      Name="kanchor250" />
+    <Anchor
+      Name="E-mail_Reports_for_MAPI_Compatible_Users" />
+    <Anchor
+      Name="E-mail_Reports_for_Non-MAPI_Compatible_Users" />
+    <Anchor
+      Name="Core_Reports" />
+    <Anchor
+      Name="kanchor251" />
+    <Anchor
+      Name="Type_of_Reports" />
+    <Anchor
+      Name="Client_Balances" />
+    <Anchor
+      Name="Vendor_Balances" />
+    <Anchor
+      Name="ARC_BSP_Balances" />
+    <Anchor
+      Name="Check_Register" />
+    <Anchor
+      Name="Management_Summary_Report" />
+    <Anchor
+      Name="Invoice_Reports" />
+    <Anchor
+      Name="kanchor252" />
+    <Anchor
+      Name="ARC_BSP_Report" />
+    <Anchor
+      Name="Weekly_(ARC_IAR_Sales_Report_Reconciliation)_Routine" />
+    <Anchor
+      Name="Weekly_BSP_HOT_Reconciliation_Routine" />
+    <Anchor
+      Name="kanchor253" />
+    <Anchor
+      Name="Weekly_(BSP_Sales_Report_Reconciliation)" />
+    <Anchor
+      Name="kanchor254" />
+    <Anchor
+      Name="Sabre_Canada_BSP_Report_-_Auto_Refunds_(QREX)" />
+    <Anchor
+      Name="kanchor255" />
+    <Anchor
+      Name="Invoice_Sales_Activity_Report" />
+    <Anchor
+      Name="Invoice_Analysis" />
+    <Anchor
+      Name="City_Pair_Report" />
+    <Anchor
+      Name="Depart_Arrive_Manifest" />
+    <Anchor
+      Name="Invoice_Printing" />
+    <Anchor
+      Name="TAFP_Service_Fee_Report_-_ARC_Only" />
+    <Anchor
+      Name="IAR_Reconciliation,_Method_1" />
+    <Anchor
+      Name="kanchor256" />
+    <Anchor
+      Name="IAR_Reconciliation_Method_2" />
+    <Anchor
+      Name="IAR_Reconciliation_Method_3" />
+    <Anchor
+      Name="ARC_BSP_Reconciliation" />
+    <Anchor
+      Name="Client_Reports" />
+    <Anchor
+      Name="kanchor257" />
+    <Anchor
+      Name="Client_Activity_Report" />
+    <Anchor
+      Name="Client_Statements" />
+    <Anchor
+      Name="Fare_Savings_1" />
+    <Anchor
+      Name="To_Print_Fare_Savings_Reports" />
+    <Anchor
+      Name="Client_Lists_and_Labels" />
+    <Anchor
+      Name="kanchor258" />
+    <Anchor
+      Name="Vendor_Statements" />
+    <Anchor
+      Name="Vendor_Lists_and_Labels" />
+    <Anchor
+      Name="Agent_Reports" />
+    <Anchor
+      Name="kanchor259" />
+    <Anchor
+      Name="Agent_Activity_Report" />
+    <Anchor
+      Name="Agent_Statements" />
+    <Anchor
+      Name="IC_Export" />
+    <Anchor
+      Name="Payment_Reports" />
+    <Anchor
+      Name="kanchor260" />
+    <Anchor
+      Name="Receipts" />
+    <Anchor
+      Name="Disbursements" />
+    <Anchor
+      Name="Payment_Analysis" />
+    <Anchor
+      Name="Check_Writer" />
+    <Anchor
+      Name="CC_Merchant_Report" />
+    <Anchor
+      Name="Credit_Card_Reconciliation" />
+    <Anchor
+      Name="kanchor261" />
+    <Anchor
+      Name="Steps_for_Running_the_Credit_Card_Reconciliation" />
+    <Anchor
+      Name="Error_Messages" />
+    <Anchor
+      Name="Group_Revenue" />
+    <Anchor
+      Name="Operating_Payables" />
+    <Anchor
+      Name="ACH_Export" />
+    <Anchor
+      Name="Audits" />
+    <Anchor
+      Name="General_Ledger_Reports" />
+    <Anchor
+      Name="kanchor262" />
+    <Anchor
+      Name="Journal_Entry_Analysis_Report" />
+    <Anchor
+      Name="Account_History" />
+    <Anchor
+      Name="Trial_Balance" />
+    <Anchor
+      Name="Income_Statement" />
+    <Anchor
+      Name="Balance_Sheet" />
+    <Anchor
+      Name="Chart_of_Accounts" />
+    <Anchor
+      Name="GL_Reconciliation" />
+    <Anchor
+      Name="Possible_GL_Reconciliation_Error_Messages" />
+    <Anchor
+      Name="Interface_Reports" />
+    <Anchor
+      Name="kanchor263" />
+    <Anchor
+      Name="Profile" />
+    <Anchor
+      Name="kanchor264" />
+    <Anchor
+      Name="Use_Cross_Reference_to_Generate_Labels" />
+    <Anchor
+      Name="kanchor265" />
+    <Anchor
+      Name="Mail_Merge_..95" />
+    <Anchor
+      Name="kanchor266" />
+    <Anchor
+      Name="Report_Generator_Reports" />
+    <Anchor
+      Name="kanchor267" />
+    <Anchor
+      Name="Financial_Modeling" />
+    <Anchor
+      Name="kanchor268" />
+    <Anchor
+      Name="Export_-_Prism_Handoff_File" />
+    <Anchor
+      Name="kanchor269" />
+    <Anchor
+      Name="Export_-_Maritz_Handoff_File" />
+    <Anchor
+      Name="kanchor270" />
+    <Anchor
+      Name="Export_-_CWT_Handoff_File" />
+    <Anchor
+      Name="kanchor271" />
+    <Anchor
+      Name="Batch_Reporting" />
+    <Anchor
+      Name="kanchor272" />
+    <Anchor
+      Name="Batch_Reports_Load_and_Save_Option" />
+    <Anchor
+      Name="Print_a_Batch_Report_Using_the_Windows_Task_Schedule" />
+    <Anchor
+      Name="Scheduled_E-mailing" />
+    <Anchor
+      Name="kanchor273" />
+    <Anchor
+      Name="TCR_Viewer" />
+    <Anchor
+      Name="kanchor274" />
+    <Anchor
+      Name="Login_Attempts_Audit_Report" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Skins/Default/Stylesheets/Slideshow.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/TextEffects.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Topic.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Styles.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Tablet.css" />
+    <Url
+      Source="Skins/Default/Stylesheets/Components/Mobile.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

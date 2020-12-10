@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="false"
+  ProjectName="TBO"
+  ProjectFolder="C:\Users\sg0222835\Documents\My Projects\TBO\"
+  AutoSync="false"
+  SourceFolders="file:///C:/Users/sg0222835/OneDrive - Sabre/www.trams.com/TBO48"
+  ImportResources="false"
+  ImportResourcesLocation="NoImport"
+  ImportTopics="content"
+  ImportLinkedHtmlFiles="false"
+  LastImport="2019-10-14T17:44:51.4912891-03:00"
+  ImportTopicsLocation="Content/">
+  <Files>
+    <Url
+      Source="../../../../../OneDrive - Sabre/www.trams.com/TBO48"
+      AbsoluteSource="file:///C:/Users/sg0222835/OneDrive - Sabre/www.trams.com/TBO48" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/TBO48/index_CSH.html"
+      TimeStamp="10/14/2019 5:43:48 PM" />
+    <Url
+      Source="../../Content/TBO48/index.html"
+      TimeStamp="10/14/2019 5:43:48 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Adjustment.htm"
+      TimeStamp="10/14/2019 5:43:48 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/AMADEUS Interface Preparation.htm"
+      TimeStamp="10/14/2019 5:43:50 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/APOLLO GALILEO Interface Preparation.htm"
+      TimeStamp="10/14/2019 5:43:51 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Build Reports Report Generator.htm"
+      TimeStamp="10/14/2019 5:43:52 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Financial Modeling.htm"
+      TimeStamp="10/14/2019 5:43:52 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/General Ledger.htm"
+      TimeStamp="10/14/2019 5:43:53 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Importing Profiles from Other.htm"
+      TimeStamp="10/14/2019 5:43:53 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Installing Trams Back Office.htm"
+      TimeStamp="10/14/2019 5:43:53 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Interface Overview Download.htm"
+      TimeStamp="10/14/2019 5:43:54 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Invoices.htm"
+      TimeStamp="10/14/2019 5:43:55 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Payments.htm"
+      TimeStamp="10/14/2019 5:43:59 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Profiles.htm"
+      TimeStamp="10/14/2019 5:43:59 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Reminders.htm"
+      TimeStamp="10/14/2019 5:44:00 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Report Generator.htm"
+      TimeStamp="10/14/2019 5:44:00 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Reports.htm"
+      TimeStamp="10/14/2019 5:44:03 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/SABRE Interface Preparation.htm"
+      TimeStamp="10/14/2019 5:44:04 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Set Up Trams Back Office.htm"
+      TimeStamp="10/14/2019 5:44:05 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Utilities.htm"
+      TimeStamp="10/14/2019 5:44:08 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/Welcome to Trams Back Office.htm"
+      TimeStamp="10/14/2019 5:44:08 PM" />
+    <Url
+      Source="../../Content/TBO48/Content/WORLDSPAN Interface Preparation.htm"
+      TimeStamp="10/14/2019 5:44:10 PM" />
+    <Url
+      Source="../TOCs/TBO48.fltoc"
+      TimeStamp="10/14/2019 5:44:51 PM" />
+  </GeneratedFiles>
+</HtmlImport>

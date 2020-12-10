@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="263" MadCap:lastWidth="452">
+    <head>
+        <link href="Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Logout</h1>
+        <p>Logout ends the active session linked to the SessionID token.</p>
+        <p><b>Usage:</b> &lt;ServerURL&gt;/logout</p>
+        <p>If the SessionID token is not passed as part of the Authentication header, then it needs to be specified in the request content:</p>
+        <ul>
+            <li style="font-size: 10pt;">Request Type: POST</li>
+            <li style="font-size: 10pt;">Request Format: JSON</li>
+            <li style="font-size: 10pt;">Request Content: {“SessionID”:&lt;SessiondID token&gt;}</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Response:</b> A resultcode of 6 indicates the session was not found.</p>
+    </body>
+</html>

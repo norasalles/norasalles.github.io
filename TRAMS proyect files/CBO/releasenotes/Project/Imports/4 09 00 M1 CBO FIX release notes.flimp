@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  ImportFolder=""
+  LastImport="2020-09-09T12:23:56.4714621-03:00">
+  <Files>
+    <Url
+      Source="../../../../../../../Users/SG0222835/OneDrive - Sabre/Documents/TRAMS case/05124016/4 09 00 M1 CBO FIX release notes.docx"
+      AbsoluteSource="file:///C:/Users/SG0222835/OneDrive - Sabre/Documents/TRAMS case/05124016/4 09 00 M1 CBO FIX release notes.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/ClientBase Online 4 09 00.htm"
+      TimeStamp="9/9/2020 12:23:28 PM" />
+    <Url
+      Source="../TOCs/4 09 00 M1 CBO FIX release notes.fltoc"
+      TimeStamp="9/9/2020 12:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/4 09 00 M1 CBO FIX release notes.flmsp"
+      TimeStamp="9/9/2020 12:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/4 09 00 M1 CBO FIX release notes.css"
+      TimeStamp="9/9/2020 12:23:28 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading1"
+      Style="Word" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading2"
+      Style="Word" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading3"
+      Style="Word" />
+    <Map
+      From="List Paragraph"
+      To="p.ListParagraph"
+      Style="Word" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Strong"
+      To="span.Strong"
+      Style="Word" />
+  </CharacterStyles>
+  <NewTopicStyles />
+</MsWordImport>

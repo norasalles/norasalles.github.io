@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Globus and Cosmos Family"
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="http://www.globusjourneys.com/agents" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_227x202.png" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_1.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="http://www.globusjourneys.com/agents" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_227x202.png" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus and Cosmos Family/Globus and Cosmos Family Features_1.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor252" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

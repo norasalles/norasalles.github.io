@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Collette Vacations/cbo_url.png" />
+    <Link
+      Url="Content/Resources/Images/Travelport Cruise and Tour CBO/Travelport Cruise and Tour_1.png" />
+    <Link
+      Url="Content/Resources/Images/create_new_cbo.png" />
+    <Link
+      Url="Content/Resources/Images/Travelport Cruise and Tour CBO/Create New Travelport Cruise_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Collette Vacations/last_screen.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Collette Vacations/cbo_url.png" />
+    <Link
+      Url="Content/Resources/Images/Travelport Cruise and Tour CBO/Travelport Cruise and Tour_1.png" />
+    <Link
+      Url="Content/Resources/Images/create_new_cbo.png" />
+    <Link
+      Url="Content/Resources/Images/Travelport Cruise and Tour CBO/Create New Travelport Cruise_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Collette Vacations/last_screen.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

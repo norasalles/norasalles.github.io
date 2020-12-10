@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 class="Heading2"><a name="_Toc17115985"></a>What Else Happens During Initial Sync In?</h2>
+        <p>Sabre Profiles have a unique identifying number called the Sabre Profile Index. When a Sabre Profile is brought into ClientBase, that number is attached to that profile in ClientBase. Once those profiles are linked together via that number, they are paired. Updates to one are synced to the other. </p>
+        <p>Also, each record within the ClientBase profile is numbered. For example, phone number 1, 2, and 3. The corresponding phone numbers in Sabre Profiles are assigned the same numbering – 1, 2, and 3. From then on, an update to the phone number 1 in either side updates the other phone number 1. This way we don’t have to continually search for matches every time sync runs.&#160; </p>
+        <p>During the Sync In process, if a profile in ClientBase is found via one of the methods above, the Profiles are merged. That means that if a ClientBase field is empty and the corresponding Sabre Profile field has data, the ClientBase field is populated with Sabre Profile data.</p>
+        <p>If a ClientBase field and the corresponding Sabre Profile field <span class="span_1">BOTH</span> have data, then the date and time the ClientBase record was last modified and the date/time the Sabre Profile was last modified are compared. The field with the most recent update time will update the other. </p>
+        <p>Some areas of the profile are not as straightforward. Let’s look at some of the other things we do to align Sabre Profiles data with ClientBase data. </p>
+    </body>
+</html>

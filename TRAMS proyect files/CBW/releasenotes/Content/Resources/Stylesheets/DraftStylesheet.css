@@ -1,0 +1,1222 @@
+/*<meta />*/
+
+div.commframe
+{
+	color: #E50000;
+	font-family: Roboto;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 10px;
+	background: #9DD7D8;
+}
+
+/*<meta sourceDocument="C:\Users\SG0222835\OneDrive - Sabre\Documents\TRAMS case\05066281\4 09 00 GR CBW Fix release notes.docx" />*/
+
+p.MyStyle
+{
+	font-family: Arial;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+p.productnewfeature
+{
+	text-align: right;
+	margin-left: 1px;
+	color: #333333;
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: -0.9em;
+	font-size: 11;
+}
+
+p.releasedate
+{
+	text-align: right;
+	font-family: Batang;
+	color: #000000;
+	margin-top: 1.12em;
+	margin-bottom: 0.12em;
+}
+
+p.header_concept
+{
+	text-align: right;
+	color: #000000;
+	font-size: 10pt;
+	margin-bottom: -0.85em;
+	font-family: Roboto;
+}
+
+h1
+{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24pt;
+	color: #808080;
+	margin-bottom: -0.33em;
+	font-family: 'Arial Black';
+}
+
+h2
+{
+	font-size: 18pt;
+	font-weight: bold;
+	color: #C00000;
+	font-family: 'Roboto Black';
+}
+
+h3
+{
+	font: ;
+	color: #243F60;
+	font-family: Arial;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	color: #000000;
+}
+
+p.Footerbottomline
+{
+	text-align: right;
+	font-family: Arial;
+	color: #7d858a;
+	font-size: 10pt;
+}
+
+p.footer
+{
+	font-family: Roboto;
+	color: #696969;
+}
+
+h1.Contents	/*hide TOC*/
+{
+	mc-heading-level: 0;
+}
+
+hr
+{
+	
+}
+
+p.productnewfeaturepdf
+{
+	text-align: right;
+	margin-left: 1px;
+	color: #333333;
+	font-family: Roboto;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: -0.9em;
+	font-size: 9pt;
+	margin-top: 0.12em;
+	letter-spacing: 1px;
+}
+
+ul.Bulletline
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.Bulletline > li::marker
+{
+	font-family: 'Times New Roman';
+	content: '—';
+}
+
+ul.Bulletlvl2
+{
+	
+}
+
+ul.Bulletlvl2 > li > ul
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.Bulletlvl2 > li > ul > li::marker
+{
+	font-family: 'Times New Roman';
+	content: '•';
+}
+
+li.ListParagraph_5
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	margin-left: 36pt;
+	font-family: Arial;
+	font-size: 12;
+}
+
+li.li_1
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+li.ListParagraph	/*list paragraph*/
+{
+	margin-bottom: 8pt;
+	font-size: 11pt;
+	margin-left: 36pt;
+	font-family: Arial;
+}
+
+li.ListParagraph_1
+{
+	margin-left: 36pt;
+	font-family: Arial;
+	margin-bottom: 0pt;
+	font-size: 12pt;
+}
+
+li.ListParagraph_2
+{
+	margin-bottom: 8pt;
+	margin-left: 36pt;
+	font-family: Arial;
+	margin-top: 12pt;
+	font-size: 12pt;
+}
+
+li.ListParagraph_3
+{
+	margin-left: 36pt;
+	font-family: Arial;
+	margin-bottom: 0pt;
+	font-size: 12;
+}
+
+li.ListParagraph_4
+{
+	margin-bottom: 8pt;
+	margin-left: 36pt;
+	font-family: Arial;
+	font-size: 12;
+}
+
+li.ListParagraph_5_1
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	margin-left: 18pt;
+	font-size: 12;
+}
+
+li
+{
+	font-size: 12pt;
+	font-family: Arial;
+	color: #000000;
+	white-space: pre-line;
+	padding-top: 5px;
+}
+
+ul.ul	/*list*/
+{
+	margin-left: 80px;
+}
+
+p.p_1
+{
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+ol
+{
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+ul.ul_1
+{
+	list-style-type: disc;
+	list-style-image: none;
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+li.li_2
+{
+	content: '—';
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+td
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	vertical-align: top;
+}
+
+span.Strong
+{
+	font-weight: bold;
+}
+
+p.ListParagraph
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+}
+
+li.ListParagraph_6
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+}
+
+p.p_2
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol.ol_1
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul.ul_2
+{
+	list-style-type: disc;
+	list-style-image: none;
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li.li_3
+{
+	content: '—';
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td.td_1
+{
+	margin-top: 6pt;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+h1.Heading1
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-bottom: 0pt;
+	mc-heading-level: 1;
+	color: #E50000;
+	padding: 10px;
+	margin-top: 0;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+/*<meta sourceDocument="C:\Users\SG0222835\OneDrive - Sabre\Documents\TRAMS case\05066281\4 09 00 GR CBW Fix release notes.docx" />*/
+
+p.p_3
+{
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+ul.ul_3
+{
+	list-style-type: disc;
+	list-style-image: none;
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+li.li_4
+{
+	content: '—';
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+li.ListParagraph_7
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+}
+
+span.Strong_1
+{
+	font-weight: bold;
+	color: #808080;
+	font-size: 24pt;
+}
+
+p.p_4
+{
+	color: #808080;
+	font-size: 24pt;
+}
+
+span.span_1
+{
+	font-weight: bold;
+	color: #C00000;
+	font-size: 14pt;
+}
+
+p.p_5
+{
+	font-weight: bold;
+	color: #C00000;
+	font-size: 14pt;
+}
+
+p.p_6
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	font-weight: bold;
+}
+
+ul.ul_4
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 36pt;
+}
+
+p.p_7
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-weight: bold;
+}
+
+p.ListParagraph_1
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+li.ListParagraph_7_1
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+ul.ul_5
+{
+	padding-left: 0px;
+	list-style-type: square;
+	margin-left: 36pt;
+}
+
+p.ListParagraph_2
+{
+	margin-top: 6pt;
+	font-family: Arial;
+	margin-bottom: 12pt;
+	font-weight: bold;
+}
+
+li.ListParagraph_7_2
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	font-family: Arial;
+	margin-bottom: 12pt;
+	font-weight: bold;
+}
+
+p.ListParagraph_3
+{
+	margin-top: 6pt;
+	font-family: Arial;
+	margin-bottom: 12pt;
+}
+
+li.ListParagraph_7_3
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	font-family: Arial;
+	margin-bottom: 12pt;
+}
+
+p.ListParagraph_7_1
+{
+	margin-bottom: 12pt;
+}
+
+p.ListParagraph_4
+{
+	margin-top: 6pt;
+	font-family: Arial;
+	margin-bottom: 6pt;
+}
+
+li.ListParagraph_7_4
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	font-family: Arial;
+	margin-bottom: 6pt;
+}
+
+p.p_8
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+}
+
+p.ListParagraph_5
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	text-align: justify;
+}
+
+li.ListParagraph_7_5
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	text-align: justify;
+}
+
+ul.ul_6
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 90pt;
+}
+
+p.p_9
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol.ol_2
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul.ul_7
+{
+	list-style-type: disc;
+	list-style-image: none;
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li.li_5
+{
+	content: '—';
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td.td_2
+{
+	margin-top: 6pt;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+p.p_10
+{
+	font-weight: normal;
+	color: #C00000;
+	font-size: 14pt;
+}
+
+p.p_11
+{
+	margin-bottom: 0pt;
+	font-weight: bold;
+}
+
+li.li_6
+{
+	font-size: 10pt;
+}
+
+ul.ul_8
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 0pt;
+}
+
+p.ListParagraph_7_2
+{
+	margin-bottom: 0pt;
+}
+
+li.li_7
+{
+	margin-bottom: 0pt;
+	font-size: 10pt;
+}
+
+p.ListParagraph_7_3
+{
+	font-weight: bold;
+}
+
+li.li_8
+{
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+li.li_9
+{
+	margin-bottom: 0pt;
+}
+
+ul.ul_9
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 54pt;
+}
+
+p.ListParagraph_7_4
+{
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+}
+
+p.p_12
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+}
+
+li.li_10
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-size: 10pt;
+}
+
+p.ListParagraph_7_5
+{
+	margin-top: 6pt;
+	margin-bottom: 0pt;
+}
+
+li.li_11
+{
+	margin-top: 6pt;
+	margin-bottom: 0pt;
+}
+
+p.ListParagraph_7_6
+{
+	margin-bottom: 6pt;
+}
+
+li.li_12
+{
+	margin-bottom: 6pt;
+	font-size: 10pt;
+}
+
+p.ListParagraph_7_7
+{
+	margin-top: 6pt;
+	margin-bottom: 0pt;
+	font-weight: bold;
+}
+
+li.li_13
+{
+	margin-top: 6pt;
+	margin-bottom: 0pt;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+li.li_14
+{
+	margin-top: 6pt;
+	margin-bottom: 0pt;
+	font-size: 10pt;
+}
+
+col.col_1
+{
+	width: 154pt;
+}
+
+col.col_2
+{
+	width: 181pt;
+}
+
+p.p_13
+{
+	margin-bottom: 1pt;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+td.td_3
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: #BFBFBF;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: #BFBFBF;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #BFBFBF;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: #BFBFBF;
+	background-color: #auto;
+	padding-top: 2pt;
+	padding-left: 5pt;
+	padding-bottom: 2pt;
+	padding-right: 5pt;
+	vertical-align: bottom;
+}
+
+p.p_14
+{
+	margin-bottom: 1pt;
+	font-family: Verdana;
+}
+
+p.p_15
+{
+	margin-bottom: 1pt;
+	font-family: 'Courier New';
+	font-weight: bold;
+	color: #0000FF;
+}
+
+span.span_2
+{
+	font-family: Verdana;
+}
+
+p.p_16
+{
+	margin-bottom: 1pt;
+}
+
+table.table_1
+{
+	margin-left: 67pt;
+	border-collapse: collapse;
+}
+
+ul.ul_10
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 72pt;
+}
+
+span.span_3
+{
+	font-weight: bold;
+	color: #FF0000;
+}
+
+p.ListParagraph_7_8
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+li.li_15
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	font-size: 10pt;
+}
+
+p.ListParagraph_7_9
+{
+	margin-top: 6pt;
+}
+
+li.li_16
+{
+	margin-top: 6pt;
+}
+
+ul.ul_11
+{
+	padding-left: 0px;
+	list-style-type: square;
+	margin-left: 54pt;
+}
+
+span.span_4
+{
+	color: #FF0000;
+}
+
+li.li_17
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+ul.ul_12
+{
+	padding-left: 0px;
+	list-style-type: circle;
+	margin-left: 36pt;
+}
+
+p.ListParagraph_7_10
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	font-weight: bold;
+}
+
+li.li_18
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+ul.ul_13
+{
+	padding-left: 0px;
+	list-style-type: disc;
+	margin-left: 18pt;
+}
+
+col.col_3
+{
+	width: 76pt;
+}
+
+col.col_4
+{
+	width: 143pt;
+}
+
+col.col_5
+{
+	width: 148pt;
+}
+
+col.col_6
+{
+	width: 132pt;
+}
+
+col.col_7
+{
+	width: 212pt;
+}
+
+h1.Heading1_1
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 12pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 1;
+	font-family: Arial;
+	font-weight: bold;
+	color: black;
+	font-size: 10pt;
+}
+
+td.td_4
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	background-color: #D9D9D9;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+td.td_5
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+td.td_6
+{
+	border-top-style: none;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+h1.Heading1_2
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 12pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 1;
+	font-family: Arial;
+	font-weight: normal;
+	color: black;
+	font-size: 10pt;
+}
+
+td.td_7
+{
+	border-top-style: none;
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+td.td_8
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+td.td_9
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: none;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+td.td_10
+{
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+td.td_11
+{
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+table.table_2
+{
+	border-collapse: collapse;
+}
+
+td.td_12
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	padding-top: 0pt;
+	padding-left: 5pt;
+	padding-bottom: 0pt;
+	padding-right: 5pt;
+}
+
+/*<meta sourceDocument="C:\Users\SG0222835\OneDrive - Sabre\Documents\TRAMS case\05066281\4 09 00 GR CBW Fix release notes.docx" />*/
+
+p.p_17
+{
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+ul.ul_14
+{
+	list-style-type: disc;
+	list-style-image: none;
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+li.li_19
+{
+	content: '—';
+	margin: 0px;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+li.ListParagraph_8
+{
+	font-size: 11pt;
+	margin-left: 36pt;
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+}
+
+strong.strong_1
+{
+	color: #808080;
+	font-size: 24pt;
+}
+
+p.p_18
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol.ol_3
+{
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul.ul_15
+{
+	list-style-type: disc;
+	list-style-image: none;
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li.li_20
+{
+	content: '—';
+	margin: 0px;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td.td_13
+{
+	margin-top: 6pt;
+	margin-bottom: 8pt;
+	font-family: Arial;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+strong.strong_2
+{
+	color: #C00000;
+	font-size: 14pt;
+}
+
+h4
+{
+	font-family: Roboto;
+	font-size: 10pt;
+}
+
+body
+{
+	background-repeat: repeat;
+	background-image: url('../Images/draft.png');
+}
+

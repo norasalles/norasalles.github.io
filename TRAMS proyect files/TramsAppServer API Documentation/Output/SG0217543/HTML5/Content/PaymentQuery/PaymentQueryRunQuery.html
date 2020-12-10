@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="PaymentQuery">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>PaymentQuery - RunQuery</title>
+        <link href="../Resources/TableStyles/codes.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/codes.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>PaymentQuery - RunQuery</h1>
+        <p><b>Note:</b><i> This is a beta with basic instruction. We hope to improve this documentation, but we need your help. Please visit the </i><a href="https://groups.google.com/forum/#!forum/tramsapi-beta" style="font-style: italic;">TramsAPI Google Group</a><i> and share your questions and suggestions.</i>
+        </p>
+        <h3>Running the Query</h3>
+        <p>Before running an invoice query, make sure you've already called <a href="../Login.html" class="MCXref xref">Login</a> and have your session id.</p>
+        <p>Do a post to the following URL (assuming you're running the API locally):</p>
+        <p>http://{localhost:8085}/paymentquery.runquery</p>
+        <p><b>Request:</b>
+        </p><pre xml:space="preserve">{ 
+}</pre>
+        <p style="font-weight: bold;">Response:</p><pre>{
+    "apiVersion": "4.06",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "dataset": {
+            "name": "Payment",
+            "metaData": {
+                "Payment": {
+                    "paymentNo": {
+                        "type": "largeInt"
+                    },
+                    "paymentDate": {
+                        "type": "dateTime"
+                    },
+                    "ckCCNo": {
+                        "type": "string",
+                        "size": 40
+                    },
+                    "amount": {
+                        "type": "largeInt"
+                    },
+                    "bank_LinkNo": {
+                        "type": "integer"
+                    },
+                    "payType_LinkNo": {
+                        "type": "integer"
+                    },
+                    "payMethod_LinkNo": {
+                        "type": "integer"
+                    },
+                    "profile_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "JERecord_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "submitTo_LinkCode": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "profileType_LinkCode": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "remarks": {
+                        "type": "string",
+                        "size": 255
+                    },
+                    "paymentGroup": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "dateCleared": {
+                        "type": "dateTime"
+                    },
+                    "currencyCode": {
+                        "type": "string",
+                        "size": 3
+                    },
+                    "code": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "payeeName": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "branch_LinkNo": {
+                        "type": "integer"
+                    },
+                    "deposit_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "invoiceRef": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "attachmentCount": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "data": {
+                "Payment": [
+                    {
+                        "paymentNo": 1,
+                        "paymentDate": "1993-12-28T00:00:00.000Z",
+                        "ckCCNo": "",
+                        "amount": 149800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "4",
+                        "profile_LinkNo": 181,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Doe/John",
+                        "profileType_LinkCode": "I",
+                        "remarks": "",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 2,
+                        "paymentDate": "1994-01-01T00:00:00.000Z",
+                        "ckCCNo": "OT 01-XXXX-01",
+                        "amount": 69800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 4,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Doe/Jane",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #5567",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 3,
+                        "paymentDate": "1994-01-01T00:00:00.000Z",
+                        "ckCCNo": "UA 12-XXXX-12",
+                        "amount": 9900,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 5,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Jones/John",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #5568",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 4,
+                        "paymentDate": "1994-01-02T00:00:00.000Z",
+                        "ckCCNo": "5279-XXXX",
+                        "amount": 39800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 33,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Jones/Jane",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #55630",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 5,
+                        "paymentDate": "1994-01-02T00:00:00.000Z",
+                        "ckCCNo": "VI 40-XXXX-6712",
+                        "amount": 169800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 181,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Doe/John",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #55631",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                   
+                    }
+                ]
+            }
+        }
+    }
+}</pre>
+        <h3>Return Codes</h3>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/codes.css');" class="TableStyle-codes" cellspacing="0">
+            <col class="TableStyle-codes-Column-Column1" />
+            <col class="TableStyle-codes-Column-Column1" />
+            <col class="TableStyle-codes-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1" style="font-weight: bold;">Code</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1" style="font-weight: bold;">Meaning</td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1" style="font-weight: bold;">Description</td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1">200</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1"><b>Successful Response</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1">
+                        <p>The request succeeded. Information returned with the response depends on the method used in the request.</p>
+                        <p>Get: The entity corresponding to the requested resource is fetched and transmitted.</p>
+                        <p>Post: The entity describing or containing the result of the action is transmitted.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1">400</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1"><b>Bad Request</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1">The API&#160;does not support, or is unable to recognize, the request made to it.</td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyE-Column1-Body1">404</td>
+                    <td class="TableStyle-codes-BodyE-Column1-Body1"><b>Not Found</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyD-Column1-Body1">The resource is invalid (unknown).</td>
+                </tr>
+                <tr class="TableStyle-codes-Body-Body1">
+                    <td class="TableStyle-codes-BodyB-Column1-Body1">500</td>
+                    <td class="TableStyle-codes-BodyB-Column1-Body1"><b>Internal System Error</b>
+                    </td>
+                    <td class="TableStyle-codes-BodyA-Column1-Body1">The server encountered an unexpected condition that prevented it from fulfilling the request.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

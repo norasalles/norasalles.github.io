@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" />
+    <Link
+      Url="https://sabrenow.sharepoint.com/:x:/r/teams/TravelNetwork/Product_Dev/Shared/Trams/ProductDelivery/General Documents/SPS/Simplified ClientBase to Sabre Profiles Field Mapping with GUI Labels revised 20181109.xlsx" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" />
+    <Link
+      Url="https://sabrenow.sharepoint.com/:x:/r/teams/TravelNetwork/Product_Dev/Shared/Trams/ProductDelivery/General Documents/SPS/Simplified ClientBase to Sabre Profiles Field Mapping with GUI Labels revised 20181109.xlsx?d=w614f0f48f2424cff80bc7c8a9d77b34e&amp;csf=1&amp;e=RtrXTz" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

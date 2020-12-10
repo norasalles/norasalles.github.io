@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5 - Tripane.flskn"
+  ResultsPerPage="29"
+  MasterPage="/Content/Resources/MasterPage/MasterPage.flmsp"
+  ResolveCssVariables="false"
+  OutputFile="index.html"
+  SearchFilterSet="/Project/Advanced/Search Filters/SearchFilter.flsfs"
+  MasterToc="/Project/TOCs/TBO Help Files.fltoc"
+  MoveOutputContentToRoot="false"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="png"
+  ReplaceSpacesWithUnderscores="false"
+  UseCustomTopicFileExtension="false"
+  MakeFileLowerCase="true"
+  ExcludeUnreferencedContent="true"
+  PreCompileScaledImages="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

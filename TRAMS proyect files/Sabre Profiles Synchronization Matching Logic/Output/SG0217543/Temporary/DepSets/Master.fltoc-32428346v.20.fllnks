@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="false"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Matching Logic/corp-group-matching1.htm" />
+    <Link
+      Url="Content/Matching Logic/corp-group-matching2.htm" />
+    <Link
+      Url="Content/Matching Logic/corp-group-matching3.htm" />
+    <Link
+      Url="Content/Matching Logic/corp-group-matching4.htm" />
+    <Link
+      Url="Content/Matching Logic/sabre-traveler-matching5.htm" />
+    <Link
+      Url="Content/Matching Logic/sabre-traveler-matching6.htm" />
+    <Link
+      Url="Content/Matching Logic/sabre-traveler-matching7.htm" />
+  </Links>
+  <LongLinks />
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="Footerbottomline" style="text-align: right;color: #d3d3d3;">Reviewed Dec, 2019</p>
+        <p>&#160;</p>
+        <MadCap:bodyProxy />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../Snippets/footer.flsnp" />
+    </body>
+</html>

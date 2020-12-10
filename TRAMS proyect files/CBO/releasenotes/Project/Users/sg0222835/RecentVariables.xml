@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ObjectList>
+    <Object Value="Variables.Current Date" />
+    <Object Value="Heading.Level1" />
+    <Object Value="Variables.CompanyName" />
+    <Object Value="Heading.AnyLevel" />
+    <Object Value="System.SourceFile" />
+    <Object Value="Variables.Version no" />
+    <Object Value="Variables.Product" />
+    <Object Value="Variables.Date" />
+    <Object Value="Variables.Type" />
+</ObjectList>

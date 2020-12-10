@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="http://localhost:8085/version" />
+    <Link
+      Url="http://localhost:8085/login" />
+    <Link
+      Url="http://localhost:8085/logout" />
+    <Link
+      Url="http://localhost:8085/&amp;lt;ModuleName&amp;gt;.getparams" />
+    <Link
+      Url="http://localhost:8085/&amp;lt;ModuleName&amp;gt;.runquery" />
+    <Link
+      Url="http://localhost:8085/invoicequery.getparams" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/TableStyles/Normal_Table.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/Styles.css" />
+    <Link
+      Url="http://localhost:8085/version" />
+    <Link
+      Url="http://localhost:8085/login?username=sysdba&amp;amp;password=masterkey&amp;amp;pcc=automate_cbb_117" />
+    <Link
+      Url="http://localhost:8085/logout?sessionid=&quot;:&quot;{7C188062-A23D-4DCF-90BF-46580478CBFE}" />
+    <Link
+      Url="http://localhost:8085/&amp;lt;ModuleName&amp;gt;.getparams?sessionid={7C188062-A23D-4DCF-90BF-46580478CBFE}" />
+    <Link
+      Url="http://localhost:8085/&amp;lt;ModuleName&amp;gt;.runquery?sessionid={7C188062-A23D-4DCF-90BF-46580478CBFE}" />
+    <Link
+      Url="http://localhost:8085/invoicequery.getparams?sessionid={7C188062-A23D-4DCF-90BF-46580478CBFE}" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/TableStyles/Normal_Table.css" />
+    <Url
+      Source="Content/Resources/Stylesheets/Styles.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

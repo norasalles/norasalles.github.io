@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 class="Heading2"><a name="_Toc17115995"></a>Merge Rules</h2>
+        <ul class="ul_4">
+            <li class="ListParagraph_1">If a matching ClientBase field is empty/null and the Sabre Profile field has data, the ClientBase Field is populated with Sabre Profile data.</li>
+            <li class="ListParagraph_1">If a matching ClientBase field and a Sabre Profile field <span class="span_1">BOTH</span> have data, the Data/Time the record was last modified is compated to the UpdateDateTime of the Sabre Profile. If both are equal, the Sabre Profiles Profile wins. </li>
+            <li class="ListParagraph_1">No half merges! For each subject area, if a matching record is found in ClientBase, <span class="span_1">ALL</span> of the Sabre Profiles record will be merged. (This means blank fields from the Sabre Profiles record may replace populated ClientBase fields in these areas. </li>
+        </ul>
+        <p>NOTE: Fields that only exist in one product (e.g. Marketing Permission in ClientBase) are ignored and will never be overwritten or updated.</p>
+    </body>
+</html>

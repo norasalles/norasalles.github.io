@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/ItemAmount.htm'],s:['$5000','rental'],p:[['$5000',17],['below',9],['field',12],['on',9],['site',2]]});

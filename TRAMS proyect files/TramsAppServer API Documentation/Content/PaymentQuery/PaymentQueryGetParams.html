@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/codes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="PaymentQuery" />PaymentQuery - GetParams</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/retrieveparams.flsnp" />
+        <p>http://{localhost:8085}/paymentquery/getparams</p>
+        <p style="font-weight: bold;">Response:</p><pre xml:space="preserve">{
+    "apiVersion": "4.06",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "params": {
+            "includeCols": {
+                "type": "string",
+                "flags": [
+                    "valueList"
+                ]
+            },
+            "excludeCols": {
+                "type": "string",
+                "flags": [
+                    "valueList"
+                ]
+            },
+            "recNo": {
+                "type": "largeInt"
+            },
+            "allowCancel": {
+                "type": "boolean"
+            },
+            "fullFieldNames": {
+                "type": "boolean"
+            },
+            "timeout": {
+                "type": "integer"
+            },
+            "forceRefresh": {
+                "type": "boolean"
+            },
+            "logView": {
+                "type": "boolean"
+            },
+            "noMetadata": {
+                "type": "boolean"
+            },
+            "StartingRow": {
+                "type": "integer"
+            },
+            "RowCount": {
+                "type": "integer"
+            },
+            "TopRows": {
+                "type": "integer"
+            },
+            "SortBy": {
+                "type": "string",
+                "flags": [
+                    "valueList"
+                ]
+            },
+            "invoiceNo": {
+                "type": "largeInt"
+            },
+            "invoiceNumber": {
+                "type": "integer"
+            },
+            "paymentDateFrom": {
+                "type": "dateTime"
+            },
+            "paymentDateTo": {
+                "type": "dateTime"
+            },
+            "payType": {
+                "type": "integer",
+                "flags": [
+                    "valueList"
+                ],
+                "checkValues": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            "cleared": {
+                "type": "boolean"
+            },
+            "dateClearedFrom": {
+                "type": "dateTime"
+            },
+            "dateClearedTo": {
+                "type": "dateTime"
+            },
+            "paymentGroup": {
+                "type": "string"
+            },
+            "remarksCombo": {
+                "type": "integer",
+                "description": "0=Ignore, 1=Equal, 2=Not Equal, 3=Blank, 4=Not Blank, 5=Starting With, 6=Contains, 7=In, 8=Not In",
+                "minValue": 0,
+                "maxValue": 8
+            },
+            "remarks": {
+                "type": "string"
+            },
+            "amountFrom": {
+                "type": "largeInt"
+            },
+            "amountTo": {
+                "type": "largeInt"
+            },
+            "payMethod": {
+                "type": "integer",
+                "flags": [
+                    "valueList"
+                ],
+                "checkValues": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ]
+            },
+            "onlyUnapplied": {
+                "type": "boolean"
+            },
+            "checkNoFrom": {
+                "type": "integer"
+            },
+            "checkNoTo": {
+                "type": "integer"
+            },
+            "bankGroup": {
+                "type": "integer"
+            },
+            "bankNo": {
+                "type": "integer"
+            },
+            "paymentCode": {
+                "type": "string"
+            },
+            "creditCardCombo": {
+                "type": "integer",
+                "description": "0=Ignore, 1=Equal, 2=Not Equal, 3=Blank, 4=Not Blank, 5=Starting With, 6=Contains, 7=In, 8=Not In",
+                "minValue": 0,
+                "maxValue": 8
+            },
+            "creditCardNo": {
+                "type": "string"
+            },
+            "profileNo": {
+                "type": "largeInt"
+            },
+            "profileType": {
+                "type": "string",
+                "checkValues": [
+                    "I",
+                    "C",
+                    "V",
+                    "A",
+                    "O"
+                ]
+            },
+            "payeeNameCombo": {
+                "type": "integer",
+                "description": "0=Ignore, 1=Equal, 2=Not Equal, 3=Blank, 4=Not Blank, 5=Starting With, 6=Contains, 7=In, 8=Not In",
+                "minValue": 0,
+                "maxValue": 8
+            },
+            "payeeName": {
+                "type": "string"
+            },
+            "voidedOnly": {
+                "type": "boolean"
+            },
+            "branchGroup": {
+                "type": "integer"
+            },
+            "branchNo": {
+                "type": "integer"
+            },
+            "invoiceRef": {
+                "type": "string"
+            },
+            "bookingNo": {
+                "type": "largeInt"
+            },
+            "hasAttachments": {
+                "type": "boolean"
+            },
+            "invoiceClientNo": {
+                "type": "largeInt"
+            }
+        }
+    }
+}</pre>
+        <p xml:space="preserve">&#160;</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/returncodes.flsnp" />
+        <p>&#160;</p>
+    </body>
+</html>

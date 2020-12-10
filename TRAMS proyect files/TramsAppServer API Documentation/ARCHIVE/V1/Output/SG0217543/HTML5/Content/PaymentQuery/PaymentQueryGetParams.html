@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="PaymentQuery">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>PaymentQuery - GetParams</title>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>PaymentQuery - GetParams</h1>
+        <p><b style="background-color: #ffff00;">Documentation in development.</b>
+        </p>
+        <h3>Running the Query</h3>
+        <p>Before running a payment query, make sure you've already called <a href="../Login.html" class="MCXref xref" xrefformat="{paratext}">Login</a> and have your session id.</p>
+        <p>Do a post to the following URL (assuming you're running the API locally):</p>
+        <p>http://localhost:8085}/paymentquery/getparams</p>
+        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Response:</a></span>
+            <div class="MCDropDownBody dropDownBody"><pre>{
+    "apiVersion": "4.05",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "params": {
+            "includeCols": {
+                "type": "string",
+                "flags": [
+                    "valueList"
+                ]
+            },
+            "excludeCols": {
+                "type": "string",
+                "flags": [
+                    "valueList"
+                ]
+            },
+            "recNo": {
+                "type": "largeInt"
+            },
+            "allowCancel": {
+                "type": "boolean"
+            },
+            "fullFieldNames": {
+                "type": "boolean"
+            },
+            "timeout": {
+                "type": "integer"
+            },
+            "forceRefresh": {
+                "type": "boolean"
+            },
+            "logView": {
+                "type": "boolean"
+            },
+            "noMetadata": {
+                "type": "boolean"
+            },
+            "StartingRow": {
+                "type": "integer"
+            },
+            "RowCount": {
+                "type": "integer"
+            },
+            "TopRows": {
+                "type": "integer"
+            },
+            "SortBy": {
+                "type": "string",
+                "flags": [
+                    "valueList"
+                ]
+            },
+            "invoiceNo": {
+                "type": "largeInt"
+            },
+            "invoiceNumber": {
+                "type": "integer"
+            },
+            "paymentDateFrom": {
+                "type": "dateTime"
+            },
+            "paymentDateTo": {
+                "type": "dateTime"
+            },
+            "payType": {
+                "type": "integer",
+                "flags": [
+                    "valueList"
+                ],
+                "checkValues": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            "cleared": {
+                "type": "boolean"
+            },
+            "dateClearedFrom": {
+                "type": "dateTime"
+            },
+            "dateClearedTo": {
+                "type": "dateTime"
+            },
+            "paymentGroup": {
+                "type": "string"
+            },
+            "remarksCombo": {
+                "type": "integer",
+                "description": "0=Ignore, 1=Equal, 2=Not Equal, 3=Blank, 4=Not Blank, 5=Starting With, 6=Contains, 7=In, 8=Not In",
+                "minValue": 0,
+                "maxValue": 8
+            },
+            "remarks": {
+                "type": "string"
+            },
+            "amountFrom": {
+                "type": "largeInt"
+            },
+            "amountTo": {
+                "type": "largeInt"
+            },
+            "payMethod": {
+                "type": "integer",
+                "flags": [
+                    "valueList"
+                ],
+                "checkValues": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ]
+            },
+            "onlyUnapplied": {
+                "type": "boolean"
+            },
+            "checkNoFrom": {
+                "type": "integer"
+            },
+            "checkNoTo": {
+                "type": "integer"
+            },
+            "bankGroup": {
+                "type": "integer"
+            },
+            "bankNo": {
+                "type": "integer"
+            },
+            "paymentCode": {
+                "type": "string"
+            },
+            "creditCardCombo": {
+                "type": "integer",
+                "description": "0=Ignore, 1=Equal, 2=Not Equal, 3=Blank, 4=Not Blank, 5=Starting With, 6=Contains, 7=In, 8=Not In",
+                "minValue": 0,
+                "maxValue": 8
+            },
+            "creditCardNo": {
+                "type": "string"
+            },
+            "profileNo": {
+                "type": "largeInt"
+            },
+            "profileType": {
+                "type": "string",
+                "checkValues": [
+                    "I",
+                    "C",
+                    "V",
+                    "A",
+                    "O"
+                ]
+            },
+            "payeeNameCombo": {
+                "type": "integer",
+                "description": "0=Ignore, 1=Equal, 2=Not Equal, 3=Blank, 4=Not Blank, 5=Starting With, 6=Contains, 7=In, 8=Not In",
+                "minValue": 0,
+                "maxValue": 8
+            },
+            "payeeName": {
+                "type": "string"
+            },
+            "voidedOnly": {
+                "type": "boolean"
+            },
+            "branchGroup": {
+                "type": "integer"
+            },
+            "branchNo": {
+                "type": "integer"
+            },
+            "invoiceRef": {
+                "type": "string"
+            },
+            "bookingNo": {
+                "type": "largeInt"
+            },
+            "hasAttachments": {
+                "type": "boolean"
+            },
+            "invoiceClientNo": {
+                "type": "largeInt"
+            }
+        }
+    }
+}</pre>
+            </div>
+        </div>
+    </body>
+</html>

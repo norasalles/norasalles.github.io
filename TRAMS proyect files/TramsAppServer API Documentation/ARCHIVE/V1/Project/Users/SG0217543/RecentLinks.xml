@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog" />
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="C:\Users\sg0217543\AppData\Local\Temp\MadCap Software\Flare\SkinEditor\_55BBE511\TASAPI.jpg" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog">
+        <Link Value="C:\Users\sg0217543\Documents\My Projects\API Documentation\TramsAppServer API Documentation\Content\Login.html" />
+    </Dialog>
+</RecentLinks>

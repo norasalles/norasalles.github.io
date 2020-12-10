@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 class="Heading2"><a name="_Toc17115984"></a>What happens during a Profile Merge?</h2>
+        <p>When a Sabre Profiles Profile is merged into a matching ClientBase Profile, if the corresponding ClientBase field is empty and the Sabre Profiles field contains data, we populate the ClientBase field with the Sabre Profiles data. Similarly, if the corresponding Sabre Profiles field is empty and the ClientBase field contains data, the Sabre Profiles field is populated with the ClientBase data. If both contain data, then whichever record was updated more recently will update the other side. </p>
+        <p>This rule applies when there is only one record allowed for the type, for example, Known Traveler Number, Name fields, and Birth Date fields. When more than one record of a given type is allowed, for example, phone numbers, payment cards, and passports, we attempt to match up those records and update them, but if we cannot, we will insert as an additional record.</p>
+    </body>
+</html>

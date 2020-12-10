@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="Normal" Width="800" Height="800" Padding="1in" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in">
+        <Frame Flow="footer" Height="1.520833in" Right="-54px" Bottom="-78px" X="-55px" Y="8.291667in" Width="7.635417in" Anchors="">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                        <xhtml:link xhtml:href="../../../../../../../Content/Resources/Stylesheets/MyStylesheet.css" xhtml:rel="stylesheet" xhtml:type="text/css" />
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="header_concept" xhtml:style="text-align: right;font-size: 8pt;"><xhtml:a xhtml:href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</xhtml:a>
+                        </xhtml:p>
+                        <xhtml:p xhtml:class="header_concept" xhtml:style="text-align: right;font-size: 8pt;">Phone:&#160;310 - 641 - 8726 — <MadCap:variable xhtml:name="Variables.TBO Option" /></xhtml:p>
+                        <xhtml:p xhtml:class="header_concept" xhtml:style="text-align: right;font-size: 8pt;">Email: <MadCap:variable xhtml:name="Variables.TBO Email" /></xhtml:p>
+                        <xhtml:p xhtml:class="header_concept" xhtml:style="text-align: right;font-size: 8pt;">&#160;</xhtml:p>
+                        <xhtml:hr xhtml:style="font-size: 9pt;" />
+                        <xhtml:p xhtml:class="footer" xhtml:style="font-size: 8pt;text-align: center;">All Rights Reserved © <MadCap:variable xhtml:name="Variables.Current year" /><MadCap:variable xhtml:name="Variables.CompanyName" /> </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="header" Height="0.5in" Right="-61px" X="61px" Y="-0.65625in" ColumnCount="1" Width="6.5in" Bottom="879px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:style="text-align: right;">
+                            <xhtml:img xhtml:src="../../../../../../../Content/Images/tboreleasenotes.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="6.5in" Height="7.760417in" X="0px" Y="0px" Right="0px" Bottom="119px">
+        </Frame>
+    </Page>
+</PageStyles>

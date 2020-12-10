@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" Virtuoso Cruise Tool"
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool_308x318.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_1_624x335.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_2.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_3_504x352.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_4_624x130.png" />
+    <Link
+      Url="mailto:support@passportonlineinc.com" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool_308x318.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_1_624x335.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_2.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_3_504x352.png" />
+    <Link
+      Url="Content/Resources/Images/Virtuoso Cruise Tool/Virtuoso Cruise Tool Features_4_624x130.png" />
+    <Link
+      Url="mailto:support@passportonlineinc.com" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor289" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

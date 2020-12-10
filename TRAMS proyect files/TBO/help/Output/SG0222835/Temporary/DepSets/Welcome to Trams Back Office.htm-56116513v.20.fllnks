@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" The Manual is in the Helpfiles"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://sabretravelnetwork.com/trams" />
+    <Link
+      Url="Content/Resources/Images/login.bmp" />
+    <Link
+      Url="Content/Resources/Images/menu.bmp" />
+    <Link
+      Url="Content/Resources/Images/reports menu.bmp" />
+    <Link
+      Url="Content/Reports.htm" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Welcome to Trams Back Office_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Welcome to Trams Back Office_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Welcome to Trams Back Office_3.png" />
+    <Link
+      Url="http://www.trams.com/" />
+    <Link
+      Url="Mailto:implementation@Trams.com" />
+    <Link
+      Url="Content/Installing Trams Back Office.htm" />
+    <Link
+      Url="Content/Utilities.htm" />
+    <Link
+      Url="Content/Importing Profiles from Other Sources.htm" />
+    <Link
+      Url="Content/Interface Overview Download &amp; Processing.htm" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm" />
+    <Link
+      Url="Content/Profiles.htm" />
+    <Link
+      Url="Content/Invoices.htm" />
+    <Link
+      Url="Content/Payments.htm" />
+    <Link
+      Url="Content/Adjustment.htm" />
+    <Link
+      Url="Content/Reminders.htm" />
+    <Link
+      Url="Content/General Ledger.htm" />
+    <Link
+      Url="Content/Report Generator.htm" />
+    <Link
+      Url="Content/Build Reports Report Generator.htm" />
+    <Link
+      Url="Content/Financial Modeling.htm" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="http://sabretravelnetwork.com/trams" />
+    <Link
+      Url="Content/Resources/Images/login.bmp" />
+    <Link
+      Url="Content/Resources/Images/menu.bmp" />
+    <Link
+      Url="Content/Resources/Images/reports menu.bmp" />
+    <Link
+      Url="Content/Reports.htm" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Welcome to Trams Back Office_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Welcome to Trams Back Office_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 1 Welcome/Welcome to Trams Back Office_3.png" />
+    <Link
+      Url="http://www.trams.com/" />
+    <Link
+      Url="Mailto:implementation@Trams.com" />
+    <Link
+      Url="Content/Installing Trams Back Office.htm" />
+    <Link
+      Url="Content/Utilities.htm#User_Profiles" />
+    <Link
+      Url="Content/Utilities.htm#Global_Defaults" />
+    <Link
+      Url="Content/Utilities.htm#Branches" />
+    <Link
+      Url="Content/Utilities.htm#Travel_Types_..154" />
+    <Link
+      Url="Content/Utilities.htm#Bank_Accounts" />
+    <Link
+      Url="Content/Utilities.htm#G_L_Accounts" />
+    <Link
+      Url="Content/Utilities.htm#Checks" />
+    <Link
+      Url="Content/Utilities.htm#Printer_Defaults" />
+    <Link
+      Url="Content/Utilities.htm#ReportStatementInvoice" />
+    <Link
+      Url="Content/Utilities.htm#Fare_Codes" />
+    <Link
+      Url="Content/Utilities.htm#City_Codes" />
+    <Link
+      Url="Content/Utilities.htm#Groups" />
+    <Link
+      Url="Content/Utilities.htm#IC_Host_Codes" />
+    <Link
+      Url="Content/Utilities.htm#CC_Processors" />
+    <Link
+      Url="Content/Utilities.htm#UDIDs" />
+    <Link
+      Url="Content/Utilities.htm#User-Defined_Fields" />
+    <Link
+      Url="Content/Utilities.htm#Alarms_..155" />
+    <Link
+      Url="Content/Utilities.htm#Backup_Overview" />
+    <Link
+      Url="Content/Importing Profiles from Other Sources.htm" />
+    <Link
+      Url="Content/Interface Overview Download &amp; Processing.htm#Overview_of_Interface" />
+    <Link
+      Url="Content/Interface Overview Download &amp; Processing.htm#Introduction_to_Interface_Download_Process" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#Travel_Types" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#Set_Up_Client_Vendor_Balances_Core_Reports" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#Entering_Opening_Balances" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#General_Ledger_Setup" />
+    <Link
+      Url="Content/Set Up Trams Back Office.htm#Suggested_General_Ledger_Procedures_..135" />
+    <Link
+      Url="Content/Profiles.htm" />
+    <Link
+      Url="Content/Invoices.htm" />
+    <Link
+      Url="Content/Payments.htm" />
+    <Link
+      Url="Content/Adjustment.htm" />
+    <Link
+      Url="Content/Reminders.htm" />
+    <Link
+      Url="Content/General Ledger.htm" />
+    <Link
+      Url="Content/Report Generator.htm" />
+    <Link
+      Url="Content/Build Reports Report Generator.htm" />
+    <Link
+      Url="Content/Financial Modeling.htm" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_1_Welcome_to_Trams_Back_Office" />
+    <Anchor
+      Name="top" />
+    <Anchor
+      Name="The" />
+    <Anchor
+      Name="Trams" />
+    <Anchor
+      Name="Login" />
+    <Anchor
+      Name="Overview" />
+    <Anchor
+      Name="Trams2" />
+    <Anchor
+      Name="Query" />
+    <Anchor
+      Name="Record" />
+    <Anchor
+      Name="Trams3" />
+    <Anchor
+      Name="Using" />
+    <Anchor
+      Name="Trams4" />
+    <Anchor
+      Name="Hot" />
+    <Anchor
+      Name="Tabs" />
+    <Anchor
+      Name="Windows" />
+    <Anchor
+      Name="Help" />
+    <Anchor
+      Name="Entering" />
+    <Anchor
+      Name="Confirma" />
+    <Anchor
+      Name="Why" />
+    <Anchor
+      Name="Starting" />
+    <Anchor
+      Name="Set" />
+    <Anchor
+      Name="Maintain" />
+    <Anchor
+      Name="Invoices" />
+    <Anchor
+      Name="Do" />
+    <Anchor
+      Name="Agency" />
+    <Anchor
+      Name="Learning" />
+    <Anchor
+      Name="Set2" />
+    <Anchor
+      Name="Now" />
+    <Anchor
+      Name="Establishing_routine" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Helpfiles"
+      Conditions=""
+      LocalConditions=""
+      Position="26" />
+    <IndexCacheEntry
+      Term="Training"
+      Conditions=""
+      LocalConditions=""
+      Position="43" />
+    <IndexCacheEntry
+      Term="Login"
+      Conditions=""
+      LocalConditions=""
+      Position="53" />
+    <IndexCacheEntry
+      Term="Overview"
+      Conditions=""
+      LocalConditions=""
+      Position="73" />
+    <IndexCacheEntry
+      Term="Query"
+      Conditions=""
+      LocalConditions=""
+      Position="97" />
+    <IndexCacheEntry
+      Term="Using Trams Back Office"
+      Conditions=""
+      LocalConditions=""
+      Position="141" />
+    <IndexCacheEntry
+      Term="Hot Keys"
+      Conditions=""
+      LocalConditions=""
+      Position="172" />
+    <IndexCacheEntry
+      Term="Tabs"
+      Conditions=""
+      LocalConditions=""
+      Position="178" />
+    <IndexCacheEntry
+      Term="Windows"
+      Conditions=""
+      LocalConditions=""
+      Position="191" />
+    <IndexCacheEntry
+      Term="Help Menu"
+      Conditions=""
+      LocalConditions=""
+      Position="198" />
+    <IndexCacheEntry
+      Term="Fields"
+      Conditions=""
+      LocalConditions=""
+      Position="224" />
+    <IndexCacheEntry
+      Term="Start Trams"
+      Conditions=""
+      LocalConditions=""
+      Position="309" />
+    <IndexCacheEntry
+      Term="Learning the Trams Program"
+      Conditions=""
+      LocalConditions=""
+      Position="346" />
+    <IndexCacheEntry
+      Term="Set Up Trams"
+      Conditions=""
+      LocalConditions=""
+      Position="366" />
+    <IndexCacheEntry
+      Term="Setup guide"
+      Conditions=""
+      LocalConditions=""
+      Position="376" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

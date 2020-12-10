@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="C:\Users\sg0217543\Documents\My Projects\API Documentation\TramsAppServer API Documentation\Content\ResCard Data Flow Chart.html" />
+    </Dialog>
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="C:\Users\sg0217543\Documents\My Projects\API Documentation\TramsAppServer API Documentation\Content\Images\rescard-flow-chart.jpg" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog">
+        <Link Value="C:\Users\sg0217543\Documents\My Projects\API Documentation\TramsAppServer API Documentation\Content\Login.html" />
+    </Dialog>
+    <Dialog Name="B3.CatapultProjectUserInterfaceKit.InsertSnippetDialog">
+        <Link Value="C:\Users\sg0217543\Documents\My Projects\API Documentation\TramsAppServer API Documentation\Content\Resources\Snippets\runquery.flsnp" />
+    </Dialog>
+</RecentLinks>

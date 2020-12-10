@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2017-05-18T10:20:47.6803846-05:00"
+  ProjectName="CBW Help"
+  ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../Content/Resources/Stylesheets/Styles.css"
+  LastImport="2017-05-18T10:20:59.0839846-05:00">
+  <Files>
+    <Url
+      Source="../../../../../../Desktop/CBW Help/Berkshire Hathaway Travel Protection.docx"
+      AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Berkshire Hathaway Travel Protection.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel_1.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel.htm"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection.jpg"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection_1.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection_2.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection_3.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection_4.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection_5.png"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Berkshire Hathaway Travel Protection/Berkshire Hathaway Travel Protection.htm"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../TOCs/Berkshire Hathaway Travel Protection.fltoc"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Styles_35.css"
+      TimeStamp="5/18/2017 10:20:57 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="No Spacing" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="cdefault" />
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

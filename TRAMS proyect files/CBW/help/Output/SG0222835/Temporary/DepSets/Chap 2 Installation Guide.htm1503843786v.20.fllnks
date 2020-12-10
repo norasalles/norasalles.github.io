@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/cb/hwsysrequires.pdf" />
+    <Link
+      Url="mailto:Trams.Implementation@sabre.com" />
+    <Link
+      Url="mailto:trams.techdesk@sabre.com?subject=New ClientBase Installation" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/Updates/40900/setup.exe" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_1.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_2.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_3.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_4.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_5.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/setupinstalling.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_7.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_8.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_9.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_10.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutil.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutilmodify.png" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/releaseandupdatefiles/updates/misc_exe/CBPPARAMS.INI" />
+    <Link
+      Url="Content/Resources/Images/Chapter 2 Installation Guide/Step 6 Identify the Country_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 2 Installation Guide/Step 6 Identify the Country_5.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/documentation/cb/hwsysrequires.pdf" />
+    <Link
+      Url="mailto:Trams.Implementation@sabre.com" />
+    <Link
+      Url="mailto:trams.techdesk@sabre.com?subject=New ClientBase Installation" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/Releaseandupdatefiles/Updates/40900/setup.exe" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_1.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_2.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_3.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_4.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_5.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/setupinstalling.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_7.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_8.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_9.png" />
+    <Link
+      Url="Content/Resources/Images/Trams Back Office Installation 3-4-2020/Trams Back Office Installation_10.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutil.png" />
+    <Link
+      Url="Content/Resources/Images/aliasutilmodify.png" />
+    <Link
+      Url="http://static.trams.com/tramslibrary/releaseandupdatefiles/updates/misc_exe/CBPPARAMS.INI" />
+    <Link
+      Url="Content/Resources/Images/Chapter 2 Installation Guide/Step 6 Identify the Country_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 2 Installation Guide/Step 6 Identify the Country_5.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_2_Installation_Guide" />
+    <Anchor
+      Name="Workstat" />
+    <Anchor
+      Name="AliasUtil" />
+    <Anchor
+      Name="Changing" />
+    <Anchor
+      Name="LicenseMGR" />
+    <Anchor
+      Name="Auto-Upd" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Installation Guide"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Trams Back Office Users, Installation"
+      Conditions=""
+      LocalConditions=""
+      Position="12" />
+    <IndexCacheEntry
+      Term="Canadian Users, French Installation"
+      Conditions=""
+      LocalConditions=""
+      Position="22" />
+    <IndexCacheEntry
+      Term="Hardware Requirements"
+      Conditions=""
+      LocalConditions=""
+      Position="33" />
+    <IndexCacheEntry
+      Term="Installation Terminology"
+      Conditions=""
+      LocalConditions=""
+      Position="46" />
+    <IndexCacheEntry
+      Term="Alias, What is?"
+      Conditions=""
+      LocalConditions=""
+      Position="70" />
+    <IndexCacheEntry
+      Term="Interbase, What is?"
+      Conditions=""
+      LocalConditions=""
+      Position="77" />
+    <IndexCacheEntry
+      Term="Installation on ClientBase Server"
+      Conditions=""
+      LocalConditions=""
+      Position="83" />
+    <IndexCacheEntry
+      Term="Installation - Agency Does Not Use Trams Back Office"
+      Conditions=""
+      LocalConditions=""
+      Position="111" />
+    <IndexCacheEntry
+      Term="Installation - Server"
+      Conditions=""
+      LocalConditions=""
+      Position="160" />
+    <IndexCacheEntry
+      Term="Installation - Workstation"
+      Conditions=""
+      LocalConditions=""
+      Position="240" />
+    <IndexCacheEntry
+      Term="Alias Utility"
+      Conditions=""
+      LocalConditions=""
+      Position="315" />
+    <IndexCacheEntry
+      Term="Alias Utility, Changing the Trams Alias"
+      Conditions=""
+      LocalConditions=""
+      Position="363" />
+    <IndexCacheEntry
+      Term="License Manager"
+      Conditions=""
+      LocalConditions=""
+      Position="381" />
+    <IndexCacheEntry
+      Term="Auto-Update Feature"
+      Conditions=""
+      LocalConditions=""
+      Position="415" />
+    <IndexCacheEntry
+      Term="Unattended Installation"
+      Conditions=""
+      LocalConditions=""
+      Position="433" />
+    <IndexCacheEntry
+      Term="Time Fields"
+      Conditions=""
+      LocalConditions=""
+      Position="523" />
+    <IndexCacheEntry
+      Term="Automatic Queries, Disable"
+      Conditions=""
+      LocalConditions=""
+      Position="540" />
+    <IndexCacheEntry
+      Term="Converting ClientBase"
+      Conditions=""
+      LocalConditions=""
+      Position="561" />
+    <IndexCacheEntry
+      Term="Encryption"
+      Conditions=""
+      LocalConditions=""
+      Position="575" />
+    <IndexCacheEntry
+      Term="Encryption Keys for Third Party"
+      Conditions=""
+      LocalConditions=""
+      Position="623" />
+    <IndexCacheEntry
+      Term="Mask Credit Card Numbers"
+      Conditions=""
+      LocalConditions=""
+      Position="633" />
+    <IndexCacheEntry
+      Term="EUA Requirements"
+      Conditions=""
+      LocalConditions=""
+      Position="694" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

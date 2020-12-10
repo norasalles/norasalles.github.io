@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Stylesheets/MyStylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p class="productnewfeature" style="text-align: right;font-weight: bold;">
+            <img src="../Images/cbreleasenotes.png" class="img_header" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;"><MadCap:variable name="Variables.Product" /> <MadCap:variable name="Variables.Version no" /> - <MadCap:variable name="Variables.Type"> </MadCap:variable> </p>
+        <p class="productnewfeature" style="font-size: ;">Released <MadCap:variable name="Variables.Date" /></p>
+    </body>
+</html>

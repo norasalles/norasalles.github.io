@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Stylesheets/MyStylesheet_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <p class="p_12">ClientBase Online </p>
+        </div>
+        <MadCap:bodyProxy />
+        <div>
+            <p class="p_13">ClientBase Online – Sabre Red 360 PNR Integration&#160; </p>
+        </div>
+    </body>
+</html>

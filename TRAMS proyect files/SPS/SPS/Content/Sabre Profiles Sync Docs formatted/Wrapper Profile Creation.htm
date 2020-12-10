@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/Sabre Profiles Sync Docs formatted.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h3 class="Heading3"><a name="_Toc17115998"></a>Wrapper Profile Creation</h3>
+        <p>If a Sabre Profiles <span class="span_1">Traveler</span> Profile does not have any valid associations to any other ClientBase Profiles, a new Leisure “wrapper” ClientBase Profile is created. Fields imported are <span class="span_1">First Name, Last Name, Middle Name, and Courtesy Title. </span>The Sabre Profiles Traveler Profile is linked into this Leisure “wrapper” ClientBase Profile. (If desired, this new Profile can be changed from Leisure to Corporate by using the <span class="span_1">Type </span>drop-down in the General Info tab.)</p>
+        <p>These wrapper profiles do not sync to Sabre Profiles. They exist solely to contain standalone Sabre Profiles Travelers. </p>
+        <p>When will a ClientBase wrapper profile be created for a Sabre Traveler, and when will it not? Let’s look at the possible scenarios.</p>
+        <table class="table_1">
+            <col style="width: 231pt;" />
+            <col style="width: 236pt;" />
+            <tr style="height: 17pt;">
+                <td class="td_1">
+                    <p class="p_2">Sabre Profiles</p>
+                </td>
+                <td class="td_2">
+                    <p class="p_2">ClientBase</p>
+                </td>
+            </tr>
+            <tr style="height: 17pt;">
+                <td class="td_3">
+                    <p class="p_1"><span class="span_3">A Traveler Profile is associated with </span><span class="span_3">one or more Sabre Profiles </span><span class="span_3">Corporate or Group profile</span><span class="span_3">s</span> </p>
+                </td>
+                <td class="td_4">
+                    <p class="p_1">No wrapper profile is created; upon sync, the Traveler will be linked to the same profile or profiles in ClientBase, preserving the association. </p>
+                </td>
+            </tr>
+            <tr style="height: 17pt;">
+                <td class="td_5">
+                    <p class="p_1"><span class="span_3">A Traveler Profile with no associated profiles existing in the ClientBase database, but it has a AN</span><span class="span_3"> or </span><span class="span_3">DK Number that exists in </span><span class="span_3">one or more</span><span class="span_3"> ClientBase Leisure or Corporate profile</span><span class="span_3">s</span>
+                    </p>
+                </td>
+                <td class="td_6">
+                    <p class="p_1">No wrapper profile is created; the traveler will be linked to the matching profile or profiles.</p>
+                </td>
+            </tr>
+            <tr style="height: 17pt;">
+                <td class="td_3">
+                    <p class="p_1"><span class="span_3">A Traveler Profile with no AN</span><span class="span_3"> or </span><span class="span_3">DK number and no associated profiles in the ClientBase database</span>
+                    </p>
+                </td>
+                <td class="td_4">
+                    <p class="p_1">A Leisure wrapper Profile is created. The Interface ID is populated based on the format for generating Interface ID under Default Values for New Profiles if specified, or left blank if no such default format is established</p>
+                </td>
+            </tr>
+            <tr style="height: 4pt;">
+                <td class="td_5">
+                    <p class="p_2">A Traveler Profile with no associated profiles in the database and has a AN/DK Number that exists in zero or more than one ClientBase Leisure or Corporate profiles</p>
+                    <p class="p_1">&#160;</p>
+                </td>
+                <td class="td_6">
+                    <p class="p_1">A Leisure wrapper profile will be created. The Interface ID will be populated with first AN/DK Number Any other AN/DK numbers will be discarded.</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

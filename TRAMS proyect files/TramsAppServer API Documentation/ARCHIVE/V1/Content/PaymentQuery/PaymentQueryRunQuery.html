@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>PaymentQuery - RunQuery</h1>
+        <p><b style="background-color: #ffff00;">Documentation in development.</b>
+        </p>
+        <h3>Running the Query</h3>
+        <p>Before running an invoice query, make sure you've already called <MadCap:xref href="../Login.html">Login</MadCap:xref> and have your session id.</p>
+        <p>Do a post to the following URL (assuming you're running the API locally):</p>
+        <p>http://localhost:8085}/paymentquery/runquery</p>
+        <p><b>Request:</b>
+        </p><pre xml:space="preserve">{ 
+}</pre>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Response:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody><pre>{
+    "apiVersion": "4.05",
+    "result": {
+        "resultcode": 0,
+        "resulttext": "",
+        "dataset": {
+            "name": "Payment",
+            "metaData": {
+                "Payment": {
+                    "paymentNo": {
+                        "type": "largeInt"
+                    },
+                    "paymentDate": {
+                        "type": "dateTime"
+                    },
+                    "ckCCNo": {
+                        "type": "string",
+                        "size": 40
+                    },
+                    "amount": {
+                        "type": "largeInt"
+                    },
+                    "bank_LinkNo": {
+                        "type": "integer"
+                    },
+                    "payType_LinkNo": {
+                        "type": "integer"
+                    },
+                    "payMethod_LinkNo": {
+                        "type": "integer"
+                    },
+                    "profile_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "JERecord_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "submitTo_LinkCode": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "name": {
+                        "type": "string",
+                        "size": 150
+                    },
+                    "profileType_LinkCode": {
+                        "type": "string",
+                        "size": 1
+                    },
+                    "remarks": {
+                        "type": "string",
+                        "size": 255
+                    },
+                    "paymentGroup": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "dateCleared": {
+                        "type": "dateTime"
+                    },
+                    "currencyCode": {
+                        "type": "string",
+                        "size": 3
+                    },
+                    "code": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "payeeName": {
+                        "type": "string",
+                        "size": 80
+                    },
+                    "branch_LinkNo": {
+                        "type": "integer"
+                    },
+                    "deposit_LinkNo": {
+                        "type": "largeInt"
+                    },
+                    "invoiceRef": {
+                        "type": "string",
+                        "size": 20
+                    },
+                    "attachmentCount": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "data": {
+                "Payment": [
+                    {
+                        "paymentNo": 1,
+                        "paymentDate": "1993-12-28T00:00:00.000Z",
+                        "ckCCNo": "",
+                        "amount": 149800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "4",
+                        "profile_LinkNo": 181,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Doe/John",
+                        "profileType_LinkCode": "I",
+                        "remarks": "",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 2,
+                        "paymentDate": "1994-01-01T00:00:00.000Z",
+                        "ckCCNo": "OT 01-XXXX-01",
+                        "amount": 69800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 4,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Doe/Jane",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #5567",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 3,
+                        "paymentDate": "1994-01-01T00:00:00.000Z",
+                        "ckCCNo": "UA 12-XXXX-12",
+                        "amount": 9900,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 5,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Jones/John",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #5568",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 4,
+                        "paymentDate": "1994-01-02T00:00:00.000Z",
+                        "ckCCNo": "5279-XXXX",
+                        "amount": 39800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 33,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Jones/Jane",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #55630",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                    },
+                    {
+                        "paymentNo": 5,
+                        "paymentDate": "1994-01-02T00:00:00.000Z",
+                        "ckCCNo": "VI 40-XXXX-6712",
+                        "amount": 169800,
+                        "bank_LinkNo": "1",
+                        "payType_LinkNo": "1",
+                        "payMethod_LinkNo": "3",
+                        "profile_LinkNo": 181,
+                        "JERecord_LinkNo": null,
+                        "submitTo_LinkCode": null,
+                        "name": "Doe/John",
+                        "profileType_LinkCode": "I",
+                        "remarks": "Pymt For Inv #55631",
+                        "paymentGroup": null,
+                        "dateCleared": null,
+                        "currencyCode": "",
+                        "code": "",
+                        "payeeName": null,
+                        "branch_LinkNo": null,
+                        "deposit_LinkNo": null,
+                        "invoiceRef": null,
+                        "attachmentCount": 0
+                   
+                    }
+                ]
+            }
+        }
+    }
+}</pre>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

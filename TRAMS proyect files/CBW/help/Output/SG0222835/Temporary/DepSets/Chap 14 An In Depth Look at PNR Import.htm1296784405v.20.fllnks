@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_1.jpg" />
+    <Link
+      Url="Content/Resources/Snippets/SabrePNRfeatures.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_3.jpg" />
+    <Link
+      Url="http://www.trams.com/home/support/misc_downloads/" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_4.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/DraftStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_1.jpg" />
+    <Link
+      Url="Content/Resources/Snippets/SabrePNRfeatures.flsnp" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_3.jpg" />
+    <Link
+      Url="http://www.trams.com/home/support/misc_downloads/" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 14 An In-Depth Look PNR Import/An In Depth Look at PNR Import_4.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Chapter_14_An_In-Depth_Look_at_PNR_Import" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="PNR Import"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="PNR Import for Amadeus"
+      Conditions=""
+      LocalConditions=""
+      Position="16" />
+    <IndexCacheEntry
+      Term="PNR Import for Apollo/Galileo"
+      Conditions=""
+      LocalConditions=""
+      Position="61" />
+    <IndexCacheEntry
+      Term="PNR Import for Sabre"
+      Conditions=""
+      LocalConditions=""
+      Position="114" />
+    <IndexCacheEntry
+      Term="PNR Import for Worldspan"
+      Conditions=""
+      LocalConditions=""
+      Position="196" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/DraftStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

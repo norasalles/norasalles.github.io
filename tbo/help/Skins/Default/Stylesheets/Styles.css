@@ -2364,7 +2364,7 @@ a.activityText
 	height: 28px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
-	color: #DADADA;
+	color: #666666;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	background: #ffffff;
@@ -2409,22 +2409,22 @@ a.activityText
 
 #search-field::-webkit-input-placeholder
 {
-	color: #DADADA;
+	color: #666666;
 }
 
 #search-field::-moz-placeholder
 {
-	color: #DADADA;
+	color: #666666;
 }
 
 #search-field:-moz-placeholder
 {
-	color: #DADADA;
+	color: #666666;
 }
 
 #search-field:-ms-input-placeholder
 {
-	color: #DADADA;
+	color: #666666;
 }
 
 .micro-content-container > .micro-content > .micro-response-title a:visited

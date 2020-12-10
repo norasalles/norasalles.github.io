@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  MasterPage="file:///C:/Users/SG0222835/My Projects/TRAMS/Help Files/CBO Help files/CBO409 Help/Content/Resources/PageLayouts/MasterPage.flmsp"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/General Info Link.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_7.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_7.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_8.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_9.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_10.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_9.jpg" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/PageLayouts/MasterPage.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/General Info Link.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_7.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/An In Depth Look at Client_9.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/Travelers Link_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_1.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_2.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_3.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_4.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_5.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_6.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_7.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_8.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_9.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_10.png" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_4.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_5.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_6.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_7.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_8.jpg" />
+    <Link
+      Url="Content/Resources/Images/Chapter 3 An In-Depth Look at Client Profiles/These two icons may appear_9.jpg" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="An_In-Depth_Look_at_Client_Profiles" />
+  </Anchors>
+  <Keywords>
+    <IndexCacheEntry
+      Term="Profiles, Client Overview"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Client Profiles Overview"
+      Conditions=""
+      LocalConditions=""
+      Position="9" />
+    <IndexCacheEntry
+      Term="Profile, Create New"
+      Conditions=""
+      LocalConditions=""
+      Position="21" />
+    <IndexCacheEntry
+      Term="Header Information"
+      Conditions=""
+      LocalConditions=""
+      Position="80" />
+    <IndexCacheEntry
+      Term="Profile Indicators"
+      Conditions=""
+      LocalConditions=""
+      Position="88" />
+    <IndexCacheEntry
+      Term="Date Fields"
+      Conditions=""
+      LocalConditions=""
+      Position="93" />
+    <IndexCacheEntry
+      Term="Report Writers\"
+      Conditions=""
+      LocalConditions=""
+      Position="207" />
+    <IndexCacheEntry
+      Term="Communication Link"
+      Conditions=""
+      LocalConditions=""
+      Position="254" />
+    <IndexCacheEntry
+      Term="Remarks Link"
+      Conditions=""
+      LocalConditions=""
+      Position="319" />
+    <IndexCacheEntry
+      Term="Marketing Codes Link"
+      Conditions=""
+      LocalConditions=""
+      Position="329" />
+    <IndexCacheEntry
+      Term="Travelers Link"
+      Conditions=""
+      LocalConditions=""
+      Position="340" />
+    <IndexCacheEntry
+      Term="Unlink a traveler from a profile"
+      Conditions=""
+      LocalConditions=""
+      Position="359" />
+    <IndexCacheEntry
+      Term="Traveler, Enter New"
+      Conditions=""
+      LocalConditions=""
+      Position="400" />
+    <IndexCacheEntry
+      Term="Activities Link"
+      Conditions=""
+      LocalConditions=""
+      Position="634" />
+    <IndexCacheEntry
+      Term="Credit Cards Link"
+      Conditions=""
+      LocalConditions=""
+      Position="649" />
+    <IndexCacheEntry
+      Term="CREDIT CARDS, Enter/Edit"
+      Conditions=""
+      LocalConditions=""
+      Position="659" />
+    <IndexCacheEntry
+      Term="Loyalty Programs Link"
+      Conditions=""
+      LocalConditions=""
+      Position="701" />
+    <IndexCacheEntry
+      Term="Res Card Link"
+      Conditions=""
+      LocalConditions=""
+      Position="739" />
+    <IndexCacheEntry
+      Term="Travel History Link"
+      Conditions=""
+      LocalConditions=""
+      Position="756" />
+    <IndexCacheEntry
+      Term="Groups Link"
+      Conditions=""
+      LocalConditions=""
+      Position="774" />
+    <IndexCacheEntry
+      Term="Attachments Link"
+      Conditions=""
+      LocalConditions=""
+      Position="787" />
+    <IndexCacheEntry
+      Term="PNR Entries Link"
+      Conditions=""
+      LocalConditions=""
+      Position="814" />
+    <IndexCacheEntry
+      Term="More Fields Link"
+      Conditions=""
+      LocalConditions=""
+      Position="841" />
+    <IndexCacheEntry
+      Term="Traveler, Enter New"
+      Conditions=""
+      LocalConditions=""
+      Position="859" />
+    <IndexCacheEntry
+      Term="Activities Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1093" />
+    <IndexCacheEntry
+      Term="Credit Cards Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1109" />
+    <IndexCacheEntry
+      Term="CREDIT CARDS, Enter/Edit"
+      Conditions=""
+      LocalConditions=""
+      Position="1119" />
+    <IndexCacheEntry
+      Term="Loyalty Programs Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1161" />
+    <IndexCacheEntry
+      Term="Res Card Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1200" />
+    <IndexCacheEntry
+      Term="Travel History Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1218" />
+    <IndexCacheEntry
+      Term="Groups Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1237" />
+    <IndexCacheEntry
+      Term="Attachments Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1251" />
+    <IndexCacheEntry
+      Term="PNR Entries Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1278" />
+    <IndexCacheEntry
+      Term="More Fields Link"
+      Conditions=""
+      LocalConditions=""
+      Position="1305" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

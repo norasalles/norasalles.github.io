@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="../../../../../sg0892339/Documents/ePublisher Designer Projects/ClientBase Browser/Output/CBB/ClientBase Browser/www.agentlingo.ca" />
+    <Link
+      Url="Content/Resources/Images/Globus Family Agent Lingo Canada/Globus Family Agent Lingo.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus Family Agent Lingo Canada/Globus Family Agent Lingo_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/Profile Entries.png" />
+    <Link
+      Url="Content/Resources/Images/Globus Family Agent Lingo Canada/Globus Family Agent Lingo.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="../../../../../sg0892339/Documents/ePublisher Designer Projects/ClientBase Browser/Output/CBB/ClientBase Browser/www.agentlingo.ca" />
+    <Link
+      Url="Content/Resources/Images/Globus Family Agent Lingo Canada/Globus Family Agent Lingo.jpg" />
+    <Link
+      Url="Content/Resources/Images/Globus Family Agent Lingo Canada/Globus Family Agent Lingo_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/Profile Entries.png" />
+    <Link
+      Url="Content/Resources/Images/Globus Family Agent Lingo Canada/Globus Family Agent Lingo.png" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Globus Family Agent Lingo (Canada)"
+      Conditions=""
+      LocalConditions=""
+      Position="6" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

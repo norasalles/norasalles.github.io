@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5.flskn"
+  OutputFile="index.html"
+  ResolveCssVariables="false"
+  MasterToc="/Project/TOCs/CBW409.fltoc"
+  MasterPage="/Content/Resources/PageLayouts/MasterPage.flmsp"
+  ExcludeUnreferencedContent="true"
+  MakeFileLowerCase="true"
+  MoveOutputContentToRoot="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true"
+    OutputFormat="doc" />
+  <Destinations></Destinations>
+</CatapultTarget>

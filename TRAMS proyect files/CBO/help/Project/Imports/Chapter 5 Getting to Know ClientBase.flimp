@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="true" KeepSourceLinks="false" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" LastCollectTime="2017-05-15T12:13:13.0413974-05:00" ProjectName="CBW Help" ProjectFolder="C:\Users\sg0217543\Documents\My Projects\Trams Help Files\CBW Help\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../../CBMS Help/CBMS Help/Content/Resources/Stylesheets/Styles.css" LastImport="2017-05-15T12:13:37.7210720-05:00">
+    <Files>
+        <Url Source="../../../../../../Desktop/CBW Help/Chapter 5 Getting to Know ClientBase.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Chapter 5 Getting to Know ClientBase.docx" />
+        <Url Source="../../../../../../Desktop/CBW Help/Chapter 6 An In-Depth Look at Client Profiles.docx" AbsoluteSource="file:///C:/Users/sg0217543/Desktop/CBW Help/Chapter 6 An In-Depth Look at Client Profiles.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Get To Know ClientBase.png" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Get To Know ClientBase.htm" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Meet the Menu Items.png" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Meet the Menu Items_1.png" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Meet the Menu Items.htm" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Meet the Toolbar.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Meet the Toolbar_1.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Meet the Toolbar_2.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Meet the Toolbar_3.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Meet the Toolbar.htm" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_1.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_2.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_3.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_4.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_5.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_6.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_7.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_8.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_9.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_10.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results_11.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Right Mouse Click in the Results.htm" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/An In Depth Look at Client.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/An In Depth Look at Client.png" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/An In Depth Look at Client_1.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/An In Depth Look at Client_2.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/An In Depth Look at Client_3.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/An In Depth Look at Client_4.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/An In Depth Look at Client.htm" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles.png" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_2.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_3.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_4.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_5.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_6.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_7.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles.htm" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Communications Tab.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Communications Tab.htm" TimeStamp="5/15/2017 12:13:35 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_1.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_2.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_3.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_4.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1.png" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_1.png" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_5.jpg" TimeStamp="5/15/2017 12:13:33 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_6.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1_7.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Chapter 6 An In-Depth Look at Client Profiles_1.htm" TimeStamp="5/15/2017 12:13:35 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/COMMUNICATION TAB in Traveler.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/COMMUNICATION TAB in Traveler_1.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/COMMUNICATION TAB in Traveler.htm" TimeStamp="5/15/2017 12:13:35 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/ADVANCED TRAVELER CONTACT.png" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/ADVANCED TRAVELER CONTACT.htm" TimeStamp="5/15/2017 12:13:35 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/CARDS TAB in Traveler Contact.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/CARDS TAB in Traveler Contact.png" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/CARDS TAB in Traveler Contact_1.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/CARDS TAB in Traveler Contact.htm" TimeStamp="5/15/2017 12:13:35 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/ASSOCIATED PROFILES TAB Traveler.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/ASSOCIATED PROFILES TAB Traveler_1.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/ASSOCIATED PROFILES TAB Traveler_2.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/ASSOCIATED PROFILES TAB Traveler.htm" TimeStamp="5/15/2017 12:13:35 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab.png" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_1.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_2.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_3.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_4.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_5.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_6.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_7.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_8.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_9.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Images/Chapter 5 Getting to Know ClientBase/Travel History Tab_10.jpg" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Chapter 5 Getting to Know ClientBase/Travel History Tab.htm" TimeStamp="5/15/2017 12:13:35 PM" />
+        <Url Source="../TOCs/Chapter 5 Getting to Know ClientBase.fltoc" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/MasterPages/Chapter 5 Getting to Know ClientBase.flmsp" TimeStamp="5/15/2017 12:13:34 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/Styles_2.css" TimeStamp="5/15/2017 12:13:34 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1.Heading 1" />
+        <Map From="Heading 2" To="h2.Heading 2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+        <Map From="Heading 5" To="h5.Heading 5" />
+        <Map From="Heading 6" To="h6.Heading 6" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles />
+    <UsedParagraphStyles>
+        <StyleName Name="Heading 1" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="Heading 3" />
+        <StyleName Name="Heading 4" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="Heading 3 Char" />
+    </UsedCharacterStyles>
+</MsWordImport>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="https://www.trafalgar.com/agents" />
+    <Link
+      Url="Content/Resources/Images/Costsaver/url_cbo_costsaver.png" />
+    <Link
+      Url="Content/Resources/Images/Trafalgar1/Trafalgar.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/Costsaver/last_screen_costsaver.png" />
+    <Link
+      Url="mailto:contactus@trafalgartours.com" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+    <Link
+      Url="https://www.trafalgar.com/agents#SSOTA_RegisterAgency" />
+    <Link
+      Url="Content/Resources/Images/Costsaver/url_cbo_costsaver.png" />
+    <Link
+      Url="Content/Resources/Images/Trafalgar1/Trafalgar.png" />
+    <Link
+      Url="Content/Resources/Images/LCs/LiveConnect 1.png" />
+    <Link
+      Url="Content/Resources/Images/Costsaver/last_screen_costsaver.png" />
+    <Link
+      Url="mailto:contactus@trafalgartours.com" />
+  </LongLinks>
+  <Anchors />
+  <Keywords>
+    <IndexCacheEntry
+      Term="Trafalgar"
+      Conditions=""
+      LocalConditions=""
+      Position="6" />
+  </Keywords>
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

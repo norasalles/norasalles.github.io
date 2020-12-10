@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="True"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="True"
+  AddContinuedLinks="False"
+  AddContinuedFromLinks="False"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="False"
+  UseMinCharLimit="True"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2018-06-19T15:03:37.9636857-05:00"
+  LastImport="2018-06-19T15:03:42.4769943-05:00">
+  <Files>
+    <Url
+      Source="../../../../../../../Desktop/Umapped LC_CBW.docx"
+      AbsoluteSource="file:///C:/Users/sg0217543/Desktop/Umapped LC_CBW.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_1.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_2.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_3.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_4.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_5.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_6.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_7.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_8.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_9.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_10.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_11.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_12.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_13.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_14.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_15.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Umapped/Although Umapped is not a_16.png"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Umapped/Although Umapped is not a.htm"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../TOCs/Umapped.fltoc"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Umapped.css"
+      TimeStamp="6/19/2018 3:03:38 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading1"
+      To="h1.(MS Word Style)" />
+    <Map
+      From="Heading2"
+      To="h2.(MS Word Style)" />
+    <Map
+      From="Heading3"
+      To="h3.(MS Word Style)" />
+    <Map
+      From="Heading4"
+      To="h4.(MS Word Style)" />
+    <Map
+      From="Heading5"
+      To="h5.(MS Word Style)" />
+    <Map
+      From="Heading6"
+      To="h6.(MS Word Style)" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="p_2" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="span_2" />
+  </UsedCharacterStyles>
+</MsWordImport>

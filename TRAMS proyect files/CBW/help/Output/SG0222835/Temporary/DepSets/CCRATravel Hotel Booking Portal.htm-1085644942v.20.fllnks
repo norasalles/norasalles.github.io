@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=" CCRATravel Hotel Booking Portal"
+  FileLanguage="en-us"
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="http://www.ccratravel.com/" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Resources/Scripts/custom.modernizr.js" />
+    <Link
+      Url="Resources/Scripts/jquery.min.js" />
+    <Link
+      Url="Resources/Scripts/require.min.js" />
+    <Link
+      Url="Resources/Scripts/require.config.js" />
+    <Link
+      Url="Resources/Scripts/foundation.min.js" />
+    <Link
+      Url="Resources/Scripts/plugins.min.js" />
+    <Link
+      Url="Resources/Scripts/MadCapAll.js" />
+    <Link
+      Url="Content/Resources/Stylesheets/Stylesheet.css" />
+    <Link
+      Url="http://www.ccratravel.com/" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal_1.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal_2.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal_3.jpg" />
+    <Link
+      Url="Content/Resources/Images/CCRATravel Hotel Booking Portal/CCRATravel Hotel Booking Portal.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="kanchor244" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/Stylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

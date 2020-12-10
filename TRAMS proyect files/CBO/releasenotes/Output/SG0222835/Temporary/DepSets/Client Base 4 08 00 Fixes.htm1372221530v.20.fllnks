@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileLanguage="en-us"
+  FileSearchable="true"
+  MasterPage="file:///C:/Users/SG0222835/My Projects/TRAMS/Release Notes/ClientBase Online Release Notes/ClientBase Online Release Notes 409/Content/Resources/PageLayouts/FIXES.flmsp"
+  OnlyLocalStylesheets="true"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/PageLayouts/FIXES.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/PageLayouts/FIXES.flmsp" />
+    <Link
+      Url="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/Stylesheets/MyStylesheet.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>
