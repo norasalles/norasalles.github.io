@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <body>
-        <h3>Running the Query</h3>
-        <p>Before running an invoice query, make sure you've already called <MadCap:xref href="../../Login.html">Login</MadCap:xref> and have your session id.</p>
-        <p>Do a post to the following URL (assuming you're running the API locally):</p>
-    </body>
-</html>

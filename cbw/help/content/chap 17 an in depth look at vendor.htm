@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-toc-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>&#160;An In-Depth Look at Vendor and Service Provider Profiles</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="resources/stylesheets/draftstylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <p class="productnewfeature" style="text-align: right;font-weight: bold;">
+            <img src="resources/images/cbreleasenotes.png" class="imgheader" style="padding-left: 0pt;padding-right: 0pt;padding-top: 0pt;padding-bottom: 0pt;" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;"><span class="mc-variable Variables.Product variable">ClientBase Windows</span> <span class="mc-variable Variables.Version_no variable">4.09.00</span>  - Released <span class="mc-variable Variables.Release_Date variable">January, 2021</span></p>
+        <p>&#160;</p>
+        <div role="main" id="mc-main-content">
+            <p class="bookmark"><span style="color: #ffffff;"><a name="Chapter_17_An_In-Depth_Look_at_Vendor_and_Service_Provider_Profiles"></a>Chapter 17: An In-Depth Look at Vendor and Service Provider Profiles</span>
+            </p>
+            <h1><a name="An_In-Depth_Look_at_Vendor_and_Service_Provider_Profiles" data-mc-generated-bookmark="TOC"></a><a name="kanchor304"></a>An In-Depth Look at Vendor and Service Provider Profiles</h1>
+            <p class="p_2">This chapter describes how to setup, maintain and use Vendor and Service Provider type profiles.</p>
+            <h2><a name="Introduction_..41" data-mc-generated-bookmark="TOC"></a>Introduction</h2>
+            <p>Vendor profiles provide an easily accessible source for an agency to store pertinent information about its travel suppliers. Tour operators, cruise lines, hotels and car rental companies are some examples of vendor profiles. All the important details about these vendor are stored in one convenient place that everyone in the office can access. Key information such as phone numbers, rep contacts, supplier addresses, commission information, specials, preferred vendor status and cancel policies may be included in the profile.</p>
+            <p>Service Provider profiles represent the various components of a trip booked through a specific vendor. For example, the service provider for a Carnival Cruise booking would be the Carnival Destiny. Pertinent details about the Destiny would be stored in this type of profile and therefore accessible to everyone at the agency. Feedback from other travelers can be added in and accessed by all agents to better service future clients. Since some service providers could be booked by multiple vendors once the profile is created, it can be linked to one or more vendor profiles. For example, the Hilton Hawaiian Village could be booked through Pleasant Holidays or Classic Custom Vacation, etc. and once created as a service provider, can be associated with all these vendor profiles for easy access to the information. In some cases, a vendor may also be a service provider, like in the case of the Hilton Hawaiian Village.</p>
+            <p>Why do we go to such lengths to differentiate between a vendor or service provider? It is so that client comments and feedback can be attached to specific service provider profiles, and the agency can obtain service provider reports. Instead of getting a report of how many clients went on a vendor (Carnival for example), obtain a report of how many people travelled on each of the vendor’s service providers (Ecstasy, Destiny, Triumph, etc.) as well. Also, when entering reservation information into the <span class="span_2">ClientBase</span> Res Card, agents can capture vendor level information, and if desired, service provider level information. For example, an agent can point to the vendor profile for Carnival Cruise Lines while identifying the vendor for the reservation and can point to the Ecstasy when identifying the service provider. </p>
+            <p>In the past, agencies kept track of this vendor and service provider information in a variety of ways. Some agents used rolodexes with vendor and service provider special contact names and lists of phone numbers for each department. Other agents had folders which included brochures, specials, as well as any communication information they were able to obtain for each of the vendors and service providers. Still other agents memorized vital vendor and service provider information.</p>
+            <p>When a customer travels with a particular service provider and feedback information on its services, how is this information distributed to your agents? Is there one place an agent can go that summarizes what customers felt about a particular trip or service? With <span class="span_2">ClientBase</span>, all vendor and service provider information is in one place for all agents. By creating rich, information-filled profiles for the vendors and service providers, each agent has quick access to this vital information. </p>
+            <h2><a name="Anatomy_of_Vendor_Service_Provider_Profile" data-mc-generated-bookmark="TOC"></a>Anatomy of Vendor/Service Provider Profile</h2>
+            <p>A vendor profile in <span class="span_2">ClientBase</span> stores an unlimited amount of information about your vendors and service providers. To organize all this information and make it easily accessible to all agents, each profile is made up of seven key areas - <span class="span_2">Toolbar, Header Info, Scrolling Arrows, Indicator Icons, Control Buttons, Information Tabs, and User-Defined Fields.</span></p>
+            <p class="p_3">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor.jpg" style="height: 407px;width: 594px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.01.jpg" class="img_1" />
+            </p>
+            <p>Let’s explore each of these seven key areas.</p>
+            <h3><a name="Toolbar_..42" data-mc-generated-bookmark="TOC"></a>Toolbar</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_1.jpg" style="height: 65px;width: 482px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.02.jpg" class="img_1" />
+            </p>
+            <p><span>Launch a Website:</span> Click <span class="span_2">Website</span> to launch the <span class="span_2">ClientBase</span> Internet Manager and the vendor/service provider’s website. (You must have entered the website URL in the <span class="span_2">Website </span>under the communication area.) Copy any information on the website to keep in the profile by pressing &lt;Ctrl&gt;&lt;c&gt; on your keyboard (or right mouse click and copy). Then paste that data into the profile by pressing &lt;Ctrl&gt;&lt;v&gt; on your keyboard (or right mouse click and paste). Make sure to make this website the <span class="span_2">Primary</span> website to activate this feature.</p>
+            <p><span>Create a Reminder:</span> Click <span class="span_2">Remind</span> to create a reminder for the vendor/service provider such as checking on brochure shipment. Fill in the date to be reminded, the priority, reminder type, an optional alarm and finally type in some free-flowing remarks for reference. There is an option to mark this reminder “Private” so that only the creation agent or SYSDBA can view it. This reminder appears on queries in the activity manager or reports.</p>
+            <p><span>Create a Note:</span> Click <span class="span_2">Note</span> to create a "Post-it" note documenting an important contact had with a vendor/service provider. By entering the date, time, and subject of the contact, a history of contacts is created which appears in the Activity Manager or reports.</p>
+            <p><span>Create a Mailer:</span> Click <span class="span_2">Mailer</span> to create a history documenting mailings sent to a vendor/service provider. By entering the date, time, and subject of the mailer, a "tickler" created which appears in the Activity Manager or reports.</p>
+            <p><span>Print:</span> Click <span class="span_2">Print</span> to print out details of the vendor/service provider profile.</p>
+            <p><span>Merge to Label:</span> Click <span class="span_2">Label</span> to create a label for the vendor/service provider.</p>
+            <p><span>Merge to Document Template:</span> Click <span class="span_2">Letter</span> to merge vendor/service provider name and address to any letter contained in the document templates. The master of the letter can be customized if desired by the user for a personalized touch.</p>
+            <p><span>Merge to E-mail:</span> Click <span class="span_2">E-mail</span> to merge vendor/service provider’s primary e-mail address into an e-mail screen.</p>
+            <h3><a name="Header_Information_..43" data-mc-generated-bookmark="TOC"></a>Header Information</h3>
+            <p class="p_5">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_2.jpg" style="height: 105px;width: 644px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.03.jpg" class="img_1" />
+            </p>
+            <p>The header conveniently displays pertinent information including the current mailing address, the first five communication entries captured for this profile, number of Marketing Codes, Primary Contact, Groups, Profile Create Date, Salutation, Interface ID, and Profile No. </p>
+            <p>The header displays the first five Communication entries, in the order they are listed on the profile's Communications tab. If there are not five entries at the profile level, then the primary contact's communications are displayed next, in the order they are listed on the primary contact's communications tab. If there still are not 5 communications to display, then ClientBase picks up from the other contacts listed on the Contacts tab, in the order they are listed there, until all five slots are filled. </p>
+            <p>The items in the header are clickable. When clicked, the user is taken to that section of the profile. For example, when the Marketing Codes count is clicked, the Marketing tab opens; when the Primary Contact is clicked, that Contact record opens. </p>
+            <h3><a name="Scrolling_Arrows_..44" data-mc-generated-bookmark="TOC"></a>Scrolling Arrows</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_3.jpg" style="height: 104px;width: 58px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.04.jpg" class="img_1" />
+            </p>
+            <p>The four black arrows provide the ability to move among the profiles included within the current Query. The up arrow displays the profile (sorted alphabetically by last name) preceding the profile on the screen, and the down arrow displays the next profile.</p>
+            <h3><a name="Profile_Indicators_..45" data-mc-generated-bookmark="TOC"></a>&#160;Profile Indicators</h3>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor.png" style="height: 85px;width: 34px;" class="img_1" />
+            </p>
+            <p>Indicators to the right of the arrows appear if:</p>
+            <table>
+                <col style="width: 4pt;" />
+                <col style="width: 536pt;" />
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>• </p>
+                        </td>
+                        <td>
+                            <p>There is a res card for this vendor (highly unlikely). </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>• </p>
+                        </td>
+                        <td>
+                            <p>There is travel history (either from <span class="span_2">Trams Back Office</span> or from invoicing in <span class="span_2">ClientBase</span>) for this vendor/service provider. </p>
+                            <p>There is an open reminder for this vendor</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <p>• </p>
+                        </td>
+                        <td class="td_1">
+                            <p>If the vendor/service provider has no open reminders or past travel history, no icons appear. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="span_3">Control Buttons</span><span class="span_3"><br /></span>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_1.png" style="height: 79px;width: 63px;" class="img_1" />
+            </p>
+            <p><span class="span_2">Close:</span> Only appears if there are no unsaved changes made to the profile and exits the profile.</p>
+            <p><span class="span_2">O.K.:</span> Saves any information that has been added, modified or deleted and exits the profile.</p>
+            <p><span class="span_2">Apply: </span>Saves any information that has been added, modified or deleted and keeps the profile open.</p>
+            <p><span class="span_2">Cancel:</span> Appears only if the profile has changes that have not been saved, abandons those changes and then exits the profile.</p>
+            <h3><a name="Information_Tabs_..46" data-mc-generated-bookmark="TOC"></a>Information Tabs</h3>
+            <p class="p_5">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_4.jpg" style="height: 48px;width: 575px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.07.jpg" class="img_1" />
+            </p>
+            <p>Each vendor profile contains the following information tabs: <span>General Info,</span> <span>Communications, Remarks, Agency Remarks, Marketing, Contacts,</span> <span>Activities, Travel History, Payment History, Attachments,</span> <span>Providers, Groups, and Res Card Remarks.</span></p>
+            <p>Each service provider profile contains the following information tabs: <span>General Info,</span> <span>Communications, Remarks, Agency Remarks, Marketing, Contacts,</span> <span>Activities, Attachments, and Groups.</span></p>
+            <p>See detailed review of each of these tabs in section entitled, <span class="span_2">Detailed Review of Folders</span> at the end of this chapter. </p>
+            <h3><a name="User-Defined_Fields_..47" data-mc-generated-bookmark="TOC"></a>User-Defined Fields</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_5.jpg" style="height: 70px;width: 161px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.08.jpg" class="img_1" />
+            </p>
+            <p>There are many fields in vendor/service provider profiles that can be customized for agency’s use. While other data entry fields are labelled in black, user-defined fields stand out because they are labeled in blue. By going into the <span>Global Defaults|General Setup|User Defined Fields</span> area or simply double-clicking on the blue label before the field, detailed lists can be created for agent access in the form of drop-down menus. This gives an agency greater flexibility for entering vendor/service provider information.</p>
+            <h2><a name="Detailed_Review_of_Folders" data-mc-generated-bookmark="TOC"></a><a name="kanchor305"></a>Detailed Review of Folders</h2>
+            <h3><a name="General_Info_Tab_..48" data-mc-generated-bookmark="TOC"></a><a name="kanchor306"></a>General Info Tab</h3>
+            <p>The General Information folder displays vendor/service provider information. </p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor.jpg" style="height: 407px;width: 594px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.09.jpg" class="img_1" />
+            </p>
+            <p>Use the &lt;Tab&gt; key to move from field to field and &lt;Shift&gt;&lt;Tab&gt; to move backwards from field to field; or use the mouse and click the desired field to enter data. The following fields are in the General Information folder:</p>
+            <p><span class="span_2">Type</span><span class="span_2">:</span> Indicate the type of profile by clicking the drop-down menu. Choices include vendor or service provider.</p>
+            <p><span class="span_2">Company</span><span class="span_2">:</span> Enter the name of vendor/service provider. Any printed reports or labels include the <span class="span_2">Company</span> name entered here.</p>
+            <p><span class="span_2">Last Name</span><span>:</span> Enter last name of primary contact. </p>
+            <p><span class="span_2">First Name</span><span>:</span> Enter first name of the primary contact.</p>
+            <p><span class="span_2">MI</span><span>: </span>Enter the middle initial of the primary contact.</p>
+            <p><span class="span_2">Courtesy Title</span><span>:</span> Mr., Mrs., Mr. &amp; Mrs., Ms., Dr. are all examples of courtesy titles. This field can be customized by going to <span>Global Defaults|General Setup|User Defined Fields|Courtesy Title</span> or clicking on the blue field label.</p>
+            <p><span class="span_2">Address 1, Address 2:</span> A vendor profile includes an unlimited number of addresses designated as Primary, Bill To, Ship To, Second Address and Alternate Address. Only one address though may be assigned as Primary, Bill To, or Ship To.</p>
+            <p>Assuming the address to be captured is the default type of <span class="span_2">Primary, Bill To </span>and <span class="span_2">Ship To</span>, then the address fields of <span class="span_2">Address Line 1</span>, <span class="span_2">Address Line 2</span>, <span class="span_2">Apt/Suite, Zip Code, City, State </span>and <span class="span_2">Country </span>can be entered right from the main screen. To capture additional address entries, such as a second address or alternate address, click <span class="span_2">Additional Addresses</span>.</p>
+            <p><span class="span_2">Apt/Suite:</span> Enter the appropriate unit number.</p>
+            <p><span class="span_2">City/State/Zip:</span> Enter the city/state/zip data. These fields can be customized by going to <span>Global Defaults|General Setup|User Defined Fields|City/State/Zip </span>or click on the blue field label.</p>
+            <h4><a name="PROFILE_STATUS_..49" data-mc-generated-bookmark="TOC"></a>PROFILE STATUS</h4>
+            <p><span class="span_2">Create Date/Create User:</span> These fields default to the system date and the user logged in at the time the profile is created. Both can be modified, but can be disabled by the database administrator. Agencies use this field to query for new customers so that “Welcome to the Agency" letters can be mailed. These fields can also be used to query for management reports reflecting user productivity in creating new client profiles. </p>
+            <p><span>Last Modified User/Last Modified Date: </span>This area indicates the last time a profile was modified and by whom.</p>
+            <p><span>Profile Status: </span>Indicate whether a customer profile is active or inactive by choosing from the drop-down menu. By default all profiles start with an active status. An inactive status has been included, since you cannot delete a profile that has invoices and payments attached. When querying, only profiles marked as active are included in the search, but you can perform a Level 2 search to view inactive profiles.</p>
+            <h4><a name="ADDITIONAL_INFO_..50" data-mc-generated-bookmark="TOC"></a>ADDITIONAL INFO</h4>
+            <p><span class="span_2">Branch No.:</span> For agencies with multiple branches, enter the branch number (if applicable) from the drop-down menu. </p>
+            <p><span class="span_2">Interface ID</span><span>: </span>In order to easily and consistently identify an existing customer or vendor within different applications used within the agency (<span class="span_2">ClientBase</span>, your GDS, your Back Office etc.), a unique ID should be assigned to each profile. This ID is called the "Interface ID". As an example, this field is associated with the interfacing of records generated from the GDS (Front Office) to the agency accounting system (Back Office). If your agency works with client or vendor data within multiple systems then we strongly suggest creating a unique Interface ID for each profile. This field can be set as <span class="span_2">Required</span> and a default <span class="span_2">Value</span> can be automatically assigned when new profiles are created (see chapter <span class="span_2">Setting Up ClientBase for Your Agency)</span>.</p>
+            <p><span class="span_2">Salutation:</span> The name used to greet the vendor/service provider contact; for example, if Mr. Henry Wilkenson likes to be called “Hank,” enter <span class="span_2">Hank</span> in this field. If Mrs. Emily Anderson likes to be called “Mrs. Anderson,” enter <span class="span_2">Mrs. Anderson</span> in this field.</p>
+            <h4><a name="VENDOR_INFO" data-mc-generated-bookmark="TOC"></a>VENDOR INFO</h4>
+            <p><span class="span_2">Vendor ID:</span> The Vendor ID field is used exclusively to capture a consortium or marketing code for data roll-up purposes. <span>Note: </span>This is <span class="span_4">not</span> the place to enter an Interface ID or a Live Connect Vendor code. The Interface ID field is where the Interface ID should be entered. To enter a Live Connect Vendor code, click <span class="span_2">Live Connect</span> and link it to the Live Connect Provider and enter a Vendor Code based on the specifications contained in the directions for setting up the Live Connect provider. </p>
+            <p><span class="span_2">Airline No: </span>For airline vendor profiles, the three letter airline code goes here.</p>
+            <p><span class="span_2">Preferred:</span> If this is a preferred vendor/service provider, indicate this by checking the box.</p>
+            <p><span class="span_2">Travel Category:</span> Enter the Travel Category (if applicable) from the drop-down menu. A selection here shows up in the Traveler/Contact area of a client profile in the "preferred" vendors tables. This field is also used to automatically populate the default Travel Category for this vendor within a reservation in a Res Card. If there is more than one Travel Category assigned to the vendor profile, the Travel Category defaults to the first Travel Category in the list for that vendor when selecting a vendor in a reservation. If there is no Travel Category assigned to the vendor profile, the reservation defaults to the Travel Category of <span class="span_2">Cruise</span> in the reservation.</p>
+            <p><span class="span_2">Live Connect:</span> This set-up area is for agencies to use Live Connect in the Res Card. Save time and improve efficiency by passing selected client information to the booking engine, then electronically pass back reservation details and automatically complete the reservation form with what’s been booked. For complete instructions on how to use Live Connect, please refer to the chapter entitled, <span class="span_2">Using Live Connect in ClientBase.</span></p>
+            <p><span class="span_2">Vendor Commission %: </span>This field is shared with the vendor commission default in <span class="span_2">Trams Back Office</span> (TBO). The vendor commission % field is used to default the commission in a reservation record when this vendor profile is used. </p>
+            <h3><a name="Communications_Tab_..51" data-mc-generated-bookmark="TOC"></a><a name="kanchor307"></a>Communications Tab</h3>
+            <p class="p_5">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_6.jpg" style="height: 239px;width: 543px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.10.jpg" class="img_1" />
+            </p>
+            <p>If you were on a previous version of ClientBase, communications have been moved out of the General Info tab of the Contact record into its own tab. The Primary Phone, Primary E-mail, Primary Fax, and Primary Web are now displayed in the list of Contacts on the Contacts tab in the profile. The first Communication entry of a given type is marked as the Contact's Primary (Primary box checked). Subsequent communication entries of that type default to unchecked. </p>
+            <p>By using the radio button on the top of the results screen, users can filter to view only one communications type at a time. Profile-level communication entries are displayed first, followed by the communications that are assigned to contacts. Contact communications are in the order that the contacts are listed in the Contacts tab. Profile level communications can be sorted using the blue arrows on the right side of the screen. These arrows are disabled when a Contact communication entry is selected. </p>
+            <p><span class="span_2">Add, Modify, </span>or <span class="span_2">Delete</span> a communication entry. Deleting a communication entry works the same as before, unless the Contact is linked to more than one profile. In that case, the user is warned, <span class="span_2">This traveler is associated with multiple profiles. Deleting this communication will remove entry from those profiles also. Delete?</span> </p>
+            <h4><a name="ADDING_A_COMMUNICATION_ENTRY_..52" data-mc-generated-bookmark="TOC"></a>ADDING A COMMUNICATION ENTRY</h4>
+            <p>Click <span class="span_2">Add </span>to start:</p>
+            <p><span class="span_4">Contact:</span> Select the name of the contact from the drop-down. When adding a communication entry from the Contact level, there is no option to change the contact name by drop-down. </p>
+            <p><span class="span_5">Type:</span> From the drop-down select the communication type - <span class="span_2">Phone, Fax, E-mail, Web Site, Facebook, Twitter, LinkedIn, or Google+. (</span>The standardized format for telephone, fax, e-mail and website entries in <span class="span_2">ClientBase</span> provides a platform upon which these numbers can be quickly moved among toolbar icons such as merging to e-mail, or merge to PNR.) </p>
+            <p>Each <span class="span_2">phone </span>entry has a forced canonical country code and area code for the benefits of standardization described above. The prefix and suffix fields of the phone number field remain free-flow to accommodate foreign numbers. Maintain a default country code and area code in <span>Global Defaults|Profile Defaults |Communication Defaults</span>. When entering new phone entries, if the country code and area code is not completed, the system defaults to the country code and area code in the Global Defaults. </p>
+            <p class="p_5">Example Formats for capturing user's social media information:</p>
+            <p><span class="span_2">Facebook: </span>For a profile - facebook.com/username (facebook.com/JohnSmith); For a page - facebook.com/page name (facebook.com/SabreTravel)</p>
+            <p><span class="span_2">Twitter:</span> Twitter.com/username (Twitter.com/JohnSmith)</p>
+            <p><span class="span_2">Linked In:</span> linkedin.com/pub/8/b8a/205</p>
+            <p>(Numerical string in the URL is the Linked In ID)</p>
+            <p><span class="span_2">Google Plus:</span> plus.google.com/117474227900375467167</p>
+            <p>(Numerical string in the URL is the Google+ ID)</p>
+            <p>Just like all other communication types, social media communication types have a Marketing Permission checkbox. Marketing Permission is unchecked by default.</p>
+            <p>The social media Communication Types are in the Level 2 and Level 3 queries.</p>
+            <p><span class="span_4">Primary</span><span>:</span> One entry for each of these types can be designated as primary. Though an unlimited number of entries can be stored and viewed, the primary entries are marked with an asterisk on the main screen and included in export routines and used for merge to e-mail.</p>
+            <p><span class="span_4">Marketing Permission</span><span>:</span> All current e-mail addresses within the database default to this field being checked if setup by the database administrator in <span>Global Defaults|Profile Defaults|Communication Defaults</span>. On an e-mail entry by e-mail entry basis, choose to leave it checked or unchecked. This marketing permission checkbox is accessible through the global modify feature. So if you want the existing e-mail entries to have this permission marketing field unchecked, use global modify.</p>
+            <p><i>Note:</i>&#160; Due to changing regulations around privacy, it is recommended that clients opt in to marketing, rather than opt out.</p>
+            <p><span class="span_4">Invalid</span><span>:</span> This area is for use by a marketing organization or marketing person within the agency that has received something back as undeliverable. Rather than deleting the address or e-mail entirely from the database without the proper research, the marketing person can check the Invalid box signaling the fact that the agent should look into this further, but leaves it to the agent to determine how to update. Level 2 and Level 3 Profile Manager Queries have been updated to include the ability to filter profiles based on this address or e-mail Invalid status. Agencies should use these queries periodically to see if they have any Invalid addresses or e-mails that need updating. In the meantime, any addresses and e-mails with this Invalid setting will still be included in all Merge To features and reports.</p>
+            <p>Need to copy a communication’s entry?&#160; Right-click on the entry and select <span class="span_2">Copy Phone, Copy E-Mail, </span>or<span class="span_2"> Copy Fax.&#160; </span>Then paste the entry into other applications as needed.</p>
+            <h3><a name="Remarks_Tab_..53" data-mc-generated-bookmark="TOC"></a><a name="kanchor308"></a>Remarks Tab</h3>
+            <p>The remarks folder provides a full-page view of the unlimited remarks and enables tremendous flexibility for entering comments into each vendor/service provider profile. The only limitation in the <span class="span_2">Remarks</span> folder is the amount of available disk space. </p>
+            <p>View any miscellaneous comments from this screen. This area includes a mini-word processor with which an agent may customize free-flowing remarks:</p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_7.jpg" style="height: 397px;width: 321px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.11.jpg" class="img_1" />
+            </p>
+            <h3><a name="Agency_Remarks_Tab" data-mc-generated-bookmark="TOC"></a><a name="kanchor309"></a>Agency Remarks Tab</h3>
+            <p>Here is another area where unlimited, free-flowing agency remarks can be entered. Whenever agents use this profile, they can access what other agents have written about this vendor or service provider. Such information is valuable so that each agent benefits from the collective experience gained by all customers and agents.</p>
+            <h3><a name="Marketing_Tab" data-mc-generated-bookmark="TOC"></a><a name="kanchor310"></a>Marketing Tab</h3>
+            <p>The Marketing Tab provides a way to track vendors by adding data about the supplier in a manner that agents can Query. For example, in the A &amp; K profile, check off destinations that can be booked for this vendor, or a budget category this vendor falls in, or the type of travel this vendor sells. Then when searching for a vendor that meets the client's requirements, an agent can Query on these specific Marketing Codes.</p>
+            <p>When first installing <span class="span_2">ClientBase</span>, default marketing tables and codes are located in the marketing tab. These default tables/codes can be modified, enhanced, or deleted. The default tables are included to give users basic ideas about what information might be effective. For instructions on tailoring user-definable Marketing Tables and Marketing Codes, please refer to the chapter of this manual entitled, <span class="span_2">Setting Up ClientBase for Your Agency</span>.</p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_8.jpg" style="height: 231px;width: 513px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.12.jpg" class="img_1" />
+            </p>
+            <p>To select and insert marketing codes into a Vendor/Service Provider profile, use the up and down arrows to scroll between tables. Select the codes which apply by clicking in the box on the left hand of each category. A summary of Marketing Tables and Codes applicable to this Vendor/Service Provider is displayed on the left hand side of the screen. To de-select Marketing Codes, simply uncheck each box. </p>
+            <h3><a name="Contacts_Tab_..54" data-mc-generated-bookmark="TOC"></a><a name="kanchor311"></a>Contacts Tab</h3>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_2_595x427.png" style="width: 595;height: 427;" class="img_1" />
+            </p>
+            <p>The <span class="span_2">Contact </span>folder is designed for detailed information on specific individuals who are key contacts with a vendor/service provider. The blue up-and-down arrows allow re-ordering the list of contacts. Vendor profiles have a "Reset Sorting" button which returns the list to alphabetical order. By highlighting a particular contact, you’ll be able to see any remarks entered in the contact record.</p>
+            <p>Add a new traveler/contact by clicking <span class="span_2">Add</span>. When a user adds a new contact record, the database is first automatically searched for any existing travelers/contacts that match. If a match is found, the user can select the existing contact from the list presented and click <span class="span_2">Link </span>to link the existing traveler/contact. They may also click <span class="span_2">Cancel</span> to return to their new traveler/contact. </p>
+            <p>When clicking <span class="span_2">OK</span> again, the new traveler/contact is created. Any data that was entered while creating the new traveler/contact that did not exist in the linked traveler/contact record will be transferred.</p>
+            <p><span>Example:</span> An agent enters a passport number when entering a new traveler/contact. The agent clicks OK, and search finds an existing traveler/contact record, but the existing record does not have a passport number. When the agent selects the matching traveler/contact record, and data from the traveler/contact record is populated on the screen, the passport information that was missing is now completed also.</p>
+            <p><span>Conversely:</span> If data was entered and the existing traveler/contact record contains information in that field, the existing traveler/contact data is retained. <span class="span_2">Example:</span> Agent enters First Name, Last Name, and a birthdate of July 1, 1960, and then clicks OK. The traveler/contact Search results screen appears, and the agent decides to select one of the existing traveler/contact records. The existing traveler has a birthdate of April 12, 1965. The existing birthdate information overwrites the one the agent entered. (Users can always go back and edit if the original information was incorrect.)</p>
+            <p>To modify or enhance a contact, click <span class="span_2">Modify</span> while the name is highlighted. If <span class="span_2">Unlink</span> is clicked for a traveler/contact that is not linked to any other profiles, then a prompt is presented warning that the traveler/contact will be deleted completely. If <span class="span_2">Unlink</span> is clicked for a traveler/contact that is linked to more than one profile, then a confirmation prompt is presented, advising that the traveler/contact will continue to exist in the other linked profiles. </p>
+            <p>By click the <span class="span_2">Search </span>button, you can search for a contact that is located in another profile and attach the contact to this profile as well. </p>
+            <h4><a name="TRAVELER_CONTACT_RECORD_..55" data-mc-generated-bookmark="TOC"></a>TRAVELER/CONTACT RECORD</h4>
+            <p class="p_5">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_9.jpg" style="height: 374px;width: 567px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.14.jpg" class="img_1" />
+            </p>
+            <p>There are 8 tabs of information in a traveler/contact record - <span class="span_2">General, Communications, Addresses, Advanced Contact Info, Cards, Travel Preferences, PNR Entries, and Associated Profiles. </span>Let’s take a look at how to organize information for each traveler/contact by going through each field of the add/modify screen. </p>
+            <p>Notice the header in the Traveler/Contact record, similar to the header of a profile. It displays Contact Name, Address, Communications, Salutation/Nickname, Relationship/Position, Department, Age, Primary Traveler indicator, Associated Profiles, and Birthday and Expired Credit Card/Passport notification icons.</p>
+            <p>These two icons in the header are visual alerts of important dates:</p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_10.jpg" style="height: 118px;width: 72px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.15.jpg" class="img_1" />
+            </p>
+            <p>.A birthday present icon appears during the traveler's birthday month and disappears once the birthday month has passed. A red exclamation point icon appears if the traveler has an expired passport or credit card. Clicking on the exclamation point icon takes the user to Card record if it's an expired credit card, or to the Advanced Traveler Info tab if it's an expired passport. The icon disappears when the expiration date is updated. </p>
+            <h4><a name="GENERAL_TAB_in_Contact_Record_..56" data-mc-generated-bookmark="TOC"></a>GENERAL TAB in Contact Record</h4>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_11.jpg" style="height: 298px;width: 507px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.16.jpg" class="img_1" />
+            </p>
+            <p><span class="span_2">Position: </span>By choosing from a drop-down menu, these user-definable items can be inserted.</p>
+            <p><span class="span_2">Courtesy Title</span><span>:</span> Mr., Mrs., Mr. &amp; Mrs., Ms., Dr. are all examples of courtesy titles. </p>
+            <p><span class="span_2">First Name</span><span>:</span> Enter the legal first name of the contact in this field. This provides correct information for booking purposes. </p>
+            <p><span class="span_2">Middle Name*: </span>Enter the legal middle name (for international traveling purposes).</p>
+            <p><span class="span_2">Last Name</span><span>:</span> Enter the legal last name of contact. </p>
+            <p><span class="span_2">Gender*: </span>Select contact gender from the drop-down menu.</p>
+            <p><span class="span_2">Citizenship*: </span>Enter contact’s citizenship from the user-definable drop-down menu<span>.</span></p>
+            <p><span class="span_2">Birthdate*</span><span>:</span> Enter contact’s birthdate including month, day and year, or any combination of those date fields. (If agent knows only month, enter it - you can query the database by month and send out birthday cards!)</p>
+            <p><span>Age:</span> The Age field is auto-calculated based on the entries in the Birthdate fields. To auto-calculate the age, a year must be captured within the Birthdate and calculates based on the current date and the following logic: </p>
+            <p>- If a year but no month and day is captured, the Age is calculated based on Jan 1st of the birth year.</p>
+            <p>- If a month and year but no day is captured, the Age is calculated based on the 1st of the birth month and year.</p>
+            <p>- If a day and year but no month is captured, the Age is calculated based on Jan as the birth month.</p>
+            <p><span>Salutation/Nickname:</span> This field allows a salutation or nickname to be entered for each contact. The Salutation/Nickname can be viewed in the Profile Manager results by adding the column to the Query screen. </p>
+            <p><span>Department:</span> In profiles, there is a field to enter the contact’s department.</p>
+            <p><span>Primary Contact: </span>Click here if this is the primary contact for this profile. By default, the box is checked for the contact added to the profile, designating them as Primary. For subsequent contacts added, the box is unchecked by default. If a user checks the box when adding a new contact, making them Primary, the box automatically will be unchecked for the original primary contact. There can be only one Primary Contact per profile. </p>
+            <p><span>Remarks:</span> Enter unlimited free-flowing information pertaining to this contact.</p>
+            <h4><a name="COMMUNICATION_TAB_in_Contact_Record_..57" data-mc-generated-bookmark="TOC"></a>COMMUNICATION TAB in Contact Record</h4>
+            <p>By using the radio button on the top of the results screen, filter to view only one communications type at a time. Sort communications using the blue arrows on the right side of the screen. <span class="span_2">Add, Modify, </span>or <span class="span_2">Delete</span> a communication entry. Deleting a communication entry works the same as before, unless the contact is linked to more than one profile. In that case, the user is warned, <span class="span_2">This contact is associated with multiple profiles. Deleting this communication will remove entry from those profiles also. Delete?</span> </p>
+            <h4><a name="ADDING_A_COMMUNICATION_ENTRY_..58" data-mc-generated-bookmark="TOC"></a>ADDING A COMMUNICATION ENTRY</h4>
+            <p>Click <span class="span_2">Add </span>to start:</p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_12.jpg" style="height: 312px;width: 264px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.17.jpg" class="img_1" />
+            </p>
+            <p><span class="span_5">Type:</span> From the drop-down select the communication type - <span class="span_2">Phone, Fax, E-mail, Web Site, Facebook, Twitter, LinkedIn, or Google+. (</span>The standardized format for telephone, fax, e-mail and website entries in <span class="span_2">ClientBase</span> provides a platform upon which these numbers can be quickly moved among toolbar icons such as merging to e-mail, or merge to PNR.) </p>
+            <p>Each <span class="span_2">phone </span>entry has a forced canonical country code and area code for the benefits of standardization described above. The prefix and suffix fields of the phone number field remain free-flow to accommodate foreign numbers. Maintain a default country code and area code in <span>Global Defaults|Profile Defaults |Communication Defaults</span>. When entering new phone entries, if the country code and area code is not completed, the system defaults to the country code and area code in the Global Defaults. </p>
+            <p class="p_5">Example Formats for capturing user's social media information:</p>
+            <p><span class="span_2">Facebook: </span>For a profile - facebook.com/username (facebook.com/JohnSmith); For a page - facebook.com/page name (facebook.com/SabreTravel)</p>
+            <p><span class="span_2">Twitter:</span> Twitter.com/username (Twitter.com/JohnSmith)</p>
+            <p><span class="span_2">Linked In:</span> linkedin.com/pub/8/b8a/205</p>
+            <p>(Numerical string in the URL is the Linked In ID)</p>
+            <p><span class="span_2">Google Plus:</span> plus.google.com/117474227900375467167</p>
+            <p>(Numerical string in the URL is the Google+ ID)</p>
+            <p>Just like all other communication types, social media communication types have a Marketing Permission checkbox. Marketing Permission is unchecked by default.</p>
+            <p>The social media Communication Types are in the Level 2 and Level 3 queries, as well as the Client Survey report.</p>
+            <p><span class="span_4">Primary</span><span>:</span> One entry for each of these types can be designated as primary. Though an unlimited number of entries can be stored and viewed, the primary entries are marked with an asterisk on the main screen and included in export routines and used for merge to e-mail.</p>
+            <p><span class="span_4">Marketing Permission</span><span>:</span> All current e-mail addresses within the database default to this field being checked if setup by the database administrator in <span>Global Defaults|Profile Defaults|Communication Defaults</span>. On an e-mail entry by e-mail entry basis, choose to leave it checked or unchecked. This marketing permission checkbox is accessible through the global modify feature. So if you want the existing e-mail entries to have this permission marketing field unchecked, use global modify. </p>
+            <p><span>Invalid:</span> This area is for use by a marketing organization or marketing person within the agency that has received something back as undeliverable. Rather than deleting the address or e-mail entirely from the database without the proper research, the marketing person can check the Invalid box signaling the fact that the agent should look into this further, but leaves it to the agent to determine how to update. Level 2 and Level 3 Profile Manager Queries have been updated to include the ability to filter profiles based on this address or e-mail Invalid status. Agencies should use these queries periodically to see if they have any Invalid addresses or e-mails that need updating. In the meantime, any addresses and e-mails with this Invalid setting will still be included in all Merge To features and reports.</p>
+            <h4><a name="ADDRESS_TAB_in_Contact_Record_..59" data-mc-generated-bookmark="TOC"></a>ADDRESS TAB in Contact Record </h4>
+            <p>Contacts can only have one address. Contact Address fields were also added to Select Columns and Sort By Columns in Profile Manager query results screens. </p>
+            <p><span>Address Line 1:</span> Enter an address line for this contact.</p>
+            <p><span>Address Line 2:</span> Enter an additional address line if applicable for this contact.</p>
+            <p><span>Apt/Suite:</span> Enter the apartment of suite number.</p>
+            <p><span>Zip Code:</span> Enter zip code. This Zip Code entry auto-populates the City and State fields if this is set up in User Defined Fields, as it does in Profile-level addresses.</p>
+            <p><span>City:</span> Enter city.</p>
+            <p><span>State:</span> Enter state.</p>
+            <p><span>Description:</span> Free-flow a description for this address.</p>
+            <p><span>Marketing Permission:</span> Contact addresses have their own marketing permission checkbox, which defaults to unchecked. </p>
+            <h4><a name="ADVANCED_CONTACT_INFO_TAB_in_Contact_Record_..60" data-mc-generated-bookmark="TOC"></a>ADVANCED CONTACT INFO TAB in Contact Record</h4>
+            <p><span class="span_2">Passport Number</span><span>:</span> For up to 2 passports, enter traveler’s passport number. </p>
+            <p><span class="span_2">Expiration</span><span>:</span> Enter contact’s passport expiration date. This is a great field to Query on to send out letters alerting customers that passports are about to expire.</p>
+            <p><span>Issue Date*:</span> Enter contact’s passport issue date. </p>
+            <p><span>Issuing City*:</span> Enter contact’s passport issuing of origin from the user-definable drop-down menu).</p>
+            <p><span class="span_2">Issuing Country*</span><span>:</span> Enter contact’s passport issuing country of origin from the user-definable drop-down menu<span>.</span></p>
+            <p>* Heightened security has increased the amount of traveler information agencies need to collect for international travel bookings:</p>
+            <p><span>Redress Number/Known Traveler Number: </span>Use this area for TSA numbers assigned to contact.</p>
+            <p><span>Emergency Contact: </span>Emergency Contact information includes Name, Phone Number and a Miscellaneous text field to capture any additional information about the emergency contact such as the relationship to the Contact. </p>
+            <h4><a name="CARDS_TAB_in_Contact_Record_..61" data-mc-generated-bookmark="TOC"></a>CARDS TAB in Contact Record </h4>
+            <p>Enter frequent flyer, credit card, cruise program, and miscellaneous card information pertaining to this contact. All cards entered at the contact level also appear within the listing of cards at the profile level. Click <span class="span_2">Add</span> to enter a new card:</p>
+            <p><span>Card Type/Card Code/Card Description: </span>Card types are <span class="span_2">Credit Card, Frequent Flyer, Hotel Program, Car Program, Car Program, Cruise Program, Other and Discount Card. </span></p>
+            <p>The <span class="span_2">Discount Card</span> in the drop-down list of cards that can be selected in the Cards tab for use with discount programs such as AAA Memberships, AARP, etc. This card type is formatted exactly like all other card types (name, card type, card code, card description, number, expiration, etc.). By entering the <span class="span_2">Card Code, </span>the <span class="span_2">Card Description </span>is auto-filled.</p>
+            <p><span>Merge to PNR: </span>By default any new credit card entries default to <span class="span_2">Use Global PNR Rule</span><span>.</span> With this setting credit cards continue to merge as they have in the past based on the global credit card PNR Rule. If this Merge to PNR setting is changed to <span class="span_2">Always</span>, then regardless of the global PNR Rule for credit cards, the credit card defaults to being selected on the Merge to PNR Selection Screen. If this Merge to PNR setting is changed to <span class="span_2">Optional</span>, then regardless of the global PNR Rule for credit cards, the credit card defaults to not being selected on the Merge to PNR Selection Screen. This feature gives you the ability to set the <span class="span_2">Always/Optional</span> setting at the credit card entry level as well as the Global Defaults level. </p>
+            <p><span>Card Number/Expiration: </span>Enter the <span class="span_2">Card Number</span> without dashes and use the last day of the month it expires (<span class="span_2">Expiration)</span> in the correct year.</p>
+            <p><span>Issued by/Remarks: </span>These are optional fields to put additional data.</p>
+            <p><span>Name on Card: </span>The name on the card should default to the traveler’s name. If someone else’s name is on the card, change it here.</p>
+            <p><span>Upon saving or editing Credit Card numbers, </span><span class="span_2">ClientBase</span><span> validates the card number.</span> <span>Note: </span>Upon saving or edit a credit card number, <span class="span_2">ClientBase</span> now validates the card number. If the number is invalid, a prompt occur: <span class="span_2">The credit card number entered appears to have a typographical error or it is not a valid credit card. Do you want to continue saving this record?</span> This prompt serves as a warning that there may have been a data entry error (typo).</p>
+            <p>Selecting <span>YES</span> saves the card As Is.</p>
+            <p>Selecting <span>NO</span> returns user to the card number field.</p>
+            <p>When editing an existing card number, validation does not occur unless the card number field is modified. Validation occurs in Profile Cards Tab, Invoice Form of Payment Credit Card and CC Merchant, Invoice Booking Payment Credit Card and CC Merchant, Reservation Payment Due Date tab, Receipt Form of Payment CC Merchant FOP.</p>
+            <p>***Valid credit card numbers with spaces do not prompt</p>
+            <p>***Valid credit card numbers with letters (VI1234123412341234) do not prompt</p>
+            <p>***Valid credit card numbers with expiration date after a slash (CA5458004519231383 /1109) will not prompt (although we do not recommend entering the expiration date in the CardNumber field.)</p>
+            <h4><a name="TRAVEL_PREFERENCES_TAB_in_Contact_Record_..62" data-mc-generated-bookmark="TOC"></a>TRAVEL PREFERENCES TAB in Contact Record</h4>
+            <p>Under this tab each travel category appears in a new tree view. Travel Categories are listed in the tree on the left side and Travel Preferences for each are on the right. This gives the ability to capture travel preferences globally by Travel Category, but also the ability to capture travel preferences for each preferred Vendor. It is not mandatory to have preferred preferences for a preferred vendor. It is also not mandatory to select preferred vendors for a client. </p>
+            <p>Click the Travel Category name to view and/or set up global travel preferences for the category. Preferences set up for the travel category will automatically default as the preferred preference for each preferred vendor selected for that category, however, the vendor preferences can be modified. </p>
+            <p>To add a preferred vendor, click the <span class="span_2">Add</span> button at the bottom of the Travel Category tree. A <span class="span_2">Find Vendor</span> screen is displayed. Select the Travel Category and the Vendor and click <span class="span_2">OK</span>. Preferences are shown for the vendor based on the default preferences for the Travel Category. Make adjustments to the preferences as needed. </p>
+            <p>A new field, <span class="span_2">Desirability</span> is available in preferences for future use with <span class="span_2">Sabre Graphical Profiles</span>. The <span class="span_2">Desirability</span> field is displayed when adding or viewing a preferred vendor. Desirability options appear as a drop down to select from. Selections are: <span class="span_2">Do Not Use, Dislikes, No Preference, Favorable, and Very Favorable.</span></p>
+            <p>All Travel Categories now use the user defined field Special Options. For Air Preferences, Meal Preferences is named Meal Type which links to a Meal Code field that was also added. Air Craft Type is available as a preference. For Cruise Preferences, Ship Name and Departure Port are available as User Defined fields and are displayed as preference options. When using contact columns in queries, the default global preferences are displayed in the query.</p>
+            <h4><a name="PNR_ENTRIES_TAB_in_Contact_Record_..63" data-mc-generated-bookmark="TOC"></a>PNR ENTRIES TAB in Contact Record</h4>
+            <p>In order to capture contact-related PNR entries (such as general remarks, special meal requests, air/car/hotel preference, UDID’s, etc.), a tab is included in the contact record for leisure and corporate client profiles. </p>
+            <p class="p_6">ASSOCIATED PROFILES TAB Contact Record</p>
+            <p>This tab allows the user to view all the profiles that a given contact is linked to. By clicking <span class="span_2">Open, </span>user has the ability to hop into another profile.</p>
+            <h3><a name="Linking_a_Contact_Record_to_Another_Profile_..64" data-mc-generated-bookmark="TOC"></a>Linking a Contact Record to Another Profile</h3>
+            <p>In <span class="span_2">ClientBase</span>, you have the ability to link a traveler/contact record to multiple profiles. All data captured within the traveler/contact record is linked to the new profile. </p>
+            <p class="p_5">Linking a Traveler/Contact Record:</p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_13.jpg" style="height: 238px;width: 420px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.18.jpg" class="img_1" />
+            </p>
+            <p>1) Retrieve the desired profile to which you want to link a traveler/contact record. For example, you may want to link a leisure traveler/contact to a Corporate profile.</p>
+            <p>2) Click the profile Traveler/Contact tab and <span class="span_2">Search</span>.</p>
+            <p>3) Type in at least 2 pieces of data in the search fields and <span class="span_2">Search</span>. </p>
+            <p>4) When the traveler/contact result comes up, click <span class="span_2">Link</span>.</p>
+            <p>5) All the traveler/contact data is now in the new profile.</p>
+            <p><span>TIPS: </span>Search by phone or e-mail address alone, or in combination with any of the name fields. If searching by name only, users must enter something in at least two of the three name fields.</p>
+            <p class="p_5">Examples: </p>
+            <p>**User enters First Name of Ken and an e-mail address of ken@example.com. Ken Able, who has that address, is returned; Ken Jones, who does not have that e-mail address, is not.</p>
+            <p>**User knows the last name, but isn't sure exactly how the first name is spelled. He enters First Name A and last name Smith. All Travelers whose first name starts with A (Alice, Anne, Alex,) and last name starts with Smith (Smith, Smith-Jones) are returned.</p>
+            <p>**User knows that Mary Anne Jones has married, but doesn't remember the Traveler's new last name. She enters First Name Mary and Middle Name Anne. All Travelers with that first and middle name are returned.</p>
+            <p>**User knows the traveler's phone number and enters (650) 555-1212. All travelers with that phone number are returned. </p>
+            <h3><a name="Activities_Tab_..65" data-mc-generated-bookmark="TOC"></a><a name="kanchor312"></a>Activities Tab</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_14.jpg" style="height: 287px;width: 545px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.19.jpg" class="img_1" />
+            </p>
+            <p>Any agent can see the history of contacts made with a specific vendor/service provider by clicking the Activities Tab. </p>
+            <p>This tab displays a complete history of all contacts associated with this specific vendor. Included are Notes (record of interaction with vendor), Reminders (record of scheduled past and future activities) and Mailers (record detailing mailings sent to this vendor). To add a new Note, Reminder or Mailer, click <span class="span_2">Add</span>; to modify or enhance a Note, Reminder or Mailer; click <span class="span_2">Modify</span>; or click <span class="span_2">Delete</span> to remove it.</p>
+            <p>Notice the radio buttons located directly above the activities results screen. This allows for quick filtering of the results appearing in this tab. By default ALL Activities are displayed, but options for viewing just Mailers, Notes, Reminders, or Open Reminders are available. Notice any remarks for the activity displayed to the right for each highlighted entry.</p>
+            <h3><a name="Travel_History_Tab_..66" data-mc-generated-bookmark="TOC"></a><a name="kanchor313"></a>Travel History Tab</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_15.jpg" style="height: 278px;width: 545px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.20.jpg" class="img_1" />
+            </p>
+            <p>From this window, agents can easily review past travel purchases. Since invoices in <span class="span_2">Trams Back Office</span> only point to a vendor and not service providers, this tab only appears in the vendor type profiles. The <span>Travel History </span>folder lists invoices generated either in <span class="span_2">TBO</span> or <span class="span_2">ClientBase</span>. Performs customized queries to display invoice/travel history. Imagine each agent being able to see what vendor sales were made by the agency in the past, including the sum total of those sales, the average booking amount, and the total commission earned by the agency as a result of those sales — fast!</p>
+            <p>Fill in the following fields to obtain specialized queries:</p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_16.jpg" style="height: 57px;width: 620px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.21.jpg" class="img_1" />
+            </p>
+            <p><span class="span_2">Sort</span><span>:</span> Enter how data is sorted by using the drop-down menu to select Issue Date, Depart Date, Travel Category, Traveler Name, Agent, Invoice #, Invoice Type, Invoice Status.</p>
+            <p><span class="span_2">Trvl Cat.: </span>Enter the travel category from drop-down menu.</p>
+            <p><span class="span_2">Issue Date</span><span>:</span> Enter the from and to issue date by clicking the drop-down menu. Click <span class="span_2">Run Query</span> to display desired query. By clicking <span class="span_2">Custom Query</span>, a more detailed Query can be setup. Fields to Query on include the Booking Fields: Vendor, Travel Category, Total Fare Range, Agent Name, Ticket/Confirmation #, Traveler/Contact Name and Depart Date Range. Invoice Fields to Query on include: Client, Invoice No., Invoice Type, Invoice Status, and Issue Sales Date Range. </p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_17.jpg" style="height: 396px;width: 380px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.22.jpg" class="img_1" />
+            </p>
+            <p><span>Hide Commission Totals: </span>By default, this box is unchecked. Once checked, the red Commission numbers in the header are hidden. The checkbox setting is "sticky" - once checked, it remains checked for all profiles until it is unchecked. The Commission column is not hidden; customers who are using this setting may wish to drag that column off to the right in order to conceal it. </p>
+            <p><span>Quick Tips:</span> Want to see the payment for a particular invoice quickly? Right-mouse click on the invoice line, and <span class="span_2">View Payments for this Invoice number. </span>Or access the Res Card for the invoice you have selected by clicking the <span class="span_2">Go to </span>button.</p>
+            <h3><a name="Payments_Tab" data-mc-generated-bookmark="TOC"></a><a name="kanchor314"></a>Payments Tab</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_18.jpg" style="height: 101px;width: 566px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.23.jpg" class="img_1" />
+            </p>
+            <p>View actual payment information <span class="span_2">Trams Back Office</span> program including receipts and disbursements. Fields include dates paid, amounts, check numbers. Agents can now easily find out if a payment has gone out to a vendor or if a commission check has come in from a vendor. (Since payments in TBO only point to vendor profiles, not service providers, this tab is only available in vendor type profiles.) To limit access to this information for users in your office, use User Logins to disable this, or any profile tab.</p>
+            <p>When this tab is opened, it automatically reveals payments made to or received from the vendor. To sort the list, click <span class="span_2">Custom Query</span>, fill in specific criteria and click <span class="span_2">Run Query</span> to have specific payment info displayed. Fields include Check/CC No; Amount; Date Range; Payment Type and Payment Method.</p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_19.jpg" style="height: 254px;width: 292px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.24.jpg" class="img_1" />
+            </p>
+            <h3><a name="Attachment_Tab_..67" data-mc-generated-bookmark="TOC"></a><a name="kanchor315"></a>Attachment Tab</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_20.jpg" style="height: 281px;width: 562px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.25.jpg" class="img_1" />
+            </p>
+            <p>To enhance the amount and type of information accessible in a <span class="span_2">ClientBase</span> profile, a feature is included in all profile types allowing you to point to other files available on a local or network drive. These files are referred to as <span class="span_2">Attachments</span>. Attachments are listed alphabetically by <span class="span_2">Description</span>, and can be sorted from the drop-down menu by <span class="span_2">Description, File Name, Directory Path, Computer Name, Original File Source, Compressed Size, File Date/Time, or Modified Date/Time.</span> </p>
+            <p>To add a new attachment click <span class="span_2">Add</span>, and <span class="span_2">Browse for Attachment </span>to identity the file path of the file. The file path includes the drive where the file is located, any directories or sub-directories, and the name of the file. Choose to compress the file by clicking <span class="span_2">Compression</span>. Enter a brief description of the attachment, if desired. When retrieving a profile and viewing attachments, the attachments are listed alphabetically by <span class="span_2">Description</span>.</p>
+            <p><span>Note:</span> Although these file paths are created from one workstation, they are saved as part of your <span class="span_2">ClientBase</span> database and so accessible from any <span class="span_2">ClientBase</span> workstation.</p>
+            <p>To view a saved attachment, highlight the attachment, and click <span class="span_2">Open Attachment </span>or double-click on attachment to open. <span class="span_2">ClientBase</span> uses Windows association to view the file type, load the appropriate software, and retrieve the specified file. Every file has an extension (e.g., .doc, .jpg, .bmp, .html, etc.) that must be associated with a specific Windows software program such as MS Word, Paint Shop Pro, Internet Explorer, etc. to be viewed. Although this association is created automatically by Windows when various software programs are installed, if a workstation does not have a software program associated with the type of file an attachment is pointing to, then the file cannot be viewed from the attachment created in <span class="span_2">ClientBase</span>. </p>
+            <p>Modifications to a file launched from <span class="span_2">ClientBase</span> attachments can be saved automatically back into <span class="span_2">ClientBase</span>. If an attachment is opened and then modified and saved, upon closing the attachment you land on the attachment settings window. Clicking <span class="span_2">OK </span>from this area saves the newly modified file back to <span class="span_2">ClientBase</span>. Click <span class="span_2">Delete</span>, while the name is highlighted, to remove an attachment. <span class="span_2">Save As Attachment</span> allows you to save a copy of the attachment into another file location.</p>
+            <h3><a name="Providers_Tab" data-mc-generated-bookmark="TOC"></a><a name="kanchor316"></a>Providers Tab</h3>
+            <p class="p_5">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_21.jpg" style="height: 126px;width: 680px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.26.jpg" class="img_1" />
+            </p>
+            <p>This tab only appears in vendor type profiles and allows your agency to link any number of service provider profiles to a vendor profile. For example, if you are working on creating a rich profile for Carnival Cruise Lines and would like to link the Ecstasy service provider to the vendor profile, this is where to accomplish this. To link a service provider to this vendor, click <span class="span_2">Add, and </span>a list of all vendors and service provider profiles appears for selection. Click <span class="span_2">OK </span>to save. To modify a link to an existing provider, click <span class="span_2">Modify</span> and click <span class="span_2">Delete</span> to remove the link to this vendor. To view the profile details for any service provider linked to the vendor, highlight the service provider then click <span class="span_2">Go to Provider Profile</span>. </p>
+            <h3><a name="Groups_Tab_..68" data-mc-generated-bookmark="TOC"></a><a name="kanchor317"></a>Groups Tab</h3>
+            <p class="p_4">
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_22.jpg" style="height: 74px;width: 605px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.27.jpg" class="img_1" />
+            </p>
+            <p>Profiles may be associated with a specific group that has been created by the agency. There is no limit to how many groups one profile may be associated with. Enter a group(s) to which this vendor belongs by clicking the drop-down menu item after clicking <span class="span_2">Add</span>. This group table is shared with <span class="span_2">Trams Back Office</span>. Customize these items by going to <span>Global Defaults|General Setup|User Defined Fields|Groups: Vendor</span>, or by clicking the group blue field name in the profile. To add a new group to the vendor’s profile, click <span class="span_2">Add;</span> to modify or enhance an group, click <span class="span_2">Modify</span>; and <span class="span_2">Delete</span> to remove it.</p>
+            <h3><a name="Res_Card_Remarks_Tab_..69" data-mc-generated-bookmark="TOC"></a><a name="kanchor318"></a>Res Card Remarks Tab</h3>
+            <p>Whenever an invoice, itinerary, trip proposal, or trip statement is printed involving this vendor, enter these profile level Res Card Remarks to print accordingly. For example, if you would like Carnival's specific cancellation policy to print on any invoice that involves Carnival, add Carnival's policy here. You can also capture client specific or agent specific Remarks as well within the Client and Agent profile tab called Res Card Remarks. </p>
+            <p>
+                <img src="resources/images/chapter 17 a look at vendor and service provider profiles/an in depth look at vendor_23.jpg" style="height: 203px;width: 580px;" alt="http://static.trams.com/CBW38/images/An%20In-depth%20Look%20at%20Vendor-Ser%20Provider%20Profiles.36.1.28.jpg" class="img_1" />
+            </p>
+            <p>Click <span class="span_2">Add </span>and complete following fields:</p>
+            <p><span>Description:</span> Enter a brief 15 character description of the Remark.</p>
+            <p><span>Always Print:</span> Place a check here if you would like these remarks to print by default. Leave this field unchecked if you would like to force the user to select this remark to print at the time of printing the document.</p>
+            <p><span>Include Remarks On:</span> Create different remarks for different documents. Select which document you would like to include this remark by placing a check within <span class="span_2">Invoice, Trip Proposal, Itinerary, Trip Statement </span>or<span class="span_2"> Receipt</span>.</p>
+            <p><span>Remarks:</span> Enter your free flow remarks here. There is no limit to the number of characters.</p>
+            <p>Add multiple remarks for each profile and arrange the desired ordered by highlighting a remark from the listing and clicking the blue arrows to move it up or down in position.</p>
+            <p>Click <span class="span_2">OK</span> to Save. </p>
+            <p><span>Note to </span><span class="span_2">Trams Back Office</span><span> Users:</span> When an invoice has Vendor Res Card remarks, those remarks are now included on the TBO booking field Vendor Remarks.</p>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <MadCap:pageFooter>
+            <p class="header_concept" style="text-align: right;"><a href="http://www.sabretravelnetwork.com/trams">Trams &amp; ClientBase Products and Services</a>
+            </p>
+            <p class="header_concept" style="text-align: right;">Phone:&#160;310 - 641 - 8726 — Option 2</p>
+            <p class="header_concept" style="text-align: right;">Email:&#160;<a href="mailto:Trams.CBSupport@sabre.com">Trams.CBSupport@sabre.com</a></p>
+            <p class="header_concept" style="text-align: right;">&#160;</p>
+            <hr />
+            <p class="footer" style="text-align: center;">All Rights Reserved © <span class="mc-variable Variables.Current_Year variable">2021</span> <span class="mc-variable Variables.CompanyName variable">Trams Inc.</span> </p>
+        </MadCap:pageFooter>
+    </body>
+</html>

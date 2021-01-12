@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ObjectList>
-    <Object Value="System.LinkedHeader" />
-    <Object Value="System.LinkedTitle" />
-    <Object Value="Variables.Current Year" />
-    <Object Value="Variables.Release Date" />
-    <Object Value="System.ShortDate" />
-</ObjectList>
