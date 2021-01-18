@@ -25,7 +25,7 @@
         </script>
         <script type="text/javascript" src="resources/Scripts/require.config.js">
         </script>
-        <script type="text/javascript" src="resources/Scripts/MadCapAll.js" defer="true">
+        <script type="text/javascript" src="resources/Scripts/MadCapAll.js" defer="defer">
         </script>
     </head>
     <body class="off-canvas hide-extras">
@@ -39,9 +39,11 @@
         </div><a class="skip-to-content tripane-skip showOnFocus" href="#">Skip To Main Content</a>
         <div id="header"><a class="homeLink logo" href="index.html"><img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" /></a>
             <div class="search-account-container">
-                <div class="central-dropdown" style="display:none;" data-mc-style="Central Account Element"><a class="central-account-drop"><span class="central-account-image" data-mc-style="Central Account Link Image"></span><span class="central-account-text">Account</span></a>
-                    <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
-                        <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                <div class="central-account-wrapper">
+                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
+                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                        </div>
                     </div>
                 </div>
                 <div class="search-bar search-bar-container needs-pie">
@@ -165,9 +167,11 @@
             </div>
             <div id="contentBody" class="small-10 expand-for-small-10 columns non-collapsable needs-pie" role="main">
                 <div id="responsiveHeader" class="needs-pie"><a class="homeLink" href="index.html"><div class="logo"><img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" /></div></a>
-                    <div class="central-dropdown" style="display:none;" data-mc-style="Central Account Element"><a class="central-account-drop"><span class="central-account-image" data-mc-style="Central Account Link Image"></span><span class="central-account-text">Account</span></a>
-                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
-                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                    <div class="central-account-wrapper">
+                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
+                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                            </div>
                         </div>
                     </div>
                     <div id="slideRight" class="toggle-topbar menu-icon">
@@ -197,7 +201,7 @@
             Create Profile
         </div>
             <div class="login-dialog-content needs-pie">
-                <div class="profile-item-wrapper clearfix" data-mc-style="Feedback User Profile Item Label">
+                <div class="profile-item-wrapper clearfix">
                     <div class="label-wrapper">
                         <label>Username *</label>
                     </div>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated HTML5.fltar" Date="2021-01-12T19:51:24.7914107-03:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated HTML5.fltar" Date="2021-01-18T17:33:35.0926568-03:00">
     <Messages>Compiling target HTML5...
 Removing previously generated content...
 Loading skin info...
@@ -36,32 +36,32 @@ Processing topic: About\Terms of Use &amp; Copyright.htm...
 Applying master page Other-Topics.flmsp...
 Generated about\terms of use &amp; copyright.htm
 Processing topic: Home.htm...
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Removed/resources/stylesheets/styles.css
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/mobile.css
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/tablet.css
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/styles.css
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/foundation.6.2.3.css
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Mobile.css
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Tablet.css
-Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Styles.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Slideshow.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\TextEffects.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Topic.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Styles.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Tablet.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Mobile.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\foundation.6.2.3.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\styles.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\tablet.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\mobile.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Removed\resources\stylesheets\styles.css
-Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\jquery.min.js
-Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\require.min.js
-Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\require.config.js
-Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\foundation.6.2.3_custom.js
-Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\plugins.min.js
-Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\MadCapAll.js
-Missing linked source file: C:\My Projects\NoraSalles\Content\norasalles.github.io\contact\contactform.php
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Removed/resources/stylesheets/styles.css
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/mobile.css
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/tablet.css
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/styles.css
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/foundation.6.2.3.css
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Mobile.css
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Tablet.css
+Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Styles.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Slideshow.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\TextEffects.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Topic.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Styles.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Tablet.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Mobile.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\foundation.6.2.3.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\styles.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\tablet.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\mobile.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Removed\resources\stylesheets\styles.css
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\jquery.min.js
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\require.min.js
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\require.config.js
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\foundation.6.2.3_custom.js
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\plugins.min.js
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\MadCapAll.js
+Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\norasalles.github.io\contact\contactform.php
 Applying master page Other-Topics.flmsp...
 Generated home.htm
 Generating output skins...
@@ -86,38 +86,38 @@ Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated index.html
 Saving result set...
 Ignored Compiler Warnings: 9
-Output generated in 13 second(s).
+Output generated in 19 second(s).
 
 Done
-Saving log to "C:\My Projects\NoraSalles\Output\SG0222835\HTML5\HTML5.mclog"
+Saving log to "C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Output\SG0222835\HTML5\HTML5.mclog"
 </Messages>
     <Warnings>
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Removed/resources/stylesheets/styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/foundation.6.2.3.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry Message="Missing linked stylesheet file:///C:/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Slideshow.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\TextEffects.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Topic.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\foundation.6.2.3.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Removed\resources\stylesheets\styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\jquery.min.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\require.min.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\require.config.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\foundation.6.2.3_custom.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\plugins.min.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\Resources\Scripts\MadCapAll.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\My Projects\NoraSalles\Content\norasalles.github.io\contact\contactform.php&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Removed/resources/stylesheets/styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Fluid/stylesheets/foundation.6.2.3.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry Message="Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/NoraSalles/Content/Skins/Default/Stylesheets/Components/Styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="CSS" Target="HTML5" ErrorID="10010" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Slideshow.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\TextEffects.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Topic.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Default\Stylesheets\Components\Mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\foundation.6.2.3.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\tablet.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Skins\Fluid\stylesheets\mobile.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Removed\resources\stylesheets\styles.css&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\jquery.min.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\require.min.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\require.config.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\foundation.6.2.3_custom.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\plugins.min.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\Resources\Scripts\MadCapAll.js&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Home.htm" Message="Missing linked source file: C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\NoraSalles\Content\norasalles.github.io\contact\contactform.php&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
     </Warnings>
     <Errors />
 </MadCapLog>

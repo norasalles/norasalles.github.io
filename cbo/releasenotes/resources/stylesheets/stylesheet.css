@@ -159,3 +159,13 @@ span.span_3
 	font-style: italic;
 }
 
+div.commframe
+{
+	color: #E50000;
+	font-family: Roboto;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 10px;
+	background: #9DD7D8;
+}
+
