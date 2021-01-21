@@ -12,6 +12,7 @@
         <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="resources/stylesheets/draftstylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="resources/tablestyles/table.css" rel="stylesheet" data-mc-stylesheet-type="table" />
         <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
         </script>
         <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
@@ -34,51 +35,58 @@
         <div role="main" id="mc-main-content">
             <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_14_An_In-Depth_Look_at_PNR_Import"></a>Chapter 14: An In-Depth Look at PNR Import</span>
             </p>
-            <h1><a name="An_In-Depth_Look_at_PNR_Import" data-mc-generated-bookmark="TOC"></a><a name="kanchor299"></a>An In-Depth Look at PNR Import</h1>
+            <h1><a name="An_In-Depth_Look_at_PNR_Import" data-mc-generated-bookmark="TOC"></a><a name="kanchor298"></a>An In-Depth Look at PNR Import</h1>
             <p class="p_2">This chapter provides a detailed overview of using the PNR Import feature in ClientBase. PNR Import is currently available for Amadeus, Apollo/Galileo, Sabre and Worldspan.</p>
             <p>Reservations stored within an Amadeus, Apollo/Galileo, Sabre, or Worldspan PNR can be imported into <span class="span_2">ClientBase</span>, and new reservation records can be created within the reservation tab of the Res Card. Once the new reservations reside in the Res Card, print out client quotes, itineraries, or add additional reservations using Live Connect and generate invoices.<br /><br /></p>
-            <h2><a name="Set_Up_PNR_Import_for_Amadeus" data-mc-generated-bookmark="TOC"></a><a name="kanchor300"></a>Set Up PNR Import for Amadeus</h2>
+            <h2><a name="PNR_Import_for_Amadeus" data-mc-generated-bookmark="TOC"></a><a name="kanchor299"></a>PNR Import for Amadeus</h2>
+            <h3><a name="Set_Up_PNR_Import_for_Amadeus" data-mc-generated-bookmark="TOC"></a>Set Up PNR Import for Amadeus</h3>
             <p>The PNR Import for Amadeus takes air, car, hotel and rail segments included in an Amadeus PNR and imports them into <span class="span_2">ClientBase</span> Res Card reservation records. For tour and cruise bookings, users can use Live Connect to bring these into the program.</p>
             <p>Amadeus has 3 platforms - APS (which stands for Amadeus Pro Software), Vista, and ProWeb. The Amadeus tool we use for Merge to PNR and PNR Import is called Amadeus +Script and is available with both APS and Vista platforms. (If the agency’s APS or Vista platform did not come with this +Script tool activated, then contact the Amadeus support desk to turn it on. Amadeus has agreed to waive an fees associated with +Scripts for all <span class="span_2">Trams</span> customers, so there is no cost, just a phone call to the support desk.) <span class="span_2">Since +Scripts is unavailable with ProWeb, PNR Import function (as well as Merge to PNR via API) DOES NOT work with it.<br /></span></p>
             <h3><a name="Steps_to_Import_an_Amadeus_PNR" data-mc-generated-bookmark="TOC"></a>Steps to Import an Amadeus PNR</h3>
             <p>To import a PNR from Amadeus take the following steps:</p>
-            <p><span><b>Step 1:</b> </span>Be sure you are currently logged into both Amadeus and <span class="span_2">ClientBase</span>.</p>
-            <p><span style="font-weight: bold;">Step 2: </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
-            <p><span><b>Step 3:</b> </span>From the reservation tab at the bottom of the main Res Card screen, click <span class="span_2">PNR Import</span>.</p>
-            <p><span><b>Step 4:</b> </span>Select Amadeus from the drop-down list in the CRS field.<br /></p>
-            <p>
-                <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import.jpg" style="height: 331px;width: 347px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.1.jpg" />
-            </p>
-            <p><span><b>Step 5:</b> </span>Enter the desired record locator or leave the record locator field blank to import the current, active PNR and click <span class="span_2">Import PNR. </span></p>
+            <blockquote>
+                <p><span><b>Step 1:</b> </span>Be sure you are currently logged into both Amadeus and <span class="span_2">ClientBase</span>.</p>
+                <p><span style="font-weight: bold;">Step 2: </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
+                <p><span><b>Step 3:</b> </span>From the reservation tab at the bottom of the main Res Card screen, click <span class="span_2">PNR Import</span>.</p>
+                <p><span><b>Step 4:</b> </span>Select Amadeus from the drop-down list in the CRS field.<br /></p>
+                <p>
+                    <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import.jpg" style="height: 331px;width: 347px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.1.jpg" />
+                </p>
+                <p><span><b>Step 5:</b> </span>Enter the desired record locator or leave the record locator field blank to import the current, active PNR and click <span class="span_2">Import PNR. </span></p>
+            </blockquote>
             <p>Multiple reservations may be included in one PNR, therefore multiple reservations may be imported as a result of the PNR import. All segments of an air itinerary are imported into one reservation, but additional car and hotel reservations are imported into separate reservation records.</p>
             <p>Each reservation imported into <span class="span_2">ClientBase</span> must link to an existing vendor profile within the <span class="span_2">ClientBase</span> database. To locate the appropriate vendor profile and automatically link to it, the system uses the Interface ID within the CRS and matches to an Interface ID within vendor profiles. If it finds a vendor profile with the same Interface ID, it imports the reservation automatically. If it does not find the Interface ID, a prompt appears indicating the Interface ID could be found. Click <span class="span_2">Query for Vendor by Name</span> and manually attach the reservation to the proper vendor profile if found by using the Query screen. If the vendor is not in the database, use <span class="span_2">Create New Vendor</span>, and add the vendor profile accordingly. Avoid accidentally creating duplicate vendor profiles by making sure Interface ID's are captured properly within the vendor profiles.</p>
-            <p><span><i>Special Note</i>: </span>When a PNR is imported from a GDS, the <span class="span_2">Invoiced Outside</span> <span class="span_2">of CB+</span> is checked by default and the reservation amount is not included in the un-invoiced balance. This keeps the reservation from being invoiced twice.</p>
+            <p><span><i style="font-weight: bold;">Special Note</i>: </span>When a PNR is imported from a GDS, the <span class="span_2">Invoiced Outside</span> <span class="span_2">of CB+</span> is checked by default and the reservation amount is not included in the un-invoiced balance. This keeps the reservation from being invoiced twice.</p>
             <p>The Amadeus PNR import updates existing reservations. If the same PNR is imported multiple times, the systems now looks at the rec locator, vendor and confirmation number, and if all match, then it updates the existing reservation rather than appending it as another new reservation.<br /> <br /></p>
-            <h2><a name="Set_Up_PNR_Import_for_Apollo_Galileo" data-mc-generated-bookmark="TOC"></a><a name="kanchor301"></a>Set Up PNR Import for Apollo/Galileo</h2>
+            <h2><a name="PNR_Import_for_Apollo_Galileo" data-mc-generated-bookmark="TOC"></a><a name="kanchor300"></a>PNR Import for Apollo/Galileo</h2>
+            <h3><a name="Set_Up_PNR_Import_for_Apollo_Galileo" data-mc-generated-bookmark="TOC"></a>Set Up PNR Import for Apollo/Galileo</h3>
             <p>This feature takes air, car, hotel, and rail segments included in an Apollo/Galileo PNR and imports them into <span class="span_2">ClientBase</span> Res Card reservation records. For tour and cruise bookings, users can use Live Connect to bring these into the program.</p>
-            <p>This feature requires FocalPoint, FocalPoint Net, Desktop AND must also have ViewPoint 3.0 or higher on each set using the PNR Import feature. Although ViewPoint does not need to be used to create or retrieve the PNR, it needs to be running in the background, as it is a View Point tool that we are utilizing that turns the PNR segments into a file that <span class="span_2">ClientBase</span> can then parse and import into reservation records.<br /> </p>
+            <p>This feature requires FocalPoint, FocalPoint Net, Desktop AND must also have ViewPoint 3.0 or higher on each set using the PNR Import feature. Although ViewPoint does not need to be used to create or retrieve the PNR, it needs to be running in the background, as it is a View Point tool that we are utilizing that turns the PNR segments into a file that <span class="span_2">ClientBase</span> can then parse and import into reservation records. </p>
+            <p>&#160;</p>
             <h3><a name="Steps_to_Import_an_Apollo_Galileo_PNR" data-mc-generated-bookmark="TOC"></a>Steps to Import an Apollo/Galileo PNR</h3>
             <p>To import a PNR from Apollo/Galileo take the following steps:</p>
-            <p><span><b>Step 1</b>:</span> Be sure to have Viewpoint and <span class="span_2">ClientBase</span> running on your set. (Again, you don't need to use Viewpoint to create or retrieve the PNR, use Focal Point to do the PNR work, but you do need Viewpoint running).</p>
-            <p><span><b>Step 2:</b> </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
-            <p><span style="font-weight: bold;">Step 3:</span> From the reservation tab at the bottom of the main Res Card screen click <span class="span_2">PNR Import</span>.</p>
-            <p><span style="font-weight: bold;">Step 4:</span> Select Apollo/Galileo from the drop-down list in the CRS field.<br /></p>
-            <p>
-                <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import_1.jpg" style="height: 353px;width: 344px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.2.jpg" class="img_1" />
-            </p>
-            <p><span style="font-weight: bold;">Step 5:</span> Click <span class="span_2">Import PNR</span>. This imports the current, active PNR in Viewpoint into <span class="span_2">ClientBase</span>. (If you are using Focal Point, whatever PNR is active in Focal Point is also automatically be active in Viewpoint.) </p>
+            <blockquote>
+                <p><span><b>Step 1</b>:</span> Be sure to have Viewpoint and <span class="span_2">ClientBase</span> running on your set. (Again, you don't need to use Viewpoint to create or retrieve the PNR, use Focal Point to do the PNR work, but you do need Viewpoint running).</p>
+                <p><span><b>Step 2:</b> </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
+                <p><span style="font-weight: bold;">Step 3:</span> From the reservation tab at the bottom of the main Res Card screen click <span class="span_2">PNR Import</span>.</p>
+                <p><span style="font-weight: bold;">Step 4:</span> Select Apollo/Galileo from the drop-down list in the CRS field.<br /></p>
+                <p>
+                    <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import_1.jpg" style="height: 353px;width: 344px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.2.jpg" class="img_1" />
+                </p>
+                <p><span style="font-weight: bold;">Step 5:</span> Click <span class="span_2">Import PNR</span>. This imports the current, active PNR in Viewpoint into <span class="span_2">ClientBase</span>. (If you are using Focal Point, whatever PNR is active in Focal Point is also automatically be active in Viewpoint.) </p>
+            </blockquote>
             <p>Multiple reservations may be included in one PNR, therefore multiple reservations may be imported as a result of the PNR import. All segments of an air itinerary are imported into one reservation, but additional car and hotel reservations are imported into separate reservation records.</p>
             <p>Each reservation imported into <span class="span_2" style="font-style: italic;">ClientBase</span> must link to an existing vendor profile within the <span class="span_2">ClientBase</span> database. To locate the appropriate vendor profile and automatically link to it, the system uses the Interface ID within the CRS and matches to an Interface ID within vendor profiles. If it finds a vendor profile with the same Interface ID, it imports the reservation automatically. If it does not find the Interface ID, a prompt appears indicating the Interface ID could be found. Click <span class="span_2">Query for Vendor by Name</span> and manually attach the reservation to the proper vendor profile if found by using the Query screen. If the vendor is not in the database, use <span class="span_2">Create New Vendor</span>, and add the vendor profile accordingly. Avoid accidentally creating duplicate vendor profiles by making sure Interface ID's are captured properly within the vendor profiles.</p>
-            <p><span><i>Special Note</i>: </span>When a PNR is imported from a GDS, the <span class="span_2">Invoiced Outside</span> <span class="span_2">of CB+</span> is checked by default and the reservation amount is not included in the un-invoiced balance. This keeps the reservation from being invoiced twice.</p>
+            <p><span><i style="font-weight: bold;">Special Note</i>: </span>When a PNR is imported from a GDS, the <span class="span_2">Invoiced Outside</span> <span class="span_2">of CB+</span> is checked by default and the reservation amount is not included in the un-invoiced balance. This keeps the reservation from being invoiced twice.</p>
             <p>The Apollo/Galileo PNR import updates existing reservations. If the same PNR is imported multiple times, the systems now looks at the rec locator, vendor and confirmation number, and if all match, then it updates the existing reservation rather than appending it as another new reservation. </p>
             <p>&#160;</p>
-            <h3><a name="Trams_Back_OfficeUsers_and_the_Apollo_PNR_Import" data-mc-generated-bookmark="TOC"></a>Trams Back OfficeUsers and the Apollo PNR Import</h3>
+            <h3><a name="Trams_Back_Office_Users_and_the_Apollo_PNR_Import" data-mc-generated-bookmark="TOC"></a>Trams Back Office Users and the Apollo PNR Import</h3>
             <p>When importing a PNR from Apollo, if you want to invoice in <span class="span_2">ClientBase</span> rather than invoice in Apollo, drive the invoice and ticket using the HB:DTD command. This generates a ticket without creating a MIR (interface record). After importing the PNR into <span class="span_2">ClientBase</span>, generating the invoice from <span class="span_2">ClientBase</span> sends the air information (and any other items on the invoice) to <span class="span_2">Trams Back Office</span> automatically. Uncheck the <span class="span_2">Invoiced Outside of CB+</span> checkbox and invoice in <span class="span_2">ClientBase</span>. Using this procedure eliminates duplicate invoices in <i>Trams Back Office</i>.</p>
             <p>
                 <br />
             </p>
-            <h2><a name="Set_Up_PNR_Import_for_Sabre" data-mc-generated-bookmark="TOC"></a><a name="Set"></a><a name="kanchor302"></a>Set Up PNR Import for Sabre</h2>
-            <h3><a name="PNR_Features_SR360___CBW_-_Setup_Instructions" data-mc-generated-bookmark="TOC"></a>PNR Features SR360 / CBW - Setup Instructions</h3>
+            <h2><a name="PNR_Import_for_Sabre" data-mc-generated-bookmark="TOC"></a><a name="Set"></a><a name="kanchor301"></a>PNR Import for Sabre</h2>
+            <h3><a name="Set_Up_PNR_Import_for_Sabre" data-mc-generated-bookmark="TOC"></a>Set Up PNR Import for Sabre</h3>
             <p><b>Step 1:</b> Please review system requirements for both <a href="https://agencyeservices.sabre.com/Products/Sabre-Red-360.aspx?documentId=%7bBC1C3A32-3C93-EF0F-8CD5-39329179FA59%7d"><span class="span_2">Sabre Red 360</span></a><a href="https://agencyeservices.sabre.com/Products/Sabre-Red-360.aspx?documentId=%7bBC1C3A32-3C93-EF0F-8CD5-39329179FA59%7d">&#160;</a>and <a href="http://static.trams.com/tramslibrary/documentation/cb/hwsysrequire.pdf"><span class="span_2">ClientBase Windows</span></a><a href="http://static.trams.com/tramslibrary/documentation/cb/hwsysrequire.pdf">:</a></p>
             <p class="p_5">(scroll to middle of page, click on Support tab and then click on Technical Requirements) </p>
             <p><b>Step 2:</b> Verify you have the latest version of ClientBase Windows installed on your server. To download the latest update, open ClientBase Windows on your server, go to <span>Help &gt; Check for Updates, </span>and verify that you are on version 4.06.00 build 26 or higher (current version is v 4.08). Alternatively, visit the <a href="https://www.trams.com/home/support/software_downloads/"><span class="span_2">Trams Support page</span></a><a href="https://www.trams.com/home/support/software_downloads/">&#160;</a>to download the latest update. </p>
@@ -99,390 +107,583 @@
             <p class="p_7">
                 <img src="resources/images/pnr integration sr360 cbw/pnr integration sr360 cbw_2_600x542.jpg" style="width: 600;height: 542;" />
             </p>
-            <h3><a name="Steps_to_Import_a_Sabre_PNR" data-mc-generated-bookmark="TOC"></a>Steps to Import a Sabre PNR</h3>
+            <p style="text-align: right;color: #ffffff;">PNR Features SR360 / CBW - Setup Instructions</p>
+            <h3><a name="Steps_to_Import_a_Sabre_PNR" data-mc-generated-bookmark="TOC"></a>Steps to Import a Sabre PNR
+
+</h3>
             <p>To import a PNR from Sabre take the following steps:</p>
-            <p><span><b>Step 1:</b> </span>Be sure you are currently logged into both Sabre and <span class="span_2">ClientBase</span>.</p>
-            <p><span><b>Step 2:</b> </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
-            <p><span><b>Step 3:</b> </span>From the Reservation tab at the bottom of the main Res Card screen, click <span class="span_2">PNR Import</span>.</p>
-            <p><span style="font-weight: bold;">Step 4: </span>Select Sabre from the drop-down list in the CRS field.</p>
-            <p>
-                <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import_3.jpg" style="height: 353px;width: 344px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.4.jpg" />
-            </p>
-            <p><span style="font-weight: bold;">Step 5: </span>Enter the desired record locator or leave the record locator field blank to import the current, active PNR, and click <span class="span_2">Import PNR</span>.</p>
-            <p>Multiple reservations may be included in one PNR, therefore multiple reservations may be imported as a result of the PNR import. All segments of an air itinerary are imported into one reservation, but additional car and hotel reservations are imported into separate reservation records.</p>
-            <p><span><b>Step 6:</b> </span>Each reservation imported into <span class="span_2">ClientBase</span> must link to an existing vendor profile within the <span class="span_2">ClientBase</span> database. To locate the appropriate vendor profile and automatically link to it, the system uses the Interface ID within the CRS and matches to an Interface ID within vendor profiles. If it finds a vendor profile with the same Interface ID, it imports the reservation automatically. If it does not find the Interface ID, a prompt appears indicating the Interface ID could NOT be found. Click <span class="span_2">Query for Vendor by Name</span> and manually attach the reservation to the proper vendor profile if found by using the Query screen. If the vendor is not in the database, use <span class="span_2">Create New Vendor</span>, and add the vendor profile accordingly. Avoid accidentally creating duplicate vendor profiles by making sure Interface ID's are captured properly within the vendor profiles.</p>
-            <p><span><i>Special Note:</i> </span>When a PNR is imported from a GDS, the <span class="span_2">Invoiced Outside</span> <span class="span_2">of CB+</span> is checked by default and the reservation amount is not included in the un-invoiced balance. This keeps the reservation from being invoiced twice.</p>
+            <blockquote>
+                <p><span><b>Step 1:</b> </span>Be sure you are currently logged into both Sabre and <span class="span_2">ClientBase</span>.</p>
+                <p><span><b>Step 2:</b> </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
+                <p><span><b>Step 3:</b> </span>From the Reservation tab at the bottom of the main Res Card screen, click <span class="span_2">PNR Import</span>.</p>
+                <p><span style="font-weight: bold;">Step 4: </span>Select Sabre from the drop-down list in the CRS field.</p>
+                <p>
+                    <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import_3.jpg" style="height: 353px;width: 344px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.4.jpg" />
+                </p>
+                <p><span style="font-weight: bold;">Step 5: </span>Enter the desired record locator or leave the record locator field blank to import the current, active PNR, and click <span class="span_2">Import PNR</span>.</p>
+                <p>Multiple reservations may be included in one PNR, therefore multiple reservations may be imported as a result of the PNR import. All segments of an air itinerary are imported into one reservation, but additional car and hotel reservations are imported into separate reservation records.</p>
+                <p><span><b>Step 6:</b> </span>Each reservation imported into <span class="span_2">ClientBase</span> must link to an existing vendor profile within the <span class="span_2">ClientBase</span> database. To locate the appropriate vendor profile and automatically link to it, the system uses the Interface ID within the CRS and matches to an Interface ID within vendor profiles. If it finds a vendor profile with the same Interface ID, it imports the reservation automatically. If it does not find the Interface ID, a prompt appears indicating the Interface ID could NOT be found. Click <span class="span_2">Query for Vendor by Name</span> and manually attach the reservation to the proper vendor profile if found by using the Query screen. If the vendor is not in the database, use <span class="span_2">Create New Vendor</span>, and add the vendor profile accordingly. Avoid accidentally creating duplicate vendor profiles by making sure Interface ID's are captured properly within the vendor profiles.</p>
+            </blockquote>
+            <p><span><i style="font-weight: bold;">Special Note:</i> </span>When a PNR is imported from a GDS, the <span class="span_2">Invoiced Outside</span> <span class="span_2">of CB+</span> is checked by default and the reservation amount is not included in the un-invoiced balance. This keeps the reservation from being invoiced twice.</p>
             <p>The Sabre PNR import brings in cruise and tour segments in addition to air, rail, car and hotel segments. Keep in mind that the PNR import only parses and imports the data contained in cruise and tour segments, not the accounting lines. If the cruise or tour segment is formatted to include pricing information then the price is imported, if pricing is formatted as a remark, then the price is imported to remarks and the pricing fields in the <span class="span_2">ClientBase</span> reservation must be manually entered.</p>
             <p>The Sabre PNR import updates existing reservations. If the same PNR is imported multiple times, the systems now looks at the rec locator, vendor and confirmation number, and if all match, then it updates the existing reservation rather than appending it as another new reservation. </p>
             <p>&#160;</p>
-            <h4><a name="Information_Imported_by_Travel_Category" data-mc-generated-bookmark="TOC"></a>Information Imported by Travel Category</h4>
+            <h3><a name="Information_Imported_by_Travel_Category" data-mc-generated-bookmark="TOC"></a><a name="Informat"></a>Information Imported by Travel Category</h3>
             <p style="text-indent: 0.5in;color: #e50000;font-weight: normal;">*Please visit our <a href="https://www.youtube.com/playlist?list=PLgSinp8nTL3HWUI1-MJzNlUuMWPlarpMJ">YouTube Playlist</a> for demonstrational videos on ClientBase PNR Import with Sabre Red 360.</p>
             <p class="p_1">The PNR Import process uses Sabre’s GetReservation API to pass PNR reservation data from Sabre Red 360 to ClientBase.&#160; Below is the information that is imported for each Travel Category type. </p>
-            <p class="p_2" style="font-weight: bold;">Air:</p>
-            <blockquote>
-                <p class="NoSpacing_2">Passenger Name</p>
-                <p class="NoSpacing_2">Passenger Type</p>
-                <p class="NoSpacing_2">Sabre Record Locator</p>
-                <p class="NoSpacing_2">Airline Record Locator</p>
-                <p class="NoSpacing_2">Reservation Status</p>
-                <p class="NoSpacing_2">Count of reservation passengers</p>
-                <p class="NoSpacing_2">Operating airline for each flight segment</p>
-                <p class="NoSpacing_2">Flight Number</p>
-                <p class="NoSpacing_2">Connecting Flight</p>
-                <p class="NoSpacing_2">Depart City</p>
-                <p class="NoSpacing_2">Depart City Name</p>
-                <p class="NoSpacing_2">Arrive City</p>
-                <p class="NoSpacing_2">Arrive City Name</p>
-                <p class="NoSpacing_2">Depart &amp; Arrive Date</p>
-                <p class="NoSpacing_2">Depart &amp; Arrive Times</p>
-                <p class="NoSpacing_2">Depart &amp; Arrive Terminal</p>
-                <p class="NoSpacing_2">Aircraft Type</p>
-                <p class="NoSpacing_2">Meal Service</p>
-                <p class="NoSpacing_2">Flight Duration</p>
-                <p class="NoSpacing_2">Segment Mileage</p>
-                <p class="NoSpacing_2">Number of stops</p>
-                <p class="NoSpacing_2">Seat numbers if assigned</p>
-                <p class="NoSpacing_2">Class of Service</p>
-                <p class="NoSpacing_2">Class Code</p>
-                <p class="NoSpacing_2">Fare Type</p>
-                <p class="NoSpacing_2">Ticket Number</p>
-                <p class="NoSpacing_2">Commission Amount or Percentage</p>
-                <p class="NoSpacing_2">Base Fare</p>
-                <p class="NoSpacing_2">Tax Amount</p>
-                <p class="NoSpacing_2">Tax Code</p>
-                <p class="NoSpacing_2">Client GST</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="NoSpacing_1" style="font-weight: bold;font-style: italic;"><span class="span_1">Notes</span><span class="span_2">:</span>
-                </p>
-                <ul class="ul_1">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">Passenger Type codes of INF and INS are imported as Infant; types CNN, C03, C04, C05, C06, C07, C08, C09, C10, and C11 are imported as Child; and ADT, NEG, and all other types are imported as Adult.&#160;</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">If there is commission in the PNR booking, then that commission will be imported into the reservation. If there is no commission [commission is blank or not present], then ClientBase will check the Vendor profile for a Vendor-level commission default, and if found, will populate the reservation commission using it. If there is no vendor-level commission default, then the commission amount is zero.&#160;</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">Exchange tickets update the existing reservation with the add collect amount. </span><span class="span_3">Note: Be sure to remove any original stored price quotes (PQ) from the PNR in order to import the new and correct Fare Basis code.</span>
-                        </p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">For fares involving multiple airlines validated on the international carrier, the ticketing carrier will import as the Reservation vendor in ClientBase. All individual flight segments will import as Service Providers.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">When importing a Codeshare flight, the operating carrier will be identified in the description field under the Service Provider’s Flight Details tab.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">Direct Flights, with a stop but no change of aircraft, will now import showing each leg of the flight separately.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">When issuing multiple tickets using segment select in the same PNR, each ticketed airline is imported as a separate Reservation and the associated flight segments are imported as Service Providers.&#160;</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">When a booking with a price quote exists in a PNR along with segments that have accounting lines, the price quoted reservation is now also imported with the quoted pricing.</p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_4">&#160;</p>
-            </blockquote>
-            <p class="NoSpacing_4" style="font-weight: bold;"><span class="span_4">Car</span><span class="span_5">:</span>
-            </p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Vendor Name</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_5">No. of Units</p>
-                <p class="NoSpacing_1"><span class="span_2">Pick-up Date and Time</span>
-                </p>
-                <p class="NoSpacing_5">Return Date and Time</p>
-                <p class="NoSpacing_5">Car Category</p>
-                <p class="NoSpacing_5">Car Description</p>
-                <p class="NoSpacing_5">Pick-up City Name and Code</p>
-                <p class="NoSpacing_5">Drop-off City Name and Code</p>
-                <p class="NoSpacing_5">Address</p>
-                <p class="NoSpacing_5">Phone</p>
-                <p class="NoSpacing_5">Base Fare</p>
-                <p class="NoSpacing_5">Tax Amount</p>
-                <p class="NoSpacing_5">Commission Amount or Percentage</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="NoSpacing_1" style="font-weight: bold;font-style: italic;"><span class="span_6">Note</span><span class="span_5">: </span>
-                </p>
-                <ul class="ul_2">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">Car segments import into reservations with only the traveler name the car reservation was confirmed under.</span>
-                        </p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">Base fare is calculated by subtracting the taxes and fees from the&#160;Approximate Total Fare, if present. For passive segments which do not have an Approximate Total Fare, we import the Vehicle Charge Amount as the base fare.&#160;</span>
-                        </p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_6">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">Cruise:</p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Vendor Name</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_5">No. of Travelers</p>
-                <p class="NoSpacing_5">Ship Name</p>
-                <p class="NoSpacing_5">Arrival Date</p>
-                <p class="NoSpacing_5">Arrival Point</p>
-                <p class="NoSpacing_5">Arrival Time</p>
-                <p class="NoSpacing_5">Departure Time</p>
-                <p class="NoSpacing_5">Departure Point</p>
-                <p class="NoSpacing_5">Service Information (Dining)</p>
-                <p class="NoSpacing_5">Cabin</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_3" style="font-weight: bold;font-style: italic;">Note:&#160; </p>
-                <ul class="ul_3">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">The accounting line is ignored because cruises are not normally paid in full at the time of booking.</p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_3">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">Hotel:</p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Vendor Name</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_5">No. of Travelers</p>
-                <p class="NoSpacing_5">No. of Nights</p>
-                <p class="NoSpacing_5">No. of Rooms</p>
-                <p class="NoSpacing_5">Room Type</p>
-                <p class="NoSpacing_5">Room Description</p>
-                <p class="NoSpacing_5">Depart/Start Date</p>
-                <p class="NoSpacing_5">Arrive/End Date</p>
-                <p class="NoSpacing_5">Check-in Time</p>
-                <p class="NoSpacing_5">Check-out Time</p>
-                <p class="NoSpacing_5">Hotel Address, phone and fax</p>
-                <p class="NoSpacing_5">Base Amount (Approximate total amount minus total tax amount)</p>
-                <p class="NoSpacing_5">Total Tax</p>
-                <p class="NoSpacing_5">Commission Amount or Percentage</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_4" style="font-weight: bold;font-style: italic;"><span class="span_4">Notes</span><span class="span_5">:</span>
-                </p>
-                <ul class="ul_2">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">Hotel pricing is imported and calculated per room, rather than per person or per night. </span>
-                        </p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">The Sabre Rate Description populates the Room Description field of the Service Provider in ClientBase.&#160;</span>
-                        </p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">Hotel segments import into reservations with only the Traveler name the hotel reservation was confirmed under, rather than listing all the Res Card travelers.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">The Hotel Total Tax is imported as part of the hotel pricing. When a hotel booking is imported, if it contains the Total Tax, we populate the ClientBase Reservation's Tax field with that amount.&#160;If no Total Tax is provided, the ClientBase Reservation's Tax field is left blank. The reservation’s Base Fare is calculated by deducting the Total Tax and Surcharge amounts from the Approximate Total cost of the hotel stay.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">Hotel commissions are imported into ClientBase reservations. Commission in a hotel segment can be expressed as an amount or a percentage; we perform necessary calculations (e.g. multiplying per night) and populate the commission amount and rate fields accordingly. For commissionable bookings with no commission in the PNR, the ClientBase Vendor Commission&#160;Default Rate is used to calculate it; if no Vendor Default Rate is available, the ClientBase Global Commission Default rate is used.&#160;No commission is imported for non-commissionable bookings (indicated by the code NC).</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">In order to correctly import aggregator hotel bookings using CSL, you will need to create a Vendor profile for each aggregator using the chain code and property code as the Interface ID. Booking.com is 7B0, BedsOnline is 7H0, and Expedia it is 7E0.&#160; The aggregator will import as the Reservation (vendor) and the hotel property details will import under the Service Provider.</span>
-                        </p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_3">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">Insurance:</p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Vendor Name</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_1"><span class="span_2">No. of Travelers</span>
-                </p>
-                <p class="NoSpacing_5">Depart/Start Date</p>
-                <p class="NoSpacing_5">Arrive/End Date</p>
-                <p class="NoSpacing_5">Description</p>
-                <p class="NoSpacing_5">Base Fare</p>
-                <p class="NoSpacing_5">Tax Amount</p>
-                <p class="NoSpacing_5">Commission Amount or Percentage</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_3" style="font-weight: bold;font-style: italic;">Note:&#160; </p>
-                <ul class="ul_3">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">Pricing and Commission are imported from the accounting line.</span>
-                        </p>
-                    </li>
-                </ul>
-                <p>&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">MCO: </p>
-            <blockquote>
-                <p class="NoSpacing_2">For miscellaneous charge order segments, pricing and commission will be read if associated with an accounting line. When using MCO segments to identify airline service fees, these will be imported as one Miscellaneous reservation with no pricing for the actual MCO segment and a separate reservation with pricing and commission for each automated Service Fee accounting line present in the PNR.</p>
-            </blockquote>
-            <p class="p_4">&#160;</p>
-            <p class="p_2" style="font-weight: bold;">Other:</p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Vendor Name</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_5">Start Date</p>
-                <p class="NoSpacing_5">Base Fare</p>
-                <p class="NoSpacing_5">Tax Amount and Code</p>
-                <p class="NoSpacing_5">Client GST</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_5" style="font-weight: bold;font-style: italic;">Notes:</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <ul class="ul_3">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">OTH Segments are imported only if there is an associated accounting line. This is to prevent importing informational OTH segments, such as retention lines used to keep the PNR active in Sabre longer.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">The&#160;type field indicators PER, ALL, and ONE are read and calculated accordingly:</span>
-                        </p>
-                        <ul class="ul_4" style="list-style-type: circle;">
-                            <li class="NoSpacing_1">
-                                <p class="NoSpacing_3"><span class="span_5">PER</span><span class="span_2">: This fee is charged for each traveler and will be multiplied by the number of travelers </span>
-                                </p>
-                            </li>
-                            <li class="NoSpacing_1">
-                                <p class="NoSpacing_3"><span class="span_5">ALL:</span><span class="span_2"> One fee for all the travelers, no matter how many </span>
-                                </p>
-                            </li>
-                            <li class="NoSpacing_1">
-                                <p class="NoSpacing_3"><span class="span_5">ONE:</span><span class="span_2">&#160;This fee applies to one specific traveler.</span>
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <p class="NoSpacing_3">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">Rail:</p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Vendor Name</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_5">No. of Travelers</p>
-                <p class="NoSpacing_5">Train No.</p>
-                <p class="NoSpacing_5">Depart Name and Code</p>
-                <p class="NoSpacing_5">Depart Date and Time</p>
-                <p class="NoSpacing_5">Depart Terminal</p>
-                <p class="NoSpacing_5">Arrival Name and Code</p>
-                <p class="NoSpacing_5">Arrival Date and Time</p>
-                <p class="NoSpacing_5">Ticket Number</p>
-                <p class="NoSpacing_5">Base Amount</p>
-                <p class="NoSpacing_5">Tax Amount and Code</p>
-                <p class="NoSpacing_5">Client GST</p>
-                <p class="NoSpacing_5">Commission Amount or Percentage</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_6" style="font-weight: bold;font-style: italic;">Note: </p>
-                <ul class="ul_3">
-                    <li class="NoSpacing_2">
-                        <p class="NoSpacing_4"><span class="span_2">Pricing and commission are read from the accounting line, if present. Ticket numbers are imported if present. </span>
-                        </p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_4">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">Service Fee:</p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Date Reserved</p>
-                <p class="NoSpacing_1"><span class="span_2">Vendor Name</span>
-                </p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Description</p>
-                <p class="NoSpacing_5">Ticket Number</p>
-                <p class="NoSpacing_5">Commission Amount or Percentage</p>
-                <p class="NoSpacing_5">Base Fare</p>
-                <p class="NoSpacing_5">Tax Amount and Code</p>
-                <p class="NoSpacing_5">Client GST</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_7" style="font-weight: bold;font-style: italic;"><span class="span_1">Notes: </span>
-                </p>
-                <ul class="ul_3">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">In order to bring in Service Fee details listed in an OTH segment, the OTH line must be linked to the service fee accounting line.&#160; You also must use “FEE” or “SVC” for your charge descriptor code in your accounting line for ClientBase to import the reservation as type Service Fee. </span>
-                        </p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">All automated service fees through ARC/BSP will be imported as a Service Fee from the accounting line.</span>
-                        </p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">When using Sabre Merchant Services (which creates an accounting line only), you must use “FEE” for your charge descriptor code for ClientBase to identify it as a Service Fee reservation.&#160; This code is defined in your agency profile settings.</span>
-                        </p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_3">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;"><span class="span_4">Tour:</span>
-            </p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Vendor Name</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_5">Duration</p>
-                <p class="NoSpacing_5">No. of Travelers</p>
-                <p class="NoSpacing_5">Start Date</p>
-                <p class="NoSpacing_5">Category</p>
-                <p class="NoSpacing_5">Depart City Name and Code</p>
-                <p class="NoSpacing_5">Depart Date and Time</p>
-                <p class="NoSpacing_5">Arrival City and Code</p>
-                <p class="NoSpacing_5">Arrival Date and Time</p>
-                <p class="NoSpacing_5">Base Amount</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_5" style="font-weight: bold;font-style: italic;">Note:&#160; </p>
-                <ul class="ul_3">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">The base tour amount is imported from the tour segment in the PNR. The accounting line is ignored because tours are not normally paid in full at the time of booking. </p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_4">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">Transportation:</p>
-            <blockquote>
-                <p class="NoSpacing_5">Passenger Name</p>
-                <p class="NoSpacing_5">Passenger Type</p>
-                <p class="NoSpacing_5">Record Locator</p>
-                <p class="NoSpacing_5">Confirmation Number</p>
-                <p class="NoSpacing_5">No. of Travelers</p>
-                <p class="NoSpacing_5">Start and End Dates</p>
-                <p class="NoSpacing_5">Pick-up City Code and Name</p>
-                <p class="NoSpacing_5">Drop-off City Code and Name</p>
-                <p class="NoSpacing_5">Base Fare</p>
-                <p class="NoSpacing_5">Tax Amount and Code</p>
-                <p class="NoSpacing_5">Commission Amount or Percentage</p>
-                <p class="NoSpacing_1">&#160;</p>
-                <p class="p_8" style="font-weight: bold;font-style: italic;">Note:</p>
-                <ul class="ul_3">
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">BUS bookings import as Transportation.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3">LAN/ATX bookings import as Transportation.</p>
-                    </li>
-                    <li class="NoSpacing_1">
-                        <p class="NoSpacing_3"><span class="span_2">LIMO/SUR bookings are not imported.</span>
-                        </p>
-                    </li>
-                </ul>
-                <p class="NoSpacing_3">&#160;</p>
-            </blockquote>
-            <p class="p_2" style="font-weight: bold;">General:</p>
+            <p>The following data elements will import when the data is provided by the supplier:</p>
+            <table cellspacing="5" style="mc-table-style: url('resources/tablestyles/table.css');width: 100%;" class="TableStyle-table">
+                <col style="width: 400px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 170px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 170px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 400px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 120px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 120px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 120px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 120px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 120px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 120px;" class="TableStyle-table-Column-Column1" />
+                <col style="width: 120px;" class="TableStyle-table-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-table-Head-Header1">
+                        <th class="TableStyle-table-HeadE-Column1-Header1">AIR</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">CAR</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">CRUISE</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">HOTEL</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">INSURANCE</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">MCO</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">OTHER</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">RAIL</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">SERVICE FEE</th>
+                        <th class="TableStyle-table-HeadE-Column1-Header1">TOUR</th>
+                        <th class="TableStyle-table-HeadD-Column1-Header1">TRANSPORTATION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Name</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Passenger Name</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Passenger Type</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Passenger Type</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Sabre Record Locator</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Sabre Record Locator</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Airline Record Locator</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Vendor Name</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Vendor Name</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Reservation Status</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Confirmation Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Confirmation Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Confirmation Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Confirmation Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Start Date</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Confirmation Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Confirmation Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Date Reserved</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Confirmation Number</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Confirmation Number</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Count of reservation passengers</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Units</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Travelers</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Travelers</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Travelers</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Description</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Start Date</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Travelers</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Description</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Duration </td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Number of Travelers</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Operating airline for each flight segment</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Pick-up Date and Time</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Ship Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Nights</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart/Start Date</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Fare</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Description </td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Train Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Ticket Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Travelers</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Start and End Dates</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Flight Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Return Date and Time</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrival Date</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Rooms</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrive/End Date</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Amount</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Fare</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart Name and Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Fare</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Start Date</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Pick-up City Code and Name</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Connecting Flight</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Car Category</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrival Point</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Room Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Description</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Client GST</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Amount and Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart Date and Time</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Amount and Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Category</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Drop-off City Code and Name</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart City</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Car Description</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrival Time</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Room Description</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Fare</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Commission Amount or Percentage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Client GST</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart Terminal</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Client GST</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart City Name and Code</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Base Fare</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart City Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Pick-up city Name and Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Departure Time</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart/Start Date</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Amount</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrival Name and Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Commission Amount or Percentage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart Date and Time</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Tax Amount and Code</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrive City</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Drop-off City Name and Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Departure Point</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Check-in Time </td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Commission Amount or Percentage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrival Date and Time</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrival City and Code</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">Commission Amount or Percentage</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrive City Name</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Address</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Service Information (Dining)</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Check-out Time</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Ticket Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Arrival Date and Time</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart &amp; Arrive Date</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Phone</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Cabin</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Hotel Address, Phone, and Fax</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Amount</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Amount</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart &amp; Arrive Times</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Fare</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Amount (Approximate total amount minus tax amount)</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Amount and Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Depart &amp; Arrive Terminal</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Amount</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Total Tax</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Client GST</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr style="height : 28.8px;" class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Aircraft Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Commission Amount or Percentage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Commission Amount or Percentage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Commssion Amount or Percentage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Meal Service</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Flight Duration</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Segment Mileage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Stops</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Seat numbers if assigned</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Class of Service</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Class Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Fare Type</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Ticket Number</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Commission Amount or Percentage</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Base Fare</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Amount</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Tax Code</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1">Client GST</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1">&#160;</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1">
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyE-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                        <td class="TableStyle-table-BodyD-Column1-Body1" style="font-weight: bold;">Notes:</td>
+                    </tr>
+                    <tr class="TableStyle-table-Body-Body1" style="height : 409.5px;">
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>• Passenger Type codes of INF and INS are imported as Infant; types CNN, C03, C04, C05, C06, C07, C08, C09, C10, and C11 are imported as Child; and ADT, NEG, and all other types are imported as Adult.</p>
+                            <p>• If there is commission in the PNR booking, then that commission will be imported into the reservation. If there is no commission [commission is blank or not present], then ClientBase will check the Vendor profile for a Vendor-level commission default, and if found, will populate the reservation commission using it. If there is no vendor-level commission default, then the commission amount is zero.</p>
+                            <p>• Exchange tickets update the existing reservation with the add collect amount. <span style="color: #FF0000">Note: Be sure to remove any original stored price quotes (PQ) from the PNR in order to import the new and correct Fare Basis code.</span></p>
+                            <p>• For fares involving multiple airlines validated on the international carrier, the ticketing carrier will import as the Reservation vendor in ClientBase. All individual flight segments will import as Service Providers.
+
+</p>
+                            <p>• When importing a Codeshare flight, the operating carrier will be identified in the description field under the Service Provider’s Flight Details tab.
+</p>
+                            <p>• Direct Flights, with a stop but no change of aircraft, will now import showing each leg of the flight separately.
+</p>
+                            <p>• When issuing multiple tickets using segment select in the same PNR, each ticketed airline is imported as a separate Reservation and the associated flight segments are imported as Service Providers. </p>
+                            <p>• 
+
+When a booking with a price quote exists in a PNR along with segments that have accounting lines, the price quoted reservation is now also imported with the quoted pricing.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>• Car segments import into reservations with only the traveler name the car reservation was confirmed under.
+</p>
+                            <p>
+• Base fare is calculated by subtracting the taxes and fees from the Approximate Total Fare, if present. For passive segments which do not have an Approximate Total Fare, we import the Vehicle Charge Amount as the base fare.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>The accounting line is ignored because cruises are not normally paid in full at the time of booking.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>•  Hotel pricing is imported and calculated per room, rather than per person or per night</p>
+                            <p>• The Sabre Rate Description populates the Room Description field of the Service Provider in ClientBase. </p>
+                            <p>• 
+
+Hotel segments import into reservations with only the Traveler name the hotel reservation was confirmed under, rather than listing all the Res Card travelers.
+
+</p>
+                            <p>• The Hotel Total Tax is imported as part of the hotel pricing. When a hotel booking is imported, if it contains the Total Tax, we populate the ClientBase Reservation's Tax field with that amount. If no Total Tax is provided, the ClientBase Reservation's Tax field is left blank. The reservation’s Base Fare is calculated by deducting the Total Tax and Surcharge amounts from the Approximate Total cost of the hotel stay.
+</p>
+                            <p>
+• Hotel commissions are imported into ClientBase reservations. Commission in a hotel segment can be expressed as an amount or a percentage; we perform necessary calculations (e.g. multiplying per night) and populate the commission amount and rate fields accordingly</p>
+                            <p>&#160;</p>
+                            <p>• 
+
+For commissionable bookings, where no commission amount or percentage is identified by the hotel, the ClientBase Vendor Commission Default Rate is used to calculate it; if no Vendor Default Rate is available, the ClientBase Global Commission Default rate is used.  If no Global Commission Default is available, no commission is imported.
+</p>
+                            <p>
+• No commission is imported for non-commissionable bookings (indicated by the code NC).
+</p>
+                            <p>
+• In order to correctly import aggregator hotel bookings using CSL, you will need to create a Vendor profile for each aggregator using the chain code and property code as the Interface ID. Booking.com is 7B0, BedsOnline is 7H0, and Expedia it is 7E0.  The aggregator will import as the Reservation (vendor) and the hotel property details will import under the Service Provider.
+</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>Pricing and Commission are imported from the accounting line.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>• For Miscellaneous Charge Order segments (MCO), pricing and commission will be read if associated with an accounting line. 
+
+</p>
+                            <p>• When using MCO segments for informational purposes, such as identifying airline service fees, and no associated accounting line is present, these segments will be imported as a Miscellaneous reservation with no pricing.  A separate reservation with pricing and commission will import for each automated Service Fee accounting line present in the PNR.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>• OTH Segments are imported only if there is an associated accounting line. This is to prevent importing informational OTH segments, such as retention lines used to keep the PNR active in Sabre longer.
+
+</p>
+                            <p>• The type field indicators PER, ALL, and ONE are read and calculated accordingly:
+</p>
+                            <ul style="list-style-type: circle;">
+                                <li style="font-size: 10pt;">PER: This fee is charged for each traveler and will be multiplied by the number of travelers
+
+</li>
+                                <li style="font-size: 10pt;">ALL: One fee for all the travelers, no matter how many
+
+</li>
+                                <li style="font-size: 10pt;">ONE: This fee applies to one specific traveler</li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>Pricing and commission are read from the accounting line, if present. Ticket numbers are imported if present.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>• In order to bring in Service Fee details listed in an OTH segment, the OTH line must be linked to the service fee accounting line.&#160; You also must use “FEE” or “SVC” for your charge descriptor code in your accounting line for ClientBase to import the reservation as type Service Fee.
+
+</p>
+                            <p>• All automated service fees through ARC/BSP will be imported as a Service Fee from the accounting line.
+</p>
+                            <p>• When using Sabre Merchant Services (which creates an accounting line only), you must use “FEE” for your charge descriptor code for ClientBase to identify it as a Service Fee reservation.  This code is defined in your agency profile settings.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyB-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p>The base tour amount is imported from the tour segment in the PNR. The accounting line is ignored because tours are not normally paid in full at the time of booking.</p>
+                        </td>
+                        <td class="TableStyle-table-BodyA-Column1-Body1" style="vertical-align: top;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">
+                            <p class="TableStyle-table-BodyA-Column1-Body1">• BUS bookings import as Transportation.</p>
+                            <p class="TableStyle-table-BodyA-Column1-Body1">
+
+• LAN/ATX bookings import as Transportation.
+
+</p>
+                            <p class="TableStyle-table-BodyA-Column1-Body1">• LIMO/SUR bookings are not imported.
+
+
+</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="p_2" style="font-weight: bold;">General Note:</p>
             <blockquote>
                 <p class="NoSpacing_1"><span class="span_2">Segment-associated remarks (those beginning with 5.S) import into the ClientBase Service Provider level Itinerary/Invoice Remarks. </span>
                 </p>
-                <p>&#160;</p>
             </blockquote>
             <p>&#160;</p>
             <h3><a name="Trams_Back_Office_Users_and_the_Sabre_PNR_Import" data-mc-generated-bookmark="TOC"></a>Trams Back Office Users and the Sabre PNR Import</h3>
@@ -502,7 +703,8 @@
             <p><span>Results:</span> The agency would have one invoice with all bookings in the Res Card on it to give to the customer and one invoice in <cite>Trams Back Office</cite>. </p>
             <p><span>Special Note:</span> When a PNR is imported from a GDS, the "Invoiced Outside of CB+" is checked by default and the reservation amount is not included in the Un-invoiced Balance. This keeps the reservation from being invoiced twice. If you are creating another reservation in <cite>ClientBase</cite>, make sure the <span class="span_2">Invoiced Outside of CB+</span> area remains unchecked. </p>
             <p>&#160;</p>
-            <h2><a name="Set_Up_PNR_Import_for_Worldspan" data-mc-generated-bookmark="TOC"></a><a name="kanchor303"></a>Set Up PNR Import for Worldspan</h2>
+            <h2><a name="PNR_Import_for_Worldspan" data-mc-generated-bookmark="TOC"></a><a name="kanchor302"></a>PNR Import for Worldspan</h2>
+            <h3><a name="Set_Up_PNR_Import_for_Worldspan" data-mc-generated-bookmark="TOC"></a>Set Up PNR Import for Worldspan</h3>
             <p>This feature takes air, car, hotel, cruise, tour automated (Amtrak) rail and agency service fee (TVL) segments included in a Worldspan PNR (Worldspan Go! Res Dedicated or Internet 4.0 or above) and imports them into ClientBase Res Card reservation records. Contact your Worldspan Account Manager to enable a DIR Device, assign you a unique agent Pool Name, and provide you with a unique agency Connection ID. Worldspan has waived all fees associated with enabling these features for ClientBase customers.</p>
             <p class="NormalWeb_1"><span><i>Notes:</i>&#160; </span><span class="span_4">Worldspan: PNR Import includes the OA record locator. The Airline Locator Number can be found on the Flight Details tab in the Service Provider section of the Reservation.</span><span class="span_4">&#160; Also the Worldspan </span><span class="span_4">PNR Import capture</span><span class="span_4">s</span><span class="span_4"> the hotel room rate from the rate guarantee</span> <span class="span_4">field if available.</span></p>
             <p><span style="font-weight: bold;">Step 1: </span>Contact your Worldspan Account Manager to enable a DIR Device, assign you a unique agency Pool Name, and Obtain a unique agency Connection ID.</p>
@@ -526,16 +728,18 @@
             <p>&#160;</p>
             <h3><a name="Steps_to_Import_a_Worldspan_PNR" data-mc-generated-bookmark="TOC"></a>Steps to Import a Worldspan PNR</h3>
             <p>To import a PNR from Worldspan take the following steps:</p>
-            <p><span><b>Step 1:</b> </span>You do not have to be currently logged into Worldspan, as this process will automatically open it for you.</p>
-            <p><span><b>Step 2:</b> </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
-            <p><span><b>Step 3:</b> </span>From the Reservation tab at the bottom of the main Res Card screen, click <span class="span_2">PNR Import</span> and Worldspan from the drop-down list. </p>
-            <p>
-                <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import_4.jpg" style="height: 353px;width: 344px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.5.jpg" />
-            </p>
-            <p><span><b>Step 4:</b> </span>Enter the desired Record Locator and be sure the Agent Sine default is complete, or enter your Agent Sine, and click <span class="span_2">Import PNR</span>. </p>
-            <p><span style="font-weight: bold;">Step 5: </span>Multiple reservations may be included in one PNR, therefore multiple reservations may be imported as a result of the PNR import. All segments of an air itinerary are imported into one reservation, but additional car and hotel reservations are imported into separate reservation records. </p>
-            <p><span><b>Step 6:</b> </span>A reservation imported into <span class="span_2">ClientBase</span> must link to an existing vendor profile within your <span class="span_2">ClientBase</span> database. To locate the appropriate vendor profile and automatically link to it, the system uses the Interface ID within the CRS and matches to an Interface ID within your Vendor profiles. If it finds a vendor profile with the same Interface ID, it imports the reservation automatically. If it does not find the Interface ID, then a prompt appears indicating the Interface ID it could not find. Click <span class="span_2">Query for Vendor by Name</span> and manually attach the reservation to the proper vendor profile by using the Query screen. If the vendor is not yet in your database, then use <span class="span_2">Create New Vendor</span> to add the vendor profile accordingly. <span>Special Note: </span>Avoid accidentally creating duplicate vendor profiles by making sure Interface ID's are captured properly within the vendor profiles you work with frequently.</p>
-            <p><span><b>Step 7:</b> </span>All reservations imported via PNR Import default to <span class="span_2">Invoiced Outside CB+</span> as we assume you are using Worldspan to generate the invoice and/or ticket and interface record to your back office system. If you choose to generate the invoice from <span class="span_2">ClientBase</span>, remove the check from this field in the reservation.</p>
+            <blockquote>
+                <p><span><b>Step 1:</b> </span>You do not have to be currently logged into Worldspan, as this process will automatically open it for you.</p>
+                <p><span><b>Step 2:</b> </span>Create a new Res Card or open an existing Res Card within the appropriate client profile in <span class="span_2">ClientBase</span>.</p>
+                <p><span><b>Step 3:</b> </span>From the Reservation tab at the bottom of the main Res Card screen, click <span class="span_2">PNR Import</span> and Worldspan from the drop-down list. </p>
+                <p>
+                    <img src="resources/images/chapter 14 an in-depth look pnr import/an in depth look at pnr import_4.jpg" style="height: 353px;width: 344px;" alt="http://static.trams.com/CBW38/images/An%20In-Depth%20Look%20at%20PNR%20Import.33.1.5.jpg" />
+                </p>
+                <p><span><b>Step 4:</b> </span>Enter the desired Record Locator and be sure the Agent Sine default is complete, or enter your Agent Sine, and click <span class="span_2">Import PNR</span>. </p>
+                <p><span style="font-weight: bold;">Step 5: </span>Multiple reservations may be included in one PNR, therefore multiple reservations may be imported as a result of the PNR import. All segments of an air itinerary are imported into one reservation, but additional car and hotel reservations are imported into separate reservation records. </p>
+                <p><span><b>Step 6:</b> </span>A reservation imported into <span class="span_2">ClientBase</span> must link to an existing vendor profile within your <span class="span_2">ClientBase</span> database. To locate the appropriate vendor profile and automatically link to it, the system uses the Interface ID within the CRS and matches to an Interface ID within your Vendor profiles. If it finds a vendor profile with the same Interface ID, it imports the reservation automatically. If it does not find the Interface ID, then a prompt appears indicating the Interface ID it could not find. Click <span class="span_2">Query for Vendor by Name</span> and manually attach the reservation to the proper vendor profile by using the Query screen. If the vendor is not yet in your database, then use <span class="span_2">Create New Vendor</span> to add the vendor profile accordingly. <span>Special Note: </span>Avoid accidentally creating duplicate vendor profiles by making sure Interface ID's are captured properly within the vendor profiles you work with frequently.</p>
+                <p><span><b>Step 7:</b> </span>All reservations imported via PNR Import default to <span class="span_2">Invoiced Outside CB+</span> as we assume you are using Worldspan to generate the invoice and/or ticket and interface record to your back office system. If you choose to generate the invoice from <span class="span_2">ClientBase</span>, remove the check from this field in the reservation.</p>
+            </blockquote>
             <p>&#160;</p>
         </div>
         <p>&#160;</p>

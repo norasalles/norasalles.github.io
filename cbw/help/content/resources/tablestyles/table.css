@@ -19,7 +19,7 @@ mcTableStyle
 	border-bottom-width: 1px;
 	border-bottom-color: #000000;
 	max-id: 5;
-	border-spacing-y: 5;
+	border-spacing-y: 0;
 	border-spacing-x: 5;
 	cell-padding-left: 5px;
 	cell-padding-right: 5px;
@@ -88,7 +88,7 @@ mcTableFootStyle
 	border-bottom-style: solid;
 	border-bottom-color: #000000;
 	border-bottom-width: 1px;
-	border-spacing: 5px 5px;
+	border-spacing: 5px 0px;
 }
 
 .TableStyle-table-Column-Column1

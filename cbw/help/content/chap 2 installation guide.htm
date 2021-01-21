@@ -34,21 +34,21 @@
         <div role="main" id="mc-main-content">
             <p class="bookmark" style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_2_Installation_Guide"></a>Chapter 2:&#160;Installation Guide</span>
             </p>
-            <h1><a name="Installation_Guide" data-mc-generated-bookmark="TOC"></a><a name="kanchor272"></a>Installation Guide</h1>
+            <h1><a name="Installation_Guide" data-mc-generated-bookmark="TOC"></a><a name="kanchor271"></a>Installation Guide</h1>
             <p class="p_2">Successful system usage depends on proper hardware, setup and installation. This section walks you through the steps necessary to successfully install ClientBase on your agency’s local area network. Please be sure to read this chapter carefully, verify your system meets the hardware requirements, and follow the steps exactly. </p>
-            <h2><a name="Trams_Back_Office_Users" data-mc-generated-bookmark="TOC"></a><a name="kanchor273"></a>Trams Back Office Users</h2>
+            <h2><a name="Trams_Back_Office_Users" data-mc-generated-bookmark="TOC"></a><a name="kanchor272"></a>Trams Back Office Users</h2>
             <p><span class="span_1">ClientBase</span> shares a database with the <span class="span_1">Trams Back Office</span> system and therefore also uses Interbase as the underlying engine.  Depending on when you installed <span class="span_1">Trams Back Office</span>, you may still be running an older version of Interbase. This new version of <span class="span_1">ClientBase</span> has been optimized for system performance to run on the latest Interbase version. To verify your version of Interbase, log into <span class="span_1">Trams Back Office</span> and go to<span class="span_1"> Help|Table Version</span> and check the field <span class="span_1">IB Server Version. </span>To upgrade your Interbase when you are running an earlier version with TBO, contact our support desk and directions below to upgrade. </p>
-            <h4><a name="Canadian_Users" data-mc-generated-bookmark="TOC"></a><a name="kanchor274"></a>Canadian Users</h4>
+            <h4><a name="Canadian_Users" data-mc-generated-bookmark="TOC"></a><a name="kanchor273"></a>Canadian Users</h4>
             <p>The Canadian version of <span class="span_1">ClientBase</span> is available in French, in addition to English. Upon installing version 3.03 or above update on each workstation, a second desktop shortcut is created automatically called <span class="span_1">CBPlus French</span>. Now French speaking agents can either run <span class="span_1">ClientBase</span> in English or in French. Although the majority of the program has been translated to French, the invoice is the only report in <span class="span_1">ClientBase</span> that prints in anything other than English. Please note that both the English and the French version of <span class="span_1">ClientBase</span> include the Invoice Format option of printing an invoice in any of the following languages: English, French or Spanish. </p>
             <p>The CBPlusfre.exe is installed in the same directory as cbplus.exe. On the desktop where the CBPlus shortcut is installed and in the <span class="span_1">Trams</span> program group (folder under start/programs/etc) where the CBPlus shortcut is installed, a CBPlus French shortcut also appears.</p>
             <p>&#160;</p>
-            <h2><a name="Hardware_Requirements" data-mc-generated-bookmark="TOC"></a><a name="kanchor275"></a>Hardware Requirements</h2>
+            <h2><a name="Hardware_Requirements" data-mc-generated-bookmark="TOC"></a><a name="kanchor274"></a>Hardware Requirements</h2>
             <p>Your customers and the information you collect from them are the heart of your business. <span class="span_1">ClientBase</span> is designed to help your agency quickly access and manage this information by making it available to everyone within your business. With this in mind, most agencies install the <span class="span_1">ClientBase</span> program on multiple workstations, including all agent workstations.</p>
             <p>Although the program is installed in multiple locations, the objective is to centralize this customer information so that all workstations access one common database. In this scenario, the computer housing the database (<span class="span_1">trams</span>.ib) is considered the “server” and the computers set up to run <span class="span_1">ClientBase</span> and access that database are considered the “clients”. Regardless of the number of clients running <span class="span_1">ClientBase</span>, the hardware recommendations for the <span class="span_1">workstations</span> remain constant. Unlike the workstations, server’s hardware recommendations vary, depending on the number of clients (workstations) set up to work within the database simultaneously. </p>
             <h4 style="font-weight: normal;"><a name="Click_here_for_the_current_requirements." data-mc-generated-bookmark="TOC"></a><a href="http://static.trams.com/tramslibrary/documentation/cb/hwsysrequires.pdf" style="font-size: 10pt;">Click here for the current requirements.</a>
             </h4>
             <p>&#160;</p>
-            <h2><a name="Terminology_to_Prepare_You_for_Installation" data-mc-generated-bookmark="TOC"></a><a name="kanchor276"></a>Terminology to Prepare You for Installation</h2>
+            <h2><a name="Terminology_to_Prepare_You_for_Installation" data-mc-generated-bookmark="TOC"></a><a name="kanchor275"></a>Terminology to Prepare You for Installation</h2>
             <h3><a name="What_is_a_Database_" data-mc-generated-bookmark="TOC"></a>What is a Database?</h3>
             <p>All of the Profile, Activity, and Res Card details captured within your <span class="span_1">ClientBase</span> program get stored within one file, which resides on your <span class="span_1">ClientBase</span> server. This file is commonly referred to as your database and, because it is an InterBase database, always has a file extension of .ib (earlier versions had an extension of .gdb). InterBase is the engine that the <span class="span_1">ClientBase</span> program is built around.</p>
             <p>Although it is not necessarily recommended, if for some reason you wanted to break your information into multiple databases, you would have multiple files on your server, one for each database. Each of these files would have a common file extension (ib or gdb if you already have TBO), but different file names.</p>
@@ -58,13 +58,13 @@
             <p>If you are a <span class="span_1">Trams Back Office</span> user the database has already been created and is probably called <span class="span_1">Trams</span>.ib or for older versions .gdb and resides in the \<span class="span_1">Trams</span>\<span class="span_1">Trams</span>win directory. This database file can be used within the <span class="span_1">ClientBase</span> program eliminating the inefficiencies of maintaining two separate databases in your office.</p>
             <p>If you are not a <span class="span_1">Trams Back Office</span> user, then a blank <span class="span_1">Trams</span>.ib file is created upon installing <span class="span_1">ClientBase</span> onto your server. </p>
             <p>&#160;</p>
-            <h3><a name="What_is_an_Alias_" data-mc-generated-bookmark="TOC"></a><a name="kanchor277"></a>What is an Alias?</h3>
+            <h3><a name="What_is_an_Alias_" data-mc-generated-bookmark="TOC"></a><a name="kanchor276"></a>What is an Alias?</h3>
             <p>An alias is a path pointing to your database. The alias stores a name for your database and a path to find that database on the server. Each time you open the <span class="span_1">ClientBase</span> program or <span class="span_1">Trams Back Office</span>, you are prompted for the alias you want to use. Select the alias from the drop-down menu of database names. The executable program looks at the associated path and follows that path to connect to your data. An Alias with the name of <span class="span_1">Trams</span> is created by default during installation.</p>
             <p>&#160;</p>
-            <h3><a name="What_is_Interbase" data-mc-generated-bookmark="TOC"></a><a name="kanchor278"></a>What is Interbase</h3>
+            <h3><a name="What_is_Interbase" data-mc-generated-bookmark="TOC"></a><a name="kanchor277"></a>What is Interbase</h3>
             <p>Interbase is best described as the database operating system. It is the foundation upon which <span class="span_1">ClientBase</span> and <span class="span_1">Trams Back Office</span> run. This foundation is responsible for the structure of the database, storing the data, any maintenance and utilities applied to the database, connecting the application program to the database and file locking on the network to save the integrity of the database.</p>
             <p>&#160;</p>
-            <h2><a name="Set_Up_the_ClientBase_Server" data-mc-generated-bookmark="TOC"></a><a name="kanchor279"></a>Set Up the ClientBase Server</h2>
+            <h2><a name="Set_Up_the_ClientBase_Server" data-mc-generated-bookmark="TOC"></a><a name="kanchor278"></a>Set Up the ClientBase Server</h2>
             <h3><a name="The_Role_of_the_ClientBase_Server" data-mc-generated-bookmark="TOC"></a>The Role of the ClientBase Server</h3>
             <p><span class="span_1">ClientBase</span> is a true client/server application. This means the workstations are “clients” and rather than doing their own processing of information, they send a query to the “server,” the server processes the query, and sends the results back to the workstation. Because the server is only sending results instead of the full database across the network, applications designed for Client/Server are faster and more powerful. The server is the computer housing the database, and the clients are the workstations set up to run the <span class="span_1">ClientBase</span> application program.</p>
             <p>Although the workstations need certain resources to run the <span class="span_1">ClientBase</span> executable and display the screens of information when queries are performed, the server is doing most of the work. The more workstations performing simultaneous queries, the harder the server must work. The harder the server must work, the more resources the server needs to perform the work in a timely fashion. </p>
@@ -78,7 +78,7 @@
             </ul>
             <p>The Server PC houses the database (ib or gdb if running TBO for many years), which is shared with the <span class="span_1">Trams Back Office</span> program. This means if your agency uses <span class="span_1">Trams Back Office</span> as your accounting system, both programs (<span class="span_1">Trams Back Office</span> and <span class="span_1">ClientBase</span>) access the same database. Therefore, the server PC, which houses this common database, must be accessible via the network by any workstations setup to run either <span class="span_1">Trams Back Office</span> or <span class="span_1">ClientBase</span>.</p>
             <p>&#160;</p>
-            <h2><a name="Install_ClientBase_Windows_on_Server_-_Agency_Does_Not_Use_Trams_Back_Office" data-mc-generated-bookmark="TOC"></a><a name="kanchor280"></a>Install ClientBase Windows on Server - Agency Does Not Use Trams Back Office</h2>
+            <h2><a name="Install_ClientBase_Windows_on_Server_-_Agency_Does_Not_Use_Trams_Back_Office" data-mc-generated-bookmark="TOC"></a><a name="kanchor279"></a>Install ClientBase Windows on Server - Agency Does Not Use Trams Back Office</h2>
             <h3><a name="ClientBase_Installation" data-mc-generated-bookmark="TOC"></a>ClientBase Installation</h3>
             <p class="p_2">If installing on new computer that does not already have Trams Back Office or ClientBase installed, use the&#160;instructions below.<br></br>Reminder: A&#160;Trams Implementation representative will be calling&#160;to assist with the installation process. You can contact the Implementation team by emailing <a href="mailto:Trams.Implementation@sabre.com" class="Hyperlink">Trams.Implementation@sabre.com</a>.&#160;</p>
             <p class="p_2" style="text-indent: 0.5in;quotes: inherit;"><b>*Note</b>:&#160; If you are an existing customer installing on a new computer, please reach out to the <a href="mailto:trams.techdesk@sabre.com?subject=New ClientBase Installation">Trams Tech Desk</a>.</p>
@@ -105,7 +105,7 @@
             <p style="font-weight: bold;"><span style="font-weight: normal;">Workstation is selected by default. We will cover a Server Installation first, then cover Workstations at the end.</span>
             </p>
             <p>&#160;</p>
-            <p><span class="span_3"><b><a name="kanchor281"></a>To install a Server</b>,</span> choose the <i>Server</i> radio button, then click <i>Next</i>. </p>
+            <p><span class="span_3"><b><a name="kanchor280"></a>To install a Server</b>,</span> choose the <i>Server</i> radio button, then click <i>Next</i>. </p>
             <p>&#160;</p>
             <p>
                 <img src="resources/images/trams back office installation 3-4-2020/trams back office installation_1_600x478.png" class="img_2" style="width: 600;height: 478;" />
@@ -156,7 +156,7 @@
             <p>If you changed the database location in step 5, make a note of it. You’ll need it when you install any Workstations.</p>
             <p>After the <span class="span_1">ClientBase</span> Server is setup, <span>proceed to install </span><span class="span_1">ClientBase</span><span> on the workstations</span>, by following the directions below.</p>
             <p>&#160;</p>
-            <h3><a name="Workstation_Installation_for_multiple_users" data-mc-generated-bookmark="TOC"></a><a name="Workstat"></a><span class="span_3"><a name="kanchor282"></a>Workstation Installation for multiple users</span>
+            <h3><a name="Workstation_Installation_for_multiple_users" data-mc-generated-bookmark="TOC"></a><a name="Workstat"></a><span class="span_3"><a name="kanchor281"></a>Workstation Installation for multiple users</span>
             </h3>
             <p><span><b>Step 1</b>: <b>Download the Program File.</b></span>
                 <br />After selecting the computer to install Trams Back Office on, download the&#160;Trams&#160;Products Installation setup.exe file into a folder on the computer. The file is linked below: </p>
@@ -202,7 +202,7 @@
             </blockquote>
             <p>&#160;</p>
             <blockquote><a name="AliasUtil"></a>
-                <h3>Trams <a name="kanchor283"></a>Alias Utility</h3>
+                <h3>Trams <a name="kanchor282"></a>Alias Utility</h3>
                 <p>The Alias Utility manages the location of the <span class="span_1">Trams</span> database/s. An alias is simply a <span class="span_1">shortcut</span> name to the long path which maps to the location of the database. By default there are probably two aliases set up, <span class="span_1">Trams </span>(the <span class="span_1">Trams</span> database), and <span class="span_1">DemoData </span>(a database with sample data in it that can be used to experiment with the program). But there can be as many databases as desired. </p>
                 <p>Access the <span class="span_1" style="font-style: italic;">Trams</span><i> Alias Utility</i> in the program group by going to<i> </i><span><i>Start|Programs|Trams Back Office|Alias Utility</i>.</span></p>
                 <p>&#160;</p>
@@ -234,7 +234,7 @@
                     </blockquote>
                 </blockquote>
                 <p>&#160;</p>
-                <h3><a name="Changing_the_Trams_Alias" data-mc-generated-bookmark="TOC"></a><a name="Changing"></a><a name="kanchor284"></a>Changing the Trams Alias</h3>
+                <h3><a name="Changing_the_Trams_Alias" data-mc-generated-bookmark="TOC"></a><a name="Changing"></a><a name="kanchor283"></a>Changing the Trams Alias</h3>
                 <p>To make a change the database location, start the alias utility by going to <span style="font-style: italic;">Start|Program Files|Trams Back Office</span> and select <span style="font-style: italic;">Alias Utility</span>. Add, Modify, or Delete Aliases from this screen.<br></br>Click <span class="span_1" style="font-weight: bold;">Add</span> or <span class="span_1" style="font-weight: bold;">Modify</span> to bring up the screen where the alias path is entered.<br></br>The Alias Name is simply a name used to recall the path to the database.</p>
                 <blockquote>
                     <p><b>*</b><span><b>Note</b>:</span> Formats for the path to the database if on a network are:</p>
@@ -242,7 +242,7 @@
                     <p class="p_12">Netbeui \\Servername\drive:directories\databasename.ib</p>
                 </blockquote>
                 <p class="p_12">&#160;</p>
-                <h3><a name="Trams_License_Manager" data-mc-generated-bookmark="TOC"></a><a name="LicenseMGR"></a>Trams <a name="kanchor285"></a>License Manager </h3>
+                <h3><a name="Trams_License_Manager" data-mc-generated-bookmark="TOC"></a><a name="LicenseMGR"></a>Trams <a name="kanchor284"></a>License Manager </h3>
                 <p>The <i>License Manager</i> monitors the number of users logged into the database and compares it to the agency Access Code which reflects the number of users the agency is licensed for with <span class="span_1" style="font-style: italic;">Trams</span><i> and ClientBase Products and Services</i>.<br></br>When accessing the <span class="span_1">Trams</span> database using any of <span class="span_1">Trams</span> applications, the <span class="span_1" style="font-style: italic;">Trams</span><i> License Manager</i> verifies that connection can be made to the <span class="span_1">Trams</span> database and that a current version of the <i>License Manager</i> is enabled. </p>
                 <p>The<i> </i><span class="span_1" style="font-style: italic;">Trams</span><i> License Manager</i> utilizes <i>Port 8090</i> for communication.<br></br>This port must be opened on any firewall that a company may be utilizing to filter traffic internally. <br></br>It also must be opened externally for remote users in their network configuration.</p>
                 <blockquote>
@@ -251,13 +251,13 @@
                 <p style="text-indent: 0.5in;">This means number of User Licenses have been exceeded and someone else needs to log out of the program or contact <span class="span_1">Trams</span> Billing at 310-641-8726 or <span>Trams.Billing@Sabre.com</span> to obtain additional licenses.</p>
                 <p style="text-indent: 0.5in;">&#160;</p>
             </blockquote>
-            <h3><a name="Auto-Update_Feature_..123" data-mc-generated-bookmark="TOC"></a><a name="Auto-Upd"></a><a name="kanchor286"></a>Auto-Update Feature</h3>
+            <h3><a name="Auto-Update_Feature_..123" data-mc-generated-bookmark="TOC"></a><a name="Auto-Upd"></a><a name="kanchor285"></a>Auto-Update Feature</h3>
             <p><i>ClientBase</i> will automatically install updates when they become available. Auto-update greatly streamlines installing updates on users' workstations and ensures fixes are being installed in a timely manner. Auto-update will only install updates that match the current major version (4.09.01 or 4.08.02, for example).</p>
             <p>When <i>ClientBase</i> is launched, the auto-update feature checks to see if a newer version is available, then automatically downloads and installs the update on the users' workstation. The automatic update works for <i>tramswin</i>, <i>download</i>, <i>ibbackup</i> and the <i>ibbackuplib</i> files. The earlier versions of the executables will be renamed by appending <i>.old</i> to the file name during the process, so they are available to roll back to an earlier version, if necessary.</p>
             <p>Users can postpone the auto-update for 24 hours or 1 week; after which they will be prompted again that an update is available.</p>
             <p style="text-indent: 0.5in;"><span class="span_3"><b>*Note</b>: </span>If a user does not have administrative rights, the auto-update routine won't be able to install the new versions. You can get around this by giving users Read &amp; Execute, List folder contents, Read, Write, Modify Security permissions to the Trams folder, subfolders and files in which <i>ClientBase</i> is installed (e.g., <i>C:\Program Files (x86)\Trams\</i>).</p>
             <p style="text-indent: 0.5in;">&#160;</p>
-            <h3><a name="Unattended_Installation_or_Update_of_ClientBase_Files" data-mc-generated-bookmark="TOC"></a><a name="kanchor287"></a>Unattended Installation or Update of ClientBase Files</h3>
+            <h3><a name="Unattended_Installation_or_Update_of_ClientBase_Files" data-mc-generated-bookmark="TOC"></a><a name="kanchor286"></a>Unattended Installation or Update of ClientBase Files</h3>
             <p>If desired, agencies can run the installation/update programs on a workstation without any prompts (without the wizard) so that the new install and update process on a workstation can be automated. In order to activate the unattended version of the setup.exe or update.exe, the <span>cbpparams.ini</span> file must be saved in the same directory as the setup.exe and/or update.exe and must contain the necessary settings that are otherwise handled via prompts in the wizard version of our installation programs. This cbpparams.ini can be downloaded from the following site: </p>
             <p><a href="http://static.trams.com/tramslibrary/releaseandupdatefiles/updates/misc_exe/CBPPARAMS.INI">http://static.trams.com/tramslibrary/releaseandupdatefiles/updates/misc_exe/CBPPARAMS.INI</a>
             </p>
@@ -336,7 +336,7 @@
             <p>Explanation:</p>
             <p style="text-indent: 0.5in;">CBPLUSEXEDIR=the directory where the CBPLUS.EXE is actually located</p>
             <p style="text-indent: 0.5in;">&#160;</p>
-            <h3><a name="Time_Fields_Throughout_ClientBase" data-mc-generated-bookmark="TOC"></a><a name="kanchor288"></a>Time Fields Throughout ClientBase</h3>
+            <h3><a name="Time_Fields_Throughout_ClientBase" data-mc-generated-bookmark="TOC"></a><a name="kanchor287"></a>Time Fields Throughout ClientBase</h3>
             <p><span class="span_1">ClientBase</span> uses the Windows time settings and formats the <span class="span_1">ClientBase</span> time fields accordingly. Your computer's time format is set within your Control Panel under Regional and Language Options. Within the Regional Options tab select the desired Region and click customize to verify the desired time settings. The options include:</p>
             <blockquote>
                 <p class="p_9">h:mm:ss:tt</p>
@@ -351,7 +351,7 @@
                 <p class="p_9">h=12 hour</p>
                 <p class="p_9">H=24 hour</p>
             </blockquote>
-            <h3><a name="When_Should_I_Disable_Automatic_Queries_" data-mc-generated-bookmark="TOC"></a><a name="kanchor289"></a>When Should I Disable Automatic Queries?</h3>
+            <h3><a name="When_Should_I_Disable_Automatic_Queries_" data-mc-generated-bookmark="TOC"></a><a name="kanchor288"></a>When Should I Disable Automatic Queries?</h3>
             <p>Upon installation of <span class="span_1">ClientBase</span>, by default all queries are automatically enabled in each of four managers (Profile, Activity, Res Card, and Inventory), as well as in the Profile Travel History tab, Profile Payment History tab, and on the Profile Indicator buttons. If your database contains more than 25,000 profiles, you may want to consider disabling this automatic Query option for optimum performance. To do this globally, go to <span>Global Defaults|Automatic Query Settings</span> and select <span class="span_1">Disable</span> from the drop-down menu for any of the queries that you do not want to run automatically.</p>
             <p>
                 <img src="resources/images/chapter 2 installation guide/step 6 identify the country_4.jpg" style="height: 268px;width: 363px;" alt="" class="img_1">
@@ -362,14 +362,14 @@
             <p><span>Q:</span> If I have <span class="span_1">Trams Back Office</span> and <span class="span_1">ClientBase</span>, does the TBO backup utility back up both programs?</p>
             <p><span>A:</span> Yes, it backs up the mutually shared database. But be careful when you restore the database. <span>When you restore one program, you are restoring both!</span></p>
             <p>&#160;</p>
-            <h2><a name="Converting_ClientBase" data-mc-generated-bookmark="TOC"></a><a name="kanchor290"></a>Converting ClientBase</h2>
+            <h2><a name="Converting_ClientBase" data-mc-generated-bookmark="TOC"></a><a name="kanchor289"></a>Converting ClientBase</h2>
             <h3><a name="By_Trams_Database" data-mc-generated-bookmark="TOC"></a> By Trams Database</h3>
             <p>If you are converting from <span class="span_1">ClientBase</span> by <span class="span_1">Trams</span>, contact <a href="mailto:Trams.Implementation@sabre.com"><span class="Hyperlink">Trams.Implementation@sabre.com</span></a> for further information on the process. </p>
             <p>&#160;</p>
             <h3><a name="By_Third_Party_Solutions_Database" data-mc-generated-bookmark="TOC"></a>By Third Party Solutions Database</h3>
             <p>If you are converting from <span class="span_1">ClientBase</span> by Third Party Solutions, contact <span>Trams.Implementation@sabre.com </span>for further information on the process.</p>
             <p>&#160;</p>
-            <h2><a name="Credit_Card_Encryption" data-mc-generated-bookmark="TOC"></a><a name="kanchor291"></a>Credit Card Encryption</h2>
+            <h2><a name="Credit_Card_Encryption" data-mc-generated-bookmark="TOC"></a><a name="kanchor290"></a>Credit Card Encryption</h2>
             <p>Starting in <span class="span_1">ClientBase</span> Version 3.4 and <span class="span_1">Trams Back Office</span> 3.01, upon installation or updating of both versions of these programs, credit card numbers become encrypted and masked within the database. In an effort to protect your clients from credit card fraud, and to comply with recent PCI (Payment Card Industry) compliance regulations, all credit card numbers within your database have been (and will be) encrypted and masked. To a typical <span class="span_1">ClientBase</span> user this encryption appears invisible, but it makes the extraction of this personal data much more difficult should your database be accessed in an unauthorized manner. Upon retrieving a credit card number within the <span class="span_1">ClientBase</span> application, the system automatically decrypts the credit card number and display the full number as always. (Please note the User Permission details below where users can be forced to only view the masked version of the credit card number.)</p>
             <h3><a name="Introduction_..124" data-mc-generated-bookmark="TOC"></a>Introduction</h3>
             <p>The Payment Card Industry (PCI) compliance and validation regulations spells out what security measures must be taken to protect the private information during any transaction occurring with the use of a paycard. The PCI Data Security Standard is used by all card brands to ensure the security of the data gathered when transacting on behalf of a customer.</p>
@@ -402,9 +402,9 @@
             <p><span>Utilities Updated:</span> Globalware Invoice Export Utility, IC Host Utility, XML Travel History Import, Australian "Enable Automatic XML Profile Export" </p>
             <p><span>Utilities Sunset (will no longer work after a database has been encrypted):</span> XML Import, XML Export, CB2CBP conversion utility, CBT2CBP conversion utility </p>
             <p><span>Utilities Not Affected:</span> ASCII Profile Import, IB Backup, Ensemble Import, Ensemble Export, Virtuoso Utility, Virtuoso Segment Update</p>
-            <h3><a name="Use_of_Encryption_Keys_for_Third_Party_or_Custom_Development_" data-mc-generated-bookmark="TOC"></a><a name="kanchor292"></a>Use of Encryption Keys for Third Party or Custom Development:</h3>
+            <h3><a name="Use_of_Encryption_Keys_for_Third_Party_or_Custom_Development_" data-mc-generated-bookmark="TOC"></a><a name="kanchor291"></a>Use of Encryption Keys for Third Party or Custom Development:</h3>
             <p>A unique key will be generated for each agency that can be used in product development for non-<span class="span_1">Trams</span> applications that need to read the full credit card number. The key can be obtained by the SYSDBA User only by going to <span>Utilities|Credit Card Encryption Key</span> and entering a password provided by the <span class="span_1">Trams</span> support desk. A CCEncrypt.dll file is installed that allows access to the <span class="span_1">Trams</span> database to view un-encrypted credit card numbers. Documentation for use is available upon request by e-mailing <span>Trams.CustomerCare@sabre.com</span>. The intended audience is for the designers and developers of non-<span class="span_1">Trams</span> applications that read credit card numbers directly from the <span class="span_1">Trams</span> database.</p>
-            <h3><a name="How_to_Set_User_Logins_to_Mask_Credit_Card_Numbers" data-mc-generated-bookmark="TOC"></a><a name="kanchor293"></a>How to Set User Logins to Mask Credit Card Numbers</h3>
+            <h3><a name="How_to_Set_User_Logins_to_Mask_Credit_Card_Numbers" data-mc-generated-bookmark="TOC"></a><a name="kanchor292"></a>How to Set User Logins to Mask Credit Card Numbers</h3>
             <p>If you want <span class="span_1">ClientBase</span> users to work with masked credit card numbers go to <span>Utilities|User Logins|User List</span> and <span class="span_1">Advanced Permission Settings|Other Permissions</span> to check off <span class="span_1">Mask Credit Card Numbers</span>. This allows you to mask full credit card numbers from users that don't have a need to view the complete number. All existing users default this setting to unchecked. Upon checking this Advanced permission and saving, the system prompts with a message: <span class="span_1">By checking Mask Credit Card Numbers for this User, Credit entries will not be included in Merge to PNR and Live Connect, since the full Credit Number must result at the end of these features.</span> Please keep this limitation in mind when deciding which users should have the Credit Card numbers masked.</p>
             <h4><a name="The_following_areas_are_updated_if_the_current_User_Login_is_set_to_Mask_Cred..." data-mc-generated-bookmark="TOC"></a><span style="font-size: 10pt;">The following areas are updated if the current User Login </span>
                 <br style="font-size: 10pt;" /><span style="font-size: 10pt;">is set to </span><span class="span_1" style="font-weight: bold;"><span style="font-size: 10pt;">Mask Credit Card Numbers</span></span><span style="font-size: 10pt;">:</span>
@@ -440,7 +440,7 @@
                 <li class="ListParagraph_1" style="font-size: 10pt;"><span>Enable User Authentication for login security settings for password management.</span> EUA enabling the database allows benefits from the new password management features of setting password strengths, setting password expiration dates, as well as users being able to change their own passwords.</li>
                 <li class="ListParagraph_1" style="font-size: 10pt;">All user login password security enhancements are strictly tied to EUA enabling the database. If a database is not EUA enabled, <span class="span_1">Trams Back Office</span> user login password management remains unchanged and only SYSDBA can update User Login passwords.</li>
             </ul>
-            <h4><a name="EUA_Requirements" data-mc-generated-bookmark="TOC"></a><a name="kanchor294"></a>EUA Requirements</h4>
+            <h4><a name="EUA_Requirements" data-mc-generated-bookmark="TOC"></a><a name="kanchor293"></a>EUA Requirements</h4>
             <ul class="ul_2">
                 <li class="ListParagraph_1" style="font-size: 10pt;">IB Server and IB Client must be on IB version XE.</li>
                 <li class="ListParagraph_1" style="font-size: 10pt;">The <span class="span_1">ClientBase</span>/<span class="span_1">Trams Back Office</span> database must be updated to IB XE.</li>

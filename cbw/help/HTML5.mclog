@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated HTML5.fltar" Date="2021-01-12T19:35:08.3363653-03:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated HTML5.fltar" Date="2021-01-21T15:37:44.0986502-03:00">
     <Messages>Compiling target HTML5...
 Removing previously generated content...
 Loading skin info...
@@ -337,11 +337,11 @@ Generated Skins\Default\Stylesheets\TextEffects.micro-content.css
 Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated index.html
 Saving result set...
-Ignored Compiler Warnings: 460
-Output generated in 1 minute(s) and 15 second(s).
+Ignored Compiler Warnings: 461
+Output generated in 1 minute(s) and 22 second(s).
 
 Done
-Saving log to "C:\My Projects\TRAMS\CBW\help - Copy\Output\SG0222835\HTML5\HTML5.mclog"
+Saving log to "C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\TRAMS\CBW\help - Copy\Output\SG0222835\HTML5\HTML5.mclog"
 </Messages>
     <Warnings>
         <LogEntry File="../../../Content/Chap 1 Introduction.htm" Message="Topic contains a topic popup to an email address. Topic popup will be converted to a hyperlink.&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70002" />
