@@ -294,29 +294,18 @@
 
 	.central-dropdown
 	{
-		position: absolute;
-		top: 22px;
-		z-index: 1;
-		left: 50px;
+		
+	}
+
+	.central-dropdown .central-account-drop
+	{
+		
+	}
+
+	.central-account-wrapper
+	{
+		left: 60px;
 		right: auto;
-	}
-
-	.central-account-text
-	{
-		display: none;
-	}
-
-	.central-dropdown-content
-	{
-		left: -30px;
-		right: auto;
-		background-color: #ffffff;
-	}
-
-	.central-dropdown:after
-	{
-		margin-left: 5px;
-		margin-top: 0px;
 	}
 
 	.central-dropdown:hover
@@ -328,6 +317,11 @@
 	{
 		background: transparent url('Images/icon-user-light-gray.png') no-repeat center center;
 		-pie-background: transparent url('Skins/Default/Stylesheets/Images/icon-user-light-gray.png') no-repeat center center;
+	}
+
+	.central-dropdown-content
+	{
+		background-color: #ffffff;
 	}
 
 	.central-dropdown-content a
@@ -342,7 +336,7 @@
 
 	.central-separator
 	{
-		
+		background-color: #D5D8DA;
 	}
 
 	#responsiveHeader
