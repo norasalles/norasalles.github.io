@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated Target.fltar" Date="2021-01-18T17:24:01.0411119-03:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated Target.fltar" Date="2021-02-02T12:08:38.4614050-03:00">
     <Messages>Compiling target Target...
 Missing linked stylesheet file:///C:/Users/SG0222835/Sabre/Nora Salles - Resources/My Projects/TRAMS/CBO/releasenotes/Content/Resources/Stylesheets/Stylesheetold.css
 Removing previously generated content...
@@ -40,7 +40,7 @@ Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated index.html
 Saving result set...
 Ignored Compiler Warnings: 3
-Output generated in 25 second(s).
+Output generated in 10 second(s).
 
 Done
 Saving log to "C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\TRAMS\CBO\releasenotes\Output\SG0222835\Target\Target.mclog"

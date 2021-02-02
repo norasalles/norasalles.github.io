@@ -1,1 +1,1 @@
-define({"../clientbase online 4 09 00 - fix.htm":1,"../clientbase online 4 09 00 - nfet.htm":0,});
+define({"../content/clientbase online 4 09 00 - fix.htm":1,"../content/clientbase online 4 09 00 - nfet.htm":0,});
