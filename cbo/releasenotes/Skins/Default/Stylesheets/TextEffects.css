@@ -603,7 +603,7 @@ a.MCHelpControl
 	background-position: center center;
 	width: 22px;
 	height: 22px;
-	background: #ececec none;
+	background: #ececec;
 	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
@@ -672,7 +672,7 @@ a.MCHelpControl
 	padding-bottom: 0px;
 	background-repeat: no-repeat;
 	width: auto;
-	background: #ececec none;
+	background: #ececec;
 	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
@@ -1316,8 +1316,6 @@ button.mc-dropdown-item
 {
 	background-repeat: no-repeat;
 	font-weight: bold;
-	background: #ff0000 none;
-	-pie-background: #ff0000;
 }
 
 span.SearchHighlight.SearchHighlight1

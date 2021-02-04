@@ -1,3 +1,4 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
 /*<meta />*/
 
 p.MyStyle
@@ -10,6 +11,7 @@ p.MyStyle
 img
 {
 	border: none;
+	padding: 10pt;
 }
 
 a.Popup
@@ -62,17 +64,16 @@ h2
 	font-size: 18pt;
 	font-weight: bold;
 	color: #C00000;
-	font-style: inherit;
-	font-family: Roboto;
+	font-family: 'Roboto Black';
 }
 
 h3
 {
 	font: ;
-	color: #243F60;
 	font-size: 14pt;
 	font-weight: bold;
 	font-family: Roboto;
+	color: #1A4D66;
 }
 
 p
@@ -94,13 +95,6 @@ p.footer
 {
 	font-family: Roboto;
 	color: #696969;
-}
-
-li.ListParagraph
-{
-	font-family: Arial;
-	color: #000000;
-	font-size: 12pt;
 }
 
 h1.Contents	/*hide TOC*/
@@ -127,45 +121,154 @@ p.productnewfeaturepdf
 	letter-spacing: 1px;
 }
 
-h4
+ul.Bulletline
 {
-	font-family: Roboto;
+	list-style-type: disc;
+	list-style-image: none;
 }
 
-li
+ul.Bulletline > li::marker
 {
+	font-family: 'Times New Roman';
+	content: '—';
+}
+
+ul.Bulletlvl2
+{
+	
+}
+
+ul.Bulletlvl2 > li > ul
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.Bulletlvl2 > li > ul > li::marker
+{
+	font-family: 'Times New Roman';
+	content: '•';
+}
+
+li.ListParagraph_5
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	margin-left: 36pt;
+	font-family: Arial;
+	font-size: 12;
+}
+
+li.li_1
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
 	font-family: Arial;
 	font-size: 10pt;
 }
 
-table
+li.ListParagraph	/*list paragraph*/
 {
-	border: solid 2px #000000;
-	padding: 5px;
+	margin-bottom: 8pt;
+	font-size: 11pt;
+	margin-left: 36pt;
+	font-family: Arial;
 }
 
-td
+li.ListParagraph_1
 {
-	border: solid 1px #000000;
+	margin-left: 36pt;
+	font-family: Arial;
+	margin-bottom: 0pt;
+	font-size: 12pt;
 }
 
-th
+li.ListParagraph_2
 {
-	border: solid 2px #000000;
+	margin-bottom: 8pt;
+	margin-left: 36pt;
+	font-family: Arial;
+	margin-top: 12pt;
+	font-size: 12pt;
 }
 
-span.span_3
+li.ListParagraph_3
 {
-	font-style: italic;
+	margin-left: 36pt;
+	font-family: Arial;
+	margin-bottom: 0pt;
+	font-size: 12;
+}
+
+li.ListParagraph_4
+{
+	margin-bottom: 8pt;
+	margin-left: 36pt;
+	font-family: Arial;
+	font-size: 12;
+}
+
+li.ListParagraph_5_1
+{
+	margin-top: 6pt;
+	margin-bottom: 14pt;
+	font-family: Arial;
+	margin-left: 18pt;
+	font-size: 12;
+}
+
+li
+{
+	font-size: 12pt;
+	font-family: Arial;
+	color: #000000;
+	padding-top: 5px;
+}
+
+ul.ul	/*list*/
+{
+	margin-left: 80px;
+}
+
+MadCap|dropDownHead
+{
+	color: #243F60;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 12pt;
+	text-decoration: blink;
+}
+
+h4
+{
+	font-family: Roboto;
+	color: #333333;
+	font-size: 12pt;
+}
+
+img.imgheader
+{
+	
+}
+
+h5
+{
+	font-family: Roboto;
+	font-size: 10pt;
+}
+
+body
+{
+	
 }
 
 div.commframe
 {
-	color: #E50000;
 	font-family: Roboto;
 	font-size: 10pt;
 	font-weight: bold;
 	padding: 10px;
 	background: #9DD7D8;
+	color: #c00000;
 }
 

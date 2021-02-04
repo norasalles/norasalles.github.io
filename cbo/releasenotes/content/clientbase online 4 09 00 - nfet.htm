@@ -32,6 +32,8 @@
             <img src="images/cbreleasenotes.png" />
         </p>
         <p class="productnewfeature" style="font-size: 10pt;"><span class="mc-variable Variables.Product variable">ClientBase Online</span> <span class="mc-variable Variables.Version_no variable">4.09.00</span> -   <span class="mc-variable Variables.Type variable">New Features and Enhancements</span><br />Released Oct, 2020</p>
+        <p class="productnewfeature" style="font-size: 10pt;"><span style="color: #ffffff;">Reviewed Feb/2021</span>
+        </p>
         <p>&#160;</p>
         <div role="main" id="mc-main-content">
             <div class="commframe" style="text-align: right;font-weight: bold;">For more information on our 4.09 key enhancements visit our <a href="https://www.youtube.com/playlist?list=PLgSinp8nTL3HWUI1-MJzNlUuMWPlarpMJ">YouTube playlist</a>.</div>
@@ -154,11 +156,16 @@
             </blockquote>
             <p>&#160;</p>
             <blockquote>
-                <p class="ListParagraph_5"><span class="span_2" style="font-weight: bold;">Insurance:</span><span class="span_1">Pricing and Commission are now imported from the accounting line.</span>
+                <p><span class="span_2" style="font-weight: bold;">Insurance:</span>
                 </p>
+                <ul>
+                    <li><span class="span_1">Pricing and Commission are now imported from the accounting line.</span>
+                    </li>
+                </ul>
             </blockquote>
             <blockquote>
-                <p class="ListParagraph_5"><span class="span_2"><b>Cruise:</b> </span>
+                <p>&#160;</p>
+                <p><span class="span_2"><b>Cruise:</b> </span>
                 </p>
             </blockquote>
             <blockquote>
@@ -258,43 +265,52 @@
                 </blockquote>
             </blockquote>
             <blockquote>
-                <p class="ListParagraph_7"><span class="span_2" style="font-weight: bold;">Tour: </span><span class="span_1">The base tour amount is imported from the tour segment in the PNR. The accounting line is ignored because tours are not normally paid in full at the time of booking.</span>
+                <p><span class="span_2" style="font-weight: bold;">Tour: </span>
                 </p>
+                <ul>
+                    <li><span class="span_1">The base tour amount is imported from the tour segment in the PNR. The accounting line is ignored because tours are not normally paid in full at the time of booking.</span>
+                    </li>
+                </ul>
             </blockquote>
             <blockquote>
-                <p class="ListParagraph_7"><span class="span_2" style="font-weight: bold;">Rail:</span><span class="span_1"> The number of travelers on the reservation is now accurate. Pricing and commission are now read from the accounting line if present. Ticket numbers are also imported if present.</span>
+                <p><span class="span_2" style="font-weight: bold;">Rail:</span>
                 </p>
+                <ul>
+                    <li>
+                        <p class="ListParagraph_7" style="font-size: 12pt;"><span class="span_1"> The number of travelers on the reservation is now accurate. Pricing and commission are now read from the accounting line if present. Ticket numbers are also imported if present.</span>
+                        </p>
+                    </li>
+                </ul>
             </blockquote>
-            <blockquote>
-                <p class="ListParagraph_5"><b>Hotel:</b> </p>
+            <p>&#160;</p>
+            <blockquote style="font-family: Arial;">
+                <p><b>Hotel:</b> </p>
             </blockquote>
             <blockquote>
                 <ul>
-                    <li><span class="span_1">Hotel pricing is now imported and calculated per room, rather than per person or per night. This resolves issues where amounts were calculated incorrectly due to different room rates charged on different nights. </span>
-                    </li>
-                    <li><span class="span_1">For Hotel bookings, the Sabre Rate Description now populates the Room Description field of the Service Provider.&#160;</span>
-                    </li>
-                    <li><span class="span_1">Hotel segments now import into Reservations with only the Traveler name the hotel reservation was confirmed under, rather than listing all the Res Card travelers. </span>
-                    </li>
-                    <li><span class="span_1">The Hotel Total Tax is now imported as part of the hotel pricing.&#160; When a hotel booking is imported, if it contains the Total Tax, we populate the Reservation's Tax field with that amount.&#160;If no Total Tax is provided, the Reservation's Tax field is left blank. The Reservation’s Base Fare is calculated by deducting the Total Tax and Surcharge amounts from the Approximate Total cost of the hotel stay. </span><span class="span_5">Note: Sabre is still working on making the Total Tax amounts for CSL hotel bookings available, so be sure to double-check the amounts as they may be missing or inaccurate until this work is completed.</span>
-                    </li>
+                    <li>	Hotel pricing is now imported and calculated per room, rather than per person or per night. This resolves issues where amounts were calculated incorrectly when calculating pricing due to different room rates charged on different nights.</li>
+                    <li>For Hotel bookings, the Sabre Rate Description now populates the Room Description field of the Service Provider in ClientBase.•	Hotel segments now import into reservations with only the Traveler name the hotel reservation was confirmed under, rather than listing all the Res Card travelers.</li>
+                    <li>The Hotel Total Tax is now imported as part of the hotel pricing. When a hotel booking is imported, if it contains the Total Tax, we populate the ClientBase Reservation's Tax field with that amount. If no Total Tax is provided, the ClientBase Reservation's Tax field is left blank. The reservation’s Base Fare is calculated by deducting the Total Tax and Surcharge amounts from the Approximate Total cost of the hotel stay.</li>
                     <li>Hotel commissions are now imported into ClientBase reservations. Commission in a hotel segment can be expressed as an amount or a percentage; we perform necessary calculations (e.g. multiplying per night) and populate the commission amount and rate fields accordingly.</li>
                     <li>For commissionable bookings, where no commission amount or percentage is identified by the hotel, the ClientBase Vendor Commission Default Rate is used to calculate it; if no Vendor Default Rate is available, the ClientBase Global Commission Default rate is used. If no Global Commission Default is available, no commission is imported.</li>
+                    <li>No commission is imported for non-commissionable bookings (indicated by the code NC).</li>
+                    <li>Added support for the new hotel formats for Content Services for Lodging (CSL) bookings created via aggregators (Booking.com, BedsOnline.com, and Expedia Partner Solutions).  In order to correctly import bookings using the aggregator as the Vendor, you will need to create a Vendor profile for each one using the chain code and property code as the Interface ID. (The correct Interface ID for Booking.com is 7B0, for BedsOnline it is 7H0, and for Expedia it is 7E0.) The hotel property details will import under the Service Provider.</li>
                 </ul>
                 <blockquote>
                     <p><span class="span_2" style="font-weight: bold;">Note: </span><span class="span_1">While we import international hotel reservations with the currency amount they were booked in, the currency type in ClientBase Online will still reflect the agency's default currency setting.&#160;The user will need to manually convert the cost into their agency currency or select the proper currency code if the agency is using the foreign currency feature.</span>
                     </p>
                 </blockquote>
-                <ul>
-                    <li>Added support for the new hotel formats for Content Services for Lodging (CSL) bookings created via aggregators (Booking.com, BedsOnline.com, and Expedia Partner Solutions).&#160; In order to correctly import bookings using the aggregator as the Vendor, you will need to create a Vendor profile for each one using the chain code and property code as the Interface ID. (The correct Interface ID for Booking.com is 7B0, for BedsOnline it is 7H0, and for Expedia it is 7E0.) The hotel property details will be found under the Service Provider.</li>
-                </ul>
             </blockquote>
+            <p>&#160;</p>
             <blockquote>
-                <p class="ListParagraph_7"><span class="span_2" style="font-weight: bold;">Other:</span><span class="span_1"> OTH Segments are imported only if there is an associated accounting line.&#160; This is to prevent importing informational OTH segments, such as retention lines used to keep the PNR active in Sabre longer.</span>
+                <p class="ListParagraph_7" style="font-size: 12pt;"><span class="span_2" style="font-weight: bold;"><span style="font-size: 10pt;">Other</span>:</span><span class="span_1"> OTH Segments are imported only if there is an associated accounting line.&#160; This is to prevent importing informational OTH segments, such as retention lines used to keep the PNR active in Sabre longer.</span>
                 </p>
             </blockquote>
+            <p>&#160;</p>
             <blockquote>
-                <p class="ListParagraph_1"><span class="span_2" style="font-weight: bold;">Service Fee:</span> <span class="span_1">Service fees created using Sabre Merchant Services now import as a Service Fee rather than a Miscellaneous reservation in ClientBase when using "FEE" as the charge descriptor code in your accounting line.&#160; The charge descriptor code can be updated in your Merchant Profile settings. ARC/BSP service fees import as they always have.</span></p>
+                <p><span class="span_2" style="font-weight: bold;">Service Fee:</span>
+                </p>
+                <p class="ListParagraph_1" style="font-size: 12pt;"> <span class="span_1">Service fees created using Sabre Merchant Services now import as a Service Fee rather than a Miscellaneous reservation in ClientBase when using "FEE" as the charge descriptor code in your accounting line.&#160; The charge descriptor code can be updated in your Merchant Profile settings. ARC/BSP service fees import as they always have.</span></p>
                 <blockquote>
                     <ul>
                         <li>For Service Fee and Other bookings, the&#160;type field indicators PER, ALL, and ONE are now read and calculated accordingly:</li>
@@ -315,12 +331,12 @@
             </blockquote>
             <p>&#160;</p>
             <blockquote>
-                <p class="ListParagraph_2"><span class="span_2" style="font-weight: bold;">MCO:</span><span class="span_1"> For miscellaneous charge order segments pricing and commission will be read if associated with an accounting line.&#160; When using MCO segments to identify airline service fees, these will be imported as one Miscellaneous reservation with no pricing for the actual MCO segment and a separate reservation with pricing and commission for each automated Service Fee accounting line present in the PNR. </span>
+                <p><span class="span_2" style="font-weight: bold;">MCO:</span><span class="span_1" style="font-size: 12pt;"> For miscellaneous charge order segments pricing and commission will be read if associated with an accounting line.&#160; When using MCO segments to identify airline service fees, these will be imported as one Miscellaneous reservation with no pricing for the actual MCO segment and a separate reservation with pricing and commission for each automated Service Fee accounting line present in the PNR. </span>
                 </p>
             </blockquote>
             <p>&#160;</p>
             <blockquote>
-                <p class="ListParagraph_9" style="font-style: normal;font-weight: bold;">Air: </p>
+                <p style="font-weight: bold;">Air: </p>
             </blockquote>
             <blockquote>
                 <ul>
@@ -372,8 +388,9 @@
                     </li>
                 </ul>
             </blockquote>
+            <p>&#160;</p>
             <blockquote>
-                <p class="ListParagraph_3" style="font-weight: bold;">General: </p>
+                <p style="font-weight: bold;">General: </p>
                 <ul>
                     <li>Segment-associated remarks (those beginning with 5.S) now import into the ClientBase Service Provider level Itin/Invoice Remarks.</li>
                 </ul>

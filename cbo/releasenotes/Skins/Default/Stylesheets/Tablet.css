@@ -73,14 +73,8 @@
 		display: block;
 		height: 60px;
 		text-align: center;
-		background: #e50000 none;
-		background: -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-		background: -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: linear-gradient(top, #e50000 0%,#e50000 100%);
-		-pie-background: linear-gradient(#e50000, #e50000);
+		background: #ac0000 none;
+		-pie-background: #ac0000;
 	}
 
 	#responsiveHeader > a.homeLink
@@ -93,14 +87,8 @@
 		margin: auto;
 		height: 100%;
 		width: 128px;
-		background: #e50000 url('Images/sabre_home_white-.png') no-repeat center center;
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, linear-gradient(top, #e50000 0%,#e50000 100%);
-		-pie-background: url('Skins/Default/Stylesheets/Images/sabre_home_white-.png') no-repeat center center, linear-gradient(#e50000, #e50000);
+		background: transparent url('Images/sabre_home_white.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
 	}
 
 	#responsiveHeader .logo > img
@@ -145,8 +133,7 @@
 	{
 		width: 100%;
 		background-repeat: no-repeat;
-		background: #f7f7f7 none;
-		-pie-background: #f7f7f7;
+		background-color: #f7f7f7;
 	}
 
 	#contentBodyInner
@@ -170,7 +157,7 @@
 	{
 		background-position: center center;
 		background-repeat: no-repeat;
-		background: #ececec none;
+		background: #ececec;
 		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
@@ -344,8 +331,7 @@
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	.tabs-panel-search
@@ -786,49 +772,38 @@
 
 	body
 	{
-		background: #e50000 none;
-		background: -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-		background: -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: linear-gradient(top, #e50000 0%,#e50000 100%);
-		-pie-background: linear-gradient(#e50000, #e50000);
+		background: #ac0000 none;
+		-pie-background: #ac0000;
 	}
 
 	#navigation[role="complementary"]
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#browseSequences.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#community.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#glossary.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#index.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#index .tree-node.tree-node-expanded > div
@@ -867,15 +842,13 @@
 	#search.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#toc.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	.tree-node.tree-node-collapsed > div
@@ -1141,7 +1114,7 @@
 	.button.current-topic-index-button
 	{
 		background-repeat: no-repeat;
-		background: #ececec none;
+		background: #ececec;
 		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);

@@ -92,14 +92,8 @@ body
 	font-size: 12px;
 	font-weight: normal;
 	font-style: normal;
-	background: #e50000 none;
-	background: -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-	background: -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: linear-gradient(top, #e50000 0%,#e50000 100%);
-	-pie-background: linear-gradient(#e50000, #e50000);
+	background: #ac0000 none;
+	-pie-background: #ac0000;
 }
 
 #header
@@ -119,14 +113,8 @@ body
 	top: 50%;
 	margin-left: 20px;
 	display: block;
-	background: #e50000 url('Images/sabre_home_white-.png') no-repeat center center;
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, linear-gradient(top, #e50000 0%,#e50000 100%);
-	-pie-background: url('Skins/Default/Stylesheets/Images/sabre_home_white-.png') no-repeat center center, linear-gradient(#e50000, #e50000);
+	background: transparent url('Images/sabre_home_white.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
 	width: 128px;
 	height: 30px;
 	margin-top: -15px;
@@ -983,9 +971,7 @@ ul.tree
 	right: 5px;
 	bottom: 0;
 	left: 5px;
-	background-repeat: no-repeat;
-	background: #f7f7f7 none;
-	-pie-background: #f7f7f7;
+	background-color: #f7f7f7;
 }
 
 html.left-layout.no-tabs #contentBody,
@@ -1078,13 +1064,13 @@ iframe.content
 	position: relative;
 	float: left;
 	display: block;
-	border-left: solid 1px #363636;
-	border-right: solid 1px #363636;
-	border-top: solid 1px #363636;
-	border-bottom: solid 1px #363636;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-left: solid 1px #333333;
+	border-right: solid 1px #333333;
+	border-top: solid 1px #333333;
+	border-bottom: solid 1px #333333;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 15px;
 	margin-top: 14px;
 }
@@ -1205,28 +1191,20 @@ iframe.content
 	left: 7px;
 	padding: 8px 7px 0 7px;
 	overflow: auto;
-	background-repeat: repeat;
 	padding-left: 7px;
 	padding-right: 7px;
 	padding-top: 8px;
 	border-left: solid 1px #e1e1e1;
 	border-right: solid 1px #e1e1e1;
 	border-top: solid 1px #e1e1e1;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 #responsiveHeader
 {
 	display: none;
-	background: #e50000 none;
-	background: -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-	background: -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: linear-gradient(top, #e50000 0%,#e50000 100%);
-	-pie-background: linear-gradient(#e50000, #e50000);
+	background: #ac0000 none;
+	-pie-background: #ac0000;
 }
 
 #responsiveHeader .logo
@@ -1234,14 +1212,8 @@ iframe.content
 	height: 100%;
 	display: block;
 	width: 128px;
-	background: #e50000 url('Images/sabre_home_white-.png') no-repeat center center;
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-	background: url('Images/sabre_home_white-.png') no-repeat center center, linear-gradient(top, #e50000 0%,#e50000 100%);
-	-pie-background: url('Skins/Default/Stylesheets/Images/sabre_home_white-.png') no-repeat center center, linear-gradient(#e50000, #e50000);
+	background: transparent url('Images/sabre_home_white.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
 }
 
 #responsiveHeader .logo > img
@@ -1419,8 +1391,8 @@ iframe.content
 	box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border-left: solid 1px #363636;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
@@ -1912,7 +1884,6 @@ a.activityText
 .MCWebHelpFramesetLink a
 {
 	color: #0000ee;
-	font-size: 12px;
 }
 
 .MCWebHelpFramesetLink .MCWebHelpFramesetLinkBottom a
@@ -1927,37 +1898,27 @@ a.activityText
 
 #navigation[role="complementary"]
 {
-	background-repeat: repeat;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 #browseSequences.tabs-panel-content
 {
-	background-repeat: repeat;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 #community.tabs-panel-content
 {
-	background-repeat: repeat;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 #glossary.tabs-panel-content
 {
-	background-repeat: repeat;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 #index.tabs-panel-content
 {
-	background-repeat: repeat;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 .web #index .tree-node.tree-node-expanded > div:hover
@@ -2022,16 +1983,12 @@ a.activityText
 
 #search.tabs-panel-content
 {
-	background-repeat: repeat;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 #toc.tabs-panel-content
 {
-	background-repeat: repeat;
-	background: #ffffff none;
-	-pie-background: #ffffff;
+	background-color: #ffffff;
 }
 
 .web .tree-node.tree-node-collapsed > div:hover
@@ -2371,12 +2328,12 @@ a.activityText
 #search-field
 {
 	height: 28px;
-	border-top-left-radius: 15px;
+	border-top-left-radius: 50px;
 	border-bottom-left-radius: 15px;
-	color: #DADADA;
+	color: #333333;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
-	background: #ffffff;
+	background: #6F6F6F;
 	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
 	background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
@@ -2418,22 +2375,22 @@ a.activityText
 
 #search-field::-webkit-input-placeholder
 {
-	color: #DADADA;
+	color: #333333;
 }
 
 #search-field::-moz-placeholder
 {
-	color: #DADADA;
+	color: #333333;
 }
 
 #search-field:-moz-placeholder
 {
-	color: #DADADA;
+	color: #333333;
 }
 
 #search-field:-ms-input-placeholder
 {
-	color: #DADADA;
+	color: #333333;
 }
 
 .micro-content-container > .micro-content > .micro-response-title a:visited
