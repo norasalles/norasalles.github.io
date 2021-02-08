@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="site_admin_help.xml" data-mc-path-to-help-system="../" data-mc-live-help="GXI9tlqs/bPxP+6paNh81lgW7uyNvX1ZRJJtIgh4PoEYnb6VjxeDPze2GcGBiT89Iko1OgMuinBQWkoNs2tTIgSJgCRBjKsLaBZNj/jjcdxRfMyGsAEOSmD4hZH8KT3zGK7smYIKLfA6MLZqzr6Kht3O7DGrET5723uBNpuW8Y+bqTiF7RykbTHv4fRMzC6D5jR94IqkMtJYObep5mvkvfYVVRIcXBA/mtTF0Q73j2pp8qkp97C+bPZP3nvWV8q7a5NLLBfFuSOnow/ax90KWMVK+l8tgkkLkYmZKO7gTsNhez/yiFRHYNEVeAUg41JjEThXs5ob0JX9LJR6I+H90E2NU/HFVAt3YBXCrqWHjTV2++HWG601Ip/NYbFNBU3JlvTFE3+C2gESXaESpFwTEV270Jj0VeREIEAoJc1c0VjCPj2ho8VHeY0tDsjeG4MSmh50YEuzcrOGGHGpdpxl28c09FIshA8Xz8CUpmfKeiAtckApuUTINAiZb8lNUzetFYdJnYKl3XH7fV6i7FB+qqqb12qaAWc5yEFeWLf0EOGOw0DnJnsZLr9MAwzLTrImXMvMBWdMLUyD9k693cqRoO9gh9XlK3mXM8YCVNYSbPBZ2L8NPZA14UpLOsDJ0e8fyY61b9IJFZ+g1QA+BoskqIh8a64pqtlvvnT9m7f3k1dp+k8RlZKy7Jo9Ry/M1ehHPATiyh2UU5JJWqguxcuUimhp9dG26S3XYIO7ZiDlNkgcts+gYWMnDAamfTUIuac75EibvNpJbu2BbkqhOaby7P82V3fz6AwknZTNi82xSdncjD5dDCytPlD/QWw+iW6VibRh4expP/Ll59hvXiYPKzvnlumxpPBrTEzealxTHAuUm8AVnoIyEhodRjAmKnKLubLOJrGQ366HGs2J6lLAOcv95/d6oBQRyE3rgsn7TvaG+hQMXPfc5y1DG8kCt1c0K8d/y8QWOXZ8tXmBw8MSSlr7QzjTyb7OH0n4dCvctBlPUlOfXSmpTDF1RycjKAzs" data-mc-conditions="Primary.SiteAdmin" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Messaging">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Dynamic Text Editor</title>
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../resources/tablestyles/normal_table.css" rel="stylesheet" />
+        <link href="../resources/stylesheets/styles.css" rel="stylesheet" />
+        <script src="../resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../resources/Scripts/require.min.js">
+        </script>
+        <script src="../resources/Scripts/require.config.js">
+        </script>
+        <script src="../resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../site_admin_help.htm#announcements/dynamic_text_editor.htm">Show the table of contents, index, and glossary tabs and the Search box</a>
+        </p>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <h1><a name="kanchor248"></a>Dynamic Text Editor</h1>
+        <p><a name="kanchor249"></a><a name="kanchor250"></a><a name="kanchor251"></a><a name="kanchor252"></a><a name="kanchor253"></a><a name="kanchor254"></a>Customized dynamic messages with the use of Velocity language are created in Site Administration.</p>
+        <p>Best practice is to create and format the message in the HTML Editor used for static messages, and then to cut it from the HTML&#160;Editor and paste it into the Dynamic Message box. All HTML statements must begin with <b>&lt;p&gt;</b> and end with <b>&lt;/p&gt;</b>. </p>
+        <p>After you paste it into the Dynamic Message box, you can add the Velocity items in the Dynamic Message box.</p>
+        <p class="Caution" data-mc-autonum="&lt;b&gt;Caution&lt;/b&gt; &#160;"><span class="autonumber"><span><b>Caution</b> &#160;</span></span>While you can put Velocity statements, variables, references, or other items specific to Velocity into the HTML Editor, they must be moved to the Dynamic Message box. If they are left in the HTML Editor and then saved to the static Message box, the Velocity items appear as plain text.</p>
+        <p style="margin-top: 1.75em;margin-bottom: -0.2em;">For more information, click one of the following:</p>
+        <p class="ProcedureHead"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="SettingAVariable"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Setting a Variable</a>
+        </p>
+        <div style="display: none;" data-mc-target-name="SettingAVariable">
+            <p>VTL statements always begin with the <b>#</b> sign and are followed by the directive <b>set</b>.</p>
+            <p><b>Example:</b>
+            </p>
+            <div class="Div_Screen_Capture">
+                <p class="GreenScreen">#set</p>
+            </div>
+            <p>Velocity searches to find all <b>#</b> characters in which to start the creation of a VTL statement for display on the page. </p>
+            <p>Information following <b>set</b>, and enclosed in brackets ( ) are expressions, which are equations assigning some type of value to information that is not consistent, known as a variable. </p>
+            <p>Variables are listed at the start of the VTL statement and are designated as such with a <b>$</b> sign, followed by the information to be captured. The value in quotations  <b>" "</b> which follows a variable (s) is referred to as a directive, and as mentioned before, is used to do something. The variable and value must be separated by the equal <b>=</b> sign.</p>
+            <p><b>Example:</b>
+            </p>
+            <div class="Div_Screen_Capture">
+                <p class="GreenScreen">#set ($a = “GetThere”) &lt;p&gt;Thank you for booking with $a. &lt;/p&gt;</p>
+            </div>
+            <p>In the above example, a variable and its value have been established. The template example above outputs “GetThere” any time there is ‘$a’ in the message.</p>
+            <p>A variable always leads with the <b>$</b> symbol followed by the VTL Identifier. All alphabetic characters whether lower or upper case may be used as such. Other permitted characters accepted in these statements are as follows:</p>
+            <ul>
+                <li class="Bullet1" value="1">Numeric (0-9)</li>
+                <li class="Bullet1" value="2">Hyphen (-)</li>
+                <li class="Bullet1" value="3">Underscore (_)</li>
+            </ul>
+        </div>
+        <p class="ProcedureHead"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Conditionals"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Conditionals</a>
+        </p>
+        <div style="display: none;" data-mc-target-name="Conditionals">
+            <p><u><b>If / ElseIf / Else</b></u>
+            </p>
+            <p>The <b>#if</b> directive captures true statements and allows messages to be included when, for example, a Hotel Search is conducted and the established condition is met.</p>
+            <p><b>Example:</b>
+            </p>
+            <div class="Div_Screen_Capture">
+                <p class="GreenScreen">#if($globals.hotelCity=="LAX")</p>
+                <p class="GreenScreen">&lt;p&gt;Airport Hotels within 10 miles of the airport must be booked, no exceptions!&lt;/p&gt; #elseif($globals.hotelCity=="SAN")</p>
+                <p class="GreenScreen">&lt;p&gt;The La Jolla Inn should be booked and a rental car is permitted.&lt;/p&gt;</p>
+                <p class="GreenScreen">#else</p>
+                <p class="GreenScreen">&lt;p&gt;All hotels require prior authorizations, except for SAN and LAX.&lt;/p&gt;</p>
+                <p class="GreenScreen">#end</p>
+            </div>
+            <p>In this example, a condition has been set for LAX and another for SAN, while all other Hotel Search page results produce another message as defined in the above expression.</p>
+            <p>Once a VTL statement has been created, the user is permitted to modify the displayable text in the HTML Editor.</p>
+            <p><u><b>Or</b></u>
+            </p>
+            <p>When a message is to be displayed for two separate cities such as LGA or JFK, an or || condition is used.</p>
+            <p><b>Example:</b>
+            </p>
+            <div class="Div_Screen_Capture">
+                <p class="GreenScreen">#if($globals.hotelCity=="LGA" || $globals.hotelCity=="JFK")</p>
+                <p class="GreenScreen">&lt;p&gt;New York Hotels should be booked by the agency hotel desk 1-800-555-5555.&lt;/p&gt;</p>
+                <p class="GreenScreen">#end</p>
+            </div>
+            <p><u><b>And</b></u>
+            </p>
+            <p>May be used to compare data, calling for each statement to be addressed and then compared for action.</p>
+            <div class="Div_Screen_Capture">
+                <p class="GreenScreen">#if($globals.hotelCity=="DFW" &amp;&amp; $globals.hotelVendorExist("HI")</p>
+                <p class="GreenScreen">&lt;p&gt;DFW Holiday Inns offer Free WiFi and complimentary breakfast&lt;/p&gt;</p>
+                <p class="GreenScreen">#end</p>
+            </div>
+        </div>
+        <p class="ProcedureHead"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="GlobalVariablesandMethods"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Global Variables and Methods</a>
+        </p>
+        <p style="display: none;" data-mc-target-name="GlobalVariablesandMethods">For more information on variables and methods available globally and on each page, see the Velocity Student Guide.</p>
+        <p class="ProcedureHead"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="ChangingMessageBasedOnScreenSize"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Changing Message Content Based on Screen Size</a>
+        </p>
+        <div style="display: none;" data-mc-target-name="ChangingMessageBasedOnScreenSize">
+            <p>You can now use special tags to designate portions of a message which should be suppressed on a given device, based on the screen size of that device. This allows you to show a different message based on the screen size. Three divisions of screen size are supported:</p>
+            <ul>
+                <li class="Bullet1" value="1">Small (sm) – mobile devices (smartphones) &lt; 768 pixels wide</li>
+                <li class="Bullet1" value="2">Medium (md) – tablets between 768 and 991 pixels wide</li>
+                <li class="Bullet1" value="3">Large (lg) – laptop/desktop computers &gt; 991 pixels wide</li>
+            </ul>
+            <p>The special tags are &lt;div&gt; statements that reference CSS class names and “wrap around” message sections. Eight classes are provided:</p>
+            <ul>
+                <li class="Bullet1" value="1">msg-hide-sm-down – hide when device is &lt; 768 pixels wide</li>
+                <li class="Bullet1" value="2">msg-hide-md-down – hide when device is &lt; 992 pixels wide</li>
+                <li class="Bullet1" value="3">msg-hide-md-up – hide when device is &gt; 991 pixels wide</li>
+                <li class="Bullet1" value="4">msg-hide-lg-up – hide when device is &gt; 767 pixels wide</li>
+                <li class="Bullet1" value="5">msg-show-md-up – show when device is &gt; 767 pixels wide</li>
+                <li class="Bullet1" value="6">msg-show-lg-up – show when device is &gt; 991 pixels wide</li>
+                <li class="Bullet1" value="7">msg-show-md-down – show when device is &lt; 992 pixels wide</li>
+                <li class="Bullet1" value="8">msg-show-sm-down – show when device is &lt; 768 pixels wide</li>
+            </ul>
+            <p>These &lt;div&gt; tags can be used in standard messages using the HTML option or added to dynamic messages. When used, each class performs the following action:</p>
+            <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../resources/tablestyles/normal_table.css');" class="TableStyle-Normal_Table" cellspacing="0">
+                <col class="TableStyle-Normal_Table-Column-Column1" />
+                <col class="TableStyle-Normal_Table-Column-Column1" />
+                <col class="TableStyle-Normal_Table-Column-Column1" />
+                <col class="TableStyle-Normal_Table-Column-Column1" />
+                <col class="TableStyle-Normal_Table-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-Normal_Table-Head-Header1">
+                        <th class="TableStyle-Normal_Table-HeadE-Column1-Header1">
+                            <p class="TableTitle">Class names when hiding for a screen size</p>
+                        </th>
+                        <th class="TableStyle-Normal_Table-HeadE-Column1-Header1">
+                            <p class="TableTitle">Class names when showing for a screen size</p>
+                        </th>
+                        <th class="TableStyle-Normal_Table-HeadE-Column1-Header1">
+                            <p class="TableTitle">Small (Mobile)
+  &lt; 768 px</p>
+                        </th>
+                        <th class="TableStyle-Normal_Table-HeadE-Column1-Header1">
+                            <p class="TableTitle">Medium (Tablet)
+  768 px – 991 px</p>
+                        </th>
+                        <th class="TableStyle-Normal_Table-HeadD-Column1-Header1">
+                            <p class="TableTitle">Large (Desktop)
+  &gt; 991 px</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Normal_Table-Body-Body1">
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableTitle">msg-hide-sm-down</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableTitle">msg-show-md-up</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Hidden</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Visible</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                            <p class="TableText">Visible</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Normal_Table-Body-Body1">
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableTitle">msg-hide-md-down</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableTitle">msg-show-lg-up</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Hidden</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Hidden</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                            <p class="TableText">Visible</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Normal_Table-Body-Body1">
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableTitle">msg-hide-lg-up</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableTitle">msg-show-md-down</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Visible</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyE-Column1-Body1">
+                            <p class="TableText">Visible</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyD-Column1-Body1">
+                            <p class="TableText">Hidden</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Normal_Table-Body-Body1">
+                        <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                            <p class="TableTitle">msg-hide-md-up</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                            <p class="TableTitle">msg-show-sm-down</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                            <p class="TableText">Visible</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyB-Column1-Body1">
+                            <p class="TableText">Hidden</p>
+                        </td>
+                        <td class="TableStyle-Normal_Table-BodyA-Column1-Body1">
+                            <p class="TableText">Hidden</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The format of the entire special tag including message text is:</p>
+            <p>&lt;div class="<span style="color: #e50000; font-style: italic;">class-name-goes-here</span>"&gt; message text &lt;/div&gt;</p>
+            <p>The following are examples:</p>
+            <p>&lt;div class="msg-hide-sm-down"&gt; This message is hidden on small mobile devices (smartphones), but will display on tablets or laptops/desktops. &lt;/div&gt;</p>
+            <p>&lt;div class="msg-hide-md-down"&gt; This message is hidden on small mobile devices (smartphones) and tablets, but will display on laptops/desktops. &lt;/div&gt;</p>
+            <p>&lt;div class="msg-hide-lg-up"&gt; This message is hidden on laptops/desktops but will display on tablets and small mobile devices (smartphones). &lt;/div&gt;</p>
+            <p>&lt;div class="msg-hide-md-up"&gt; This message is hidden on tablets and laptops/desktops, but will display on small mobile devices (smartphones). &lt;/div&gt;</p>
+            <p class="NoteS" data-mc-autonum="&lt;b&gt;Notes&lt;/b&gt; &#160;"><span class="autonumber"><span><b>Notes</b> &#160;</span></span>&#160;</p>
+            <ul>
+                <li class="Bullet1" value="1">If you hide all the content of message for a display size, an empty modal or alert pop-up box appears.</li>
+                <li class="Bullet1" value="2">These tags can only be used in the <b>Detail Message</b> section of carousel messages, not in the <b>Summary Message</b> section. Also, with carousel messages some portion of the message should be configured to display for each of the three sizes. Otherwise the carousel displays an empty message.</li>
+                <li class="Bullet1" value="3">This feature is not available on the old Trip review and checkout page.</li>
+            </ul>
+            <p class="Image">
+                <img src="../resources/images/messages_based_on_screen_size_503x447.png" style="width: 503;height: 447;" />
+            </p>
+        </div>
+        <table style="width: 100%;border-spacing: 0px;border-spacing: 0px;" cellspacing="0" width="100%">
+            <col style="width: 100%;" />
+            <tr valign="top">
+                <td style="width: 100%;padding-right: 10px;padding-left: 10px;border-left-style: None;border-top-style: None;border-right-style: None;border-bottom-style: None;background-color: #fff6c6;" bgcolor="#FFF6C6" width="100%">
+                    <p><b>See also:</b>
+                    </p>
+                    <p><a href="login_page_announcements.htm">Log In Page Announcements</a>
+                    </p>
+                    <p><a href="home_page_announcements.htm">Home Page Announcements</a>
+                    </p>
+                    <p><a href="air_announcements.htm">Air Announcements</a>
+                    </p>
+                    <p><a href="car_announcements.htm">Car Announcements</a>
+                    </p>
+                    <p><a href="hotel_announcements.htm">Hotel Announcements</a>
+                    </p>
+                    <p><a href="rail_announcement.htm">Rail Announcement</a>
+                    </p>
+                    <p><a href="please_wait_messages.htm">Please Wait Messages</a>
+                    </p>
+                    <p><a href="checkout_announcements.htm">Checkout Announcements</a>
+                    </p>
+                    <p><a href="trips_page_announcements.htm">Trips Page Announcements</a>
+                    </p>
+                    <p><a href="travel_arranger_message.htm">Travel Arranger  Message</a>
+                    </p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <div style="width: 100%;position: relative;">
+            <hr />
+            <table style="width: 100%;border-spacing: 0px;border-spacing: 0px;margin-left: auto;margin-right: 0;" cellspacing="0" width="100%">
+                <col style="width: 95.873%;" />
+                <tr style="height: 66px;" valign="top">
+                    <td style="width: 95.873%;padding-right: 10px;padding-left: 10px;border-right-style: none;border-left-style: none;border-top-style: none;border-bottom-style: none;" width="95.873%" class="Footer">
+                        <p class="copyrightfooter">© 1995-2016 GetThere  L.P. All Rights Reserved. </p>
+                        <p>&#160;</p>
+                        <p style="font-weight: bold;font-size: 11px;font-style: italic;">&#160;</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="feedback-comments-wrapper hidden">
+            <div class="comments-header">Comments on this Help topic</div>
+            <div class="comments">
+                <div class="comment mc-template"><span class="username"></span> <span class="timestamp"></span><div class="subject"></div><div class="body"></div><div class="buttons inline-buttons clearfix"><div class="button-group-container-right"><a href="#" class="reply-comment-button">Reply</a></div></div></div>
+            </div>
+            <div id="new-comment-form" class="comment-form-wrapper" data-comment-length-exceeded-message="The maximum comment length was exceeded by {n} characters.">
+                <input class="username-field" type="text" placeholder="Username" />
+                <input class="subject-field" type="text" placeholder="Subject" />
+                <div><textarea class="body-field" placeholder="Type your comment here."></textarea>
+                </div>
+                <input class="comment-submit" type="button" value="Submit" />
+            </div>
+        </div>
+    </body>
+</html>

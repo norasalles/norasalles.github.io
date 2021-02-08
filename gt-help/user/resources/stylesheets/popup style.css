@@ -1,0 +1,257 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+body
+{
+	color: #000000;
+	font-size: 70%;
+	font-family: Verdana, Arial, Helvetica, Sans Serif;
+	margin-left: 0em;
+	padding-left: 1.5em;
+	padding-right: 1em;
+	border-bottom-width: .5em;
+	border-left-width: .5em;
+	border-right-width: .5em;
+	border-top-width: .5em;
+	background-color: #f1f2ec;
+	background-image: url('../images/body-accent-mask.png');
+	background-repeat: no-repeat;
+}
+
+h1
+{
+	margin-bottom: .5em;
+	clear: both;
+	width: 85%;
+	color: #e50000;
+	font: Arial;
+	font-weight: bolder;
+	border-bottom-color: #333333;
+	border-bottom: solid 0px;
+	font-size: 20px;
+}
+
+h2
+{
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+	clear: both;
+	font: Arial;
+	color: #e50000;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+h3
+{
+	color: #002b00;
+	font-size: 100%;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	clear: both;
+}
+
+h4
+{
+	color: #002b00;
+	font-size: 100%;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	clear: both;
+}
+
+p
+{
+	margin-bottom: .5em;
+	margin-top: .5em;
+	color: #333333;
+	font-size: 12px;
+	font: Arial;
+}
+
+li
+{
+	margin-bottom: .6em;
+	margin-top: .6em;
+	border-bottom: solid 1px;
+	border: solid 0px;
+	border-color: #e50000;
+	color: #333333;
+	font-size: 12px;
+	font: Arial;
+}
+
+p.tip
+{
+	color: #BEF5BF;
+	font-weight: bold;
+	letter-spacing: normal;
+	background-color: #696969;
+	margin-left: .1em;
+	margin-top: 1.7em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	padding-bottom: 0.3em;
+	padding-top: 0.3em;
+	border-bottom-color: #000000;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	border-top-color: #000000;
+	border-top-style: Solid;
+	border-top-width: 1px;
+	font-size: 1em;
+	margin-bottom: 1.12em;
+}
+
+td
+{
+	margin-left: 0em;
+	font: Arial;
+	text-align: left;
+	font-size: 12pt;
+	font-family: sans-serif;
+	color: #333333;
+	padding-left: 1.5em;
+	padding-right: 1em;
+	border-left-width: .5em;
+	border-right-width: .5em;
+	border-top-width: .5em;
+	border-bottom-width: .5em;
+}
+
+img
+{
+	border: none;
+	padding-bottom: -0.5em;
+}
+
+@media print
+{
+	body
+	{
+		background-color: #ffffff;
+	}
+}
+
+p.copyrightfooter
+{
+	color: #808080;
+	font-size: 8pt;
+	text-align: center;
+}
+
+span.MadCap1
+{
+	font-style: italic;
+}
+
+hr
+{
+	border-bottom-width: 2px;
+	border-bottom-color: #333333;
+	border: inset 1px;
+}
+
+ul
+{
+	color: #e50000;
+	font-size: 12pt;
+	font: Arial;
+}
+
+ol
+{
+	color: #333333;
+	font: Arial;
+	font-size: 12pt;
+}
+
+ol.Blacklist
+{
+	color: #000000;
+	font: Verdana;
+}
+
+tr
+{
+	color: #333333;
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+h5
+{
+	font-size: 12pt;
+	color: #e50000;
+}
+
+a.Popup
+{
+	font-style: normal;
+	font: Ariel;
+	font-size: 12px;
+}
+
+li.unique_bullet
+{
+	background-repeat: no-repeat;
+	background-image: none;
+}
+
+td.Footer
+{
+	color: #333333;
+}
+
+td.Homepage
+{
+	color: #ffffff;
+	background-color: #e50000;
+}
+
+MadCap|toggler
+{
+	font: Arial;
+	font-size: 14px;
+	border: none;
+	border-bottom: none;
+}
+
+hr.Lightruler
+{
+	border: inset 0px;
+}
+
+table.Table_home
+{
+	
+}
+
+a:link
+{
+	color: #0000D0;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #800080;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #FF0000;
+	cursor: hand;
+	text-decoration: underline;
+}
+
+a:active
+{
+	cursor: hand;
+	text-decoration: underline;
+	color: #008000;
+}
+

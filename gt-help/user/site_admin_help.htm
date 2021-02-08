@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="left-layout" data-mc-runtime-file-type="Default;TriPane">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" /><title>Site Administration Help</title>
+        <link rel="Stylesheet" href="Skins/Default/Stylesheets/TextEffects.css" />
+        <link rel="Stylesheet" href="Skins/Default/Stylesheets/Styles.css" />
+        <script type="text/javascript" src="resources/Scripts/custom.modernizr.js">
+        </script>
+        <script type="text/javascript" src="resources/Scripts/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="resources/Scripts/foundation.min.js">
+        </script>
+        <script type="text/javascript" src="resources/Scripts/plugins.min.js">
+        </script>
+        <script type="text/javascript" src="resources/Scripts/require.min.js">
+        </script>
+        <script type="text/javascript" src="resources/Scripts/require.config.js">
+        </script>
+        <script type="text/javascript" src="resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body class="off-canvas hide-extras">
+        <div id="DEBUG_Log">
+            <div class="MCDebugLogHeader">
+            Log Console</div>
+            <div class="MCDebugLogBody">
+            </div>
+            <div class="MCDebugLogFooter">
+            </div>
+        </div>
+        <div id="header" data-mc-style="Header"><a href="site_admin_help.htm"><h1 class="logo" data-mc-style="Logo"><img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" /></h1></a>
+            <div class="search-bar search-bar-container needs-pie" data-mc-style="Search Bar">
+                <input id="search-field" class="search-field needs-pie" type="text" placeholder="Search ..." data-mc-style="Search Input" />
+                <div class="search-filter-wrapper">
+                    <div class="search-filter" data-mc-style="Search Filter"><span>All Files</span>
+                        <div class="search-filter-content" data-mc-style="Search Filter Drop-down">
+                            <ul>
+                                <li>All Files</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-submit-wrapper" dir="ltr" data-mc-style="Search Submit Button">
+                    <div class="search-submit" title="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="navigationResizeBar">
+            <div id="show-hide-navigation" class="needs-pie" dir="ltr" data-mc-style="Navigation Panel Hide Arrow">
+            </div>
+        </div>
+        <div id="body" data-mc-style="Main Page">
+            <div id="navigation" role="complementary">
+                <div id="home" class=" image-then-text tab-icon" data-mc-style="Home Button"><span id="home-icon" class="tabs-nav-icon"></span><span id="home-text" class="tabs-nav-text">Home</span>
+                </div>
+                <div class="tabs">
+                    <div class="tab">
+                        <ul class="tabs-nav clearfix image-then-text tab-icon">
+                            <li id="TocTab" class="needs-pie tabs-nav-active" data-mc-style="Navigation Tab.TOC">
+                                <div><span class="tabs-nav-icon active" title="Contents"></span><span class="tabs-nav-text">Contents</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="tabs-panel tabs-panel-active">
+                            <div id="toc" class="tabs-panel-content needs-pie" data-mc-style="Navigation Panel.TOC">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <ul class="tabs-nav clearfix image-then-text tab-icon">
+                            <li id="IndexTab" class="needs-pie tabs-nav-inactive" data-mc-style="Navigation Tab.Index">
+                                <div><span class="tabs-nav-icon active" title="Index"></span><span class="tabs-nav-text">Index</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="tabs-panel">
+                            <input type="text" id="search-index" class="tabs-panel-search" placeholder="Search Index" />
+                            <div id="index" class="tabs-panel-content searchable needs-pie popup-container" data-see-prefix="See" data-see-also-prefix="See Also" data-mc-style="Navigation Panel.Index">
+                                <div class="index-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <ul class="tabs-nav clearfix image-then-text tab-icon">
+                        </ul>
+                        <div class="tabs-panel" data-mc-style="Glossary Tab">
+                            <input type="text" id="search-glossary" class="tabs-panel-search" placeholder="Search Glossary" />
+                            <div id="glossary" class="tabs-panel-content searchable needs-pie popup-container" data-mc-style="Navigation Panel.Glossary">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <ul class="tabs-nav clearfix image-then-text tab-icon">
+                        </ul>
+                        <div class="tabs-panel" data-mc-style="Browse Sequences">
+                            <div id="browseSequences" class="tabs-panel-content needs-pie" data-mc-style="Navigation Panel.Browse Sequences">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <ul class="tabs-nav clearfix image-then-text tab-icon">
+                        </ul>
+                        <div class="tabs-panel">
+                            <div id="community" class="tabs-panel-content needs-pie popup-container pulse-required" data-mc-style="Navigation Panel.Community"><iframe id="community-frame-html5" name="community-frame-html5" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <ul class="tabs-nav clearfix image-then-text tab-icon">
+                            <li id="SearchTab" class="needs-pie tabs-nav-inactive" data-mc-style="Navigation Tab.Search Filters">
+                                <div><span class="tabs-nav-icon active" title="Search Filters"></span><span class="tabs-nav-text">Search Filters</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="tabs-panel" data-mc-style="Search">
+                            <div id="search" class="tabs-panel-content needs-pie" data-mc-style="Navigation Panel.Search Filters">
+                                <ul class="tree">
+                                    <li class="SearchFilterEntry tree-node tree-node-leaf">
+                                        <div class="SearchFilter"><span class="label">All Files</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contentBody" class="needs-pie" data-mc-style="Topic Container">
+                <div id="responsiveHeader" class="needs-pie" data-mc-style="Header"><a href="site_admin_help.htm"><h1 class="logo" data-mc-style="Logo"><img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" /></h1></a>
+                    <div id="slideRight" class="toggle-topbar menu-icon"><a id="sidebarButton" href="#"><span></span></a>
+                    </div>
+                </div>
+                <div class="buttons toolbar-buttons">
+                    <div class="button-group-container-left">
+                        <button class="button needs-pie print-button" type="button" title="Print">
+                            <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                        </button>
+                        <div class="button-separator">
+                        </div>
+                        <div class="button-group star-buttons loading feedback-topic-required">
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state1-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state2-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating.">
+                                <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="topic rating" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state1-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state2-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating.">
+                                <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="topic rating" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state1-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state2-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating.">
+                                <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="topic rating" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state1-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state2-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating.">
+                                <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="topic rating" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state1-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating." data-state2-title="Click a star to rate this topic. Then enter &quot;Comments on this Help topic&quot; at the bottom of the topic to explain your rating.">
+                                <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="topic rating" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-group-container-right">
+                        <button class="button needs-pie back-button" type="button" onclick="history.back()" title="Back">
+                            <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="back" />
+                        </button>
+                        <button class="button needs-pie forward-button" type="button" onclick="history.forward()" title="Forward">
+                            <img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="forward" />
+                        </button>
+                    </div>
+                </div>
+                <div id="contentBodyInner">
+                    <!-- frameBorder="0" is for IE 8 and below --><iframe id="topic" class="content" name="topic" frameBorder="0"></iframe><iframe id="pulse" class="content" name="pulse" frameBorder="0"></iframe>
+                    <div id="searchPane">
+                        <h1 id="results-heading">Your search for <span class="query"></span> returned <span class="total-results"></span> results.</h1>
+                        <div id="pagination"><a class="previousPage">Previous</a><a class="nextPage">Next</a>
+                        </div>
+                        <p><span style="color: #e50000; font-weight: bold; font-size: 11pt;">If you did not find what you were searching for, please check for the following</span>:</p>
+                        <p style="font-size: 10pt;"><b>Did you use a natural language search?</b>
+                        </p>
+                        <p style="font-size: 10pt;">For example, did you search for something like "How do I save my trip as a template"? If so, the Help system searched for "How" and "do"&#160;and "I" and "save" and "my" and "flight" and "as" and "a" and "template". The system has to find all the words in a topic in any order before it displays the topic in the search results. Since all of those words do not appear in any topic, the search results show "0". Instead, you could search for "trip template" and you would find the information you are looking for.</p>
+                        <p style="font-size: 10pt;"><b>Did you search for a location, a hotel, a PNR, or other trip information?</b>
+                        </p>
+                        <p style="font-size: 10pt;">This Help only contains instructions for how to use the system. It does not contain information on specific flights, hotels, destinations, companies or businesses, or any other trip information.</p>
+                        <p style="font-size: 10pt;"><b>Did you check your spelling?</b>
+                        </p>
+                        <p style="font-size: 10pt;">A common reason for not finding anything is a simple misspelling.</p>
+                        <p style="font-size: 10pt;"><b>Are you looking for contact information?</b>
+                        </p>
+                        <p style="font-size: 10pt;">Support or help desk contacts or phone numbers are not stored in this Help system. This information is managed by your company or your travel management company. </p>
+                        <p style="font-size: 10pt;"><b>Are you looking for information on a specific error?</b>
+                        </p>
+                        <p style="font-size: 10pt;">Most error messages contain instructions for what to do about the problem. However, if you need additional help, please contact your corporate travel department. If you are not sure who to contact, you may find support contact information at the bottom of your travel booking site. This Help system does not contain specific error messages or troubleshooting information.</p>
+                        <p style="font-size: 10pt;"><b>Have you checked the comments in related Help topics?</b>
+                        </p>
+                        <p style="font-size: 10pt;">Most likely, you are not the first person to look for your question. Check the comments shown in any related Help topics.</p>
+                        <p style="font-size: 10pt;"><b>Are looking for instructions not related to anything mentioned previously, and still cannot find what you are looking for?</b>
+                        </p>
+                        <p style="font-size: 10pt;">Please use the feedback box at the bottom of any Help topic to let us know what you are looking for.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="resources/Scripts/jquery.offcanvas.js">
+        </script>
+        <script>
+        $(document).foundation();
+    </script>
+        <div class="login-dialog needs-pie">
+        <div class="login-dialog-header needs-pie">Create Profile</div>
+        <div class="login-dialog-content needs-pie"><div class="profile-item-wrapper clearfix">
+    <div class="label-wrapper">
+        <label>User Name *</label>
+    </div>
+    <div class="input-wrapper">
+        <input class="needs-pie" type="text" data-required="True" name="Username" />
+    </div>
+</div><div class="profile-item-wrapper clearfix">
+    <div class="label-wrapper">
+        <label>E-mail Address *</label>
+    </div>
+    <div class="input-wrapper">
+        <input class="needs-pie" type="text" data-required="True" name="EmailAddress" />
+    </div>
+</div>
+            <div class="profile-item-wrapper email-notifications-wrapper needs-pie">
+                <div class="label-wrapper">E-mail Notifications</div>
+                <div class="email-notifications-group needs-pie">I want to receive an e-mail when...<div>
+                        <label><input type="checkbox" name="CommentReplyNotification" />a reply is left to one of my comments.</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="CommentSameTopicNotification" />a comment is left on a topic that I commented on.</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="CommentSameHelpSystemNotification" />a comment is left on any topic in the Help system.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="login-dialog-buttons">
+                <button class="submit-button needs-pie" type="submit">Submit</button>
+                <button class="cancel-button needs-pie">Cancel</button>
+            </div>
+            <div class="status-message-box">
+                <span class="message verification-email-sent-message">An e-mail has been sent to verify your new profile.</span>
+                <span class="message required-fields-missing-message">Please complete all required fields before submitting your information.</span>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
