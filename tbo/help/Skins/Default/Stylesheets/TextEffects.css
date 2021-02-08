@@ -482,10 +482,10 @@ a.MCHelpControl
 	position: absolute;
 	z-index: 50;
 	color: #707070;
-	border-top: solid 4px transparent;
-	border-right: solid 4px transparent;
-	border-bottom: solid 4px transparent;
 	border-left: solid 4px transparent;
+	border-right: solid 4px transparent;
+	border-top: solid 4px transparent;
+	border-bottom: solid 4px transparent;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
@@ -591,10 +591,10 @@ a.MCHelpControl
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	border-top: solid 1px #e1e1e1;
-	border-right: solid 1px #e1e1e1;
-	border-bottom: solid 1px #e1e1e1;
 	border-left: solid 1px #e1e1e1;
+	border-right: solid 1px #e1e1e1;
+	border-top: solid 1px #e1e1e1;
+	border-bottom: solid 1px #e1e1e1;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -603,7 +603,7 @@ a.MCHelpControl
 	background-position: center center;
 	width: 22px;
 	height: 22px;
-	background: #ececec none;
+	background: #ececec;
 	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
@@ -672,7 +672,7 @@ a.MCHelpControl
 	padding-bottom: 0px;
 	background-repeat: no-repeat;
 	width: auto;
-	background: #ececec none;
+	background: #ececec;
 	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
@@ -847,10 +847,10 @@ a.MCHelpControl
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	border-top: none;
-	border-right: none;
-	border-bottom: none;
 	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
 	width: 16px;
 	background: transparent url('Images/star-full.png') no-repeat center center;
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/star-full.png') no-repeat center center;
@@ -862,10 +862,10 @@ a.MCHelpControl
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	border-top: none;
-	border-right: none;
-	border-bottom: none;
 	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
 	width: 16px;
 	background: transparent url('Images/star-empty.png') no-repeat center center;
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/star-empty.png') no-repeat center center;
@@ -1316,8 +1316,6 @@ button.mc-dropdown-item
 {
 	background-repeat: no-repeat;
 	font-weight: bold;
-	background: #ff0000 none;
-	-pie-background: #ff0000;
 }
 
 span.SearchHighlight.SearchHighlight1

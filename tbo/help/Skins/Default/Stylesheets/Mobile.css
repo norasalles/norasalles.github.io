@@ -11,7 +11,7 @@
 	{
 		background-position: center center;
 		background-repeat: no-repeat;
-		background: #ececec none;
+		background: #ececec;
 		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
@@ -199,8 +199,7 @@
 	.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#search-sidebar
@@ -236,14 +235,8 @@
 	#responsiveHeader .logo
 	{
 		width: 128px;
-		background: #e50000 url('Images/sabre_home_white-.png') no-repeat center center;
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: url('Images/sabre_home_white-.png') no-repeat center center, linear-gradient(top, #e50000 0%,#e50000 100%);
-		-pie-background: url('Skins/Default/Stylesheets/Images/sabre_home_white-.png') no-repeat center center, linear-gradient(#e50000, #e50000);
+		background: transparent url('Images/sabre_home_white.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
 	}
 
 	#responsiveHeader .logo > img
@@ -294,29 +287,18 @@
 
 	.central-dropdown
 	{
-		position: absolute;
-		top: 22px;
-		z-index: 1;
-		left: 50px;
+		
+	}
+
+	.central-dropdown .central-account-drop
+	{
+		
+	}
+
+	.central-account-wrapper
+	{
+		left: 60px;
 		right: auto;
-	}
-
-	.central-account-text
-	{
-		display: none;
-	}
-
-	.central-dropdown-content
-	{
-		left: -30px;
-		right: auto;
-		background-color: #ffffff;
-	}
-
-	.central-dropdown:after
-	{
-		margin-left: 5px;
-		margin-top: 0px;
 	}
 
 	.central-dropdown:hover
@@ -328,6 +310,11 @@
 	{
 		background: transparent url('Images/icon-user-light-gray.png') no-repeat center center;
 		-pie-background: transparent url('Skins/Default/Stylesheets/Images/icon-user-light-gray.png') no-repeat center center;
+	}
+
+	.central-dropdown-content
+	{
+		background-color: #ffffff;
 	}
 
 	.central-dropdown-content a
@@ -342,66 +329,49 @@
 
 	.central-separator
 	{
-		
+		background-color: #D5D8DA;
 	}
 
 	#responsiveHeader
 	{
-		background: #e50000 none;
-		background: -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-		background: -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: linear-gradient(top, #e50000 0%,#e50000 100%);
-		-pie-background: linear-gradient(#e50000, #e50000);
+		background: #ac0000 none;
+		-pie-background: #ac0000;
 	}
 
 	body
 	{
-		background: #e50000 none;
-		background: -moz-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e50000), color-stop(100%,#e50000));
-		background: -webkit-linear-gradient(top, #e50000 0%, #e50000 100%);
-		background: -o-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: -ms-linear-gradient(top, #e50000 0%,#e50000 100%);
-		background: linear-gradient(top, #e50000 0%,#e50000 100%);
-		-pie-background: linear-gradient(#e50000, #e50000);
+		background: #ac0000 none;
+		-pie-background: #ac0000;
 	}
 
 	#navigation[role="complementary"]
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#browseSequences.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#community.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#glossary.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#index.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#index .tree-node.tree-node-expanded > div
@@ -424,15 +394,13 @@
 	#search.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	#toc.tabs-panel-content
 	{
 		background-repeat: repeat;
-		background: #ffffff none;
-		-pie-background: #ffffff;
+		background-color: #ffffff;
 	}
 
 	.tree-node div .label
@@ -745,7 +713,7 @@
 	.button.current-topic-index-button
 	{
 		background-repeat: no-repeat;
-		background: #ececec none;
+		background: #ececec;
 		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
 		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
@@ -884,8 +852,7 @@
 	#contentBody
 	{
 		background-repeat: no-repeat;
-		background: #f7f7f7 none;
-		-pie-background: #f7f7f7;
+		background-color: #f7f7f7;
 	}
 }
 

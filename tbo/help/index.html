@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="defaultSkin left-layout _Skins_HTML5___Tripane" data-mc-runtime-file-type="Default;TriPane">
+<html class="defaultSkin left-layout _Skins_skin" data-mc-runtime-file-type="Default;TriPane">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Trams Back Office - Help Files</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>ClientBase Online - 4.09 - Help Files</title>
         <link rel="Stylesheet" href="Skins/Default/Stylesheets/Slideshow.css" />
         <link rel="Stylesheet" href="Skins/Default/Stylesheets/TextEffects.css" />
         <link rel="Stylesheet" href="Skins/Default/Stylesheets/Styles.css" />
@@ -39,9 +39,11 @@
         </div><a class="skip-to-content tripane-skip showOnFocus" href="#">Skip To Main Content</a>
         <div id="header"><a class="homeLink logo" href="index.html"><img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" /></a>
             <div class="search-account-container">
-                <div class="central-dropdown" style="display:none;" data-mc-style="Central Account Element"><a class="central-account-drop"><span class="central-account-image" data-mc-style="Central Account Link Image"></span><span class="central-account-text">Account</span></a>
-                    <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
-                        <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                <div class="central-account-wrapper">
+                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
+                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                        </div>
                     </div>
                 </div>
                 <div class="search-bar search-bar-container needs-pie">
@@ -165,9 +167,11 @@
             </div>
             <div id="contentBody" class="small-10 expand-for-small-10 columns non-collapsable needs-pie" role="main">
                 <div id="responsiveHeader" class="needs-pie"><a class="homeLink" href="index.html"><div class="logo"><img src="Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" /></div></a>
-                    <div class="central-dropdown" style="display:none;" data-mc-style="Central Account Element"><a class="central-account-drop"><span class="central-account-image" data-mc-style="Central Account Link Image"></span><span class="central-account-text">Account</span></a>
-                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
-                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                    <div class="central-account-wrapper">
+                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings" href="#">Settings</a>
+                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                            </div>
                         </div>
                     </div>
                     <div id="slideRight" class="toggle-topbar menu-icon">
@@ -179,6 +183,48 @@
                     <div class="button-group-container-left">
                         <button class="button needs-pie print-button" title="Print">
                             <img alt="Print" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                        </button>
+                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                            <img alt="Expand all" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                        </button>
+                        <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                            <img alt="Remove Highlights" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                        </button>
+                        <div class="button-separator">
+                        </div>
+                        <div class="button-group star-buttons loading feedback-topic-required">
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                <img alt="Click a star to rate this topic" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                <img alt="Click a star to rate this topic" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                <img alt="Click a star to rate this topic" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                <img alt="Click a star to rate this topic" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic" />
+                            </div>
+                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                <img alt="Click a star to rate this topic" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic" />
+                            </div>
+                        </div>
+                        <div class="button-separator feedback-topic-required">
+                        </div>
+                        <button class="button feedback-required login-button" id="normalLoginBtn" data-state1-class="login-button" data-state2-class="edit-user-profile-button" data-state2-title="Edit user profile" title="Login" data-state1-title="Login">
+                            <img alt="Login" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                        </button>
+                    </div>
+                    <div class="button-group-container-right">
+                        <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                            <img alt="Navigate previous" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                        </button>
+                        <div class="button current-topic-index-button disabled"><span class="sequence-index"></span> of <span class="sequence-total"></span></div>
+                        <button class="button needs-pie next-topic-button" title="Navigate next">
+                            <img alt="Navigate next" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                        </button>
+                        <button class="button needs-pie select-language-button" title="Change language">
+                            <img alt="Change language" src="Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
                         </button>
                     </div>
                 </div><span id="tripane-iframe-title" class="invisible-label" aria-hidden="true"></span>
@@ -197,7 +243,7 @@
             Create Profile
         </div>
             <div class="login-dialog-content needs-pie">
-                <div class="profile-item-wrapper clearfix" data-mc-style="Feedback User Profile Item Label">
+                <div class="profile-item-wrapper clearfix">
                     <div class="label-wrapper">
                         <label>Username *</label>
                     </div>
