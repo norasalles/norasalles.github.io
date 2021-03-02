@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated Target.fltar" Date="2021-02-08T16:57:45.5734369-03:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated Target.fltar" Date="2021-03-02T16:02:08.2226500-03:00">
     <Messages>Compiling target Target...
 Removing previously generated content...
 Loading skin info...
@@ -97,8 +97,8 @@ Generated Skins\Default\Stylesheets\TextEffects.micro-content.css
 Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated index.html
 Saving result set...
-Ignored Compiler Warnings: 1048
-Output generated in 54 second(s).
+Ignored Compiler Warnings: 1050
+Output generated in 1 minute(s) and 16 second(s).
 
 Done
 Saving log to "C:\Users\SG0222835\Sabre\Nora Salles - Resources\My Projects\TRAMS\TBO\help - Copy\Output\SG0222835\Target\Target.mclog"

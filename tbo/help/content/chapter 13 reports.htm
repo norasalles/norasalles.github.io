@@ -41,16 +41,18 @@
 /*]]>*/
 </script></head>
     <body>
-        <p style="text-align: right;">
-            <img src="resources/images/tramsbackoffice.png" class="img_header" />
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../index.html#chapter 13 reports.htm">Open topic with navigation</a>
         </p>
-        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="mc-variable Variables.Product variable">Trams Back Office</span> 4.10 Beta | <span class="mc-variable Variables.Type variable">New Features and Enhancements</span></p>
-        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="mc-variable Variables.NewDateTimeVariable variable">Feb, 2021</span> </p>
+        <p style="text-align: right;">
+            <img src="resources/images/tramsbackoffice.png" class="imgheader" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="mc-variable Variables.Product variable">Trams Back Office</span> 4.09 | <span class="mc-variable Variables.Type variable">New Features and Enhancements</span></p>
+        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="mc-variable Variables.NewDateTimeVariable variable">Mar, 2021</span> </p>
         <p>&#160;</p>
         <div role="main" id="mc-main-content">
             <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_11_Reports"></a>Chapter 11: Reports</span>
             </p>
-            <h1><a name="Reports" data-mc-generated-bookmark="TOC"></a><a name="kanchor248"></a><a name="kanchor124"></a>Reports</h1>
+            <h1><a name="Reports" data-mc-generated-bookmark="TOC"></a><a name="kanchor248"></a><a name="kanchor126"></a>Reports</h1>
             <p>This chapter contains:</p>
             <blockquote>
                 <ul style="list-style-type: square;">
@@ -196,205 +198,116 @@
             <p>&#160;</p>
             <h3><a name="Client_Balances" data-mc-generated-bookmark="TOC"></a><a name="Client_Balances" data-mc-generated-bookmark="TOC"></a>Client Balances</h3>
             <p>The Client Balance report is a complete listing of all <span class="span_3">pending</span> client balances. This includes all unpaid invoices (Accounts Receivable) as well as unapplied payments and vouchers (Gift certificates, overpayments, etc.).</p>
-            <ol start="1" class="ol_2">
-                <li class="ListParagraph" value="1">Click<span> Reports|Core|Client Balances</span>.</li>
+            <ol>
+                <li value="1">
+                    <p>Click<span> Reports|Core|Client Balances</span>.<br /><img src="resources/images/chapter 1 welcome/reports_1_403x227_402x226.png" style="width: 402;height: 226;" class="img_1" /></p>
+                </li>
+                <li value="2">
+                    <p>Select Settings.</p>
+                    <table class="TableStyle-table" style="mc-table-style: url('resources/tablestyles/table.css');" cellspacing="5">
+                        <col style="width: 50pt;" class="TableStyle-table-Column-Column1" />
+                        <col style="width: 420pt;" class="TableStyle-table-Column-Column1" />
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">As Of</p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">When an <span class="span_1">As Of</span> date is specified, the system provides client balances as of the specified date by backing out all entries before that date. (Double click on the field for a calendar menu.) If the <span class="span_1">As Of</span> date is left blank, the system generates a current listing of client balances including all invoices and payments entered regardless of date.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Format</p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5"><span class="span_1">Summary </span>lists Client Name, Invoices Total, Total Unapplied and Balance Due.<span class="span_1"> Detail </span>also lists each open invoice for each client including the Invoice #, Branch, Issue Date, Agent and Invoice Amount. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Branch </p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">Allows the report to be processed by branch or branches.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Aging</p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">Breaks down balances into these categories:30/60/90; 15/30/45; 7/14/21 days; and End-of-Month from the <span class="span_1">As Of </span>date entered. In Summary, the aged Client Balance Report correctly highlights in red any clients that are over their credit limit. <span>Note:</span> Use of <span class="span_1">End of Month Aging</span> field on Client Balance Report: If credit terms are given by the end of the month, there is flexible date system for aging the Client Balance Report when run in <span class="span_1">Summary</span>. </p>
+                                <p class="p_5">LT 30 Days.............31-61 Days.............62-89 Days...........Over 89 Days TO </p>
+                                <p class="p_5">Current Month. .....Current Month -1.....Current Month -2.......Current Month - 3 Plus</p>
+                                <p class="p_5">APR........................MAR......................FEB.....................JAN &amp; OLDER</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Sort By </p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">Determines the way the report is sorted when displayed or printed. The default is <span class="span_1">Client Name</span>. To track its clients by Client (or <span class="span_1">Interface/DK Number) ID</span>, use the drop-down menu to select Client ID. There is also an <span class="span_1">Agent</span> sort by, and a <span class="span_1">Credit Limit Proximity</span> which lists first clients who are closest to, or over their credit limit.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Output Format</p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">From the drop-down menu, select <span class="span_1">Report </span>or <span class="span_1">Mail Merge. </span>The mail merge format generates the report in a tab delimited mail merge format for use in third party software.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Client Name</p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">To run this report for just one client, type in a few letters of the client’s last name and choose name from the drop-down menu. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Client Group</p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">Select a client group that has been created in <span>Utilities|Setup|Groups</span> from the drop-down menu to create a report for a group of clients. </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-table-Body-Body1">
+                            <td class="TableStyle-table-BodyE-Column1-Body1">
+                                <p class="p_4">Branch Group</p>
+                            </td>
+                            <td class="TableStyle-table-BodyD-Column1-Body1">
+                                <p class="p_5">Select a branch group that has been created in <span>Utilities|Setup|Groups</span> from the drop-down menu to create a report for a group of branches. <br /></p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li value="3">
+                    <p>Click <span class="span_1">Preview</span> to view the report on the screen. (Or click <span class="span_1">Print</span> to send the report directly to the printer without viewing first.)</p>
+                </li>
             </ol>
-            <p class="ListParagraph">&#160;</p>
-            <p class="ListParagraph">
-                <img src="resources/images/chapter 1 welcome/reports_1_403x227.png" style="width: 403;height: 227;" class="img_1" />
-            </p>
-            <p class="ListParagraph">&#160;</p>
-            <ol start="2" class="ol_2">
-                <li class="ListParagraph" value="2">Select settings.</li>
-            </ol>
-            <table class="TableStyle-table" style="mc-table-style: url('resources/tablestyles/table.css');" cellspacing="5">
-                <col style="width: 50pt;" class="TableStyle-table-Column-Column1" />
-                <col style="width: 420pt;" class="TableStyle-table-Column-Column1" />
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">As Of</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">When an <span class="span_1">As Of</span> date is specified, the system provides client balances as of the specified date by backing out all entries before that date. (Double click on the field for a calendar menu.) If the <span class="span_1">As Of</span> date is left blank, the system generates a current listing of client balances including all invoices and payments entered regardless of date.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Format</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5"><span class="span_1">Summary </span>lists Client Name, Invoices Total, Total Unapplied and Balance Due.<span class="span_1"> Detail </span>also lists each open invoice for each client including the Invoice #, Branch, Issue Date, Agent and Invoice Amount. </p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Branch </p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Allows the report to be processed by branch or branches.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Aging</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Breaks down balances into these categories:30/60/90; 15/30/45; 7/14/21 days; and End-of-Month from the <span class="span_1">As Of </span>date entered. In Summary, the aged Client Balance Report correctly highlights in red any clients that are over their credit limit. <span>Note:</span> Use of <span class="span_1">End of Month Aging</span> field on Client Balance Report: If credit terms are given by the end of the month, there is flexible date system for aging the Client Balance Report when run in <span class="span_1">Summary</span>. </p>
-                        <p class="p_5">LT 30 Days.............31-61 Days.............62-89 Days...........Over 89 Days TO </p>
-                        <p class="p_5">Current Month. .....Current Month -1.....Current Month -2.......Current Month - 3 Plus</p>
-                        <p class="p_5">APR........................MAR......................FEB.....................JAN &amp; OLDER</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Sort By </p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Determines the way the report is sorted when displayed or printed. The default is <span class="span_1">Client Name</span>. To track its clients by Client (or <span class="span_1">Interface/DK Number) ID</span>, use the drop-down menu to select Client ID. There is also an <span class="span_1">Agent</span> sort by, and a <span class="span_1">Credit Limit Proximity</span> which lists first clients who are closest to, or over their credit limit.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Output Format</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">From the drop-down menu, select <span class="span_1">Report </span>or <span class="span_1">Mail Merge. </span>The mail merge format generates the report in a tab delimited mail merge format for use in third party software.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Client Name</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">To run this report for just one client, type in a few letters of the client’s last name and choose name from the drop-down menu. </p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Client Group</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Select a client group that has been created in <span>Utilities|Setup|Groups</span> from the drop-down menu to create a report for a group of clients. </p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Branch Group</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Select a branch group that has been created in <span>Utilities|Setup|Groups</span> from the drop-down menu to create a report for a group of branches. </p>
-                    </td>
-                </tr>
-            </table>
-            <p>3) Click <span class="span_1">Preview</span> to view the report on the screen. (Or click <span class="span_1">Print</span> to send the report directly to the printer without viewing first.)</p>
             <p><strong class="bold_ariel_2">Note:</strong> A positive balance due represents money the client owes the agency. A negative balance due represents money the agency owes to the client.</p>
-            <table class="table_1">
-                <col style="width: 468pt;" />
-                <tr>
-                    <td class="td_59">
+            <table class="TableStyle-table" style="mc-table-style: url('resources/tablestyles/table.css');" cellspacing="5">
+                <col style="width: 468pt;" class="TableStyle-table-Column-Column1" />
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyD-Column1-Body1">
                         <p>There is an unusually high balance for the JCT Corporation this week. To determine the circumstances, you view the report in detail format and look at each passenger's name. You see John Smith and are instantly reminded of his two first-class tickets to London. You now understand the reason for the high amount.</p>
                         <p>JCT Corporation wants to be notified when their balance reaches $10,000. You print the Client Balance Report and see they are dangerously close to their limit. You give them a call to determine a course of action.</p>
                     </td>
                 </tr>
             </table>
-            <p><span>Tip for Group Reporting: </span>(There is an Invoice Group column on the Client Balances Detail report. If a client has both Group Vouchers and Individual invoices showing on the Client Balance Report, don’t go back and look at each invoice and voucher. Determine what the client really owes in total for the open invoice, because the Voucher receipts are going toward their Group trip. This should significantly cut research time.)</p>
+            <p><span style="font-weight: bold;">Tip for Group Reporting: </span>(There is an Invoice Group column on the Client Balances Detail report. If a client has both Group Vouchers and Individual invoices showing on the Client Balance Report, don’t go back and look at each invoice and voucher. Determine what the client really owes in total for the open invoice, because the Voucher receipts are going toward their Group trip. This should significantly cut research time.)</p>
             <p>&#160;</p>
             <h3><a name="Vendor_Balances" data-mc-generated-bookmark="TOC"></a><a name="Vendor_Balances" data-mc-generated-bookmark="TOC"></a>Vendor Balances</h3>
             <p>The Vendor Balance report provides a listing of all Vendor-Supplier account balances. (When printing the Vendor Balance reports in detail format, the passenger name from the first booking is included. This aids in remembering the circumstances when seeing a client's name on the vendor balances reports.) Also in detail format, the client name and invoice remarks for vouchers will print. </p>
             <ol start="1" class="ol_3">
-                <li class="ListParagraph" value="1">Click <span>Reports|Core|Vendor Balances</span>.<br /></li>
+                <li class="ListParagraph" value="1">Click <span>Reports|Core|Vendor Balances</span>.<br /><img src="resources/images/chapter 1 welcome/reports_2_368x233.png" style="width: 368;height: 233;" class="img_1" /></li>
+                <li class="ListParagraph" value="2">Select settings.<br /><table class="TableStyle-table" style="mc-table-style: url('resources/tablestyles/table.css');" cellspacing="5"><col style="width: 84pt;" class="TableStyle-table-Column-Column1" /><col style="width: 386pt;" class="TableStyle-table-Column-Column1" /><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">As Of</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">An <span class="span_1">As Of</span> date may be specified when the report is generated and the system provides vendor balances as of the specified date by backing out all entries after that date. If the <span class="span_1">As Of</span> date is left blank, the system generates a current listing of vendor balances including all invoices and payments entered, regardless of date. Double click on the field for a calendar menu.</p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Format</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5"><span class="span_1">Summary </span>lists Vendor Name, Invoices Total, Total Unapplied and Balance Due. <span class="span_1">Detail </span>lists each open invoice for each vendor, including the Invoice #, Branch, Issue Date, and Invoice Amount, Foreign Currency Amount and its code. </p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Branch</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">Allows the report to be processed by branch or branches.</p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Aging</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">Breaks down balances into four categories: <span class="span_1">None, 30/60/90; 15/30/45; and 7/14/21</span> days from the <span class="span_1">As Of </span>date entered. </p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Sort By</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">Sort report by <span class="span_1">Vendor Name, Vendor ID, or Agent.</span></p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Output Format</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">From the drop-down menu, select <span class="span_1">Report </span>or <span class="span_1">Mail Merge. </span>The mail merge format generates the report in a tab delimited mail merge format for use in third party software.</p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Print Foreign Currency Values</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">In detailed mode, print out values of foreign currency.</p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Branch Group</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">If a branch group has been added under <span>Utilities|Setup|Groups</span> and would like to see all the vendor balances just for that branch group, select appropriate branch group from drop-down menu.</p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Vendor Name</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">To run this report for all vendors, leave blank. To run for a specific vendor, type a few letters of the vendor’s name, and choose from the drop-down menu.</p></td></tr><tr class="TableStyle-table-Body-Body1"><td class="TableStyle-table-BodyE-Column1-Body1"><p class="p_4">Vendor Group</p></td><td class="TableStyle-table-BodyD-Column1-Body1"><p class="p_5">To run this report for a specific vendor group, select group from the drop-down menu.</p></td></tr></table></li>
+                <li class="ListParagraph" value="3">Click <span class="span_1">Preview</span> to view the report on the screen. (Or click Print to send the report directly to the printer without viewing first.)</li>
             </ol>
-            <p class="p_32">
-                <img src="resources/images/chapter 1 welcome/reports_2_368x233.png" style="width: 368;height: 233;" class="img_1" />
-            </p>
-            <p class="p_32">&#160;</p>
-            <p>2. Select settings.</p>
-            <table class="TableStyle-table" style="mc-table-style: url('resources/tablestyles/table.css');" cellspacing="5">
-                <col style="width: 84pt;" class="TableStyle-table-Column-Column1" />
-                <col style="width: 386pt;" class="TableStyle-table-Column-Column1" />
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">As Of</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">An <span class="span_1">As Of</span> date may be specified when the report is generated and the system provides vendor balances as of the specified date by backing out all entries after that date. If the <span class="span_1">As Of</span> date is left blank, the system generates a current listing of vendor balances including all invoices and payments entered, regardless of date. Double click on the field for a calendar menu.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Format</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5"><span class="span_1">Summary </span>lists Vendor Name, Invoices Total, Total Unapplied and Balance Due. <span class="span_1">Detail </span>lists each open invoice for each vendor, including the Invoice #, Branch, Issue Date, and Invoice Amount, Foreign Currency Amount and its code. </p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Branch</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Allows the report to be processed by branch or branches.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Aging</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Breaks down balances into four categories: <span class="span_1">None, 30/60/90; 15/30/45; and 7/14/21</span> days from the <span class="span_1">As Of </span>date entered. </p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Sort By</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">Sort report by <span class="span_1">Vendor Name, Vendor ID, or Agent.</span></p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Output Format</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">From the drop-down menu, select <span class="span_1">Report </span>or <span class="span_1">Mail Merge. </span>The mail merge format generates the report in a tab delimited mail merge format for use in third party software.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Print Foreign Currency Values</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">In detailed mode, print out values of foreign currency.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Branch Group</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">If a branch group has been added under <span>Utilities|Setup|Groups</span> and would like to see all the vendor balances just for that branch group, select appropriate branch group from drop-down menu.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Vendor Name</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">To run this report for all vendors, leave blank. To run for a specific vendor, type a few letters of the vendor’s name, and choose from the drop-down menu.</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-table-Body-Body1">
-                    <td class="TableStyle-table-BodyE-Column1-Body1">
-                        <p class="p_4">Vendor Group</p>
-                    </td>
-                    <td class="TableStyle-table-BodyD-Column1-Body1">
-                        <p class="p_5">To run this report for a specific vendor group, select group from the drop-down menu.</p>
-                    </td>
-                </tr>
-            </table>
-            <p>3. Click <span class="span_1">Preview</span> to view the report on the screen. (Or click Print to send the report directly to the printer without viewing first.)</p>
-            <p><strong class="bold_ariel_2">N</strong><strong class="bold_ariel_2">OTE</strong><strong class="bold_ariel_2">:</strong> A positive balance due represents money the vendor owes the agency. A negative balance due represents money the agency owes to the vendor.</p>
+            <p><b>Note:</b> A positive balance due represents money the vendor owes the agency. A negative balance due represents money the agency owes to the vendor.</p>
             <p>&#160;</p>
             <h3><a name="ARC_BSP_Balances" data-mc-generated-bookmark="TOC"></a><a name="ARC_BSP_Balances" data-mc-generated-bookmark="TOC"></a>ARC/BSP Balances</h3>
             <p>The ARC/BSP Balances core report searches the system for ARC/BSP invoices open on the Vendor side. These are invoices not yet settled with ARC/BSP. It is designed to include all open invoices including resubmits. This report balances with the ARC Balances account in the General Ledger.</p>
@@ -5096,9 +5009,11 @@
             <p class="p_2">To delete a report or batch of reports, click <span>Reports|Batch Reports</span> and <span class="span_1">Load</span>. Highlight the report to delete and click <span class="span_1">Delete</span>. If it is a batch to delete, highlight the batch name and click <span class="span_1">Delete</span>.</p>
             <p class="p_2">&#160;</p>
             <h3><a name="Viewing_Batch_Reports" data-mc-generated-bookmark="TOC"></a>Viewing Batch Reports</h3>
-            <p>When on the Batch Report screen, clicking the Preview button previews reports in Mail Merge format as well as those in report format. There is no requirement to save each Mail Merge report separately. From that preview, it is possible to save multiple reports to a folder, again without saving each report separately. When multiple reports are selected, clicking Save will prompt for a folder location to save the selected reports. Select an existing folder or create a new folder.  Any reports in Mail Merge format will be saved as text; any reports in Report format will be saved as PDF.  The files will be saved using the Report Description (as seen on the Batch Report screen) for the file name. If a file with the same name already exists in the folder, the new report will be saved with a number at the end of its name so as not to overwrite the existing report.</p>
-            <p>From the Batch Report Preview, e-mailing multiple reports works the same way -- multiple reports using both Mail Merge and Report format can be selected simultaneously and attached to an e-mail message.</p>
-            <p>When printing multiple reports from the Batch Report Preview, only reports in Report format will be printed. Mail Merge reports will be skipped</p>
+            <div>
+                <p>When on the Batch Report screen, clicking the Preview button previews reports in Mail Merge format as well as those in report format. There is no requirement to save each Mail Merge report separately. From that preview, it is possible to save multiple reports to a folder, again without saving each report separately. When multiple reports are selected, clicking Save will prompt for a folder location to save the selected reports. Select an existing folder or create a new folder.  Any reports in Mail Merge format will be saved as text; any reports in Report format will be saved as PDF.  The files will be saved using the Report Description (as seen on the Batch Report screen) for the file name. If a file with the same name already exists in the folder, the new report will be saved with a number at the end of its name so as not to overwrite the existing report.</p>
+                <p>From the Batch Report Preview, e-mailing multiple reports works the same way -- multiple reports using both Mail Merge and Report format can be selected simultaneously and attached to an e-mail message.</p>
+                <p>When printing multiple reports from the Batch Report Preview, only reports in Report format will be printed. Mail Merge reports will be skipped.</p>
+            </div>
             <p>&#160;</p>
             <h3><a name="Print_a_Batch_Report_Using_the_Windows_Task_Schedule" data-mc-generated-bookmark="TOC"></a><a name="Print_a_Batch_Report_Using_the_Windows_Task_Schedule" data-mc-generated-bookmark="TOC"></a>Print a Batch Report Using the Windows Task Schedule</h3>
             <p class="p_2">The following are the steps for a doing a scheduled printing for batch/s in Trams Back Office:</p>

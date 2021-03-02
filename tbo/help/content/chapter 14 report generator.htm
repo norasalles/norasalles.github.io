@@ -41,16 +41,18 @@
 /*]]>*/
 </script></head>
     <body>
-        <p style="text-align: right;">
-            <img src="resources/images/tramsbackoffice.png" class="img_header" />
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../index.html#chapter 14 report generator.htm">Open topic with navigation</a>
         </p>
-        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="mc-variable Variables.Product variable">Trams Back Office</span> 4.10 Beta | <span class="mc-variable Variables.Type variable">New Features and Enhancements</span></p>
-        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="mc-variable Variables.NewDateTimeVariable variable">Feb, 2021</span> </p>
+        <p style="text-align: right;">
+            <img src="resources/images/tramsbackoffice.png" class="imgheader" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="mc-variable Variables.Product variable">Trams Back Office</span> 4.09 | <span class="mc-variable Variables.Type variable">New Features and Enhancements</span></p>
+        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="mc-variable Variables.NewDateTimeVariable variable">Mar, 2021</span> </p>
         <p>&#160;</p>
         <div role="main" id="mc-main-content">
             <p class="ChapterTitle"><span style="color: #ffffff;"><a name="Chapter_12_Report_Generator"></a>Chapter 12: Report Generator</span>
             </p>
-            <h1><a name="Report_Generator" data-mc-generated-bookmark="TOC"></a><a name="Report_Generator" data-mc-generated-bookmark="TOC"></a><a name="kanchor275"></a><a name="kanchor83"></a>Report Generator </h1>
+            <h1><a name="Report_Generator" data-mc-generated-bookmark="TOC"></a><a name="Report_Generator" data-mc-generated-bookmark="TOC"></a><a name="kanchor275"></a><a name="kanchor85"></a>Report Generator </h1>
             <p class="p_38">This chapter contains:</p>
             <blockquote>
                 <ul style="list-style-type: square;">
@@ -81,14 +83,34 @@
             <p>3. Using the selection criteria under the <span class="span_1">General and Advanced </span>Tabs, choose settings for the report.</p>
             <p>4. Click <span class="span_1">Preview</span> to view the report to the screen. (Or click Print to send the report directly to the printer without viewing first.) </p>
             <h3><a name="Useful_Hints" data-mc-generated-bookmark="TOC"></a><a name="Useful_Hints" data-mc-generated-bookmark="TOC"></a>Useful Hints</h3>
-            <p>1)The <span class="span_1">All ARC/Supplier, Closed CommTrack</span> parameter has been added to Report Generator/Print report as Date Range drop-down options. When selected, this option will return all bookings that have ([Submit To = ARC] or [Submit to = Supplier]or [Vendor Payment Status = Closed and Submit to = CommTrack]). The single date range entered when "All ARC/Supplier, Closed CommTrack" is selected queries two different date ranges: Issue date of the invoice for <span class="span_1">All ARC/Supplier and </span>Vendor Payment date for <span class="span_1">Closed CommTrack.</span></p>
-            <p>2) Enter either a check number or credit card number in the <span class="span_1">CK/CC No </span>field to display only the invoices where the client paid with the entered number. If a credit card number was the form of payment, only items using that credit card number appear in the report. For example, the <span class="span_1">CK/CC No</span> field reads from left to right, so that entering a "4" queries all credit card numbers beginning with 4. This will produce a report for all invoices where the client used <span class="span_1">Visa</span> as the form of payment. </p>
-            <p>Narrow the search by <span class="span_1">Payment Method</span> to display those items where the client has paid by that selected Payment Method. This field coupled with the <span class="span_1">Ck/CC No</span> field will run a report for all Invoices where the Client form of payment was by <span class="span_1">Credit Card</span> for either a specific credit card or for all credit cards beginning with a "4" (all <span class="span_1">Visa</span> transactions).</p>
-            <p>3) <span>Multiple Forms of Payments</span> can be selected to view all credit card payments and CC Merchant payments on one report.</p>
-            <p>4) <span>City &amp; Origin/Destination Fields: </span>Enter a city code in either field, but not both. The fields are used for filtering different city code data based on where the city code resides in the booking. <span class="span_1">City</span> field is reading the first <span class="span_1">Itinerary</span> field from the General Tab of the booking. All city codes appearing in the first <span class="span_1">Itinerary </span>field are displayed on the report, based on the other selection criteria, such as <span class="span_1">Issue Date, Depart Date, Travel Type</span>, etc. The <span class="span_1">City</span> field in Report Generator displays ARC, Supplier or Comm Track bookings on the report. Segment level booking details don’t have to be present for bookings to show on the report.</p>
-            <p><span class="span_1">Origin/Destination</span> fields are reading the <span class="span_1">Origin</span> or <span class="span_1">Destination</span> fields from the Segment Tab of the booking, so if a booking does not have any segment level detail in the tab, like for hotels and cars, they would not appear on the report since the Segment Tab is blank for those type of bookings. </p>
-            <p>5) <span>Exclude the clients that do not belong to other specific groups:</span> Under Advanced tab, select<span class="span_1"> Not In</span> and entered the Invoice Group IDs separated by a comma no spaces.</p>
-            <p>6) <span>New filter parameter</span> has been added to the report generator print report screen in the advanced tab.&#160; It is <span class="span_1">Exclude Refund/Exchange/Dupe tickets</span>. Selecting this option emulates the logic used in the Invoice/City Pair report. Recommendation is to clean up duplicate tickets so those tickets will be included on the report as well.</p>
+            <div>
+                <ol>
+                    <li value="1">
+                        <p>The All ARC/Supplier, Closed CommTrack parameter has been added to Report Generator/Print report as Date Range drop-down options. When selected, this option will return all bookings that have ([Submit To = ARC] or [Submit to = Supplier]or [Vendor Payment Status = Closed and Submit to = CommTrack]). The single date range entered when "All ARC/Supplier, Closed CommTrack" is selected queries two different date ranges: Issue date of the invoice for All ARC/Supplier and Vendor Payment date for Closed CommTrack.</p>
+                    </li>
+                    <li value="2">
+                        <p>Enter either a check number or credit card number in the CK/CC No field to display only the invoices where the client paid with the entered number. If a credit card number was the form of payment, only items using that credit card number appear in the report. For example, the CK/CC No field reads from left to right, so that entering a "4" queries all credit card numbers beginning with 4. This will produce a report for all invoices where the client used Visa as the form of payment.</p>
+                    </li>
+                    <li value="3">
+                        <p>Narrow the search by Payment Method to display those items where the client has paid by that selected Payment Method. This field coupled with the Ck/CC No field will run a report for all Invoices where the Client form of payment was by Credit Card for either a specific credit card or for all credit cards beginning with a "4" (all Visa transactions).</p>
+                    </li>
+                    <li value="4">
+                        <p>Multiple Forms of Payments can be selected to view all credit card payments and CC Merchant payments on one report.</p>
+                    </li>
+                    <li value="5">
+                        <p>City &amp; Origin/Destination Fields: Enter a city code in either field, but not both. The fields are used for filtering different city code data based on where the city code resides in the booking. City field is reading the first Itinerary field from the General Tab of the booking. All city codes appearing in the first Itinerary field are displayed on the report, based on the other selection criteria, such as Issue Date, Depart Date, Travel Type, etc. The City field in Report Generator displays ARC, Supplier or Comm Track bookings on the report. Segment level booking details don’t have to be present for bookings to show on the report.<br />Origin/Destination fields are reading the Origin or Destination fields from the Segment Tab of the booking, so if a booking does not have any segment level detail in the tab, like for hotels and cars, they would not appear on the report since the Segment Tab is blank for those type of bookings.</p>
+                    </li>
+                    <li value="6">
+                        <p>Exclude the clients that do not belong to other specific groups: Under Advanced tab, select Not In and entered the Invoice Group IDs separated by a comma no spaces.</p>
+                    </li>
+                    <li value="7">
+                        <p> New filter parameter has been added to the report generator print report screen in the advanced tab.  It is Exclude Refund/Exchange/Dupe tickets. Selecting this option emulates the logic used in the Invoice/City Pair report. Recommendation is to clean up duplicate tickets so those tickets will be included on the report as well.</p>
+                    </li>
+                    <li value="8">
+                        <p>From the Advanced Tab, you can filter your query with a UDID Number.  Use the dropdown or type in a UDID number (or partial number) and land on the desired UDID more quickly than by scrolling through the list. The UDID Description is for those who prefer to search by description. Selecting a value in either dropdown will update the corresponding UDID value in the other dropdown.</p>
+                    </li>
+                </ol>
+            </div>
             <p>&#160;</p>
             <h2><a name="Summary_Listing_of_Reports_-_Agent_Reports" data-mc-generated-bookmark="TOC"></a><a name="Summary_Listing_of_Reports_-_Agent_Reports" data-mc-generated-bookmark="TOC"></a><a name="kanchor277"></a>Summary Listing of Reports - Agent Reports</h2>
             <p>This section lists all the predesigned agent reports installed with the program, and includes a description of each. Please see next chapter, <span class="span_1">Building Reports Using the Report Generator Overview, </span>to learn how to modify any of the following reports.</p>

@@ -1,3 +1,4 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
 /*<meta />*/
 
 p.MyStyle
@@ -9,11 +10,8 @@ p.MyStyle
 
 img
 {
-	padding-left: 20px;
-	padding-bottom: 0px;
-	border-left-width: 0px;
-	border-right-style: none;
-	border-top-style: none;
+	border: none;
+	padding: 20pt;
 }
 
 a.Popup
@@ -58,24 +56,24 @@ h1
 	font-size: 24pt;
 	color: #808080;
 	margin-bottom: -0.33em;
-	font-family: 'Arial Black';
+	font-family: 'Roboto Black';
 }
 
 h2
 {
 	font-size: 18pt;
 	font-weight: bold;
+	color: #C00000;
 	font-family: 'Roboto Black';
-	color: #AC0000;
 }
 
 h3
 {
 	font: ;
-	color: #243F60;
-	font-family: Arial;
 	font-size: 14pt;
 	font-weight: bold;
+	font-family: Roboto;
+	color: #1A4D66;
 }
 
 p
@@ -221,10 +219,10 @@ li.ListParagraph_5_1
 
 li
 {
+	font-size: 12pt;
 	font-family: Arial;
 	color: #000000;
-	font-size: 10pt;
-	line-height: 14pt;
+	padding-top: 5px;
 }
 
 ul.ul	/*list*/
@@ -232,24 +230,45 @@ ul.ul	/*list*/
 	margin-left: 80px;
 }
 
-quote#quote
+MadCap|dropDownHead
 {
-	
+	color: #243F60;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 12pt;
+	text-decoration: blink;
 }
 
-ul.triangle
+h4
 {
-	list-style-image: none;
+	font-family: Roboto;
+	color: #333333;
+	font-size: 12pt;
 }
 
-ul.triangle > li::marker
+img.imgheader
 {
-	font-family: 'Times New Roman';
-	content: '‣';
+	padding: 0px;
+}
+
+h5
+{
+	font-family: Roboto;
+	font-size: 10pt;
 }
 
 body
 {
 	
+}
+
+div.commframe
+{
+	font-family: Roboto;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 10px;
+	background: #9DD7D8;
+	color: #9DD7D8;
 }
 

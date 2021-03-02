@@ -41,11 +41,13 @@
 /*]]>*/
 </script></head>
     <body>
-        <p style="text-align: right;">
-            <img src="resources/images/tramsbackoffice.png" class="img_header" />
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../index.html#chapter 03 utilities.htm">Open topic with navigation</a>
         </p>
-        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="mc-variable Variables.Product variable">Trams Back Office</span> 4.10 Beta | <span class="mc-variable Variables.Type variable">New Features and Enhancements</span></p>
-        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="mc-variable Variables.NewDateTimeVariable variable">Feb, 2021</span> </p>
+        <p style="text-align: right;">
+            <img src="resources/images/tramsbackoffice.png" class="imgheader" />
+        </p>
+        <p class="productnewfeature" style="font-size: 10pt;text-align: right;"><span class="mc-variable Variables.Product variable">Trams Back Office</span> 4.09 | <span class="mc-variable Variables.Type variable">New Features and Enhancements</span></p>
+        <p class="productnewfeature" style="font-size: 10pt; text-align: right;"><span class="mc-variable Variables.NewDateTimeVariable variable">Mar, 2021</span> </p>
         <p>&#160;</p>
         <div role="main" id="mc-main-content">
             <p style="text-align: right;"><span style="color: #ffffff;"><a name="Chapter_16_APOLLO_GALILEO_Interface_Preparation"></a>Chapter 3: Utilities</span>
@@ -57,7 +59,7 @@
             </p>
             <blockquote>
                 <ul style="list-style-type: square;">
-                    <li style="font-weight: normal;font-style: normal;"><a href="#User_Profiles"><span class="span_1">User Profile</span></a>
+                    <li style="font-weight: normal;font-style: normal;"><a href="#User_Profiles"><span class="span_1">User Profiles</span></a>
                     </li>
                     <li style="font-weight: normal;font-style: normal;"><a href="#Global_Defaults"><span class="span_1">Global Defaults</span></a>
                     </li>
@@ -107,30 +109,38 @@
             </blockquote>
             <p class="p_19">&#160;</p>
             <h2><a name="User_Profiles" data-mc-generated-bookmark="TOC"></a><a name="User_Profiles" data-mc-generated-bookmark="TOC"></a><a name="User_Profiles"></a><a name="kanchor56"></a>User Profiles</h2>
-            <p>To protect the security of the Trams Back Office system for the agency, each person using Trams Back Office is assigned a User Profile. Each User Profile in Trams Back Office is unique, authorizing different levels of access for each user. The user is prompted for a Login, and Password when launching the Trams Back Office program. Trams Back Office assumes there is one person who acts as a gatekeeper for access to all levels of Trams Back Office.  The “gatekeeper” limits who can get into the agency’s financial records, payroll information, or commission amounts. Assigning passwords and login names are the way to accomplish different levels of access.
-</p>
-            <p>We recommend that each person who uses Trams Back Office has a login with their own name, and that no one shares a login. This creates an “audit trail” and gives the agency manager the ability to ascertain who accessed the Trams database and what changes were made. 
-</p>
+            <p>To protect the security of the Trams Back Office system for the agency, each person using Trams Back Office is assigned a User Profile. Each User Profile in Trams Back Office is unique, authorizing different levels of access for each user. The user is prompted for a Login, and Password when launching the Trams Back Office program. Trams Back Office assumes there is one person who acts as a gatekeeper for access to all levels of Trams Back Office.  The “gatekeeper” limits who can get into the agency’s financial records, payroll information, or commission amounts. Assigning passwords and login names are the way to accomplish different levels of access.</p>
+            <p>We recommend that each person who uses Trams Back Office has a login with their own name, and that no one shares a login. This creates an “audit trail” and gives the agency manager the ability to ascertain who accessed the Trams database and what changes were made.</p>
+            <p>
+            </p>
             <h3><a name="User_Profile_Authorization_Levels_–_SYSDBA,_Manager_and_User" data-mc-generated-bookmark="TOC"></a><a name="kanchor57"></a>User Profile Authorization Levels – SYSDBA, Manager and User</h3>
             <h4><a name="SYSDBA_Profile" data-mc-generated-bookmark="TOC"></a><a name="kanchor58"></a>SYSDBA Profile</h4>
-            <p>The Trams Back Office program comes with one Administrator Profile built with an Authorization level of SYSDBA. By default, this User Profile's Login Code is SYSDBA and uses the password which came in the welcome e-mail to the agency. For security purposes, the SYSDBA default password should be changed during the installation process.</p>
-            <p>The SYSDBA profile is used to create, modify or delete other User Profiles. It can access the Help menu, access the File menu, reset its own password, and create users with Manager Authorization under Utilities | Setup | User Logins. In order to perform other managerial functions, your agency will need to create a user profile with the Authorization level of Manager.</p>
-            <p>Only one User Profile can be established with an authorization level of SYSDBA. Why? Trams Back Office assumes the System Database Administrator is the only one that needs to know the passwords for all users, any sensitive payroll information, etc. The SYSDBA sets permission levels for all users, preventing all or selected users access to any sensitive agency information. Set all other User Profiles to User authorization. An unlimited number of User Profiles can be set up and each can be tailored to authorize access to specific areas in Trams Back Office.</p>
-            <p>The SYSDBA login name cannot be changed. Agency staff members requiring access to Trams Back Office should each be assigned a unique profile and password.</p>
-            <p>If a new password is not assigned to the SYSDBA Profile and no additional User Profiles are created, anyone entering the Trams Back Office system is, by default, signed in as a Manager with full access to every area of the program. Passwords provide security.</p>
-            <p>When creating new User Logins, be sure to review the Menu Items and Permissions tab options and adjust them according to the tasks the User will be performing. If the User will be downloading and processing interface records, they will need both the “View Full Credit Card Numbers” and “Run Reports/Export with full Credit Card Numbers and view REC LOC content” permissions enabled.</p>
-            <p>User Logins created in ClientBase Windows are marked as disabled in Trams Back Office and have no Trams Back Office permissions by default</p>
+            <div>
+                <p>The Trams Back Office program comes with one Administrator Profile built with an Authorization level of SYSDBA. By default, this User Profile's Login Code is SYSDBA and uses the password which came in the welcome e-mail to the agency. For security purposes, the SYSDBA default password should be changed during the installation process.</p>
+                <p>The SYSDBA profile is used to create, modify or delete other User Profiles. It can access the Help menu, access the File menu, reset its own password, and create users with Manager Authorization under Utilities | Setup | User Logins. In order to perform other managerial functions, your agency will need to create a user profile with the Authorization level of Manager.</p>
+                <p>Only one User Profile can be established with an authorization level of SYSDBA. Why? Trams Back Office assumes the System Database Administrator is the only one that needs to know the passwords for all users, any sensitive payroll information, etc. The SYSDBA sets permission levels for all users, preventing all or selected users access to any sensitive agency information. Set all other User Profiles to User authorization. An unlimited number of User Profiles can be set up and each can be tailored to authorize access to specific areas in Trams Back Office.</p>
+                <p>The SYSDBA login name cannot be changed. Agency staff members requiring access to Trams Back Office should each be assigned a unique profile and password.</p>
+                <p>If a new password is not assigned to the SYSDBA Profile and no additional User Profiles are created, anyone entering the Trams Back Office system is, by default, signed in as a Manager with full access to every area of the program. Passwords provide security.</p>
+                <p>When creating new User Logins, be sure to review the Menu Items and Permissions tab options and adjust them according to the tasks the User will be performing. If the User will be downloading and processing interface records, they will need both the “View Full Credit Card Numbers” and “Run Reports/Export with full Credit Card Numbers and view REC LOC content” permissions enabled.</p>
+                <p>User Logins created in ClientBase Windows are marked as disabled in Trams Back Office and have no Trams Back Office permissions by default</p>
+            </div>
             <p>&#160;</p>
-            <h5><a name="Changing_the_SYSDBA_Password" data-mc-generated-bookmark="TOC"></a><a name="Changing_the_SYSDBA_Password" data-mc-generated-bookmark="TOC"></a><a name="Changing_the_SYSDBA_Password"></a>Changing the SYSDBA Password</h5>
-            <p>To change the SYSDBA password in TBO, go to Utilities|Setup|User Profiles. Highlight the User Name, SYSDBA, enter the new password and click Update. Warning: Take care when entering the password, as there is not a prompt to repeat the password. Make sure to write the password down for reference.</p>
-            <p>Please be aware that if your agency is on InterBase XE or earlier, you are limited to 8 characters in a password. (Longer passwords are saved, but all characters after the eighth are ignored.) We recommend that you upgrade to a current version of InterBase.</p>
+            <h4><a name="Changing_the_SYSDBA_Password" data-mc-generated-bookmark="TOC"></a><a name="Changing_the_SYSDBA_Password" data-mc-generated-bookmark="TOC"></a><a name="Changing_the_SYSDBA_Password"></a>Changing the SYSDBA Password</h4>
+            <div>
+                <p>To change the SYSDBA password in TBO, go to Utilities|Setup|User Profiles. Highlight the User Name, SYSDBA, enter the new password and click Update. Warning: Take care when entering the password, as there is not a prompt to repeat the password. Make sure to write the password down for reference.</p>
+                <p>Please be aware that if your agency is on InterBase XE or earlier, you are limited to 8 characters in a password. (Longer passwords are saved, but all characters after the eighth are ignored.) We recommend that you upgrade to a current version of InterBase.</p>
+            </div>
             <p>&#160;</p>
-            <h4><a name="Manager_Profiles" data-mc-generated-bookmark="TOC"></a>Manager Profiles</h4>
-            <p>Except for Database Backup, which requires SYSDBA, a Manager log-in can do all the things that SYSDBA could do previously. Some functions, for example, creating or modifying user logins, will prompt the Manager to enter the SYSDBA password before allowing them to proceed. However, they are still logged in under their own user login.</p>
-            <p>If you have scheduled tasks that use the SYSDBA login, you will need to update them to use the Manager's username and password.</p>
+            <h4><a name="Manager_Profiles" data-mc-generated-bookmark="TOC"></a><a name="kanchor59"></a>Manager Profiles</h4>
+            <div>
+                <p>Except for Database Backup, which requires SYSDBA, a Manager log-in can do all the things that SYSDBA could do previously. Some functions, for example, creating or modifying user logins, will prompt the Manager to enter the SYSDBA password before allowing them to proceed. However, they are still logged in under their own user login.</p>
+                <p>If you have scheduled tasks that use the SYSDBA login, you will need to update them to use the Manager's username and password.</p>
+            </div>
             <p>&#160;</p>
-            <h4><a name="User_Profiles_..158" data-mc-generated-bookmark="TOC"></a>User Profiles</h4>
-            <p>An unlimited number of User Profiles can be set up and each can be tailored to authorize access to specific areas in Trams Back Office.  While an unlimited number of profiles can be created, the number of profiles concurrently signed into Trams Back Office will be determined by the number of user licenses in the agency’s contract.  If you require additional user licenses, please contact your account manager.</p>
+            <h4><a name="User_Profiles_..158" data-mc-generated-bookmark="TOC"></a><a name="kanchor60"></a>User Profiles</h4>
+            <div>
+                <p>An unlimited number of User Profiles can be set up and each can be tailored to authorize access to specific areas in Trams Back Office.  While an unlimited number of profiles can be created, the number of profiles concurrently signed into Trams Back Office will be determined by the number of user licenses in the agency’s contract.  If you require additional user licenses, please contact your account manager6?"</p>
+            </div>
             <p>&#160;</p>
             <h3><a name="Password_Protection_for_TBO_Users_on_InterBase_XE_or_Higher" data-mc-generated-bookmark="TOC"></a><a name="Password_Protection_for_TBO_Users_on_InterBase_XE_or_Higher" data-mc-generated-bookmark="TOC"></a><a name="Password_Protection_for_TBO_Users_on_InterBase_XE_or_Higher"></a>Password Protection for TBO Users on InterBase XE or Higher</h3>
             <p class="p_20">User Permission Security Enhancements (only available with Interbase XE or higher):</p>
@@ -1245,7 +1255,7 @@
                 </tr>
             </table>
             <p>&#160;</p>
-            <h2><a name="Branches" data-mc-generated-bookmark="TOC"></a><a name="Branches" data-mc-generated-bookmark="TOC"></a><a name="Branches"></a><a name="kanchor59"></a>Branches</h2>
+            <h2><a name="Branches" data-mc-generated-bookmark="TOC"></a><a name="Branches" data-mc-generated-bookmark="TOC"></a><a name="Branches"></a><a name="kanchor61"></a>Branches</h2>
             <p><span class="span_1">Trams Back Office</span> supports multiple branches. The number of branches available is 1000 (used to be 250).</p>
             <p class="p_2">Enter an ARC/BSP number for each branch. (If the agency is <span>not</span> using the branch capability, enter the agency ARC/BSP information in Branch ’0’. Actually <span class="span_1">Trams</span> regards the main branch as Branch 0, and subsequent branches as Branch 1, 2, etc.) This information prints on the agency's ARC/BSP report. Fill in agency data and select <span class="span_1">Update</span>, which enters that information in the grid below. Click <span class="span_1">OK</span> to save and exit the screen.</p>
             <p class="p_2">Agencies using the multiple branch version of <span class="span_1">Trams Back Office</span> have the option of separating financial activity for each branch, or grouping them together. A branch can represent an STP location, a cost center, or a different department. <span>There can be multiple branches with the same ARC/BSP number, and/or multiple ARC/BSP numbers with the same G/L branch. Each branch uses the same chart of accounts. To make certain </span><span class="span_1">Trams Back Office</span><span> is ready for multiple branches, check the setting in the Utilities|Setup|Global Default section under the </span><span class="span_1">Prompt</span><span> tab. </span></p>
@@ -1269,11 +1279,11 @@
             <p class="p_2">
                 <img src="resources/images/chapter 1 welcome/chapter 3 utilities_2.jpg" style="height: 46px;width: 80px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities.03.1.16.jpg" class="img_1" />
             </p>
-            <h3><a name="GST_HST_TAX_RATE_FIELD_in_BRANCH_SET-UP" data-mc-generated-bookmark="TOC"></a><a name="GST_HST_TAX_RATE_FIELD_in_BRANCH_SET-UP" data-mc-generated-bookmark="TOC"></a><a name="GST/HST_TAX_RATE_FIELD_in_BRANCH_SET-UP"></a><a name="kanchor60"></a>GST/HST TAX RATE FIELD in BRANCH SET-UP</h3>
+            <h3><a name="GST_HST_TAX_RATE_FIELD_in_BRANCH_SET-UP" data-mc-generated-bookmark="TOC"></a><a name="GST_HST_TAX_RATE_FIELD_in_BRANCH_SET-UP" data-mc-generated-bookmark="TOC"></a><a name="GST/HST_TAX_RATE_FIELD_in_BRANCH_SET-UP"></a><a name="kanchor62"></a>GST/HST TAX RATE FIELD in BRANCH SET-UP</h3>
             <p class="p_2">Larger Canadian agencies have branches in multiple Provinces. GST applies to most agencies with branches all in one province and the current rate is 7%. In 3 provinces (Nova Scotia, New Brunswick &amp; Newfoundland) the GST is called HST and the current rate is 15%. In those provinces agencies are dealing with a 15% HST tax and not the 7% GST. It's an either or situation. The taxes are handled the same through the EOP. </p>
             <p class="p_2">An agency with branches with the same GST/HST rate would set this up under <span>Utilities|Setup|Global Defaults|Tax-Related Prompt, </span>and leave this area blank. But an agency with branches with both GST and HST provinces would leave the rate blank in <span>Utilities|Setup|Global Defaults|Tax-Related Prompt</span> and set the rate either 7% or 15%, branch by branch under <span>Utilities|Setup|Branches</span>. </p>
             <p>&#160;</p>
-            <h2><a name="Travel_Types" data-mc-generated-bookmark="TOC"></a><a name="Travel_Types_..154" data-mc-generated-bookmark="TOC"></a><a name="Travel_Types"></a><a name="kanchor61"></a>Travel Types</h2>
+            <h2><a name="Travel_Types" data-mc-generated-bookmark="TOC"></a><a name="Travel_Types_..154" data-mc-generated-bookmark="TOC"></a><a name="Travel_Types"></a><a name="kanchor63"></a>Travel Types</h2>
             <p class="p_2">Travel Types in <span class="span_1">Trams Back Office</span> are categories to organize bookings by the type of travel that they represent. For example, it is often useful to see a breakdown of the agency business by travel type. The travel types are initially set up as shown below. Modify any of the 50 available travel types to correspond to a needed category. </p>
             <p class="p_2"><span>Note: </span><span class="span_1">Trams</span> still recommends that agencies not use travel types and purpose other than true types of travel. Having 50 different travel types is unnecessary and not easily managed. Errors in capturing the correct travel type are considerable amplified.</p>
             <p class="p_2">Remember that travel types correspond to certain General Ledger accounts (Sales, Cost of Sales, Commission). If any of the travel types are changed, be sure to change the corresponding G/L accounts (see below). </p>
@@ -1296,7 +1306,7 @@
                 <img src="resources/images/chapter 1 welcome/chapter 3 utilities_10.jpg" style="height: 219px;width: 527px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities.03.1.18.jpg" class="img_1" />
             </p>
             <p>&#160;</p>
-            <h2><a name="Bank_Accounts" data-mc-generated-bookmark="TOC"></a><a name="Bank_Accounts" data-mc-generated-bookmark="TOC"></a><a name="Bank_Accounts"></a><a name="kanchor62"></a>Bank Accounts</h2>
+            <h2><a name="Bank_Accounts" data-mc-generated-bookmark="TOC"></a><a name="Bank_Accounts" data-mc-generated-bookmark="TOC"></a><a name="Bank_Accounts"></a><a name="kanchor64"></a>Bank Accounts</h2>
             <p class="p_2">In <span class="span_1">Trams Back Office</span>, maintain up to 999 bank accounts. Each account is listed within this table. Click <span class="span_1">New</span>, fill in the new account information, and then click <span class="span_1">Add</span> to add a new bank account. Highlight an account, change account information, and select <span class="span_1">Update</span> to Modify an entry, or select <span class="span_1">Delete </span>to remove a bank account. If a bank account is no longer being used, make it <span class="span_1">Inactive. </span></p>
             <p>&#160;</p>
             <h3><a name="Bank_Account_Setup" data-mc-generated-bookmark="TOC"></a><a name="Bank_Account_Setup" data-mc-generated-bookmark="TOC"></a><a name="Bank_Account_Setup"></a>Bank Account Setup</h3>
@@ -1412,7 +1422,7 @@
             </p>
             <p>Make any modifications. When finished, click <span class="span_1">OK </span>to save. If one of the Account Numbers specified doesn’t refer to an existing General Ledger account, the system prompts with an error, “<span class="span_1">No matching GL Account found.” </span>To acknowledge, click <span class="span_1">OK</span>, and the system positions the cursor to the Account that is in error. Inspect the G/L setup screen and make sure the accounts are properly assigned.</p>
             <p>&#160;</p>
-            <h4><a name="Note_to_Canadian_Users" data-mc-generated-bookmark="TOC"></a><a name="Note_to_Canadian_Users" data-mc-generated-bookmark="TOC"></a><a name="Note_to_Canadian_Users"></a>Note to <a name="kanchor63"></a>Canadian Users</h4>
+            <h4><a name="Note_to_Canadian_Users" data-mc-generated-bookmark="TOC"></a><a name="Note_to_Canadian_Users" data-mc-generated-bookmark="TOC"></a><a name="Note_to_Canadian_Users"></a>Note to <a name="kanchor65"></a>Canadian Users</h4>
             <p class="p_12">
                 <img src="resources/images/chapter 1 welcome/chapter 3 utilities_2.jpg" style="height: 46px;width: 80px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.04.jpg" class="img_1" />
             </p>
@@ -1421,7 +1431,7 @@
             <p><span>GST Receivable Field:</span> Used to track amounts for GST on Expenses. </p>
             <p>The difference between the amounts of the two accounts is the net amount that would be owed to or be due back from the government for GST taxes. When either of these identified accounts, along with the GST Rate, are selected for use in an Other or Agent profile, the calculation correctly computes the GST based on the Total Amount of the Payment utilizing the profile. </p>
             <p>&#160;</p>
-            <h2><a name="Checks" data-mc-generated-bookmark="TOC"></a><a name="Checks" data-mc-generated-bookmark="TOC"></a><a name="Checks"></a><a name="kanchor64"></a>Checks</h2>
+            <h2><a name="Checks" data-mc-generated-bookmark="TOC"></a><a name="Checks" data-mc-generated-bookmark="TOC"></a><a name="Checks"></a><a name="kanchor66"></a>Checks</h2>
             <p>Setup <span class="span_1">Checks</span> before using the check writer to specify the print format. The check printer is designed for any standard continuous form check stock, or single check laser printer. The check writer enables the agency to print lengthy fields inside a square box area by defining their height, width, and placement on the page. The option to set the field's measurements are found in the main <span>Utilities|Setup|Checks</span>. The first dialog box is the <span class="span_1">Check Writer List</span> to list of the agency’s different checks’ general defaults. Different check settings for different types of checks (payroll, expense, etc.) can be created. Click <span class="span_1">Add </span>to add a new check and its settings;<span class="span_1"> Modify</span> to edit a check’s settings (there is one default setting); and <span class="span_1">Delete</span> to remove a check, and its settings. Get a ruler and several copies of the computer check. Use the copies to check the settings once setup is complete. That way avoid wasting good checks when doing a test printing.</p>
             <ol start="1" class="ol_2">
                 <li class="ListParagraph" value="1">Highlight the <span class="span_1">Check Writer Default Setting </span>and select <span class="span_1">Modify</span>. </li>
@@ -1701,7 +1711,7 @@
             <p>5. Continue for each field desired to print on the check. Click <span class="span_1">OK to save.</span></p>
             <p>To delete a field, highlight that field and click <span class="span_1">Delete</span>. To print checks, go to <span>Reports|Payments|Check Writer</span><span class="span_1">. </span>Complete the fields for the check numbers to print. To view the checks before printing, select <span class="span_1">View Checks. </span>Also print a single check from the Payment Query screen.</p>
             <p>&#160;</p>
-            <h3><a name="Troubleshooting_in_Check_Writer" data-mc-generated-bookmark="TOC"></a><a name="Troubleshooting_in_Check_Writer" data-mc-generated-bookmark="TOC"></a><a name="Troubleshooting_in_Check_Writer"></a>Troubleshooting in <a name="kanchor65"></a>Check Writer</h3>
+            <h3><a name="Troubleshooting_in_Check_Writer" data-mc-generated-bookmark="TOC"></a><a name="Troubleshooting_in_Check_Writer" data-mc-generated-bookmark="TOC"></a><a name="Troubleshooting_in_Check_Writer"></a>Troubleshooting in <a name="kanchor67"></a>Check Writer</h3>
             <p>Questions to ask if there are difficulties printing checks.</p>
             <p>- Did I indicate the correct size of my checks?</p>
             <p>- Is the height set high enough to accommodate the printer font? The default is .18. If the settings all look correct but nothing is printing on the checks, try resizing this text box or setting the height of the settings at .25 in the <span class="span_1">Properties</span>.</p>
@@ -1710,7 +1720,7 @@
             <p>- If the last part of the entry doesn’t appear, resize the text box. It may not be set high enough to accommodate the extra lines. <span>Example:</span> Only the first two lines of the Payee Name and Address appear. </p>
             <p>- A payroll JE requires several lines. If the settings appear correct but the JE is not printing, check the height of the setting. It may not be set high enough to accommodate the multiple entries.</p>
             <p>&#160;</p>
-            <h2><a name="Conversion_Rates" data-mc-generated-bookmark="TOC"></a><a name="Conversion_Rates" data-mc-generated-bookmark="TOC"></a><a name="Conversion_Rates"></a><a name="kanchor66"></a>Conversion Rates</h2>
+            <h2><a name="Conversion_Rates" data-mc-generated-bookmark="TOC"></a><a name="Conversion_Rates" data-mc-generated-bookmark="TOC"></a><a name="Conversion_Rates"></a><a name="kanchor68"></a>Conversion Rates</h2>
             <p>Trams Back Office can convert foreign currency transactions to your agency's local currency. </p>
             <p>1. Enter your agency's' 3 character local currency code under <span>Utilities|Setup|Global Defaults|Interface Mailmerge Prompt</span> tab</p>
             <p>2. Manually load conversion codes and rates under <span>Utilities|Setup|Conversion Rates</span>. Since currency rates fluctuate, the rates should be updated periodically.</p>
@@ -1719,14 +1729,13 @@
             <p>c. To delete and entry, highlight it and click <span class="span_1">Delete</span>. Click <span class="span_1">OK</span> to save all.</p>
             <p>If a hotel or car transaction is interfaced and no local currency equivalent has been loaded by a hotel vendor, (hence the hotel’s currency is not shipped in the interface file) during the <span>Interface/Download</span> routine, a look up on the conversion rate table will take place. If the currency code and rate are found in the conversion rate table, the foreign currency amount is converted to your agency's local currency in the booking record. The foreign currency tab in the booking displays the hotel currency code and rate used for the conversion process.</p>
             <p>&#160;</p>
-            <h2><a name="Printer_Defaults" data-mc-generated-bookmark="TOC"></a><a name="Printer_Defaults" data-mc-generated-bookmark="TOC"></a><a name="Printer_Defaults"></a><a name="kanchor67"></a>Printer Defaults</h2>
+            <h2><a name="Printer_Defaults" data-mc-generated-bookmark="TOC"></a><a name="Printer_Defaults" data-mc-generated-bookmark="TOC"></a><a name="Printer_Defaults"></a><a name="kanchor69"></a>Printer Defaults</h2>
             <p class="p_12">
                 <img src="resources/images/chapter 1 welcome/g l accounts setup bank accounts_4.jpg" style="height: 240px;width: 420px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.08.jpg" class="img_1" />
             </p>
-            <p>&#160;</p>
             <p>From the pull-down menu, select the printer wanted to use for <span class="span_1">Reports</span> and the <span class="span_1">Check Writer </span>if this setting differs from the printer default settings in <span class="span_1">Windows. </span>The printer could be the same or different for each setting.</p>
             <p>&#160;</p>
-            <h2><a name="Report,_Statement_&amp;_Invoice_Headers_Footers" data-mc-generated-bookmark="TOC"></a><a name="ReportStatementInvoice"></a>Report, Statement &amp; Invoice <a name="kanchor68"></a>Headers/Footers</h2>
+            <h2><a name="Report,_Statement_&amp;_Invoice_Headers_Footers" data-mc-generated-bookmark="TOC"></a><a name="ReportStatementInvoice"></a>Report, Statement &amp; Invoice <a name="kanchor70"></a>Headers/Footers</h2>
             <p>To add customized headers and/or footers to <span class="span_1">Trams</span> Back Office Reports, Statements, or Invoices, go to <span>Utilities|Setup|Headers/Footers</span>.</p>
             <p>
                 <img src="resources/images/chapter 1 welcome/g l accounts setup bank accounts_5.jpg" style="height: 207px;width: 389px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.09.jpg" class="img_1" />
@@ -1754,13 +1763,13 @@
             <p>7) Click <span class="span_1">OK</span> to save. </p>
             <p>8) Print out a sample report and adjust settings accordingly. </p>
             <p>&#160;</p>
-            <h2><a name="Fare_Codes" data-mc-generated-bookmark="TOC"></a><a name="Fare_Codes" data-mc-generated-bookmark="TOC"></a><a name="Fare_Codes"></a><a name="kanchor69"></a>Fare Codes</h2>
+            <h2><a name="Fare_Codes" data-mc-generated-bookmark="TOC"></a><a name="Fare_Codes" data-mc-generated-bookmark="TOC"></a><a name="Fare_Codes"></a><a name="kanchor71"></a>Fare Codes</h2>
             <p>For generating Fare Saving Reports in <span class="span_1">Trams Back Office</span>, this table represents fare codes and information and is user definable. An unlimited number of two-character alphanumeric codes and their descriptions can be entered. A warning message of <span class="span_1">Duplicate Fare Code</span> will be displayed when trying to add a duplicate Fare Code. These codes are identified within the invoice booking on the Expanded Fare Information screen and are usually populated via interface. See the <span class="span_1">Interface Preparation Guide</span> for the appropriate PNR entries.</p>
             <p>A justification code allows the agency to communicate to clients the reasons they did not get the lowest fare. Justification Codes are set up in <span>Utilities|Setup|Fare Codes</span>. </p>
             <p><span>Hint: </span>Print out a Fare Codes setup sheet for the agents by clicking on the Print button.</p>
             <p>&#160;</p>
             <h2><a name="City_Codes" data-mc-generated-bookmark="TOC"></a><a name="City_Codes" data-mc-generated-bookmark="TOC"></a>
-                <br /><a name="City_Codes"></a><a name="kanchor70"></a>City Codes</h2>
+                <br /><a name="City_Codes"></a><a name="kanchor72"></a>City Codes</h2>
             <p>
                 <img src="resources/images/chapter 1 welcome/g l accounts setup bank accounts_8.jpg" style="height: 339px;width: 461px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.12.jpg" class="img_1" />
             </p>
@@ -1776,7 +1785,7 @@
             </table>
             <p><span>Note: </span>The City Code Table only applies to city codes captured on the Segments tab of a booking and does not apply to the Itinerary fields on the General tab.</p>
             <p>&#160;</p>
-            <h2><a name="Groups" data-mc-generated-bookmark="TOC"></a><a name="Groups" data-mc-generated-bookmark="TOC"></a><a name="Groups"></a><a name="kanchor71"></a>Groups</h2>
+            <h2><a name="Groups" data-mc-generated-bookmark="TOC"></a><a name="Groups" data-mc-generated-bookmark="TOC"></a><a name="Groups"></a><a name="kanchor73"></a>Groups</h2>
             <p>
                 <img src="resources/images/chapter 1 welcome/groups.jpg" style="height: 274px;width: 619px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.13.jpg" class="img_1" />
             </p>
@@ -1807,12 +1816,12 @@
             </p>
             <p><span>Note: </span>When entering a <span class="span_1">Group</span> on a <span class="span_1">Create New Invoice </span>or <span class="span_1">Payment Screen, </span>a <span class="span_1">Group Button </span>when click displays descriptions of groups and permits adding a new group name/description from that same area. </p>
             <p>&#160;</p>
-            <h2><a name="IC_Host_Codes" data-mc-generated-bookmark="TOC"></a><a name="IC_Host_Codes" data-mc-generated-bookmark="TOC"></a><a name="IC/Host_Codes"></a><a name="kanchor72"></a>IC/Host Codes</h2>
+            <h2><a name="IC_Host_Codes" data-mc-generated-bookmark="TOC"></a><a name="IC_Host_Codes" data-mc-generated-bookmark="TOC"></a><a name="IC/Host_Codes"></a><a name="kanchor74"></a>IC/Host Codes</h2>
             <p>Agencies today are choosing to change the way they make their bookings. Many are dropping out of ARC/BSP and booking air tickets through a Host Agency. They may also book some or all of their cruise and tour business with a Host Agency, or continue doing those bookings as they always have. These Independent Contractors (IC) agents working through a Host Agency, may still operate a store front location, or move into a home-based environment.</p>
             <p>Independent Contractors need a method to tag and transmit invoices to the Host Agency who have <span class="span_1">Trams</span> Back Office, and Host Agencies need a method to tag and transmit invoices to ICs who have TBO. Both ICs and Host Agencies need a way to receive and differentiate invoices created from various ICs/Hosts from their own. So the first step for both the ICs and the Host Agency is to setup IC/Host Codes to "turn on" the Host or IC functions in TBO and ClientBase. </p>
             <p>For complete instructions on how to do this setup, use the IC/Host functionality, as well as download an <a href="http://www.trams.com/home/products_services/products/ic_host_agency_export_utility/" class="Hyperlink">Export Utility click here.</a></p>
             <p>&#160;</p>
-            <h2><a name="CC_Processors" data-mc-generated-bookmark="TOC"></a><a name="CC_Processors" data-mc-generated-bookmark="TOC"></a><a name="CC_Processors"></a><a name="kanchor73"></a>CC Processors</h2>
+            <h2><a name="CC_Processors" data-mc-generated-bookmark="TOC"></a><a name="CC_Processors" data-mc-generated-bookmark="TOC"></a><a name="CC_Processors"></a><a name="kanchor75"></a>CC Processors</h2>
             <p>This is a setup area for those users who have signed up for the CC Merchant utility. The automated credit card processing feature is designed to process credit card merchant payments, using the data already entered into <span class="span_1">Trams Back Office</span>. We have formed partnerships with credit card processing companies to bring competitive rates and an easy-to-use interface to process credit card payments. Currently, we have partnerships with NTC (National Transaction Corporation), Ticketmaster (although they are not taking any new customers), and Caledon.</p>
             <p>Some preparation is required to begin automated credit card processing. The agency is required to apply to a processing company and allow them to process the credit card payments and deposit money into the bank account.</p>
             <p>1) <span class="span_3">NTC:</span> To obtain an application form for National Transaction Corp. (NTC) please contact Mark Fravel, <a href="mailto:mark@nationaltransaction.com"><span class="Hyperlink">mark@nationaltransaction.com, </span></a>888.996-2273. Once the sign-up process is complete, a Bank ID and Terminal ID is issued. Use the Bank ID as the username and the Terminal ID as the password.</p>
@@ -1951,7 +1960,7 @@
             <p><span>Note:</span> If the agency has multiple branches, repeat step 5 for each branch, as the credit card processing company provides a username and password per branch.</p>
             <p>For directions on Processing CC Merchant Transactions, go to the chapter, <span class="span_1">Payments, CC Merchant Reconciliation. </span>For more information on signing up to use CC Merchant, go to <a href="http://www.trams.com/home/products_services/products/credit_card_merchant/"><span class="Hyperlink">www.Trams.com|Products/Services</span></a>.</p>
             <p>&#160;</p>
-            <h2><a name="UDIDs" data-mc-generated-bookmark="TOC"></a><a name="UDIDs" data-mc-generated-bookmark="TOC"></a><a name="UDIDs"></a><a name="kanchor74"></a>UDIDs</h2>
+            <h2><a name="UDIDs" data-mc-generated-bookmark="TOC"></a><a name="UDIDs" data-mc-generated-bookmark="TOC"></a><a name="UDIDs"></a><a name="kanchor76"></a>UDIDs</h2>
             <p>This is a setup area for those users who choose to change the UDID 1-999 drop-down items to more meaningful and descriptive terms. For example, a UDID #5 can be changed to <span class="span_1">Purchase Order Number</span>. The UDID drop-down field then displays the changed new description of <span class="span_1">Purchase Order</span><span class="span_1">Number </span>instead of the previous UDID #5. Go to <span>Utilities|Setup|UDIDs. </span>Highlight the UDID to edit. Type its new name in the <span class="span_1">Description</span> and <span class="span_1">Update. </span>To print a report of UDIDs and descriptions, click <span class="span_1">Print. </span>Click <span class="span_1">OK</span> to save.</p>
             <p>
                 <img src="resources/images/chapter 1 welcome/groups_7.jpg" style="height: 337px;width: 444px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.20.jpg" class="img_1" />
@@ -1960,7 +1969,7 @@
             <p>Purchase Order No. 9587465</p>
             <p>(This UDID Description is also available when printing out client and vendor statements when selecting UDIDs to be printed on the statement.)</p>
             <p>&#160;</p>
-            <h2><a name="User-Defined_Fields" data-mc-generated-bookmark="TOC"></a><a name="User-Defined_Fields" data-mc-generated-bookmark="TOC"></a><a name="User-Defined_Fields"></a><a name="kanchor75"></a>User-Defined Fields</h2>
+            <h2><a name="User-Defined_Fields" data-mc-generated-bookmark="TOC"></a><a name="User-Defined_Fields" data-mc-generated-bookmark="TOC"></a><a name="User-Defined_Fields"></a><a name="kanchor77"></a>User-Defined Fields</h2>
             <p>User-Defined Fields is where to set up Reminder Subjects and Reminder Types to populate the drop-down lists when creating new and querying existing reminders.</p>
             <p>
                 <img src="resources/images/chapter 1 welcome/groups_383x287.png" style="width: 383;height: 287;" class="img_1" />
@@ -1969,13 +1978,13 @@
             <p>To create a new Reminder Type or Reminder Subject, select Type or Subject from the drop-down list and enter a value.&#160; Click <span class="span_1">Add</span><span class="span_1">.&#160; </span>To change a value, click the desired entry below, change the value, and click <span class="span_1">U</span><span class="span_1">pdate</span>.&#160; To delete a value, click the desired entry below, and click <span class="span_1">Delete</span>.</p>
             <p>Sample Reminder Subjects could be <span class="span_1">Agent Follow-up, Check for Payment, Run Reports, etc. </span>Sample Reminder Types could be <span class="span_1">Phone Call, Appointment, Email, etc.</span></p>
             <p>&#160;</p>
-            <h2><a name="Alarms_..161" data-mc-generated-bookmark="TOC"></a><a name="Alarms_..155" data-mc-generated-bookmark="TOC"></a><a name="Alarms"></a><a name="kanchor76"></a>Alarms</h2>
+            <h2><a name="Alarms_..161" data-mc-generated-bookmark="TOC"></a><a name="Alarms_..155" data-mc-generated-bookmark="TOC"></a><a name="Alarms"></a><a name="kanchor78"></a>Alarms</h2>
             <p>Customize Reminder Alarm settings by going to <span>Utilities|Setup|Alarms</span>.&#160; Check or uncheck <span class="span_1">Default new reminders with Alarms turned on; </span>and<span class="span_1"> Check for alarms every minutes.</span></p>
             <p>
                 <img src="resources/images/chapter 1 welcome/groups_1.png" style="height: 164px;width: 333px;" class="img_1" />
             </p>
             <p>&#160;</p>
-            <h2><a name="Backup_Overview" data-mc-generated-bookmark="TOC"></a><a name="Backup_Overview" data-mc-generated-bookmark="TOC"></a><a name="Backup_Overview"></a><a name="kanchor77"></a>Backup Overview</h2>
+            <h2><a name="Backup_Overview" data-mc-generated-bookmark="TOC"></a><a name="Backup_Overview" data-mc-generated-bookmark="TOC"></a><a name="Backup_Overview"></a><a name="kanchor79"></a>Backup Overview</h2>
             <h3><a name="Why_do_Backup_" data-mc-generated-bookmark="TOC"></a><a name="Why_do_Backup_" data-mc-generated-bookmark="TOC"></a><a name="Why_do_Backup"></a>Why do Backup?</h3>
             <p><span class="span_1">Because some day the computer housing the Trams database </span><span>WILL</span><span class="span_1"> crash.</span><span class="span_1">Backup is the ONLY insurance</span><span>!</span>
             </p>
@@ -2249,7 +2258,7 @@
             <p>4. Click on <span class="span_1">Start Backup</span> to start backing up, or <span class="span_1">Schedule Jobs</span>. (If selecting <span class="span_1">Schedule Jobs</span>, backup files will be backed up as scheduled. Make sure that to backup to a CB-RW or a USB Drive, etc., and that the system time and data are correct when using this option.)</p>
             <p>5. Repeat the process for the Spool Directory/s.</p>
             <p>&#160;</p>
-            <h2><a name="Restore" data-mc-generated-bookmark="TOC"></a><a name="Restore" data-mc-generated-bookmark="TOC"></a><a name="Restore4"></a><a name="kanchor78"></a>Restore</h2>
+            <h2><a name="Restore" data-mc-generated-bookmark="TOC"></a><a name="Restore" data-mc-generated-bookmark="TOC"></a><a name="Restore4"></a><a name="kanchor80"></a>Restore</h2>
             <p><span>NEVER restore the Trams.ib</span> until the backup has been restored some place else by following the procedures outlined below. The agency may be instructed by our support department to do a backup and then restore the database. This could be to re-index certain database tables or to troubleshoot some other issue. In any event, following these steps will ensure the integrity of the database backup, and will alleviate the possibility of restoring over an existing database. These steps should work for any version of Interbase, <span>but not for doing an upgrade of Interbase</span>. </p>
             <p>Close out of TBO (and <span class="span_1">ClientBase</span>) to restore data. </p>
             <p>
@@ -2276,14 +2285,14 @@
             <p>9) If the Sync scheduled task was disabled in Step 2, go back into the sync task's properties and enable it.</p>
             <p>If there are any questions about these steps or there is any difficulty in following them, don't hesitate to contact our support department.</p>
             <p>&#160;</p>
-            <h2><a name="Calculator" data-mc-generated-bookmark="TOC"></a><a name="Calculator" data-mc-generated-bookmark="TOC"></a><a name="Calculator2"></a><a name="kanchor79"></a>Calculator</h2>
+            <h2><a name="Calculator" data-mc-generated-bookmark="TOC"></a><a name="Calculator" data-mc-generated-bookmark="TOC"></a><a name="Calculator2"></a><a name="kanchor81"></a>Calculator</h2>
             <p>Access the calculator from this menu. Many of our customers find it convenient to access the calculator when they sign into <span class="span_1">Trams Back Office </span>each day. By minimizing and sending it to the tool bar, there is quick access to the calculator.</p>
             <p>
                 <img src="resources/images/chapter 1 welcome/groups_30.jpg" style="height: 276px;width: 276px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.43.jpg" class="img_1" />
             </p>
             <p>Use the keyboard’s number pad to calculate numbers and do a &lt;Ctrl C&gt; to copy the figure from the calculator’s display screen. When in <span class="span_1">Trams Back Office</span>, put the cursor in the field where the figure will go, and press &lt;Ctrl V&gt; (or right mouse click and select paste) to paste the amount.</p>
             <p>&#160;</p>
-            <h2><a name="Purge" data-mc-generated-bookmark="TOC"></a><a name="Purge" data-mc-generated-bookmark="TOC"></a><a name="Purge"></a><a name="kanchor80"></a>Purge</h2>
+            <h2><a name="Purge" data-mc-generated-bookmark="TOC"></a><a name="Purge" data-mc-generated-bookmark="TOC"></a><a name="Purge"></a><a name="kanchor82"></a>Purge</h2>
             <p>Purge automatically deletes/voids files in the system that may no longer be of use. </p>
             <h3><a name="PNR_History" data-mc-generated-bookmark="TOC"></a><a name="PNR_History" data-mc-generated-bookmark="TOC"></a><a name="PNR_History"></a>PNR History</h3>
             <p>On each interfaced invoice, <span class="span_1">Trams Back Office</span> keeps a "receipt" showing the interface formats used to create that invoice. Over time, these files can build up and take up needed disk space, not only on the computer hard drive, but on the back-up medium as well. Located under <span>Utilities|Purge|PNR History</span>, Purge deletes PNR History. PNR History is the information displayed when selecting the "Rec Loc" button at the top of each invoice. If choosing to purge PNR history, only purge through the last closed and balanced month. If not keeping a general ledger in <span class="span_1">Trams Back Office</span>, only purge through the last closed and reconciled ARC period.</p>
@@ -2385,14 +2394,14 @@
             <p>8) Purge the Invoices. </p>
             <p>9) Before doing any work in the new database, compare the agency's printed reports to the reports in the current database for accuracy. </p>
             <p>&#160;</p>
-            <h2><a name="Enter_Access_Code" data-mc-generated-bookmark="TOC"></a><a name="Enter_Access_Code" data-mc-generated-bookmark="TOC"></a><a name="Enter_Access_Code"></a>Enter <a name="kanchor81"></a>Access Code</h2>
+            <h2><a name="Enter_Access_Code" data-mc-generated-bookmark="TOC"></a><a name="Enter_Access_Code" data-mc-generated-bookmark="TOC"></a><a name="Enter_Access_Code"></a>Enter <a name="kanchor83"></a>Access Code</h2>
             <p>Approximately three weeks before the TBO access code is about to expire, a message will be displayed that the access code is about to expire when logging into TBO. By calling <span class="span_1">Trams</span> Marketing at 310-641-8726, emailing marketing@Trams.com, obtain the new access code for the existing serial number to enter in this area:</p>
             <p>
                 <img src="resources/images/chapter 1 welcome/enter access code.jpg" style="height: 212px;width: 310px;" alt="http://static.trams.com/tbo36/images/TFW%20Utilities2.04.1.47.jpg" class="img_1" />
             </p>
             <p><span>Special Note: </span>When a user’s access to TBO expires, by signing into TBO, have access only the reports under the Reports Menu. There is also access to <span>Utilities|User Access Code</span>. Users should export profiles and other data prior to license expiration. Reports can be mailmerged, printed or exported in a number of formats.</p>
             <p>&#160;</p>
-            <h2><a name="Display_Encryption_Key" data-mc-generated-bookmark="TOC"></a><a name="Display_Encryption_Key" data-mc-generated-bookmark="TOC"></a><a name="Display_Encryption_Key"></a>Display <a name="kanchor82"></a>Encryption Key</h2>
+            <h2><a name="Display_Encryption_Key" data-mc-generated-bookmark="TOC"></a><a name="Display_Encryption_Key" data-mc-generated-bookmark="TOC"></a><a name="Display_Encryption_Key"></a>Display <a name="kanchor84"></a>Encryption Key</h2>
             <p>An encryption key is needed by an agency’s Third-Party vendor if they want to display the un-encrypted credit card number.&#160; To obtain and encryption key, the agency supervisor or higher needs to send an email to <a href="mailto:Trams.TBOSuport@sabre.com"><span class="Hyperlink">Trams.TBOSuport@sabre.com</span></a> specifying the <span class="span_1">Trams</span> Back Office version number and why they need the key.&#160; Upon receipt of the key, it is entered under <span>Utilities|Display Encryption Key</span>.</p>
             <p>&#160;</p>
         </div>
