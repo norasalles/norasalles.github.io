@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated HTML5.fltar" Date="2021-03-11T15:33:24.0493404-03:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2020 r3 Generated HTML5.fltar" Date="2021-03-11T15:45:05.3761155-03:00">
     <Messages>Compiling target HTML5...
 Removing previously generated content...
 Loading skin info...
@@ -38,10 +38,10 @@ Writing search entry cache...
 Generating final output...
 Generated Skins\Default\Stylesheets\TextEffects.micro-content.css
 Generated Skins\Default\Stylesheets\Topic.micro-content.css
-Generated Default.htm
+Generated index.html
 Saving result set...
 Ignored Compiler Warnings: 641
-Output generated in 1 minute(s) and 2 second(s).
+Output generated in 25 second(s).
 
 Done
 Saving log to "C:\Users\SG0222835\OneDrive - Sabre\Documents\My Projects\NewProject1\Output\SG0222835\HTML5\HTML5.mclog"
