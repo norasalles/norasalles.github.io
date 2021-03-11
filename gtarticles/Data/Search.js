@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Objectives.htm'],s:['$','open'],p:[['$',0],['breakdown',0],['for',0],['normal',0],['sncb',0],['window',0]]});

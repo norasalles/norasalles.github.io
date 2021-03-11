@@ -1,0 +1,1 @@
+define({"0":{y:0,u:"../Content/Objectives.htm",l:-1,t:"Objectives",i:1,a:"Upon completion of this guide, you will be able to: Understand how the Air Connect (previously WebConnect) functionality works Configure Site Administration to allow Travelers to shop and book Air Connect (previously WebConnect) reservations Customize remarks displayed to Travelers Air Connect – ..."},});
