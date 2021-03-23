@@ -1,5 +1,6 @@
-@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
 /*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
 
 p.MyStyle
 {
@@ -11,8 +12,7 @@ p.MyStyle
 img
 {
 	border: none;
-	padding: 10;
-	padding-bottom: 10;
+	padding: 20pt;
 }
 
 a.Popup
@@ -260,7 +260,7 @@ h5
 
 body
 {
-	
+	background-image: url('../images/draft.png');
 }
 
 div.commframe

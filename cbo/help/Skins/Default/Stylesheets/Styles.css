@@ -141,7 +141,7 @@ body
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 250px;
+	width: 310px;
 }
 
 html.left-layout #navigation
@@ -176,7 +176,7 @@ html.right-layout #navigation
 
 html.left-layout #navigationResizeBar
 {
-	left: 250px;
+	left: 310px;
 }
 
 html.right-layout #navigationResizeBar
@@ -987,7 +987,7 @@ html.left-layout #contentBody
 	-moz-border-radius: 4px 0 0 0;
 	border-radius: 4px 0 0 0;
 	float: right;
-	left: 255px;
+	left: 315px;
 	right: 0;
 }
 

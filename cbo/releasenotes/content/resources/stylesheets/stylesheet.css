@@ -11,7 +11,7 @@ p.MyStyle
 img
 {
 	border: none;
-	padding: 10pt;
+	padding: 20pt;
 }
 
 a.Popup
@@ -248,7 +248,7 @@ h4
 
 img.imgheader
 {
-	
+	padding: 0px;
 }
 
 h5
@@ -269,6 +269,31 @@ div.commframe
 	font-weight: bold;
 	padding: 10px;
 	background: #9DD7D8;
-	color: #c00000;
+	color: #9DD7D8;
+}
+
+span.span_8
+{
+	font-style: italic;
+}
+
+ul.l1
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.l1 > li::marker
+{
+	font-family: ;
+	content: '—';
+}
+
+p.ListParagraph_1
+{
+	font-size: 11pt;
+	margin-bottom: ;
+	margin: 0;
+	padding-top: 5px;
 }
 
