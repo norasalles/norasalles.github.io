@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../content/cbo410 fixes.htm'],s:['+'],p:[['+',1]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../content/cbo410 fixes.htm'],s:['+'],p:[['+',1],['same',2]]});

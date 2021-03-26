@@ -138,10 +138,10 @@ body
 
 #navigation
 {
+	width: 300px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 250px;
 }
 
 html.left-layout #navigation
@@ -176,7 +176,7 @@ html.right-layout #navigation
 
 html.left-layout #navigationResizeBar
 {
-	left: 250px;
+	left: 300px;
 }
 
 html.right-layout #navigationResizeBar
@@ -986,9 +986,9 @@ html.left-layout #contentBody
 	-webkit-border-radius: 4px 0 0 0;
 	-moz-border-radius: 4px 0 0 0;
 	border-radius: 4px 0 0 0;
-	float: right;
-	left: 255px;
+	left: 305px;
 	right: 0;
+	float: right;
 }
 
 html.left-layout #contentBody.nav-closed
@@ -1086,9 +1086,10 @@ iframe.content
 	list-style: none;
 	float: left;
 	margin-top: 3px;
-	width: 100px;
+	font-weight: bold;
+	width: 0px;
 	height: 28px;
-	navigation-tab-layout: ImageThenText;
+	navigation-tab-layout: TextOnly;
 	text-align: center;
 	line-height: 28px;
 }
@@ -1193,7 +1194,7 @@ iframe.content
 	overflow: auto;
 	padding-left: 7px;
 	padding-right: 7px;
-	padding-top: 8px;
+	padding-top: 7px;
 	border-left: solid 1px #e1e1e1;
 	border-right: solid 1px #e1e1e1;
 	border-top: solid 1px #e1e1e1;
@@ -1903,6 +1904,7 @@ a.activityText
 
 #browseSequences.tabs-panel-content
 {
+	padding-left: 7px;
 	background-color: #ffffff;
 }
 
@@ -2083,7 +2085,7 @@ a.activityText
 
 .tabs-nav li#BrowseSequencesTab
 {
-	
+	width: 150px;
 }
 
 .tabs-nav li#CommunityTab
@@ -2098,7 +2100,7 @@ a.activityText
 
 .tabs-nav li#IndexTab
 {
-	
+	width: 80px;
 }
 
 .tabs-nav li#SearchTab
@@ -2108,7 +2110,7 @@ a.activityText
 
 .tabs-nav li#TocTab
 {
-	
+	width: 100px;
 }
 
 .tabs-nav li#BrowseSequencesTab.tabs-nav-active

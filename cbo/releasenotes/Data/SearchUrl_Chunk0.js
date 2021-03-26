@@ -1,1 +1,1 @@
-define({"../content/cbo410 fixes.htm":1,"../content/cbo410 nfet.htm":0,});
+define({"../content/cbo410 fixes.htm":1,"../content/cbo410 nfet.htm":0,"../content/sabre profile sync pilot enhancements.htm":2,});
