@@ -57,6 +57,7 @@ h1
 	color: #808080;
 	margin-bottom: -0.33em;
 	font-family: 'Roboto Black';
+	margin: 0;
 }
 
 h2
@@ -65,15 +66,20 @@ h2
 	font-weight: bold;
 	color: #C00000;
 	font-family: 'Roboto Black';
+	margin-bottom: -0.33em;
+	margin: 0;
 }
 
 h3
 {
 	font: ;
-	font-size: 14pt;
 	font-weight: bold;
 	font-family: Roboto;
 	color: #1A4D66;
+	font-size: 12pt;
+	margin-top: 0;
+	margin: 0;
+	margin-bottom: -0.35em;
 }
 
 p
@@ -119,23 +125,6 @@ p.productnewfeaturepdf
 	font-size: 9pt;
 	margin-top: 0.12em;
 	letter-spacing: 1px;
-}
-
-ul.Bulletline
-{
-	list-style-type: disc;
-	list-style-image: none;
-}
-
-ul.Bulletline > li::marker
-{
-	font-family: 'Times New Roman';
-	content: '—';
-}
-
-ul.Bulletlvl2
-{
-	
 }
 
 ul.Bulletlvl2 > li > ul
@@ -277,6 +266,116 @@ span.span_8
 	font-style: italic;
 }
 
+/*<meta sourceDocument="C:\Users\SG0222835\Downloads\4 10 00 MU1 CBO FIX release notes.docx" />*/
+
+p.p_1
+{
+	margin: 0px;
+	font-family: 'Times New Roman';
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: 10pt;
+}
+
+ol
+{
+	margin: 0px;
+	font-family: 'Times New Roman';
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: 10pt;
+}
+
+ul.ul_1
+{
+	list-style-type: disc;
+	list-style-image: none;
+	margin: 0px;
+	font-family: 'Times New Roman';
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-size: 10pt;
+}
+
+td
+{
+	font-family: 'Times New Roman';
+	vertical-align: top;
+}
+
+p.ListParagraph
+{
+	margin-left: 36pt;
+	font-family: 'Times New Roman';
+}
+
+li.ListParagraph_6
+{
+	margin-bottom: 8pt;
+	font-size: 11pt;
+	margin-left: 36pt;
+	font-family: 'Times New Roman';
+}
+
+p.NormalWeb
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+li.NormalWeb
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.ql-indent-1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+span.Emphasis
+{
+	font-style: italic;
+}
+
+li.ql-indent-1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+span.Heading3Char
+{
+	color: #243F60;
+	font-size: 12pt;
+}
+
+ul.bulletline
+{
+	list-style-type: inherit;
+}
+
+ul.bulletline > li > ul > li > ul
+{
+	list-style-image: none;
+}
+
+ul.bulletline > li > ul > li > ul > li::marker
+{
+	font-family: ;
+	content: '–';
+}
+
 ul.l1
 {
 	list-style-type: disc;
@@ -286,14 +385,23 @@ ul.l1
 ul.l1 > li::marker
 {
 	font-family: ;
-	content: '—';
+	content: '–';
 }
 
-p.ListParagraph_1
+ul.l1 > li > ul > li > ul > li > ul
 {
-	font-size: 11pt;
-	margin-bottom: ;
-	margin: 0;
-	padding-top: 5px;
+	list-style-image: none;
+}
+
+ul.l1 > li > ul > li > ul > li > ul > li::marker
+{
+	font-family: ;
+	content: '–';
+}
+
+dt
+{
+	font-family: Arial;
+	font-size: 10pt;
 }
 

@@ -138,10 +138,10 @@ body
 
 #navigation
 {
-	width: 300px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
+	width: 250px;
 }
 
 html.left-layout #navigation
@@ -176,7 +176,7 @@ html.right-layout #navigation
 
 html.left-layout #navigationResizeBar
 {
-	left: 300px;
+	left: 250px;
 }
 
 html.right-layout #navigationResizeBar
@@ -754,7 +754,8 @@ ul.tree
 	background-repeat: no-repeat;
 	background-position: 0 3px;
 	position: relative;
-	color: #707070;
+	color: #333333;
+	font-weight: normal;
 	line-height: 1.9em;
 }
 
@@ -986,9 +987,9 @@ html.left-layout #contentBody
 	-webkit-border-radius: 4px 0 0 0;
 	-moz-border-radius: 4px 0 0 0;
 	border-radius: 4px 0 0 0;
-	left: 305px;
-	right: 0;
 	float: right;
+	left: 255px;
+	right: 0;
 }
 
 html.left-layout #contentBody.nav-closed
@@ -1086,11 +1087,12 @@ iframe.content
 	list-style: none;
 	float: left;
 	margin-top: 3px;
-	font-weight: bold;
-	width: 0px;
+	font-family: Arial;
+	width: 300px;
 	height: 28px;
-	navigation-tab-layout: TextOnly;
+	navigation-tab-layout: ImageThenText;
 	text-align: center;
+	text-indent: 0px;
 	line-height: 28px;
 }
 
@@ -1112,6 +1114,8 @@ iframe.content
 	border-radius: 4px 4px 0 0;
 	background-clip: padding-box;
 	color: #dadada;
+	font-family: Arial;
+	font-weight: normal;
 	border-right: solid 1px #494949;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -1142,6 +1146,8 @@ iframe.content
 	/*PIE*/
 	margin-top: 0;
 	color: #000000;
+	font-family: Arial;
+	font-weight: bold;
 	border-right: solid 1px #494949;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -1194,7 +1200,7 @@ iframe.content
 	overflow: auto;
 	padding-left: 7px;
 	padding-right: 7px;
-	padding-top: 7px;
+	padding-top: 8px;
 	border-left: solid 1px #e1e1e1;
 	border-right: solid 1px #e1e1e1;
 	border-top: solid 1px #e1e1e1;
@@ -1905,6 +1911,7 @@ a.activityText
 #browseSequences.tabs-panel-content
 {
 	padding-left: 7px;
+	padding-top: 8px;
 	background-color: #ffffff;
 }
 
@@ -1933,14 +1940,16 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-expanded.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-expanded.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-expanded.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-expanded.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-expanded.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-expanded.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-expanded.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-collapsed > div:hover
@@ -1953,14 +1962,16 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-collapsed.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-collapsed.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-collapsed.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-collapsed.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-collapsed.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-collapsed.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-collapsed.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-leaf > div:hover
@@ -1973,14 +1984,16 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-leaf.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index.png') no-repeat  0 3px,#E5E5E5;
 }
 
 #search.tabs-panel-content
@@ -1996,6 +2009,8 @@ a.activityText
 .web .tree-node.tree-node-collapsed > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
+	color: #000000;
+	font-weight: bold;
 	background: url('Images/book.png') no-repeat  0 3px,#e5eff7;
 }
 
@@ -2003,19 +2018,23 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-collapsed.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-expanded > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
+	color: #000000;
+	font-weight: bold;
 	background: url('Images/book-open.png') no-repeat  0 3px,#e5eff7;
 }
 
@@ -2023,19 +2042,23 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book-open.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book-open.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-expanded.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book-open.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book-open.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-leaf > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/topic.png') no-repeat 0 3px;
+	color: #000000;
+	font-weight: bold;
 	background: url('Images/topic.png') no-repeat  0 3px,#e5eff7;
 }
 
@@ -2043,44 +2066,51 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/topic.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/topic.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/topic.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-leaf.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/topic.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/topic.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/topic.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .tree-node.tree-node-selected > div
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 .web .tree-node.tree-node-selected > div:hover
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 #index .tree-node.tree-node-selected > div
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 .web #index .tree-node.tree-node-selected > div:hover
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 .SearchFilterEntry.tree-node .SearchFilter.active
 {
-	background-color: #cce0f0;
+	background-color: #E5E5E5;
 	color: #000000;
+	font-weight: bold;
 }
 
 .tabs-nav li#BrowseSequencesTab
@@ -2100,7 +2130,7 @@ a.activityText
 
 .tabs-nav li#IndexTab
 {
-	width: 80px;
+	
 }
 
 .tabs-nav li#SearchTab

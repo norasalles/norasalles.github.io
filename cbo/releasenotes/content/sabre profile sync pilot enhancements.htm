@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-browse-sequence-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
@@ -31,24 +31,24 @@
         <p class="productnewfeature" style="font-size: 10pt;text-decoration: none;"><span class="mc-variable Variables.Type variable">New Features and Enhancements</span>&#160;&#160;</p>
         <p>&#160;</p>
         <div role="main" id="mc-main-content">
-            <h1><a name="Sabre_Profile_Sync_Pilot_Enhancements_and_Fixes" data-mc-generated-bookmark="TOC"></a><span class="Strong">Sabre Profile Sync Pilot Enhancements and Fixes</span>
+            <h1><span class="Strong">Sabre Profile Sync Pilot Enhancements and Fixes</span>
             </h1>
-            <h2><a name="Changes_made_between_4.08.00.070_and_4.08.00.083" data-mc-generated-bookmark="TOC"></a>Changes made between 4.08.00.070 and 4.08.00.083</h2>
-            <h3><a name="Profile_Merge_Related" data-mc-generated-bookmark="TOC"></a>Profile Merge Related</h3>
+            <h2>Changes made between 4.08.00.070 and 4.08.00.083</h2>
+            <h3>Profile Merge Related</h3>
             <ul>
                 <li>
                     <p>Fixed an issue where sync does not occur between a matching ClientBase and Sabre Profiles Traveler if the ClientBase Traveler profile contains entries that do not sync to Sabre Profiles (such as Preferred Vendor or PNR Entry).<br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Initial_Import_Report_Related" data-mc-generated-bookmark="TOC"></a>Initial Import Report Related</h3>
+            <h3>Initial Import Report Related</h3>
             <ul>
                 <li>
                     <p>Corrected an issue where the INIT report&#160;returned an error when ClientBase profiles contained certain types of non-syncing data, such as Preferred Vendors or PNR Entry.&#160;<br /><br /></p>
                 </li>
             </ul>
             <p class="ListParagraph_6">&#160;</p>
-            <h2><a name="Changes_made_between_4.08.00.039_and_4.08.00.070" data-mc-generated-bookmark="TOC"></a>Changes made between 4.08.00.039 and 4.08.00.070</h2>
-            <h3><a name="Profile_Import_Related,_ClientBase_to_Sabre_Profiles" data-mc-generated-bookmark="TOC"></a>Profile Import Related, ClientBase to Sabre Profiles</h3>
+            <h2>Changes made between 4.08.00.039 and 4.08.00.070</h2>
+            <h3>Profile Import Related, ClientBase to Sabre Profiles</h3>
             <ul>
                 <li>
                     <p>Fixed an issue where the ClientBase Emergency Contact was not added to the corresponding Sabre Profile as an additional Emergency Contact, causing the ClientBase Emergency Contact to be lost when the Sabre Profile synced back to ClientBase.</p>
@@ -57,7 +57,7 @@
                     <p>When ClientBase profiles are synced to Sabre Profiles, we strip out all punctuation that Sabre Profiles does not allow in its profile names&#160;-- only slashes and periods are permitted, so we remove any other punctuation.&#160; Affected fields are Profile Name, First Name, Middle Name, Last Name, and Title.&#160;We do not strip out&#160;special characters&#160;such as á,&#160;ç,&#160;å,&#160;ñ,&#160;ø, et cetera. If someone updates the Sabre Profile and tries to save it with those characters, they will need to update the name.&#160;Once any&#160;update is made to the Sabre Profile,&#160;the corrected/un-punctuated name will sync back to ClientBase.<br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Profile_Import_Related,_Sabre_Profiles_to_ClientBase" data-mc-generated-bookmark="TOC"></a>Profile Import Related, Sabre Profiles to ClientBase</h3>
+            <h3>Profile Import Related, Sabre Profiles to ClientBase</h3>
             <ul>
                 <li>
                     <p>When a Sabre Traveler has a DK or AN that matches the Interface ID of more than ClientBase Corporate and/or Group profile, that Traveler will be linked to all of those ClientBase profiles.&#160;</p>
@@ -80,7 +80,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3><a name="Profile_Update_Related" data-mc-generated-bookmark="TOC"></a>Profile Update Related</h3>
+            <h3>Profile Update Related</h3>
             <ul>
                 <li>
                     <p>The Branch Number field in ClientBase is synced with the Sabre Profiles field Branch ID. ClientBase will only accept a number for a Branch, whereas Sabre Profiles will allow any kind of text. We have also made Branch ID a required field in our default templates. Therefore, we had to make some exceptions to our usual sync rules for this field.</p>
@@ -105,7 +105,7 @@
                     <p class="ListParagraph">Fixed an issue where SPS profiles with more than one default PNR Builder template could not be updated with changes synced from ClientBase. <br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Template_Related" data-mc-generated-bookmark="TOC"></a>Template Related</h3>
+            <h3>Template Related</h3>
             <ul>
                 <li>
                     <p>Added Branch ID (under Additional Profile Information &gt; Employment Information &gt; More Options) as a field for the default ClientBase Traveler template. This will populate the ClientBase Branch Number field of any Leisure Wrapper profile created for the Sabre Profiles Traveler. If the Traveler is associated with a Corporate or Group/Leisure profile, then that profile's branch number will serve as the ClientBase Traveler's branch.&#160;</p>
@@ -117,7 +117,7 @@
                     <p>If you modify our default templates by&#160;adding another field that we do not sync, and making it required, you may encounter an error. After that error is corrected, associations between profiles may not be created properly. If you want to modify the default templates provided, don't make any additional fields required.<br />&#160;</p>
                 </li>
             </ul>
-            <h3 style="font-size: 12pt;"><a name="Initial_Import_Report_Related_" data-mc-generated-bookmark="TOC"></a>Initial Import Report Related:</h3>
+            <h3 style="font-size: 12pt;">Initial Import Report Related:</h3>
             <ul>
                 <li>
                     <p class="ListParagraph">Fixed an issue where the INIT report incorrectly showed that a Leisure Wrapper profile would be created for SP Travelers with an association to a Group or Corporate profile.</p>
@@ -130,8 +130,8 @@
                 </li>
             </ul>
             <p>&#160;</p>
-            <h2><a name="Changes_made_between_4.08.00.028_and_4.08.00.039" data-mc-generated-bookmark="TOC"></a>Changes made between 4.08.00.028 and 4.08.00.039</h2>
-            <h3><a name="Profile_Import_Related,_Sabre_Profiles_to_ClientBase_..1" data-mc-generated-bookmark="TOC"></a>Profile Import Related, Sabre Profiles to ClientBase</h3>
+            <h2>Changes made between 4.08.00.028 and 4.08.00.039</h2>
+            <h3>Profile Import Related, Sabre Profiles to ClientBase</h3>
             <ul>
                 <li>
                     <p>Added the ability to assign a ClientBase Primary Agent to Corporate and Leisure profiles using the System ID field in the Business System Identity subject area. This field is mapped to the ClientBase profile’s Primary Agent field. &#160;</p>
@@ -143,13 +143,13 @@
                     <p>Fixed a "VALIDATOR RULE The following required element is missing" message that occurred when the attached template has a field designated as required which does not sync to ClientBase.<br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Profile_Import_Related,_ClientBase_to_Sabre_Profiles_..2" data-mc-generated-bookmark="TOC"></a>Profile Import Related, ClientBase to Sabre Profiles</h3>
+            <h3>Profile Import Related, ClientBase to Sabre Profiles</h3>
             <ul>
                 <li>
                     <p class="ListParagraph">Fixed an issue where a ClientBase mailing address designated as both “Bill To” and “hip To” did not split into two addresses, one Billing and one Delivery, upon syncing into Sabre Profiles.<br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Profile_Merge_Related_..3" data-mc-generated-bookmark="TOC"></a>Profile Merge Related</h3>
+            <h3>Profile Merge Related</h3>
             <ul>
                 <li>
                     <p class="ListParagraph">Fixed an issue where Emergency Contacts only matched if the Contact had a single word in First Name and a single word in Last Name. Syncing contacts with a Middle Name or a multi-word First/Last Name (Mary Alice, Van der Beek) caused an additional Emergency Contact to be created.</p>
@@ -161,7 +161,7 @@
                     <p class="ListParagraph">Fixed an issue where, when profiles merge, sync was creating duplicate profiles instead when the Sabre Profiles DK was not all in upper case like the ClientBase Interface ID. This matching criterion is no longer case sensitive.<br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Profile_Update_Related_..4" data-mc-generated-bookmark="TOC"></a>Profile Update Related</h3>
+            <h3>Profile Update Related</h3>
             <ul>
                 <li>
                     <p class="ListParagraph">Fixed an issue where the ClientBase Emergency Contact was not added to the corresponding Sabre Profile as an additional Emergency Contact, causing the ClientBase Emergency Contact to be lost when the Sabre Profile synced back to ClientBase.</p>
@@ -179,13 +179,13 @@
                     <p class="ListParagraph">Fixed an issue where, if a profile is deleted in both ClientBase and Sabre Profiles in between syncs, Delete records sometimes did not get marked as PROCESSED when the record is already deleted.<br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Template_Related_..5" data-mc-generated-bookmark="TOC"></a>Template Related</h3>
+            <h3>Template Related</h3>
             <ul>
                 <li>
                     <p class="ListParagraph">Added the Business System Identity System ID field to the default Corporate, Leisure, and Traveler templates.<br /><br /></p>
                 </li>
             </ul>
-            <h3><a name="Initial_Import_Report_Related__..6" data-mc-generated-bookmark="TOC"></a>Initial Import Report Related:</h3>
+            <h3>Initial Import Report Related:</h3>
             <ul>
                 <li>
                     <p class="ListParagraph">The INIT Report: no longer lists linked profiles in the Merged Traveler section.</p>
