@@ -92,8 +92,8 @@ body
 	font-size: 12px;
 	font-weight: normal;
 	font-style: normal;
-	background: #ac0000 none;
-	-pie-background: #ac0000;
+	background: #0c436a none;
+	-pie-background: #0c436a;
 }
 
 #header
@@ -104,7 +104,7 @@ body
 	z-index: 1;
 	/* IE7 z-index bug: positioned elements (#header) generate a new stacking context starting with a z-index value of 0. This causes .search-filter-content's z-index not to work. So set #header's z-index (don't really need to set .search-filter-content's z-index but we'll leave it). http://www.quirksmode.org/bugreports/archives/2006/01/Explorer_z_index_bug.html */
 	display: block;
-	height: 60px;
+	height: 100px;
 }
 
 #header .logo
@@ -113,18 +113,18 @@ body
 	top: 50%;
 	margin-left: 20px;
 	display: block;
-	background: transparent url('Images/sabre_home_white.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
-	width: 128px;
-	height: 30px;
-	margin-top: -15px;
+	background: transparent url('Images/logo.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/logo.png') no-repeat center center;
+	width: 207px;
+	height: 53px;
+	margin-top: -26.5px;
 }
 
 #header .logo > img
 {
 	border: none;
-	width: 128px;
-	height: 30px;
+	width: 207px;
+	height: 53px;
 }
 
 #body
@@ -133,7 +133,7 @@ body
 	right: 0;
 	bottom: 0;
 	left: 0;
-	top: 60px;
+	top: 100px;
 }
 
 #navigation
@@ -141,7 +141,7 @@ body
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 250px;
+	width: 280px;
 }
 
 html.left-layout #navigation
@@ -176,7 +176,7 @@ html.right-layout #navigation
 
 html.left-layout #navigationResizeBar
 {
-	left: 250px;
+	left: 280px;
 }
 
 html.right-layout #navigationResizeBar
@@ -754,7 +754,8 @@ ul.tree
 	background-repeat: no-repeat;
 	background-position: 0 3px;
 	position: relative;
-	color: #707070;
+	color: #333333;
+	font-weight: normal;
 	line-height: 1.9em;
 }
 
@@ -987,7 +988,7 @@ html.left-layout #contentBody
 	-moz-border-radius: 4px 0 0 0;
 	border-radius: 4px 0 0 0;
 	float: right;
-	left: 255px;
+	left: 285px;
 	right: 0;
 }
 
@@ -1072,7 +1073,7 @@ iframe.content
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 15px;
-	margin-top: 14px;
+	margin-top: 13px;
 }
 
 .tab
@@ -1086,10 +1087,12 @@ iframe.content
 	list-style: none;
 	float: left;
 	margin-top: 3px;
-	width: 100px;
+	font-family: Arial;
+	width: 300px;
 	height: 28px;
 	navigation-tab-layout: ImageThenText;
 	text-align: center;
+	text-indent: 0px;
 	line-height: 28px;
 }
 
@@ -1111,6 +1114,8 @@ iframe.content
 	border-radius: 4px 4px 0 0;
 	background-clip: padding-box;
 	color: #dadada;
+	font-family: Arial;
+	font-weight: normal;
 	border-right: solid 1px #494949;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -1141,6 +1146,8 @@ iframe.content
 	/*PIE*/
 	margin-top: 0;
 	color: #000000;
+	font-family: Arial;
+	font-weight: bold;
 	border-right: solid 1px #494949;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -1203,23 +1210,23 @@ iframe.content
 #responsiveHeader
 {
 	display: none;
-	background: #ac0000 none;
-	-pie-background: #ac0000;
+	background: #0c436a none;
+	-pie-background: #0c436a;
 }
 
 #responsiveHeader .logo
 {
 	height: 100%;
 	display: block;
-	width: 128px;
-	background: transparent url('Images/sabre_home_white.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
+	width: 207px;
+	background: transparent url('Images/logo.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/logo.png') no-repeat center center;
 }
 
 #responsiveHeader .logo > img
 {
-	width: 128px;
-	height: 30px;
+	width: 207px;
+	height: 53px;
 }
 
 #search-field,
@@ -1279,7 +1286,7 @@ iframe.content
 	line-height: 28px;
 	padding-right: 5px;
 	cursor: pointer;
-	height: 28px;
+	height: 30px;
 	color: #dadada;
 	background: -moz-linear-gradient(top, #6F6F6F 0%, #555555 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6F6F6F), color-stop(100%,#555555));
@@ -1414,7 +1421,7 @@ iframe.content
 	box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
-	height: 28px;
+	height: 30px;
 }
 
 /* placeholder */
@@ -1903,6 +1910,8 @@ a.activityText
 
 #browseSequences.tabs-panel-content
 {
+	padding-left: 7px;
+	padding-top: 8px;
 	background-color: #ffffff;
 }
 
@@ -1931,14 +1940,16 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-expanded.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-expanded.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-expanded.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-expanded.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-expanded.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-expanded.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-expanded.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-collapsed > div:hover
@@ -1951,14 +1962,16 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-collapsed.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-collapsed.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-collapsed.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-collapsed.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index-collapsed.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index-collapsed.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index-collapsed.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-leaf > div:hover
@@ -1971,14 +1984,16 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web #index .tree-node.tree-node-leaf.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/index.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/index.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/index.png') no-repeat  0 3px,#E5E5E5;
 }
 
 #search.tabs-panel-content
@@ -1994,6 +2009,8 @@ a.activityText
 .web .tree-node.tree-node-collapsed > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
+	color: #000000;
+	font-weight: bold;
 	background: url('Images/book.png') no-repeat  0 3px,#e5eff7;
 }
 
@@ -2001,19 +2018,23 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-collapsed.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-expanded > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
+	color: #000000;
+	font-weight: bold;
 	background: url('Images/book-open.png') no-repeat  0 3px,#e5eff7;
 }
 
@@ -2021,19 +2042,23 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book-open.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book-open.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-expanded.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/book-open.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/book-open.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/book-open.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-leaf > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/topic.png') no-repeat 0 3px;
+	color: #000000;
+	font-weight: bold;
 	background: url('Images/topic.png') no-repeat  0 3px,#e5eff7;
 }
 
@@ -2041,49 +2066,56 @@ a.activityText
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/topic.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/topic.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/topic.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .web .tree-node.tree-node-leaf.tree-node-selected > div:hover
 {
 	-pie-background: transparent url('Skins/Default/Stylesheets/Images/topic.png') no-repeat 0 3px;
 	color: #000000;
-	background: url('Images/topic.png') no-repeat  0 3px,#cce0f0;
+	font-weight: bold;
+	background: url('Images/topic.png') no-repeat  0 3px,#E5E5E5;
 }
 
 .tree-node.tree-node-selected > div
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 .web .tree-node.tree-node-selected > div:hover
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 #index .tree-node.tree-node-selected > div
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 .web #index .tree-node.tree-node-selected > div:hover
 {
 	color: #000000;
-	background-color: #cce0f0;
+	font-weight: bold;
+	background-color: #E5E5E5;
 }
 
 .SearchFilterEntry.tree-node .SearchFilter.active
 {
-	background-color: #cce0f0;
+	background-color: #E5E5E5;
 	color: #000000;
+	font-weight: bold;
 }
 
 .tabs-nav li#BrowseSequencesTab
 {
-	
+	width: 150px;
 }
 
 .tabs-nav li#CommunityTab
@@ -2108,7 +2140,7 @@ a.activityText
 
 .tabs-nav li#TocTab
 {
-	
+	width: 100px;
 }
 
 .tabs-nav li#BrowseSequencesTab.tabs-nav-active
@@ -2327,7 +2359,7 @@ a.activityText
 
 #search-field
 {
-	height: 28px;
+	height: 30px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 15px;
 	color: #333333;
