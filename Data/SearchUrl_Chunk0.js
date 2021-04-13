@@ -1,1 +1,1 @@
-define({"../content/a-introduction-topics/getting-started.htm":5,"../content/about/about.htm":1,"../content/about/faqs.htm":2,"../content/about/terms of use \u0026 copyright.htm":3,"../content/home.htm":4,"../content/tbo/release notes.htm":0,});
+define({"../content/a-introduction-topics/getting-started.htm":4,"../content/about/about.htm":0,"../content/about/faqs.htm":1,"../content/about/terms of use \u0026 copyright.htm":2,"../content/home.htm":3,});
