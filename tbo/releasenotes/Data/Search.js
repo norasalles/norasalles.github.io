@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../content/b2/trams back office 4 10 beta fix.htm'],s:['00','nterfacing'],p:[['00',0]]});
