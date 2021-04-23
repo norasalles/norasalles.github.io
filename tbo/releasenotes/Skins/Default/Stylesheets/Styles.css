@@ -1068,9 +1068,9 @@ iframe.content
 	border-right: solid 1px #363636;
 	border-top: solid 1px #363636;
 	border-bottom: solid 1px #363636;
-	border-top-left-radius: 58px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 15px;
 	margin-top: 13px;
 }
@@ -1391,8 +1391,8 @@ iframe.content
 	box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 	border-left: solid 1px #363636;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
@@ -2328,19 +2328,19 @@ a.activityText
 #search-field
 {
 	height: 30px;
-	border-top-left-radius: 58px;
+	border-top-left-radius: 50px;
 	border-bottom-left-radius: 15px;
 	color: #101820;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	background: transparent;
-	background: -moz-linear-gradient(top, #ffffff 0%, #b1b1b1 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#b1b1b1));
-	background: -webkit-linear-gradient(top, #ffffff 0%, #b1b1b1 100%);
-	background: -o-linear-gradient(top, #ffffff 0%,#b1b1b1 100%);
-	background: -ms-linear-gradient(top, #ffffff 0%,#b1b1b1 100%);
-	background: linear-gradient(top, #ffffff 0%,#b1b1b1 100%);
-	-pie-background: linear-gradient(#ffffff, #b1b1b1);
+	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+	background: linear-gradient(top, #ffffff 0%,#ffffff 100%);
+	-pie-background: linear-gradient(#ffffff, #ffffff);
 }
 
 #resultList .glossary .definition
