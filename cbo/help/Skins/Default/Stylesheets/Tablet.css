@@ -73,8 +73,8 @@
 		display: block;
 		height: 60px;
 		text-align: center;
-		background: #ac0000 none;
-		-pie-background: #ac0000;
+		background: #0c436a none;
+		-pie-background: #0c436a;
 	}
 
 	#responsiveHeader > a.homeLink
@@ -86,15 +86,15 @@
 	{
 		margin: auto;
 		height: 100%;
-		width: 128px;
-		background: transparent url('Images/sabre_home_white.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
+		width: 207px;
+		background: transparent url('Images/logo.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Images/logo.png') no-repeat center center;
 	}
 
 	#responsiveHeader .logo > img
 	{
-		width: 128px;
-		height: 30px;
+		width: 207px;
+		height: 53px;
 	}
 
 	.toggle-topbar
@@ -772,8 +772,8 @@
 
 	body
 	{
-		background: #ac0000 none;
-		-pie-background: #ac0000;
+		background: #0c436a none;
+		-pie-background: #0c436a;
 	}
 
 	#navigation[role="complementary"]

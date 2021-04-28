@@ -47,6 +47,10 @@ mcTableHeadStyle
 	id: 2;
 	font-weight: bolder;
 	background-color: #e5e5e5;
+	cell-padding-left: 5px;
+	cell-padding-right: 5px;
+	cell-padding-top: 5px;
+	cell-padding-bottom: 5px;
 }
 
 mcTableBodyStyle
@@ -103,12 +107,12 @@ mcTableFootStyle
 
 .TableStyle-table-HeadI-Column1-Header1
 {
+	font-weight: bolder;
+	background-color: #e5e5e5;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-weight: bolder;
-	background-color: #e5e5e5;
 }
 
 .TableStyle-table-HeadI-Column1-Header1 p
@@ -118,15 +122,15 @@ mcTableFootStyle
 
 .TableStyle-table-HeadE-Column1-Header1
 {
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	border-right-width: 1px;
 	border-right-color: #000000;
 	border-right-style: solid;
 	font-weight: bolder;
 	background-color: #e5e5e5;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-bottom-width: 2px;
 	border-bottom-color: #000000;
 	border-bottom-style: solid;
@@ -139,12 +143,12 @@ mcTableFootStyle
 
 .TableStyle-table-HeadF-Column1-Header1
 {
+	font-weight: bolder;
+	background-color: #e5e5e5;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-weight: bolder;
-	background-color: #e5e5e5;
 	border-bottom-width: 2px;
 	border-bottom-color: #000000;
 	border-bottom-style: solid;
@@ -157,15 +161,15 @@ mcTableFootStyle
 
 .TableStyle-table-HeadH-Column1-Header1
 {
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	border-right-width: 1px;
 	border-right-color: #000000;
 	border-right-style: solid;
 	font-weight: bolder;
 	background-color: #e5e5e5;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .TableStyle-table-HeadH-Column1-Header1 p
@@ -175,12 +179,12 @@ mcTableFootStyle
 
 .TableStyle-table-HeadD-Column1-Header1
 {
+	font-weight: bolder;
+	background-color: #e5e5e5;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-weight: bolder;
-	background-color: #e5e5e5;
 	border-bottom-width: 2px;
 	border-bottom-color: #000000;
 	border-bottom-style: solid;
@@ -193,12 +197,12 @@ mcTableFootStyle
 
 .TableStyle-table-HeadC-Column1-Header1
 {
+	font-weight: bolder;
+	background-color: #e5e5e5;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-weight: bolder;
-	background-color: #e5e5e5;
 }
 
 .TableStyle-table-HeadC-Column1-Header1 p
@@ -208,15 +212,15 @@ mcTableFootStyle
 
 .TableStyle-table-HeadB-Column1-Header1
 {
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	border-right-width: 1px;
 	border-right-color: #000000;
 	border-right-style: solid;
 	font-weight: bolder;
 	background-color: #e5e5e5;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .TableStyle-table-HeadB-Column1-Header1 p
@@ -226,12 +230,12 @@ mcTableFootStyle
 
 .TableStyle-table-HeadA-Column1-Header1
 {
+	font-weight: bolder;
+	background-color: #e5e5e5;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-weight: bolder;
-	background-color: #e5e5e5;
 }
 
 .TableStyle-table-HeadA-Column1-Header1 p
@@ -241,12 +245,12 @@ mcTableFootStyle
 
 .TableStyle-table-HeadG-Column1-Header1
 {
+	font-weight: bolder;
+	background-color: #e5e5e5;
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-weight: bolder;
-	background-color: #e5e5e5;
 }
 
 .TableStyle-table-HeadG-Column1-Header1 p

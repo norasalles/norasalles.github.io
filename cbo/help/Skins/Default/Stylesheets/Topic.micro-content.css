@@ -387,41 +387,6 @@
 	right: 0;
 }
 
-.micro-response .dropDownHotspot
-{
-	text-decoration: none;
-}
-
-.micro-response .dropDownHotspot:link
-{
-	text-decoration: none;
-}
-
-.micro-response .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('DropDownOpen.gif');
-	padding-left: 1px;
-	padding-right: 0;
-}
-
-.micro-response .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('DropDownClosed.gif');
-	padding-left: 0px;
-	padding-right: 0;
-}
-
-.micro-response .dropDownHead
-{
-	color: #243F60;
-	font-family: Roboto;
-	font-weight: bold;
-	font-size: 12pt;
-	text-decoration: blink;
-}
-
 .micro-response .MCWebHelpFramesetLink a
 {
 	color: #0000ee;

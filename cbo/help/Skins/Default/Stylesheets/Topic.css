@@ -387,41 +387,6 @@ a.glossaryTerm
 	right: 0;
 }
 
-.dropDownHotspot
-{
-	text-decoration: none;
-}
-
-.dropDownHotspot:link
-{
-	text-decoration: none;
-}
-
-.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('DropDownOpen.gif');
-	padding-left: 1px;
-	padding-right: 0;
-}
-
-.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('DropDownClosed.gif');
-	padding-left: 0px;
-	padding-right: 0;
-}
-
-.dropDownHead
-{
-	color: #243F60;
-	font-family: Roboto;
-	font-weight: bold;
-	font-size: 12pt;
-	text-decoration: blink;
-}
-
 .MCWebHelpFramesetLink a
 {
 	color: #0000ee;

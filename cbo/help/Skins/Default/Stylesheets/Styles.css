@@ -92,8 +92,8 @@ body
 	font-size: 12px;
 	font-weight: normal;
 	font-style: normal;
-	background: #ac0000 none;
-	-pie-background: #ac0000;
+	background: #0c436a none;
+	-pie-background: #0c436a;
 }
 
 #header
@@ -104,7 +104,7 @@ body
 	z-index: 1;
 	/* IE7 z-index bug: positioned elements (#header) generate a new stacking context starting with a z-index value of 0. This causes .search-filter-content's z-index not to work. So set #header's z-index (don't really need to set .search-filter-content's z-index but we'll leave it). http://www.quirksmode.org/bugreports/archives/2006/01/Explorer_z_index_bug.html */
 	display: block;
-	height: 60px;
+	height: 90px;
 }
 
 #header .logo
@@ -113,18 +113,18 @@ body
 	top: 50%;
 	margin-left: 20px;
 	display: block;
-	background: transparent url('Images/sabre_home_white.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
-	width: 128px;
-	height: 30px;
-	margin-top: -15px;
+	background: transparent url('Images/logo.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/logo.png') no-repeat center center;
+	width: 207px;
+	height: 53px;
+	margin-top: -26.5px;
 }
 
 #header .logo > img
 {
 	border: none;
-	width: 128px;
-	height: 30px;
+	width: 207px;
+	height: 53px;
 }
 
 #body
@@ -133,7 +133,7 @@ body
 	right: 0;
 	bottom: 0;
 	left: 0;
-	top: 60px;
+	top: 90px;
 }
 
 #navigation
@@ -141,7 +141,7 @@ body
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 310px;
+	width: 280px;
 }
 
 html.left-layout #navigation
@@ -176,7 +176,7 @@ html.right-layout #navigation
 
 html.left-layout #navigationResizeBar
 {
-	left: 310px;
+	left: 280px;
 }
 
 html.right-layout #navigationResizeBar
@@ -987,7 +987,7 @@ html.left-layout #contentBody
 	-moz-border-radius: 4px 0 0 0;
 	border-radius: 4px 0 0 0;
 	float: right;
-	left: 315px;
+	left: 285px;
 	right: 0;
 }
 
@@ -1064,15 +1064,15 @@ iframe.content
 	position: relative;
 	float: left;
 	display: block;
-	border-left: solid 1px #333333;
-	border-right: solid 1px #333333;
-	border-top: solid 1px #333333;
-	border-bottom: solid 1px #333333;
+	border-left: solid 1px #363636;
+	border-right: solid 1px #363636;
+	border-top: solid 1px #363636;
+	border-bottom: solid 1px #363636;
 	border-top-left-radius: 50px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 15px;
-	margin-top: 14px;
+	margin-top: 40px;
 }
 
 .tab
@@ -1203,23 +1203,23 @@ iframe.content
 #responsiveHeader
 {
 	display: none;
-	background: #ac0000 none;
-	-pie-background: #ac0000;
+	background: #0c436a none;
+	-pie-background: #0c436a;
 }
 
 #responsiveHeader .logo
 {
 	height: 100%;
 	display: block;
-	width: 128px;
-	background: transparent url('Images/sabre_home_white.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Default/Stylesheets/Images/sabre_home_white.png') no-repeat center center;
+	width: 207px;
+	background: transparent url('Images/logo.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Images/logo.png') no-repeat center center;
 }
 
 #responsiveHeader .logo > img
 {
-	width: 128px;
-	height: 30px;
+	width: 207px;
+	height: 53px;
 }
 
 #search-field,
@@ -1279,7 +1279,7 @@ iframe.content
 	line-height: 28px;
 	padding-right: 5px;
 	cursor: pointer;
-	height: 28px;
+	height: 30px;
 	color: #dadada;
 	background: -moz-linear-gradient(top, #6F6F6F 0%, #555555 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6F6F6F), color-stop(100%,#555555));
@@ -1414,7 +1414,7 @@ iframe.content
 	box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
-	height: 28px;
+	height: 30px;
 }
 
 /* placeholder */
@@ -2327,13 +2327,13 @@ a.activityText
 
 #search-field
 {
-	height: 28px;
+	height: 30px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 15px;
-	color: #333333;
+	color: #101820;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
-	background: #6F6F6F;
+	background: transparent;
 	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
 	background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
@@ -2375,22 +2375,22 @@ a.activityText
 
 #search-field::-webkit-input-placeholder
 {
-	color: #333333;
+	color: #101820;
 }
 
 #search-field::-moz-placeholder
 {
-	color: #333333;
+	color: #101820;
 }
 
 #search-field:-moz-placeholder
 {
-	color: #333333;
+	color: #101820;
 }
 
 #search-field:-ms-input-placeholder
 {
-	color: #333333;
+	color: #101820;
 }
 
 .micro-content-container > .micro-content > .micro-response-title a:visited
