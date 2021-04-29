@@ -1,1 +1,1 @@
-define({"../content/clientbase online 4 10 11.htm":0,"../content/table of contents.htm":1,"../content/trams back office 4 09 fixes.htm":2,"../content/trams back office 4 09 fixes_1.htm":3,"../content/trams back office 4 10 new.htm":4,});
+define({"../content/fixes.htm":1,"../content/index.htm":0,});
